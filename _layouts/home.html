@@ -1,0 +1,30 @@
+---
+layout: default
+home: true
+---
+
+{{ content }}
+
+{% if site.articles %}
+</div>
+</div>
+
+	<div class="divider"></div>
+	<div class="row">
+
+	{% for article in site.articles %}
+		<div class="span six">
+			<h3>{{ article.title }}</h3>
+			<p>{{ article.description }}</p>
+			<a class="secondary" href="{{ article.link }}">Read more</a>
+		</div>
+
+		{% if forloop.index == 2 %}
+			</div>
+			<div class="divider"></div>
+			<div class="row">
+		{% endif %}
+
+	{% endfor %}
+<div><!-- needs to be here for the templates to nest properly -->
+{% endif %}

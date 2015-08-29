@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>
+      {% if page.title %}
+        {{ page.title }}
+      {% else %}
+        {{ site.title }}
+      {% endif %}
+    </title>
+
+    <meta name="description" content="{{ site.description }}">
+
+    <!-- CSS (from rosettatype.github.io) -->
+    <link rel="stylesheet" href="http://github.rosettatype.com/assets/styles.css">
+
+    <!-- Icons (from rosettatype.com) -->
+    <link href="https://www.rosettatype.com/favicon.ico?v2" rel="shortcut icon" sizes="64x64" type="image/vnd.microsoft.icon" />
+    <link href="https://www.rosettatype.com/apple-touch-57x57.png?v2" rel="apple-touch-icon" type="image/vnd.microsoft.icon" />
+
+</head>
+
+<body>
+  <div class='navbar fixed'>
+     <div class='container'>
+        <a href="http://rosettatype.com" class='pull-left logo'>Rosetta</a>
+        <ul class='pull-right'>
+           <li><a href='http://rosettatype.com'>Website</a></li>
+           <li><a href='{{ site.github.repository_url }}'>GitHub</a></li>
+           <li><a href='https://www.rosettatype.com/contact'>Contact</a></li>
+        </ul>
+     </div>
+  </div>
+
+  <div class="container">
+    <div class="grid">
+      <div class="row">
+        <div class="span twelve">
+          {{ content }}
+        </div>
+      </div>
+
+      {% if page.home == null %}
+
+      <div class="divider"></div>
+
+      <div class="row">
+        <div class="span twelve">
+          <a class="secondary" href="../">Back</a>
+        </div>
+      </div>
+
+      {% endif %}
+
+      <div class="divider"></div>
+
+      <div class="row">
+        <div class="span ten gray">© Rosetta Type Foundry, 2015.</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
