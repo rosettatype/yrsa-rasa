@@ -28,7 +28,7 @@ Wish us luck. That is it for now. You can find the project on [GitHub](https://g
 
 In the next article, we will present the Gujarati sketches together with some considerations regarding the harmonization of both scripts.
 
-— David Březina (@MrBrezina), 31 August 2015
+— David Březina, 31 August 2015
 
 ## References
 
