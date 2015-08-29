@@ -21,11 +21,11 @@ include: ['_pages']
 articles:
   - title: Introducing Yrsa
     link: introducing-yrsa/
-    description: First intro to the project and some thinking behind/about it
+    description: "First intro to the project, the authors, and some thinking behind it"
   - title: Language support
     link: language-support/
-    description: Intended language support in Latin and Gujarati scripts
-  - title: What is Rosetta
+    description: The intended language support in Latin and Gujarati scripts
+  - title: About Rosetta
     link: http://github.rosettatype.com
-    description: Learn about Rosetta and its open-source projects
+    description: Learn more about Rosetta and its open-source projects hosted on GitHub
 
