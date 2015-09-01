@@ -6,7 +6,7 @@ permalink: "/introducing-yrsa/"
 
 # Introducing Yrsa
 
-Yrsa is an open-source project we have just started with a generous financial support from Google Fonts. The typeface is going to support some 45+2 languages in Latin and Gujarati scripts and will be freely available from the Google Fonts directory, once it is ready. Design and production are done in-house at [Rosetta](http://rosettatype.com), by [Anna Giedryś](http://ancymonic.com) ([@ancymonic](http://github.com/ancymonic)) and me ([David Březina](http://davi.cz) – [@MrBrezina](http://github.com/MrBrezina)).
+Yrsa is an open-source/libre project we have just started with a generous financial support from Google Fonts. The typeface is going to support some 45+2 languages in Latin and Gujarati scripts and will be freely available from the Google Fonts directory, once it is ready. Design and production are done in-house at [Rosetta](http://rosettatype.com), by [Anna Giedryś](http://ancymonic.com) ([@ancymonic](http://github.com/ancymonic)) and me ([David Březina](http://davi.cz) – [@MrBrezina](http://github.com/MrBrezina)).
 
 What makes Yrsa different is the design approach. It is a deliberate experiment in remixing existing typefaces to produce a new one. As such, we find it fascinating and… honest.
 
@@ -20,7 +20,7 @@ In his excellent article, Jan Michl elaborates on this issue and suggests that w
 
 The Latin part of Yrsa will be based on [Merriweather](http://sorkintype.com/fonts.html#mw) by Eben Sorkin. It has been released under [SIL Open Font License](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL) which allows us to modify and release the design under a new name. The Gujarati will be based on my own [Skolar Gujarati](https://www.rosettatype.com/Skolar#gujarati).
 
-![Comparison of Merriweather (top) and Yrsa (bottom): ](../assets/Merriweather-Yrsa-comparison.svg){:.full}
+![Comparison of Merriweather (top) and Yrsa (bottom)](../assets/Merriweather-Yrsa-comparison.svg){:.full}
 
 The illustration shows Merriweather (top) compared to an initial sketch of Yrsa (bottom). The ascenders will be taller (1), the serifs will be bracketed (2 & 5), the head serifs will be less dominant while the outstrokes in the ‘a’ and ‘u’ will become more prominent (2). We will also make the terminal in the ‘r’ a bit stronger (4) and simplify the ‘j’ (3). And finally, the counters will be more squarish with a bit ‘less dynamic’ modulation (6).
 
@@ -28,7 +28,7 @@ Our hope is that we will not step on anyone’s toes, i.e. into the uncomfortabl
 
 Wish us luck. That is it for now. You can find the project on [GitHub](https://github.com/rosettatype/Yrsa) already.
 
-In the next article, we will present the Gujarati sketches together with some considerations regarding the harmonization of both scripts.
+We intend to write a little series to document the progress. In the next article, we will present the Gujarati sketches together with some considerations regarding the harmonization of both scripts.
 
 — David Březina, 31 August 2015
 
