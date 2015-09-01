@@ -6,7 +6,7 @@ permalink: "/introducing-yrsa/"
 
 # Introducing Yrsa
 
-Yrsa is an open-source project we have just started with a generous incentive from Google. The typeface is going to support some 45+2 languages in Latin and Gujarati scripts and will be freely available from the Google Fonts directory, once it is ready. Design and production are done in-house at [Rosetta](http://rosettatype.com), by Anna Giedryś and me (David Březina).
+Yrsa is an open-source project we have just started with a generous financial support from Google Fonts. The typeface is going to support some 45+2 languages in Latin and Gujarati scripts and will be freely available from the Google Fonts directory, once it is ready. Design and production are done in-house at [Rosetta](http://rosettatype.com), by [Anna Giedryś](http://ancymonic.com) ([@ancymonic](http://github.com/ancymonic)) and me ([David Březina](http://davi.cz) – [@MrBrezina](http://github.com/MrBrezina)).
 
 What makes Yrsa different is the design approach. It is a deliberate experiment in remixing existing typefaces to produce a new one. As such, we find it fascinating and… honest.
 
@@ -16,13 +16,15 @@ Gerrit Noordzij (1991) points out that “writing is a convention. […] unconve
 
 Just to be clear, this is not a manifesto for plagiarism. A truly creative person will always find their own voice, sufficiently distanced from everyone else's. It is a matter of common decency to not benefit from other people's work without their consent. Regardless if this is permitted by law or if it is an improvement of the corresponding work.
 
-In his excellent article, Jan Michl elaborates on this issue and suggests that we should try to [see design as redesign](http://janmichl.com/eng.redesign.html). I could not agree more. Yrsa is an opportunity to play with that idea. It is a redesign of contemporary typefaces.
+In his excellent article, Jan Michl elaborates on this issue and suggests that we should try to [see design as redesign](http://janmichl.com/eng.redesign.html). I could not agree more. Yrsa is an opportunity to play with that idea in practise. It is a redesign of contemporary typefaces.
 
 The Latin part of Yrsa will be based on [Merriweather](http://sorkintype.com/fonts.html#mw) by Eben Sorkin. It has been released under [SIL Open Font License](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL) which allows us to modify and release the design under a new name. The Gujarati will be based on my own [Skolar Gujarati](https://www.rosettatype.com/Skolar#gujarati).
 
-Below is the initial sketch compared to Merriweather. Our hope is that we will not step on anyone’s toes, i.e. into the uncomfortably immediate vicinity of other designs, while redesigning these. We are aware of typefaces with a similar spirit and are making sure we keep a respectful distance. For example, no matter how much I like the ‘a’, it will ultimately need to change. Because it is Abbink’s ‘a’ from Milo Serif. This is less of a problem with Gujarati where the stylistic space is much less populated.
+![Comparison of Merriweather (top) and Yrsa (bottom): ](../assets/Merriweather-Yrsa-comparison.svg){:.full}
 
-![Comparison of Merriweather (top) and Yrsa (bottom)](http://placekitten.com/999/500)
+The illustration shows Merriweather (top) compared to an initial sketch of Yrsa (bottom). The ascenders will be taller (1), the serifs will be bracketed (2 & 5), the head serifs will be less dominant while the outstrokes in the ‘a’ and ‘u’ will become more prominent (2). We will also make the terminal in the ‘r’ a bit stronger (4) and simplify the ‘j’ (3). And finally, the counters will be more squarish with a bit ‘less dynamic’ modulation (6).
+
+Our hope is that we will not step on anyone’s toes, i.e. into the uncomfortably immediate vicinity of other designs, while redesigning from Merriweather. We are aware of typefaces with a similar spirit (e.g. Milo Serif or Guardian Egyptian) and are making sure we keep a respectful distance. This is less of a problem with Gujarati where the stylistic space is much less populated.
 
 Wish us luck. That is it for now. You can find the project on [GitHub](https://github.com/rosettatype/Yrsa) already.
 
@@ -32,7 +34,7 @@ In the next article, we will present the Gujarati sketches together with some co
 
 ## References
 
-Michl, Jan. 2002. On Seeing Design as Redesign : An Exploration of a Neglected Problem in Design Education. http://janmichl.com/eng.redesign.html.
+Michl, Jan. 2002. On Seeing Design as Redesign : An Exploration of a Neglected Problem in Design Education. [http://janmichl.com/eng.redesign.html](http://janmichl.com/eng.redesign.html).
 
 Noordzij, Gerrit. 1991. “The Shape of the Stroke.” In Raster Imaging and Digital Typography II, edited by Jacques André and Robert A Morris, 34–37. Cambridge University Press.
 
