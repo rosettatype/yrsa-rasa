@@ -3,7 +3,7 @@ layout: home
 permalink: /
 ---
 
-![Yrsa sketches](assets/Yrsa-sketches.jpg){:.full}
+![Yrsa test sheets with corrections](assets/Yrsa-sketches.jpg){:.full}
 
 # Yrsa
 
