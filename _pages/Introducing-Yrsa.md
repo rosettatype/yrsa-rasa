@@ -6,7 +6,7 @@ permalink: "/introducing-yrsa/"
 
 # Introducing Yrsa
 
-Yrsa is an open-source/libre project we have just started with a generous financial support from Google Fonts. The typeface is going to support some 45+2 languages in Latin and Gujarati scripts and will be freely available from the Google Fonts directory, once it is ready. Design and production are done in-house at [Rosetta](http://rosettatype.com), by [Anna Giedryś](http://ancymonic.com) ([@ancymonic](http://github.com/ancymonic)) and me ([David Březina](http://davi.cz) – [@MrBrezina](http://github.com/MrBrezina)).
+Yrsa is an open-source/libre project we have just started with generous financial support from Google Fonts. The typeface is going to support some 45+2 languages in Latin and Gujarati scripts and will be freely available from the Google Fonts directory, once it is ready. Design and production are done in-house at [Rosetta](http://rosettatype.com), by [Anna Giedryś](http://ancymonic.com) ([@ancymonic](http://github.com/ancymonic)) and me ([David Březina](http://davi.cz) – [@MrBrezina](http://github.com/MrBrezina)).
 
 What makes Yrsa different is the design approach. It is a deliberate experiment in remixing existing typefaces to produce a new one. As such, we find it fascinating and… honest.
 
@@ -22,7 +22,7 @@ The Latin part of Yrsa will be based on [Merriweather](http://sorkintype.com/fon
 
 ![Comparison of Merriweather (top) and Yrsa (bottom)](../assets/Merriweather-Yrsa-comparison.svg){:.full}
 
-The illustration shows Merriweather (top) compared to an initial sketch of Yrsa (bottom). The ascenders will be taller (1), the serifs will be bracketed (2 & 5), the head serifs will be less dominant while the outstrokes in the ‘a’ and ‘u’ will become more prominent (2). We will also make the terminal in the ‘r’ a bit stronger (4) and simplify the ‘j’ (3). And finally, the counters will be more squarish with a bit ‘less dynamic’ modulation (6).
+The illustration shows Merriweather (top) compared to an initial sketch of Yrsa (bottom). The ascenders will be taller (1), the serifs will be bracketed (2 & 5), the head serifs will be less dominant while the outstroke in the ‘u’ (and consequently in the ‘a’) will become more prominent (2). We will also make the terminal in the ‘r’ a bit stronger (4) and simplify the ‘j’ (3). And finally, the counters will be more squarish with a bit ‘less dynamic’ modulation (6).
 
 Our hope is that we will not step on anyone’s toes, i.e. into the uncomfortably immediate vicinity of other designs, while redesigning from Merriweather. We are aware of typefaces with a similar spirit (e.g. Milo Serif or Guardian Egyptian) and are making sure we keep a respectful distance. This is less of a problem with Gujarati where the stylistic space is much less populated.
 
