@@ -1,4 +1,7 @@
 {
+DisplayStrings = (
+/daggerdbl
+);
 copyright = "Copyright \U00A9 2015 by Rosetta Type Foundry. All rights reserved.";
 customParameters = (
 {
@@ -11464,7 +11467,7 @@ unicode = 2020;
 },
 {
 glyphname = daggerdbl;
-lastChange = "2015-11-29 15:16:09 +0000";
+lastChange = "2015-11-29 21:46:03 +0000";
 layers = (
 {
 layerId = "DAAEA780-4710-4479-B303-5C05B40621B2";
@@ -11473,12 +11476,12 @@ paths = (
 {
 closed = 1;
 nodes = (
-"537 -248 LINE",
 "587 1506 LINE",
 "587 1662 LINE",
 "401 1662 LINE",
 "401 1506 LINE",
-"449 -246 LINE"
+"449 -246 LINE",
+"537 -248 LINE"
 );
 },
 {
@@ -11542,26 +11545,6 @@ nodes = (
 {
 closed = 1;
 nodes = (
-"664 877 LINE",
-"667 911 LINE SMOOTH",
-"669 940 OFFCURVE",
-"683 959 OFFCURVE",
-"711 967 CURVE SMOOTH",
-"951 1033 LINE",
-"951 1177 LINE",
-"512 1162 LINE",
-"73 1177 LINE",
-"73 1033 LINE",
-"313 967 LINE SMOOTH",
-"341 959 OFFCURVE",
-"355 940 OFFCURVE",
-"357 911 CURVE SMOOTH",
-"360 877 LINE"
-);
-},
-{
-closed = 1;
-nodes = (
 "634 498 LINE",
 "636 531 LINE SMOOTH",
 "638 561 OFFCURVE",
@@ -11577,6 +11560,26 @@ nodes = (
 "386 561 OFFCURVE",
 "388 531 CURVE SMOOTH",
 "390 498 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"664 877 LINE",
+"667 911 LINE SMOOTH",
+"669 940 OFFCURVE",
+"683 959 OFFCURVE",
+"711 967 CURVE SMOOTH",
+"951 1033 LINE",
+"951 1177 LINE",
+"512 1162 LINE",
+"73 1177 LINE",
+"73 1033 LINE",
+"313 967 LINE SMOOTH",
+"341 959 OFFCURVE",
+"355 940 OFFCURVE",
+"357 911 CURVE SMOOTH",
+"360 877 LINE"
 );
 }
 );

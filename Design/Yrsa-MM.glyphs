@@ -456,35 +456,6 @@ date = "2015-08-29 21:09:49 +0000";
 designer = "Anna Giedry\U015B, David B\U0159ezina";
 designerURL = "http://rosettatype.com";
 familyName = "Yrsa";
-featurePrefixes = (
-{
-code = "";
-name = langs;
-notes = "languagesystem DFLT dflt;\012languagesystem gujr dflt;\012languagesystem gjr2 dflt;";
-}
-);
-features = (
-{
-code = "sub gjKa gjVirama gjSsa by gjKSsa;\012sub gjJa gjVirama gjNya by gjJNya;";
-name = akhn;
-},
-{
-code = "sub gjRa gjVirama by gjReph;";
-name = rphf;
-},
-{
-code = "sub gjRa gjVirama by gjRakar;";
-name = blwf;
-},
-{
-code = "sub gjKa gjVirama by gjK;\012sub gjKha gjVirama by gjKh;\012sub gjGa gjVirama by gjG;\012sub gjGha gjVirama by gjGh;\012#sub gjNga gjVirama by gjNg;\012sub gjCa gjVirama by gjC;\012#sub gjCha gjVirama by gjCh;\012sub gjJa gjVirama by gjJ;\012#sub gjJha gjVirama by gjJh;\012sub gjNya gjVirama by gjNy;\012#sub gjTta gjVirama by gjTt;\012#sub gjTtha gjVirama by gjTth;\012#sub gjDda gjVirama by gjDd;\012#sub gjDdha gjVirama by gjDdh;\012sub gjNna gjVirama by gjNn;\012sub gjTa gjVirama by gjT;\012sub gjTha gjVirama by gjTh;\012#sub gjDa gjVirama by gjD;\012sub gjDha gjVirama by gjDh;\012sub gjNa gjVirama by gjN;\012sub gjPa gjVirama by gjP;\012sub gjPha gjVirama by gjPh;\012sub gjBa gjVirama by gjB;\012sub gjBha gjVirama by gjBh;\012sub gjMa gjVirama by gjM;\012sub gjYa gjVirama by gjY;\012sub gjRa gjVirama by gjR;\012sub gjLa gjVirama by gjL;\012sub gjLla gjVirama by gjLl;\012sub gjVa gjVirama by gjV;\012sub gjSha gjVirama by gjSh;\012sub gjSsa gjVirama by gjSs;\012sub gjSa gjVirama by gjS;\012#sub gjHa gjVirama by gjH;\012sub gjKSsa gjVirama by gjKSs;\012sub gjJNya gjVirama by gjJNya;\012";
-name = half;
-},
-{
-code = "sub gjS gjKa by gjSKa;";
-name = pres;
-}
-);
 fontMaster = (
 {
 alignmentZones = (
@@ -20906,7 +20877,7 @@ unicode = 2020;
 },
 {
 glyphname = daggerdbl;
-lastChange = "2015-11-26 11:15:26 +0000";
+lastChange = "2015-11-29 21:38:32 +0000";
 layers = (
 {
 background = {
@@ -20961,26 +20932,6 @@ nodes = (
 {
 closed = 1;
 nodes = (
-"682 940 LINE",
-"685 975 LINE SMOOTH",
-"687 1003 OFFCURVE",
-"700 1022 OFFCURVE",
-"726 1030 CURVE SMOOTH",
-"962 1099 LINE",
-"962 1251 LINE",
-"515 1236 LINE",
-"68 1251 LINE",
-"68 1099 LINE",
-"304 1030 LINE SMOOTH",
-"330 1022 OFFCURVE",
-"343 1003 OFFCURVE",
-"345 975 CURVE SMOOTH",
-"348 940 LINE"
-);
-},
-{
-closed = 1;
-nodes = (
 "644 412 LINE",
 "647 446 LINE SMOOTH",
 "649 474 OFFCURVE",
@@ -20996,6 +20947,26 @@ nodes = (
 "381 474 OFFCURVE",
 "383 446 CURVE SMOOTH",
 "386 412 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"682 940 LINE",
+"685 975 LINE SMOOTH",
+"687 1003 OFFCURVE",
+"700 1022 OFFCURVE",
+"726 1030 CURVE SMOOTH",
+"962 1099 LINE",
+"962 1251 LINE",
+"515 1236 LINE",
+"68 1251 LINE",
+"68 1099 LINE",
+"304 1030 LINE SMOOTH",
+"330 1022 OFFCURVE",
+"343 1003 OFFCURVE",
+"345 975 CURVE SMOOTH",
+"348 940 LINE"
 );
 }
 );
@@ -21043,12 +21014,12 @@ paths = (
 {
 closed = 1;
 nodes = (
-"537 -248 LINE",
 "587 1506 LINE",
 "587 1662 LINE",
 "401 1662 LINE",
 "401 1506 LINE",
-"449 -246 LINE"
+"449 -246 LINE",
+"537 -248 LINE"
 );
 },
 {
@@ -58452,24 +58423,20 @@ width = 701;
 disablesNiceNames = 1;
 instances = (
 {
-active = 0;
 interpolationWeight = 165;
 name = Light;
 weightClass = Light;
 },
 {
-active = 0;
 interpolationWeight = 214;
 name = Regular;
 },
 {
-active = 0;
 interpolationWeight = 263;
 name = Medium;
 weightClass = Medium;
 },
 {
-active = 0;
 interpolationWeight = 312;
 name = Semibold;
 weightClass = SemiBold;
