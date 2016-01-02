@@ -1,4 +1,7 @@
 {
+DisplayStrings = (
+Z
+);
 copyright = "Copyright \U00A9 2015 by Rosetta Type Foundry. All rights reserved.";
 customParameters = (
 {
@@ -450,6 +453,14 @@ value = (
     "__periodcentered.CAT",
     "__periodcentered.CAT.case"
 );
+},
+{
+name = openTypeOS2VendorID;
+value = " RST";
+},
+{
+name = trademark;
+value = "Yrsa and Rasa are trademarks of Rosetta Type Foundry";
 }
 );
 date = "2015-08-29 21:09:49 +0000";
@@ -468,6 +479,48 @@ alignmentZones = (
 );
 ascender = 2014;
 capHeight = 1562;
+customParameters = (
+{
+name = typoAscender;
+value = "1750";
+},
+{
+name = typoDescender;
+value = "-500";
+},
+{
+name = typoLineGap;
+value = "450";
+},
+{
+name = hheaAscender;
+value = "1975";
+},
+{
+name = hheaDescender;
+value = "-725";
+},
+{
+name = hheaLineGap;
+value = "0";
+},
+{
+name = winAscent;
+value = "1975";
+},
+{
+name = winDescent;
+value = "725";
+},
+{
+name = underlineThickness;
+value = "80";
+},
+{
+name = underlinePosition;
+value = "-160";
+}
+);
 descender = -560;
 guideLines = (
 {
@@ -517,6 +570,48 @@ alignmentZones = (
 );
 ascender = 2014;
 capHeight = 1562;
+customParameters = (
+{
+name = typoAscender;
+value = "1750";
+},
+{
+name = typoDescender;
+value = "-500";
+},
+{
+name = typoLineGap;
+value = "450";
+},
+{
+name = hheaAscender;
+value = "1975";
+},
+{
+name = hheaDescender;
+value = "-725";
+},
+{
+name = hheaLineGap;
+value = "0";
+},
+{
+name = winAscent;
+value = "1975";
+},
+{
+name = winDescent;
+value = "725";
+},
+{
+name = underlineThickness;
+value = "80";
+},
+{
+name = underlinePosition;
+value = "-160";
+}
+);
 descender = -560;
 guideLines = (
 {
@@ -11618,7 +11713,7 @@ unicode = 006F;
 },
 {
 glyphname = p;
-lastChange = "2015-11-26 11:15:26 +0000";
+lastChange = "2016-01-02 19:40:08 +0000";
 layers = (
 {
 anchors = (
