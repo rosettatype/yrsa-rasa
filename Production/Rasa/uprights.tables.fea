@@ -1,0 +1,84 @@
+#----------------------------------------------------------------------------
+# Tables
+
+table BASE {
+	HorizAxis.BaseTagList	ideo  romn;
+	HorizAxis.BaseScriptList
+		DFLT	romn	-569 0,
+		latn	romn	-569 0,
+		gujr	romn	-569 0;
+} BASE;
+
+include(../version.fea);
+
+table OS/2 {
+	FSType				4;
+	Panose				2 13 0 0 0 4 0 0 0 0;
+	UnicodeRange		0		# Basic Latin
+						1		# Latin-1 Supplement
+						2		# Latin Extended-A
+						3		# Latin Extended-B
+						6		# Combining Diacritical Marks
+						29	# Latin Extended Additional
+						31	# General Punctuation
+						32	# Superscripts And Subscripts
+						33	# Currency Symbols
+						18	# Gujarati	0A80-0AFF
+						;
+	CodePageRange		1250	# Latin 2: Eastern Europe
+						1252	# Latin 1
+						1254	# Turkish
+						1257	# Baltic
+						;
+	winAscent			1975;
+	winDescent			725;
+	TypoAscender		1750;
+	TypoDescender		-500;
+	TypoLineGap			450;
+	XHeight				1136;		# differs from weight to weight
+	CapHeight			1562;
+	include(WeightClass.fea);
+	include(../WidthClass.fea);
+	Vendor				" RST";
+} OS/2;
+
+table hhea {
+	#CaretOffset -50;
+	Ascender 1975;
+	Descender -725;
+	LineGap 0;
+} hhea;
+
+table name {
+	nameid 0 "Copyright (c) 2015 by Rosetta Type Foundry. All rights reserved.";
+	nameid 7 "Skolar Sans is a trademark of Rosetta Type Foundry.";
+	nameid 8 "Rosetta Type Foundry";
+	nameid 9 "Anna Giedrys, David Brezina";
+	nameid 11 "http://rosettatype.com";
+	nameid 12 "http://davi.cz & http://ancymonic.com";
+	nameid 13 "IMPORTANT, please read our license agreement at http://rosettatype.com/licence";
+	nameid 14 "http://rosettatype.com/license";
+} name;
+
+# !!
+#table GDEF {
+#	include(../uprights.gdef.fea)
+#} GDEF;
+
+
+#----------------------------------------------------------------------------
+# Language systems
+
+languagesystem DFLT dflt;
+languagesystem latn dflt;
+languagesystem latn AZE;
+languagesystem latn CRT;
+languagesystem latn TRK;
+languagesystem latn TAT;
+languagesystem latn KAZ;
+languagesystem latn MOL;
+languagesystem latn ROM;
+languagesystem latn CAT;
+languagesystem latn NLD;
+languagesystem gujr dflt;
+languagesystem gjr2 dflt;

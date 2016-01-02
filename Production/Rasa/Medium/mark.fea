@@ -1,0 +1,180 @@
+# Created: Sat Jan  2 20:51:48 2016
+# PS Name: Rasa-Medium
+# MM Inst: None
+# exported from Defcon
+
+# NOTE: The markClass declarations can be found in the file 'markclasses.fea'.
+
+lookup MARK_BASE_btm {
+	@bGC_O_btm = [O Q];
+	@bGC_X_btm = [X Y];
+	@bGC_d_btm = [d e];
+	@bGC_dcroat_btm = [dcroat eogonek];
+	@bGC_f_i_btm = [f_i f_l f.salt];
+	pos base @bGC_O_btm <anchor 779 0> mark @MC_btm;
+	pos base @bGC_X_btm <anchor 736 0> mark @MC_btm;
+	pos base @bGC_d_btm <anchor 595 0> mark @MC_btm;
+	pos base @bGC_dcroat_btm <anchor 595 -170> mark @MC_btm;
+	pos base @bGC_f_i_btm <anchor 377 -170> mark @MC_btm;
+	pos base A <anchor 681 0> mark @MC_btm;
+	pos base AE <anchor 1078 0> mark @MC_btm;
+	pos base Aogonek <anchor 681 -170> mark @MC_btm;
+	pos base B <anchor 795 0> mark @MC_btm;
+	pos base C <anchor 794 0> mark @MC_btm;
+	pos base D <anchor 860 0> mark @MC_btm;
+	pos base Dcroat <anchor 861 -170> mark @MC_btm;
+	pos base E <anchor 755 0> mark @MC_btm;
+	pos base Eng <anchor 907 -170> mark @MC_btm;
+	pos base Eogonek <anchor 755 -170> mark @MC_btm;
+	pos base F <anchor 701 0> mark @MC_btm;
+	pos base G <anchor 796 0> mark @MC_btm;
+	pos base H <anchor 867 0> mark @MC_btm;
+	pos base Hbar <anchor 868 -170> mark @MC_btm;
+	pos base I <anchor 450 0> mark @MC_btm;
+	pos base Iogonek <anchor 450 -170> mark @MC_btm;
+	pos base J <anchor 310 0> mark @MC_btm;
+	pos base K <anchor 881 0> mark @MC_btm;
+	pos base L <anchor 746 0> mark @MC_btm;
+	pos base Lslash <anchor 748 -170> mark @MC_btm;
+	pos base M <anchor 1020 0> mark @MC_btm;
+	pos base N <anchor 930 0> mark @MC_btm;
+	pos base OE <anchor 1063 -170> mark @MC_btm;
+	pos base Oslash <anchor 779 -170> mark @MC_btm;
+	pos base P <anchor 726 0> mark @MC_btm;
+	pos base R <anchor 864 0> mark @MC_btm;
+	pos base S <anchor 598 0> mark @MC_btm;
+	pos base T <anchor 759 0> mark @MC_btm;
+	pos base Tbar <anchor 768 -170> mark @MC_btm;
+	pos base U <anchor 835 0> mark @MC_btm;
+	pos base Uogonek <anchor 841 -170> mark @MC_btm;
+	pos base V <anchor 848 0> mark @MC_btm;
+	pos base W <anchor 1130 0> mark @MC_btm;
+	pos base Z <anchor 641 0> mark @MC_btm;
+	pos base a <anchor 528 0> mark @MC_btm;
+	pos base aogonek <anchor 528 -170> mark @MC_btm;
+	pos base b <anchor 585 0> mark @MC_btm;
+	pos base c <anchor 575 0> mark @MC_btm;
+	pos base dotlessi <anchor 380 0> mark @MC_btm;
+	pos base eng <anchor 1084 -170> mark @MC_btm;
+	pos base f <anchor 377 0> mark @MC_btm;
+	pos base h <anchor 558 0> mark @MC_btm;
+	pos base hbar <anchor 558 -170> mark @MC_btm;
+	pos base iogonek <anchor 376 -170> mark @MC_btm;
+	pos base k <anchor 733 0> mark @MC_btm;
+	pos base l <anchor 347 0> mark @MC_btm;
+	pos base lslash <anchor 380 -170> mark @MC_btm;
+	pos base m <anchor 1063 0> mark @MC_btm;
+	pos base n <anchor 741 0> mark @MC_btm;
+	pos base o <anchor 634 0> mark @MC_btm;
+	pos base oe <anchor 1402 0> mark @MC_btm;
+	pos base ordmasculine <anchor 503 561> mark @MC_btm;
+	pos base oslash <anchor 598 -170> mark @MC_btm;
+	pos base p <anchor 673 0> mark @MC_btm;
+	pos base q <anchor 638 0> mark @MC_btm;
+	pos base r <anchor 404 0> mark @MC_btm;
+	pos base s <anchor 500 0> mark @MC_btm;
+	pos base schwa <anchor 599 -170> mark @MC_btm;
+	pos base t <anchor 474 0> mark @MC_btm;
+	pos base tbar <anchor 486 -170> mark @MC_btm;
+	pos base thorn <anchor 618 -170> mark @MC_btm;
+	pos base u <anchor 719 0> mark @MC_btm;
+	pos base uogonek <anchor 719 -170> mark @MC_btm;
+	pos base v <anchor 605 0> mark @MC_btm;
+	pos base w <anchor 910 0> mark @MC_btm;
+	pos base x <anchor 658 0> mark @MC_btm;
+	pos base z <anchor 573 0> mark @MC_btm;
+} MARK_BASE_btm;
+
+
+lookup MARK_BASE_top {
+	@bGC_B_top = [B D];
+	@bGC_c_top = [c q];
+	@bGC_f_i_top = [f_i f_l f.salt];
+	@bGC_w_top = [w ae];
+	pos base @bGC_B_top <anchor 795 1562> mark @MC_top;
+	pos base @bGC_c_top <anchor 615 1137> mark @MC_top;
+	pos base @bGC_f_i_top <anchor 403 2063> mark @MC_top;
+	pos base @bGC_w_top <anchor 937 1137> mark @MC_top;
+	pos base A <anchor 769 1562> mark @MC_top;
+	pos base AE <anchor 1149 1562> mark @MC_top;
+	pos base Aogonek <anchor 763 1700> mark @MC_top;
+	pos base C <anchor 823 1562> mark @MC_top;
+	pos base Dcroat <anchor 848 1700> mark @MC_top;
+	pos base E <anchor 723 1562> mark @MC_top;
+	pos base Eng <anchor 898 1700> mark @MC_top;
+	pos base Eogonek <anchor 747 1700> mark @MC_top;
+	pos base F <anchor 701 1562> mark @MC_top;
+	pos base G <anchor 858 1562> mark @MC_top;
+	pos base H <anchor 913 1562> mark @MC_top;
+	pos base Hbar <anchor 909 1700> mark @MC_top;
+	pos base I <anchor 434 1562> mark @MC_top;
+	pos base Iogonek <anchor 434 1700> mark @MC_top;
+	pos base J <anchor 401 1562> mark @MC_top;
+	pos base K <anchor 814 1562> mark @MC_top;
+	pos base L <anchor 535 1562> mark @MC_top;
+	pos base Lslash <anchor 630 1700> mark @MC_top;
+	pos base M <anchor 1095 1562> mark @MC_top;
+	pos base N <anchor 878 1562> mark @MC_top;
+	pos base O <anchor 787 1562> mark @MC_top;
+	pos base OE <anchor 1064 1700> mark @MC_top;
+	pos base Oslash <anchor 790 1700> mark @MC_top;
+	pos base P <anchor 726 1562> mark @MC_top;
+	pos base Q <anchor 790 1562> mark @MC_top;
+	pos base R <anchor 749 1562> mark @MC_top;
+	pos base S <anchor 646 1562> mark @MC_top;
+	pos base T <anchor 761 1562> mark @MC_top;
+	pos base Tbar <anchor 772 1700> mark @MC_top;
+	pos base U <anchor 860 1562> mark @MC_top;
+	pos base Uogonek <anchor 868 1700> mark @MC_top;
+	pos base V <anchor 604 1562> mark @MC_top;
+	pos base W <anchor 1123 1562> mark @MC_top;
+	pos base X <anchor 736 1562> mark @MC_top;
+	pos base Y <anchor 740 1562> mark @MC_top;
+	pos base Z <anchor 719 1562> mark @MC_top;
+	pos base a <anchor 573 1137> mark @MC_top;
+	pos base aogonek <anchor 547 1700> mark @MC_top;
+	pos base b <anchor 801 1137> mark @MC_top;
+	pos base dcroat <anchor 324 1700> mark @MC_top;
+	pos base dotlessi <anchor 336 1137> mark @MC_top;
+	pos base dotlessj <anchor 294 1137> mark @MC_top;
+	pos base e <anchor 604 1137> mark @MC_top;
+	pos base eng <anchor 1084 1700> mark @MC_top;
+	pos base eogonek <anchor 604 1700> mark @MC_top;
+	pos base f <anchor 403 1137> mark @MC_top;
+	pos base g <anchor 594 1137> mark @MC_top;
+	pos base h <anchor 290 1768> mark @MC_top;
+	pos base hbar <anchor 537 1700> mark @MC_top;
+	pos base iogonek <anchor 351 1700> mark @MC_top;
+	pos base k <anchor 747 1137> mark @MC_top;
+	pos base l <anchor 328 1781> mark @MC_top;
+	pos base lslash <anchor 331 1700> mark @MC_top;
+	pos base m <anchor 1063 1137> mark @MC_top;
+	pos base n <anchor 726 1137> mark @MC_top;
+	pos base o <anchor 634 1137> mark @MC_top;
+	pos base oe <anchor 1411 1137> mark @MC_top;
+	pos base ordmasculine <anchor 539 1982> mark @MC_top;
+	pos base oslash <anchor 636 1700> mark @MC_top;
+	pos base p <anchor 725 1137> mark @MC_top;
+	pos base r <anchor 575 1137> mark @MC_top;
+	pos base s <anchor 541 1137> mark @MC_top;
+	pos base schwa <anchor 594 1700> mark @MC_top;
+	pos base tbar <anchor 399 1895> mark @MC_top;
+	pos base thorn <anchor 669 1700> mark @MC_top;
+	pos base u <anchor 656 1137> mark @MC_top;
+	pos base uogonek <anchor 682 1700> mark @MC_top;
+	pos base v <anchor 605 1137> mark @MC_top;
+	pos base x <anchor 658 1137> mark @MC_top;
+	pos base y <anchor 660 1137> mark @MC_top;
+	pos base z <anchor 571 1137> mark @MC_top;
+} MARK_BASE_top;
+
+
+lookup MARK_BASE_topright {
+	pos base L <anchor 792 916> mark @MC_topright;
+	pos base d <anchor 1122 1137> mark @MC_topright;
+	pos base l <anchor 488 1137> mark @MC_topright;
+	pos base t <anchor 472 1138> mark @MC_topright;
+} MARK_BASE_topright;
+
+
+

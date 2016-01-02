@@ -1,0 +1,27 @@
+# Created: Sat Jan  2 20:51:49 2016
+# PS Name: Rasa-Regular
+# MM Inst: None
+# exported from Defcon
+
+@mGC_abvmBINDU_n371_1346 = [gjAnusvara gjAnusvara.alt2];
+@mGC_abvmTOP_n322_1474 = [gjReph.alt gjReph_gjAnusvara.alt];
+@mGC_abvmTOP_n371_1363 = [gjMatraCandraE gjMatraCandraE_gjAnusvara gjMatraCandraE_gjReph gjMatraCandraE_gjReph_gjAnusvara gjMatraE gjMatraE_gjAnusvara gjMatraE_gjReph gjMatraE_gjReph_gjAnusvara gjMatraAi gjMatraAi_gjAnusvara gjMatraAi_gjReph_gjAnusvara gjReph gjReph_gjAnusvara];
+@mGC_blwmBOTTOM_n371_0 = [gjMatraU gjMatraUu gjMatraVocalicL gjMatraVocalicLl gjVirama gjRakar gjRakar_gjMatraU gjRakar_gjMatraUu];
+@mGC_blwmRUKAR_n371_24 = [gjMatraVocalicR gjMatraVocalicRr];
+@mGC_btm_0_0 = [cedillacomb commaaccentcomb];
+@mGC_top_0_1137 = [circumflexcomb caroncomb macroncomb brevecomb dieresiscomb acutecomb gravecomb dotaccentcomb ringcomb tildecomb hungarumlautcomb commaaccentturnedabovecomb];
+@mGC_top_0_1562 = [circumflexcomb.case caroncomb.case macroncomb.case brevecomb.case dieresiscomb.case acutecomb.case gravecomb.case dotaccentcomb.case ringcomb.case tildecomb.case hungarumlautcomb.case];
+
+markClass @mGC_abvmBINDU_n371_1346 <anchor -371 1346> @MC_abvmBINDU;
+markClass @mGC_abvmTOP_n322_1474 <anchor -322 1474> @MC_abvmTOP;
+markClass @mGC_abvmTOP_n371_1363 <anchor -371 1363> @MC_abvmTOP;
+markClass @mGC_blwmBOTTOM_n371_0 <anchor -371 0> @MC_blwmBOTTOM;
+markClass @mGC_blwmRUKAR_n371_24 <anchor -371 24> @MC_blwmRUKAR;
+markClass @mGC_btm_0_0 <anchor 0 0> @MC_btm;
+markClass @mGC_top_0_1137 <anchor 0 1137> @MC_top;
+markClass @mGC_top_0_1562 <anchor 0 1562> @MC_top;
+markClass caroncomb.calt <anchor 0 1137> @MC_topright;
+markClass gjAnusvara.alt <anchor -515 1346> @MC_abvmBINDU;
+markClass gjCandrabindu <anchor -371 1340> @MC_abvmBINDU;
+markClass gjMatraAi_gjReph <anchor 155 1393> @MC_abvmTOP;
+

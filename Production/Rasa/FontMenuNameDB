@@ -1,0 +1,35 @@
+; Adobe Latin Font Conversion Database
+;
+; Pattern	Description                 name table name id      
+; --------  -------------------------- ---------------------
+; f=        Preferred Family             16 (Preferred Family)
+; s=        Subfamily                    17 (Preferred Subfamily)
+; l=        Compatible family            1 (Family) 
+; m=1,      Mac Compatible Full Name.    18 (Mac Compatible Full)
+;
+
+[Rasa-Regular]
+	f=Rasa
+	s=Regular
+
+[Rasa-Bold]
+	f=Rasa
+	s=Bold
+
+[Rasa-Semibold]
+	f=Rasa
+	s=Semibold
+	c=Rasa Sb
+	c=1,Rasa Sb
+
+[Rasa-Medium]
+	f=Rasa
+	s=Medium
+	c=Rasa Me
+	c=1,Rasa Me
+
+[Rasa-Light]
+	f=Rasa
+	s=Light
+	c=Rasa Lt
+	c=1,Rasa Lt
