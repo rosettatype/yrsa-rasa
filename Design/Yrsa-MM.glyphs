@@ -1,6 +1,7 @@
 {
 DisplayStrings = (
-Z
+Z,
+"0123456789\012$/euro \U00A2\U00A3\U00A5/liraTurkish/ruble/rupeeIndian \U00A4"
 );
 copyright = "Copyright \U00A9 2015 by Rosetta Type Foundry. All rights reserved.";
 customParameters = (
@@ -381,6 +382,16 @@ value = (
     seven,
     eight,
     nine,
+    "zero.tf",
+    "one.tf",
+    "two.tf",
+    "three.tf",
+    "four.tf",
+    "five.tf",
+    "six.tf",
+    "seven.tf",
+    "eight.tf",
+    "nine.tf",
     dollar,
     euro,
     cent,
@@ -48724,6 +48735,296 @@ width = 1202;
 );
 rightMetricsKey = "=zero";
 unicode = 0039;
+},
+{
+color = 9;
+glyphname = zero.tf;
+lastChange = "2016-01-02 19:57:43 +0000";
+layers = (
+{
+components = (
+{
+name = zero;
+}
+);
+layerId = "6D8A9A52-7D7D-4498-B039-FDF10F245A16";
+name = Light;
+width = 1253;
+},
+{
+components = (
+{
+name = zero;
+}
+);
+layerId = "6AFE116F-39E0-4FF2-A27B-879B4E5E3272";
+name = Bold;
+width = 1398;
+}
+);
+leftMetricsKey = zero;
+rightMetricsKey = zero;
+},
+{
+color = 9;
+glyphname = one.tf;
+lastChange = "2016-01-02 19:57:43 +0000";
+layers = (
+{
+components = (
+{
+name = one;
+}
+);
+layerId = "6D8A9A52-7D7D-4498-B039-FDF10F245A16";
+name = Light;
+width = 882;
+},
+{
+components = (
+{
+name = one;
+}
+);
+layerId = "6AFE116F-39E0-4FF2-A27B-879B4E5E3272";
+name = Bold;
+width = 1008;
+}
+);
+leftMetricsKey = one;
+rightMetricsKey = one;
+},
+{
+color = 9;
+glyphname = two.tf;
+lastChange = "2016-01-02 19:57:43 +0000";
+layers = (
+{
+components = (
+{
+name = two;
+}
+);
+layerId = "6D8A9A52-7D7D-4498-B039-FDF10F245A16";
+name = Light;
+width = 1140;
+},
+{
+components = (
+{
+name = two;
+}
+);
+layerId = "6AFE116F-39E0-4FF2-A27B-879B4E5E3272";
+name = Bold;
+width = 1253;
+}
+);
+leftMetricsKey = two;
+rightMetricsKey = two;
+},
+{
+color = 9;
+glyphname = three.tf;
+lastChange = "2016-01-02 19:57:43 +0000";
+layers = (
+{
+components = (
+{
+name = three;
+}
+);
+layerId = "6D8A9A52-7D7D-4498-B039-FDF10F245A16";
+name = Light;
+width = 1107;
+},
+{
+components = (
+{
+name = three;
+}
+);
+layerId = "6AFE116F-39E0-4FF2-A27B-879B4E5E3272";
+name = Bold;
+width = 1186;
+}
+);
+leftMetricsKey = three;
+rightMetricsKey = three;
+},
+{
+color = 9;
+glyphname = four.tf;
+lastChange = "2016-01-02 19:57:43 +0000";
+layers = (
+{
+components = (
+{
+name = four;
+}
+);
+layerId = "6D8A9A52-7D7D-4498-B039-FDF10F245A16";
+name = Light;
+width = 1154;
+},
+{
+components = (
+{
+name = four;
+}
+);
+layerId = "6AFE116F-39E0-4FF2-A27B-879B4E5E3272";
+name = Bold;
+width = 1272;
+}
+);
+leftMetricsKey = four;
+rightMetricsKey = four;
+},
+{
+color = 9;
+glyphname = five.tf;
+lastChange = "2016-01-02 19:57:43 +0000";
+layers = (
+{
+components = (
+{
+name = five;
+}
+);
+layerId = "6D8A9A52-7D7D-4498-B039-FDF10F245A16";
+name = Light;
+width = 1124;
+},
+{
+components = (
+{
+name = five;
+}
+);
+layerId = "6AFE116F-39E0-4FF2-A27B-879B4E5E3272";
+name = Bold;
+width = 1189;
+}
+);
+leftMetricsKey = five;
+rightMetricsKey = five;
+},
+{
+color = 9;
+glyphname = six.tf;
+lastChange = "2016-01-02 19:57:43 +0000";
+layers = (
+{
+components = (
+{
+name = six;
+}
+);
+layerId = "6D8A9A52-7D7D-4498-B039-FDF10F245A16";
+name = Light;
+width = 1206;
+},
+{
+components = (
+{
+name = six;
+}
+);
+layerId = "6AFE116F-39E0-4FF2-A27B-879B4E5E3272";
+name = Bold;
+width = 1290;
+}
+);
+leftMetricsKey = six;
+rightMetricsKey = six;
+},
+{
+color = 9;
+glyphname = seven.tf;
+lastChange = "2016-01-02 19:57:43 +0000";
+layers = (
+{
+components = (
+{
+name = seven;
+}
+);
+layerId = "6D8A9A52-7D7D-4498-B039-FDF10F245A16";
+name = Light;
+width = 1073;
+},
+{
+components = (
+{
+name = seven;
+}
+);
+layerId = "6AFE116F-39E0-4FF2-A27B-879B4E5E3272";
+name = Bold;
+width = 1161;
+}
+);
+leftMetricsKey = seven;
+rightMetricsKey = seven;
+},
+{
+color = 9;
+glyphname = eight.tf;
+lastChange = "2016-01-02 19:57:43 +0000";
+layers = (
+{
+components = (
+{
+name = eight;
+}
+);
+layerId = "6D8A9A52-7D7D-4498-B039-FDF10F245A16";
+name = Light;
+width = 1220;
+},
+{
+components = (
+{
+name = eight;
+}
+);
+layerId = "6AFE116F-39E0-4FF2-A27B-879B4E5E3272";
+name = Bold;
+width = 1302;
+}
+);
+leftMetricsKey = eight;
+rightMetricsKey = eight;
+},
+{
+color = 9;
+glyphname = nine.tf;
+lastChange = "2016-01-02 19:57:43 +0000";
+layers = (
+{
+components = (
+{
+name = nine;
+}
+);
+layerId = "6D8A9A52-7D7D-4498-B039-FDF10F245A16";
+name = Light;
+width = 1202;
+},
+{
+components = (
+{
+name = nine;
+}
+);
+layerId = "6AFE116F-39E0-4FF2-A27B-879B4E5E3272";
+name = Bold;
+width = 1291;
+}
+);
+leftMetricsKey = nine;
+rightMetricsKey = nine;
 },
 {
 glyphname = dollar;
