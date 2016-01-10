@@ -26,6 +26,7 @@
                 <dimension name="width" xvalue="100"/>
             </location>
             <info/>
+            <kerning/>
         </instance>
         <instance familyname="Rasa" filename="Rasa/Regular/font.ufo" stylename="Regular" postscriptfontname="Rasa-Regular">
             <location>
@@ -33,6 +34,7 @@
                 <dimension name="width" xvalue="100"/>
             </location>
             <info/>
+            <kerning/>
         </instance>
         <instance familyname="Rasa" filename="Rasa/Medium/font.ufo" stylename="Medium" postscriptfontname="Rasa-Medium">
             <location>
@@ -40,6 +42,7 @@
                 <dimension name="width" xvalue="100"/>
             </location>
             <info/>
+            <kerning/>
         </instance>
         <instance familyname="Rasa" filename="Rasa/Semibold/font.ufo" stylename="Semibold" postscriptfontname="Rasa-Semibold">
             <location>
@@ -47,6 +50,7 @@
                 <dimension name="width" xvalue="100"/>
             </location>
             <info/>
+            <kerning/>
         </instance>
         <instance familyname="Rasa" filename="Rasa/Bold/font.ufo" stylename="Bold" postscriptfontname="Rasa-Bold">
             <location>
@@ -54,6 +58,7 @@
                 <dimension name="width" xvalue="100"/>
             </location>
             <info/>
+            <kerning/>
         </instance>
     </instances>
 </designspace>

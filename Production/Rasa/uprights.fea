@@ -96,45 +96,45 @@ include(../../shared.second.fea);
 
 #!! add Gujarati figures and monetary symbols and TF
 
-#feature pnum {
-#	sub zero.tf by zero;
-#	sub one.tf by one;
-#	sub two.tf by two;
-#	sub three.tf by three;
-#	sub four.tf by four;
-#	sub five.tf by five;
-#	sub six.tf by six;
-#	sub seven.tf by seven;
-#	sub eight.tf by eight;
-#	sub nine.tf by nine;
-#	sub euro.tf by euro;
-#	sub sterling.tf by sterling;
-#	sub yen.tf by yen;
-#	sub currency.tf by currency;
-#	sub cent.tf by cent;
-#	sub dollar.tf by dollar;
-#	sub rupeeIndian.tf by rupeeIndian;
-#} pnum;
+feature pnum {
+	sub zero.tf by zero;
+	sub one.tf by one;
+	sub two.tf by two;
+	sub three.tf by three;
+	sub four.tf by four;
+	sub five.tf by five;
+	sub six.tf by six;
+	sub seven.tf by seven;
+	sub eight.tf by eight;
+	sub nine.tf by nine;
+	#sub euro.tf by euro;
+	#sub sterling.tf by sterling;
+	#sub yen.tf by yen;
+	#sub currency.tf by currency;
+	#sub cent.tf by cent;
+	#sub dollar.tf by dollar;
+	#sub rupeeIndian.tf by rupeeIndian;
+} pnum;
 
-#feature tnum {
-#	sub zero by zero.tf;
-#	sub one by one.tf;
-#	sub two by two.tf;
-#	sub three by three.tf;
-#	sub four by four.tf;
-#	sub five by five.tf;
-#	sub six by six.tf;
-#	sub seven by seven.tf;
-#	sub eight by eight.tf;
-#	sub nine by nine.tf;
-#	sub euro by euro.tf;
-#	sub sterling by sterling.tf;
-#	sub yen by yen.tf;
-#	sub currency by currency.tf;
-#	sub cent by cent.tf;
-#	sub dollar by dollar.tf;
-#	sub rupeeIndian by rupeeIndian.tf;
-#} tnum;
+feature tnum {
+	sub zero by zero.tf;
+	sub one by one.tf;
+	sub two by two.tf;
+	sub three by three.tf;
+	sub four by four.tf;
+	sub five by five.tf;
+	sub six by six.tf;
+	sub seven by seven.tf;
+	sub eight by eight.tf;
+	sub nine by nine.tf;
+	#sub euro by euro.tf;
+	#sub sterling by sterling.tf;
+	#sub yen by yen.tf;
+	#sub currency by currency.tf;
+	#sub cent by cent.tf;
+	#sub dollar by dollar.tf;
+	#sub rupeeIndian by rupeeIndian.tf;
+} tnum;
 
 
 
@@ -143,16 +143,16 @@ include(../../shared.second.fea);
 
 #!!
 
-#feature kern {
-#	lookup KERN_LTR {
-#		lookupflag IgnoreMarks;
-#		include(kern.fea)
-#	} KERN_LTR;	
-#} kern;#
+feature kern {
+	lookup KERN_LTR {
+		lookupflag IgnoreMarks;
+		include(kern.fea)
+	} KERN_LTR;	
+} kern;#
 
-#feature dist { # Distances = kerning
-#	lookup KERN_LTR;
-#} dist;
+feature dist { # Distances = kerning
+	lookup KERN_LTR;
+} dist;
 
 include(markclasses.fea);
 feature mark {

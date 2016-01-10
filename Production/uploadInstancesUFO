@@ -52,10 +52,7 @@ do
 		# generate mark feature for font.ufo
 		echo "Generating feature files for $folder"
 		cd "$folder"
-		#generateAllKernFiles.py
 		appendGroupsUFO.py -g ../../shared.groups.txt font.ufo # implant COMBINING_MARKS class
-		generateAllMarkFiles.py
-		generateAllKernFiles.py
 		cd ..
 
 		# add weightClass definition files
@@ -70,8 +67,13 @@ do
     		fi
     	done
 	done
+	# generate kern files
+	generateAllKernFiles.py
+	# generate mark feature files
+	generateAllMarkFiles.py
 	cd ..
 done
+
 
 # generate TTFs (via RoboFont)
 for family in "Rasa"
