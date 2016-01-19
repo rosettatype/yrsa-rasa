@@ -20,8 +20,8 @@ feature aalt{
 	feature dnom;
 	feature frac;
 	feature ordn;
-	#feature pnum; #!!
-	#feature tnum; #!!
+	feature pnum;
+	feature tnum;
 	feature calt;
 	feature case;
 
@@ -76,6 +76,10 @@ feature locl {
 			} locl_NLD;
 
 #!! add Gujarati specific punctuation
+	script gujr;
+		sub rupeeIndian by rupeeIndian.gujr;
+	script gjr2;
+		sub rupeeIndian by rupeeIndian.gujr;
 
 } locl;
 
@@ -87,14 +91,12 @@ feature locl {
 include(../../shared.first.fea);
 include(../../shared.frac.fea);
 include(../../shared.second.fea);
-#include(../uprights.gujarati.fea);
+include(../uprights.gujarati.fea);
 
 
 
 #----------------------------------------------------------------------------
 # Figures
-
-#!! add Gujarati figures and monetary symbols and TF
 
 feature pnum {
 	sub zero.tf by zero;
@@ -107,13 +109,28 @@ feature pnum {
 	sub seven.tf by seven;
 	sub eight.tf by eight;
 	sub nine.tf by nine;
-	#sub euro.tf by euro;
-	#sub sterling.tf by sterling;
-	#sub yen.tf by yen;
-	#sub currency.tf by currency;
-	#sub cent.tf by cent;
-	#sub dollar.tf by dollar;
-	#sub rupeeIndian.tf by rupeeIndian;
+	sub euro.tf by euro;
+	sub sterling.tf by sterling;
+	sub yen.tf by yen;
+	sub cent.tf by cent;
+	sub dollar.tf by dollar;
+	sub ruble.tf by ruble;
+	sub liraTurkish.tf by liraTurkish;
+	sub rupeeIndian.tf by rupeeIndian;
+	sub rupeeIndian.gujr.tf by rupeeIndian.gujr;
+
+	sub gjZero by gjZero.tf;
+	sub gjOne by gjOne.tf;
+	sub gjTwo by gjTwo.tf;
+	sub gjThree by gjThree.tf;
+	sub gjFour by gjFour.tf;
+	sub gjFive by gjFive.tf;
+	sub gjSix by gjSix.tf;
+	sub gjSix.alt by gjSix.alt.tf;
+	sub gjSeven by gjSeven.tf;
+	sub gjEight by gjEight.tf;
+	sub gjNine by gjNine.tf;
+	sub gjRupee by gjRupee.tf;
 } pnum;
 
 feature tnum {
@@ -127,13 +144,28 @@ feature tnum {
 	sub seven by seven.tf;
 	sub eight by eight.tf;
 	sub nine by nine.tf;
-	#sub euro by euro.tf;
-	#sub sterling by sterling.tf;
-	#sub yen by yen.tf;
-	#sub currency by currency.tf;
-	#sub cent by cent.tf;
-	#sub dollar by dollar.tf;
-	#sub rupeeIndian by rupeeIndian.tf;
+	sub euro by euro.tf;
+	sub sterling by sterling.tf;
+	sub yen by yen.tf;
+	sub cent by cent.tf;
+	sub dollar by dollar.tf;
+	sub ruble by ruble.tf;
+	sub liraTurkish by liraTurkish.tf;
+	sub rupeeIndian by rupeeIndian.tf;
+	sub rupeeIndian.gujr by rupeeIndian.gujr.tf;
+
+	sub gjZero.tf by gjZero;
+	sub gjOne.tf by gjOne;
+	sub gjTwo.tf by gjTwo;
+	sub gjThree.tf by gjThree;
+	sub gjFour.tf by gjFour;
+	sub gjFive.tf by gjFive;
+	sub gjSix.tf by gjSix;
+	sub gjSix.alt.tf by gjSix.alt;
+	sub gjSeven.tf by gjSeven;
+	sub gjEight.tf by gjEight;
+	sub gjNine.tf by gjNine;
+	sub gjRupee.tf by gjRupee;
 } tnum;
 
 

@@ -8,33 +8,33 @@ translateWeightClass=( "Light:300" "Regular:400" ":400" "Medium:500" "Semibold:6
 
 
 # delete old UFO instances
-for family in "Rasa"
-do
-	cd "$family"
-	shopt -s nullglob
-	for i in */
-	do
-		UFO=$i"font.ufo"
-		TTF=$i"font.ttf"
-		OTF=$i"font.otf"
-		if [[ -d $UFO ]]
-		then
-			echo "Removing old $UFO"
-			rm -R $UFO
-		fi
-		if [[ -f $TTF ]]
-		then
-			echo "Removing old $TTF"
-			rm $TTF
-		fi
-		if [[ -f $OTF ]]
-		then
-			echo "Removing old $OTF"
-			rm $OTF
-		fi
-	done
-	cd ..
-done
+#for family in "Rasa"
+#do
+#	cd "$family"
+#	shopt -s nullglob
+#	for i in */
+#	do
+#		UFO=$i"font.ufo"
+#		TTF=$i"font.ttf"
+#		OTF=$i"font.otf"
+#		if [[ -d $UFO ]]
+#		then
+#			echo "Removing old $UFO"
+#			rm -R $UFO
+#		fi
+#		if [[ -f $TTF ]]
+#		then
+#			echo "Removing old $TTF"
+#			rm $TTF
+#		fi
+#		if [[ -f $OTF ]]
+#		then
+#			echo "Removing old $OTF"
+#			rm $OTF
+#		fi
+#	done
+#	cd ..
+#done
 
 # generate new UFOs
 makeInstancesUFO -d Rasa.designspace -n

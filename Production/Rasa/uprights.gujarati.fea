@@ -1,0 +1,854 @@
+#----------------------------------------------------------------------------
+# Classes
+
+# All Gujarati glyphs
+#@AllLatin = [endash.gujr]; #!!
+
+# Rakar and rukar substitutions
+# all half forms besides halfs from Ka, Ja, Pha, KRa, and contextual half forms
+# gjYa.alt2 needs to be mapped to gjYa.alt (at the end)
+@AllHalfForms = [gjKh gjG gjGh gjC gjNy gjNn gjT gjTh gjDh gjN gjP gjB gjBh gjM gjY gjR gjL gjLl gjV gjSh  gjSs gjS gjKSs gjJNy gjKSsR gjKhR gjGR gjGhR gjNnR gjTR gjThR gjDRY gjDhR gjNR gjPR gjBR gjBhR gjMR gjShR gjSsR gjSTR gjSR gjKT gjKM gjKY gjKSh gjKSsY gjKS gjKhY gjGhN gjNgM gjNgY gjJNyY gjJY gjJhY gjNyY gjTthY gjDdM gjDdY gjTT gjTTY gjTN gjTM gjTY gjDM gjDY gjDhN gjNN gjNM gjPT gjPhY gjPhS gjBY gjLY gjLlY gjVY gjShC gjShN gjShL gjShV gjSTh gjSY gjHM gjHY gjY.alt2]; #!! gjVR
+@AllFullForms = [gjKha gjGa gjGha gjCa gjNya gjNna gjTa gjTha gjDha gjNa gjPa gjBa gjBha gjMa gjYa gjRa gjLa gjLla gjVa gjSha  gjSsa gjSa gjKSsa gjJNya gjKSsRa gjKhRa gjGRa gjGhRa gjNnRa gjTRa gjThRa gjDRYa gjDhRa gjNRa gjPRa gjBRa gjBhRa gjMRa gjShRa gjSsRa gjSTRa gjSRa gjKTa gjKMa gjKYa gjKSha gjKSsYa gjKSa gjKhYa gjGhNa gjNgMa gjNgYa gjJNyYa gjJYa gjJhYa gjNyYa gjTthYa gjDdMa gjDdYa gjTTa gjTTYa gjTNa gjTMa gjTYa gjDMa gjDYa gjDhNa gjNNa gjNMa gjPTa gjPhYa gjPhSa gjBYa gjLYa gjLlYa gjVYa gjShCa gjShNa gjShLa gjShVa gjSTha gjSYa gjHMa gjHYa gjYa.alt]; #!! gjVRa
+@AllBaseForms = [gjKa gjKha gjGa gjGha gjNga gjCa gjCha gjJa gjJha gjNya gjTta gjTtha gjDda gjDdha gjNna gjTa gjTha gjDa gjDha gjNa gjPa gjPha gjBa gjBha gjMa gjYa gjRa gjLa gjLla gjVa gjSha gjSsa gjSa gjHa gjKSsa gjJNya gjKRa gjKKRa gjKSsRa gjKhRa gjGRa gjGhRa gjJRa gjJhRa gjNnRa gjTRa gjThRa gjDRa gjDRYa gjDhRa gjNRa gjPRa gjPhRa gjBRa gjBhRa gjMRa gjLlRa  gjShRa gjSsRa gjSKRa gjSTRa gjSRa gjKKa gjKTta gjKTa gjKMa gjKYa gjKSha gjKSsYa gjKSa gjKhYa gjGhNa gjNgKa gjNgKSsa gjNgMa gjNgYa gjJKa gjJNyYa gjJYa gjJhYa gjNyYa gjTtTta gjTtTtha gjTtVa gjTthTtha gjTthYa gjDdDda gjDdNa gjDdMa gjDdYa gjDdVa gjDdhDdha gjDdhNa gjTTa gjTTYa gjTNa gjTMa gjTYa gjDGa gjDGha gjDDa gjDDha gjDNa gjDBa gjDMa gjDYa gjDVa gjDhNa gjNNa gjNMa gjPKa gjPTa gjPPha gjPhTta gjPhYa gjPhSa gjBKa gjBYa gjMKa gjMPha gjLKa gjLDda gjLYa gjLlYa gjVYa gjShCa gjShNa gjShLa gjShVa gjSsTta gjSsTtha gjSsDda gjSKa gjSDda gjSTta gjSTha gjSPha gjSYa gjHNna gjHNa gjHLa gjHVa gjHMa gjHYa gjJa_gjMatraAa gjJa_gjMatraIi gjJRa_gjMatraAa gjJRa_gjMatraIi gjNna_gjMatraU gjRa_gjMatraU gjRa_gjMatraUu gjLla_gjMatraVocalicR gjLla_gjMatraVocalicRr gjKSsa_gjMatraU gjDRa.alt gjDGa.alt gjDGha.alt gjDDha.alt gjDNa.alt gjDBa.alt gjDVa.alt gjYa.alt]; #!! gjVRa
+
+# Classes for contextual substitutions (same as kern classes)
+@gKa_right = [gjKa gjKRa gjKKa gjKKRa gjK gjKR gjKT gjKM gjKY gjKTa gjKMa gjKYa gjK.alt gjK.alt2 gjKR.alt gjKR.alt2 gjKTta gjKSa gjKS gjKSha gjKSh];
+@gGa_right = [gjGa gjG gjGRa];
+@gGha_right = [gjGha gjGh gjGhR gjGhN gjGhRa gjGhNa];
+@gCa_right = [gjCa gjC gjA gjAa gjCandraE gjE gjAi gjCandraO gjO gjAu];
+@gCha_right = [gjCha];
+@gJa_right = [gjJa gjJRa gjJKa gjJa_gjMatraAa gjJa_gjMatraIi gjJRa_gjMatraAa gjJRa_gjMatraIi gjJY gjJYa gjJ gjJ.alt gjJ.alt2];
+@gJha_right = [gjJha gjJhY gjJhYa];
+@gNya_right = [gjNya gjNy gjNyY gjNyYa];
+@gTta_right = [gjTta];
+@gTtha_right = [gjTtha gjTthY gjTthYa];
+@gDda_right = [gjDda gjNga gjDdY gjNgY gjNgYa gjDdYa gjNgM gjNgMa gjDdM gjDdMa];
+@gDdha_right = [gjDdha];
+@gNna_right = [gjNna gjNn gjNna_gjMatraU];
+@gTa_right = [gjTa gjT gjT.alt gjTY gjTN gjTNa gjTMa gjTYa];
+@gTha_right = [gjTha gjTh gjThR gjThRa gjTh.alt];
+@gDa_right = [gjDa gjDDa];
+@gDha_right = [gjDha gjDh gjDhR gjDhN gjDhRa gjDhNa gjDh.alt];
+@gNa_right = [gjNa gjN gjNM gjNRa gjNMa gjN.alt gjN.alt3];
+@gPa_right = [gjPa gjSsa gjKha gjKh gjKhR gjP gjPR gjSs gjSs.alt gjSsR gjKhRa gjPRa gjSsRa gjPKa gjPPha gjKhY gjKhYa];
+@gPha_right = [gjPha gjPhRa gjPh gjPhY gjPhYa gjPh.alt gjPh.alt2 gjPhTta gjPhS gjPhSa];
+@gBa_right = [gjBa gjB gjBKa gjBR gjBRa gjBYa gjBY];
+@gBha_right = [gjBha gjBh gjBhR gjBhRa];
+@gMa_right = [gjMa gjM gjMR gjMRa gjMKa gjMPha];
+@gYa_right = [gjYa gjY gjY.alt];
+@gLa_right = [gjLa gjL gjLY gjLKa gjLDda gjLYa];
+@gLla_right = [gjLla gjLl gjLlY gjLlYa gjLla_gjMatraVocalicR gjLla_gjMatraVocalicRr];
+@gVa_right = [gjVa gjV gjVR gjVY gjVYa]; #!! gjVRa
+@gSa_right = [gjSa gjRa gjSKa gjSTta gjSPha gjSKRa gjRa_gjMatraU gjS gjS.alt gjSR gjSY gjSTR gjSTh gjSTRa gjSRa gjSTha gjSYa];
+@gSha_right = [gjSha gjSh];
+@gHa_right = [gjHa gjHY gjHM gjHMa gjHYa];
+@gKSsa_right = [gjKSsa gjKSs gjKSsR gjKSsY gjKSsRa gjKSsYa gjKSsa_gjMatraU];
+@gHNa_right = [gjHNa gjHNna gjHLa gjHVa];
+# Classes for gjMatraIi contextual substitutions
+@gKa_left = [gjKa gjKRa gjKKa gjKKRa gjJKa gjLKa gjSKRa gjBKa gjMKa gjPKa gjSKa];
+@gPha_left = [gjPha gjPhRa gjMPha gjPPha gjSPha];
+@gTta_left = [gjTta gjKTta gjPhTta gjSTta];
+
+
+
+#----------------------------------------------------------------------------
+# Independent Lookups
+
+# pres
+
+lookup makeContextualHalfForms1 {
+	sub gjKa gjVirama by gjK;
+	sub gjPha gjVirama by gjPh;
+	sub gjKRa gjVirama by gjKR;
+	#sub gjKa gjVirama gjRakar by gjKR;
+	sub gjJa gjVirama by gjJ;
+} makeContextualHalfForms1;
+
+lookup makeContextualHalfForms2 {
+	sub gjKa gjVirama by gjK.alt;
+	sub gjPha gjVirama by gjPh.alt;
+	sub gjKRa gjVirama by gjKR.alt;
+	sub gjJa gjVirama by gjJ.alt;
+} makeContextualHalfForms2;
+
+lookup makeContextualHalfForms3 {
+	sub gjKa gjVirama by gjK.alt2;
+	sub gjPha gjVirama by gjPh.alt2;
+	sub gjKRa gjVirama by gjKR.alt2;
+	sub gjJa gjVirama by gjJ.alt2;
+} makeContextualHalfForms3;
+
+lookup makePostYa {
+	sub gjVirama gjY by gjY.alt2;
+	sub gjVirama gjYa by gjYa.alt;
+} makePostYa;
+
+lookup makePostRa {
+	sub gjRakar by gjR gjMatraAa.base;
+} makePostRa;
+
+lookup makePostNa {
+	sub gjNa by gjN.alt2 gjMatraAa;
+} makePostNa;
+
+# psts
+
+lookup decomposeMatras {
+	sub gjMatraCandraO by gjMatraAa gjMatraCandraE;
+	sub gjMatraO by gjMatraAa gjMatraE;
+	sub gjMatraAu by gjMatraAa gjMatraAi;
+} decomposeMatras;
+
+lookup deleteMatraAa {
+	sub gjJa_gjMatraAa gjMatraAa by gjJa_gjMatraAa;
+	sub gjJRa_gjMatraAa gjMatraAa by gjJRa_gjMatraAa;
+} deleteMatraAa;
+
+# blws
+
+lookup makeMatraAa_gMatraVocalicR {
+	sub gjMatraVocalicR by gjMatraAa_gjMatraVocalicR;
+	sub gjMatraVocalicRr by gjMatraAa_gjMatraVocalicRr;
+} makeMatraAa_gMatraVocalicR;
+
+
+
+#----------------------------------------------------------------------------
+# MarkAttachmentType Classes
+
+@gjMarks_conjuncts = [gjVirama gjRakar];
+
+@gjMarks_above = [gjMatraCandraE gjMatraCandraE_gjAnusvara gjMatraCandraE_gjReph gjMatraCandraE_gjReph_gjAnusvara gjMatraE gjMatraE_gjAnusvara gjMatraE_gjReph gjMatraE_gjReph_gjAnusvara gjMatraAi gjMatraAi_gjAnusvara gjMatraAi_gjReph gjMatraAi_gjReph_gjAnusvara gjCandrabindu gjAnusvara gjReph gjReph_gjAnusvara gjAnusvara.alt gjReph.alt gjReph_gjAnusvara.alt gjAnusvara.alt2 ];
+
+@gjMarks_below = [gjMatraU gjMatraUu gjMatraVocalicR gjMatraVocalicRr gjMatraVocalicL gjMatraVocalicLl gjNukta gjRakar_gjMatraU gjRakar_gjMatraUu];
+
+
+
+
+
+
+
+
+
+
+
+#----------------------------------------------------------------------------
+# Akhand ligatures (KSsa, JNya)
+
+feature akhn {
+	lookupflag MarkAttachmentType @gjMarks_conjuncts;
+	
+	sub gjKa gjVirama gjSsa by gjKSsa;
+	sub	gjJa gjVirama gjNya by gjJNya;
+} akhn;
+
+
+
+#----------------------------------------------------------------------------
+# Reph Form
+
+feature rphf {
+	lookupflag MarkAttachmentType @gjMarks_conjuncts;
+
+	sub gjRa gjVirama by gjReph;
+} rphf;
+
+
+
+#----------------------------------------------------------------------------
+# Rakar conjuncts (gjr2 script only)
+
+feature rkrf {
+
+script DFLT;
+	language dflt;
+		lookup RKRF_1 {
+			lookupflag MarkAttachmentType @gjMarks_conjuncts;
+			
+			sub gjKa gjVirama gjKa gjVirama gjRa by gjKKRa;
+			sub gjSa gjVirama gjKa gjVirama gjRa by gjSKRa;
+			sub gjSa gjVirama gjTa gjVirama gjRa by gjSTRa;
+			#sub gjDa gjVirama gjRa gjVirama gjYa by gjDRYa; #!! ?
+		} RKRF_1;
+		lookup RKRF_2 {
+			lookupflag MarkAttachmentType @gjMarks_conjuncts;
+			
+			sub gjKa gjVirama gjRa by gjKRa;
+			sub gjKSsa gjVirama gjRa by gjKSsRa;
+			sub gjKha gjVirama gjRa by gjKhRa;
+			sub gjGa gjVirama gjRa by gjGRa;
+			sub gjGha gjVirama gjRa by gjGhRa;
+			sub gjJa gjVirama gjRa by gjJRa;
+			sub gjJha gjVirama gjRa by gjJhRa;
+			sub gjNna gjVirama gjRa by gjNnRa;
+			sub gjTa gjVirama gjRa by gjTRa;
+			sub gjTha gjVirama gjRa by gjThRa;
+			sub gjDa gjVirama gjRa by gjDRa;
+			sub gjDha gjVirama gjRa by gjDhRa;
+			sub gjNa gjVirama gjRa by gjNRa;
+			sub gjPa gjVirama gjRa by gjPRa;
+			sub gjPha gjVirama gjRa by gjPhRa;
+			sub gjBa gjVirama gjRa by gjBRa;
+			sub gjBha gjVirama gjRa by gjBhRa;
+			sub gjMa gjVirama gjRa by gjMRa;
+			#sub gjVa gjVirama gjRa by gjVRa; #!!
+			sub gjLla gjVirama gjRa by gjLlRa;
+			sub gjSha gjVirama gjRa by gjShRa;
+			sub gjSsa gjVirama gjRa by gjSsRa;
+			sub gjSa gjVirama gjRa by gjSRa;
+		} RKRF_2;
+
+script gjr2;
+	language dflt;
+		lookup RKRF_1;
+		lookup RKRF_2;
+
+} rkrf;
+
+
+
+#----------------------------------------------------------------------------
+# Below-base forms (Rakar)
+
+feature blwf {
+
+script DFLT;
+	language dflt;
+		lookup BLWF {
+			sub gjVirama gjRa by gjRakar;
+		} BLWF;
+
+script gjr2;
+	language dflt;
+		lookup BLWF;
+
+script gujr;
+	language dflt;
+		sub gjRa gjVirama by gjRakar;
+
+} blwf;
+
+
+
+#----------------------------------------------------------------------------
+# Half forms
+
+feature half {
+
+script DFLT;
+	language dflt;
+		lookup HALF {
+			lookupflag MarkAttachmentType @gjMarks_conjuncts;
+			
+			# Ka does not do make half unless in good context !!
+			# Ja does not do make half unless in good context
+			# Pha does not do make half unless in good context
+			# KRa does not do make half unless in good context
+			sub gjKha gjVirama by gjKh;
+			sub gjGa gjVirama by gjG;
+			sub gjGha gjVirama by gjGh;
+			sub gjCa gjVirama by gjC;
+			sub gjNya gjVirama by gjNy;
+			sub gjNna gjVirama by gjNn;
+			sub gjTa gjVirama by gjT;
+			sub gjTha gjVirama by gjTh;
+			sub gjDha gjVirama by gjDh;
+			sub gjNa gjVirama by gjN;
+			sub gjPa gjVirama by gjP;
+			sub gjBa gjVirama by gjB;
+			sub gjBha gjVirama by gjBh;
+			sub gjMa gjVirama by gjM;
+			sub gjYa gjVirama by gjY;
+			sub gjLa gjVirama by gjL;
+			sub gjLla gjVirama by gjLl;
+			sub gjVa gjVirama by gjV;
+			sub gjSha gjVirama by gjSh;
+			sub gjSsa gjVirama by gjSs;
+			sub gjSa gjVirama by gjS;
+			sub gjKSsa gjVirama by gjKSs;
+			sub gjJNya gjVirama by gjJNy;
+			sub gjDa gjVirama gjRakar gjY by gjDRY; # gjDRY
+		} HALF;
+		
+		lookup HALF_RKRF {
+			lookupflag MarkAttachmentType @gjMarks_conjuncts;
+			
+			sub gjSTRa gjVirama by gjSTR;
+			sub gjDRYa gjVirama by gjDRY;
+			sub gjKhRa gjVirama by gjKhR;
+			sub gjGRa gjVirama by gjGR;
+			sub gjGhRa gjVirama by gjGhR;
+			sub gjNnRa gjVirama by gjNnR;
+			sub gjTRa gjVirama by gjTR;
+			sub gjThRa gjVirama by gjThR;
+			sub gjDhRa gjVirama by gjDhR;
+			sub gjNRa gjVirama by gjNR;
+			sub gjPRa gjVirama by gjPR;
+			sub gjBRa gjVirama by gjBR;
+			sub gjBhRa gjVirama by gjBhR;
+			sub gjMRa gjVirama by gjMR;
+			#sub gjVRa gjVirama by gjVR; #!!
+			sub gjShRa gjVirama by gjShR;
+			sub gjSsRa gjVirama by gjSsR;
+			sub gjSRa gjVirama by gjSR;
+			sub gjKSsRa gjVirama by gjKSsR;
+		} HALF_RKRF;
+
+script gjr2;
+	language dflt;
+		lookup HALF;
+		lookup HALF_RKRF;
+
+script gujr;
+	language dflt;
+		lookup HALF;
+		
+		lookup HALF_GUJR {
+			lookupflag MarkAttachmentType @gjMarks_conjuncts;
+			
+			sub gjNga gjVirama by gjNg;
+			sub gjTta gjVirama by gjTt;
+			sub gjTtha gjVirama by gjTth;
+			sub gjDda gjVirama by gjDd;
+			sub gjDdha gjVirama by gjDdh;
+			sub gjDa gjVirama by gjD;
+		} HALF_GUJR;
+		
+		# Halfs from rakar conjuncts, equivalent of HALF_RKRF
+		lookup HALF_VATU {
+			lookupflag MarkAttachmentType @gjMarks_conjuncts;
+			
+			sub gjSTR gjRakar by gjSTR;
+			sub gjDRY gjRakar by gjDRY;
+			sub gjKhR gjRakar by gjKhR;
+			sub gjGR gjRakar by gjGR;
+			sub gjGhR gjRakar by gjGhR;
+			sub gjNnR gjRakar by gjNnR;
+			sub gjTR gjRakar by gjTR;
+			sub gjThR gjRakar by gjThR;
+			sub gjDhR gjRakar by gjDhR;
+			sub gjNR gjRakar by gjNR;
+			sub gjPR gjRakar by gjPR;
+			sub gjBR gjRakar by gjBR;
+			sub gjBhR gjRakar by gjBhR;
+			sub gjMR gjRakar by gjMR;
+			sub gjVR gjRakar by gjVR;
+			sub gjShR gjRakar by gjShR;
+			sub gjSsR gjRakar by gjSsR;
+			sub gjSR gjRakar by gjSR;
+			sub gjKSsR gjRakar by gjKSsR;
+			
+			# fix for odd BLWS implementations (Mac) - gjRakar is not formed after half forms
+			sub gjSTR gjRa gjVirama by gjSTR;
+			sub gjDRY gjRa gjVirama by gjDRY;
+			sub gjKhR gjRa gjVirama by gjKhR;
+			sub gjGR gjRa gjVirama by gjGR;
+			sub gjGhR gjRa gjVirama by gjGhR;
+			sub gjNnR gjRa gjVirama by gjNnR;
+			sub gjTR gjRa gjVirama by gjTR;
+			sub gjThR gjRa gjVirama by gjThR;
+			sub gjDhR gjRa gjVirama by gjDhR;
+			sub gjNR gjRa gjVirama by gjNR;
+			sub gjPR gjRa gjVirama by gjPR;
+			sub gjBR gjRa gjVirama by gjBR;
+			sub gjBhR gjRa gjVirama by gjBhR;
+			sub gjMR gjRa gjVirama by gjMR;
+			sub gjVR gjRa gjVirama by gjVR;
+			sub gjShR gjRa gjVirama by gjShR;
+			sub gjSsR gjRa gjVirama by gjSsR;
+			sub gjSR gjRa gjVirama by gjSR;
+			sub gjKSsR gjRa gjVirama by gjKSsR;
+		} HALF_VATU;
+
+} half;
+
+
+
+#----------------------------------------------------------------------------
+# Rakar conjuncts (gujr script only)
+
+feature vatu {
+
+script gjr;
+	language dflt;
+		lookup VATU_1 {
+			lookupflag MarkAttachmentType @gjMarks_conjuncts;
+		
+			sub gjKa gjVirama gjKRa by gjKKRa;
+			sub gjS gjKRa by gjSKRa;
+			sub gjS gjTRa by gjSTRa;
+			#sub gjKa gjVirama gjKRa by gjKKRa; # Lion-fix - check !!
+			#sub gjS gjKRa by gjSKRa;
+			#sub gjS gjTRa by gjSTRa;
+			#sub gjDRa gjVirama gjYa by gjDRYa;
+		
+			sub gjKa gjRakar by gjKRa;
+			sub gjKSsa gjRakar by gjKSsRa;
+			sub gjKha gjRakar by gjKhRa;
+			sub gjGa gjRakar by gjGRa;
+			sub gjGha gjRakar by gjGhRa;
+			sub gjJa gjRakar by gjJRa;
+			sub gjJha gjRakar by gjJhRa;
+			sub gjNna gjRakar by gjNnRa;
+			sub gjTa gjRakar by gjTRa;
+			sub gjTha gjRakar by gjThRa;
+			sub gjDa gjRakar by gjDRa;
+			sub gjDha gjRakar by gjDhRa;
+			sub gjNa gjRakar by gjNRa;
+			sub gjPa gjRakar by gjPRa;
+			sub gjPha gjRakar by gjPhRa;
+			sub gjBa gjRakar by gjBRa;
+			sub gjBha gjRakar by gjBhRa;
+			sub gjMa gjRakar by gjMRa;
+			#sub gjVa gjRakar by gjVRa; #!!
+			sub gjLla gjRakar by gjLlRa;
+			sub gjSha gjRakar by gjShRa;
+			sub gjSsa gjRakar by gjSsRa;
+			sub gjSa gjRakar by gjSRa;
+		} VATU_1;
+
+} vatu;
+
+
+
+#----------------------------------------------------------------------------
+# Conjuncts (gjr2 script only)
+
+feature cjct {
+
+script DFLT;
+	language dflt;
+		lookup CJCT {
+			lookupflag MarkAttachmentType @gjMarks_conjuncts;
+			
+			sub gjKa gjVirama gjKa by gjKKa;
+			sub gjKa gjVirama gjTta by gjKTta;
+			sub gjNga gjVirama gjKa by gjNgKa;
+			sub gjNga gjVirama gjKSsa by gjNgKSsa;
+			sub gjJa gjVirama gjKa by gjJKa;
+			sub gjTta gjVirama gjTta by gjTtTta;
+			sub gjTta gjVirama gjTtha by gjTtTtha;
+			sub gjTta gjVirama gjVa by gjTtVa;
+			sub gjTtha gjVirama gjTtha by gjTthTtha;
+			sub gjDda gjVirama gjDda by gjDdDda;
+			sub gjDda gjVirama gjNa by gjDdNa;
+			sub gjDda gjVirama gjVa by gjDdVa;
+			sub gjDdha gjVirama gjDdha by gjDdhDdha;
+			sub gjDdha gjVirama gjNa by gjDdhNa;
+			sub gjDa gjVirama gjGa by gjDGa;
+			sub gjDa gjVirama gjGha by gjDGha;
+			sub gjDa gjVirama gjDa by gjDDa;
+			sub gjDa gjVirama gjDha by gjDDha;
+			sub gjDa gjVirama gjNa by gjDNa;
+			sub gjDa gjVirama gjBa by gjDBa;
+			sub gjDa gjVirama gjVa by gjDVa;
+			sub gjPa gjVirama gjKa by gjPKa;
+			sub gjPa gjVirama gjPha by gjPPha;
+			sub gjPha gjVirama gjTta by gjPhTta;
+			sub gjB gjKa by gjBKa;
+			sub gjMa gjVirama gjKa by gjMKa;
+			sub gjMa gjVirama gjPha by gjMPha;
+			sub gjL gjKa by gjLKa;
+			sub gjL gjDda by gjLDda;
+			sub gjSs gjTta by gjSsTta;
+			sub gjSs gjTtha by gjSsTtha;
+			sub gjSs gjDda by gjSsDda;
+			sub gjS gjKa by gjSKa;
+			sub gjS gjDda by gjSDda;
+			sub gjS gjTta by gjSTta;
+			sub gjS gjPha by gjSPha;
+			sub gjHa gjVirama gjNna by gjHNna;
+			sub gjHa gjVirama gjNa by gjHNa;
+			sub gjHa gjVirama gjLa by gjHLa;
+			sub gjHa gjVirama gjVa by gjHVa;
+	} CJCT;
+
+script gjr2;
+	language dflt;
+		lookup CJCT;
+} cjct;
+
+
+
+#----------------------------------------------------------------------------
+# Pre-base Substitutions (conjuncts and pre-base contextual substitutions)
+
+feature pres { # [todo]
+
+script DFLT;
+	language dflt;
+		lookup PRES_CJCT {
+			# Equivalent of 'cjct'
+			sub gjDa gjVirama gjRakar gjYa by gjDRYa; # gjDRYa
+			
+			sub gjKa gjVirama gjKa by gjKKa;
+			sub gjKa gjVirama gjTta by gjKTta;
+			sub gjNga gjVirama gjKa by gjNgKa;
+			sub gjNga gjVirama gjKSsa by gjNgKSsa;
+			sub gjJa gjVirama gjKa by gjJKa;
+			sub gjTta gjVirama gjTta by gjTtTta;
+			sub gjTta gjVirama gjTtha by gjTtTtha;
+			sub gjTta gjVirama gjVa by gjTtVa;
+			sub gjTtha gjVirama gjTtha by gjTthTtha;
+			sub gjDda gjVirama gjDda by gjDdDda;
+			sub gjDda gjVirama gjNa by gjDdNa;
+			sub gjDda gjVirama gjVa by gjDdVa;
+			sub gjDdha gjVirama gjDdha by gjDdhDdha;
+			sub gjDdha gjVirama gjNa by gjDdhNa;
+			sub gjDa gjVirama gjGa by gjDGa;
+			sub gjDa gjVirama gjGha by gjDGha;
+			sub gjDa gjVirama gjDa by gjDDa;
+			sub gjDa gjVirama gjDha by gjDDha;
+			sub gjDa gjVirama gjNa by gjDNa;
+			sub gjDa gjVirama gjBa by gjDBa;
+			sub gjDa gjVirama gjVa by gjDVa;
+			sub gjP gjKa by gjPKa;
+			sub gjP gjPha by gjPPha;
+			sub gjPha gjVirama gjTta by gjPhTta;
+			sub gjB gjKa by gjBKa;
+			sub gjM gjKa by gjMKa;
+			sub gjM gjPha by gjMPha;
+			sub gjL gjKa by gjLKa;
+			sub gjL gjDda by gjLDda;
+			sub gjSs gjTta by gjSsTta;
+			sub gjSs gjTtha by gjSsTtha;
+			sub gjSs gjDda by gjSsDda;
+			sub gjS gjKa by gjSKa;
+			sub gjS gjDda by gjSDda;
+			sub gjS gjTta by gjSTta;
+			sub gjS gjPha by gjSPha;
+			sub gjHa gjVirama gjNna by gjHNna;
+			sub gjHa gjVirama gjNa by gjHNa;
+			sub gjHa gjVirama gjLa by gjHLa;
+			sub gjHa gjVirama gjVa by gjHVa;
+		} PRES_CJCT;
+	
+		lookup PRES_HalfForms {
+			sub gjT gjT gjY by gjTTY;
+			sub gjKa gjVirama gjT by gjKT;
+			sub gjKa gjVirama gjM by gjKM;
+			sub gjKa gjVirama gjY by gjKY;
+			sub gjKa gjVirama gjS by gjKS;
+			sub gjKa gjVirama gjSh by gjKSh;
+			sub gjKha gjVirama gjY by gjKhY;
+			sub gjGh gjN by gjGhN;
+			sub gjNga gjVirama gjM by gjNgM;
+			sub gjNga gjVirama gjY by gjNgY;
+			sub gjJa gjVirama gjY by gjJY;
+			sub gjJha gjVirama gjY by gjJhY;
+			sub gjNy gjY by gjNyY;
+			sub gjTtha gjVirama gjY by gjTthY;
+			sub gjDda gjVirama gjM by gjDdM;
+			sub gjDda gjVirama gjY by gjDdY;
+			sub gjT gjT by gjTT;
+			sub gjT gjM by gjTM;
+			sub gjT gjN by gjTN;
+			sub gjT gjY by gjTY;
+			sub gjDa gjVirama gjM by gjDM;
+			sub gjDa gjVirama gjY by gjDY;
+			sub gjDh gjN by gjDhN;
+			sub gjN gjN by gjNN;
+			sub gjN gjM by gjNM;
+			sub gjP gjT by gjPT;
+			sub gjPha gjVirama gjY by gjPhY;
+			sub gjPha gjVirama gjS by gjPhS;
+			sub gjB gjY by gjBY;
+			sub gjL gjY by gjLY;
+			sub gjLl gjY by gjLlY;
+			sub gjV gjY by gjVY;
+			sub gjSh gjC by gjShC;
+			sub gjSh gjN by gjShN;
+			sub gjSh gjL by gjShL;
+			sub gjSh gjV by gjShV;
+			sub gjS gjTh by gjSTh;
+			#sub gjS gjM by gSM;
+			sub gjS gjY by gjSY;
+			sub gjHa gjVirama gjM by gjHM;
+			sub gjHa gjVirama gjY by gjHY;
+			sub gjKSs gjY by gjKSsY;
+			sub gjJNy gjY by gjJNyY;
+		} PRES_HalfForms;
+		
+		lookup PRES {
+			sub gjTT gjYa by gjTTYa;
+			sub gjKa gjVirama gjTa by gjKTa;
+			sub gjKa gjVirama gjMa by gjKMa;
+			sub gjKa gjVirama gjYa by gjKYa;
+			sub gjKa gjVirama gjSa by gjKSa;
+			sub gjKa gjVirama gjSha by gjKSha;
+			sub gjKh gjYa by gjKhYa;
+			sub gjGh gjNa by gjGhNa;
+			sub gjNga gjVirama gjMa by gjNgMa;
+			sub gjNga gjVirama gjYa by gjNgYa;
+			sub gjJa gjVirama gjYa by gjJYa;
+			sub gjJha gjVirama gjYa by gjJhYa;
+			sub gjNy gjYa by gjNyYa;
+			sub gjTtha gjVirama gjYa by gjTthYa;
+			sub gjDda gjVirama gjMa by gjDdMa;
+			sub gjDda gjVirama gjYa by gjDdYa;
+			sub gjT gjTa by gjTTa;
+			sub gjT gjMa by gjTMa;
+			sub gjT gjNa by gjTNa;
+			sub gjT gjYa by gjTYa;
+			sub gjDa gjVirama gjMa by gjDMa;
+			sub gjDa gjVirama gjYa by gjDYa;
+			sub gjDh gjNa by gjDhNa;
+			sub gjN gjNa by gjNNa;
+			sub gjN gjMa by gjNMa;
+			sub gjP gjTa by gjPTa;
+			sub gjPha gjVirama gjYa by gjPhYa;
+			sub gjPha gjVirama gjSa by gjPhSa;
+			sub gjB gjYa by gjBYa;
+			sub gjL gjYa by gjLYa;
+			sub gjLl gjYa by gjLlYa;
+			sub gjV gjYa by gjVYa;
+			sub gjSh gjCa by gjShCa;
+			sub gjSh gjNa by gjShNa;
+			sub gjSh gjLa by gjShLa;
+			sub gjSh gjVa by gjShVa;
+			sub gjS gjTha by gjSTha;
+			#sub gjS gjMa by gSMa;
+			sub gjS gjYa by gjSYa;
+			sub gjHa gjVirama gjMa by gjHMa;
+			sub gjHa gjVirama gjYa by gjHYa;
+			sub gjKSs gjYa by gjKSsYa;
+			sub gjJNy gjYa by gjJNyYa;
+		} PRES;
+		
+		lookup PRES_ContextualHalfForms {
+			# Contextual alternates for half-forms
+			sub gjT' [@gCa_right @gTta_right @gTha_right @gPa_right @gYa_right @gSa_right ] by gjT.alt;
+			sub gjP' [@gGha_right @gCha_right @gTta_right @gTtha_right @gDdha_right @gDa_right @gPha_right @gMa_right @gSha_right @gKSsa_right @gHNa_right ] by gjP.alt;
+			sub [gjTh gjDh gjY gjS ]' [@gCha_right @gDa_right @gTa_right @gTta_right @gTtha_right @gDdha_right @gMa_right @gNa_right @gSa_right @gKSsa_right ] by [gjTh.alt gjDh.alt gjY.alt gjS.alt];
+			sub gjL' [@gSa_right ] by gjL.alt;
+			sub gjS' [@gCa_right @gCha_right @gTta_right @gTtha_right @gDdha_right @gTa_right @gDa_right @gNa_right @gMa_right @gSa_right @gKSsa_right gjDRa ] by gjS.alt;
+			sub gjSs' [@gCa_right @gCha_right @gNna_right @gDa_right @gDha_right @gNa_right @gPa_right @gBa_right @gBha_right @gSa_right ] by gjSs.alt;
+			# gN.alt, gjN.alt3
+			sub gjN' [@gGa_right @gCa_right @gTta_right @gDdha_right @gTha_right @gMa_right @gSa_right gjSha ] by gjN.alt;
+			sub gjN' [@gJa_right ] by gjN.alt3;
+		} PRES_ContextualHalfForms;
+		# Contextual alternates for half-forms which cannot be in a lookup
+			@gKa_half1_context = [@gNa_right @gJa_right];
+			@gKa_half2_context = [@gGha_right @gDha_right @gTa_right @gDa_right @gNa_right @gPa_right @gBa_right @gBha_right @gLa_right @gLla_right @gVa_right @gSa_right @gHNa_right @gCha_right @gNna_right gjDRa];
+	
+			# gjK gjJ gjPh gKR, gjJ (no default half forms => building from Virama)
+			sub gjKa' lookup makeContextualHalfForms1 gjVirama' @gKa_half1_context;
+			sub gjPha' lookup makeContextualHalfForms1 gjVirama' @gKa_half1_context;
+			sub gjKRa' lookup makeContextualHalfForms1 gjVirama' @gKa_half1_context;
+			sub gjKa' lookup makeContextualHalfForms2 gjVirama' @gKa_half2_context;
+			sub gjPha' lookup makeContextualHalfForms2 gjVirama' @gKa_half2_context;
+			sub gjKRa' lookup makeContextualHalfForms2 gjVirama' @gKa_half2_context;
+			sub gjKa' lookup makeContextualHalfForms3 gjVirama' [@gCa_right @gTha_right];
+			sub gjPha' lookup makeContextualHalfForms3 gjVirama' [@gCa_right @gTha_right];
+			sub gjKRa' lookup makeContextualHalfForms3 gjVirama' [@gCa_right @gTha_right];
+			sub gjJa' lookup makeContextualHalfForms1 gjVirama' [@gGa_right @gCa_right @gNya_right @gTta_right @gDdha_right @gTha_right @gDha_right @gPa_right @gMa_right @gYa_right @gSa_right];
+			sub gjJa' lookup makeContextualHalfForms2 gjVirama' [@gJa_right];
+			sub gjJa' lookup makeContextualHalfForms3 gjVirama' [@gGha_right @gCha_right @gNna_right @gDa_right @gBa_right @gBha_right @gLa_right @gLla_right @gVa_right @gSha_right];
+			# Post form of Na (gjN.alt2)
+			sub [gjKh gjG gjC gjNy gjTh gjP gjB gjBh gjM gjY gjL gjLl gjV ] gjNa' lookup makePostNa;
+			# Post form of Ya (gjY.alt2)
+			sub [gjCha @gTta_left gjDdha gjTtTta gjTtTtha gjTtVa gjDdhDdha gjDdhNa gjDRa gjSsTta gjSsTtha ] gjVirama' lookup makePostYa [gjYa gjY]';
+			# Post form of Ra
+			ignore sub gjLla gjRakar;
+			sub @AllFullForms' gjRakar by @AllHalfForms;
+			sub @AllHalfForms gjRakar' [@AllHalfForms @AllBaseForms] by gjR;
+			sub @AllHalfForms gjRakar' lookup makePostRa;
+		# Contextual forms for MatraI (weight-dependent lookup)
+		lookup PRES_ContextualMatraI {
+			lookupflag IgnoreMarks;
+			#include(ikar.pres.fea); #!!
+		} PRES_ContextualMatraI;
+
+script gjr2;
+	language dflt;
+		lookup PRES_HalfForms;
+		lookup PRES;
+		lookup PRES_ContextualHalfForms;
+		
+		# Contextual alternates for half-forms which cannot be in a lookup
+	
+			# gjK gjJ gjPh gKR, gjJ (no default half forms => building from Virama)
+			sub gjKa' lookup makeContextualHalfForms1 gjVirama' @gKa_half1_context;
+			sub gjPha' lookup makeContextualHalfForms1 gjVirama' @gKa_half1_context;
+			sub gjKRa' lookup makeContextualHalfForms1 gjVirama' @gKa_half1_context;
+			sub gjKa' lookup makeContextualHalfForms2 gjVirama' @gKa_half2_context;
+			sub gjPha' lookup makeContextualHalfForms2 gjVirama' @gKa_half2_context;
+			sub gjKRa' lookup makeContextualHalfForms2 gjVirama' @gKa_half2_context;
+			sub gjKa' lookup makeContextualHalfForms3 gjVirama' [@gCa_right @gTha_right];
+			sub gjPha' lookup makeContextualHalfForms3 gjVirama' [@gCa_right @gTha_right];
+			sub gjKRa' lookup makeContextualHalfForms3 gjVirama' [@gCa_right @gTha_right];
+			sub gjJa' lookup makeContextualHalfForms1 gjVirama' [@gGa_right @gCa_right @gNya_right @gTta_right @gDdha_right @gTha_right @gDha_right @gPa_right @gMa_right @gYa_right @gSa_right];
+			sub gjJa' lookup makeContextualHalfForms2 gjVirama' [@gJa_right];
+			sub gjJa' lookup makeContextualHalfForms3 gjVirama' [@gGha_right @gCha_right @gNna_right @gDa_right @gBa_right @gBha_right @gLa_right @gLla_right @gVa_right @gSha_right];
+			# Post form of Na (gjN.alt2)
+			sub [gjKh gjG gjC gjNy gjTh gjP gjB gjBh gjM gjY gjL gjLl gjV ] gjNa' lookup makePostNa;
+			# Post form of Ya (gjY.alt2)
+			sub [gjCha @gTta_left gjDdha gjTtTta gjTtTtha gjTtVa gjDdhDdha gjDdhNa gjDRa gjSsTta gjSsTtha ] gjVirama' lookup makePostYa [gjYa gjY]';
+			# Post form of Ra
+			ignore sub gjLla gjRakar;
+			sub @AllFullForms' gjRakar by @AllHalfForms;
+			sub @AllHalfForms gjRakar' [@AllHalfForms @AllBaseForms] by gjR;
+			sub @AllHalfForms gjRakar' lookup makePostRa;
+		
+		lookup PRES_ContextualMatraI;
+	
+script gujr;
+	language dflt;
+		lookup PRES_CJCT;
+		lookup PRES_HalfForms;
+		lookup PRES;
+		lookup PRES_ContextualHalfForms;
+		
+		# Contextual alternates for half-forms which cannot be in a lookup
+	
+			# gjK gjJ gjPh gKR, gjJ (no default half forms => building from Virama)
+			sub gjKa' lookup makeContextualHalfForms1 gjVirama' @gKa_half1_context;
+			sub gjPha' lookup makeContextualHalfForms1 gjVirama' @gKa_half1_context;
+			sub gjKRa' lookup makeContextualHalfForms1 gjVirama' @gKa_half1_context;
+			sub gjKa' lookup makeContextualHalfForms2 gjVirama' @gKa_half2_context;
+			sub gjPha' lookup makeContextualHalfForms2 gjVirama' @gKa_half2_context;
+			sub gjKRa' lookup makeContextualHalfForms2 gjVirama' @gKa_half2_context;
+			sub gjKa' lookup makeContextualHalfForms3 gjVirama' [@gCa_right @gTha_right];
+			sub gjPha' lookup makeContextualHalfForms3 gjVirama' [@gCa_right @gTha_right];
+			sub gjKRa' lookup makeContextualHalfForms3 gjVirama' [@gCa_right @gTha_right];
+			sub gjJa' lookup makeContextualHalfForms1 gjVirama' [@gGa_right @gCa_right @gNya_right @gTta_right @gDdha_right @gTha_right @gDha_right @gPa_right @gMa_right @gYa_right @gSa_right];
+			sub gjJa' lookup makeContextualHalfForms2 gjVirama' [@gJa_right];
+			sub gjJa' lookup makeContextualHalfForms3 gjVirama' [@gGha_right @gCha_right @gNna_right @gDa_right @gBa_right @gBha_right @gLa_right @gLla_right @gVa_right @gSha_right];
+			# Post form of Na (gjN.alt2)
+			sub [gjKh gjG gjC gjNy gjTh gjP gjB gjBh gjM gjY gjL gjLl gjV ] gjNa' lookup makePostNa;
+			# Post form of Ya (gjY.alt2)
+			sub [gjCha @gTta_left gjDdha gjTtTta gjTtTtha gjTtVa gjDdhDdha gjDdhNa gjDRa gjSsTta gjSsTtha ] gjVirama' lookup makePostYa [gjYa gjY]';
+			# Post form of Ra
+			ignore sub gjLla gjRakar;
+			sub @AllFullForms' gjRakar by @AllHalfForms;
+			sub @AllHalfForms gjRakar' [@AllHalfForms @AllBaseForms] by gjR;
+			sub @AllHalfForms gjRakar' lookup makePostRa;
+		
+		lookup PRES_ContextualMatraI;
+} pres;
+
+
+
+#----------------------------------------------------------------------------
+# Post-base Substitutions (needs to be before abvs)
+
+feature psts { # [todo]
+
+script DFLT;
+	language dflt;
+		lookup PSTS_ContextualMatraIi {
+			# Contextual alternates (widths) for gjMatraIi
+			lookupflag IgnoreMarks;
+			sub [gjNga gjCha gjJha gjJhRa gjDa gjDDa gjDRa gjDGa gjDGha gjDDha gjDNa gjDBa gjDVa gjTthTtha gjSsTta gjSsTtha ] gjMatraIi' by gjMatraIi.1;
+			sub [@gKa_left gjTtha @gPha_left gjRa gjLla gjNgKa gjNgKSsa ] gjMatraIi' by gjMatraIi.2;
+			sub [gjTta gjKTta gjPhTta gjDdha gjDdhDdha gjDdhNa gjTtTta gjTtTtha gjTtVa gjHNna gjHNa gjHLa gjHVa ] gjMatraIi' by gjMatraIi.3;
+		} PSTS_ContextualMatraIi;
+	
+		sub [gjJa gjJRa ] [gjMatraCandraO gjMatraO gjMatraAu]' lookup decomposeMatras;
+		lookup PSTS_JaMatraLigatures {
+			sub gjJa gjMatraAa by gjJa_gjMatraAa;
+			sub gjJa gjMatraIi by gjJa_gjMatraIi;
+			sub gjJRa gjMatraAa by gjJRa_gjMatraAa;
+			sub gjJRa gjMatraIi by gjJRa_gjMatraIi;
+		} PSTS_JaMatraLigatures;
+		
+		sub [gjJa_gjMatraAa gjJRa_gjMatraAa]' lookup deleteMatraAa gjMatraAa';
+
+script gjr2;
+	language dflt;
+		lookup PSTS_ContextualMatraIi;
+		sub [gjJa gjJRa ] [gjMatraCandraO gjMatraO gjMatraAu]' lookup decomposeMatras;
+		lookup PSTS_JaMatraLigatures;
+		sub [gjJa_gjMatraAa gjJRa_gjMatraAa]' lookup deleteMatraAa gjMatraAa';
+
+script gujr;
+	language dflt;
+		lookup PSTS_ContextualMatraIi;
+		sub [gjJa gjJRa ] [gjMatraCandraO gjMatraO gjMatraAu]' lookup decomposeMatras;
+		lookup PSTS_JaMatraLigatures;
+		sub [gjJa_gjMatraAa gjJRa_gjMatraAa]' lookup deleteMatraAa gjMatraAa';
+} psts;
+
+
+
+#----------------------------------------------------------------------------
+# Above-base substitutions
+
+#include(../abvs.fea); # auto-generated !! # [todo]
+
+
+
+#----------------------------------------------------------------------------
+# Below-base substitutions
+
+feature blws {
+
+# Ligatures of marks anf matras
+sub gjRakar gjMatraU by gjRakar_gjMatraU;
+sub gjRakar gjMatraUu by gjRakar_gjMatraUu;
+
+# Ligatures of consontants with matras
+sub gjNna gjMatraU by gjNna_gjMatraU;
+sub gjRa gjMatraU by gjRa_gjMatraU;
+sub gjRa gjMatraUu by gjRa_gjMatraUu;
+sub gjKSsa gjMatraU by gjKSsa_gjMatraU;
+sub gjLla gjMatraVocalicR by gjLla_gjMatraVocalicR;
+sub gjLla gjMatraVocalicRr by gjLla_gjMatraVocalicRr;
+
+# When Rukar is used decompose full forms to half forms
+sub @AllFullForms' [gjMatraVocalicR gjMatraVocalicRr] by @AllHalfForms;
+sub @AllHalfForms [gjMatraVocalicR gjMatraVocalicRr]' lookup makeMatraAa_gMatraVocalicR;	# "Ya.post" situation be added
+
+} blws;
+
+
+
+#----------------------------------------------------------------------------
+# Stylistic set 1
+
+feature ss01 {
+featureNames {
+	name "Alternative forms of D- conjuncts";
+	name 1 "Alternative forms of D- conjuncts";
+};
+
+	lookup AlternatesConjuncts {
+		# designed so they do not need different MatraI and MatraIi than default forms
+		sub gjDRa by gjDRa.alt;
+		sub gjDGa by gjDGa.alt;
+		sub gjDGha by gjDGha.alt;
+		sub gjDDha by gjDDha.alt;
+		sub gjDNa by gjDNa.alt;
+		sub gjDBa by gjDBa.alt;
+		sub gjDVa by gjDVa.alt;
+	} AlternatesConjuncts;
+
+} ss01;
+
+
+
+#----------------------------------------------------------------------------
+# Stylistic set 2
+
+feature ss02 {
+featureNames {
+	name "Alternative Gujarati figure six";
+	name 1 "Alternative Gujarati figure six";
+};
+	
+	lookup AlternatesFigures {
+		sub gjSix by gjSix.alt;
+		sub gjSix.tf by gjSix.alt.tf;
+	} AlternatesFigures;
+} ss02;
+
+
+
+#----------------------------------------------------------------------------
+# Stylistic alternates
+
+feature salt {
+	lookup AlternatesConjuncts;
+	lookup AlternatesFigures;
+} salt;
+

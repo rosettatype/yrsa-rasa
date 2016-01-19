@@ -6,7 +6,8 @@ table BASE {
 	HorizAxis.BaseScriptList
 		DFLT	romn	-569 0,
 		latn	romn	-569 0,
-		gujr	romn	-569 0;
+		gujr	romn	-569 0,
+		gjr2	romn	-569 0;
 } BASE;
 
 include(../version.fea);
