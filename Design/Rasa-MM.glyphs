@@ -191429,8 +191429,8 @@ width = 0;
 },
 {
 color = 0;
-glyphname = rupeeIndian.alt;
-lastChange = "2016-01-17 19:08:14 +0000";
+glyphname = rupeeIndian.gujr;
+lastChange = "2016-01-19 12:17:49 +0000";
 layers = (
 {
 background = {
@@ -191671,147 +191671,6 @@ nodes = (
 }
 );
 width = 1377;
-}
-);
-},
-{
-color = 9;
-glyphname = rupeeIndian.alt.tf;
-lastChange = "2016-01-17 20:56:06 +0000";
-layers = (
-{
-background = {
-paths = (
-{
-closed = 1;
-nodes = (
-"724 1137 OFFCURVE",
-"717 1262 OFFCURVE",
-"705 1363 CURVE",
-"578 1363 LINE",
-"578 1149 LINE SMOOTH",
-"578 1036 OFFCURVE",
-"578 905 OFFCURVE",
-"533 787 CURVE",
-"414 787 LINE SMOOTH",
-"296 787 OFFCURVE",
-"266 729 OFFCURVE",
-"266 672 CURVE SMOOTH",
-"266 639 OFFCURVE",
-"277 604 OFFCURVE",
-"287 583 CURVE SMOOTH",
-"381 367 OFFCURVE",
-"653 106 OFFCURVE",
-"975 -35 CURVE",
-"1034 75 LINE",
-"820 186 OFFCURVE",
-"609 343 OFFCURVE",
-"524 517 CURVE",
-"672 590 OFFCURVE",
-"724 797 OFFCURVE",
-"724 1050 CURVE SMOOTH"
-);
-},
-{
-closed = 1;
-nodes = (
-"101 1441 LINE",
-"87 1426 LINE",
-"129 1311 LINE",
-"1086 1311 LINE",
-"1100 1325 LINE",
-"1058 1441 LINE"
-);
-},
-{
-closed = 1;
-nodes = (
-"150 1109 LINE",
-"136 1095 LINE",
-"176 980 LINE",
-"1109 980 LINE",
-"1123 994 LINE",
-"1083 1109 LINE"
-);
-}
-);
-};
-components = (
-{
-name = rupeeIndian.alt;
-transform = "{1, 0, 0, 1, -69, 0}";
-}
-);
-layerId = "DAAEA780-4710-4479-B303-5C05B40621B2";
-name = Light;
-width = 1180;
-},
-{
-background = {
-paths = (
-{
-closed = 1;
-nodes = (
-"841 1003 OFFCURVE",
-"823 1262 OFFCURVE",
-"787 1363 CURVE",
-"573 1389 LINE",
-"573 1102 LINE SMOOTH",
-"573 924 OFFCURVE",
-"566 853 OFFCURVE",
-"522 785 CURVE",
-"411 785 LINE SMOOTH",
-"301 785 OFFCURVE",
-"244 710 OFFCURVE",
-"244 637 CURVE SMOOTH",
-"244 602 OFFCURVE",
-"254 564 OFFCURVE",
-"268 522 CURVE SMOOTH",
-"353 298 OFFCURVE",
-"651 16 OFFCURVE",
-"956 -94 CURVE",
-"1060 94 LINE",
-"792 242 OFFCURVE",
-"703 343 OFFCURVE",
-"630 456 CURVE",
-"783 533 OFFCURVE",
-"841 707 OFFCURVE",
-"841 891 CURVE SMOOTH"
-);
-},
-{
-closed = 1;
-nodes = (
-"66 1441 LINE",
-"42 1415 LINE",
-"132 1217 LINE",
-"1187 1217 LINE",
-"1210 1243 LINE",
-"1121 1441 LINE"
-);
-},
-{
-closed = 1;
-nodes = (
-"146 1102 LINE",
-"122 1076 LINE",
-"209 888 LINE",
-"1210 888 LINE",
-"1234 914 LINE",
-"1147 1102 LINE"
-);
-}
-);
-};
-components = (
-{
-name = rupeeIndian.alt;
-transform = "{1, 0, 0, 1, -55, 0}";
-}
-);
-layerId = "925CB40E-795E-477B-BAE7-1EE7D58841B5";
-name = Bold;
-width = 1265;
 }
 );
 },
@@ -193227,6 +193086,147 @@ width = 1440;
 };
 };
 };
+},
+{
+color = 9;
+glyphname = rupeeIndian.gujr.tf;
+lastChange = "2016-01-19 12:18:00 +0000";
+layers = (
+{
+background = {
+paths = (
+{
+closed = 1;
+nodes = (
+"724 1137 OFFCURVE",
+"717 1262 OFFCURVE",
+"705 1363 CURVE",
+"578 1363 LINE",
+"578 1149 LINE SMOOTH",
+"578 1036 OFFCURVE",
+"578 905 OFFCURVE",
+"533 787 CURVE",
+"414 787 LINE SMOOTH",
+"296 787 OFFCURVE",
+"266 729 OFFCURVE",
+"266 672 CURVE SMOOTH",
+"266 639 OFFCURVE",
+"277 604 OFFCURVE",
+"287 583 CURVE SMOOTH",
+"381 367 OFFCURVE",
+"653 106 OFFCURVE",
+"975 -35 CURVE",
+"1034 75 LINE",
+"820 186 OFFCURVE",
+"609 343 OFFCURVE",
+"524 517 CURVE",
+"672 590 OFFCURVE",
+"724 797 OFFCURVE",
+"724 1050 CURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"101 1441 LINE",
+"87 1426 LINE",
+"129 1311 LINE",
+"1086 1311 LINE",
+"1100 1325 LINE",
+"1058 1441 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"150 1109 LINE",
+"136 1095 LINE",
+"176 980 LINE",
+"1109 980 LINE",
+"1123 994 LINE",
+"1083 1109 LINE"
+);
+}
+);
+};
+components = (
+{
+name = rupeeIndian.gujr;
+transform = "{1, 0, 0, 1, -69, 0}";
+}
+);
+layerId = "DAAEA780-4710-4479-B303-5C05B40621B2";
+name = Light;
+width = 1180;
+},
+{
+background = {
+paths = (
+{
+closed = 1;
+nodes = (
+"841 1003 OFFCURVE",
+"823 1262 OFFCURVE",
+"787 1363 CURVE",
+"573 1389 LINE",
+"573 1102 LINE SMOOTH",
+"573 924 OFFCURVE",
+"566 853 OFFCURVE",
+"522 785 CURVE",
+"411 785 LINE SMOOTH",
+"301 785 OFFCURVE",
+"244 710 OFFCURVE",
+"244 637 CURVE SMOOTH",
+"244 602 OFFCURVE",
+"254 564 OFFCURVE",
+"268 522 CURVE SMOOTH",
+"353 298 OFFCURVE",
+"651 16 OFFCURVE",
+"956 -94 CURVE",
+"1060 94 LINE",
+"792 242 OFFCURVE",
+"703 343 OFFCURVE",
+"630 456 CURVE",
+"783 533 OFFCURVE",
+"841 707 OFFCURVE",
+"841 891 CURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"66 1441 LINE",
+"42 1415 LINE",
+"132 1217 LINE",
+"1187 1217 LINE",
+"1210 1243 LINE",
+"1121 1441 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"146 1102 LINE",
+"122 1076 LINE",
+"209 888 LINE",
+"1210 888 LINE",
+"1234 914 LINE",
+"1147 1102 LINE"
+);
+}
+);
+};
+components = (
+{
+name = rupeeIndian.gujr;
+transform = "{1, 0, 0, 1, -55, 0}";
+}
+);
+layerId = "925CB40E-795E-477B-BAE7-1EE7D58841B5";
+name = Bold;
+width = 1265;
+}
+);
 },
 {
 glyphname = liraTurkish.tf;
