@@ -1,6 +1,8 @@
 _ignore
 _meta
+_sources
 font.ufo
 font.ttf
 *.log
 *.tmp
+.sync
