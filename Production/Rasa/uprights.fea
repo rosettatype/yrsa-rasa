@@ -173,8 +173,6 @@ feature tnum {
 #----------------------------------------------------------------------------
 # Kerning and mark positioning
 
-#!!
-
 feature kern {
 	lookup KERN_LTR {
 		lookupflag IgnoreMarks;

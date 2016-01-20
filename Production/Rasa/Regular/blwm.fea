@@ -1,4 +1,4 @@
-# Created: Tue Jan 19 12:44:50 2016
+# Created: Wed Jan 20 11:05:12 2016
 # PS Name: Rasa-Regular
 # MM Inst: None
 # exported from Defcon
@@ -9,24 +9,20 @@ lookup MARK_BASE_blwmBOTTOM {
 	@bGC_gjBha_blwmBOTTOM = [gjBha gjBRa];
 	@bGC_gjDBa.alt_blwmBOTTOM = [gjDBa.alt gjDVa.alt];
 	@bGC_gjDBa_blwmBOTTOM = [gjDBa gjDVa];
-	@bGC_gjDMa_blwmBOTTOM = [gjDMa gjDMa.001];
 	@bGC_gjKKRa_blwmBOTTOM = [gjKKRa gjKKa];
 	@bGC_gjLla_blwmBOTTOM = [gjLla gjLlRa];
 	@bGC_gjMa_blwmBOTTOM = [gjMa gjPKa];
 	@bGC_gjMatraAa_blwmBOTTOM = [gjMatraAa gjMatraAa.base];
-	@bGC_gjNNa_blwmBOTTOM = [gjNNa gjNNa.001];
 	@bGC_gjSsa_blwmBOTTOM = [gjSsa gjSsRa];
 	@bGC_gjThRa_blwmBOTTOM = [gjThRa gjHVa];
 	@bGC_gjYa.alt_blwmBOTTOM = [gjYa.alt gjNRa];
 	pos base @bGC_gjBha_blwmBOTTOM <anchor 1378 0> mark @MC_blwmBOTTOM;
 	pos base @bGC_gjDBa.alt_blwmBOTTOM <anchor 935 -418> mark @MC_blwmBOTTOM;
 	pos base @bGC_gjDBa_blwmBOTTOM <anchor 923 -173> mark @MC_blwmBOTTOM;
-	pos base @bGC_gjDMa_blwmBOTTOM <anchor 1068 0> mark @MC_blwmBOTTOM;
 	pos base @bGC_gjKKRa_blwmBOTTOM <anchor 1376 0> mark @MC_blwmBOTTOM;
 	pos base @bGC_gjLla_blwmBOTTOM <anchor 1320 0> mark @MC_blwmBOTTOM;
 	pos base @bGC_gjMa_blwmBOTTOM <anchor 1091 0> mark @MC_blwmBOTTOM;
 	pos base @bGC_gjMatraAa_blwmBOTTOM <anchor 282 0> mark @MC_blwmBOTTOM;
-	pos base @bGC_gjNNa_blwmBOTTOM <anchor 973 0> mark @MC_blwmBOTTOM;
 	pos base @bGC_gjSsa_blwmBOTTOM <anchor 1021 0> mark @MC_blwmBOTTOM;
 	pos base @bGC_gjThRa_blwmBOTTOM <anchor 1029 0> mark @MC_blwmBOTTOM;
 	pos base @bGC_gjYa.alt_blwmBOTTOM <anchor 982 0> mark @MC_blwmBOTTOM;
@@ -44,6 +40,7 @@ lookup MARK_BASE_blwmBOTTOM {
 	pos base gjDGa.alt <anchor 807 -418> mark @MC_blwmBOTTOM;
 	pos base gjDGha <anchor 944 -173> mark @MC_blwmBOTTOM;
 	pos base gjDGha.alt <anchor 939 -382> mark @MC_blwmBOTTOM;
+	pos base gjDMa <anchor 1068 0> mark @MC_blwmBOTTOM;
 	pos base gjDNa <anchor 723 -191> mark @MC_blwmBOTTOM;
 	pos base gjDNa.alt <anchor 718 -418> mark @MC_blwmBOTTOM;
 	pos base gjDRYa <anchor 1196 0> mark @MC_blwmBOTTOM;
@@ -109,6 +106,7 @@ lookup MARK_BASE_blwmBOTTOM {
 	pos base gjMPha <anchor 1287 -366> mark @MC_blwmBOTTOM;
 	pos base gjMRa <anchor 1096 0> mark @MC_blwmBOTTOM;
 	pos base gjNMa <anchor 1646 0> mark @MC_blwmBOTTOM;
+	pos base gjNNa <anchor 973 0> mark @MC_blwmBOTTOM;
 	pos base gjNa <anchor 960 0> mark @MC_blwmBOTTOM;
 	pos base gjNgKSsa <anchor 1108 -635> mark @MC_blwmBOTTOM;
 	pos base gjNgKa <anchor 707 -609> mark @MC_blwmBOTTOM;
@@ -163,6 +161,7 @@ lookup MARK_BASE_blwmBOTTOM {
 	pos base gjTthTtha <anchor 646 -609> mark @MC_blwmBOTTOM;
 	pos base gjTthYa <anchor 2172 0> mark @MC_blwmBOTTOM;
 	pos base gjTtha <anchor 647 0> mark @MC_blwmBOTTOM;
+	pos base gjVRa <anchor 970 0> mark @MC_blwmBOTTOM;
 	pos base gjVYa <anchor 1801 0> mark @MC_blwmBOTTOM;
 	pos base gjVa <anchor 964 0> mark @MC_blwmBOTTOM;
 	pos base gjYa <anchor 974 0> mark @MC_blwmBOTTOM;
