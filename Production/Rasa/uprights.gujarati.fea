@@ -7,9 +7,9 @@
 # Rakar and rukar substitutions
 # all half forms besides halfs from Ka, Ja, Pha, KRa, and contextual half forms
 # gjYa.alt2 needs to be mapped to gjYa.alt (at the end)
-@AllHalfForms = [gjKh gjG gjGh gjC gjNy gjNn gjT gjTh gjDh gjN gjP gjB gjBh gjM gjY gjR gjL gjLl gjV gjSh  gjSs gjS gjKSs gjJNy gjKSsR gjKhR gjGR gjGhR gjNnR gjTR gjThR gjDRY gjDhR gjNR gjPR gjBR gjBhR gjMR gjShR gjSsR gjSTR gjSR gjKT gjKM gjKY gjKSh gjKSsY gjKS gjKhY gjGhN gjNgM gjNgY gjJNyY gjJY gjJhY gjNyY gjTthY gjDdM gjDdY gjTT gjTTY gjTN gjTM gjTY gjDM gjDY gjDhN gjNN gjNM gjPT gjPhY gjPhS gjBY gjLY gjLlY gjVY gjShC gjShN gjShL gjShV gjSTh gjSY gjHM gjHY gjY.alt2]; #!! gjVR
-@AllFullForms = [gjKha gjGa gjGha gjCa gjNya gjNna gjTa gjTha gjDha gjNa gjPa gjBa gjBha gjMa gjYa gjRa gjLa gjLla gjVa gjSha  gjSsa gjSa gjKSsa gjJNya gjKSsRa gjKhRa gjGRa gjGhRa gjNnRa gjTRa gjThRa gjDRYa gjDhRa gjNRa gjPRa gjBRa gjBhRa gjMRa gjShRa gjSsRa gjSTRa gjSRa gjKTa gjKMa gjKYa gjKSha gjKSsYa gjKSa gjKhYa gjGhNa gjNgMa gjNgYa gjJNyYa gjJYa gjJhYa gjNyYa gjTthYa gjDdMa gjDdYa gjTTa gjTTYa gjTNa gjTMa gjTYa gjDMa gjDYa gjDhNa gjNNa gjNMa gjPTa gjPhYa gjPhSa gjBYa gjLYa gjLlYa gjVYa gjShCa gjShNa gjShLa gjShVa gjSTha gjSYa gjHMa gjHYa gjYa.alt]; #!! gjVRa
-@AllBaseForms = [gjKa gjKha gjGa gjGha gjNga gjCa gjCha gjJa gjJha gjNya gjTta gjTtha gjDda gjDdha gjNna gjTa gjTha gjDa gjDha gjNa gjPa gjPha gjBa gjBha gjMa gjYa gjRa gjLa gjLla gjVa gjSha gjSsa gjSa gjHa gjKSsa gjJNya gjKRa gjKKRa gjKSsRa gjKhRa gjGRa gjGhRa gjJRa gjJhRa gjNnRa gjTRa gjThRa gjDRa gjDRYa gjDhRa gjNRa gjPRa gjPhRa gjBRa gjBhRa gjMRa gjLlRa  gjShRa gjSsRa gjSKRa gjSTRa gjSRa gjKKa gjKTta gjKTa gjKMa gjKYa gjKSha gjKSsYa gjKSa gjKhYa gjGhNa gjNgKa gjNgKSsa gjNgMa gjNgYa gjJKa gjJNyYa gjJYa gjJhYa gjNyYa gjTtTta gjTtTtha gjTtVa gjTthTtha gjTthYa gjDdDda gjDdNa gjDdMa gjDdYa gjDdVa gjDdhDdha gjDdhNa gjTTa gjTTYa gjTNa gjTMa gjTYa gjDGa gjDGha gjDDa gjDDha gjDNa gjDBa gjDMa gjDYa gjDVa gjDhNa gjNNa gjNMa gjPKa gjPTa gjPPha gjPhTta gjPhYa gjPhSa gjBKa gjBYa gjMKa gjMPha gjLKa gjLDda gjLYa gjLlYa gjVYa gjShCa gjShNa gjShLa gjShVa gjSsTta gjSsTtha gjSsDda gjSKa gjSDda gjSTta gjSTha gjSPha gjSYa gjHNna gjHNa gjHLa gjHVa gjHMa gjHYa gjJa_gjMatraAa gjJa_gjMatraIi gjJRa_gjMatraAa gjJRa_gjMatraIi gjNna_gjMatraU gjRa_gjMatraU gjRa_gjMatraUu gjLla_gjMatraVocalicR gjLla_gjMatraVocalicRr gjKSsa_gjMatraU gjDRa.alt gjDGa.alt gjDGha.alt gjDDha.alt gjDNa.alt gjDBa.alt gjDVa.alt gjYa.alt]; #!! gjVRa
+@AllHalfForms = [gjKh gjG gjGh gjC gjNy gjNn gjT gjTh gjDh gjN gjP gjB gjBh gjM gjY gjR gjL gjLl gjV gjSh  gjSs gjS gjKSs gjJNy gjKSsR gjKhR gjGR gjGhR gjNnR gjTR gjThR gjDRY gjDhR gjNR gjPR gjBR gjBhR gjMR gjVR gjShR gjSsR gjSTR gjSR gjKT gjKM gjKY gjKSh gjKSsY gjKS gjKhY gjGhN gjNgM gjNgY gjJNyY gjJY gjJhY gjNyY gjTthY gjDdM gjDdY gjTT gjTTY gjTN gjTM gjTY gjDM gjDY gjDhN gjNN gjNM gjPT gjPhY gjPhS gjBY gjLY gjLlY gjVY gjShC gjShN gjShL gjShV gjSTh gjSY gjHM gjHY gjY.alt2];
+@AllFullForms = [gjKha gjGa gjGha gjCa gjNya gjNna gjTa gjTha gjDha gjNa gjPa gjBa gjBha gjMa gjYa gjRa gjLa gjLla gjVa gjSha  gjSsa gjSa gjKSsa gjJNya gjKSsRa gjKhRa gjGRa gjGhRa gjNnRa gjTRa gjThRa gjDRYa gjDhRa gjNRa gjPRa gjBRa gjBhRa gjMRa gjVRa gjShRa gjSsRa gjSTRa gjSRa gjKTa gjKMa gjKYa gjKSha gjKSsYa gjKSa gjKhYa gjGhNa gjNgMa gjNgYa gjJNyYa gjJYa gjJhYa gjNyYa gjTthYa gjDdMa gjDdYa gjTTa gjTTYa gjTNa gjTMa gjTYa gjDMa gjDYa gjDhNa gjNNa gjNMa gjPTa gjPhYa gjPhSa gjBYa gjLYa gjLlYa gjVYa gjShCa gjShNa gjShLa gjShVa gjSTha gjSYa gjHMa gjHYa gjYa.alt];
+@AllBaseForms = [gjKa gjKha gjGa gjGha gjNga gjCa gjCha gjJa gjJha gjNya gjTta gjTtha gjDda gjDdha gjNna gjTa gjTha gjDa gjDha gjNa gjPa gjPha gjBa gjBha gjMa gjYa gjRa gjLa gjLla gjVa gjSha gjSsa gjSa gjHa gjKSsa gjJNya gjKRa gjKKRa gjKSsRa gjKhRa gjGRa gjGhRa gjJRa gjJhRa gjNnRa gjTRa gjThRa gjDRa gjDRYa gjDhRa gjNRa gjPRa gjPhRa gjBRa gjBhRa gjMRa gjLlRa gjVRa gjShRa gjSsRa gjSKRa gjSTRa gjSRa gjKKa gjKTta gjKTa gjKMa gjKYa gjKSha gjKSsYa gjKSa gjKhYa gjGhNa gjNgKa gjNgKSsa gjNgMa gjNgYa gjJKa gjJNyYa gjJYa gjJhYa gjNyYa gjTtTta gjTtTtha gjTtVa gjTthTtha gjTthYa gjDdDda gjDdNa gjDdMa gjDdYa gjDdVa gjDdhDdha gjDdhNa gjTTa gjTTYa gjTNa gjTMa gjTYa gjDGa gjDGha gjDDa gjDDha gjDNa gjDBa gjDMa gjDYa gjDVa gjDhNa gjNNa gjNMa gjPKa gjPTa gjPPha gjPhTta gjPhYa gjPhSa gjBKa gjBYa gjMKa gjMPha gjLKa gjLDda gjLYa gjLlYa gjVYa gjShCa gjShNa gjShLa gjShVa gjSsTta gjSsTtha gjSsDda gjSKa gjSDda gjSTta gjSTha gjSPha gjSYa gjHNna gjHNa gjHLa gjHVa gjHMa gjHYa gjJa_gjMatraAa gjJa_gjMatraIi gjJRa_gjMatraAa gjJRa_gjMatraIi gjNna_gjMatraU gjRa_gjMatraU gjRa_gjMatraUu gjLla_gjMatraVocalicR gjLla_gjMatraVocalicRr gjKSsa_gjMatraU gjDRa.alt gjDGa.alt gjDGha.alt gjDDha.alt gjDNa.alt gjDBa.alt gjDVa.alt gjYa.alt];
 
 # Classes for contextual substitutions (same as kern classes)
 @gKa_right = [gjKa gjKRa gjKKa gjKKRa gjK gjKR gjKT gjKM gjKY gjKTa gjKMa gjKYa gjK.alt gjK.alt2 gjKR.alt gjKR.alt2 gjKTta gjKSa gjKS gjKSha gjKSh];
@@ -38,7 +38,7 @@
 @gYa_right = [gjYa gjY gjY.alt];
 @gLa_right = [gjLa gjL gjLY gjLKa gjLDda gjLYa];
 @gLla_right = [gjLla gjLl gjLlY gjLlYa gjLla_gjMatraVocalicR gjLla_gjMatraVocalicRr];
-@gVa_right = [gjVa gjV gjVR gjVY gjVYa]; #!! gjVRa
+@gVa_right = [gjVa gjV gjVR gjVY gjVYa gjVRa];
 @gSa_right = [gjSa gjRa gjSKa gjSTta gjSPha gjSKRa gjRa_gjMatraU gjS gjS.alt gjSR gjSY gjSTR gjSTh gjSTRa gjSRa gjSTha gjSYa];
 @gSha_right = [gjSha gjSh];
 @gHa_right = [gjHa gjHY gjHM gjHMa gjHYa];
@@ -191,7 +191,7 @@ script DFLT;
 			sub gjBa gjVirama gjRa by gjBRa;
 			sub gjBha gjVirama gjRa by gjBhRa;
 			sub gjMa gjVirama gjRa by gjMRa;
-			#sub gjVa gjVirama gjRa by gjVRa; #!!
+			sub gjVa gjVirama gjRa by gjVRa;
 			sub gjLla gjVirama gjRa by gjLlRa;
 			sub gjSha gjVirama gjRa by gjShRa;
 			sub gjSsa gjVirama gjRa by gjSsRa;
@@ -287,7 +287,7 @@ script DFLT;
 			sub gjBRa gjVirama by gjBR;
 			sub gjBhRa gjVirama by gjBhR;
 			sub gjMRa gjVirama by gjMR;
-			#sub gjVRa gjVirama by gjVR; #!!
+			sub gjVRa gjVirama by gjVR;
 			sub gjShRa gjVirama by gjShR;
 			sub gjSsRa gjVirama by gjSsR;
 			sub gjSRa gjVirama by gjSR;
@@ -400,7 +400,7 @@ script gjr;
 			sub gjBa gjRakar by gjBRa;
 			sub gjBha gjRakar by gjBhRa;
 			sub gjMa gjRakar by gjMRa;
-			#sub gjVa gjRakar by gjVRa; #!!
+			sub gjVa gjRakar by gjVRa;
 			sub gjLla gjRakar by gjLlRa;
 			sub gjSha gjRakar by gjShRa;
 			sub gjSsa gjRakar by gjSsRa;
