@@ -101394,6 +101394,218 @@ width = 701;
 };
 },
 {
+color = 6;
+glyphname = Iacute_J.NLD;
+lastChange = "2016-01-25 14:17:14 +0000";
+layers = (
+{
+background = {
+components = (
+{
+name = I;
+},
+{
+name = acutecomb.case;
+transform = "{1, 0, 0, 1, -272, 0}";
+}
+);
+};
+components = (
+{
+name = I;
+},
+{
+name = acutecomb.case;
+transform = "{1, 0, 0, 1, 416, 0}";
+},
+{
+name = J;
+transform = "{1, 0, 0, 1, 832, 0}";
+},
+{
+name = acutecomb.case;
+transform = "{1, 0, 0, 1, 1216, 0}";
+}
+);
+layerId = "DAAEA780-4710-4479-B303-5C05B40621B2";
+name = Light;
+width = 1610;
+},
+{
+components = (
+{
+name = I;
+},
+{
+name = acutecomb.case;
+transform = "{1, 0, 0, 1, 481, -1}";
+},
+{
+name = J;
+transform = "{1, 0, 0, 1, 962, 0}";
+},
+{
+name = acutecomb.case;
+transform = "{1, 0, 0, 1, 1409, 0}";
+}
+);
+layerId = "925CB40E-795E-477B-BAE7-1EE7D58841B5";
+name = Bold;
+width = 1866;
+}
+);
+leftKerningGroup = H;
+rightKerningGroup = H;
+userData = {
+com.schriftgestaltung.Glyphs.ColorIndex = 6;
+com.typemytype.robofont.layerData = {
+background = {
+anchors = (
+);
+components = (
+{
+baseGlyph = I;
+transformation = (
+1,
+0,
+0,
+1,
+0,
+0
+);
+},
+{
+baseGlyph = acutecomb.case;
+transformation = (
+1,
+0,
+0,
+1,
+-272,
+0
+);
+}
+);
+contours = (
+);
+lib = {
+};
+name = Iacute;
+unicodes = (
+);
+width = 792;
+};
+};
+public.markColor = "0,0.67,0.91,1";
+};
+},
+{
+color = 6;
+glyphname = iacute_j.NLD;
+lastChange = "2016-01-25 14:17:14 +0000";
+layers = (
+{
+background = {
+components = (
+{
+name = acutecomb;
+transform = "{1, 0, 0, 1, -3, 0}";
+},
+{
+name = dotlessi;
+}
+);
+};
+components = (
+{
+name = dotlessi;
+},
+{
+name = acutecomb;
+transform = "{1, 0, 0, 1, 325, 0}";
+},
+{
+name = dotlessj;
+transform = "{1, 0, 0, 1, 715, 0}";
+},
+{
+name = acutecomb;
+transform = "{1, 0, 0, 1, 995, 0}";
+}
+);
+layerId = "DAAEA780-4710-4479-B303-5C05B40621B2";
+name = Light;
+width = 1356;
+},
+{
+components = (
+{
+name = dotlessi;
+},
+{
+name = acutecomb;
+transform = "{1, 0, 0, 1, 374, 0}";
+},
+{
+name = dotlessj;
+transform = "{1, 0, 0, 1, 801, 0}";
+},
+{
+name = acutecomb;
+transform = "{1, 0, 0, 1, 1136, 0}";
+}
+);
+layerId = "925CB40E-795E-477B-BAE7-1EE7D58841B5";
+name = Bold;
+width = 1538;
+}
+);
+leftKerningGroup = i;
+rightKerningGroup = i;
+userData = {
+com.schriftgestaltung.Glyphs.ColorIndex = 6;
+com.typemytype.robofont.layerData = {
+background = {
+anchors = (
+);
+components = (
+{
+baseGlyph = acutecomb;
+transformation = (
+1,
+0,
+0,
+1,
+-3,
+0
+);
+},
+{
+baseGlyph = dotlessi;
+transformation = (
+1,
+0,
+0,
+1,
+0,
+0
+);
+}
+);
+contours = (
+);
+lib = {
+};
+name = iacute;
+unicodes = (
+);
+width = 675;
+};
+};
+public.markColor = "0,0.67,0.91,1";
+};
+},
+{
 color = 10;
 glyphname = gjA;
 lastChange = "2016-01-19 21:14:37 +0000";
@@ -211462,6 +211674,76 @@ width = 714;
 }
 );
 rightKerningGroup = gjPa;
+},
+{
+color = 6;
+glyphname = Jacute;
+lastChange = "2016-01-25 14:17:14 +0000";
+layers = (
+{
+components = (
+{
+name = J;
+},
+{
+name = acutecomb.case;
+transform = "{1, 0, 0, 1, 384, 0}";
+}
+);
+layerId = "DAAEA780-4710-4479-B303-5C05B40621B2";
+name = Light;
+width = 778;
+},
+{
+components = (
+{
+name = J;
+},
+{
+name = acutecomb.case;
+transform = "{1, 0, 0, 1, 447, 0}";
+}
+);
+layerId = "925CB40E-795E-477B-BAE7-1EE7D58841B5";
+name = Bold;
+width = 904;
+}
+);
+},
+{
+color = 6;
+glyphname = jacute;
+lastChange = "2016-01-25 14:17:14 +0000";
+layers = (
+{
+components = (
+{
+name = dotlessj;
+},
+{
+name = acutecomb;
+transform = "{1, 0, 0, 1, 280, 0}";
+}
+);
+layerId = "DAAEA780-4710-4479-B303-5C05B40621B2";
+name = Light;
+width = 641;
+},
+{
+components = (
+{
+name = dotlessj;
+},
+{
+name = acutecomb;
+transform = "{1, 0, 0, 1, 335, 0}";
+}
+);
+layerId = "925CB40E-795E-477B-BAE7-1EE7D58841B5";
+name = Bold;
+width = 737;
+}
+);
 }
 );
 disablesAutomaticAlignment = 1;
