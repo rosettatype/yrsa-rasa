@@ -1,4 +1,4 @@
-# Created: Wed Jan 20 11:05:12 2016
+# Created: Mon Jan 25 18:45:23 2016
 # PS Name: Rasa-Regular
 # MM Inst: None
 # exported from Defcon
@@ -7,7 +7,7 @@
 
 lookup MARK_BASE_btm {
 	@bGC_eogonek_btm = [eogonek oslash];
-	@bGC_f_i_btm = [f_i f_l f.salt];
+	@bGC_f_i_btm = [f_i f.salt];
 	pos base @bGC_eogonek_btm <anchor 622 -170> mark @MC_btm;
 	pos base @bGC_f_i_btm <anchor 394 -170> mark @MC_btm;
 	pos base A <anchor 715 0> mark @MC_btm;
@@ -55,12 +55,12 @@ lookup MARK_BASE_btm {
 	pos base d <anchor 613 0> mark @MC_btm;
 	pos base dcroat <anchor 613 -170> mark @MC_btm;
 	pos base dotlessi <anchor 383 0> mark @MC_btm;
+	pos base dotlessiogonek <anchor 382 -170> mark @MC_btm;
 	pos base e <anchor 622 0> mark @MC_btm;
 	pos base eng <anchor 1097 -170> mark @MC_btm;
 	pos base f <anchor 394 0> mark @MC_btm;
 	pos base h <anchor 484 0> mark @MC_btm;
 	pos base hbar <anchor 484 -170> mark @MC_btm;
-	pos base iogonek <anchor 382 -170> mark @MC_btm;
 	pos base k <anchor 732 0> mark @MC_btm;
 	pos base l <anchor 350 0> mark @MC_btm;
 	pos base lslash <anchor 387 -170> mark @MC_btm;
@@ -89,9 +89,11 @@ lookup MARK_BASE_btm {
 lookup MARK_BASE_top {
 	@bGC_Aogonek_top = [Aogonek Tbar];
 	@bGC_c_top = [c q];
-	@bGC_f_i_top = [f_i f_l f.salt];
+	@bGC_dotlessi_top = [dotlessi dotlessiogonek];
+	@bGC_f_i_top = [f_i f.salt];
 	pos base @bGC_Aogonek_top <anchor 771 1700> mark @MC_top;
 	pos base @bGC_c_top <anchor 629 1137> mark @MC_top;
+	pos base @bGC_dotlessi_top <anchor 337 1137> mark @MC_top;
 	pos base @bGC_f_i_top <anchor 420 2063> mark @MC_top;
 	pos base A <anchor 773 1562> mark @MC_top;
 	pos base AE <anchor 1157 1562> mark @MC_top;
@@ -134,16 +136,14 @@ lookup MARK_BASE_top {
 	pos base aogonek <anchor 553 1700> mark @MC_top;
 	pos base b <anchor 793 1137> mark @MC_top;
 	pos base dcroat <anchor 363 1700> mark @MC_top;
-	pos base dotlessi <anchor 337 1137> mark @MC_top;
 	pos base dotlessj <anchor 294 1137> mark @MC_top;
 	pos base e <anchor 619 1137> mark @MC_top;
 	pos base eng <anchor 1097 1700> mark @MC_top;
 	pos base eogonek <anchor 619 1700> mark @MC_top;
 	pos base f <anchor 420 1137> mark @MC_top;
 	pos base g <anchor 605 1137> mark @MC_top;
-	pos base h <anchor 293 1767> mark @MC_top;
+	pos base h <anchor 408 1767> mark @MC_top;
 	pos base hbar <anchor 460 1700> mark @MC_top;
-	pos base iogonek <anchor 355 1700> mark @MC_top;
 	pos base k <anchor 762 1137> mark @MC_top;
 	pos base l <anchor 327 1781> mark @MC_top;
 	pos base lslash <anchor 348 1700> mark @MC_top;
@@ -154,8 +154,8 @@ lookup MARK_BASE_top {
 	pos base ordmasculine <anchor 555 1982> mark @MC_top;
 	pos base oslash <anchor 649 1700> mark @MC_top;
 	pos base p <anchor 751 1137> mark @MC_top;
-	pos base r <anchor 582 1137> mark @MC_top;
-	pos base s <anchor 549 1137> mark @MC_top;
+	pos base r <anchor 597 1137> mark @MC_top;
+	pos base s <anchor 529 1137> mark @MC_top;
 	pos base schwa <anchor 612 1700> mark @MC_top;
 	pos base tbar <anchor 395 1883> mark @MC_top;
 	pos base thorn <anchor 694 1700> mark @MC_top;
@@ -165,7 +165,7 @@ lookup MARK_BASE_top {
 	pos base w <anchor 934 1137> mark @MC_top;
 	pos base x <anchor 664 1137> mark @MC_top;
 	pos base y <anchor 662 1137> mark @MC_top;
-	pos base z <anchor 579 1137> mark @MC_top;
+	pos base z <anchor 576 1137> mark @MC_top;
 } MARK_BASE_top;
 
 

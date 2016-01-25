@@ -71,15 +71,46 @@ feature locl {
 			lookup locl_NLD {
 				sub i j by ij;
 				sub I J by IJ;
-				#sub iacute j by iacute_j.NLD; #!!
-				#sub Iacute J by Iacute_J.NLD; #!!
+				sub iacute j by iacute_j.NLD;
+				sub Iacute J by Iacute_J.NLD;
 			} locl_NLD;
 
 #!! add Gujarati specific punctuation
 	script gujr;
-		sub rupeeIndian by rupeeIndian.gujr;
+		lookup locl_gujr {
+			sub asterisk by asterisk.gujr;
+			sub periodcentered by periodcentered.gujr;
+			sub bullet by bullet.gujr;
+			sub colon by colon.gujr;
+			sub comma by comma.gujr;
+			sub ellipsis by ellipsis.gujr;
+			sub exclam by exclam.gujr;
+			sub period by period.gujr;
+			sub question by question.gujr;
+			sub semicolon by semicolon.gujr;
+			sub braceleft by braceleft.gujr;
+			sub braceright by braceright.gujr;
+			sub bracketleft by bracketleft.gujr;
+			sub bracketright by bracketright.gujr;
+			sub parenleft by parenleft.gujr;
+			sub parenright by parenright.gujr;
+			sub emdash by emdash.gujr;
+			sub endash by endash.gujr;
+			sub hyphen by hyphen.gujr;
+			sub guillemotleft by guillemotleft.gujr;
+			sub guillemotright by guillemotright.gujr;
+			sub guilsinglleft by guilsinglleft.gujr;
+			sub guilsinglright by guilsinglright.gujr;
+			sub quotedblbase by quotedblbase.gujr;
+			sub quotedblleft by quotedblleft.gujr;
+			sub quotedblright by quotedblright.gujr;
+			sub quoteleft by quoteleft.gujr;
+			sub quoteright by quoteright.gujr;
+			sub quotesinglbase by quotesinglbase.gujr;
+			sub rupeeIndian by rupeeIndian.gujr;
+		} locl_gujr;
 	script gjr2;
-		sub rupeeIndian by rupeeIndian.gujr;
+		lookup locl_gujr;
 
 } locl;
 
@@ -126,7 +157,7 @@ feature pnum {
 	sub gjFour by gjFour.tf;
 	sub gjFive by gjFive.tf;
 	sub gjSix by gjSix.tf;
-	sub gjSix.alt by gjSix.alt.tf;
+	sub gjSix.ss02 by gjSix.ss02.tf;
 	sub gjSeven by gjSeven.tf;
 	sub gjEight by gjEight.tf;
 	sub gjNine by gjNine.tf;
@@ -161,7 +192,7 @@ feature tnum {
 	sub gjFour.tf by gjFour;
 	sub gjFive.tf by gjFive;
 	sub gjSix.tf by gjSix;
-	sub gjSix.alt.tf by gjSix.alt;
+	sub gjSix.ss02.tf by gjSix.ss02;
 	sub gjSeven.tf by gjSeven;
 	sub gjEight.tf by gjEight;
 	sub gjNine.tf by gjNine;

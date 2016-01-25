@@ -117381,7 +117381,7 @@ rightKerningGroup = gjPa;
 {
 color = 1;
 glyphname = gjK;
-lastChange = "2016-01-25 18:40:56 +0000";
+lastChange = "2016-01-25 18:57:17 +0000";
 layers = (
 {
 components = (
@@ -117412,6 +117412,8 @@ name = Bold;
 width = 1304;
 }
 );
+leftKerningGroup = gjKa;
+rightKerningGroup = gjKa;
 },
 {
 glyphname = gjK.calt;

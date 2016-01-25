@@ -126,13 +126,16 @@ tilde	tilde	uni02DC
 hungarumlaut	hungarumlaut	uni02DD
 uni0302	circumflexcomb	uni0302
 uni0302.case	circumflexcomb.case	
+uni0302.narrow	circumflexcomb.narrow	
 uni030C	caroncomb	uni030C
 uni030C.case	caroncomb.case	
 uni030C.calt	caroncomb.calt	
 uni0304	macroncomb	uni0304
 uni0304.case	macroncomb.case	
+uni0304.narrow	macroncomb.narrow	
 uni0306	brevecomb	uni0306
 uni0306.case	brevecomb.case	
+uni0306.narrow	brevecomb.narrow	
 uni0308	dieresiscomb	uni0308
 uni0308.case	dieresiscomb.case	
 acutecomb	acutecomb	uni0301
@@ -144,9 +147,11 @@ uni0307	dotaccentcomb	uni0307
 uni0307.case	dotaccentcomb.case	
 uni030A	ringcomb	uni030A
 uni030A.case	ringcomb.case	
+uni030A.case.low	ringcomb.case.low	
 uni0328	ogonekcomb	uni0328
 tildecomb	tildecomb	uni0303
 tildecomb.case	tildecomb.case	
+tildecomb.narrow	tildecomb.narrow	
 uni030B	hungarumlautcomb	uni030B
 uni030B.case	hungarumlautcomb.case	
 uni0326	commaaccentcomb	uni0326
@@ -195,6 +200,8 @@ Idotaccent	Idotaccent	uni0130
 Idieresis	Idieresis	uni00CF
 Iogonek	Iogonek	uni012E
 IJ	IJ	uni0132
+Iacute_J.NLD	Iacute_J.NLD	
+Jacute	Jacute	uniFC01
 Jcircumflex	Jcircumflex	uni0134
 Kcommaaccent	Kcommaaccent	uni0136
 Lacute	Lacute	uni0139
@@ -298,6 +305,8 @@ idotaccent	idotaccent
 idieresis	idieresis	uni00EF
 iogonek	iogonek	uni012F
 ij	ij	uni0133
+iacute_j.NLD	iacute_j.NLD	
+jacute	jacute	uniFC00
 jcircumflex	jcircumflex	uni0135
 dotlessj	dotlessj	uni0237
 kcommaaccent	kcommaaccent	uni0137
@@ -372,6 +381,15 @@ six	six	uni0036
 seven	seven	uni0037
 eight	eight	uni0038
 nine	nine	uni0039
+dollar	dollar	uni0024
+Euro	euro	uni20AC
+cent	cent	uni00A2
+sterling	sterling	uni00A3
+yen	yen	uni00A5
+uni0192	florin	uni0192
+uni20BA	liraTurkish	uni20BA
+uni20BD	ruble	uni20BD
+uni20B9	rupeeIndian	uni20B9
 zero.tf	zero.tf	
 one.tf	one.tf	
 two.tf	two.tf	
@@ -382,15 +400,14 @@ six.tf	six.tf
 seven.tf	seven.tf	
 eight.tf	eight.tf	
 nine.tf	nine.tf	
-dollar	dollar	uni0024
-Euro	euro	uni20AC
-cent	cent	uni00A2
-sterling	sterling	uni00A3
-yen	yen	uni00A5
-uni0192	florin	uni0192
-uni20BA	liraTurkish	uni20BA
-uni20BD	ruble	uni20BD
-uni20B9	rupeeIndian	uni20B9
+dollar.tf	dollar.tf	
+Euro.tf	euro.tf	
+cent.tf	cent.tf	
+sterling.tf	sterling.tf	
+yen.tf	yen.tf	
+uni20BA.tf	liraTurkish.tf	
+uni20BD.tf	ruble.tf	
+uni20B9.tf	rupeeIndian.tf	
 currency	currency	uni00A4
 degree	degree	uni00B0
 minute	minute	uni2032
@@ -451,10 +468,19 @@ uni2193	arrowdown	uni2193
 uni2190	arrowleft	uni2190
 uni2194	arrowboth	uni2194
 uni2195	arrowupdown	uni2195
+dotlessiogonek	dotlessiogonek	
 __periodcentered.CAT	__periodcentered.CAT	
 __periodcentered.CAT.case	__periodcentered.CAT.case	
 uni0A85	gjA	uni0A85
 uni0A86	gjAa	uni0A86
+uni0A87	gjI	uni0A87
+uni0A88	gjIi	uni0A88
+uni0A89	gjU	uni0A89
+uni0A8A	gjUu	uni0A8A
+uni0A8B	gjVocalicR	uni0A8B
+uni0AE0	gjVocalicRr	uni0AE0
+uni0A8C	gjVocalicL	uni0A8C
+uni0AE1	gjVocalicLl	uni0AE1
 uni0A8D	gjCandraE	uni0A8D
 uni0A8F	gjE	uni0A8F
 uni0A90	gjAi	uni0A90
@@ -465,7 +491,6 @@ uni0A95	gjKa	uni0A95
 uni0A96	gjKha	uni0A96
 uni0A97	gjGa	uni0A97
 uni0A98	gjGha	uni0A98
-uni0A87	gjI	uni0A87
 uni0A99	gjNga	uni0A99
 uni0A9A	gjCa	uni0A9A
 uni0A9B	gjCha	uni0A9B
@@ -476,7 +501,6 @@ uni0A9F	gjTta	uni0A9F
 uni0AA0	gjTtha	uni0AA0
 uni0AA1	gjDda	uni0AA1
 uni0AA2	gjDdha	uni0AA2
-uni0A88	gjIi	uni0A88
 uni0AA3	gjNna	uni0AA3
 uni0AA4	gjTa	uni0AA4
 uni0AA5	gjTha	uni0AA5
@@ -487,7 +511,6 @@ uni0AAA	gjPa	uni0AAA
 uni0AAB	gjPha	uni0AAB
 uni0AAC	gjBa	uni0AAC
 uni0AAD	gjBha	uni0AAD
-uni0A89	gjU	uni0A89
 uni0AAE	gjMa	uni0AAE
 uni0AAF	gjYa	uni0AAF
 uni0AB0	gjRa	uni0AB0
@@ -498,13 +521,31 @@ uni0AB6	gjSha	uni0AB6
 uni0AB7	gjSsa	uni0AB7
 uni0AB8	gjSa	uni0AB8
 uni0AB9	gjHa	uni0AB9
-uni0A8A	gjUu	uni0A8A
 uni0ABD	gjAvagraha	uni0ABD
-uni0A8B	gjVocalicR	uni0A8B
-uni0AE0	gjVocalicRr	uni0AE0
-uni0A8C	gjVocalicL	uni0A8C
-uni0AE1	gjVocalicLl	uni0AE1
-uni0AAF.alt	gjYa.alt	
+uni0ABE	gjMatraAa	uni0ABE
+uni0ABF	gjMatraI	uni0ABF
+uni0AC0	gjMatraIi	uni0AC0
+uni0AC1	gjMatraU	uni0AC1
+uni0AC2	gjMatraUu	uni0AC2
+uni0AC3	gjMatraVocalicR	uni0AC3
+uni0AC4	gjMatraVocalicRr	uni0AC4
+uni0AE2	gjMatraVocalicL	uni0AE2
+uni0AE3	gjMatraVocalicLl	uni0AE3
+uni0AC5	gjMatraCandraE	uni0AC5
+uni0AC7	gjMatraE	uni0AC7
+uni0AC8	gjMatraAi	uni0AC8
+uni0AC9	gjMatraCandraO	uni0AC9
+uni0ACB	gjMatraO	uni0ACB
+uni0ACC	gjMatraAu	uni0ACC
+uni0ACD	gjVirama	uni0ACD
+uni0A81	gjCandrabindu	uni0A81
+uni0A82	gjAnusvara	uni0A82
+uni0A83	gjVisarga	uni0A83
+uni0ABC	gjNukta	uni0ABC
+uni0AB00ACD	gjReph	
+uni0ACD0AB0	gjRakar	
+uni0A950ACD0AB7	gjKSsa	
+uni0A9C0ACD0A9E	gjJNya	
 uni0A950ACD0AB0	gjKRa	
 uni0A950ACD0A950ACD0AB0	gjKKRa	
 uni0A950ACD0AB70ACD0AB0	gjKSsRa	
@@ -512,8 +553,6 @@ uni0A960ACD0AB0	gjKhRa
 uni0A970ACD0AB0	gjGRa	
 uni0A980ACD0AB0	gjGhRa	
 uni0A9C0ACD0AB0	gjJRa	
-uni0A9C0ACD0AB0_uni0ABE	gjJRa_gjMatraAa	
-uni0A9C0ACD0AB0_uni0AC0	gjJRa_gjMatraIi	
 uni0A9D0ACD0AB0	gjJhRa	
 uni0AA30ACD0AB0	gjNnRa	
 uni0AA40ACD0AB0	gjTRa	
@@ -617,12 +656,20 @@ uni0AB90ACD0AB5	gjHVa
 uni0AB90ACD0AAE	gjHMa	
 uni0AB90ACD0AAF	gjHYa	
 uni0A950ACD	gjK	
+uni0A950ACD.calt	gjK.calt	
+uni0A950ACD.calt2	gjK.calt2	
+uni0A950ACD.calt3	gjK.calt3	
 uni0A960ACD	gjKh	
 uni0A970ACD	gjG	
 uni0A980ACD	gjGh	
 uni0A990ACD	gjNg	
 uni0A9A0ACD	gjC	
+uni0A9B0ACD	gjCh	
 uni0A9C0ACD	gjJ	
+uni0A9C0ACD.calt	gjJ.calt	
+uni0A9C0ACD.calt2	gjJ.calt2	
+uni0A9C0ACD.calt3	gjJ.calt3	
+uni0A9D0ACD	gjJh	
 uni0A9E0ACD	gjNy	
 uni0A9F0ACD	gjTt	
 uni0AA00ACD	gjTth	
@@ -630,28 +677,45 @@ uni0AA10ACD	gjDd
 uni0AA20ACD	gjDdh	
 uni0AA30ACD	gjNn	
 uni0AA40ACD	gjT	
-uni0A9C_uni0ABE	gjJa_gjMatraAa	
-uni0A9C_uni0AC0	gjJa_gjMatraIi	
+uni0AA40ACD.calt	gjT.calt	
 uni0AA50ACD	gjTh	
+uni0AA50ACD.calt	gjTh.calt	
 uni0AA60ACD	gjD	
 uni0AA70ACD	gjDh	
+uni0AA70ACD.calt	gjDh.calt	
 uni0AA80ACD	gjN	
+uni0AA80ACD.calt	gjN.calt	
+uni0AA80ACD.calt2	gjN.calt2	
+uni0AA80ACD.post	gjN.post	
 uni0AAA0ACD	gjP	
+uni0AAA0ACD.calt	gjP.calt	
 uni0AAB0ACD	gjPh	
+uni0AAB0ACD.calt	gjPh.calt	
+uni0AAB0ACD.calt2	gjPh.calt2	
+uni0AAB0ACD.calt3	gjPh.calt3	
 uni0AAC0ACD	gjB	
 uni0AAD0ACD	gjBh	
 uni0AAE0ACD	gjM	
 uni0AAF0ACD	gjY	
-uni0AB00ACD.h	gjR	
+uni0AAF0ACD.calt	gjY.calt	
+uni0AAF0ACD.post	gjY.post	
+uni0AB00ACD.h.post	gjR.post	
 uni0AB20ACD	gjL	
+uni0AB20ACD.calt	gjL.calt	
 uni0AB30ACD	gjLl	
 uni0AB50ACD	gjV	
 uni0AB60ACD	gjSh	
+uni0AB60ACD.calt	gjSh.calt	
 uni0AB70ACD	gjSs	
+uni0AB70ACD.calt	gjSs.calt	
 uni0AB80ACD	gjS	
+uni0AB80ACD.calt	gjS.calt	
+uni0AB90ACD	gjH	
 uni0A950ACD0AB70ACD	gjKSs	
 uni0A9C0ACD0A9E0ACD	gjJNy	
-uni0A950ACD0AB00ACD	gjKR	
+uni0A950ACD0AB00ACD.calt	gjKR.calt	
+uni0A950ACD0AB00ACD.calt2	gjKR.calt2	
+uni0A950ACD0AB00ACD.calt3	gjKR.calt3	
 uni0A950ACD0AB70ACD0AB00ACD	gjKSsR	
 uni0A960ACD0AB00ACD	gjKhR	
 uni0A970ACD0AB00ACD	gjGR	
@@ -690,7 +754,6 @@ uni0AA10ACD0AAE0ACD	gjDdM
 uni0AA10ACD0AAF0ACD	gjDdY	
 uni0AA40ACD0AA40ACD	gjTT	
 uni0AA40ACD0AA40ACD0AAF0ACD	gjTTY	
-uni0AA3_uni0AC1	gjNna_gjMatraU	
 uni0AA40ACD0AA80ACD	gjTN	
 uni0AA40ACD0AAE0ACD	gjTM	
 uni0AA40ACD0AAF0ACD	gjTY	
@@ -714,42 +777,24 @@ uni0AB80ACD0AA50ACD	gjSTh
 uni0AB80ACD0AAF0ACD	gjSY	
 uni0AB90ACD0AAE0ACD	gjHM	
 uni0AB90ACD0AAF0ACD	gjHY	
+uni0A9C_uni0ABE	gjJa_gjMatraAa	
+uni0A9C_uni0AC0	gjJa_gjMatraIi	
+uni0A9C0ACD0AB0_uni0ABE	gjJRa_gjMatraAa	
+uni0A9C0ACD0AB0_uni0AC0	gjJRa_gjMatraIi	
+uni0AA3_uni0AC1	gjNna_gjMatraU	
 uni0AB0_uni0AC1	gjRa_gjMatraU	
 uni0AB0_uni0AC2	gjRa_gjMatraUu	
 uni0AB3_uni0AC3	gjLla_gjMatraVocalicR	
 uni0AB3_uni0AC4	gjLla_gjMatraVocalicRr	
-uni0A950ACD0AB7	gjKSsa	
 uni0A950ACD0AB7_uni0AC1	gjKSsa_gjMatraU	
-uni0A9C0ACD0A9E	gjJNya	
-uni0AA60ACD0AB0.alt	gjDRa.alt	
-uni0AA60ACD0A97.alt	gjDGa.alt	
-uni0AA60ACD0A98.alt	gjDGha.alt	
-uni0AA60ACD0AA7.alt	gjDDha.alt	
-uni0AA60ACD0AA8.alt	gjDNa.alt	
-uni0AA60ACD0AAC.alt	gjDBa.alt	
-uni0AA60ACD0AB5.alt	gjDVa.alt	
-uni0A950ACD.alt	gjK.alt	
-uni0A9C0ACD.alt	gjJ.alt	
-uni0AA40ACD.alt	gjT.alt	
-uni0AA50ACD.alt	gjTh.alt	
-uni0AA70ACD.alt	gjDh.alt	
-uni0AA80ACD.alt	gjN.alt	
-uni0AAA0ACD.alt	gjP.alt	
-uni0AAB0ACD.alt	gjPh.alt	
-uni0AAF0ACD.alt	gjY.alt	
-uni0AB20ACD.alt	gjL.alt	
-uni0AB60ACD.alt	gjSh.alt	
-uni0AB70ACD.alt	gjSs.alt	
-uni0AB80ACD.alt	gjS.alt	
-uni0A950ACD0AB00ACD.alt	gjKR.alt	
-uni0A950ACD.alt2	gjK.alt2	
-uni0A9C0ACD.alt2	gjJ.alt2	
-uni0AA80ACD.alt2	gjN.alt2	
-uni0AAB0ACD.alt2	gjPh.alt2	
-uni0AAF0ACD.alt2	gjY.alt2	
-uni0A950ACD0AB00ACD.alt2	gjKR.alt2	
-uni0AA80ACD.alt3	gjN.alt3	
-uni25CC	dottedCircle	uni25CC
+uni0AA60ACD0AB0.ss01	gjDRa.ss01	
+uni0AA60ACD0A97.ss01	gjDGa.ss01	
+uni0AA60ACD0A98.ss01	gjDGha.ss01	
+uni0AA60ACD0AA7.ss01	gjDDha.ss01	
+uni0AA60ACD0AA8.ss01	gjDNa.ss01	
+uni0AA60ACD0AAC.ss01	gjDBa.ss01	
+uni0AA60ACD0AB5.ss01	gjDVa.ss01	
+uni0AAF.post	gjYa.post	
 uni0AE6	gjZero	uni0AE6
 uni0AE7	gjOne	uni0AE7
 uni0AE8	gjTwo	uni0AE8
@@ -760,10 +805,9 @@ uni0AEC	gjSix	uni0AEC
 uni0AED	gjSeven	uni0AED
 uni0AEE	gjEight	uni0AEE
 uni0AEF	gjNine	uni0AEF
+uni0AEC.ss02	gjSix.ss02	
 uni0AF1	gjRupee	uni0AF1
-uni0AD0	gjOm	uni0AD0
-uni0AEC.alt	gjSix.alt	
-uni0AEC.alt.tf	gjSix.alt.tf	
+uni20B9.gujr	rupeeIndian.gujr	
 uni0AE6.tf	gjZero.tf	
 uni0AE7.tf	gjOne.tf	
 uni0AE8.tf	gjTwo.tf	
@@ -774,80 +818,99 @@ uni0AEC.tf	gjSix.tf
 uni0AED.tf	gjSeven.tf	
 uni0AEE.tf	gjEight.tf	
 uni0AEF.tf	gjNine.tf	
+uni0AEC.ss02.tf	gjSix.ss02.tf	
 uni0AF1.tf	gjRupee.tf	
+uni20B9.gujr.tf	rupeeIndian.gujr.tf	
 uni0964	dvDanda	uni0964
 uni0965	dvDoubleDanda	uni0965
 uni0970	dvAbbreviation	uni0970
 uni0FD5	svastika	uni0FD5
-uni200D	zerowidthjoiner	uni200D
-uni200C	zerowidthnonjoiner	uni200C
-uni20B9.gujr	rupeeIndian.gujr	
-cent.tf	cent.tf	
-dollar.tf	dollar.tf	
-Euro.tf	euro.tf	
-uni20B9.gujr.tf	rupeeIndian.gujr.tf	
-uni20BA.tf	liraTurkish.tf	
-uni20BD.tf	ruble.tf	
-uni20B9.tf	rupeeIndian.tf	
-sterling.tf	sterling.tf	
-yen.tf	yen.tf	
-uni0AC1	gjMatraU	uni0AC1
-uni0AC2	gjMatraUu	uni0AC2
-uni0AC3	gjMatraVocalicR	uni0AC3
-uni0AC4	gjMatraVocalicRr	uni0AC4
-uni0AE2	gjMatraVocalicL	uni0AE2
-uni0AE3	gjMatraVocalicLl	uni0AE3
-uni0AC5	gjMatraCandraE	uni0AC5
-u0AC50A82	gjMatraCandraE_gjAnusvara	
-u0AC50AB00ACD	gjMatraCandraE_gjReph	
-u0AC50AB00ACD0A82	gjMatraCandraE_gjReph_gjAnusvara	
-uni0AC7	gjMatraE	uni0AC7
-u0AC70A82	gjMatraE_gjAnusvara	
-u0AC70AB00ACD	gjMatraE_gjReph	
-u0AC70AB00ACD0A82	gjMatraE_gjReph_gjAnusvara	
-uni0AC8	gjMatraAi	uni0AC8
-u0AC80A82	gjMatraAi_gjAnusvara	
-u0AC80AB00ACD	gjMatraAi_gjReph	
-u0AC80AB00ACD0A82	gjMatraAi_gjReph_gjAnusvara	
-uni0ACD	gjVirama	uni0ACD
-uni0A81	gjCandrabindu	uni0A81
-uni0A82	gjAnusvara	uni0A82
-uni0ABC	gjNukta	uni0ABC
-uni0AB00ACD	gjReph	
-u0AB00ACD0A82	gjReph_gjAnusvara	
-uni0ACD0AB0	gjRakar	
-u0ACD0AB00AC1	gjRakar_gjMatraU	
-u0ACD0AB00AC2	gjRakar_gjMatraUu	
-uni0A82.alt	gjAnusvara.alt	
-uni0AB00ACD.alt	gjReph.alt	
-u0AB00ACD0A82.alt	gjReph_gjAnusvara.alt	
-uni0A82.alt2	gjAnusvara.alt2	
-uni0ABE	gjMatraAa	uni0ABE
+uni0AD0	gjOm	uni0AD0
+uni0ABE.base	gjMatraAa.base	
 uni0ABE0AC3	gjMatraAa_gjMatraVocalicR	
 uni0ABE0AC4	gjMatraAa_gjMatraVocalicRr	
-uni0ABF	gjMatraI	uni0ABF
-uni0AC0	gjMatraIi	uni0AC0
-u0AC00AB00ACD	gjMatraIi_gjReph	
-u0AC00AB00ACD0A82	gjMatraIi_gjReph_gjAnusvara	
-uni0AC9	gjMatraCandraO	uni0AC9
-u0AC90AB00ACD	gjMatraCandraO_gjReph	
-u0AC90AB00ACD0A82	gjMatraCandraO_gjReph_gjAnusvara	
-uni0ACB	gjMatraO	uni0ACB
-u0ACB0AB00ACD	gjMatraO_gjReph	
-u0ACB0AB00ACD0A82	gjMatraO_gjReph_gjAnusvara	
-uni0ACC	gjMatraAu	uni0ACC
-u0ACC0AB00ACD	gjMatraAu_gjReph	
-u0ACC0AB00ACD0A82	gjMatraAu_gjReph_gjAnusvara	
-uni0A83	gjVisarga	uni0A83
-uni0ABE.base	gjMatraAa.base	
 uni0ABF.1	gjMatraI.1	
+uni0ABF.2	gjMatraI.2	
+uni0ABF.3	gjMatraI.3	
+uni0ABF.4	gjMatraI.4	
+uni0ABF.5	gjMatraI.5	
+uni0ABF.6	gjMatraI.6	
+uni0ABF.7	gjMatraI.7	
+uni0ABF.8	gjMatraI.8	
+uni0ABF.9	gjMatraI.9	
+uni0ABF.10	gjMatraI.10	
+uni0ABF.11	gjMatraI.11	
+uni0ABF.12	gjMatraI.12	
+uni0ABF.13	gjMatraI.13	
+uni0ABF.14	gjMatraI.14	
+uni0ABF.15	gjMatraI.15	
+uni0ABF.16	gjMatraI.16	
+uni0ABF.17	gjMatraI.17	
+uni0ABF.18	gjMatraI.18	
+uni0ABF.19	gjMatraI.19	
+uni0ABF.20	gjMatraI.20	
+uni0ABF.21	gjMatraI.21	
 uni0ABF.22	gjMatraI.22	
 uni0AC0.1	gjMatraIi.1	
 uni0AC0.2	gjMatraIi.2	
 uni0AC0.3	gjMatraIi.3	
+uni0AB00ACD.alt	gjReph.alt	
+uni0A82.alt	gjAnusvara.alt	
+u0AC00AB00ACD	gjMatraIi_gjReph	
 u0AC00AB00ACD.1	gjMatraIi_gjReph.1	
 u0AC00AB00ACD.2	gjMatraIi_gjReph.2	
 u0AC00AB00ACD.3	gjMatraIi_gjReph.3	
+u0AC00AB00ACD0A82	gjMatraIi_gjReph_gjAnusvara	
 u0AC00AB00ACD0A82.1	gjMatraIi_gjReph_gjAnusvara.1	
 u0AC00AB00ACD0A82.2	gjMatraIi_gjReph_gjAnusvara.2	
 u0AC00AB00ACD0A82.3	gjMatraIi_gjReph_gjAnusvara.3	
+u0AC50A82	gjMatraCandraE_gjAnusvara	
+u0AC50AB00ACD	gjMatraCandraE_gjReph	
+u0AC50AB00ACD0A82	gjMatraCandraE_gjReph_gjAnusvara	
+u0AC70A82	gjMatraE_gjAnusvara	
+u0AC70AB00ACD	gjMatraE_gjReph	
+u0AC70AB00ACD0A82	gjMatraE_gjReph_gjAnusvara	
+u0AC80A82	gjMatraAi_gjAnusvara	
+u0AC80AB00ACD	gjMatraAi_gjReph	
+u0AC80AB00ACD0A82	gjMatraAi_gjReph_gjAnusvara	
+u0AC90AB00ACD	gjMatraCandraO_gjReph	
+u0AC90AB00ACD0A82	gjMatraCandraO_gjReph_gjAnusvara	
+u0ACB0AB00ACD	gjMatraO_gjReph	
+u0ACB0AB00ACD0A82	gjMatraO_gjReph_gjAnusvara	
+u0ACC0AB00ACD	gjMatraAu_gjReph	
+u0ACC0AB00ACD0A82	gjMatraAu_gjReph_gjAnusvara	
+u0ACD0AB00AC1	gjRakar_gjMatraU	
+u0ACD0AB00AC2	gjRakar_gjMatraUu	
+u0AB00ACD0A82	gjReph_gjAnusvara	
+u0AB00ACD0A82.alt	gjReph_gjAnusvara.alt	
+uni25CC	dottedCircle	uni25CC
+uni200C	zerowidthnonjoiner	uni200C
+uni200D	zerowidthjoiner	uni200D
+uni0A82.alt2	gjAnusvara.alt2	
+asterisk.gujr	asterisk.gujr	
+periodcentered.gujr	periodcentered.gujr	
+bullet.gujr	bullet.gujr	
+colon.gujr	colon.gujr	
+comma.gujr	comma.gujr	
+ellipsis.gujr	ellipsis.gujr	
+exclam.gujr	exclam.gujr	
+period.gujr	period.gujr	
+question.gujr	question.gujr	
+semicolon.gujr	semicolon.gujr	
+braceleft.gujr	braceleft.gujr	
+braceright.gujr	braceright.gujr	
+bracketleft.gujr	bracketleft.gujr	
+bracketright.gujr	bracketright.gujr	
+parenleft.gujr	parenleft.gujr	
+parenright.gujr	parenright.gujr	
+emdash.gujr	emdash.gujr	
+endash.gujr	endash.gujr	
+hyphen.gujr	hyphen.gujr	
+guilsinglleft.gujr	guilsinglleft.gujr	
+guilsinglright.gujr	guilsinglright.gujr	
+quotedblbase.gujr	quotedblbase.gujr	
+quotedblleft.gujr	quotedblleft.gujr	
+quotedblright.gujr	quotedblright.gujr	
+quoteleft.gujr	quoteleft.gujr	
+quoteright.gujr	quoteright.gujr	
+quotesinglbase.gujr	quotesinglbase.gujr	

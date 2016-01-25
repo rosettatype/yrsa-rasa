@@ -1,4 +1,4 @@
-# Created: Wed Jan 20 11:05:12 2016
+# Created: Mon Jan 25 18:45:23 2016
 # PS Name: Rasa-Semibold
 # MM Inst: None
 # exported from Defcon
@@ -7,21 +7,25 @@
 
 lookup MARK_BASE_blwmBOTTOM {
 	@bGC_gjBha_blwmBOTTOM = [gjBha gjBRa gjKSsa_gjMatraU];
-	@bGC_gjDBa.alt_blwmBOTTOM = [gjDBa.alt gjDVa.alt];
+	@bGC_gjDBa.ss01_blwmBOTTOM = [gjDBa.ss01 gjDVa.ss01];
 	@bGC_gjDBa_blwmBOTTOM = [gjDBa gjDVa];
 	@bGC_gjKKRa_blwmBOTTOM = [gjKKRa gjKKa];
 	@bGC_gjLla_blwmBOTTOM = [gjLla gjLlRa];
 	@bGC_gjMatraAa_blwmBOTTOM = [gjMatraAa gjMatraAa.base];
 	@bGC_gjPha_blwmBOTTOM = [gjPha gjPhRa];
+	@bGC_gjRa_blwmBOTTOM = [gjRa gjRa_gjMatraU];
 	@bGC_gjSsa_blwmBOTTOM = [gjSsa gjPRa gjSsRa];
+	@bGC_gjVocalicR_blwmBOTTOM = [gjVocalicR gjVocalicRr gjTRa];
 	pos base @bGC_gjBha_blwmBOTTOM <anchor 1432 0> mark @MC_blwmBOTTOM;
-	pos base @bGC_gjDBa.alt_blwmBOTTOM <anchor 1043 -453> mark @MC_blwmBOTTOM;
+	pos base @bGC_gjDBa.ss01_blwmBOTTOM <anchor 1043 -453> mark @MC_blwmBOTTOM;
 	pos base @bGC_gjDBa_blwmBOTTOM <anchor 1006 -262> mark @MC_blwmBOTTOM;
 	pos base @bGC_gjKKRa_blwmBOTTOM <anchor 1378 0> mark @MC_blwmBOTTOM;
 	pos base @bGC_gjLla_blwmBOTTOM <anchor 1379 0> mark @MC_blwmBOTTOM;
 	pos base @bGC_gjMatraAa_blwmBOTTOM <anchor 309 0> mark @MC_blwmBOTTOM;
 	pos base @bGC_gjPha_blwmBOTTOM <anchor 694 -369> mark @MC_blwmBOTTOM;
+	pos base @bGC_gjRa_blwmBOTTOM <anchor 728 0> mark @MC_blwmBOTTOM;
 	pos base @bGC_gjSsa_blwmBOTTOM <anchor 1078 0> mark @MC_blwmBOTTOM;
+	pos base @bGC_gjVocalicR_blwmBOTTOM <anchor 983 0> mark @MC_blwmBOTTOM;
 	pos base gjA <anchor 1697 0> mark @MC_blwmBOTTOM;
 	pos base gjBKa <anchor 1556 0> mark @MC_blwmBOTTOM;
 	pos base gjBYa <anchor 2084 0> mark @MC_blwmBOTTOM;
@@ -31,17 +35,17 @@ lookup MARK_BASE_blwmBOTTOM {
 	pos base gjCha <anchor 775 0> mark @MC_blwmBOTTOM;
 	pos base gjDDa <anchor 991 -376> mark @MC_blwmBOTTOM;
 	pos base gjDDha <anchor 1209 -331> mark @MC_blwmBOTTOM;
-	pos base gjDDha.alt <anchor 1164 -486> mark @MC_blwmBOTTOM;
+	pos base gjDDha.ss01 <anchor 1164 -486> mark @MC_blwmBOTTOM;
 	pos base gjDGa <anchor 830 -268> mark @MC_blwmBOTTOM;
-	pos base gjDGa.alt <anchor 855 -453> mark @MC_blwmBOTTOM;
+	pos base gjDGa.ss01 <anchor 855 -453> mark @MC_blwmBOTTOM;
 	pos base gjDGha <anchor 1077 -262> mark @MC_blwmBOTTOM;
-	pos base gjDGha.alt <anchor 1064 -441> mark @MC_blwmBOTTOM;
+	pos base gjDGha.ss01 <anchor 1064 -441> mark @MC_blwmBOTTOM;
 	pos base gjDMa <anchor 1105 0> mark @MC_blwmBOTTOM;
 	pos base gjDNa <anchor 788 -268> mark @MC_blwmBOTTOM;
-	pos base gjDNa.alt <anchor 772 -453> mark @MC_blwmBOTTOM;
+	pos base gjDNa.ss01 <anchor 772 -453> mark @MC_blwmBOTTOM;
 	pos base gjDRYa <anchor 1253 0> mark @MC_blwmBOTTOM;
 	pos base gjDRa <anchor 670 -268> mark @MC_blwmBOTTOM;
-	pos base gjDRa.alt <anchor 702 -400> mark @MC_blwmBOTTOM;
+	pos base gjDRa.ss01 <anchor 702 -400> mark @MC_blwmBOTTOM;
 	pos base gjDYa <anchor 1082 0> mark @MC_blwmBOTTOM;
 	pos base gjDa <anchor 662 0> mark @MC_blwmBOTTOM;
 	pos base gjDdDda <anchor 741 -650> mark @MC_blwmBOTTOM;
@@ -113,6 +117,7 @@ lookup MARK_BASE_blwmBOTTOM {
 	pos base gjNga <anchor 639 0> mark @MC_blwmBOTTOM;
 	pos base gjNnRa <anchor 1676 0> mark @MC_blwmBOTTOM;
 	pos base gjNna <anchor 1670 0> mark @MC_blwmBOTTOM;
+	pos base gjNna_gjMatraU <anchor 1668 0> mark @MC_blwmBOTTOM;
 	pos base gjNyYa <anchor 2120 0> mark @MC_blwmBOTTOM;
 	pos base gjNya <anchor 1408 0> mark @MC_blwmBOTTOM;
 	pos base gjPKa <anchor 1122 0> mark @MC_blwmBOTTOM;
@@ -122,7 +127,6 @@ lookup MARK_BASE_blwmBOTTOM {
 	pos base gjPhSa <anchor 2561 0> mark @MC_blwmBOTTOM;
 	pos base gjPhTta <anchor 1843 0> mark @MC_blwmBOTTOM;
 	pos base gjPhYa <anchor 2266 0> mark @MC_blwmBOTTOM;
-	pos base gjRa <anchor 728 0> mark @MC_blwmBOTTOM;
 	pos base gjSDda <anchor 1712 0> mark @MC_blwmBOTTOM;
 	pos base gjSKRa <anchor 1624 0> mark @MC_blwmBOTTOM;
 	pos base gjSKa <anchor 1643 0> mark @MC_blwmBOTTOM;
@@ -144,7 +148,6 @@ lookup MARK_BASE_blwmBOTTOM {
 	pos base gjSsTtha <anchor 799 0> mark @MC_blwmBOTTOM;
 	pos base gjTMa <anchor 1829 0> mark @MC_blwmBOTTOM;
 	pos base gjTNa <anchor 1198 0> mark @MC_blwmBOTTOM;
-	pos base gjTRa <anchor 983 0> mark @MC_blwmBOTTOM;
 	pos base gjTTYa <anchor 2014 0> mark @MC_blwmBOTTOM;
 	pos base gjTTa <anchor 1314 0> mark @MC_blwmBOTTOM;
 	pos base gjTYa <anchor 1860 0> mark @MC_blwmBOTTOM;
@@ -162,16 +165,16 @@ lookup MARK_BASE_blwmBOTTOM {
 	pos base gjVYa <anchor 1886 0> mark @MC_blwmBOTTOM;
 	pos base gjVa <anchor 998 0> mark @MC_blwmBOTTOM;
 	pos base gjYa <anchor 1045 0> mark @MC_blwmBOTTOM;
-	pos base gjYa.alt <anchor 1053 0> mark @MC_blwmBOTTOM;
+	pos base gjYa.post <anchor 1053 0> mark @MC_blwmBOTTOM;
 } MARK_BASE_blwmBOTTOM;
 
 
 lookup MARK_BASE_blwmRUKAR {
-	@bGC_gjDBa.alt_blwmRUKAR = [gjDBa.alt gjDVa.alt];
+	@bGC_gjDBa.ss01_blwmRUKAR = [gjDBa.ss01 gjDVa.ss01];
 	@bGC_gjKKRa_blwmRUKAR = [gjKKRa gjKKa];
-	@bGC_gjRa_blwmRUKAR = [gjRa gjSsTta];
+	@bGC_gjRa_blwmRUKAR = [gjRa gjSsTta gjRa_gjMatraU];
 	@bGC_gjSKRa_blwmRUKAR = [gjSKRa gjSKa];
-	pos base @bGC_gjDBa.alt_blwmRUKAR <anchor 1438 -507> mark @MC_blwmRUKAR;
+	pos base @bGC_gjDBa.ss01_blwmRUKAR <anchor 1438 -507> mark @MC_blwmRUKAR;
 	pos base @bGC_gjKKRa_blwmRUKAR <anchor 1369 24> mark @MC_blwmRUKAR;
 	pos base @bGC_gjRa_blwmRUKAR <anchor 799 24> mark @MC_blwmRUKAR;
 	pos base @bGC_gjSKRa_blwmRUKAR <anchor 1624 24> mark @MC_blwmRUKAR;
@@ -180,15 +183,15 @@ lookup MARK_BASE_blwmRUKAR {
 	pos base gjDBa <anchor 1438 -352> mark @MC_blwmRUKAR;
 	pos base gjDDa <anchor 1135 -375> mark @MC_blwmRUKAR;
 	pos base gjDDha <anchor 1168 -321> mark @MC_blwmRUKAR;
-	pos base gjDDha.alt <anchor 1186 -466> mark @MC_blwmRUKAR;
+	pos base gjDDha.ss01 <anchor 1186 -466> mark @MC_blwmRUKAR;
 	pos base gjDGa <anchor 1194 -352> mark @MC_blwmRUKAR;
-	pos base gjDGa.alt <anchor 1196 -507> mark @MC_blwmRUKAR;
+	pos base gjDGa.ss01 <anchor 1196 -507> mark @MC_blwmRUKAR;
 	pos base gjDGha <anchor 1509 -352> mark @MC_blwmRUKAR;
-	pos base gjDGha.alt <anchor 1509 -507> mark @MC_blwmRUKAR;
+	pos base gjDGha.ss01 <anchor 1509 -507> mark @MC_blwmRUKAR;
 	pos base gjDNa <anchor 1143 -352> mark @MC_blwmRUKAR;
-	pos base gjDNa.alt <anchor 1143 -507> mark @MC_blwmRUKAR;
+	pos base gjDNa.ss01 <anchor 1143 -507> mark @MC_blwmRUKAR;
 	pos base gjDRa <anchor 1049 -352> mark @MC_blwmRUKAR;
-	pos base gjDRa.alt <anchor 1048 -484> mark @MC_blwmRUKAR;
+	pos base gjDRa.ss01 <anchor 1048 -484> mark @MC_blwmRUKAR;
 	pos base gjDVa <anchor 1425 -352> mark @MC_blwmRUKAR;
 	pos base gjDa <anchor 729 38> mark @MC_blwmRUKAR;
 	pos base gjDdDda <anchor 784 -626> mark @MC_blwmRUKAR;

@@ -31,11 +31,11 @@ table OS/2 {
 						1254	# Turkish
 						1257	# Baltic
 						;
-	winAscent			1975;
-	winDescent			725;
-	TypoAscender		1750;
-	TypoDescender		-500;
-	TypoLineGap			450;
+	winAscent			2300;
+	winDescent			1050;
+	TypoAscender		2000;
+	TypoDescender		-750;
+	TypoLineGap			600;
 	XHeight				1136;		# differs from weight to weight
 	CapHeight			1562;
 	include(WeightClass.fea);
@@ -45,8 +45,8 @@ table OS/2 {
 
 table hhea {
 	#CaretOffset -50;
-	Ascender 1975;
-	Descender -725;
+	Ascender 2300;
+	Descender -1050;
 	LineGap 0;
 } hhea;
 
