@@ -120,6 +120,13 @@ feature locl {
 include(../../shared.first.fea);
 include(../../shared.frac.fea);
 include(../../shared.second.fea);
+
+
+
+#----------------------------------------------------------------------------
+# Gujarati
+
+include(markclasses.fea);
 include(../uprights.gujarati.fea);
 
 
@@ -207,13 +214,12 @@ feature kern {
 		lookupflag IgnoreMarks;
 		include(kern.fea)
 	} KERN_LTR;	
-} kern;#
+} kern;
 
 feature dist { # Distances = kerning
 	lookup KERN_LTR;
 } dist;
 
-include(markclasses.fea);
 feature mark {
 	include(mark.fea);
 } mark;

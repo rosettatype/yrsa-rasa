@@ -1,4 +1,4 @@
-# Created: Mon Jan 25 18:45:21 2016
+# Created: Sun Jan 31 22:52:07 2016
 # PS Name: Rasa-Bold
 # MM Inst: None
 # exported from Defcon
@@ -7,9 +7,7 @@
 
 lookup MARK_BASE_btm {
 	@bGC_P_btm = [P u];
-	@bGC_f_i_btm = [f_i f.salt];
 	pos base @bGC_P_btm <anchor 758 0> mark @MC_btm;
-	pos base @bGC_f_i_btm <anchor 386 -170> mark @MC_btm;
 	pos base A <anchor 655 0> mark @MC_btm;
 	pos base AE <anchor 1104 0> mark @MC_btm;
 	pos base Aogonek <anchor 655 -170> mark @MC_btm;
@@ -59,6 +57,8 @@ lookup MARK_BASE_btm {
 	pos base eng <anchor 1101 -170> mark @MC_btm;
 	pos base eogonek <anchor 585 -170> mark @MC_btm;
 	pos base f <anchor 386 0> mark @MC_btm;
+	pos base f_b <anchor 1493 0> mark @MC_btm;
+	pos base f_f_b <anchor 2342 0> mark @MC_btm;
 	pos base h <anchor 746 0> mark @MC_btm;
 	pos base hbar <anchor 746 -170> mark @MC_btm;
 	pos base k <anchor 777 0> mark @MC_btm;
@@ -92,13 +92,11 @@ lookup MARK_BASE_top {
 	@bGC_W_top = [W AE];
 	@bGC_c_top = [c q];
 	@bGC_dotlessi_top = [dotlessi dotlessiogonek];
-	@bGC_f_i_top = [f_i f.salt];
 	pos base @bGC_A_top <anchor 805 1562> mark @MC_top;
 	pos base @bGC_Lslash_top <anchor 662 1700> mark @MC_top;
 	pos base @bGC_W_top <anchor 1175 1562> mark @MC_top;
 	pos base @bGC_c_top <anchor 627 1138> mark @MC_top;
 	pos base @bGC_dotlessi_top <anchor 374 1138> mark @MC_top;
-	pos base @bGC_f_i_top <anchor 412 2063> mark @MC_top;
 	pos base Aogonek <anchor 790 1700> mark @MC_top;
 	pos base B <anchor 829 1562> mark @MC_top;
 	pos base C <anchor 838 1562> mark @MC_top;
@@ -142,6 +140,8 @@ lookup MARK_BASE_top {
 	pos base eng <anchor 1101 1700> mark @MC_top;
 	pos base eogonek <anchor 617 1700> mark @MC_top;
 	pos base f <anchor 412 1138> mark @MC_top;
+	pos base f_b <anchor 1787 1138> mark @MC_top;
+	pos base f_f_b <anchor 2636 1138> mark @MC_top;
 	pos base g <anchor 613 1138> mark @MC_top;
 	pos base h <anchor 458 1769> mark @MC_top;
 	pos base hbar <anchor 734 1700> mark @MC_top;

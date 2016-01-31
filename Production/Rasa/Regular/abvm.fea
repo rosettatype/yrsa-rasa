@@ -1,4 +1,4 @@
-# Created: Mon Jan 25 18:45:23 2016
+# Created: Sun Jan 31 22:52:08 2016
 # PS Name: Rasa-Regular
 # MM Inst: None
 # exported from Defcon
@@ -48,6 +48,7 @@ lookup MARK_BASE_abvmBINDU {
 	pos base gjAa <anchor 2331 1340> mark @MC_abvmBINDU;
 	pos base gjAi <anchor 1881 1581> mark @MC_abvmBINDU;
 	pos base gjAu <anchor 2534 1581> mark @MC_abvmBINDU;
+	pos base gjAvagraha <anchor 608 1340> mark @MC_abvmBINDU;
 	pos base gjBKa <anchor 1452 1340> mark @MC_abvmBINDU;
 	pos base gjBYa <anchor 2021 1340> mark @MC_abvmBINDU;
 	pos base gjBa <anchor 1370 1340> mark @MC_abvmBINDU;
@@ -135,19 +136,8 @@ lookup MARK_BASE_abvmBINDU {
 	pos base gjMatraI <anchor 1499 1474> mark @MC_abvmBINDU;
 	pos base gjMatraI.1 <anchor 1646 1474> mark @MC_abvmBINDU;
 	pos base gjMatraI.10 <anchor 2968 1474> mark @MC_abvmBINDU;
-	pos base gjMatraI.11 <anchor 3116 1474> mark @MC_abvmBINDU;
-	pos base gjMatraI.12 <anchor 3263 1474> mark @MC_abvmBINDU;
-	pos base gjMatraI.13 <anchor 3409 1474> mark @MC_abvmBINDU;
-	pos base gjMatraI.14 <anchor 3557 1474> mark @MC_abvmBINDU;
-	pos base gjMatraI.15 <anchor 3703 1474> mark @MC_abvmBINDU;
-	pos base gjMatraI.16 <anchor 3851 1474> mark @MC_abvmBINDU;
-	pos base gjMatraI.17 <anchor 3997 1474> mark @MC_abvmBINDU;
-	pos base gjMatraI.18 <anchor 4145 1474> mark @MC_abvmBINDU;
-	pos base gjMatraI.19 <anchor 4291 1474> mark @MC_abvmBINDU;
+	pos base gjMatraI.11 <anchor 3210 1474> mark @MC_abvmBINDU;
 	pos base gjMatraI.2 <anchor 1793 1474> mark @MC_abvmBINDU;
-	pos base gjMatraI.20 <anchor 4438 1474> mark @MC_abvmBINDU;
-	pos base gjMatraI.21 <anchor 4585 1474> mark @MC_abvmBINDU;
-	pos base gjMatraI.22 <anchor 4732 1474> mark @MC_abvmBINDU;
 	pos base gjMatraI.3 <anchor 1940 1474> mark @MC_abvmBINDU;
 	pos base gjMatraI.4 <anchor 2086 1474> mark @MC_abvmBINDU;
 	pos base gjMatraI.5 <anchor 2234 1474> mark @MC_abvmBINDU;
@@ -334,19 +324,8 @@ lookup MARK_BASE_abvmTOP {
 	pos base gjMatraI <anchor 1499 1474> mark @MC_abvmTOP;
 	pos base gjMatraI.1 <anchor 1646 1474> mark @MC_abvmTOP;
 	pos base gjMatraI.10 <anchor 2968 1474> mark @MC_abvmTOP;
-	pos base gjMatraI.11 <anchor 3116 1474> mark @MC_abvmTOP;
-	pos base gjMatraI.12 <anchor 3263 1474> mark @MC_abvmTOP;
-	pos base gjMatraI.13 <anchor 3409 1474> mark @MC_abvmTOP;
-	pos base gjMatraI.14 <anchor 3557 1474> mark @MC_abvmTOP;
-	pos base gjMatraI.15 <anchor 3703 1474> mark @MC_abvmTOP;
-	pos base gjMatraI.16 <anchor 3851 1474> mark @MC_abvmTOP;
-	pos base gjMatraI.17 <anchor 3997 1474> mark @MC_abvmTOP;
-	pos base gjMatraI.18 <anchor 4145 1474> mark @MC_abvmTOP;
-	pos base gjMatraI.19 <anchor 4291 1474> mark @MC_abvmTOP;
+	pos base gjMatraI.11 <anchor 3209 1474> mark @MC_abvmTOP;
 	pos base gjMatraI.2 <anchor 1793 1474> mark @MC_abvmTOP;
-	pos base gjMatraI.20 <anchor 4438 1474> mark @MC_abvmTOP;
-	pos base gjMatraI.21 <anchor 4585 1474> mark @MC_abvmTOP;
-	pos base gjMatraI.22 <anchor 4732 1474> mark @MC_abvmTOP;
 	pos base gjMatraI.3 <anchor 1940 1474> mark @MC_abvmTOP;
 	pos base gjMatraI.4 <anchor 2086 1474> mark @MC_abvmTOP;
 	pos base gjMatraI.5 <anchor 2234 1474> mark @MC_abvmTOP;
@@ -413,5 +392,11 @@ lookup MARK_BASE_abvmTOP {
 	pos base gjVYa <anchor 1801 1363> mark @MC_abvmTOP;
 	pos base gjYa <anchor 974 1363> mark @MC_abvmTOP;
 } MARK_BASE_abvmTOP;
+
+
+lookup MKMK_MARK_abvmBINDU {
+	pos mark gjMatraAi <anchor -196 1558> mark @MC_abvmBINDU;
+	pos mark gjMatraE <anchor -161 1563> mark @MC_abvmBINDU;
+} MKMK_MARK_abvmBINDU;
 
 

@@ -1,4 +1,4 @@
-# Created: Mon Jan 25 18:45:22 2016
+# Created: Sun Jan 31 22:52:07 2016
 # PS Name: Rasa-Light
 # MM Inst: None
 # exported from Defcon
@@ -8,10 +8,8 @@
 lookup MARK_BASE_btm {
 	@bGC_Dcroat_btm = [Dcroat Uogonek];
 	@bGC_f_btm = [f h];
-	@bGC_hbar_btm = [hbar f_i f.salt];
 	pos base @bGC_Dcroat_btm <anchor 860 -170> mark @MC_btm;
 	pos base @bGC_f_btm <anchor 397 0> mark @MC_btm;
-	pos base @bGC_hbar_btm <anchor 397 -170> mark @MC_btm;
 	pos base A <anchor 735 0> mark @MC_btm;
 	pos base AE <anchor 1080 0> mark @MC_btm;
 	pos base Aogonek <anchor 735 -170> mark @MC_btm;
@@ -59,6 +57,9 @@ lookup MARK_BASE_btm {
 	pos base e <anchor 634 0> mark @MC_btm;
 	pos base eng <anchor 1095 -170> mark @MC_btm;
 	pos base eogonek <anchor 634 -170> mark @MC_btm;
+	pos base f_b <anchor 1483 0> mark @MC_btm;
+	pos base f_f_b <anchor 2266 0> mark @MC_btm;
+	pos base hbar <anchor 397 -170> mark @MC_btm;
 	pos base k <anchor 717 0> mark @MC_btm;
 	pos base l <anchor 339 0> mark @MC_btm;
 	pos base lslash <anchor 380 -170> mark @MC_btm;
@@ -88,10 +89,8 @@ lookup MARK_BASE_btm {
 lookup MARK_BASE_top {
 	@bGC_E_top = [E R];
 	@bGC_dotlessi_top = [dotlessi dotlessiogonek];
-	@bGC_f_i_top = [f_i f.salt];
 	pos base @bGC_E_top <anchor 730 1562> mark @MC_top;
 	pos base @bGC_dotlessi_top <anchor 325 1136> mark @MC_top;
-	pos base @bGC_f_i_top <anchor 423 2063> mark @MC_top;
 	pos base A <anchor 762 1562> mark @MC_top;
 	pos base AE <anchor 1151 1562> mark @MC_top;
 	pos base Aogonek <anchor 764 1700> mark @MC_top;
@@ -139,6 +138,8 @@ lookup MARK_BASE_top {
 	pos base eng <anchor 1095 1700> mark @MC_top;
 	pos base eogonek <anchor 619 1700> mark @MC_top;
 	pos base f <anchor 423 1136> mark @MC_top;
+	pos base f_b <anchor 1621 1136> mark @MC_top;
+	pos base f_f_b <anchor 2404 1136> mark @MC_top;
 	pos base g <anchor 602 1136> mark @MC_top;
 	pos base h <anchor 391 1766> mark @MC_top;
 	pos base hbar <anchor 368 1700> mark @MC_top;

@@ -368,9 +368,15 @@ zcaron	zcaron	uni017E
 eth	eth	uni00F0
 thorn	thorn	uni00FE
 uni0259	schwa	uni0259
-f_i	f_i	uniFB01
+f_b	f_b	
+f_f	f_f	uniFB00
+f_h	f_h	
+f_k	f_k	
 f_l	f_l	uniFB02
-f.salt	f.salt	
+f_f_b	f_f_b	
+f_f_h	f_f_h	
+f_f_k	f_f_k	
+f_f_l	f_f_l	uniFB04
 zero	zero	uni0030
 one	one	uni0031
 two	two	uni0032
@@ -713,6 +719,7 @@ uni0AB80ACD.calt	gjS.calt
 uni0AB90ACD	gjH	
 uni0A950ACD0AB70ACD	gjKSs	
 uni0A9C0ACD0A9E0ACD	gjJNy	
+uni0A950ACD0AB00ACD	gjKR	
 uni0A950ACD0AB00ACD.calt	gjKR.calt	
 uni0A950ACD0AB00ACD.calt2	gjKR.calt2	
 uni0A950ACD0AB00ACD.calt3	gjKR.calt3	
@@ -840,22 +847,19 @@ uni0ABF.8	gjMatraI.8
 uni0ABF.9	gjMatraI.9	
 uni0ABF.10	gjMatraI.10	
 uni0ABF.11	gjMatraI.11	
-uni0ABF.12	gjMatraI.12	
-uni0ABF.13	gjMatraI.13	
-uni0ABF.14	gjMatraI.14	
-uni0ABF.15	gjMatraI.15	
-uni0ABF.16	gjMatraI.16	
-uni0ABF.17	gjMatraI.17	
-uni0ABF.18	gjMatraI.18	
-uni0ABF.19	gjMatraI.19	
-uni0ABF.20	gjMatraI.20	
-uni0ABF.21	gjMatraI.21	
-uni0ABF.22	gjMatraI.22	
 uni0AC0.1	gjMatraIi.1	
 uni0AC0.2	gjMatraIi.2	
 uni0AC0.3	gjMatraIi.3	
-uni0AB00ACD.alt	gjReph.alt	
-uni0A82.alt	gjAnusvara.alt	
+uni0A82.calt	gjAnusvara.calt	
+uni0A82.calt2	gjAnusvara.calt2	
+uni0A81.calt	gjCandrabindu.calt	
+uni0A81.calt2	gjCandrabindu.calt2	
+uni0A81.calt3	gjCandrabindu.calt3	
+uni0AB00ACD.calt	gjReph.calt	
+uni0AB00ACD.calt2	gjReph.calt2	
+u0AB00ACD0A82	gjReph_gjAnusvara	
+u0AB00ACD0A82.calt	gjReph_gjAnusvara.calt	
+u0AB00ACD0A82.calt2	gjReph_gjAnusvara.calt2	
 u0AC00AB00ACD	gjMatraIi_gjReph	
 u0AC00AB00ACD.1	gjMatraIi_gjReph.1	
 u0AC00AB00ACD.2	gjMatraIi_gjReph.2	
@@ -865,12 +869,15 @@ u0AC00AB00ACD0A82.1	gjMatraIi_gjReph_gjAnusvara.1
 u0AC00AB00ACD0A82.2	gjMatraIi_gjReph_gjAnusvara.2	
 u0AC00AB00ACD0A82.3	gjMatraIi_gjReph_gjAnusvara.3	
 u0AC50A82	gjMatraCandraE_gjAnusvara	
+u0AC50A81	gjMatraCandraE_gjCandrabindu	
 u0AC50AB00ACD	gjMatraCandraE_gjReph	
 u0AC50AB00ACD0A82	gjMatraCandraE_gjReph_gjAnusvara	
 u0AC70A82	gjMatraE_gjAnusvara	
+u0AC70A81	gjMatraE_gjCandrabindu	
 u0AC70AB00ACD	gjMatraE_gjReph	
 u0AC70AB00ACD0A82	gjMatraE_gjReph_gjAnusvara	
 u0AC80A82	gjMatraAi_gjAnusvara	
+u0AC80A81	gjMatraAi_gjCandrabindu	
 u0AC80AB00ACD	gjMatraAi_gjReph	
 u0AC80AB00ACD0A82	gjMatraAi_gjReph_gjAnusvara	
 u0AC90AB00ACD	gjMatraCandraO_gjReph	
@@ -881,12 +888,9 @@ u0ACC0AB00ACD	gjMatraAu_gjReph
 u0ACC0AB00ACD0A82	gjMatraAu_gjReph_gjAnusvara	
 u0ACD0AB00AC1	gjRakar_gjMatraU	
 u0ACD0AB00AC2	gjRakar_gjMatraUu	
-u0AB00ACD0A82	gjReph_gjAnusvara	
-u0AB00ACD0A82.alt	gjReph_gjAnusvara.alt	
 uni25CC	dottedCircle	uni25CC
 uni200C	zerowidthnonjoiner	uni200C
 uni200D	zerowidthjoiner	uni200D
-uni0A82.alt2	gjAnusvara.alt2	
 asterisk.gujr	asterisk.gujr	
 periodcentered.gujr	periodcentered.gujr	
 bullet.gujr	bullet.gujr	
@@ -906,11 +910,11 @@ parenright.gujr	parenright.gujr
 emdash.gujr	emdash.gujr	
 endash.gujr	endash.gujr	
 hyphen.gujr	hyphen.gujr	
+guillemotleft.gujr	guillemetleft.gujr	
+guillemotright.gujr	guillemetright.gujr	
 guilsinglleft.gujr	guilsinglleft.gujr	
 guilsinglright.gujr	guilsinglright.gujr	
-quotedblbase.gujr	quotedblbase.gujr	
 quotedblleft.gujr	quotedblleft.gujr	
 quotedblright.gujr	quotedblright.gujr	
 quoteleft.gujr	quoteleft.gujr	
 quoteright.gujr	quoteright.gujr	
-quotesinglbase.gujr	quotesinglbase.gujr	
