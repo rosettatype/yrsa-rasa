@@ -21,27 +21,17 @@ feature case {
 #----------------------------------------------------------------------------
 # Ligatures
 
-#!! add ligatures
-
-#feature liga {
-#	sub f b by f_b;
-#	sub f f by f_f;
-#	sub f h by f_h;
-#	sub f i by f_i;
-#	sub f iacute by f_iacute;
-#	sub f j by f_j;
-#	sub f k by f_k;
-#	sub f l by f_l;
-#	sub f lcaron by f_lcaron;
-#	sub f t by f_t;
-#	sub f f i by f_f_i;
-#	sub f f b by f_f_b;
-#	sub f f h by f_f_h;
-#	sub f f j by f_f_j;
-#	sub f f k by f_f_k;
-#	sub f f l by f_f_l;
-#	sub f f t by f_f_t;
-#} liga;
+feature liga {
+	sub f b by f_b;
+	sub f f by f_f;
+	sub f h by f_h;
+	sub f k by f_k;
+	sub f l by f_l;
+	sub f f b by f_f_b;
+	sub f f h by f_f_h;
+	sub f f k by f_f_k;
+	sub f f l by f_f_l;
+} liga;
 
 
 

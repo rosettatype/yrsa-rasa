@@ -51,7 +51,7 @@ table hhea {
 } hhea;
 
 table name {
-	nameid 0 "Copyright (c) 2015 by Rosetta Type Foundry. All rights reserved.";
+	nameid 0 "Copyright (c) 2015-16 by Rosetta Type Foundry. All rights reserved.";
 	nameid 7 "Skolar Sans is a trademark of Rosetta Type Foundry.";
 	nameid 8 "Rosetta Type Foundry";
 	nameid 9 "Anna Giedrys, David Brezina";
@@ -61,10 +61,10 @@ table name {
 	nameid 14 "http://rosettatype.com/license";
 } name;
 
-# !!
-#table GDEF {
-#	include(../uprights.gdef.fea)
-#} GDEF;
+
+table GDEF {
+	include(../uprights.gdef.fea)
+} GDEF;
 
 
 #----------------------------------------------------------------------------

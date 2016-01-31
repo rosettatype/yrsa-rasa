@@ -37,18 +37,19 @@ feature aalt{
 feature locl {	
 	script latn; # Latin
 		# i -> idotaccent substitution effectively switches off the fi and ffi ligatures
-		language TRK; # Turkish
-			lookup locl_TRK {
-				sub i by idotaccent;
-			} locl_TRK;
-		language AZE; # Azeri
-			lookup locl_TRK;
-		language CRT; # Crimean Tatar
-			lookup locl_TRK;
-		language KAZ; # Kazakh
-			lookup locl_TRK;
-		language TAT; # Tatar
-			lookup locl_TRK;
+		# not needed as there is no f_i ligature
+		#language TRK; # Turkish
+		#	lookup locl_TRK {
+		#		sub i by idotaccent;
+		#	} locl_TRK;
+		#language AZE; # Azeri
+		#	lookup locl_TRK;
+		#language CRT; # Crimean Tatar
+		#	lookup locl_TRK;
+		#language KAZ; # Kazakh
+		#	lookup locl_TRK;
+		#language TAT; # Tatar
+		#	lookup locl_TRK;
 
 		# handling of S and T with commaaccent
 		language ROM; # Romanian
@@ -75,7 +76,6 @@ feature locl {
 				sub Iacute J by Iacute_J.NLD;
 			} locl_NLD;
 
-#!! add Gujarati specific punctuation
 	script gujr;
 		lookup locl_gujr {
 			sub asterisk by asterisk.gujr;
@@ -101,12 +101,10 @@ feature locl {
 			sub guillemotright by guillemotright.gujr;
 			sub guilsinglleft by guilsinglleft.gujr;
 			sub guilsinglright by guilsinglright.gujr;
-			sub quotedblbase by quotedblbase.gujr;
 			sub quotedblleft by quotedblleft.gujr;
 			sub quotedblright by quotedblright.gujr;
 			sub quoteleft by quoteleft.gujr;
 			sub quoteright by quoteright.gujr;
-			sub quotesinglbase by quotesinglbase.gujr;
 			sub rupeeIndian by rupeeIndian.gujr;
 		} locl_gujr;
 	script gjr2;
@@ -150,18 +148,18 @@ feature pnum {
 	sub rupeeIndian.tf by rupeeIndian;
 	sub rupeeIndian.gujr.tf by rupeeIndian.gujr;
 
-	sub gjZero by gjZero.tf;
-	sub gjOne by gjOne.tf;
-	sub gjTwo by gjTwo.tf;
-	sub gjThree by gjThree.tf;
-	sub gjFour by gjFour.tf;
-	sub gjFive by gjFive.tf;
-	sub gjSix by gjSix.tf;
-	sub gjSix.ss02 by gjSix.ss02.tf;
-	sub gjSeven by gjSeven.tf;
-	sub gjEight by gjEight.tf;
-	sub gjNine by gjNine.tf;
-	sub gjRupee by gjRupee.tf;
+	sub gjZero.tf by gjZero;
+	sub gjOne.tf by gjOne;
+	sub gjTwo.tf by gjTwo;
+	sub gjThree.tf by gjThree;
+	sub gjFour.tf by gjFour;
+	sub gjFive.tf by gjFive;
+	sub gjSix.tf by gjSix;
+	sub gjSix.ss02.tf by gjSix.ss02;
+	sub gjSeven.tf by gjSeven;
+	sub gjEight.tf by gjEight;
+	sub gjNine.tf by gjNine;
+	sub gjRupee.tf by gjRupee;
 } pnum;
 
 feature tnum {
@@ -185,18 +183,18 @@ feature tnum {
 	sub rupeeIndian by rupeeIndian.tf;
 	sub rupeeIndian.gujr by rupeeIndian.gujr.tf;
 
-	sub gjZero.tf by gjZero;
-	sub gjOne.tf by gjOne;
-	sub gjTwo.tf by gjTwo;
-	sub gjThree.tf by gjThree;
-	sub gjFour.tf by gjFour;
-	sub gjFive.tf by gjFive;
-	sub gjSix.tf by gjSix;
-	sub gjSix.ss02.tf by gjSix.ss02;
-	sub gjSeven.tf by gjSeven;
-	sub gjEight.tf by gjEight;
-	sub gjNine.tf by gjNine;
-	sub gjRupee.tf by gjRupee;
+	sub gjZero by gjZero.tf;
+	sub gjOne by gjOne.tf;
+	sub gjTwo by gjTwo.tf;
+	sub gjThree by gjThree.tf;
+	sub gjFour by gjFour.tf;
+	sub gjFive by gjFive.tf;
+	sub gjSix by gjSix.tf;
+	sub gjSix.ss02 by gjSix.ss02.tf;
+	sub gjSeven by gjSeven.tf;
+	sub gjEight by gjEight.tf;
+	sub gjNine by gjNine.tf;
+	sub gjRupee by gjRupee.tf;
 } tnum;
 
 
