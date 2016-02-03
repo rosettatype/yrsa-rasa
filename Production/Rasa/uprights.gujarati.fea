@@ -899,10 +899,26 @@ featureNames {
 
 
 #----------------------------------------------------------------------------
+# Stylistic set 2
+
+feature ss03 {
+featureNames {
+	name "Gujarati punctuation";
+	name 1 "Gujarati punctuation";
+};
+	
+	lookup locl_gujr;
+} ss03;
+
+
+
+
+#----------------------------------------------------------------------------
 # Stylistic alternates
 
 feature salt {
 	lookup AlternatesConjuncts;
 	lookup AlternatesFigures;
+	lookup locl_gujr;
 } salt;
 

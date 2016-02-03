@@ -23,7 +23,9 @@ feature aalt{
 	feature pnum;
 	feature tnum;
 	feature calt;
-	feature case;
+	feature ss01;
+	feature ss02;
+	feature ss03;
 
 	sub period by ellipsis;
 	sub hyphen from [endash emdash minus];
