@@ -1,4 +1,4 @@
-# Created: Sun Jan 31 22:52:09 2016
+# Created: Thu Feb  4 19:37:21 2016
 # PS Name: Rasa-Semibold
 # MM Inst: None
 # exported from Defcon
@@ -29,4 +29,6 @@ markClass dotaccentcomb <anchor 1 1138> @MC_top;
 markClass gjAnusvara <anchor -385 1357> @MC_abvmBINDU;
 markClass gjCandrabindu <anchor -335 1340> @MC_abvmBINDU;
 markClass gjCandrabindu.calt3 <anchor -385 1340> @MC_abvmBINDU;
+markClass gjNukta <anchor -301 -308> @MC_blwmNUKTA;
+markClass gjNukta.calt <anchor -301 -308> @MC_blwmNUKTA2;
 

@@ -1,4 +1,4 @@
-# Created: Sun Jan 31 22:52:07 2016
+# Created: Thu Feb  4 19:37:19 2016
 # PS Name: Rasa-Light
 # MM Inst: None
 # exported from Defcon
@@ -26,4 +26,6 @@ markClass @mGC_top_0_1136 <anchor 0 1136> @MC_top;
 markClass @mGC_top_0_1562 <anchor 0 1562> @MC_top;
 markClass caroncomb.calt <anchor 0 1136> @MC_topright;
 markClass gjCandrabindu <anchor -164 1340> @MC_abvmBINDU;
+markClass gjNukta <anchor -278 -308> @MC_blwmNUKTA;
+markClass gjNukta.calt <anchor -278 -308> @MC_blwmNUKTA2;
 

@@ -1,4 +1,4 @@
-# Created: Sun Jan 31 22:52:08 2016
+# Created: Thu Feb  4 19:37:20 2016
 # PS Name: Rasa-Regular
 # MM Inst: None
 # exported from Defcon
@@ -26,4 +26,6 @@ markClass caroncomb.calt <anchor 0 1137> @MC_topright;
 markClass gjAnusvara <anchor -371 1346> @MC_abvmBINDU;
 markClass gjCandrabindu <anchor -221 1340> @MC_abvmBINDU;
 markClass gjCandrabindu.calt3 <anchor -371 1340> @MC_abvmBINDU;
+markClass gjNukta <anchor -286 -308> @MC_blwmNUKTA;
+markClass gjNukta.calt <anchor -286 -308> @MC_blwmNUKTA2;
 

@@ -1,4 +1,4 @@
-# Created: Sun Jan 31 22:52:07 2016
+# Created: Thu Feb  4 19:37:19 2016
 # PS Name: Rasa-Light
 # MM Inst: None
 # exported from Defcon
@@ -164,6 +164,90 @@ lookup MARK_BASE_blwmBOTTOM {
 	pos base gjVYa <anchor 1758 0> mark @MC_blwmBOTTOM;
 	pos base gjYa <anchor 938 0> mark @MC_blwmBOTTOM;
 } MARK_BASE_blwmBOTTOM;
+
+
+lookup MARK_BASE_blwmNUKTA {
+	@bGC_gjBa_blwmNUKTA = [gjBa gjB];
+	@bGC_gjBha_blwmNUKTA = [gjBha gjBh];
+	@bGC_gjCa_blwmNUKTA = [gjCa gjC];
+	@bGC_gjDha_blwmNUKTA = [gjDha gjDh gjDh.calt];
+	@bGC_gjGa_blwmNUKTA = [gjGa gjGRa gjG gjGR];
+	@bGC_gjGha_blwmNUKTA = [gjGha gjGh];
+	@bGC_gjJNya_blwmNUKTA = [gjJNya gjJNy];
+	@bGC_gjJa_blwmNUKTA = [gjJa gjJRa gjJ.calt gjJ.calt2 gjJ.calt3 gjJa_gjMatraAa gjJRa_gjMatraAa];
+	@bGC_gjJa_gjMatraIi_blwmNUKTA = [gjJa_gjMatraIi gjJRa_gjMatraIi];
+	@bGC_gjKSsa_blwmNUKTA = [gjKSsa gjKSsRa gjKSs gjKSsR gjKSsa_gjMatraU];
+	@bGC_gjKa_blwmNUKTA = [gjKa gjKRa gjK.calt gjK.calt2 gjK.calt3 gjKR.calt gjKR.calt2 gjKR.calt3];
+	@bGC_gjKha_blwmNUKTA = [gjKha gjKhRa gjKh gjKhR];
+	@bGC_gjLa_blwmNUKTA = [gjLa gjL gjL.calt];
+	@bGC_gjLla_blwmNUKTA = [gjLla gjLl gjLla_gjMatraVocalicR gjLla_gjMatraVocalicRr];
+	@bGC_gjMa_blwmNUKTA = [gjMa gjM];
+	@bGC_gjNa_blwmNUKTA = [gjNa gjN gjN.calt gjN.calt2];
+	@bGC_gjNga_blwmNUKTA = [gjNga gjDda];
+	@bGC_gjNna_blwmNUKTA = [gjNna gjNn gjNna_gjMatraU];
+	@bGC_gjNya_blwmNUKTA = [gjNya gjNy];
+	@bGC_gjPa_blwmNUKTA = [gjPa gjYa gjP gjP.calt gjY gjY.calt gjY.post gjYa.post];
+	@bGC_gjPha_blwmNUKTA = [gjPha gjPhRa gjPh.calt gjPh.calt2 gjPh.calt3];
+	@bGC_gjSha_blwmNUKTA = [gjSha gjSa gjSh gjS gjS.calt];
+	@bGC_gjSsa_blwmNUKTA = [gjSsa gjSs gjSs.calt];
+	@bGC_gjTa_blwmNUKTA = [gjTa gjT gjT.calt];
+	@bGC_gjTha_blwmNUKTA = [gjTha gjTh gjTh.calt];
+	@bGC_gjVa_blwmNUKTA = [gjVa gjV];
+	pos base @bGC_gjBa_blwmNUKTA <anchor 820 0> mark @MC_blwmNUKTA;
+	pos base @bGC_gjBha_blwmNUKTA <anchor 916 0> mark @MC_blwmNUKTA;
+	pos base @bGC_gjCa_blwmNUKTA <anchor 583 0> mark @MC_blwmNUKTA;
+	pos base @bGC_gjDha_blwmNUKTA <anchor 527 0> mark @MC_blwmNUKTA;
+	pos base @bGC_gjGa_blwmNUKTA <anchor 503 0> mark @MC_blwmNUKTA;
+	pos base @bGC_gjGha_blwmNUKTA <anchor 577 -63> mark @MC_blwmNUKTA;
+	pos base @bGC_gjJNya_blwmNUKTA <anchor 142 -255> mark @MC_blwmNUKTA;
+	pos base @bGC_gjJa_blwmNUKTA <anchor 966 -308> mark @MC_blwmNUKTA;
+	pos base @bGC_gjJa_gjMatraIi_blwmNUKTA <anchor 206 -343> mark @MC_blwmNUKTA;
+	pos base @bGC_gjKSsa_blwmNUKTA <anchor 378 -276> mark @MC_blwmNUKTA;
+	pos base @bGC_gjKa_blwmNUKTA <anchor 663 -308> mark @MC_blwmNUKTA;
+	pos base @bGC_gjKha_blwmNUKTA <anchor 833 0> mark @MC_blwmNUKTA;
+	pos base @bGC_gjLa_blwmNUKTA <anchor 680 -28> mark @MC_blwmNUKTA;
+	pos base @bGC_gjLla_blwmNUKTA <anchor 784 0> mark @MC_blwmNUKTA;
+	pos base @bGC_gjMa_blwmNUKTA <anchor 674 0> mark @MC_blwmNUKTA;
+	pos base @bGC_gjNa_blwmNUKTA <anchor 497 40> mark @MC_blwmNUKTA;
+	pos base @bGC_gjNga_blwmNUKTA <anchor 657 -308> mark @MC_blwmNUKTA;
+	pos base @bGC_gjNna_blwmNUKTA <anchor 417 -63> mark @MC_blwmNUKTA;
+	pos base @bGC_gjNya_blwmNUKTA <anchor 563 0> mark @MC_blwmNUKTA;
+	pos base @bGC_gjPa_blwmNUKTA <anchor 489 0> mark @MC_blwmNUKTA;
+	pos base @bGC_gjPha_blwmNUKTA <anchor 104 -308> mark @MC_blwmNUKTA;
+	pos base @bGC_gjSha_blwmNUKTA <anchor 340 -118> mark @MC_blwmNUKTA;
+	pos base @bGC_gjSsa_blwmNUKTA <anchor 566 0> mark @MC_blwmNUKTA;
+	pos base @bGC_gjTa_blwmNUKTA <anchor 770 -108> mark @MC_blwmNUKTA;
+	pos base @bGC_gjTha_blwmNUKTA <anchor 569 0> mark @MC_blwmNUKTA;
+	pos base @bGC_gjVa_blwmNUKTA <anchor 523 0> mark @MC_blwmNUKTA;
+	pos base gjCha <anchor 729 -308> mark @MC_blwmNUKTA;
+	pos base gjDa <anchor 652 -308> mark @MC_blwmNUKTA;
+	pos base gjDdha <anchor 660 -308> mark @MC_blwmNUKTA;
+	pos base gjHa <anchor 473 -308> mark @MC_blwmNUKTA;
+	pos base gjJha <anchor 824 -78> mark @MC_blwmNUKTA;
+	pos base gjRa <anchor 290 -58> mark @MC_blwmNUKTA;
+	pos base gjRa_gjMatraUu <anchor 75 -215> mark @MC_blwmNUKTA;
+	pos base gjTta <anchor 619 -308> mark @MC_blwmNUKTA;
+	pos base gjTtha <anchor 648 -308> mark @MC_blwmNUKTA;
+} MARK_BASE_blwmNUKTA;
+
+
+lookup MARK_BASE_blwmNUKTA2 {
+	@bGC_gjJa_blwmNUKTA2 = [gjJa gjJRa gjJ.calt gjJ.calt2 gjJ.calt3 gjJa_gjMatraAa gjJRa_gjMatraAa];
+	@bGC_gjKa_blwmNUKTA2 = [gjKa gjKRa gjK.calt gjK.calt2 gjK.calt3 gjKR.calt gjKR.calt2 gjKR.calt3];
+	@bGC_gjNga_blwmNUKTA2 = [gjNga gjDda];
+	@bGC_gjTa_blwmNUKTA2 = [gjTa gjT gjT.calt];
+	@bGC_gjTta_blwmNUKTA2 = [gjTta gjTtha];
+	pos base @bGC_gjJa_blwmNUKTA2 <anchor 346 0> mark @MC_blwmNUKTA2;
+	pos base @bGC_gjKa_blwmNUKTA2 <anchor 88 -73> mark @MC_blwmNUKTA2;
+	pos base @bGC_gjNga_blwmNUKTA2 <anchor 52 -69> mark @MC_blwmNUKTA2;
+	pos base @bGC_gjTa_blwmNUKTA2 <anchor 151 -177> mark @MC_blwmNUKTA2;
+	pos base @bGC_gjTta_blwmNUKTA2 <anchor 5 0> mark @MC_blwmNUKTA2;
+	pos base gjCha <anchor 118 -33> mark @MC_blwmNUKTA2;
+	pos base gjDa <anchor 111 -36> mark @MC_blwmNUKTA2;
+	pos base gjDdha <anchor -45 0> mark @MC_blwmNUKTA2;
+	pos base gjHa <anchor 41 -56> mark @MC_blwmNUKTA2;
+	pos base gjJha <anchor 187 -62> mark @MC_blwmNUKTA2;
+} MARK_BASE_blwmNUKTA2;
 
 
 lookup MARK_BASE_blwmRUKAR {

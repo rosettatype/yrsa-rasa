@@ -1,4 +1,4 @@
-# Created: Sun Jan 31 22:52:07 2016
+# Created: Thu Feb  4 19:37:19 2016
 # PS Name: Rasa-Bold
 # MM Inst: None
 # exported from Defcon
@@ -27,6 +27,8 @@ markClass @mGC_top_0_1563 <anchor 0 1563> @MC_top;
 markClass caroncomb.calt <anchor 0 1138> @MC_topright;
 markClass dotaccentcomb <anchor 1 1138> @MC_top;
 markClass gjAnusvara <anchor -392 1363> @MC_abvmBINDU;
+markClass gjNukta <anchor -309 -308> @MC_blwmNUKTA;
+markClass gjNukta.calt <anchor -309 -308> @MC_blwmNUKTA2;
 markClass gjReph.calt <anchor -336 1466> @MC_abvmTOP;
 markClass gjReph_gjAnusvara.calt <anchor -335 1466> @MC_abvmTOP;
 

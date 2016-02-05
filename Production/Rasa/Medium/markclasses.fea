@@ -1,4 +1,4 @@
-# Created: Sun Jan 31 22:52:08 2016
+# Created: Thu Feb  4 19:37:20 2016
 # PS Name: Rasa-Medium
 # MM Inst: None
 # exported from Defcon
@@ -27,6 +27,8 @@ markClass dotaccentcomb <anchor 1 1137> @MC_top;
 markClass gjAnusvara <anchor -378 1352> @MC_abvmBINDU;
 markClass gjCandrabindu <anchor -278 1340> @MC_abvmBINDU;
 markClass gjCandrabindu.calt3 <anchor -378 1340> @MC_abvmBINDU;
+markClass gjNukta <anchor -294 -308> @MC_blwmNUKTA;
+markClass gjNukta.calt <anchor -294 -308> @MC_blwmNUKTA2;
 markClass gjReph.calt <anchor -327 1471> @MC_abvmTOP;
 markClass gjReph_gjAnusvara.calt <anchor -326 1471> @MC_abvmTOP;
 
