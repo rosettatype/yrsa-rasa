@@ -1,0 +1,81 @@
+#----------------------------------------------------------------------------
+# Tables
+
+table BASE {
+	HorizAxis.BaseTagList	ideo  romn;
+	HorizAxis.BaseScriptList
+		DFLT	romn	-569 0,
+		latn	romn	-569 0;
+} BASE;
+
+include(../../version.fea);
+
+table OS/2 {
+	FSType				0;
+	Panose				2 13 0 0 0 4 0 0 0 0;
+	UnicodeRange		0		# Basic Latin
+						1		# Latin-1 Supplement
+						2		# Latin Extended-A
+						3		# Latin Extended-B
+						6		# Combining Diacritical Marks
+						29		# Latin Extended Additional
+						31		# General Punctuation
+						32		# Superscripts And Subscripts
+						33		# Currency Symbols
+						;
+	CodePageRange		1250	# Latin 2: Eastern Europe
+						1252	# Latin 1
+						1254	# Turkish
+						1257	# Baltic
+						;
+	winAscent			2300;
+	winDescent			1050;
+	TypoAscender		2000;
+	TypoDescender		-750;
+	TypoLineGap			600;
+	XHeight				1136;		# differs from weight to weight
+	CapHeight			1562;
+	include(WeightClass.fea);
+	include(../WidthClass.fea);
+	Vendor				" RST";
+} OS/2;
+
+table hhea {
+	#CaretOffset -50;
+	Ascender 2300;
+	Descender -1050;
+	LineGap 0;
+} hhea;
+
+table name {
+	nameid 0 "Copyright (c) 2015-16 by Rosetta Type Foundry. All rights reserved.";
+	nameid 5 "Autohinted with: ttfautohint --hinting-range-max=96 --ignore-restrictions --strong-stem-width=G --increase-x-height=14 --fallback-script=latn --default-script=latn";
+	nameid 7 "Yrsa & Rasa are trademarks of Rosetta Type Foundry.";
+	nameid 8 "Rosetta Type Foundry";
+	nameid 9 "Anna Giedrys (Latin/Yrsa design), David Brezina (Latin/Yrsa art-direction, Gujarati/Rasa design)";
+	nameid 11 "http://rosettatype.com";
+	nameid 12 "http://davi.cz & http://ancymonic.com";
+	nameid 13 "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL";
+	nameid 14 "http://scripts.sil.org/OFL";
+} name;
+
+
+table GDEF {
+	include(../uprights.gdef.fea)
+} GDEF;
+
+
+#----------------------------------------------------------------------------
+# Language systems
+
+languagesystem DFLT dflt;
+languagesystem latn dflt;
+languagesystem latn AZE;
+languagesystem latn CRT;
+languagesystem latn TRK;
+languagesystem latn TAT;
+languagesystem latn KAZ;
+languagesystem latn MOL;
+languagesystem latn ROM;
+languagesystem latn CAT;
+languagesystem latn NLD;

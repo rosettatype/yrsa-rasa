@@ -1,0 +1,921 @@
+.notdef	.notdef	
+NULL	NULL	uni0000
+uni000D	CR	uni000D
+space	space	uni0020
+uni00A0	nbspace	uni00A0
+enspace	enspace	uni2002
+uni2003	emspace	uni2003
+uni2009	thinspace	uni2009
+A	A	uni0041
+B	B	uni0042
+C	C	uni0043
+D	D	uni0044
+E	E	uni0045
+F	F	uni0046
+G	G	uni0047
+H	H	uni0048
+I	I	uni0049
+J	J	uni004A
+K	K	uni004B
+L	L	uni004C
+M	M	uni004D
+N	N	uni004E
+O	O	uni004F
+P	P	uni0050
+Q	Q	uni0051
+R	R	uni0052
+S	S	uni0053
+T	T	uni0054
+U	U	uni0055
+V	V	uni0056
+W	W	uni0057
+X	X	uni0058
+Y	Y	uni0059
+Z	Z	uni005A
+a	a	uni0061
+b	b	uni0062
+c	c	uni0063
+d	d	uni0064
+e	e	uni0065
+f	f	uni0066
+g	g	uni0067
+h	h	uni0068
+i	i	uni0069
+j	j	uni006A
+k	k	uni006B
+l	l	uni006C
+m	m	uni006D
+n	n	uni006E
+o	o	uni006F
+p	p	uni0070
+q	q	uni0071
+r	r	uni0072
+s	s	uni0073
+t	t	uni0074
+u	u	uni0075
+v	v	uni0076
+w	w	uni0077
+x	x	uni0078
+y	y	uni0079
+z	z	uni007A
+quotesingle	quotesingle	uni0027
+quotedbl	quotedbl	uni0022
+numbersign	numbersign	uni0023
+ampersand	ampersand	uni0026
+asterisk	asterisk	uni002A
+comma	comma	uni002C
+hyphen	hyphen	uni002D
+uni00AD	softhyphen	uni00AD
+period	period	uni002E
+colon	colon	uni003A
+semicolon	semicolon	uni003B
+question	question	uni003F
+exclam	exclam	uni0021
+questiondown	questiondown	uni00BF
+exclamdown	exclamdown	uni00A1
+at	at	uni0040
+parenleft	parenleft	uni0028
+parenright	parenright	uni0029
+bracketleft	bracketleft	uni005B
+bracketright	bracketright	uni005D
+braceleft	braceleft	uni007B
+braceright	braceright	uni007D
+backslash	backslash	uni005C
+slash	slash	uni002F
+brokenbar	brokenbar	uni00A6
+bar	bar	uni007C
+asciicircum	asciicircum	uni005E
+underscore	underscore	uni005F
+asciitilde	asciitilde	uni007E
+section	section	uni00A7
+copyright	copyright	uni00A9
+registered	registered	uni00AE
+trademark	trademark	uni2122
+ordfeminine	ordfeminine	uni00AA
+ordmasculine	ordmasculine	uni00BA
+guilsinglleft	guilsinglleft	uni2039
+guilsinglright	guilsinglright	uni203A
+guillemotleft	guillemetleft	uni00AB
+guillemotright	guillemetright	uni00BB
+quoteleft	quoteleft	uni2018
+quoteright	quoteright	uni2019
+quotesinglbase	quotesinglbase	uni201A
+quotedblleft	quotedblleft	uni201C
+quotedblright	quotedblright	uni201D
+quotedblbase	quotedblbase	uni201E
+dagger	dagger	uni2020
+daggerdbl	daggerdbl	uni2021
+ellipsis	ellipsis	uni2026
+paragraph	paragraph	uni00B6
+periodcentered	periodcentered	uni00B7
+endash	endash	uni2013
+emdash	emdash	uni2014
+circumflex	circumflex	uni02C6
+caron	caron	uni02C7
+macron	macron	uni00AF
+uni02C9	firsttonechinese	uni02C9
+breve	breve	uni02D8
+dieresis	dieresis	uni00A8
+acute	acute	uni00B4
+grave	grave	uni0060
+cedilla	cedilla	uni00B8
+dotaccent	dotaccent	uni02D9
+ring	ring	uni02DA
+ogonek	ogonek	uni02DB
+tilde	tilde	uni02DC
+hungarumlaut	hungarumlaut	uni02DD
+uni0302	circumflexcomb	uni0302
+uni0302.case	circumflexcomb.case	
+uni0302.narrow	circumflexcomb.narrow	
+uni030C	caroncomb	uni030C
+uni030C.case	caroncomb.case	
+uni030C.calt	caroncomb.calt	
+uni0304	macroncomb	uni0304
+uni0304.case	macroncomb.case	
+uni0304.narrow	macroncomb.narrow	
+uni0306	brevecomb	uni0306
+uni0306.case	brevecomb.case	
+uni0306.narrow	brevecomb.narrow	
+uni0308	dieresiscomb	uni0308
+uni0308.case	dieresiscomb.case	
+acutecomb	acutecomb	uni0301
+acutecomb.case	acutecomb.case	
+gravecomb	gravecomb	uni0300
+gravecomb.case	gravecomb.case	
+uni0327	cedillacomb	uni0327
+uni0307	dotaccentcomb	uni0307
+uni0307.case	dotaccentcomb.case	
+uni030A	ringcomb	uni030A
+uni030A.case	ringcomb.case	
+uni030A.case.low	ringcomb.case.low	
+uni0328	ogonekcomb	uni0328
+tildecomb	tildecomb	uni0303
+tildecomb.case	tildecomb.case	
+tildecomb.narrow	tildecomb.narrow	
+uni030B	hungarumlautcomb	uni030B
+uni030B.case	hungarumlautcomb.case	
+uni0326	commaaccentcomb	uni0326
+uni0312	commaaccentturnedabovecomb	uni0312
+uni02BC	apostrophemodifier	uni02BC
+Agrave	Agrave	uni00C0
+Aacute	Aacute	uni00C1
+Acircumflex	Acircumflex	uni00C2
+Atilde	Atilde	uni00C3
+Amacron	Amacron	uni0100
+Abreve	Abreve	uni0102
+Adieresis	Adieresis	uni00C4
+Aring	Aring	uni00C5
+Aogonek	Aogonek	uni0104
+AE	AE	uni00C6
+uni01FC	AEacute	uni01FC
+Cacute	Cacute	uni0106
+Ccircumflex	Ccircumflex	uni0108
+Cdotaccent	Cdotaccent	uni010A
+Ccaron	Ccaron	uni010C
+Ccedilla	Ccedilla	uni00C7
+Dcaron	Dcaron	uni010E
+Dcroat	Dcroat	uni0110
+Egrave	Egrave	uni00C8
+Eacute	Eacute	uni00C9
+Ecircumflex	Ecircumflex	uni00CA
+Emacron	Emacron	uni0112
+Ebreve	Ebreve	uni0114
+Edotaccent	Edotaccent	uni0116
+Edieresis	Edieresis	uni00CB
+Ecaron	Ecaron	uni011A
+Eogonek	Eogonek	uni0118
+Gcircumflex	Gcircumflex	uni011C
+Gbreve	Gbreve	uni011E
+Gdotaccent	Gdotaccent	uni0120
+Gcommaaccent	Gcommaaccent	uni0122
+Hcircumflex	Hcircumflex	uni0124
+Hbar	Hbar	uni0126
+Igrave	Igrave	uni00CC
+Iacute	Iacute	uni00CD
+Icircumflex	Icircumflex	uni00CE
+Itilde	Itilde	uni0128
+Imacron	Imacron	uni012A
+Ibreve	Ibreve	uni012C
+Idotaccent	Idotaccent	uni0130
+Idieresis	Idieresis	uni00CF
+Iogonek	Iogonek	uni012E
+IJ	IJ	uni0132
+Iacute_J.NLD	Iacute_J.NLD	
+Jacute	Jacute	uniFC01
+Jcircumflex	Jcircumflex	uni0134
+Kcommaaccent	Kcommaaccent	uni0136
+Lacute	Lacute	uni0139
+Lcommaaccent	Lcommaaccent	uni013B
+Lcaron	Lcaron	uni013D
+Ldot	Ldot	uni013F
+Lslash	Lslash	uni0141
+Nacute	Nacute	uni0143
+Ntilde	Ntilde	uni00D1
+Ncaron	Ncaron	uni0147
+Eng	Eng	uni014A
+Ncommaaccent	Ncommaaccent	uni0145
+Ograve	Ograve	uni00D2
+Oacute	Oacute	uni00D3
+Ocircumflex	Ocircumflex	uni00D4
+Otilde	Otilde	uni00D5
+Omacron	Omacron	uni014C
+Obreve	Obreve	uni014E
+Odieresis	Odieresis	uni00D6
+Ohungarumlaut	Ohungarumlaut	uni0150
+Oslash	Oslash	uni00D8
+OE	OE	uni0152
+Racute	Racute	uni0154
+Rcaron	Rcaron	uni0158
+Rcommaaccent	Rcommaaccent	uni0156
+Sacute	Sacute	uni015A
+Scircumflex	Scircumflex	uni015C
+Scaron	Scaron	uni0160
+Scommaaccent	Scommaaccent	uni0218
+Scedilla	Scedilla	uni015E
+uni1E9E	Germandbls	uni1E9E
+Tcaron	Tcaron	uni0164
+uni021A	Tcommaaccent	uni021A
+uni0162	Tcedilla	uni0162
+Tbar	Tbar	uni0166
+Ugrave	Ugrave	uni00D9
+Uacute	Uacute	uni00DA
+Ucircumflex	Ucircumflex	uni00DB
+Utilde	Utilde	uni0168
+Umacron	Umacron	uni016A
+Ubreve	Ubreve	uni016C
+Udieresis	Udieresis	uni00DC
+Uring	Uring	uni016E
+Uhungarumlaut	Uhungarumlaut	uni0170
+Uogonek	Uogonek	uni0172
+Wgrave	Wgrave	uni1E80
+Wacute	Wacute	uni1E82
+Wcircumflex	Wcircumflex	uni0174
+Wdieresis	Wdieresis	uni1E84
+Ygrave	Ygrave	uni1EF2
+Yacute	Yacute	uni00DD
+Ycircumflex	Ycircumflex	uni0176
+Ydieresis	Ydieresis	uni0178
+Zacute	Zacute	uni0179
+Zdotaccent	Zdotaccent	uni017B
+Zcaron	Zcaron	uni017D
+Eth	Eth	uni00D0
+Thorn	Thorn	uni00DE
+uni018F	Schwa	uni018F
+agrave	agrave	uni00E0
+aacute	aacute	uni00E1
+acircumflex	acircumflex	uni00E2
+atilde	atilde	uni00E3
+amacron	amacron	uni0101
+abreve	abreve	uni0103
+adieresis	adieresis	uni00E4
+aring	aring	uni00E5
+aogonek	aogonek	uni0105
+ae	ae	uni00E6
+uni01FD	aeacute	uni01FD
+cacute	cacute	uni0107
+ccircumflex	ccircumflex	uni0109
+cdotaccent	cdotaccent	uni010B
+ccaron	ccaron	uni010D
+ccedilla	ccedilla	uni00E7
+dcaron	dcaron	uni010F
+dcroat	dcroat	uni0111
+egrave	egrave	uni00E8
+eacute	eacute	uni00E9
+ecircumflex	ecircumflex	uni00EA
+emacron	emacron	uni0113
+ebreve	ebreve	uni0115
+edotaccent	edotaccent	uni0117
+edieresis	edieresis	uni00EB
+ecaron	ecaron	uni011B
+eogonek	eogonek	uni0119
+gcircumflex	gcircumflex	uni011D
+gbreve	gbreve	uni011F
+gdotaccent	gdotaccent	uni0121
+gcommaaccent	gcommaaccent	uni0123
+hcircumflex	hcircumflex	uni0125
+hbar	hbar	uni0127
+igrave	igrave	uni00EC
+iacute	iacute	uni00ED
+icircumflex	icircumflex	uni00EE
+itilde	itilde	uni0129
+imacron	imacron	uni012B
+ibreve	ibreve	uni012D
+dotlessi	dotlessi	uni0131
+idotaccent	idotaccent	
+idieresis	idieresis	uni00EF
+iogonek	iogonek	uni012F
+ij	ij	uni0133
+iacute_j.NLD	iacute_j.NLD	
+jacute	jacute	uniFC00
+jcircumflex	jcircumflex	uni0135
+dotlessj	dotlessj	uni0237
+kcommaaccent	kcommaaccent	uni0137
+lacute	lacute	uni013A
+lcommaaccent	lcommaaccent	uni013C
+lcaron	lcaron	uni013E
+ldot	ldot	uni0140
+lslash	lslash	uni0142
+nacute	nacute	uni0144
+ntilde	ntilde	uni00F1
+ncaron	ncaron	uni0148
+eng	eng	uni014B
+ncommaaccent	ncommaaccent	uni0146
+napostrophe	napostrophe	uni0149
+ograve	ograve	uni00F2
+oacute	oacute	uni00F3
+ocircumflex	ocircumflex	uni00F4
+otilde	otilde	uni00F5
+omacron	omacron	uni014D
+obreve	obreve	uni014F
+odieresis	odieresis	uni00F6
+ohungarumlaut	ohungarumlaut	uni0151
+oslash	oslash	uni00F8
+oe	oe	uni0153
+racute	racute	uni0155
+rcaron	rcaron	uni0159
+rcommaaccent	rcommaaccent	uni0157
+sacute	sacute	uni015B
+scircumflex	scircumflex	uni015D
+scaron	scaron	uni0161
+scommaaccent	scommaaccent	uni0219
+scedilla	scedilla	uni015F
+germandbls	germandbls	uni00DF
+tcaron	tcaron	uni0165
+uni021B	tcommaaccent	uni021B
+uni0163	tcedilla	uni0163
+tbar	tbar	uni0167
+ugrave	ugrave	uni00F9
+uacute	uacute	uni00FA
+ucircumflex	ucircumflex	uni00FB
+utilde	utilde	uni0169
+umacron	umacron	uni016B
+ubreve	ubreve	uni016D
+udieresis	udieresis	uni00FC
+uring	uring	uni016F
+uhungarumlaut	uhungarumlaut	uni0171
+uogonek	uogonek	uni0173
+wgrave	wgrave	uni1E81
+wacute	wacute	uni1E83
+wcircumflex	wcircumflex	uni0175
+wdieresis	wdieresis	uni1E85
+ygrave	ygrave	uni1EF3
+yacute	yacute	uni00FD
+ycircumflex	ycircumflex	uni0177
+ydieresis	ydieresis	uni00FF
+zacute	zacute	uni017A
+zdotaccent	zdotaccent	uni017C
+zcaron	zcaron	uni017E
+eth	eth	uni00F0
+thorn	thorn	uni00FE
+uni0259	schwa	uni0259
+f_b	f_b	
+f_f	f_f	uniFB00
+f_h	f_h	
+f_k	f_k	
+f_l	f_l	uniFB02
+f_f_b	f_f_b	
+f_f_h	f_f_h	
+f_f_k	f_f_k	
+f_f_l	f_f_l	uniFB04
+zero	zero	uni0030
+one	one	uni0031
+two	two	uni0032
+three	three	uni0033
+four	four	uni0034
+five	five	uni0035
+six	six	uni0036
+seven	seven	uni0037
+eight	eight	uni0038
+nine	nine	uni0039
+dollar	dollar	uni0024
+Euro	euro	uni20AC
+cent	cent	uni00A2
+sterling	sterling	uni00A3
+yen	yen	uni00A5
+uni0192	florin	uni0192
+uni20BA	liraTurkish	uni20BA
+uni20BD	ruble	uni20BD
+uni20B9	rupeeIndian	uni20B9
+zero.tf	zero.tf	
+one.tf	one.tf	
+two.tf	two.tf	
+three.tf	three.tf	
+four.tf	four.tf	
+five.tf	five.tf	
+six.tf	six.tf	
+seven.tf	seven.tf	
+eight.tf	eight.tf	
+nine.tf	nine.tf	
+dollar.tf	dollar.tf	
+Euro.tf	euro.tf	
+cent.tf	cent.tf	
+sterling.tf	sterling.tf	
+yen.tf	yen.tf	
+uni20BA.tf	liraTurkish.tf	
+uni20BD.tf	ruble.tf	
+uni20B9.tf	rupeeIndian.tf	
+currency	currency	uni00A4
+degree	degree	uni00B0
+minute	minute	uni2032
+second	second	uni2033
+percent	percent	uni0025
+perthousand	perthousand	uni2030
+fraction	fraction	uni2044
+uni2215	divisionslash	uni2215
+plus	plus	uni002B
+minus	minus	uni2212
+plusminus	plusminus	uni00B1
+divide	divide	uni00F7
+multiply	multiply	uni00D7
+equal	equal	uni003D
+approxequal	approxequal	uni2248
+notequal	notequal	uni2260
+less	less	uni003C
+greater	greater	uni003E
+lessequal	lessequal	uni2264
+greaterequal	greaterequal	uni2265
+logicalnot	logicalnot	uni00AC
+uni2126	ohm	uni2126
+product	product	uni220F
+summation	summation	uni2211
+uni2206	increment	uni2206
+uni0394	Delta	uni0394
+uni03A9	Omega	uni03A9
+uni03BC	mu	uni03BC
+pi	pi	uni03C0
+uni00B5	micro	uni00B5
+bulletoperator	bulletoperator	uni2219
+radical	radical	uni221A
+infinity	infinity	uni221E
+integral	integral	uni222B
+partialdiff	partialdiff	uni2202
+uni2113	literSign	uni2113
+estimated	estimated	uni212E
+uni25CA	lozenge	uni25CA
+bullet	bullet	uni2022
+onesuperior	onesuperior	uni00B9
+twosuperior	twosuperior	uni00B2
+threesuperior	threesuperior	uni00B3
+foursuperior	foursuperior	uni2074
+one.dnom	one.dnom	
+two.dnom	two.dnom	
+three.dnom	three.dnom	
+four.dnom	four.dnom	
+one.numr	one.numr	
+two.numr	two.numr	
+three.numr	three.numr	
+four.numr	four.numr	
+onehalf	onehalf	uni00BD
+onequarter	onequarter	uni00BC
+threequarters	threequarters	uni00BE
+uni2191	arrowup	uni2191
+uni2192	arrowright	uni2192
+uni2193	arrowdown	uni2193
+uni2190	arrowleft	uni2190
+uni2194	arrowboth	uni2194
+uni2195	arrowupdown	uni2195
+dotlessiogonek	dotlessiogonek	
+__periodcentered.CAT	__periodcentered.CAT	
+__periodcentered.CAT.case	__periodcentered.CAT.case	
+uni0A85	gjA	uni0A85
+uni0A86	gjAa	uni0A86
+uni0A87	gjI	uni0A87
+uni0A88	gjIi	uni0A88
+uni0A89	gjU	uni0A89
+uni0A8A	gjUu	uni0A8A
+uni0A8B	gjVocalicR	uni0A8B
+uni0AE0	gjVocalicRr	uni0AE0
+uni0A8C	gjVocalicL	uni0A8C
+uni0AE1	gjVocalicLl	uni0AE1
+uni0A8D	gjCandraE	uni0A8D
+uni0A8F	gjE	uni0A8F
+uni0A90	gjAi	uni0A90
+uni0A91	gjCandraO	uni0A91
+uni0A93	gjO	uni0A93
+uni0A94	gjAu	uni0A94
+uni0A95	gjKa	uni0A95
+uni0A96	gjKha	uni0A96
+uni0A97	gjGa	uni0A97
+uni0A98	gjGha	uni0A98
+uni0A99	gjNga	uni0A99
+uni0A9A	gjCa	uni0A9A
+uni0A9B	gjCha	uni0A9B
+uni0A9C	gjJa	uni0A9C
+uni0A9D	gjJha	uni0A9D
+uni0A9E	gjNya	uni0A9E
+uni0A9F	gjTta	uni0A9F
+uni0AA0	gjTtha	uni0AA0
+uni0AA1	gjDda	uni0AA1
+uni0AA2	gjDdha	uni0AA2
+uni0AA3	gjNna	uni0AA3
+uni0AA4	gjTa	uni0AA4
+uni0AA5	gjTha	uni0AA5
+uni0AA6	gjDa	uni0AA6
+uni0AA7	gjDha	uni0AA7
+uni0AA8	gjNa	uni0AA8
+uni0AAA	gjPa	uni0AAA
+uni0AAB	gjPha	uni0AAB
+uni0AAC	gjBa	uni0AAC
+uni0AAD	gjBha	uni0AAD
+uni0AAE	gjMa	uni0AAE
+uni0AAF	gjYa	uni0AAF
+uni0AB0	gjRa	uni0AB0
+uni0AB2	gjLa	uni0AB2
+uni0AB3	gjLla	uni0AB3
+uni0AB5	gjVa	uni0AB5
+uni0AB6	gjSha	uni0AB6
+uni0AB7	gjSsa	uni0AB7
+uni0AB8	gjSa	uni0AB8
+uni0AB9	gjHa	uni0AB9
+uni0ABD	gjAvagraha	uni0ABD
+uni0ABE	gjMatraAa	uni0ABE
+uni0ABF	gjMatraI	uni0ABF
+uni0AC0	gjMatraIi	uni0AC0
+uni0AC1	gjMatraU	uni0AC1
+uni0AC2	gjMatraUu	uni0AC2
+uni0AC3	gjMatraVocalicR	uni0AC3
+uni0AC4	gjMatraVocalicRr	uni0AC4
+uni0AE2	gjMatraVocalicL	uni0AE2
+uni0AE3	gjMatraVocalicLl	uni0AE3
+uni0AC5	gjMatraCandraE	uni0AC5
+uni0AC7	gjMatraE	uni0AC7
+uni0AC8	gjMatraAi	uni0AC8
+uni0AC9	gjMatraCandraO	uni0AC9
+uni0ACB	gjMatraO	uni0ACB
+uni0ACC	gjMatraAu	uni0ACC
+uni0ACD	gjVirama	uni0ACD
+uni0A81	gjCandrabindu	uni0A81
+uni0A82	gjAnusvara	uni0A82
+uni0A83	gjVisarga	uni0A83
+uni0ABC	gjNukta	uni0ABC
+uni0AB00ACD	gjReph	
+uni0ACD0AB0	gjRakar	
+uni0A950ACD0AB7	gjKSsa	
+uni0A9C0ACD0A9E	gjJNya	
+uni0A950ACD0AB0	gjKRa	
+uni0A950ACD0A950ACD0AB0	gjKKRa	
+uni0A950ACD0AB70ACD0AB0	gjKSsRa	
+uni0A960ACD0AB0	gjKhRa	
+uni0A970ACD0AB0	gjGRa	
+uni0A980ACD0AB0	gjGhRa	
+uni0A9C0ACD0AB0	gjJRa	
+uni0A9D0ACD0AB0	gjJhRa	
+uni0AA30ACD0AB0	gjNnRa	
+uni0AA40ACD0AB0	gjTRa	
+uni0AA50ACD0AB0	gjThRa	
+uni0AA60ACD0AB0	gjDRa	
+uni0AA60ACD0AB00ACD0AAF	gjDRYa	
+uni0AA70ACD0AB0	gjDhRa	
+uni0AA80ACD0AB0	gjNRa	
+uni0AAA0ACD0AB0	gjPRa	
+uni0AAB0ACD0AB0	gjPhRa	
+uni0AAC0ACD0AB0	gjBRa	
+uni0AAD0ACD0AB0	gjBhRa	
+uni0AAE0ACD0AB0	gjMRa	
+uni0AB30ACD0AB0	gjLlRa	
+uni0AB50ACD0AB0	gjVRa	
+uni0AB60ACD0AB0	gjShRa	
+uni0AB70ACD0AB0	gjSsRa	
+uni0AB80ACD0A950ACD0AB0	gjSKRa	
+uni0AB80ACD0AA40ACD0AB0	gjSTRa	
+uni0AB80ACD0AB0	gjSRa	
+uni0A950ACD0A95	gjKKa	
+uni0A950ACD0A9F	gjKTta	
+uni0A950ACD0AA4	gjKTa	
+uni0A950ACD0AAE	gjKMa	
+uni0A950ACD0AAF	gjKYa	
+uni0A950ACD0AB6	gjKSha	
+uni0A950ACD0AB70ACD0AAF	gjKSsYa	
+uni0A950ACD0AB8	gjKSa	
+uni0A960ACD0AAF	gjKhYa	
+uni0A980ACD0AA8	gjGhNa	
+uni0A990ACD0A95	gjNgKa	
+uni0A990ACD0A950ACD0AB7	gjNgKSsa	
+uni0A990ACD0AAE	gjNgMa	
+uni0A990ACD0AAF	gjNgYa	
+uni0A9C0ACD0A95	gjJKa	
+uni0A9C0ACD0A9E0ACD0AAF	gjJNyYa	
+uni0A9C0ACD0AAF	gjJYa	
+uni0A9D0ACD0AAF	gjJhYa	
+uni0A9E0ACD0AAF	gjNyYa	
+uni0A9F0ACD0A9F	gjTtTta	
+uni0A9F0ACD0AA0	gjTtTtha	
+uni0A9F0ACD0AB5	gjTtVa	
+uni0AA00ACD0AA0	gjTthTtha	
+uni0AA00ACD0AAF	gjTthYa	
+uni0AA10ACD0AA1	gjDdDda	
+uni0AA10ACD0AA8	gjDdNa	
+uni0AA10ACD0AAE	gjDdMa	
+uni0AA10ACD0AAF	gjDdYa	
+uni0AA10ACD0AB5	gjDdVa	
+uni0AA20ACD0AA2	gjDdhDdha	
+uni0AA20ACD0AA8	gjDdhNa	
+uni0AA40ACD0AA4	gjTTa	
+uni0AA40ACD0AA40ACD0AAF	gjTTYa	
+uni0AA40ACD0AA8	gjTNa	
+uni0AA40ACD0AAE	gjTMa	
+uni0AA40ACD0AAF	gjTYa	
+uni0AA60ACD0A97	gjDGa	
+uni0AA60ACD0A98	gjDGha	
+uni0AA60ACD0AA6	gjDDa	
+uni0AA60ACD0AA7	gjDDha	
+uni0AA60ACD0AA8	gjDNa	
+uni0AA60ACD0AAC	gjDBa	
+uni0AA60ACD0AAE	gjDMa	
+uni0AA60ACD0AAF	gjDYa	
+uni0AA60ACD0AB5	gjDVa	
+uni0AA70ACD0AA8	gjDhNa	
+uni0AA80ACD0AA8	gjNNa	
+uni0AA80ACD0AAE	gjNMa	
+uni0AAA0ACD0A95	gjPKa	
+uni0AAA0ACD0AA4	gjPTa	
+uni0AAA0ACD0AAB	gjPPha	
+uni0AAB0ACD0A9F	gjPhTta	
+uni0AAB0ACD0AAF	gjPhYa	
+uni0AAB0ACD0AB8	gjPhSa	
+uni0AAC0ACD0A95	gjBKa	
+uni0AAC0ACD0AAF	gjBYa	
+uni0AAE0ACD0A95	gjMKa	
+uni0AAE0ACD0AAB	gjMPha	
+uni0AB20ACD0A95	gjLKa	
+uni0AB20ACD0AA1	gjLDda	
+uni0AB20ACD0AAF	gjLYa	
+uni0AB30ACD0AAF	gjLlYa	
+uni0AB50ACD0AAF	gjVYa	
+uni0AB60ACD0A9A	gjShCa	
+uni0AB60ACD0AA8	gjShNa	
+uni0AB60ACD0AB2	gjShLa	
+uni0AB60ACD0AB5	gjShVa	
+uni0AB70ACD0A9F	gjSsTta	
+uni0AB70ACD0AA0	gjSsTtha	
+uni0AB70ACD0AA1	gjSsDda	
+uni0AB80ACD0A95	gjSKa	
+uni0AB80ACD0AA1	gjSDda	
+uni0AB80ACD0A9F	gjSTta	
+uni0AB80ACD0AA5	gjSTha	
+uni0AB80ACD0AAB	gjSPha	
+uni0AB80ACD0AAF	gjSYa	
+uni0AB90ACD0AA3	gjHNna	
+uni0AB90ACD0AA8	gjHNa	
+uni0AB90ACD0AB2	gjHLa	
+uni0AB90ACD0AB5	gjHVa	
+uni0AB90ACD0AAE	gjHMa	
+uni0AB90ACD0AAF	gjHYa	
+uni0A950ACD	gjK	
+uni0A950ACD.calt	gjK.calt	
+uni0A950ACD.calt2	gjK.calt2	
+uni0A950ACD.calt3	gjK.calt3	
+uni0A960ACD	gjKh	
+uni0A970ACD	gjG	
+uni0A980ACD	gjGh	
+uni0A990ACD	gjNg	
+uni0A9A0ACD	gjC	
+uni0A9B0ACD	gjCh	
+uni0A9C0ACD	gjJ	
+uni0A9C0ACD.calt	gjJ.calt	
+uni0A9C0ACD.calt2	gjJ.calt2	
+uni0A9C0ACD.calt3	gjJ.calt3	
+uni0A9D0ACD	gjJh	
+uni0A9E0ACD	gjNy	
+uni0A9F0ACD	gjTt	
+uni0AA00ACD	gjTth	
+uni0AA10ACD	gjDd	
+uni0AA20ACD	gjDdh	
+uni0AA30ACD	gjNn	
+uni0AA40ACD	gjT	
+uni0AA40ACD.calt	gjT.calt	
+uni0AA50ACD	gjTh	
+uni0AA50ACD.calt	gjTh.calt	
+uni0AA60ACD	gjD	
+uni0AA70ACD	gjDh	
+uni0AA70ACD.calt	gjDh.calt	
+uni0AA80ACD	gjN	
+uni0AA80ACD.calt	gjN.calt	
+uni0AA80ACD.calt2	gjN.calt2	
+uni0AA80ACD.post	gjN.post	
+uni0AAA0ACD	gjP	
+uni0AAA0ACD.calt	gjP.calt	
+uni0AAB0ACD	gjPh	
+uni0AAB0ACD.calt	gjPh.calt	
+uni0AAB0ACD.calt2	gjPh.calt2	
+uni0AAB0ACD.calt3	gjPh.calt3	
+uni0AAC0ACD	gjB	
+uni0AAD0ACD	gjBh	
+uni0AAE0ACD	gjM	
+uni0AAF0ACD	gjY	
+uni0AAF0ACD.calt	gjY.calt	
+uni0AAF0ACD.post	gjY.post	
+uni0AB00ACD.h.post	gjR.post	
+uni0AB20ACD	gjL	
+uni0AB20ACD.calt	gjL.calt	
+uni0AB30ACD	gjLl	
+uni0AB50ACD	gjV	
+uni0AB60ACD	gjSh	
+uni0AB60ACD.calt	gjSh.calt	
+uni0AB70ACD	gjSs	
+uni0AB70ACD.calt	gjSs.calt	
+uni0AB80ACD	gjS	
+uni0AB80ACD.calt	gjS.calt	
+uni0AB90ACD	gjH	
+uni0A950ACD0AB70ACD	gjKSs	
+uni0A9C0ACD0A9E0ACD	gjJNy	
+uni0A950ACD0AB00ACD	gjKR	
+uni0A950ACD0AB00ACD.calt	gjKR.calt	
+uni0A950ACD0AB00ACD.calt2	gjKR.calt2	
+uni0A950ACD0AB00ACD.calt3	gjKR.calt3	
+uni0A950ACD0AB70ACD0AB00ACD	gjKSsR	
+uni0A960ACD0AB00ACD	gjKhR	
+uni0A970ACD0AB00ACD	gjGR	
+uni0A980ACD0AB00ACD	gjGhR	
+uni0AA30ACD0AB00ACD	gjNnR	
+uni0AA40ACD0AB00ACD	gjTR	
+uni0AA50ACD0AB00ACD	gjThR	
+uni0AA60ACD0AB00ACD0AAF0ACD	gjDRY	
+uni0AA70ACD0AB00ACD	gjDhR	
+uni0AA80ACD0AB00ACD	gjNR	
+uni0AAA0ACD0AB00ACD	gjPR	
+uni0AAC0ACD0AB00ACD	gjBR	
+uni0AAD0ACD0AB00ACD	gjBhR	
+uni0AAE0ACD0AB00ACD	gjMR	
+uni0AB50ACD0AB00ACD	gjVR	
+uni0AB60ACD0AB00ACD	gjShR	
+uni0AB70ACD0AB00ACD	gjSsR	
+uni0AB80ACD0AA40ACD0AB00ACD	gjSTR	
+uni0AB80ACD0AB00ACD	gjSR	
+uni0A950ACD0AA40ACD	gjKT	
+uni0A950ACD0AAE0ACD	gjKM	
+uni0A950ACD0AAF0ACD	gjKY	
+uni0A950ACD0AB60ACD	gjKSh	
+uni0A950ACD0AB70ACD0AAF0ACD	gjKSsY	
+uni0A950ACD0AB80ACD	gjKS	
+uni0A960ACD0AAF0ACD	gjKhY	
+uni0A980ACD0AA80ACD	gjGhN	
+uni0A990ACD0AAE0ACD	gjNgM	
+uni0A990ACD0AAF0ACD	gjNgY	
+uni0A9C0ACD0A9E0ACD0AAF0ACD	gjJNyY	
+uni0A9C0ACD0AAF0ACD	gjJY	
+uni0A9D0ACD0AAF0ACD	gjJhY	
+uni0A9E0ACD0AAF0ACD	gjNyY	
+uni0AA00ACD0AAF0ACD	gjTthY	
+uni0AA10ACD0AAE0ACD	gjDdM	
+uni0AA10ACD0AAF0ACD	gjDdY	
+uni0AA40ACD0AA40ACD	gjTT	
+uni0AA40ACD0AA40ACD0AAF0ACD	gjTTY	
+uni0AA40ACD0AA80ACD	gjTN	
+uni0AA40ACD0AAE0ACD	gjTM	
+uni0AA40ACD0AAF0ACD	gjTY	
+uni0AA60ACD0AAE0ACD	gjDM	
+uni0AA60ACD0AAF0ACD	gjDY	
+uni0AA70ACD0AA80ACD	gjDhN	
+uni0AA80ACD0AA80ACD	gjNN	
+uni0AA80ACD0AAE0ACD	gjNM	
+uni0AAA0ACD0AA40ACD	gjPT	
+uni0AAB0ACD0AAF0ACD	gjPhY	
+uni0AAB0ACD0AB80ACD	gjPhS	
+uni0AAC0ACD0AAF0ACD	gjBY	
+uni0AB20ACD0AAF0ACD	gjLY	
+uni0AB30ACD0AAF0ACD	gjLlY	
+uni0AB50ACD0AAF0ACD	gjVY	
+uni0AB60ACD0A9A0ACD	gjShC	
+uni0AB60ACD0AA80ACD	gjShN	
+uni0AB60ACD0AB20ACD	gjShL	
+uni0AB60ACD0AB50ACD	gjShV	
+uni0AB80ACD0AA50ACD	gjSTh	
+uni0AB80ACD0AAF0ACD	gjSY	
+uni0AB90ACD0AAE0ACD	gjHM	
+uni0AB90ACD0AAF0ACD	gjHY	
+uni0A9C_uni0ABE	gjJa_gjMatraAa	
+uni0A9C_uni0AC0	gjJa_gjMatraIi	
+uni0A9C0ACD0AB0_uni0ABE	gjJRa_gjMatraAa	
+uni0A9C0ACD0AB0_uni0AC0	gjJRa_gjMatraIi	
+uni0AA3_uni0AC1	gjNna_gjMatraU	
+uni0AB0_uni0AC1	gjRa_gjMatraU	
+uni0AB0_uni0AC2	gjRa_gjMatraUu	
+uni0AB3_uni0AC3	gjLla_gjMatraVocalicR	
+uni0AB3_uni0AC4	gjLla_gjMatraVocalicRr	
+uni0A950ACD0AB7_uni0AC1	gjKSsa_gjMatraU	
+uni0AA60ACD0AB0.ss01	gjDRa.ss01	
+uni0AA60ACD0A97.ss01	gjDGa.ss01	
+uni0AA60ACD0A98.ss01	gjDGha.ss01	
+uni0AA60ACD0AA7.ss01	gjDDha.ss01	
+uni0AA60ACD0AA8.ss01	gjDNa.ss01	
+uni0AA60ACD0AAC.ss01	gjDBa.ss01	
+uni0AA60ACD0AB5.ss01	gjDVa.ss01	
+uni0AAF.post	gjYa.post	
+uni0AE6	gjZero	uni0AE6
+uni0AE7	gjOne	uni0AE7
+uni0AE8	gjTwo	uni0AE8
+uni0AE9	gjThree	uni0AE9
+uni0AEA	gjFour	uni0AEA
+uni0AEB	gjFive	uni0AEB
+uni0AEC	gjSix	uni0AEC
+uni0AED	gjSeven	uni0AED
+uni0AEE	gjEight	uni0AEE
+uni0AEF	gjNine	uni0AEF
+uni0AEC.ss02	gjSix.ss02	
+uni0AF1	gjRupee	uni0AF1
+uni20B9.gujr	rupeeIndian.gujr	
+uni0AE6.tf	gjZero.tf	
+uni0AE7.tf	gjOne.tf	
+uni0AE8.tf	gjTwo.tf	
+uni0AE9.tf	gjThree.tf	
+uni0AEA.tf	gjFour.tf	
+uni0AEB.tf	gjFive.tf	
+uni0AEC.tf	gjSix.tf	
+uni0AED.tf	gjSeven.tf	
+uni0AEE.tf	gjEight.tf	
+uni0AEF.tf	gjNine.tf	
+uni0AEC.ss02.tf	gjSix.ss02.tf	
+uni0AF1.tf	gjRupee.tf	
+uni20B9.gujr.tf	rupeeIndian.gujr.tf	
+uni0964	dvDanda	uni0964
+uni0965	dvDoubleDanda	uni0965
+uni0970	dvAbbreviation	uni0970
+uni0FD5	svastika	uni0FD5
+uni0AD0	gjOm	uni0AD0
+uni0ABE.base	gjMatraAa.base	
+u0ABE0AB00ACD	gjMatraAa_gjReph	
+u0ABE0AB00ACD0A82	gjMatraAa_gjReph_gjAnusvara	
+uni0ABE0AC3	gjMatraAa_gjMatraVocalicR	
+uni0ABE0AC4	gjMatraAa_gjMatraVocalicRr	
+uni0ABF.1	gjMatraI.1	
+uni0ABF.2	gjMatraI.2	
+uni0ABF.3	gjMatraI.3	
+uni0ABF.4	gjMatraI.4	
+uni0ABF.5	gjMatraI.5	
+uni0ABF.6	gjMatraI.6	
+uni0ABF.7	gjMatraI.7	
+uni0ABF.8	gjMatraI.8	
+uni0ABF.9	gjMatraI.9	
+uni0AC0.1	gjMatraIi.1	
+uni0AC0.2	gjMatraIi.2	
+uni0AC0.3	gjMatraIi.3	
+uni0A82.calt	gjAnusvara.calt	
+uni0A82.calt2	gjAnusvara.calt2	
+uni0ABC.calt	gjNukta.calt	
+uni0A81.calt	gjCandrabindu.calt	
+uni0A81.calt2	gjCandrabindu.calt2	
+uni0A81.calt3	gjCandrabindu.calt3	
+uni0AB00ACD.calt	gjReph.calt	
+uni0AB00ACD.calt2	gjReph.calt2	
+u0AB00ACD0A82	gjReph_gjAnusvara	
+u0AB00ACD0A82.calt	gjReph_gjAnusvara.calt	
+u0AB00ACD0A82.calt2	gjReph_gjAnusvara.calt2	
+u0AC00AB00ACD	gjMatraIi_gjReph	
+u0AC00AB00ACD.1	gjMatraIi_gjReph.1	
+u0AC00AB00ACD.2	gjMatraIi_gjReph.2	
+u0AC00AB00ACD.3	gjMatraIi_gjReph.3	
+u0AC00AB00ACD0A82	gjMatraIi_gjReph_gjAnusvara	
+u0AC00AB00ACD0A82.1	gjMatraIi_gjReph_gjAnusvara.1	
+u0AC00AB00ACD0A82.2	gjMatraIi_gjReph_gjAnusvara.2	
+u0AC00AB00ACD0A82.3	gjMatraIi_gjReph_gjAnusvara.3	
+u0AC50A82	gjMatraCandraE_gjAnusvara	
+u0AC50A81	gjMatraCandraE_gjCandrabindu	
+u0AC50AB00ACD	gjMatraCandraE_gjReph	
+u0AC50AB00ACD0A82	gjMatraCandraE_gjReph_gjAnusvara	
+u0AC70A82	gjMatraE_gjAnusvara	
+u0AC70A81	gjMatraE_gjCandrabindu	
+u0AC70AB00ACD	gjMatraE_gjReph	
+u0AC70AB00ACD0A82	gjMatraE_gjReph_gjAnusvara	
+u0AC80A82	gjMatraAi_gjAnusvara	
+u0AC80A81	gjMatraAi_gjCandrabindu	
+u0AC80AB00ACD	gjMatraAi_gjReph	
+u0AC80AB00ACD0A82	gjMatraAi_gjReph_gjAnusvara	
+u0AC90AB00ACD	gjMatraCandraO_gjReph	
+u0AC90AB00ACD0A82	gjMatraCandraO_gjReph_gjAnusvara	
+u0ACB0AB00ACD	gjMatraO_gjReph	
+u0ACB0AB00ACD0A82	gjMatraO_gjReph_gjAnusvara	
+u0ACC0AB00ACD	gjMatraAu_gjReph	
+u0ACC0AB00ACD0A82	gjMatraAu_gjReph_gjAnusvara	
+u0ACD0AB00AC1	gjRakar_gjMatraU	
+u0ACD0AB00AC2	gjRakar_gjMatraUu	
+uni25CC	dottedCircle	uni25CC
+uni200C	zerowidthnonjoiner	uni200C
+uni200D	zerowidthjoiner	uni200D
+asterisk.gujr	asterisk.gujr	
+periodcentered.gujr	periodcentered.gujr	
+bullet.gujr	bullet.gujr	
+colon.gujr	colon.gujr	
+comma.gujr	comma.gujr	
+ellipsis.gujr	ellipsis.gujr	
+exclam.gujr	exclam.gujr	
+period.gujr	period.gujr	
+question.gujr	question.gujr	
+semicolon.gujr	semicolon.gujr	
+braceleft.gujr	braceleft.gujr	
+braceright.gujr	braceright.gujr	
+bracketleft.gujr	bracketleft.gujr	
+bracketright.gujr	bracketright.gujr	
+parenleft.gujr	parenleft.gujr	
+parenright.gujr	parenright.gujr	
+emdash.gujr	emdash.gujr	
+endash.gujr	endash.gujr	
+hyphen.gujr	hyphen.gujr	
+guillemotleft.gujr	guillemetleft.gujr	
+guillemotright.gujr	guillemetright.gujr	
+guilsinglleft.gujr	guilsinglleft.gujr	
+guilsinglright.gujr	guilsinglright.gujr	
+quotedblleft.gujr	quotedblleft.gujr	
+quotedblright.gujr	quotedblright.gujr	
+quoteleft.gujr	quoteleft.gujr	
+quoteright.gujr	quoteright.gujr	

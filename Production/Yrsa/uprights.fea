@@ -1,0 +1,151 @@
+#----------------------------------------------------------------------------
+# Classes
+
+include(../../shared.classes.fea);
+
+
+
+#----------------------------------------------------------------------------
+# Features
+
+
+
+#----------------------------------------------------------------------------
+# Access all alternates
+
+feature aalt{
+	feature locl;
+	feature sups;
+	feature numr;
+	feature dnom;
+	feature frac;
+	feature ordn;
+	feature pnum;
+	feature tnum;
+	feature calt;
+
+	sub period by ellipsis;
+	sub hyphen from [endash emdash minus];
+} aalt;
+
+
+
+#----------------------------------------------------------------------------
+# Localized forms
+
+feature locl {	
+	script latn; # Latin
+		# i -> idotaccent substitution effectively switches off the fi and ffi ligatures
+		# not needed as there is no f_i ligature
+		#language TRK; # Turkish
+		#	lookup locl_TRK {
+		#		sub i by idotaccent;
+		#	} locl_TRK;
+		#language AZE; # Azeri
+		#	lookup locl_TRK;
+		#language CRT; # Crimean Tatar
+		#	lookup locl_TRK;
+		#language KAZ; # Kazakh
+		#	lookup locl_TRK;
+		#language TAT; # Tatar
+		#	lookup locl_TRK;
+
+		# handling of S and T with commaaccent
+		language ROM; # Romanian
+			lookup locl_ROM {
+				sub Scedilla by Scommaaccent;
+				sub scedilla by scommaaccent;
+				sub Tcedilla by Tcommaaccent;
+				sub tcedilla by tcommaaccent;
+			} locl_ROM;
+		language MOL; # Moldavian
+			lookup locl_ROM;
+
+		# Catalan dot
+		language CAT; # Catalan
+			sub l periodcentered' l by __periodcentered.CAT;
+			sub L periodcentered' L by __periodcentered.CAT.case;
+
+		# Dutch ij with acute
+		language NLD; # Dutch
+			lookup locl_NLD {
+				sub i j by ij;
+				sub I J by IJ;
+				sub iacute j by iacute_j.NLD;
+				sub Iacute J by Iacute_J.NLD;
+			} locl_NLD;
+
+} locl;
+
+
+
+#----------------------------------------------------------------------------
+# Features shared across families
+
+include(../../shared.first.fea);
+include(../../shared.frac.fea);
+include(../../shared.second.fea);
+
+
+
+#----------------------------------------------------------------------------
+# Figures
+
+feature pnum {
+	sub zero.tf by zero;
+	sub one.tf by one;
+	sub two.tf by two;
+	sub three.tf by three;
+	sub four.tf by four;
+	sub five.tf by five;
+	sub six.tf by six;
+	sub seven.tf by seven;
+	sub eight.tf by eight;
+	sub nine.tf by nine;
+	sub euro.tf by euro;
+	sub sterling.tf by sterling;
+	sub yen.tf by yen;
+	sub cent.tf by cent;
+	sub dollar.tf by dollar;
+	sub ruble.tf by ruble;
+	sub liraTurkish.tf by liraTurkish;
+	sub rupeeIndian.tf by rupeeIndian;
+} pnum;
+
+feature tnum {
+	sub zero by zero.tf;
+	sub one by one.tf;
+	sub two by two.tf;
+	sub three by three.tf;
+	sub four by four.tf;
+	sub five by five.tf;
+	sub six by six.tf;
+	sub seven by seven.tf;
+	sub eight by eight.tf;
+	sub nine by nine.tf;
+	sub euro by euro.tf;
+	sub sterling by sterling.tf;
+	sub yen by yen.tf;
+	sub cent by cent.tf;
+	sub dollar by dollar.tf;
+	sub ruble by ruble.tf;
+	sub liraTurkish by liraTurkish.tf;
+	sub rupeeIndian by rupeeIndian.tf;
+} tnum;
+
+
+
+#----------------------------------------------------------------------------
+# Kerning and mark positioning
+
+feature kern {
+	lookup KERN_LTR {
+		lookupflag IgnoreMarks;
+		include(kern.fea)
+	} KERN_LTR;	
+} kern;
+
+include(markclasses.fea);
+feature mark {
+	include(mark.fea);
+} mark;
