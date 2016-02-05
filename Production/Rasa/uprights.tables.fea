@@ -4,10 +4,10 @@
 table BASE {
 	HorizAxis.BaseTagList	ideo  romn;
 	HorizAxis.BaseScriptList
-		DFLT	romn	-569 0,
-		latn	romn	-569 0,
-		gujr	romn	-569 0,
-		gjr2	romn	-569 0;
+		DFLT	romn	-594 0,
+		latn	romn	-594 0,
+		gujr	romn	-594 0,
+		gjr2	romn	-594 0;
 } BASE;
 
 include(../../version.fea);
@@ -52,7 +52,7 @@ table hhea {
 
 table name {
 	nameid 0 "Copyright (c) 2015-16 by Rosetta Type Foundry. All rights reserved.";
-	nameid 5 "Autohinted with: ttfautohint --hinting-range-max=96 --ignore-restrictions --strong-stem-width=G --increase-x-height=14 --fallback-script=latn --default-script=latn";
+	nameid 5 "Autohinted with: ttfautohint --hinting-range-max=96 --ignore-restrictions --strong-stem-width=G --increase-x-height=14";
 	nameid 7 "Yrsa & Rasa are trademarks of Rosetta Type Foundry.";
 	nameid 8 "Rosetta Type Foundry";
 	nameid 9 "Anna Giedrys (Latin/Yrsa design), David Brezina (Latin/Yrsa art-direction, Gujarati/Rasa design)";

@@ -1,4 +1,4 @@
-# Created: Fri Feb  5 13:59:43 2016
+# Created: Fri Feb  5 16:51:08 2016
 # PS Name: Rasa-Regular
 # MM Inst: None
 # MinKern: +/- 0 inclusive
@@ -30,12 +30,12 @@
 @MMK_L_e = [e ae aeacute egrave eacute ecircumflex emacron ebreve edotaccent edieresis ecaron eogonek oe];
 @MMK_L_g = [g gcircumflex gbreve gdotaccent gcommaaccent];
 @MMK_L_gjDRa = [gjDRa gjDGa gjDGha gjDDha gjDNa gjDBa gjDVa];
-@MMK_L_gjDa = [gjDa gjDDa];
-@MMK_L_gjJa = [gjJa gjJRa];
+@MMK_L_gjDa = [gjDa gjDDa gjD];
+@MMK_L_gjJa = [gjJa gjJRa gjJ];
 @MMK_L_gjKa = [gjKa gjKRa gjKKRa gjSKRa gjKKa gjJKa gjPKa gjBKa gjMKa gjLKa gjSKa gjK gjKR];
 @MMK_L_gjM = [gjM gjMR gjKM gjNgM gjDdM gjTM gjDM gjNM gjHM];
 @MMK_L_gjPa = [gjKha gjGa gjGha gjCa gjNya gjNna gjTa gjTha gjDha gjNa gjPa gjBa gjBha gjMa gjYa gjLa gjLla gjVa gjSha gjSsa gjSa gjMatraAa gjMatraI gjMatraIi gjKSsa gjJNya gjKSsRa gjKhRa gjGRa gjGhRa gjNnRa gjTRa gjThRa gjDRYa gjDhRa gjNRa gjPRa gjBRa gjBhRa gjMRa gjVRa gjShRa gjSsRa gjSTRa gjSRa gjKTa gjKMa gjKYa gjKSha gjKSsYa gjKSa gjKhYa gjGhNa gjNgMa gjNgYa gjJNyYa gjJYa gjJhYa gjNyYa gjTthYa gjDdMa gjDdYa gjTTa gjTNa gjTMa gjDMa gjDYa gjDhNa gjNNa gjNMa gjPTa gjPhYa gjPhSa gjBYa gjLYa gjLlYa gjVYa gjShCa gjShNa gjShLa gjShVa gjSTha gjSYa gjHMa gjHYa gjJa_gjMatraAa gjJRa_gjMatraAa gjNna_gjMatraU gjLla_gjMatraVocalicR gjLla_gjMatraVocalicRr gjKSsa_gjMatraU gjYa.post gjMatraAa.base gjMatraAa_gjReph gjMatraAa_gjReph_gjAnusvara gjMatraAa_gjMatraVocalicR gjMatraAa_gjMatraVocalicRr gjMatraI.1 gjMatraI.2 gjMatraI.3 gjMatraI.4 gjMatraI.5 gjMatraI.6 gjMatraI.7 gjMatraI.8 gjMatraI.9 gjMatraIi.1 gjMatraIi.2 gjMatraIi.3 gjMatraIi_gjReph gjMatraIi_gjReph.1 gjMatraIi_gjReph.2 gjMatraIi_gjReph.3 gjMatraIi_gjReph_gjAnusvara gjMatraIi_gjReph_gjAnusvara.1 gjMatraIi_gjReph_gjAnusvara.2 gjMatraIi_gjReph_gjAnusvara.3 gjMatraCandraO_gjReph gjMatraCandraO_gjReph_gjAnusvara gjMatraO_gjReph gjMatraO_gjReph_gjAnusvara gjMatraAu_gjReph];
-@MMK_L_gjPha = [gjPha gjPhRa gjPPha gjMPha gjSPha];
+@MMK_L_gjPha = [gjPha gjPhRa gjPPha gjMPha gjSPha gjPh];
 @MMK_L_gjS = [gjS gjS.calt gjSR gjKS gjPhS];
 @MMK_L_gjTh = [gjTh gjTh.calt gjThR gjSTh];
 @MMK_L_gjTta = [gjTta gjKTta gjPhTta gjSTta gjTt];
@@ -81,18 +81,18 @@
 @MMK_R_gjBa = [gjBa gjBRa gjBKa gjBYa gjB gjBR gjBY];
 @MMK_R_gjBha = [gjBha gjBhRa gjBh gjBhR];
 @MMK_R_gjCa = [gjA gjAa gjCandraE gjE gjAi gjCandraO gjO gjAu gjCa gjC];
-@MMK_R_gjCha = [gjCha];
-@MMK_R_gjDa = [gjDa gjDDa];
-@MMK_R_gjDda = [gjNga gjDda gjNgMa gjNgYa gjDdMa gjDdYa gjNg gjNgM gjNgY gjDdM gjDdY];
-@MMK_R_gjDdha = [gjDdha];
+@MMK_R_gjCha = [gjCha gjCh];
+@MMK_R_gjDa = [gjDa gjDDa gjD];
+@MMK_R_gjDda = [gjNga gjDda gjNgMa gjNgYa gjDdMa gjDdYa gjNg gjDd gjNgM gjNgY gjDdM gjDdY];
+@MMK_R_gjDdha = [gjDdha gjDdh];
 @MMK_R_gjDha = [gjDha gjDhRa gjDhNa gjDh gjDh.calt gjDhR gjDhN];
 @MMK_R_gjGa = [gjGa gjGRa gjG];
 @MMK_R_gjGha = [gjGha gjGhRa gjGhNa gjGh gjGhR gjGhN];
 @MMK_R_gjHNa = [gjHNna gjHNa gjHLa gjHVa];
-@MMK_R_gjHa = [gjHa gjHMa gjHYa gjHM gjHY];
+@MMK_R_gjHa = [gjHa gjHMa gjHYa gjH gjHM gjHY];
 @MMK_R_gjJNya = [gjJNya gjJNyYa gjJNy gjJNyY];
-@MMK_R_gjJa = [gjJa gjJRa gjJKa gjJYa gjJ.calt gjJ.calt2 gjJ.calt3 gjJY gjJa_gjMatraAa gjJa_gjMatraIi gjJRa_gjMatraAa gjJRa_gjMatraIi];
-@MMK_R_gjJha = [gjJha gjJhYa gjJhY];
+@MMK_R_gjJa = [gjJa gjJRa gjJKa gjJYa gjJ gjJ.calt gjJ.calt2 gjJ.calt3 gjJY gjJa_gjMatraAa gjJa_gjMatraIi gjJRa_gjMatraAa gjJRa_gjMatraIi];
+@MMK_R_gjJha = [gjJha gjJhYa gjJh gjJhY];
 @MMK_R_gjKSsa = [gjKSsa gjKSsRa gjKSsYa gjKSs gjKSsR gjKSsY gjKSsa_gjMatraU];
 @MMK_R_gjKa = [gjKa gjKRa gjKKRa gjKKa gjKTta gjKTa gjKMa gjKYa gjKSha gjKSa gjK gjK.calt gjK.calt2 gjK.calt3 gjKR gjKR.calt gjKR.calt2 gjKR.calt3 gjKT gjKM gjKY gjKSh gjKS];
 @MMK_R_gjLa = [gjLa gjLKa gjLDda gjLYa gjL gjLY];
@@ -102,7 +102,7 @@
 @MMK_R_gjNna = [gjNna gjNn gjNna_gjMatraU];
 @MMK_R_gjNya = [gjNya gjNyYa gjNy gjNyY];
 @MMK_R_gjPa = [gjKha gjPa gjSsa gjKhRa gjPRa gjSsRa gjKhYa gjPKa gjPPha gjKh gjP gjSs gjSs.calt gjKhR gjPR gjSsR gjKhY];
-@MMK_R_gjPha = [gjPha gjPhRa gjPhTta gjPhYa gjPhSa gjPh.calt gjPh.calt2 gjPh.calt3 gjPhY gjPhS];
+@MMK_R_gjPha = [gjPha gjPhRa gjPhTta gjPhYa gjPhSa gjPh gjPh.calt gjPh.calt2 gjPh.calt3 gjPhY gjPhS];
 @MMK_R_gjSa = [gjRa gjSa gjSKRa gjSTRa gjSRa gjSKa gjSTta gjSTha gjSPha gjSYa gjS gjS.calt gjSTR gjSR gjSTh gjSY gjRa_gjMatraU];
 @MMK_R_gjSha = [gjSha gjSh];
 @MMK_R_gjTa = [gjTa gjTNa gjTMa gjTYa gjT gjT.calt gjTN gjTY];

@@ -99,7 +99,7 @@ then
 			# subset Yrsa to Latin only
 			if [ "$FAMILY" == "Yrsa" ]
 			then
-				pyftsubset $FONT --unicodes-file=../subset.txt --output-file=$FONT.S --glyph-names --notdef-glyph --notdef-outline --recommended-glyphs --name-legacy --name-languages='*' --legacy-cmap --no-symbol-cmap --no-ignore-missing-unicodes
+				pyftsubset $FONT --unicodes-file=../subset.txt --output-file=$FONT.S --layout-features='*' --glyph-names --notdef-glyph --notdef-outline --recommended-glyphs --name-IDs='*' --name-legacy --name-languages='*' --legacy-cmap --no-symbol-cmap --no-ignore-missing-unicodes
 				rm $FONT
 				mv $FONT.S $FONT
 			fi
@@ -126,7 +126,7 @@ then
 			# subset Yrsa to Latin only
 			if [ "$FAMILY" == "Yrsa" ]
 			then
-				pyftsubset $FONT --unicodes-file=../subset.txt --output-file=$FONT.S --glyph-names --notdef-glyph --notdef-outline --recommended-glyphs --name-legacy --name-languages='*' --legacy-cmap --no-symbol-cmap --no-ignore-missing-unicodes
+				pyftsubset $FONT --unicodes-file=../subset.txt --output-file=$FONT.S --layout-features='*' --glyph-names --notdef-glyph --notdef-outline --recommended-glyphs --name-IDs='*' --name-legacy --name-languages='*' --legacy-cmap --no-symbol-cmap --no-ignore-missing-unicodes
 				rm $FONT
 				mv $FONT.S $FONT
 			fi

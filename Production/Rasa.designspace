@@ -2,7 +2,7 @@
 
 <designspace format="3">
     <sources>
-        <source filename="_sources/Rasa-Light.ufo" name="Light_master">
+        <source filename="UFOs/Rasa-Light.ufo" name="Light_master">
             <lib copy="1"/>
             <groups copy="1"/>
             <info copy="1"/>
@@ -11,7 +11,7 @@
                 <dimension name="width" xvalue="100"/>
             </location>
         </source>
-        <source filename="_sources/Rasa-Bold.ufo" name="Bold_master">
+        <source filename="UFOs/Rasa-Bold.ufo" name="Bold_master">
             <location>
                 <dimension name="weight" xvalue="361"/>
                 <dimension name="width" xvalue="100"/>

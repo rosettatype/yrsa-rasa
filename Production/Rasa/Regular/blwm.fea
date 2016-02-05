@@ -1,4 +1,4 @@
-# Created: Fri Feb  5 13:59:45 2016
+# Created: Fri Feb  5 16:51:10 2016
 # PS Name: Rasa-Regular
 # MM Inst: None
 # exported from Defcon
@@ -193,6 +193,7 @@ lookup MARK_BASE_blwmNUKTA {
 	@bGC_gjNya_blwmNUKTA = [gjNya gjNy];
 	@bGC_gjPa_blwmNUKTA = [gjPa gjP gjP.calt];
 	@bGC_gjPha_blwmNUKTA = [gjPha gjPhRa gjPh.calt gjPh.calt2 gjPh.calt3];
+	@bGC_gjRa_blwmNUKTA = [gjRa gjRa_gjMatraU];
 	@bGC_gjSa_blwmNUKTA = [gjSa gjS gjS.calt];
 	@bGC_gjSha_blwmNUKTA = [gjSha gjSh];
 	@bGC_gjSsa_blwmNUKTA = [gjSsa gjSs gjSs.calt];
@@ -221,6 +222,7 @@ lookup MARK_BASE_blwmNUKTA {
 	pos base @bGC_gjNya_blwmNUKTA <anchor 581 0> mark @MC_blwmNUKTA;
 	pos base @bGC_gjPa_blwmNUKTA <anchor 519 0> mark @MC_blwmNUKTA;
 	pos base @bGC_gjPha_blwmNUKTA <anchor 117 -308> mark @MC_blwmNUKTA;
+	pos base @bGC_gjRa_blwmNUKTA <anchor 280 -46> mark @MC_blwmNUKTA;
 	pos base @bGC_gjSa_blwmNUKTA <anchor 350 -133> mark @MC_blwmNUKTA;
 	pos base @bGC_gjSha_blwmNUKTA <anchor 357 -133> mark @MC_blwmNUKTA;
 	pos base @bGC_gjSsa_blwmNUKTA <anchor 576 0> mark @MC_blwmNUKTA;
@@ -233,7 +235,6 @@ lookup MARK_BASE_blwmNUKTA {
 	pos base gjDdha <anchor 678 -308> mark @MC_blwmNUKTA;
 	pos base gjHa <anchor 522 -308> mark @MC_blwmNUKTA;
 	pos base gjJha <anchor 842 -88> mark @MC_blwmNUKTA;
-	pos base gjRa <anchor 280 -46> mark @MC_blwmNUKTA;
 	pos base gjRa_gjMatraUu <anchor 80 -220> mark @MC_blwmNUKTA;
 	pos base gjTta <anchor 637 -308> mark @MC_blwmNUKTA;
 	pos base gjTtha <anchor 654 -308> mark @MC_blwmNUKTA;
