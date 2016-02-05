@@ -803,6 +803,12 @@ feature abvs {
 		sub @gjMatraI @gjEndForms @gjNormalRephAnusvara' by @gjHiddenRephAnusvara;
 		sub gjReph.calt2 gjAnusvara' by gjAnusvara.calt2;
 	} ABVS_MatraIRephAnusvara2;
+
+	lookup ABVS_MatraIRephAnusvara3 {
+		lookupflag IgnoreBaseGlyphs;
+
+		sub @gjAltRephAnusvara @gjNormalRephAnusvara' by @gjHiddenRephAnusvara;
+	} ABVS_MatraIRephAnusvara3;
 } abvs;
 
 
