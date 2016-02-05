@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="gjSsDda" format="1">
+  <advance width="1975"/>
+  <outline>
+    <component base="gjSs"/>
+    <component base="gjDda" xOffset="715"/>
+    <contour>
+      <point x="1377" y="24" type="move" name="blwmRUKAR"/>
+    </contour>
+    <contour>
+      <point x="1579" y="1340" type="move" name="abvmBINDU"/>
+    </contour>
+    <contour>
+      <point x="1654" y="1363" type="move" name="abvmTOP"/>
+    </contour>
+    <contour>
+      <point x="1490" y="0" type="move" name="blwmBOTTOM"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+      <integer>10</integer>
+      <key>public.markColor</key>
+      <string>0.75,0.75,0.75,1</string>
+    </dict>
+  </lib>
+</glyph>

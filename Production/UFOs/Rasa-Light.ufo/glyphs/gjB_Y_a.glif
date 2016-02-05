@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="gjBYa" format="1">
+  <advance width="2355"/>
+  <outline>
+    <component base="gjBY"/>
+    <component base="gjMatraAa" xOffset="1723"/>
+    <contour>
+      <point x="1990" y="1363" type="move" name="abvmTOP"/>
+    </contour>
+    <contour>
+      <point x="1990" y="0" type="move" name="blwmBOTTOM"/>
+    </contour>
+    <contour>
+      <point x="1990" y="1340" type="move" name="abvmBINDU"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+      <integer>6</integer>
+      <key>public.markColor</key>
+      <string>0,0.67,0.91,1</string>
+    </dict>
+  </lib>
+</glyph>

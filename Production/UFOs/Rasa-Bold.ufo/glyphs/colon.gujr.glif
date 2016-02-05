@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="colon.gujr" format="1">
+  <advance width="900"/>
+  <outline>
+    <contour>
+      <point x="640" y="984" type="curve" smooth="yes"/>
+      <point x="640" y="1090"/>
+      <point x="565" y="1158"/>
+      <point x="450" y="1158" type="curve" smooth="yes"/>
+      <point x="335" y="1158"/>
+      <point x="260" y="1090"/>
+      <point x="260" y="984" type="curve" smooth="yes"/>
+      <point x="260" y="878"/>
+      <point x="335" y="810"/>
+      <point x="450" y="810" type="curve" smooth="yes"/>
+      <point x="565" y="810"/>
+      <point x="640" y="878"/>
+    </contour>
+    <contour>
+      <point x="640" y="358" type="curve" smooth="yes"/>
+      <point x="640" y="464"/>
+      <point x="565" y="532"/>
+      <point x="450" y="532" type="curve" smooth="yes"/>
+      <point x="335" y="532"/>
+      <point x="260" y="464"/>
+      <point x="260" y="358" type="curve" smooth="yes"/>
+      <point x="260" y="252"/>
+      <point x="335" y="184"/>
+      <point x="450" y="184" type="curve" smooth="yes"/>
+      <point x="565" y="184"/>
+      <point x="640" y="252"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="guillemetright.gujr" format="1">
+  <advance width="1539"/>
+  <outline>
+    <component base="guilsinglleft.gujr" xOffset="1529" xScale="-1"/>
+    <component base="guilsinglleft.gujr" xOffset="1018" xScale="-1"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+      <integer>6</integer>
+      <key>public.markColor</key>
+      <string>0,0.67,0.91,1</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="gjNna" format="1">
+  <advance width="1906"/>
+  <outline>
+    <component base="gjNn"/>
+    <component base="gjMatraAa" xOffset="1274"/>
+    <contour>
+      <point x="417" y="-63" type="move" name="blwmNUKTA"/>
+    </contour>
+    <contour>
+      <point x="1542" y="1340" type="move" name="abvmBINDU"/>
+    </contour>
+    <contour>
+      <point x="1542" y="1363" type="move" name="abvmTOP"/>
+    </contour>
+    <contour>
+      <point x="1542" y="0" type="move" name="blwmBOTTOM"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+      <integer>6</integer>
+      <key>public.markColor</key>
+      <string>0,0.67,0.91,1</string>
+    </dict>
+  </lib>
+</glyph>

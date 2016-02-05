@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="gjSh.calt" format="1">
+  <advance width="961"/>
+  <outline>
+    <contour>
+      <point x="677" y="534"/>
+      <point x="947" y="715"/>
+      <point x="947" y="967" type="curve" smooth="yes"/>
+      <point x="947" y="1095"/>
+      <point x="877" y="1211"/>
+      <point x="792" y="1288" type="curve" smooth="yes"/>
+      <point x="697" y="1374"/>
+      <point x="585" y="1412"/>
+      <point x="482" y="1412" type="curve" smooth="yes"/>
+      <point x="294" y="1412"/>
+      <point x="143" y="1285"/>
+      <point x="143" y="1103" type="curve" smooth="yes"/>
+      <point x="143" y="757"/>
+      <point x="686" y="554"/>
+      <point x="1109" y="554" type="curve" smooth="yes"/>
+      <point x="1175" y="554"/>
+      <point x="1280" y="559"/>
+      <point x="1354" y="573" type="curve"/>
+      <point x="1297" y="795" type="line"/>
+      <point x="1219" y="777"/>
+      <point x="1083" y="759"/>
+      <point x="964" y="759" type="curve" smooth="yes"/>
+      <point x="708" y="759"/>
+      <point x="425" y="851"/>
+      <point x="425" y="1023" type="curve" smooth="yes"/>
+      <point x="425" y="1104"/>
+      <point x="512" y="1179"/>
+      <point x="580" y="1179" type="curve" smooth="yes"/>
+      <point x="641" y="1179"/>
+      <point x="696" y="1150"/>
+      <point x="696" y="1071" type="curve" smooth="yes"/>
+      <point x="696" y="872"/>
+      <point x="343" y="689"/>
+      <point x="25" y="566" type="curve"/>
+      <point x="164" y="315" type="line"/>
+    </contour>
+  </outline>
+</glyph>

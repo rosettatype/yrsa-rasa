@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="gjMatraCandraO_gjReph_gjAnusvara" format="1">
+  <advance width="690"/>
+  <outline>
+    <component base="gjMatraAa"/>
+    <component base="gjMatraCandraE_gjReph_gjAnusvara" xOffset="713"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+      <integer>6</integer>
+      <key>public.markColor</key>
+      <string>0,0.67,0.91,1</string>
+    </dict>
+  </lib>
+</glyph>

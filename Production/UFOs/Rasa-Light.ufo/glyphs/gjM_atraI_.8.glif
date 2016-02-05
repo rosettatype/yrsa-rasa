@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="gjMatraI.8" format="1">
+  <advance width="632"/>
+  <outline>
+    <contour>
+      <point x="345" y="1183" type="line" smooth="yes"/>
+      <point x="345" y="1679"/>
+      <point x="580" y="1902"/>
+      <point x="1091" y="1902" type="curve" smooth="yes"/>
+      <point x="1473" y="1902"/>
+      <point x="1946" y="1779"/>
+      <point x="2560" y="1476" type="curve"/>
+      <point x="2597" y="1526" type="line"/>
+      <point x="2167" y="1817"/>
+      <point x="1555" y="2038"/>
+      <point x="1047" y="2038" type="curve" smooth="yes"/>
+      <point x="498" y="2038"/>
+      <point x="193" y="1793"/>
+      <point x="193" y="1238" type="curve" smooth="yes"/>
+      <point x="193" y="338" type="line" smooth="yes"/>
+      <point x="193" y="203"/>
+      <point x="212" y="112"/>
+      <point x="266" y="41" type="curve" smooth="yes"/>
+      <point x="304" y="-10"/>
+      <point x="353" y="-28"/>
+      <point x="392" y="-28" type="curve" smooth="yes"/>
+      <point x="463" y="-28"/>
+      <point x="566" y="26"/>
+      <point x="628" y="91" type="curve"/>
+      <point x="564" y="238" type="line"/>
+      <point x="544" y="238" type="line"/>
+      <point x="415" y="111" type="line" smooth="yes"/>
+      <point x="402" y="99"/>
+      <point x="390" y="92"/>
+      <point x="382" y="92" type="curve" smooth="yes"/>
+      <point x="364" y="92"/>
+      <point x="345" y="129"/>
+      <point x="345" y="257" type="curve" smooth="yes"/>
+    </contour>
+    <contour>
+      <point x="2560" y="1476" type="move" name="abvmTOP"/>
+    </contour>
+    <contour>
+      <point x="2560" y="1476" type="move" name="abvmBINDU"/>
+    </contour>
+  </outline>
+</glyph>

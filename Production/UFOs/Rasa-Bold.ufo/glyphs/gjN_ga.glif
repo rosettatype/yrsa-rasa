@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="gjNga" format="1">
+  <advance width="1557"/>
+  <unicode hex="0A99"/>
+  <outline>
+    <component base="gjDda"/>
+    <component base="gjAnusvara" xOffset="1678" yOffset="-829"/>
+    <contour>
+      <point x="682" y="24" type="move" name="blwmRUKAR"/>
+    </contour>
+    <contour>
+      <point x="729" y="-308" type="move" name="blwmNUKTA"/>
+    </contour>
+    <contour>
+      <point x="855" y="1340" type="move" name="abvmBINDU"/>
+    </contour>
+    <contour>
+      <point x="1088" y="1363" type="move" name="abvmTOP"/>
+    </contour>
+    <contour>
+      <point x="642" y="0" type="move" name="blwmBOTTOM"/>
+    </contour>
+    <contour>
+      <point x="53" y="-66" type="move" name="blwmNUKTA2"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+      <integer>6</integer>
+      <key>public.markColor</key>
+      <string>0,0.67,0.91,1</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="gjY.post" format="1">
+  <advance width="679"/>
+  <outline>
+    <contour>
+      <point x="16" y="1396"/>
+      <point x="-130" y="1340"/>
+      <point x="-230" y="1212" type="curve"/>
+      <point x="-114" y="1094" type="line"/>
+      <point x="-23" y="1194"/>
+      <point x="85" y="1266"/>
+      <point x="206" y="1266" type="curve" smooth="yes"/>
+      <point x="322" y="1266"/>
+      <point x="391" y="1200"/>
+      <point x="391" y="1103" type="curve" smooth="yes"/>
+      <point x="391" y="976"/>
+      <point x="272" y="873"/>
+      <point x="115" y="828" type="curve"/>
+      <point x="79" y="744" type="line"/>
+      <point x="105" y="681"/>
+      <point x="154" y="605"/>
+      <point x="205" y="545" type="curve" smooth="yes"/>
+      <point x="296" y="438"/>
+      <point x="409" y="360"/>
+      <point x="572" y="360" type="curve" smooth="yes"/>
+      <point x="754" y="360"/>
+      <point x="922" y="458"/>
+      <point x="1013" y="597" type="curve"/>
+      <point x="919" y="704" type="line"/>
+      <point x="889" y="704" type="line"/>
+      <point x="786" y="564"/>
+      <point x="654" y="491"/>
+      <point x="525" y="491" type="curve" smooth="yes"/>
+      <point x="375" y="491"/>
+      <point x="277" y="580"/>
+      <point x="242" y="702" type="curve"/>
+      <point x="408" y="767"/>
+      <point x="543" y="879"/>
+      <point x="543" y="1041" type="curve" smooth="yes"/>
+      <point x="543" y="1142"/>
+      <point x="490" y="1229"/>
+      <point x="417" y="1292" type="curve" smooth="yes"/>
+      <point x="346" y="1353"/>
+      <point x="251" y="1396"/>
+      <point x="141" y="1396" type="curve" smooth="yes"/>
+    </contour>
+    <contour>
+      <point x="489" y="0" type="move" name="blwmNUKTA"/>
+    </contour>
+  </outline>
+</glyph>

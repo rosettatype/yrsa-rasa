@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="gjEight" format="1">
+  <advance width="984"/>
+  <unicode hex="0AEE"/>
+  <outline>
+    <contour>
+      <point x="219" y="720" type="line" smooth="yes"/>
+      <point x="128" y="602"/>
+      <point x="94" y="503"/>
+      <point x="94" y="396" type="curve" smooth="yes"/>
+      <point x="94" y="286"/>
+      <point x="153" y="176"/>
+      <point x="264" y="85" type="curve" smooth="yes"/>
+      <point x="351" y="14"/>
+      <point x="454" y="-30"/>
+      <point x="563" y="-30" type="curve" smooth="yes"/>
+      <point x="700" y="-30"/>
+      <point x="852" y="47"/>
+      <point x="961" y="182" type="curve"/>
+      <point x="872" y="301" type="line"/>
+      <point x="853" y="301" type="line"/>
+      <point x="735" y="163"/>
+      <point x="621" y="105"/>
+      <point x="506" y="105" type="curve" smooth="yes"/>
+      <point x="352" y="105"/>
+      <point x="251" y="208"/>
+      <point x="251" y="352" type="curve" smooth="yes"/>
+      <point x="251" y="445"/>
+      <point x="285" y="540"/>
+      <point x="381" y="662" type="curve" smooth="yes"/>
+      <point x="880" y="1293" type="line"/>
+      <point x="745" y="1401" type="line"/>
+    </contour>
+  </outline>
+</glyph>

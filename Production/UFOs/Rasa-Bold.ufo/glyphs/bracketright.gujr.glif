@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="bracketright.gujr" format="1">
+  <advance width="835"/>
+  <outline>
+    <contour>
+      <point x="646" y="-376" type="line"/>
+      <point x="646" y="1816" type="line"/>
+      <point x="598" y="1860" type="line"/>
+      <point x="438" y="1862"/>
+      <point x="218" y="1851"/>
+      <point x="39" y="1827" type="curve"/>
+      <point x="39" y="1685" type="line"/>
+      <point x="279" y="1656" type="line" smooth="yes"/>
+      <point x="312" y="1652"/>
+      <point x="331" y="1631"/>
+      <point x="331" y="1598" type="curve" smooth="yes"/>
+      <point x="331" y="-158" type="line" smooth="yes"/>
+      <point x="331" y="-191"/>
+      <point x="312" y="-212"/>
+      <point x="279" y="-216" type="curve" smooth="yes"/>
+      <point x="39" y="-244" type="line"/>
+      <point x="39" y="-387" type="line"/>
+      <point x="218" y="-411"/>
+      <point x="438" y="-422"/>
+      <point x="598" y="-420" type="curve"/>
+    </contour>
+  </outline>
+</glyph>

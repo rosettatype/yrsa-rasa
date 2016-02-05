@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="gjMatraIi.3" format="1">
+  <advance width="714"/>
+  <outline>
+    <contour>
+      <point x="593" y="-29"/>
+      <point x="708" y="24"/>
+      <point x="798" y="118" type="curve"/>
+      <point x="670" y="373" type="line"/>
+      <point x="628" y="373" type="line"/>
+      <point x="547" y="224" type="line" smooth="yes"/>
+      <point x="531" y="195"/>
+      <point x="519" y="171"/>
+      <point x="506" y="171" type="curve" smooth="yes"/>
+      <point x="487" y="171"/>
+      <point x="480" y="214"/>
+      <point x="480" y="340" type="curve" smooth="yes"/>
+      <point x="480" y="1105" type="line" smooth="yes"/>
+      <point x="480" y="1459"/>
+      <point x="334" y="1698"/>
+      <point x="146" y="1854" type="curve" smooth="yes"/>
+      <point x="-18" y="1990"/>
+      <point x="-228" y="2075"/>
+      <point x="-445" y="2075" type="curve" smooth="yes"/>
+      <point x="-690" y="2075"/>
+      <point x="-864" y="1967"/>
+      <point x="-864" y="1777" type="curve" smooth="yes"/>
+      <point x="-864" y="1711"/>
+      <point x="-843" y="1633"/>
+      <point x="-812" y="1575" type="curve"/>
+      <point x="-530" y="1478" type="line"/>
+      <point x="-501" y="1509" type="line"/>
+      <point x="-526" y="1548"/>
+      <point x="-549" y="1606"/>
+      <point x="-549" y="1663" type="curve" smooth="yes"/>
+      <point x="-549" y="1759"/>
+      <point x="-485" y="1842"/>
+      <point x="-290" y="1842" type="curve" smooth="yes"/>
+      <point x="0" y="1842"/>
+      <point x="164" y="1657"/>
+      <point x="164" y="1234" type="curve" smooth="yes"/>
+      <point x="164" y="437" type="line" smooth="yes"/>
+      <point x="164" y="260"/>
+      <point x="190" y="168"/>
+      <point x="260" y="84" type="curve" smooth="yes"/>
+      <point x="329" y="1"/>
+      <point x="401" y="-29"/>
+      <point x="483" y="-29" type="curve" smooth="yes"/>
+    </contour>
+    <contour>
+      <point x="519" y="1551" type="move" name="abvmBINDU"/>
+    </contour>
+  </outline>
+</glyph>
