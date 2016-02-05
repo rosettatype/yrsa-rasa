@@ -1,5 +1,5 @@
-InputFontPath	./font.ttf
-OutputFontPath	../../../Fonts/Yrsa-Medium.ttf
+InputFontPath	./font.ufo
+OutputFontPath	../../../Fonts/Yrsa-Medium.otf
 FeaturePath	./features.fea
 GlyphAliasDBPath	./GlyphOrderAndAliasDB
 ReleaseMode	true

@@ -1,5 +1,5 @@
-InputFontPath	./font.ttf
-OutputFontPath	../../../Fonts/Yrsa-Semibold.ttf
+InputFontPath	./font.ufo
+OutputFontPath	../../../Fonts/Yrsa-Semibold.otf
 FeaturePath	./features.fea
 GlyphAliasDBPath	./GlyphOrderAndAliasDB
 ReleaseMode	true
