@@ -1,11 +1,6 @@
 #----------------------------------------------------------------------------
 # Classes
 
-@gjFullForms = [gjKha gjGa gjGha gjCa gjNya gjNna gjTa gjTha gjDha gjNa gjPa gjBa gjBha gjMa gjYa gjLa gjLla gjVa gjSha  gjSsa gjSa gjKSsa gjJNya gjKSsRa gjKhRa gjGRa gjGhRa gjNnRa gjTRa gjThRa gjDRYa gjDhRa gjNRa gjPRa gjBRa gjBhRa gjMRa gjVRa gjShRa gjSsRa gjSTRa gjSRa gjKTa gjKMa gjKYa gjKSha gjKSsYa gjKSa gjKhYa gjGhNa gjNgMa gjNgYa gjJNyYa gjJYa gjJhYa gjNyYa gjTthYa gjDdMa gjDdYa gjTTa gjTTYa gjTNa gjTMa gjTYa gjDMa gjDYa gjDhNa gjNNa gjNMa gjPTa gjPhYa gjPhSa gjBYa gjLYa gjLlYa gjVYa gjShCa gjShNa gjShLa gjShVa gjSTha gjSYa gjHMa gjHYa gjYa.post gjRa];
-@gjFullForms_Halfs = [gjKh gjG gjGh gjC gjNy gjNn gjT gjTh gjDh gjN gjP gjB gjBh gjM gjY gjL gjLl gjV gjSh  gjSs gjS gjKSs gjJNy gjKSsR gjKhR gjGR gjGhR gjNnR gjTR gjThR gjDRY gjDhR gjNR gjPR gjBR gjBhR gjMR gjVR gjShR gjSsR gjSTR gjSR gjKT gjKM gjKY gjKSh gjKSsY gjKS gjKhY gjGhN gjNgM gjNgY gjJNyY gjJY gjJhY gjNyY gjTthY gjDdM gjDdY gjTT gjTTY gjTN gjTM gjTY gjDM gjDY gjDhN gjNN gjNM gjPT gjPhY gjPhS gjBY gjLY gjLlY gjVY gjShC gjShN gjShL gjShV gjSTh gjSY gjHM gjHY gjY.post gjR.post];
-@gjBaseForms = [gjKa gjKha gjGa gjGha gjNga gjCa gjCha gjJa gjJha gjNya gjTta gjTtha gjDda gjDdha gjNna gjTa gjTha gjDa gjDha gjNa gjPa gjPha gjBa gjBha gjMa gjYa gjRa gjLa gjLla gjVa gjSha gjSsa gjSa gjHa gjKSsa gjJNya gjKRa gjKKRa gjKSsRa gjKhRa gjGRa gjGhRa gjJRa gjJhRa gjNnRa gjTRa gjThRa gjDRa gjDRYa gjDhRa gjNRa gjPRa gjPhRa gjBRa gjBhRa gjMRa gjLlRa gjVRa gjShRa gjSsRa gjSKRa gjSTRa gjSRa gjKKa gjKTta gjKTa gjKMa gjKYa gjKSha gjKSsYa gjKSa gjKhYa gjGhNa gjNgKa gjNgKSsa gjNgMa gjNgYa gjJKa gjJNyYa gjJYa gjJhYa gjNyYa gjTtTta gjTtTtha gjTtVa gjTthTtha gjTthYa gjDdDda gjDdNa gjDdMa gjDdYa gjDdVa gjDdhDdha gjDdhNa gjTTa gjTTYa gjTNa gjTMa gjTYa gjDGa gjDGha gjDDa gjDDha gjDNa gjDBa gjDMa gjDYa gjDVa gjDhNa gjNNa gjNMa gjPKa gjPTa gjPPha gjPhTta gjPhYa gjPhSa gjBKa gjBYa gjMKa gjMPha gjLKa gjLDda gjLYa gjLlYa gjVYa gjShCa gjShNa gjShLa gjShVa gjSsTta gjSsTtha gjSsDda gjSKa gjSDda gjSTta gjSTha gjSPha gjSYa gjHNna gjHNa gjHLa gjHVa gjHMa gjHYa gjJa_gjMatraAa gjJa_gjMatraIi gjJRa_gjMatraAa gjJRa_gjMatraIi gjNna_gjMatraU gjRa_gjMatraU gjRa_gjMatraUu gjLla_gjMatraVocalicR gjLla_gjMatraVocalicRr gjKSsa_gjMatraU gjDRa.ss01 gjDGa.ss01 gjDGha.ss01 gjDDha.ss01 gjDNa.ss01 gjDBa.ss01 gjDVa.ss01 gjYa.post];
-
-
 # Copies of kerning classes for convenience
 
 @gjKa_right = [gjKa gjKRa gjKKa gjKKRa gjK gjKT gjKM gjKY gjKTa gjKMa gjKYa gjK.calt gjK.calt2 gjK.calt3 gjKR.calt gjKR.calt2 gjKR.calt3 gjKTta gjKSa gjKS gjKSha gjKSh];
@@ -156,6 +151,13 @@ script gujr;
 #----------------------------------------------------------------------------
 # Half forms
 
+@gjK = [gjK gjK.calt gjK.calt2 gjK.calt3];
+@gjPh = [gjPh gjPh.calt gjPh.calt2 gjPh.calt3];
+@gjKR = [gjKR gjKR.calt gjKR.calt2 gjKR.calt3];
+@gjJ = [gjJ gjJ.calt gjJ.calt2 gjJ.calt3];
+
+
+
 feature half {
 
 script DFLT;
@@ -163,10 +165,56 @@ script DFLT;
 		lookup HALF {
 			lookupflag MarkAttachmentType @gjMarks_below;
 			
+			sub gjNga gjVirama gjM by gjNgM;
+			sub gjNga gjVirama gjY by gjNgY;
+			sub gjJha gjVirama gjY by gjJhY;
+			sub gjTtha gjVirama gjY by gjTthY;
+			sub gjDda gjVirama gjM by gjDdM;
+			sub gjDda gjVirama gjY by gjDdY;
+			sub gjDa gjVirama gjM by gjDM;
+			sub gjDa gjVirama gjY by gjDY;
+			sub gjHa gjVirama gjM by gjHM;
+			sub gjHa gjVirama gjY by gjHY;
+
+			sub gjTa gjVirama gjTa gjVirama gjYa gjVirama by gjTTY;
+			sub gjKa gjVirama gjTa gjVirama by gjKT;
+			sub gjKa gjVirama gjMa gjVirama by gjKM;
+			sub gjKa gjVirama gjYa gjVirama by gjKY;
+			sub gjKa gjVirama gjSa gjVirama by gjKS;
+			sub gjKa gjVirama gjSha gjVirama by gjKSh;
+			sub gjKha gjVirama gjYa gjVirama by gjKhY;
+			sub gjGha gjVirama gjNa gjVirama by gjGhN;
+			sub gjJa gjVirama gjYa gjVirama by gjJY;
+			sub gjNya gjVirama gjYa gjVirama by gjNyY;
+			sub gjTa gjVirama gjTa gjVirama by gjTT;
+			sub gjTa gjVirama gjMa gjVirama by gjTM;
+			sub gjTa gjVirama gjNa gjVirama by gjTN;
+			sub gjTa gjVirama gjYa gjVirama by gjTY;
+			sub gjDha gjVirama gjNa gjVirama by gjDhN;
+			sub gjNa gjVirama gjNa gjVirama by gjNN;
+			sub gjNa gjVirama gjMa gjVirama by gjNM;
+			sub gjPa gjVirama gjTa gjVirama by gjPT;
+			sub gjPha gjVirama gjYa gjVirama by gjPhY;
+			sub gjPha gjVirama gjSa gjVirama by gjPhS;
+			sub gjBa gjVirama gjYa gjVirama by gjBY;
+			sub gjLa gjVirama gjYa gjVirama by gjLY;
+			sub gjLla gjVirama gjYa gjVirama by gjLlY;
+			sub gjVa gjVirama gjYa gjVirama by gjVY;
+			sub gjSha gjVirama gjCa gjVirama by gjShC;
+			sub gjSha gjVirama gjNa gjVirama by gjShN;
+			sub gjSha gjVirama gjLa gjVirama by gjShL;
+			sub gjSha gjVirama gjVa gjVirama by gjShV;
+			sub gjSa gjVirama gjTha gjVirama by gjSTh;
+			sub gjSa gjVirama gjYa gjVirama by gjSY;
+			sub gjKSsa gjVirama gjYa gjVirama by gjKSsY;
+			sub gjJNya gjVirama gjYa gjVirama by gjJNyY;
+
+			sub gjKa gjVirama by gjK;
 			sub gjKha gjVirama by gjKh;
 			sub gjGa gjVirama by gjG;
 			sub gjGha gjVirama by gjGh;
 			sub gjCa gjVirama by gjC;
+			sub gjJa gjVirama by gjJ;
 			sub gjNya gjVirama by gjNy;
 			sub gjNna gjVirama by gjNn;
 			sub gjTa gjVirama by gjT;
@@ -174,6 +222,7 @@ script DFLT;
 			sub gjDha gjVirama by gjDh;
 			sub gjNa gjVirama by gjN;
 			sub gjPa gjVirama by gjP;
+			sub gjPha gjVirama by gjPh;
 			sub gjBa gjVirama by gjB;
 			sub gjBha gjVirama by gjBh;
 			sub gjMa gjVirama by gjM;
@@ -187,11 +236,6 @@ script DFLT;
 
 			sub gjKSsa gjVirama by gjKSs;
 			sub gjJNya gjVirama by gjJNy;
-			sub gjDa gjVirama gjRakar gjY by gjDRY;
-
-			sub gjKa gjVirama by gjK.calt;
-			sub gjPha gjVirama by gjPh.calt;
-			sub gjJa gjVirama by gjJ.calt;
 		} HALF;
 		
 		lookup HALF_RKRF {
@@ -199,6 +243,7 @@ script DFLT;
 			
 			sub gjSTRa gjVirama by gjSTR;
 			sub gjDRYa gjVirama by gjDRY;
+			sub gjKRa gjVirama by gjKR;
 			sub gjKhRa gjVirama by gjKhR;
 			sub gjGRa gjVirama by gjGR;
 			sub gjGhRa gjVirama by gjGhR;
@@ -217,61 +262,74 @@ script DFLT;
 			sub gjSRa gjVirama by gjSR;
 			sub gjKSsRa gjVirama by gjKSsR;
 		} HALF_RKRF;
+		lookup HALF_ContextualHalfForms {
+			sub gjT' [@gjCa_right @gjTta_right @gjTha_right @gjTtha_right @gjDdha_right @gjPa_right @gjYa_right @gjSa_right] by gjT.calt;
+			sub gjP' [@gjGha_right @gjCha_right @gjTta_right @gjTtha_right @gjDdha_right @gjDa_right @gjPha_right @gjMa_right @gjSha_right @gjKSsa_right @gjHNa_right] by gjP.calt;
+			sub [gjTh gjDh gjY gjS]' [@gjCha_right @gjDa_right @gjTa_right @gjTta_right @gjTtha_right @gjDdha_right @gjMa_right @gjNa_right @gjSa_right @gjKSsa_right] by [gjTh.calt gjDh.calt gjY.calt gjS.calt];
+			sub gjL' [@gjSa_right] by gjL.calt;
+			sub gjS' [@gjCa_right @gjCha_right @gjTta_right @gjTtha_right @gjDdha_right @gjTa_right @gjDa_right @gjPa_right @gjNa_right @gjMa_right @gjSa_right @gjKSsa_right gjDRa] by gjS.calt;
+			sub gjSs' [@gjCa_right @gjCha_right @gjNna_right @gjDa_right @gjDha_right @gjNa_right @gjPa_right @gjBa_right @gjBha_right @gjSa_right] by gjSs.calt;
+			sub gjN' [@gjGa_right @gjCa_right @gjTta_right @gjDdha_right @gjTha_right @gjMa_right @gjSa_right gjSha] by gjN.calt;
+			sub gjN' [@gjJa_right] by gjN.calt2;
+
+			sub [gjK gjPh gjKR]' [@gjJa_right] by [gjK.calt gjPh.calt gjKR.calt];
+			sub [gjK gjPh gjKR]' [@gjNa_right @gjGha_right @gjDha_right @gjTa_right @gjDa_right @gjNa_right @gjPa_right @gjBa_right @gjBha_right @gjLa_right @gjLla_right @gjVa_right @gjSa_right @gjHNa_right @gjCha_right @gjNna_right gjDRa] by [gjK.calt2 gjPh.calt2 gjKR.calt2];
+			sub [gjK gjPh gjKR]' [@gjCa_right @gjTha_right] by [gjK.calt3 gjPh.calt3 gjKR.calt3];
+			sub gjJ' [@gjGa_right @gjCa_right @gjNya_right @gjTta_right @gjDdha_right @gjTha_right @gjDha_right @gjPa_right @gjMa_right @gjYa_right @gjSa_right] by gjJ.calt;
+			sub gjJ' [@gjJa_right] by gjJ.calt2;
+			sub gjJ' [@gjGha_right @gjCha_right @gjNna_right @gjDa_right @gjBa_right @gjBha_right @gjLa_right @gjLla_right @gjVa_right @gjSha_right] by gjJ.calt3;
+		} HALF_ContextualHalfForms;
 
 script gjr2;
 	language dflt;
 		lookup HALF;
 		lookup HALF_RKRF;
+		lookup HALF_ContextualHalfForms;
 
 script gujr;
 	language dflt;
 		lookup HALF;
-		
 		lookup HALF_GUJR {
 			lookupflag MarkAttachmentType @gjMarks_below;
 			
-			sub gjKa gjVirama by gjK;
 			sub gjNga gjVirama by gjNg;
 			sub gjCha gjVirama by gjCh;
-			sub gjJa gjVirama by gjJ;
 			sub gjJha gjVirama by gjJh;
 			sub gjTta gjVirama by gjTt;
 			sub gjTtha gjVirama by gjTth;
 			sub gjDda gjVirama by gjDd;
 			sub gjDdha gjVirama by gjDdh;
 			sub gjDa gjVirama by gjD;
-			sub gjPha gjVirama by gjPh;
 			sub gjHa gjVirama by gjH;
 		} HALF_GUJR;
-
 		lookup HALF_VATU {
 			lookupflag MarkAttachmentType @gjMarks_below;
 			
-			# !! ?
-			# !! add gjKR
-			sub gjSTR gjRakar by gjSTR;
-			sub gjDRY gjRakar by gjDRY;
-			sub gjKhR gjRakar by gjKhR;
-			sub gjGR gjRakar by gjGR;
-			sub gjGhR gjRakar by gjGhR;
-			sub gjNnR gjRakar by gjNnR;
-			sub gjTR gjRakar by gjTR;
-			sub gjThR gjRakar by gjThR;
-			sub gjDhR gjRakar by gjDhR;
-			sub gjNR gjRakar by gjNR;
-			sub gjPR gjRakar by gjPR;
-			sub gjBR gjRakar by gjBR;
-			sub gjBhR gjRakar by gjBhR;
-			sub gjMR gjRakar by gjMR;
-			sub gjVR gjRakar by gjVR;
-			sub gjShR gjRakar by gjShR;
-			sub gjSsR gjRakar by gjSsR;
-			sub gjSR gjRakar by gjSR;
-			sub gjKSsR gjRakar by gjKSsR;
+			sub gjSTR [gjRakar gjR.post] by gjSTR;
+			sub gjDRY [gjRakar gjR.post] by gjDRY;
+			sub gjKR [gjRakar gjR.post] by gjKR;
+			sub gjKhR [gjRakar gjR.post] by gjKhR;
+			sub gjGR [gjRakar gjR.post] by gjGR;
+			sub gjGhR [gjRakar gjR.post] by gjGhR;
+			sub gjNnR [gjRakar gjR.post] by gjNnR;
+			sub gjTR [gjRakar gjR.post] by gjTR;
+			sub gjThR [gjRakar gjR.post] by gjThR;
+			sub gjDhR [gjRakar gjR.post] by gjDhR;
+			sub gjNR [gjRakar gjR.post] by gjNR;
+			sub gjPR [gjRakar gjR.post] by gjPR;
+			sub gjBR [gjRakar gjR.post] by gjBR;
+			sub gjBhR [gjRakar gjR.post] by gjBhR;
+			sub gjMR [gjRakar gjR.post] by gjMR;
+			sub gjVR [gjRakar gjR.post] by gjVR;
+			sub gjShR [gjRakar gjR.post] by gjShR;
+			sub gjSsR [gjRakar gjR.post] by gjSsR;
+			sub gjSR [gjRakar gjR.post] by gjSR;
+			sub gjKSsR [gjRakar gjR.post] by gjKSsR;
 			
-			# bugfix (Webkit/Mac)
+			# bugfix (Webkit)
 			sub gjSTR gjRa gjVirama by gjSTR;
 			sub gjDRY gjRa gjVirama by gjDRY;
+			sub gjKR gjRa gjVirama by gjKR;
 			sub gjKhR gjRa gjVirama by gjKhR;
 			sub gjGR gjRa gjVirama by gjGR;
 			sub gjGhR gjRa gjVirama by gjGhR;
@@ -290,6 +348,7 @@ script gujr;
 			sub gjSR gjRa gjVirama by gjSR;
 			sub gjKSsR gjRa gjVirama by gjKSsR;
 		} HALF_VATU;
+		lookup HALF_ContextualHalfForms;
 } half;
 
 
@@ -304,33 +363,36 @@ script gjr;
 		lookup VATU {
 			lookupflag MarkAttachmentType @gjMarks_below;
 		
-			sub gjK.calt gjKRa by gjKKRa;
+			sub @gjK gjKa [gjRakar gjR.post] by gjKKRa;
+			sub gjS gjKa [gjRakar gjR.post] by gjSKRa;
+			sub gjS gjTa [gjRakar gjR.post] by gjSTRa;
+			sub @gjK gjKRa by gjKKRa;
 			sub gjS gjKRa by gjSKRa;
 			sub gjS gjTRa by gjSTRa;
 		
-			sub gjKa gjRakar by gjKRa;
-			sub gjKSsa gjRakar by gjKSsRa;
-			sub gjKha gjRakar by gjKhRa;
-			sub gjGa gjRakar by gjGRa;
-			sub gjGha gjRakar by gjGhRa;
-			sub gjJa gjRakar by gjJRa;
-			sub gjJha gjRakar by gjJhRa;
-			sub gjNna gjRakar by gjNnRa;
-			sub gjTa gjRakar by gjTRa;
-			sub gjTha gjRakar by gjThRa;
-			sub gjDa gjRakar by gjDRa;
-			sub gjDha gjRakar by gjDhRa;
-			sub gjNa gjRakar by gjNRa;
-			sub gjPa gjRakar by gjPRa;
-			sub gjPha gjRakar by gjPhRa;
-			sub gjBa gjRakar by gjBRa;
-			sub gjBha gjRakar by gjBhRa;
-			sub gjMa gjRakar by gjMRa;
-			sub gjVa gjRakar by gjVRa;
-			sub gjLla gjRakar by gjLlRa;
-			sub gjSha gjRakar by gjShRa;
-			sub gjSsa gjRakar by gjSsRa;
-			sub gjSa gjRakar by gjSRa;
+			sub gjKa [gjRakar gjR.post] by gjKRa;
+			sub gjKSsa [gjRakar gjR.post] by gjKSsRa;
+			sub gjKha [gjRakar gjR.post] by gjKhRa;
+			sub gjGa [gjRakar gjR.post] by gjGRa;
+			sub gjGha [gjRakar gjR.post] by gjGhRa;
+			sub gjJa [gjRakar gjR.post] by gjJRa;
+			sub gjJha [gjRakar gjR.post] by gjJhRa;
+			sub gjNna [gjRakar gjR.post] by gjNnRa;
+			sub gjTa [gjRakar gjR.post] by gjTRa;
+			sub gjTha [gjRakar gjR.post] by gjThRa;
+			sub gjDa [gjRakar gjR.post] by gjDRa;
+			sub gjDha [gjRakar gjR.post] by gjDhRa;
+			sub gjNa [gjRakar gjR.post] by gjNRa;
+			sub gjPa [gjRakar gjR.post] by gjPRa;
+			sub gjPha [gjRakar gjR.post] by gjPhRa;
+			sub gjBa [gjRakar gjR.post] by gjBRa;
+			sub gjBha [gjRakar gjR.post] by gjBhRa;
+			sub gjMa [gjRakar gjR.post] by gjMRa;
+			sub gjVa [gjRakar gjR.post] by gjVRa;
+			sub gjLla [gjRakar gjR.post] by gjLlRa;
+			sub gjSha [gjRakar gjR.post] by gjShRa;
+			sub gjSsa [gjRakar gjR.post] by gjSsRa;
+			sub gjSa [gjRakar gjR.post] by gjSRa;
 		} VATU;
 } vatu;
 
@@ -346,18 +408,20 @@ script DFLT;
 		lookup CJCT {
 			lookupflag MarkAttachmentType @gjMarks_below;
 			
-			sub gjK.calt gjKa by gjKKa;
-			sub gjK.calt gjTta by gjKTta;
 			sub gjNga gjVirama gjKa by gjNgKa;
 			sub gjNga gjVirama gjKSsa by gjNgKSsa;
-			sub gjJ.calt gjKa by gjJKa;
+			sub gjNga gjVirama gjMa by gjNgMa;
+			sub gjNga gjVirama gjYa by gjNgYa;
 			sub gjTta gjVirama gjTta by gjTtTta;
 			sub gjTta gjVirama gjTtha by gjTtTtha;
 			sub gjTta gjVirama gjVa by gjTtVa;
 			sub gjTtha gjVirama gjTtha by gjTthTtha;
+			sub gjTtha gjVirama gjYa by gjTthYa;
 			sub gjDda gjVirama gjDda by gjDdDda;
 			sub gjDda gjVirama gjNa by gjDdNa;
 			sub gjDda gjVirama gjVa by gjDdVa;
+			sub gjDda gjVirama gjMa by gjDdMa;
+			sub gjDda gjVirama gjYa by gjDdYa;
 			sub gjDdha gjVirama gjDdha by gjDdhDdha;
 			sub gjDdha gjVirama gjNa by gjDdhNa;
 			sub gjDa gjVirama gjGa by gjDGa;
@@ -365,30 +429,33 @@ script DFLT;
 			sub gjDa gjVirama gjDa by gjDDa;
 			sub gjDa gjVirama gjDha by gjDDha;
 			sub gjDa gjVirama gjNa by gjDNa;
+			sub gjDa gjVirama gjMa by gjDMa;
+			sub gjDa gjVirama gjYa by gjDYa;
 			sub gjDa gjVirama gjBa by gjDBa;
 			sub gjDa gjVirama gjVa by gjDVa;
 			sub gjPa gjVirama gjKa by gjPKa;
 			sub gjPa gjVirama gjPha by gjPPha;
-			sub gjPh.calt gjTta by gjPhTta;
-			sub gjB gjKa by gjBKa;
-			sub gjM gjKa by gjMKa;
-			sub gjM gjPha by gjMPha;
-			sub gjL gjKa by gjLKa;
-			sub gjL gjDda by gjLDda;
-			sub gjSs gjTta by gjSsTta;
-			sub gjSs gjTtha by gjSsTtha;
-			sub gjSs gjDda by gjSsDda;
-			sub gjS gjKa by gjSKa;
-			sub gjS gjDda by gjSDda;
-			sub gjS gjTta by gjSTta;
-			sub gjS gjPha by gjSPha;
 			sub gjHa gjVirama gjNna by gjHNna;
 			sub gjHa gjVirama gjNa by gjHNa;
 			sub gjHa gjVirama gjLa by gjHLa;
 			sub gjHa gjVirama gjVa by gjHVa;
-	} CJCT;
+			sub gjHa gjVirama gjMa by gjHMa;
+			sub gjHa gjVirama gjYa by gjHYa;
+			sub gjJha gjVirama gjYa by gjJhYa;
 
-	# add gjK etc. half here? !!
+			sub gjKa gjVirama gjKa by gjKKa;
+			sub gjKa gjVirama gjTta by gjKTta;
+			sub gjKa gjVirama gjTa by gjKTa;
+			sub gjKa gjVirama gjMa by gjKMa;
+			sub gjKa gjVirama gjYa by gjKYa;
+			sub gjKa gjVirama gjSha by gjKSha;
+			sub gjKa gjVirama gjSa  by gjKSa;
+			sub gjPha gjVirama gjTta by gjPhTta;
+			sub gjPha gjVirama gjYa by gjPhYa;
+			sub gjPha gjVirama gjSa by gjPhSa;
+			sub gjJa gjVirama gjKa by gjJKa;
+			sub gjJa gjVirama gjYa by gjJYa;
+		} CJCT;
 
 script gjr2;
 	language dflt;
@@ -413,204 +480,136 @@ lookup makePostNa {
 	sub gjNa by gjN.post gjMatraAa;
 } makePostNa;
 
-@gjKa_half1_context = [@gjNa_right @gjJa_right];
-@gjKa_half2_context = [@gjGha_right @gjDha_right @gjTa_right @gjDa_right @gjNa_right @gjPa_right @gjBa_right @gjBha_right @gjLa_right @gjLla_right @gjVa_right @gjSa_right @gjHNa_right @gjCha_right @gjNna_right gjDRa];
+@gjFullForms = [gjKha gjGa gjGha gjCa gjNya gjNna gjTa gjTha gjDha gjNa gjPa gjBa gjBha gjMa gjYa gjLa gjLla gjVa gjSha  gjSsa gjSa gjKSsa gjJNya gjKSsRa gjKhRa gjGRa gjGhRa gjNnRa gjTRa gjThRa gjDRYa gjDhRa gjNRa gjPRa gjBRa gjBhRa gjMRa gjVRa gjShRa gjSsRa gjSTRa gjSRa gjKTa gjKMa gjKYa gjKSha gjKSsYa gjKSa gjKhYa gjGhNa gjNgMa gjNgYa gjJNyYa gjJYa gjJhYa gjNyYa gjTthYa gjDdMa gjDdYa gjTTa gjTTYa gjTNa gjTMa gjTYa gjDMa gjDYa gjDhNa gjNNa gjNMa gjPTa gjPhYa gjPhSa gjBYa gjLYa gjLlYa gjVYa gjShCa gjShNa gjShLa gjShVa gjSTha gjSYa gjHMa gjHYa gjYa.post];
+@gjFullForms_Halfs = [gjKh gjG gjGh gjC gjNy gjNn gjT gjTh gjDh gjN gjP gjB gjBh gjM gjY gjL gjLl gjV gjSh  gjSs gjS gjKSs gjJNy gjKSsR gjKhR gjGR gjGhR gjNnR gjTR gjThR gjDRY gjDhR gjNR gjPR gjBR gjBhR gjMR gjVR gjShR gjSsR gjSTR gjSR gjKT gjKM gjKY gjKSh gjKSsY gjKS gjKhY gjGhN gjNgM gjNgY gjJNyY gjJY gjJhY gjNyY gjTthY gjDdM gjDdY gjTT gjTTY gjTN gjTM gjTY gjDM gjDY gjDhN gjNN gjNM gjPT gjPhY gjPhS gjBY gjLY gjLlY gjVY gjShC gjShN gjShL gjShV gjSTh gjSY gjHM gjHY gjY.post];
+@gjBaseForms = [gjKa gjKha gjGa gjGha gjNga gjCa gjCha gjJa gjJha gjNya gjTta gjTtha gjDda gjDdha gjNna gjTa gjTha gjDa gjDha gjNa gjPa gjPha gjBa gjBha gjMa gjYa gjRa gjLa gjLla gjVa gjSha gjSsa gjSa gjHa gjKSsa gjJNya gjKRa gjKKRa gjKSsRa gjKhRa gjGRa gjGhRa gjJRa gjJhRa gjNnRa gjTRa gjThRa gjDRa gjDRYa gjDhRa gjNRa gjPRa gjPhRa gjBRa gjBhRa gjMRa gjLlRa gjVRa gjShRa gjSsRa gjSKRa gjSTRa gjSRa gjKKa gjKTta gjKTa gjKMa gjKYa gjKSha gjKSsYa gjKSa gjKhYa gjGhNa gjNgKa gjNgKSsa gjNgMa gjNgYa gjJKa gjJNyYa gjJYa gjJhYa gjNyYa gjTtTta gjTtTtha gjTtVa gjTthTtha gjTthYa gjDdDda gjDdNa gjDdMa gjDdYa gjDdVa gjDdhDdha gjDdhNa gjTTa gjTTYa gjTNa gjTMa gjTYa gjDGa gjDGha gjDDa gjDDha gjDNa gjDBa gjDMa gjDYa gjDVa gjDhNa gjNNa gjNMa gjPKa gjPTa gjPPha gjPhTta gjPhYa gjPhSa gjBKa gjBYa gjMKa gjMPha gjLKa gjLDda gjLYa gjLlYa gjVYa gjShCa gjShNa gjShLa gjShVa gjSsTta gjSsTtha gjSsDda gjSKa gjSDda gjSTta gjSTha gjSPha gjSYa gjHNna gjHNa gjHLa gjHVa gjHMa gjHYa gjJa_gjMatraAa gjJa_gjMatraIi gjJRa_gjMatraAa gjJRa_gjMatraIi gjNna_gjMatraU gjRa_gjMatraU gjRa_gjMatraUu gjLla_gjMatraVocalicR gjLla_gjMatraVocalicRr gjKSsa_gjMatraU gjDRa.ss01 gjDGa.ss01 gjDGha.ss01 gjDDha.ss01 gjDNa.ss01 gjDBa.ss01 gjDVa.ss01 gjYa.post];
 
 
 
 feature pres {
-
-script DFLT;
-	language dflt;
-		lookup PRES_CJCT {
-			sub gjDa gjVirama gjRakar gjYa by gjDRYa;
-			
-			sub gjNga gjVirama gjKa by gjNgKa;
-			sub gjNga gjVirama gjKSsa by gjNgKSsa;
-			sub gjTta gjVirama gjTta by gjTtTta;
-			sub gjTta gjVirama gjTtha by gjTtTtha;
-			sub gjTta gjVirama gjVa by gjTtVa;
-			sub gjTtha gjVirama gjTtha by gjTthTtha;
-			sub gjDda gjVirama gjDda by gjDdDda;
-			sub gjDda gjVirama gjNa by gjDdNa;
-			sub gjDda gjVirama gjVa by gjDdVa;
-			sub gjDdha gjVirama gjDdha by gjDdhDdha;
-			sub gjDdha gjVirama gjNa by gjDdhNa;
-			sub gjDa gjVirama gjGa by gjDGa;
-			sub gjDa gjVirama gjGha by gjDGha;
-			sub gjDa gjVirama gjDa by gjDDa;
-			sub gjDa gjVirama gjDha by gjDDha;
-			sub gjDa gjVirama gjNa by gjDNa;
-			sub gjDa gjVirama gjBa by gjDBa;
-			sub gjDa gjVirama gjVa by gjDVa;
-			sub gjHa gjVirama gjNna by gjHNna;
-			sub gjHa gjVirama gjNa by gjHNa;
-			sub gjHa gjVirama gjLa by gjHLa;
-			sub gjHa gjVirama gjVa by gjHVa;
-
-			sub gjK.calt gjKa by gjKKa;
-			sub gjK.calt gjTta by gjKTta;
-			sub gjJ.calt gjKa by gjJKa;
-			sub gjPh.calt gjTta by gjPhTta;
-			sub gjP gjKa by gjPKa;
-			sub gjP gjPha by gjPPha;
-			sub gjB gjKa by gjBKa;
-			sub gjM gjKa by gjMKa;
-			sub gjM gjPha by gjMPha;
-			sub gjL gjKa by gjLKa;
-			sub gjL gjDda by gjLDda;
-			sub gjSs gjTta by gjSsTta;
-			sub gjSs gjTtha by gjSsTtha;
-			sub gjSs gjDda by gjSsDda;
-			sub gjS gjKa by gjSKa;
-			sub gjS gjDda by gjSDda;
-			sub gjS gjTta by gjSTta;
-			sub gjS gjPha by gjSPha;
-		} PRES_CJCT;
-	
-		lookup PRES_HalfForms {
-			sub gjT gjT gjY by gjTTY;
-			sub gjK.calt gjT by gjKT;
-			sub gjK.calt gjM by gjKM;
-			sub gjK.calt gjY by gjKY;
-			sub gjK.calt gjS by gjKS;
-			sub gjK.calt gjSh by gjKSh;
-			sub gjKh gjY by gjKhY;
-			sub gjGh gjN by gjGhN;
-			sub gjNga gjVirama gjM by gjNgM;
-			sub gjNga gjVirama gjY by gjNgY;
-			sub gjJ.calt gjY by gjJY;
-			sub gjJha gjVirama gjY by gjJhY;
-			sub gjNy gjY by gjNyY;
-			sub gjTtha gjVirama gjY by gjTthY;
-			sub gjDda gjVirama gjM by gjDdM;
-			sub gjDda gjVirama gjY by gjDdY;
-			sub gjT gjT by gjTT;
-			sub gjT gjM by gjTM;
-			sub gjT gjN by gjTN;
-			sub gjT gjY by gjTY;
-			sub gjDa gjVirama gjM by gjDM;
-			sub gjDa gjVirama gjY by gjDY;
-			sub gjDh gjN by gjDhN;
-			sub gjN gjN by gjNN;
-			sub gjN gjM by gjNM;
-			sub gjP gjT by gjPT;
-			sub gjPh.calt gjY by gjPhY;
-			sub gjPh.calt gjS by gjPhS;
-			sub gjB gjY by gjBY;
-			sub gjL gjY by gjLY;
-			sub gjLl gjY by gjLlY;
-			sub gjV gjY by gjVY;
-			sub gjSh gjC by gjShC;
-			sub gjSh gjN by gjShN;
-			sub gjSh gjL by gjShL;
-			sub gjSh gjV by gjShV;
-			sub gjS gjTh by gjSTh;
-			sub gjS gjY by gjSY;
-			sub gjHa gjVirama gjM by gjHM;
-			sub gjHa gjVirama gjY by gjHY;
-			sub gjKSs gjY by gjKSsY;
-			sub gjJNy gjY by gjJNyY;
-		} PRES_HalfForms;
+	lookup PRES_CJCT {
+		sub gjDa gjVirama gjRakar gjYa by gjDRYa;
 		
-		lookup PRES {
-			sub gjTT gjYa by gjTTYa;
-			sub gjK.calt gjTa by gjKTa;
-			sub gjK.calt gjMa by gjKMa;
-			sub gjK.calt gjYa by gjKYa;
-			sub gjK.calt gjSa by gjKSa;
-			sub gjK.calt gjSha by gjKSha;
-			sub gjKh gjYa by gjKhYa;
-			sub gjGh gjNa by gjGhNa;
-			sub gjNga gjVirama gjMa by gjNgMa;
-			sub gjNga gjVirama gjYa by gjNgYa;
-			sub gjJ.calt gjYa by gjJYa;
-			sub gjJha gjVirama gjYa by gjJhYa;
-			sub gjNy gjYa by gjNyYa;
-			sub gjTtha gjVirama gjYa by gjTthYa;
-			sub gjDda gjVirama gjMa by gjDdMa;
-			sub gjDda gjVirama gjYa by gjDdYa;
-			sub gjT gjTa by gjTTa;
-			sub gjT gjMa by gjTMa;
-			sub gjT gjNa by gjTNa;
-			sub gjT gjYa by gjTYa;
-			sub gjDa gjVirama gjMa by gjDMa;
-			sub gjDa gjVirama gjYa by gjDYa;
-			sub gjDh gjNa by gjDhNa;
-			sub gjN gjNa by gjNNa;
-			sub gjN gjMa by gjNMa;
-			sub gjP gjTa by gjPTa;
-			sub gjPha gjVirama gjYa by gjPhYa;
-			sub gjPha gjVirama gjSa by gjPhSa;
-			sub gjB gjYa by gjBYa;
-			sub gjL gjYa by gjLYa;
-			sub gjLl gjYa by gjLlYa;
-			sub gjV gjYa by gjVYa;
-			sub gjSh gjCa by gjShCa;
-			sub gjSh gjNa by gjShNa;
-			sub gjSh gjLa by gjShLa;
-			sub gjSh gjVa by gjShVa;
-			sub gjS gjTha by gjSTha;
-			sub gjS gjYa by gjSYa;
-			sub gjHa gjVirama gjMa by gjHMa;
-			sub gjHa gjVirama gjYa by gjHYa;
-			sub gjKSs gjYa by gjKSsYa;
-			sub gjJNy gjYa by gjJNyYa;
-		} PRES;
+		sub gjNga gjVirama gjKa by gjNgKa;
+		sub gjNga gjVirama gjKSsa by gjNgKSsa;
+		sub gjNga gjVirama gjMa by gjNgMa;
+		sub gjNga gjVirama gjYa by gjNgYa;
+		sub gjTta gjVirama gjTta by gjTtTta;
+		sub gjTta gjVirama gjTtha by gjTtTtha;
+		sub gjTta gjVirama gjVa by gjTtVa;
+		sub gjTtha gjVirama gjTtha by gjTthTtha;
+		sub gjTtha gjVirama gjYa by gjTthYa;
+		sub gjDda gjVirama gjDda by gjDdDda;
+		sub gjDda gjVirama gjNa by gjDdNa;
+		sub gjDda gjVirama gjVa by gjDdVa;
+		sub gjDda gjVirama gjMa by gjDdMa;
+		sub gjDda gjVirama gjYa by gjDdYa;
+		sub gjDdha gjVirama gjDdha by gjDdhDdha;
+		sub gjDdha gjVirama gjNa by gjDdhNa;
+		sub gjDa gjVirama gjGa by gjDGa;
+		sub gjDa gjVirama gjGha by gjDGha;
+		sub gjDa gjVirama gjDa by gjDDa;
+		sub gjDa gjVirama gjDha by gjDDha;
+		sub gjDa gjVirama gjNa by gjDNa;
+		sub gjDa gjVirama gjMa by gjDMa;
+		sub gjDa gjVirama gjYa by gjDYa;
+		sub gjDa gjVirama gjBa by gjDBa;
+		sub gjDa gjVirama gjVa by gjDVa;
+		sub gjPa gjVirama gjKa by gjPKa;
+		sub gjPa gjVirama gjPha by gjPPha;
+		sub gjHa gjVirama gjNna by gjHNna;
+		sub gjHa gjVirama gjNa by gjHNa;
+		sub gjHa gjVirama gjLa by gjHLa;
+		sub gjHa gjVirama gjVa by gjHVa;
+		sub gjHa gjVirama gjMa by gjHMa;
+		sub gjHa gjVirama gjYa by gjHYa;
+		sub gjJha gjVirama gjYa by gjJhYa;
+
+#			sub gjNga gjVirama gjM by gjNgM;
+#			sub gjNga gjVirama gjY by gjNgY;
+#			sub gjJha gjVirama gjY by gjJhY;
+#			sub gjTtha gjVirama gjY by gjTthY;
+#			sub gjDda gjVirama gjM by gjDdM;
+#			sub gjDda gjVirama gjY by gjDdY;
+#			sub gjDa gjVirama gjM by gjDM;
+#			sub gjDa gjVirama gjY by gjDY;
+#			sub gjHa gjVirama gjM by gjHM;
+#			sub gjHa gjVirama gjY by gjHY;
+
+		sub gjKa gjVirama gjKa by gjKKa;
+		sub gjKa gjVirama gjTta by gjKTta;
+		sub gjKa gjVirama gjTa by gjKTa;
+		sub gjKa gjVirama gjMa by gjKMa;
+		sub gjKa gjVirama gjYa by gjKYa;
+		sub gjKa gjVirama gjSa  by gjKSa;
+		sub gjKa gjVirama gjSha by gjKSha;
+		sub gjPha gjVirama gjTta by gjPhTta;
+		sub gjPha gjVirama gjYa by gjPhYa;
+		sub gjPha gjVirama gjSa by gjPhSa;
+		sub gjJa gjVirama gjKa by gjJKa;
+		sub gjJa gjVirama gjYa by gjJYa;
+	} PRES_CJCT;
+	lookup PRES {
+		sub @gjK gjKa by gjKKa;
+		sub @gjK gjTta by gjKTta;
+		sub @gjK gjTa by gjKTa;
+		sub @gjK gjMa by gjKMa;
+		sub @gjK gjYa by gjKYa;
+		sub @gjK gjSa by gjKSa;
+		sub @gjK gjSha by gjKSha;
+		sub @gjPh gjTta by gjPhTta;
+		sub @gjPh gjYa by gjPhYa;
+		sub @gjPh gjSa by gjPhSa;
+		sub @gjJ gjKa by gjJKa;
+		sub @gjJ gjYa by gjJYa;
+		sub gjKh gjYa by gjKhYa;
+		sub gjGh gjNa by gjGhNa;
+		sub gjNy gjYa by gjNyYa;
+		sub gjT gjTa by gjTTa;
+		sub gjT gjMa by gjTMa;
+		sub gjT gjNa by gjTNa;
+		sub gjT gjYa by gjTYa;
+		sub gjDh gjNa by gjDhNa;
+		sub gjN gjNa by gjNNa;
+		sub gjN gjMa by gjNMa;
+		sub gjP gjTa by gjPTa;
+		sub gjP gjKa by gjPKa;
+		sub gjP gjPha by gjPPha;
+		sub gjB gjYa by gjBYa;
+		sub gjB gjKa by gjBKa;
+		sub gjM gjKa by gjMKa;
+		sub gjM gjPha by gjMPha;
+		sub gjL gjYa by gjLYa;
+		sub gjL gjKa by gjLKa;
+		sub gjL gjDda by gjLDda;
+		sub gjLl gjYa by gjLlYa;
+		sub gjV gjYa by gjVYa;
+		sub gjSs gjTta by gjSsTta;
+		sub gjSs gjTtha by gjSsTtha;
+		sub gjSs gjDda by gjSsDda;
+		sub gjS gjKa by gjSKa;
+		sub gjS gjTta by gjSTta;
+		sub gjS gjDda by gjSDda;
+		sub gjS gjPha by gjSPha;
+		sub gjS gjTha by gjSTha;
+		sub gjS gjYa by gjSYa;
+		sub gjSh gjCa by gjShCa;
+		sub gjSh gjNa by gjShNa;
+		sub gjSh gjLa by gjShLa;
+		sub gjSh gjVa by gjShVa;
+		sub gjKSs gjYa by gjKSsYa;
+		sub gjJNy gjYa by gjJNyYa;
+		sub gjTT gjYa by gjTTYa;
+	} PRES;
+	lookup PRES_PostForms {
+		sub [gjKh gjG gjC gjNy gjTh gjP gjB gjBh gjM gjY gjL gjLl gjV] gjNa' lookup makePostNa;
+		sub [gjCha @gjTta_left gjDdha gjTtTta gjTtTtha gjTtVa gjDdhDdha gjDdhNa gjDRa gjSsTta gjSsTtha] gjVirama' lookup makePostYa [gjYa gjY]';
 		
-		lookup PRES_ContextualHalfForms {
-			lookupflag IgnoreMarks;
-
-			sub gjT' [@gjCa_right @gjTta_right @gjTha_right @gjPa_right @gjYa_right @gjSa_right] by gjT.calt;
-			sub gjP' [@gjGha_right @gjCha_right @gjTta_right @gjTtha_right @gjDdha_right @gjDa_right @gjPha_right @gjMa_right @gjSha_right @gjKSsa_right @gjHNa_right] by gjP.calt;
-			sub [gjTh gjDh gjY gjS]' [@gjCha_right @gjDa_right @gjTa_right @gjTta_right @gjTtha_right @gjDdha_right @gjMa_right @gjNa_right @gjSa_right @gjKSsa_right] by [gjTh.calt gjDh.calt gjY.calt gjS.calt];
-			sub gjL' [@gjSa_right] by gjL.calt;
-			sub gjS' [@gjCa_right @gjCha_right @gjTta_right @gjTtha_right @gjDdha_right @gjTa_right @gjDa_right @gjNa_right @gjMa_right @gjSa_right @gjKSsa_right gjDRa] by gjS.calt;
-			sub gjSs' [@gjCa_right @gjCha_right @gjNna_right @gjDa_right @gjDha_right @gjNa_right @gjPa_right @gjBa_right @gjBha_right @gjSa_right] by gjSs.calt;
-			sub gjN' [@gjGa_right @gjCa_right @gjTta_right @gjDdha_right @gjTha_right @gjMa_right @gjSa_right gjSha] by gjN.calt;
-			sub gjN' [@gjJa_right] by gjN.calt2;
-
-			sub gjK.calt' @gjKa_half2_context by gjK.calt2;
-			sub gjPh.calt' @gjKa_half2_context by gjPh.calt2;
-			sub gjKR.calt' @gjKa_half2_context by gjKR.calt2;
-			sub gjK.calt' [@gjCa_right @gjTha_right] by gjK.calt3;
-			sub gjPh.calt' [@gjCa_right @gjTha_right] by gjPh.calt3;
-			sub gjKR.calt' [@gjCa_right @gjTha_right] by gjKR.calt3;
-			sub gjJ.calt' [@gjJa_right] by gjJ.calt2;
-			sub gjJ.calt' [@gjGha_right @gjCha_right @gjNna_right @gjDa_right @gjBa_right @gjBha_right @gjLa_right @gjLla_right @gjVa_right @gjSha_right] by gjJ.calt3;
-
-			ignore sub [gjK.calt gjPh.calt gjKR.calt]' [@gjKa_half1_context @gjKa_half2_context @gjCa_right @gjTha_right];
-			ignore sub gjJ.calt' [@gjGa_right @gjCa_right @gjNya_right @gjTta_right @gjDdha_right @gjTha_right @gjDha_right @gjPa_right @gjMa_right @gjYa_right @gjSa_right];
-			ignore sub gjJ.calt' [@gjJa_right];
-			ignore sub gjJ.calt' [@gjGha_right @gjCha_right @gjNna_right @gjDa_right @gjBa_right @gjBha_right @gjLa_right @gjLla_right @gjVa_right @gjSha_right];
-			sub gjK.calt' by gjK;
-			sub gjPh.calt' by gjPh;
-			sub gjJ.calt' by gjJ;
-			sub gjKR.calt' by gjKR;
-		} PRES_ContextualHalfForms;
-		lookup PRES_PostForms {
-			sub [gjKh gjG gjC gjNy gjTh gjP gjB gjBh gjM gjY gjL gjLl gjV] gjNa' lookup makePostNa;
-			sub [gjCha @gjTta_left gjDdha gjTtTta gjTtTtha gjTtVa gjDdhDdha gjDdhNa gjDRa gjSsTta gjSsTtha] gjVirama' lookup makePostYa [gjYa gjY]';
-			
-			ignore sub gjLla gjRakar;
-			sub @gjFullForms' gjRakar by @gjFullForms_Halfs;
-			sub @gjFullForms_Halfs gjRakar' [@gjFullForms_Halfs @gjBaseForms] by gjR.post;
-			sub @gjFullForms_Halfs gjRakar' lookup makePostRa;
-		} PRES_PostForms;
-
-script gjr2;
-	language dflt;
-		lookup PRES_HalfForms;
-		lookup PRES;
-		lookup PRES_ContextualHalfForms;
-		lookup PRES_PostForms;
-	
-script gujr;
-	language dflt;
-		lookup PRES_CJCT;
-		lookup PRES;
-		lookup PRES_ContextualHalfForms;
-		lookup PRES_PostForms;
+		ignore sub gjLla gjRakar;
+		sub @gjFullForms' gjRakar by @gjFullForms_Halfs;
+		sub @gjFullForms_Halfs gjRakar' [@gjFullForms_Halfs @gjBaseForms] by gjR.post;
+		sub @gjFullForms_Halfs gjRakar' lookup makePostRa;
+	} PRES_PostForms;
 } pres;
 
 
@@ -678,13 +677,15 @@ lookup ABVS_insertCandrabindu {
 @gjMatras = [gjMatraAa gjMatraIi gjMatraCandraO gjMatraO gjMatraAu gjMatraCandraE gjMatraE gjMatraAi];
 
 feature abvs {
-	# bugfix (Webkit)
-	sub gjReph gjMatraCandraO gjAnusvara by gjMatraCandraO_gjReph_gjAnusvara;
+	# bugfix (Webkit) - places Reph on the base, not on the matra
+	sub gjReph gjMatraCandraO [gjAnusvara gjCandrabindu] by gjMatraCandraO_gjReph_gjAnusvara;
 	sub gjReph gjMatraCandraO by gjMatraCandraO_gjReph;
-	sub gjReph gjMatraO gjAnusvara by gjMatraO_gjReph_gjAnusvara;
+	sub gjReph gjMatraO [gjAnusvara gjCandrabindu] by gjMatraO_gjReph_gjAnusvara;
 	sub gjReph gjMatraO by gjMatraO_gjReph;
-	sub gjReph gjMatraAu gjAnusvara by gjMatraAu_gjReph_gjAnusvara;
+	sub gjReph gjMatraAu [gjAnusvara gjCandrabindu] by gjMatraAu_gjReph_gjAnusvara;
 	sub gjReph gjMatraAu by gjMatraAu_gjReph;
+	sub gjReph gjMatraAa [gjAnusvara gjCandrabindu] by gjMatraAa_gjReph_gjAnusvara;
+	sub gjReph gjMatraAa by gjMatraAa_gjReph;
 
 	lookup ABVS_decompose {
 		sub gjCandraE by gjA gjMatraCandraE;
@@ -698,21 +699,27 @@ feature abvs {
 		sub gjMatraAu by gjMatraAa gjMatraAi;
 	} ABVS_decompose;
 
+	lookup PSTS_JaMatraLigatures {
+		sub gjJa gjMatraAa by gjJa_gjMatraAa;
+		sub gjJa gjMatraIi by gjJa_gjMatraIi;
+		sub gjJRa gjMatraAa by gjJRa_gjMatraAa;
+		sub gjJRa gjMatraIi by gjJRa_gjMatraIi;
+	} PSTS_JaMatraLigatures;
+
 	lookup ABVS_candrabindu {
 		lookupflag MarkAttachmentType @gjMarks_above;
 
-		ignore sub [gjJa gjJRa] gjMatraIi gjCandrabindu';
 		sub gjMatraIi gjCandrabindu' by gjCandrabindu.calt3;
 	} ABVS_candrabindu;
 
 	lookup ABVS_makeMatraIiLigatures {
 		lookupflag MarkAttachmentType @gjMarks_above;
 
-		sub gjMatraIi gjReph [gjAnusvara gjCandrabindu] by gjMatraIi_gjReph_gjAnusvara;
+		sub gjMatraIi gjReph [gjAnusvara gjCandrabindu gjCandrabindu.calt3] by gjMatraIi_gjReph_gjAnusvara;
 		sub gjMatraIi gjReph by gjMatraIi_gjReph;
 
 		# bugfix (Webkit)
-		sub gjReph gjMatraIi gjAnusvara by gjMatraIi_gjReph_gjAnusvara;
+		sub gjReph gjMatraIi [gjAnusvara gjCandrabindu gjCandrabindu.calt3] by gjMatraIi_gjReph_gjAnusvara;
 		sub gjReph gjMatraIi by gjMatraIi_gjReph;
 	} ABVS_makeMatraIiLigatures;
 
@@ -796,7 +803,6 @@ feature blws {
 	sub gjRakar gjMatraU by gjRakar_gjMatraU;
 	sub gjRakar gjMatraUu by gjRakar_gjMatraUu;
 
-	# !! interaction w. nukta?
 	lookup BLWS_Rukar1 {
 		lookupflag MarkAttachmentType @gjMarks_below;
 
@@ -827,11 +833,6 @@ feature blws {
 #----------------------------------------------------------------------------
 # Post-base Substitutions
 
-lookup deleteMatraAa {
-	sub gjJa_gjMatraAa gjMatraAa by gjJa_gjMatraAa;
-	sub gjJRa_gjMatraAa gjMatraAa by gjJRa_gjMatraAa;
-} deleteMatraAa;
-
 @gjMatraIi = [gjMatraIi gjMatraIi_gjReph gjMatraIi_gjReph_gjAnusvara];
 @gjMatraIi.1 =[gjMatraIi.1 gjMatraIi_gjReph.1 gjMatraIi_gjReph_gjAnusvara.1];
 @gjMatraIi.2 =[gjMatraIi.2 gjMatraIi_gjReph.2 gjMatraIi_gjReph_gjAnusvara.2];
@@ -846,15 +847,6 @@ feature psts {
 		sub [@gjKa_left gjTtha @gjPha_left gjRa gjLla gjNgKa gjNgKSsa] @gjMatraIi' by @gjMatraIi.2;
 		sub [gjTta gjKTta gjPhTta gjDdha gjDdhDdha gjDdhNa gjTtTta gjTtTtha gjTtVa gjHNna gjHNa gjHLa gjHVa] @gjMatraIi' by @gjMatraIi.3;
 	} PSTS_ContextualMatraIi;
-
-	lookup PSTS_JaMatraLigatures {
-		sub gjJa gjMatraAa by gjJa_gjMatraAa;
-		sub gjJa gjMatraIi by gjJa_gjMatraIi;
-		sub gjJRa gjMatraAa by gjJRa_gjMatraAa;
-		sub gjJRa gjMatraIi by gjJRa_gjMatraIi;
-	} PSTS_JaMatraLigatures;
-	
-	sub [gjJa_gjMatraAa gjJRa_gjMatraAa]' lookup deleteMatraAa gjMatraAa';
 } psts;
 
 

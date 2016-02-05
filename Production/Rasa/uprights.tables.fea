@@ -10,21 +10,21 @@ table BASE {
 		gjr2	romn	-569 0;
 } BASE;
 
-include(../version.fea);
+include(../../version.fea);
 
 table OS/2 {
-	FSType				4;
+	FSType				0;
 	Panose				2 13 0 0 0 4 0 0 0 0;
 	UnicodeRange		0		# Basic Latin
 						1		# Latin-1 Supplement
 						2		# Latin Extended-A
 						3		# Latin Extended-B
 						6		# Combining Diacritical Marks
-						29	# Latin Extended Additional
-						31	# General Punctuation
-						32	# Superscripts And Subscripts
-						33	# Currency Symbols
-						18	# Gujarati	0A80-0AFF
+						18		# Gujarati	0A80-0AFF
+						29		# Latin Extended Additional
+						31		# General Punctuation
+						32		# Superscripts And Subscripts
+						33		# Currency Symbols
 						;
 	CodePageRange		1250	# Latin 2: Eastern Europe
 						1252	# Latin 1
@@ -52,13 +52,14 @@ table hhea {
 
 table name {
 	nameid 0 "Copyright (c) 2015-16 by Rosetta Type Foundry. All rights reserved.";
-	nameid 7 "Skolar Sans is a trademark of Rosetta Type Foundry.";
+	nameid 5 "Autohinted with: ttfautohint --hinting-range-max=96 --ignore-restrictions --strong-stem-width=G --increase-x-height=14 --fallback-script=latn --default-script=latn";
+	nameid 7 "Yrsa & Rasa are trademarks of Rosetta Type Foundry.";
 	nameid 8 "Rosetta Type Foundry";
-	nameid 9 "Anna Giedrys, David Brezina";
+	nameid 9 "Anna Giedrys (Latin/Yrsa design), David Brezina (Latin/Yrsa art-direction, Gujarati/Rasa design)";
 	nameid 11 "http://rosettatype.com";
 	nameid 12 "http://davi.cz & http://ancymonic.com";
-	nameid 13 "IMPORTANT, please read our license agreement at http://rosettatype.com/licence";
-	nameid 14 "http://rosettatype.com/license";
+	nameid 13 "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL";
+	nameid 14 "http://scripts.sil.org/OFL";
 } name;
 
 
