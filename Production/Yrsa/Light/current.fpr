@@ -1,0 +1,7 @@
+InputFontPath	./font.ttf
+OutputFontPath	../../../Fonts/Yrsa-Light.ttf
+FeaturePath	./features.fea
+GlyphAliasDBPath	./GlyphOrderAndAliasDB
+ReleaseMode	true
+FontMenuDBPath	../FontMenuNameDB
+kSetfsSelectionBitsOn	[7, 8]
