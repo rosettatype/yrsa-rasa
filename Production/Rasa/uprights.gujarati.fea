@@ -313,49 +313,27 @@ script gujr;
 		} HALF_GUJR;
 		lookup HALF_VATU {
 			lookupflag MarkAttachmentType @gjMarks_below;
-			
-			sub gjS gjT gjRakar by gjSTR;
-			sub gjD gjRakar gjY by gjDRY;
-			sub gjK gjRakar by gjKR;
+
+			sub @gjS gjT gjRakar by gjSTR;
+			sub gjD gjRakar @gjY by gjDRY;
+			sub @gjK gjRakar by gjKR;
 			sub gjKh gjRakar by gjKhR;
 			sub gjG gjRakar by gjGR;
 			sub gjGh gjRakar by gjGhR;
 			sub gjNn gjRakar by gjNnR;
-			sub gjT gjRakar by gjTR;
+			sub @gjT gjRakar by gjTR;
 			sub gjTh gjRakar by gjThR;
-			sub gjDh gjRakar by gjDhR;
-			sub gjN gjRakar by gjNR;
-			sub gjP gjRakar by gjPR;
+			sub @gjDh gjRakar by gjDhR;
+			sub @gjN gjRakar by gjNR;
+			sub @gjP gjRakar by gjPR;
 			sub gjB gjRakar by gjBR;
 			sub gjBh gjRakar by gjBhR;
 			sub gjM gjRakar by gjMR;
 			sub gjV gjRakar by gjVR;
 			sub gjSh gjRakar by gjShR;
-			sub gjSs gjRakar by gjSsR;
-			sub gjS gjRakar by gjSR;
+			sub @gjSs gjRakar by gjSsR;
+			sub @gjS gjRakar by gjSR;
 			sub gjKSs gjRakar by gjKSsR;
-			
-			# bugfix (Webkit)
-			sub gjS gjT gjRa gjVirama by gjSTR;
-			sub gjDY gjRa gjVirama by gjDRY;
-			sub gjK gjRa gjVirama by gjKR;
-			sub gjKh gjRa gjVirama by gjKhR;
-			sub gjG gjRa gjVirama by gjGR;
-			sub gjGh gjRa gjVirama by gjGhR;
-			sub gjNn gjRa gjVirama by gjNnR;
-			sub gjT gjRa gjVirama by gjTR;
-			sub gjTh gjRa gjVirama by gjThR;
-			sub gjDh gjRa gjVirama by gjDhR;
-			sub gjN gjRa gjVirama by gjNR;
-			sub gjP gjRa gjVirama by gjPR;
-			sub gjB gjRa gjVirama by gjBR;
-			sub gjBh gjRa gjVirama by gjBhR;
-			sub gjM gjRa gjVirama by gjMR;
-			sub gjV gjRa gjVirama by gjVR;
-			sub gjSh gjRa gjVirama by gjShR;
-			sub gjSs gjRa gjVirama by gjSsR;
-			sub gjS gjRa gjVirama by gjSR;
-			sub gjKSs gjRa gjVirama by gjKSsR;
 		} HALF_VATU;
 		lookup HALF_ContextualHalfForms;
 } half;
@@ -373,17 +351,6 @@ feature vatu {
 
 		lookup VATU {
 			lookupflag MarkAttachmentType @gjMarks_below;
-
-			sub gjDa gjVirama gjRakar gjYa by gjDRYa;
-			sub gjDa gjRakar gjVirama gjYa by gjDRYa;
-			sub gjD gjRakar gjYa by gjDRYa;
-		
-			sub @gjK gjKa gjRakar by gjKKRa;
-			sub @gjS gjKa gjRakar by gjSKRa;
-			sub @gjS gjTa gjRakar by gjSTRa;
-			sub @gjK gjKRa by gjKKRa;
-			sub @gjS gjKRa by gjSKRa;
-			sub @gjS gjTRa by gjSTRa;
 		
 			sub gjKa gjRakar by gjKRa;
 			sub gjKSsa gjRakar by gjKSsRa;
@@ -497,7 +464,7 @@ lookup makePostRa {
 } makePostRa;
 
 lookup makePostNa {
-	sub gjNa by gjN.post gjMatraAa;
+	sub gjNa by gjN.post gjMatraAa.base;
 } makePostNa;
 
 @gjFullForms = [gjKha gjGa gjGha gjCa gjNya gjNna gjTa gjTha gjDha gjNa gjPa gjBa gjBha gjMa gjYa gjLa gjLla gjVa gjSha  gjSsa gjSa gjKSsa gjJNya gjKSsRa gjKhRa gjGRa gjGhRa gjNnRa gjTRa gjThRa gjDRYa gjDhRa gjNRa gjPRa gjBRa gjBhRa gjMRa gjVRa gjShRa gjSsRa gjSTRa gjSRa gjKTa gjKMa gjKYa gjKSha gjKSsYa gjKSa gjKhYa gjGhNa gjNgMa gjNgYa gjJNyYa gjJYa gjJhYa gjNyYa gjTthYa gjDdMa gjDdYa gjTTa gjTTYa gjTNa gjTMa gjTYa gjDMa gjDYa gjDhNa gjNNa gjNMa gjPTa gjPhYa gjPhSa gjBYa gjLYa gjLlYa gjVYa gjShCa gjShNa gjShLa gjShVa gjSTha gjSYa gjHMa gjHYa gjYa.post];
@@ -507,7 +474,19 @@ lookup makePostNa {
 
 
 feature pres {
-	lookup PRES_CJCT {		
+	# fixes unprocessed Rakar halfs
+	sub gjD gjRakar @gjY by gjDRY;
+	sub gjD gjRakar gjYa by gjDRYa;
+	sub gjKR' [@gjJa_right] by gjKR.calt;
+	sub gjKR' [@gjNa_right @gjGha_right @gjDha_right @gjTa_right @gjDa_right @gjNa_right @gjPa_right @gjBa_right @gjBha_right @gjLa_right @gjLla_right @gjVa_right @gjSa_right @gjHNa_right @gjCha_right @gjNna_right gjDRa] by gjKR.calt2;
+	sub gjKR' [@gjCa_right @gjTha_right] by gjKR.calt3;
+	sub @gjS gjTR by gjSTR;
+	sub @gjK gjKRa by gjKKRa;
+	sub @gjS gjKRa by gjSKRa;
+	sub @gjS gjTRa by gjSTRa;
+
+	lookup PRES_GUJR {
+
 		sub gjNg gjKa by gjNgKa;
 		sub gjNg gjKSsa by gjNgKSsa;
 		sub gjNg gjMa by gjNgMa;
@@ -543,17 +522,6 @@ feature pres {
 		sub gjH gjYa by gjHYa;
 		sub gjJh gjYa by gjJhYa;
 
-#			sub gjNga gjVirama gjM by gjNgM;
-#			sub gjNga gjVirama gjY by gjNgY;
-#			sub gjJha gjVirama gjY by gjJhY;
-#			sub gjTtha gjVirama gjY by gjTthY;
-#			sub gjDda gjVirama gjM by gjDdM;
-#			sub gjDda gjVirama gjY by gjDdY;
-#			sub gjDa gjVirama gjM by gjDM;
-#			sub gjDa gjVirama gjY by gjDY;
-#			sub gjHa gjVirama gjM by gjHM;
-#			sub gjHa gjVirama gjY by gjHY;
-
 		sub gjKa gjVirama gjKa by gjKKa;
 		sub gjKa gjVirama gjTta by gjKTta;
 		sub gjKa gjVirama gjTa by gjKTa;
@@ -566,7 +534,7 @@ feature pres {
 		sub gjPha gjVirama gjSa by gjPhSa;
 		sub gjJa gjVirama gjKa by gjJKa;
 		sub gjJa gjVirama gjYa by gjJYa;
-	} PRES_CJCT;
+	} PRES_GUJR;
 	lookup PRES {
 		sub @gjK gjKa by gjKKa;
 		sub @gjK gjTta by gjKTta;
@@ -632,6 +600,12 @@ feature pres {
 		sub @gjFullForms_Halfs gjRakar' [@gjFullForms_Halfs @gjBaseForms] by gjR.post;
 		sub @gjFullForms_Halfs gjRakar' lookup makePostRa;
 	} PRES_PostForms;
+
+	lookup PRES_MatraIContext {
+		lookupflag IgnoreMarks;
+		
+		include(matrai.abvs.fea);
+	} PRES_MatraIContext;
 } pres;
 
 
@@ -772,11 +746,14 @@ feature abvs {
 		sub gjReph gjMatraAi by gjMatraAi_gjReph;
 	} ABVS_matraLigatures;
 
-	lookup ABVS_MatraIContext {
-		lookupflag IgnoreMarks;
-		
-		include(matrai.abvs.fea);
-	} ABVS_MatraIContext;
+	lookup ABVS_MatraIRephAnusvara2 {
+		lookupflag MarkAttachmentType @gjMarks_above;
+
+		sub @gjMatraI @gjHalfForms @gjHalfForms @gjEndForms @gjNormalRephAnusvara' by @gjHiddenRephAnusvara;
+		sub @gjMatraI @gjHalfForms @gjEndForms @gjNormalRephAnusvara' by @gjHiddenRephAnusvara;
+		sub @gjMatraI @gjEndForms @gjNormalRephAnusvara' by @gjHiddenRephAnusvara;
+		sub gjReph.calt2 gjAnusvara' by gjAnusvara.calt2;
+	} ABVS_MatraIRephAnusvara2;
 
 	lookup ABVS_MatraIRephAnusvara1 {
 		lookupflag MarkAttachmentType @gjMarks_above;
@@ -794,21 +771,6 @@ feature abvs {
 		sub @gjMatraI' lookup ABVS_insertCandrabindu @gjHalfForms @gjEndForms [gjCandrabindu gjCandrabindu.calt2];
 		sub @gjMatraI' lookup ABVS_insertCandrabindu @gjEndForms [gjCandrabindu gjCandrabindu.calt2];
 	} ABVS_MatraIRephAnusvara1;
-
-	lookup ABVS_MatraIRephAnusvara2 {
-		lookupflag MarkAttachmentType @gjMarks_above;
-
-		sub @gjMatraI @gjHalfForms @gjHalfForms @gjEndForms @gjNormalRephAnusvara' by @gjHiddenRephAnusvara;
-		sub @gjMatraI @gjHalfForms @gjEndForms @gjNormalRephAnusvara' by @gjHiddenRephAnusvara;
-		sub @gjMatraI @gjEndForms @gjNormalRephAnusvara' by @gjHiddenRephAnusvara;
-		sub gjReph.calt2 gjAnusvara' by gjAnusvara.calt2;
-	} ABVS_MatraIRephAnusvara2;
-
-	lookup ABVS_MatraIRephAnusvara3 {
-		lookupflag IgnoreBaseGlyphs;
-
-		sub @gjAltRephAnusvara @gjNormalRephAnusvara' by @gjHiddenRephAnusvara;
-	} ABVS_MatraIRephAnusvara3;
 } abvs;
 
 
@@ -821,7 +783,11 @@ lookup makeMatraAa_gMatraVocalicR {
 	sub gjMatraVocalicRr by gjMatraAa_gjMatraVocalicRr;
 } makeMatraAa_gMatraVocalicR;
 
-@gjTakeNuktaAlts = [gjKa gjNga gjCha gjJa gjJha gjTta gjTtha gjDda gjDdha gjTa gjDa gjHa gjKRa gjJRa gjK.calt gjK.calt2 gjK.calt3 gjJ.calt gjJ.calt2 gjJ.calt3 gjT gjT.calt gjKR.calt gjKR.calt2 gjKR.calt3 ];
+lookup nuktify {
+	sub gjNukta by gjNukta.calt;
+} nuktify;
+
+@gjBaseFormsWithNuktaAlt = [gjKa gjNga gjCha gjJa gjJha gjTta gjTtha gjDda gjDdha gjTa gjDa gjHa gjKRa gjJRa gjK.calt gjK.calt2 gjK.calt3 gjJ.calt gjJ.calt2 gjJ.calt3 gjT gjT.calt gjKR.calt gjKR.calt2 gjKR.calt3 ];
 
 @gjMarks_nuktabelow = [@gjMarks_nukta @gjMarks_below];
 
@@ -830,6 +796,8 @@ lookup makeMatraAa_gMatraVocalicR {
 feature blws {
 	sub gjRakar gjMatraU by gjRakar_gjMatraU;
 	sub gjRakar gjMatraUu by gjRakar_gjMatraUu;
+
+	sub gjMatraAa.base gjVirama by gjAnusvara.calt2; # just to erase this combination
 
 	lookup BLWS_Rukar1 {
 		lookupflag MarkAttachmentType @gjMarks_below;
@@ -845,7 +813,7 @@ feature blws {
 	lookup BLWS_Nukta {
 		lookupflag UseMarkFilteringSet @gjMarks_nuktabelow;
 
-		sub @gjTakeNuktaAlts gjNukta' [gjMatraU gjMatraUu gjRakar_gjMatraU gjRakar_gjMatraUu gjMatraVocalicR gjMatraVocalicRr] by gjNukta.calt;
+		sub @gjBaseFormsWithNuktaAlt gjNukta' lookup nuktify [gjMatraU gjMatraUu gjRakar_gjMatraU gjRakar_gjMatraUu gjMatraVocalicR gjMatraVocalicRr];
 	} BLWS_Nukta;
 
 	lookup BLWS_Rukar2 {

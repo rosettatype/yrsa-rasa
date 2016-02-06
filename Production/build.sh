@@ -2,7 +2,7 @@
 
 if [ -z $1 ]
 then
-	echo "Use: build -f <Family Name> -d -i -r -t -o"
+	echo "Use: build.sh -f <Family Name> -d -i -r -t -o"
 	echo "-f   either Rasa or Yrsa"
 	echo "-d   deletes old instances"
 	echo "-i   interpolate new instances"
