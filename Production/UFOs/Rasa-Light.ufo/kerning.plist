@@ -1278,6 +1278,8 @@
 		<real>59.349998474121094</real>
 		<key>@MMK_R_gjTta</key>
 		<integer>-27</integer>
+		<key>@MMK_R_gjVa</key>
+		<integer>20</integer>
 		<key>gjDRa</key>
 		<real>120.44999694824219</real>
 		<key>gjN.post</key>
@@ -2614,6 +2616,11 @@
 		<key>gjNga</key>
 		<integer>-40</integer>
 	</dict>
+	<key>gjBR</key>
+	<dict>
+		<key>@MMK_R_gjVa</key>
+		<integer>150</integer>
+	</dict>
 	<key>gjBh</key>
 	<dict>
 		<key>@MMK_R_gjBa</key>
@@ -2678,6 +2685,11 @@
 		<real>153.35000610351562</real>
 		<key>gjN.post</key>
 		<real>52.299999237060547</real>
+	</dict>
+	<key>gjBhR</key>
+	<dict>
+		<key>@MMK_R_gjVa</key>
+		<integer>110</integer>
 	</dict>
 	<key>gjC</key>
 	<dict>
@@ -2758,6 +2770,11 @@
 		<real>-22.899999618530273</real>
 		<key>@MMK_R_gjY.alt2</key>
 		<real>-56.400001525878906</real>
+	</dict>
+	<key>gjDRY</key>
+	<dict>
+		<key>@MMK_R_gjVa</key>
+		<integer>-30</integer>
 	</dict>
 	<key>gjDda</key>
 	<dict>
@@ -2873,6 +2890,8 @@
 	</dict>
 	<key>gjDhR</key>
 	<dict>
+		<key>@MMK_R_gjVa</key>
+		<integer>90</integer>
 		<key>@MMK_R_gjYa</key>
 		<real>144.5</real>
 	</dict>
@@ -3168,12 +3187,6 @@
 	<dict>
 		<key>@MMK_R_gjJa</key>
 		<real>-219.75</real>
-		<key>@MMK_R_gjLa</key>
-		<real>-187.39999389648438</real>
-		<key>@MMK_R_gjLla</key>
-		<real>-174.5</real>
-		<key>@MMK_R_gjVa</key>
-		<real>-152.75</real>
 	</dict>
 	<key>gjKR.calt2</key>
 	<dict>
@@ -3191,6 +3204,10 @@
 		<real>-129.55000305175781</real>
 		<key>@MMK_R_gjHNa</key>
 		<real>-166.44999694824219</real>
+		<key>@MMK_R_gjLa</key>
+		<integer>-20</integer>
+		<key>@MMK_R_gjLla</key>
+		<integer>-20</integer>
 		<key>@MMK_R_gjNa</key>
 		<integer>-47</integer>
 		<key>@MMK_R_gjNna</key>
@@ -3201,6 +3218,8 @@
 		<real>-103.40000152587891</real>
 		<key>@MMK_R_gjTa</key>
 		<real>-138.64999389648438</real>
+		<key>@MMK_R_gjVa</key>
+		<integer>26</integer>
 		<key>gjDRa</key>
 		<real>-73.449996948242188</real>
 	</dict>
@@ -3232,6 +3251,8 @@
 	<dict>
 		<key>@MMK_R_gjMa</key>
 		<real>-111.09999847412109</real>
+		<key>@MMK_R_gjVa</key>
+		<integer>140</integer>
 	</dict>
 	<key>gjKh</key>
 	<dict>
@@ -3470,6 +3491,11 @@
 		<real>42.299999237060547</real>
 		<key>@MMK_R_gjTta</key>
 		<real>21.149999618530273</real>
+	</dict>
+	<key>gjNR</key>
+	<dict>
+		<key>@MMK_R_gjVa</key>
+		<integer>140</integer>
 	</dict>
 	<key>gjNga</key>
 	<dict>
@@ -3766,6 +3792,11 @@
 		<key>@MMK_R_gjTha</key>
 		<real>-183.30000305175781</real>
 	</dict>
+	<key>gjR.post</key>
+	<dict>
+		<key>@MMK_R_gjVa</key>
+		<integer>120</integer>
+	</dict>
 	<key>gjRa</key>
 	<dict>
 		<key>@MMK_R_gjKa</key>
@@ -3803,6 +3834,11 @@
 		<real>28.200000762939453</real>
 		<key>gjDRa</key>
 		<real>205.14999389648438</real>
+	</dict>
+	<key>gjSTR</key>
+	<dict>
+		<key>@MMK_R_gjVa</key>
+		<integer>130</integer>
 	</dict>
 	<key>gjSTh</key>
 	<dict>
@@ -4093,6 +4129,8 @@
 		<integer>0</integer>
 		<key>@MMK_R_gjTtha</key>
 		<integer>-94</integer>
+		<key>@MMK_R_gjVa</key>
+		<integer>50</integer>
 	</dict>
 	<key>gjTT</key>
 	<dict>

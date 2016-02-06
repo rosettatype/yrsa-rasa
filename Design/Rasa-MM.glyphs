@@ -1,4 +1,7 @@
 {
+DisplayStrings = (
+/gjMatraAa/gjP/gjPa
+);
 copyright = "Copyright \U00A9 2016 by Rosetta Type Foundry. All rights reserved.";
 customParameters = (
 {
@@ -1017,12 +1020,22 @@ position = "{544, -180}";
 showMeasurement = 1;
 }
 );
+horizontalStems = (
+128,
+107,
+108,
+88
+);
 id = "DAAEA780-4710-4479-B303-5C05B40621B2";
 userData = {
 GSCornerRadius = 95;
 };
 verticalStems = (
-165
+170,
+165,
+190,
+185,
+152
 );
 weight = Light;
 weightValue = 165;
@@ -1100,12 +1113,23 @@ position = "{1004, -177}";
 showMeasurement = 1;
 }
 );
+horizontalStems = (
+213,
+155,
+183,
+144,
+235
+);
 id = "925CB40E-795E-477B-BAE7-1EE7D58841B5";
 userData = {
 GSCornerRadius = 15;
 };
 verticalStems = (
-361
+380,
+361,
+416,
+390,
+316
 );
 weight = Bold;
 weightValue = 361;
@@ -98233,7 +98257,7 @@ rightKerningGroup = gjPa;
 {
 color = 6;
 glyphname = gjTa;
-lastChange = "2016-02-05 13:53:45 +0000";
+lastChange = "2016-02-06 13:29:40 +0000";
 layers = (
 {
 anchors = (
@@ -98314,7 +98338,7 @@ rightKerningGroup = gjPa;
 {
 color = 6;
 glyphname = gjTha;
-lastChange = "2016-02-05 13:56:07 +0000";
+lastChange = "2016-02-06 13:30:00 +0000";
 layers = (
 {
 anchors = (
@@ -99030,7 +99054,7 @@ unicode = 0AAB;
 {
 color = 6;
 glyphname = gjBa;
-lastChange = "2016-02-05 13:52:14 +0000";
+lastChange = "2016-02-06 13:29:19 +0000";
 layers = (
 {
 anchors = (
@@ -99513,7 +99537,7 @@ unicode = 0AB0;
 {
 color = 6;
 glyphname = gjLa;
-lastChange = "2016-02-05 13:55:22 +0000";
+lastChange = "2016-02-06 13:34:39 +0000";
 layers = (
 {
 anchors = (
@@ -99586,7 +99610,7 @@ rightKerningGroup = gjPa;
 {
 color = 10;
 glyphname = gjLla;
-lastChange = "2016-02-05 13:48:39 +0000";
+lastChange = "2016-02-06 13:34:07 +0000";
 layers = (
 {
 anchors = (
@@ -100152,7 +100176,7 @@ unicode = 0AB3;
 {
 color = 6;
 glyphname = gjVa;
-lastChange = "2016-02-05 13:52:00 +0000";
+lastChange = "2016-02-06 14:37:01 +0000";
 layers = (
 {
 anchors = (
@@ -104993,7 +105017,7 @@ rightKerningGroup = gjPa;
 {
 color = 10;
 glyphname = gjDRa;
-lastChange = "2016-02-01 18:26:41 +0000";
+lastChange = "2016-02-06 13:29:45 +0000";
 layers = (
 {
 anchors = (
@@ -127237,7 +127261,7 @@ leftKerningGroup = gjKa;
 },
 {
 glyphname = gjKR.calt2;
-lastChange = "2016-02-04 18:57:02 +0000";
+lastChange = "2016-02-06 14:24:05 +0000";
 layers = (
 {
 anchors = (
@@ -127321,7 +127345,7 @@ nodes = (
 );
 }
 );
-width = 1201;
+width = 1181;
 },
 {
 anchors = (
@@ -156796,6 +156820,7 @@ eth = -21;
 "@MMK_R_gjNya" = 160;
 "@MMK_R_gjTa" = 59.35;
 "@MMK_R_gjTta" = -27;
+"@MMK_R_gjVa" = 20;
 gjDRa = 120.45;
 gjN.post = 20;
 };
@@ -157485,6 +157510,9 @@ gjDRa = 86.65;
 gjN.post = -8;
 gjNga = -40;
 };
+gjBR = {
+"@MMK_R_gjVa" = 150;
+};
 gjBh = {
 "@MMK_R_gjBa" = 82.55;
 "@MMK_R_gjBha" = 60;
@@ -157517,6 +157545,9 @@ gjBh = {
 "@MMK_R_gjYa" = 92.55;
 gjDRa = 153.35;
 gjN.post = 52.3;
+};
+gjBhR = {
+"@MMK_R_gjVa" = 110;
 };
 gjC = {
 "@MMK_R_gjBa" = 80.5;
@@ -157558,6 +157589,9 @@ gjCha = {
 "@MMK_R_gjTta" = -23.5;
 "@MMK_R_gjVa" = -22.9;
 "@MMK_R_gjY.alt2" = -56.4;
+};
+gjDRY = {
+"@MMK_R_gjVa" = -30;
 };
 gjDda = {
 "@MMK_R_gjDa" = -33.5;
@@ -157619,6 +157653,7 @@ gjDh.calt = {
 "@MMK_R_gjTtha" = 28.5;
 };
 gjDhR = {
+"@MMK_R_gjVa" = 90;
 "@MMK_R_gjYa" = 144.5;
 };
 gjEight = {
@@ -157773,9 +157808,6 @@ gjK.calt3 = {
 };
 gjKR.calt = {
 "@MMK_R_gjJa" = -219.75;
-"@MMK_R_gjLa" = -187.4;
-"@MMK_R_gjLla" = -174.5;
-"@MMK_R_gjVa" = -152.75;
 };
 gjKR.calt2 = {
 "@MMK_R_gjBa" = -47;
@@ -157785,11 +157817,14 @@ gjKR.calt2 = {
 "@MMK_R_gjDha" = -86.95;
 "@MMK_R_gjGha" = -129.55;
 "@MMK_R_gjHNa" = -166.45;
+"@MMK_R_gjLa" = -20;
+"@MMK_R_gjLla" = -20;
 "@MMK_R_gjNa" = -47;
 "@MMK_R_gjNna" = -117.5;
 "@MMK_R_gjPa" = -108.7;
 "@MMK_R_gjSa" = -103.4;
 "@MMK_R_gjTa" = -138.65;
+"@MMK_R_gjVa" = 26;
 gjDRa = -73.45;
 };
 gjKR.calt3 = {
@@ -157807,6 +157842,7 @@ gjDRa = 148.05;
 };
 gjKSsR = {
 "@MMK_R_gjMa" = -111.1;
+"@MMK_R_gjVa" = 140;
 };
 gjKh = {
 "@MMK_R_gjBa" = 87.5;
@@ -157929,6 +157965,9 @@ gjN.calt = {
 "@MMK_R_gjSha" = -12.35;
 "@MMK_R_gjTha" = 42.3;
 "@MMK_R_gjTta" = 21.15;
+};
+gjNR = {
+"@MMK_R_gjVa" = 140;
 };
 gjNga = {
 "@MMK_R_gjCha" = -67;
@@ -158083,6 +158122,9 @@ gjPh.calt3 = {
 "@MMK_R_gjCa" = -145.7;
 "@MMK_R_gjTha" = -183.3;
 };
+gjR.post = {
+"@MMK_R_gjVa" = 120;
+};
 gjRa = {
 "@MMK_R_gjKa" = -53.5;
 "@MMK_R_gjNa" = -43.5;
@@ -158102,6 +158144,9 @@ gjS.calt = {
 "@MMK_R_gjTta" = -81.9;
 "@MMK_R_gjTtha" = 28.2;
 gjDRa = 205.15;
+};
+gjSTR = {
+"@MMK_R_gjVa" = 130;
 };
 gjSTh = {
 gjDh = 83.8;
@@ -158254,6 +158299,7 @@ gjTR = {
 "@MMK_R_gjHa" = 117.5;
 "@MMK_R_gjJa" = 0;
 "@MMK_R_gjTtha" = -94;
+"@MMK_R_gjVa" = 50;
 };
 gjTT = {
 "@MMK_R_gjDa" = -84;
@@ -159142,6 +159188,7 @@ eth = -18.4435;
 "@MMK_R_gjTa" = 70.5;
 "@MMK_R_gjTta" = 20;
 "@MMK_R_gjTtha" = 70;
+"@MMK_R_gjVa" = 60;
 gjDRa = 103.95;
 gjN.post = 160;
 };
@@ -159896,6 +159943,9 @@ gjDRa = 94;
 gjN.post = 94;
 gjNga = 10;
 };
+gjBR = {
+"@MMK_R_gjVa" = 150;
+};
 gjBh = {
 "@MMK_R_gjBa" = 117.5;
 "@MMK_R_gjBha" = 94;
@@ -159928,6 +159978,9 @@ gjBh = {
 "@MMK_R_gjYa" = 87.25;
 gjDRa = 109.85;
 gjN.post = 180;
+};
+gjBhR = {
+"@MMK_R_gjVa" = 120;
 };
 gjC = {
 "@MMK_R_gjBa" = 141.75;
@@ -160030,6 +160083,7 @@ gjDh.calt = {
 "@MMK_R_gjTtha" = 70.5;
 };
 gjDhR = {
+"@MMK_R_gjVa" = 60;
 "@MMK_R_gjYa" = 90.5;
 };
 gjEight = {
@@ -160087,6 +160141,9 @@ gjG = {
 "@MMK_R_gjYa" = 56.4;
 gjN.post = 80.5;
 };
+gjGR = {
+"@MMK_R_gjVa" = 100;
+};
 gjGh = {
 "@MMK_R_gjCa" = 87.5;
 "@MMK_R_gjCha" = -32.5;
@@ -160108,6 +160165,9 @@ gjGh = {
 "@MMK_R_gjTta" = 50.95;
 "@MMK_R_gjTtha" = 66.9;
 gjDRa = 145.7;
+};
+gjGhR = {
+"@MMK_R_gjVa" = 70;
 };
 gjHa = {
 "@MMK_R_gjDdha" = 27;
@@ -160182,28 +160242,28 @@ gjK.calt3 = {
 };
 gjKR.calt = {
 "@MMK_R_gjJa" = -196.25;
-"@MMK_R_gjLa" = -158.6;
-"@MMK_R_gjLla" = -166.85;
-"@MMK_R_gjVa" = -136.9;
 };
 gjKR.calt2 = {
-"@MMK_R_gjBa" = 7.05;
+"@MMK_R_gjBa" = 17.05;
 "@MMK_R_gjBha" = 23.5;
 "@MMK_R_gjCha" = -94;
 "@MMK_R_gjDa" = -79.9;
 "@MMK_R_gjDha" = -70.5;
 "@MMK_R_gjGha" = -23.5;
 "@MMK_R_gjHNa" = -94;
+"@MMK_R_gjLa" = 20;
+"@MMK_R_gjLla" = 10;
 "@MMK_R_gjNa" = -47;
 "@MMK_R_gjNna" = -47;
 "@MMK_R_gjPa" = -96.35;
 "@MMK_R_gjSa" = 94;
 "@MMK_R_gjTa" = -39.95;
-gjDRa = -77.55;
+"@MMK_R_gjVa" = 67;
+gjDRa = -97.55;
 };
 gjKR.calt3 = {
 "@MMK_R_gjCa" = -94;
-"@MMK_R_gjTha" = -133.95;
+"@MMK_R_gjTha" = -243.95;
 };
 gjKSs = {
 "@MMK_R_gjCha" = 9.4;
@@ -160216,6 +160276,7 @@ gjDRa = 116.5;
 };
 gjKSsR = {
 "@MMK_R_gjMa" = -80.55;
+"@MMK_R_gjVa" = 130;
 };
 gjKh = {
 "@MMK_R_gjBa" = 114;
@@ -160341,6 +160402,9 @@ gjN.calt = {
 "@MMK_R_gjTha" = 67.6;
 "@MMK_R_gjTta" = 47;
 };
+gjNR = {
+"@MMK_R_gjVa" = 150;
+};
 gjNga = {
 "@MMK_R_gjCha" = -75.5;
 "@MMK_R_gjDda" = -221;
@@ -160390,6 +160454,9 @@ gjNn = {
 "@MMK_R_gjVa" = 157.45;
 "@MMK_R_gjYa" = 74;
 gjDRa = 94;
+};
+gjNnR = {
+"@MMK_R_gjVa" = 140;
 };
 gjNy = {
 "@MMK_R_gjBa" = 147.5;
@@ -160494,6 +160561,9 @@ gjPh.calt3 = {
 "@MMK_R_gjCa" = -150.5;
 "@MMK_R_gjTha" = -133.95;
 };
+gjR.post = {
+"@MMK_R_gjVa" = 140;
+};
 gjRa = {
 "@MMK_R_gjKa" = -25;
 "@MMK_R_gjNa" = -26.5;
@@ -160513,6 +160583,9 @@ gjS.calt = {
 "@MMK_R_gjTta" = -10.7;
 "@MMK_R_gjTtha" = 122.2;
 gjDRa = 124.5;
+};
+gjSTR = {
+"@MMK_R_gjVa" = 30;
 };
 gjSTh = {
 gjDh = 67.3;
@@ -160663,6 +160736,7 @@ gjTR = {
 "@MMK_R_gjHa" = 126.9;
 "@MMK_R_gjJa" = 94;
 "@MMK_R_gjTtha" = -50;
+"@MMK_R_gjVa" = 50;
 };
 gjTT = {
 "@MMK_R_gjDa" = -70.5;

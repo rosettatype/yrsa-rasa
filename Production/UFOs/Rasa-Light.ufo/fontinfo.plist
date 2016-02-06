@@ -68,9 +68,20 @@
 		<integer>2000</integer>
 		<integer>2014</integer>
 	</array>
+	<key>postscriptStemSnapH</key>
+	<array>
+		<integer>128</integer>
+		<integer>107</integer>
+		<integer>108</integer>
+		<integer>88</integer>
+	</array>
 	<key>postscriptStemSnapV</key>
 	<array>
+		<integer>170</integer>
 		<integer>165</integer>
+		<integer>190</integer>
+		<integer>185</integer>
+		<integer>152</integer>
 	</array>
 	<key>postscriptUnderlinePosition</key>
 	<integer>-220</integer>
