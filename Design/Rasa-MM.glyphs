@@ -1,8 +1,5 @@
 {
-DisplayStrings = (
-/gjMatraAa/gjP/gjPa
-);
-copyright = "Copyright \U00A9 2016 by Rosetta Type Foundry. All rights reserved.";
+copyright = "Copyright (c) 2015 by Rosetta Type Foundry s.r.o. (info@rosettatype.com).";
 customParameters = (
 {
 name = glyphOrder;
@@ -18356,7 +18353,7 @@ width = 1258;
 },
 {
 glyphname = r;
-lastChange = "2016-01-25 14:38:13 +0000";
+lastChange = "2016-02-06 22:14:55 +0000";
 layers = (
 {
 anchors = (
