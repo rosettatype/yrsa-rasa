@@ -11,7 +11,7 @@ See the [Yrsa & Rasa project page](http://github.rosettatype.com/yrsa) for detai
 
 ## Download
 
-You can download the fonts from `Fonts/` folder of this repo.
+You can download the compiled fonts from [Fonts](https://github.com/rosettatype/yrsa/tree/master/Fonts) folder of this repo.
 
 
 ## Language support
