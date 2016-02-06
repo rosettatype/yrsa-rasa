@@ -1,12 +1,17 @@
-# Yrsa
+# Yrsa & Rasa
 
-Type family **Yrsa** is an open-source type family published by [Rosetta](https://rosettatype.com) with generous financial support from Google. The fonts are going to support some 45+2 languages in Latin and Gujarati scripts in 5 weights and will be freely available from the Google Fonts directory, once it is ready. Design and production are done in-house, by [Anna Giedryś](http://ancymonic.com) ([@ancymonic](http://github.com/ancymonic)) and [David Březina](http://davi.cz) ([@MrBrezina](http://github.com/MrBrezina)).
+**Yrsa** and **Rasa** are open-source type families published by [Rosetta](https://rosettatype.com) with generous financial support from Google. The fonts are going to support some 45+2 languages in Latin and Gujarati scripts in 5 weights and will be freely available from the Google Fonts directory, once it is ready. Design and production are done in-house, by [Anna Giedryś](http://ancymonic.com) ([@ancymonic](http://github.com/ancymonic)) and [David Březina](http://davi.cz) ([@MrBrezina](http://github.com/MrBrezina)).
 
-What makes Yrsa different is the design approach. It is a deliberate experiment in remixing existing typefaces to produce a new one. The Latin part of Yrsa is based on [Merriweather](http://sorkintype.com/fonts.html#mw) by Eben Sorkin. The Gujarati is based on David Březina’s [Skolar Gujarati](https://www.rosettatype.com/Skolar#gujarati).
+Yrsa is the name of the Latin-only type family. Rasa is the name of the Gujarati type family. In terms of glyphs included Rasa is a superset of Yrsa, it includes the complete Latin.
 
-See the [Yrsa project page](http://github.rosettatype.com/yrsa) for details. **The project is still in its early stages.**
+What makes Yrsa & Rasa project different is the design approach. It is a deliberate experiment in remixing existing typefaces to produce a new one. The Latin part is based on [Merriweather](http://sorkintype.com/fonts.html#mw) by Eben Sorkin. The Gujarati is based on David Březina’s [Skolar Gujarati](https://www.rosettatype.com/Skolar#gujarati).
 
-This repo contains sources for Glyphs, TrueType-flavoured OpenType `.ttf` and PostScript-flavoured OpenType `.otf` font files. The UFO files are a derived source, exported from Glyphs. They are provided as is.
+See the [Yrsa & Rasa project page](http://github.rosettatype.com/yrsa) for details.
+
+
+## Download
+
+You can download the fonts from `Fonts/` folder of this repo.
 
 
 ## Language support
@@ -34,14 +39,33 @@ See `LICENSE.txt` for licensing information. Essentially, the fonts and related 
 
 ## Feedback & progress
 
-Let us know if you spot any problem (via issues).
+This version is now considered final. Let us know if you spot any problem (via issues).
 
-For more details on the progress see [Yrsa board on Trello](https://trello.com/b/Fezyihsg).
+
+## Building the fonts from source
+
+Requirements: [AFDKO](https://github.com/adobe-type-tools/afdko), [defcon](https://github.com/typesupply/defcon), [FontTools](https://github.com/behdad/fonttools), and [appendGroupsUFO.py](https://github.com/rosettatype/Post-production-scripts) script. In order to compile TTF fonts, RoboFont and custom shell script [roboGenerateFont.py](https://github.com/rosettatype/Post-production-scripts) are used.
+
+This repo contains sources for Glyphs, TrueType-flavoured OpenType `.ttf` and PostScript-flavoured OpenType `.otf` font files. The UFO files are a derived source, exported from Glyphs. 
+
+The fonts are built using AFDKO from the UFOs use the `build.sh` script in the Production folder:
+
+```
+./build.sh -f <Family Name> -d -i -r -t -o
+-f   either Rasa or Yrsa
+-d   deletes old instances
+-i   interpolate new instances
+-r   generate TTF instances from UFO instances
+-t   build OTF fonts
+-o   build OTF fonts
+```
+
+For example `./build.sh -f Rasa -i` interpolates and uploads individual UFOs for all instances and `./build.sh -f Rasa -o` then builds OTF fonts from these instances and saves them in the `Fons/` folder.
 
 
 ## Changelog
 
-…
+This is version 1.000 and seems to be stable. :)
 
 
 
