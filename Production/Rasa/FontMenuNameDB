@@ -16,20 +16,20 @@
 	f=Rasa
 	s=Bold
 
-[Rasa-Semibold]
+[Rasa-SemiBold]
 	f=Rasa
-	s=Semibold
-	c=Rasa Sb
-	c=1,Rasa Sb
+	s=SemiBold
+	c=Rasa SemiBold
+	c=1,Rasa SemiBold
 
 [Rasa-Medium]
 	f=Rasa
 	s=Medium
-	c=Rasa Me
-	c=1,Rasa Me
+	c=Rasa Medium
+	c=1,Rasa Medium
 
 [Rasa-Light]
 	f=Rasa
 	s=Light
-	c=Rasa Lt
-	c=1,Rasa Lt
+	c=Rasa Light
+	c=1,Rasa Light
