@@ -1,5 +1,5 @@
 {
-copyright = "Copyright (c) 2015 by Rosetta Type Foundry s.r.o. (info@rosettatype.com).";
+copyright = "Copyright 2010 Yrsa and Rasa Project Authors";
 customParameters = (
 {
 name = glyphOrder;
@@ -156152,7 +156152,7 @@ weightClass = Medium;
 },
 {
 interpolationWeight = 312;
-name = Semibold;
+name = SemiBold;
 weightClass = SemiBold;
 },
 {

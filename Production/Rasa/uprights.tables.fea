@@ -51,7 +51,7 @@ table hhea {
 } hhea;
 
 table name {
-	nameid 0 "Copyright (c) 2015 by Rosetta Type Foundry s.r.o. (info@rosettatype.com).";
+	nameid 0 "Copyright 2010 Yrsa and Rasa Project Authors";
 	nameid 5 "Autohinted with: ttfautohint --hinting-range-max=96 --ignore-restrictions --strong-stem-width=G --increase-x-height=14";
 	nameid 7 "Yrsa & Rasa are trademarks of Rosetta Type Foundry.";
 	nameid 8 "Rosetta Type Foundry";
