@@ -929,13 +929,13 @@
   <head>
     <!-- Most of this table will be recalculated by the compiler -->
     <tableVersion value="1.0"/>
-    <fontRevision value="1.09999"/>
-    <checkSumAdjustment value="0x3bfafe82"/>
+    <fontRevision value="1.00099"/>
+    <checkSumAdjustment value="0x3dfd1494"/>
     <magicNumber value="0x5f0f3cf5"/>
     <flags value="00000000 00000011"/>
     <unitsPerEm value="1000"/>
-    <created value="Fri Mar 11 13:49:29 2016"/>
-    <modified value="Fri Mar 11 13:49:29 2016"/>
+    <created value="Fri Mar 11 14:17:52 2016"/>
+    <modified value="Fri Mar 11 14:17:52 2016"/>
     <xMin value="-503"/>
     <yMin value="-423"/>
     <xMax value="1151"/>
@@ -1033,13 +1033,13 @@
       Bold
     </namerecord>
     <namerecord nameID="3" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      1.100; RST;Rasa-Bold
+      1.001; RST;Rasa-Bold
     </namerecord>
     <namerecord nameID="4" platformID="1" platEncID="0" langID="0x0" unicode="True">
       Rasa Bold
     </namerecord>
     <namerecord nameID="5" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      Version 1.100;PS 1.1;hotconv 1.0.88;makeotf.lib2.5.647800
+      Version 1.001;PS 1.1;hotconv 1.0.88;makeotf.lib2.5.647800
     </namerecord>
     <namerecord nameID="6" platformID="1" platEncID="0" langID="0x0" unicode="True">
       Rasa-Bold
@@ -1063,13 +1063,13 @@
       Bold
     </namerecord>
     <namerecord nameID="3" platformID="3" platEncID="1" langID="0x409">
-      1.100; RST;Rasa-Bold
+      1.001; RST;Rasa-Bold
     </namerecord>
     <namerecord nameID="4" platformID="3" platEncID="1" langID="0x409">
       Rasa Bold
     </namerecord>
     <namerecord nameID="5" platformID="3" platEncID="1" langID="0x409">
-      Version 1.100;PS 1.1;hotconv 1.0.88;makeotf.lib2.5.647800
+      Version 1.001;PS 1.1;hotconv 1.0.88;makeotf.lib2.5.647800
     </namerecord>
     <namerecord nameID="6" platformID="3" platEncID="1" langID="0x409">
       Rasa-Bold

@@ -10,7 +10,9 @@ table BASE {
 		gjr2	romn	-236 0;
 } BASE;
 
-include(../../version.fea);
+table head {
+	FontRevision include(../../version.fea);
+} head;
 
 table OS/2 {
 	FSType				0;
