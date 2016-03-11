@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="quotedblbase" format="1">
-  <advance width="1121"/>
+  <advance width="408"/>
   <unicode hex="201E"/>
   <outline>
-    <component base="quoteright" xOffset="-4" yOffset="-1453"/>
-    <component base="quoteright" xOffset="481" yOffset="-1453"/>
+    <component base="quoteright" xOffset="-1" yOffset="-528"/>
+    <component base="quoteright" xOffset="175" yOffset="-528"/>
   </outline>
   <lib>
     <dict>

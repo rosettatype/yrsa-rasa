@@ -3,9 +3,9 @@
   <advance width="0"/>
   <outline>
     <component base="gjMatraAi"/>
-    <component base="gjCandrabindu.calt" xOffset="197" yOffset="349"/>
+    <component base="gjCandrabindu.calt" xOffset="72" yOffset="127"/>
     <contour>
-      <point x="-392" y="1363" type="move" name="_abvmTOP"/>
+      <point x="-143" y="496" type="move" name="_abvmTOP"/>
     </contour>
   </outline>
   <lib>

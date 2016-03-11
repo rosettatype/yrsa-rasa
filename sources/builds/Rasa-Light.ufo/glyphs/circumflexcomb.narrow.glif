@@ -3,16 +3,16 @@
   <advance width="0"/>
   <outline>
     <contour>
-      <point x="-260" y="1259" type="line"/>
-      <point x="-10" y="1541" type="line"/>
-      <point x="265" y="1260" type="line"/>
-      <point x="334" y="1315" type="line"/>
-      <point x="64" y="1708" type="line"/>
-      <point x="-87" y="1694" type="line"/>
-      <point x="-325" y="1309" type="line"/>
+      <point x="-95" y="458" type="line"/>
+      <point x="-4" y="560" type="line"/>
+      <point x="96" y="458" type="line"/>
+      <point x="121" y="478" type="line"/>
+      <point x="23" y="621" type="line"/>
+      <point x="-32" y="616" type="line"/>
+      <point x="-118" y="476" type="line"/>
     </contour>
     <contour>
-      <point x="0" y="1136" type="move" name="_top"/>
+      <point x="0" y="413" type="move" name="_top"/>
     </contour>
   </outline>
   <lib>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="napostrophe" format="1">
-  <advance width="1441"/>
+  <advance width="524"/>
   <unicode hex="0149"/>
   <outline>
     <component base="n"/>
-    <component base="apostrophemodifier" xOffset="-293"/>
+    <component base="apostrophemodifier" xOffset="-107"/>
   </outline>
   <lib>
     <dict>

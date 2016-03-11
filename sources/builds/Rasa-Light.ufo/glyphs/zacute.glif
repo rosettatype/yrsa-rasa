@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="zacute" format="1">
-  <advance width="1154"/>
+  <advance width="420"/>
   <unicode hex="017A"/>
   <outline>
     <component base="z"/>
-    <component base="acutecomb" xOffset="572"/>
+    <component base="acutecomb" xOffset="208"/>
   </outline>
   <lib>
     <dict>

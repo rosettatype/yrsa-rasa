@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="gjTYa" format="1">
-  <advance width="2016"/>
+  <advance width="733"/>
   <outline>
     <component base="gjTY"/>
-    <component base="gjMatraAa" xOffset="1384"/>
+    <component base="gjMatraAa" xOffset="503"/>
     <contour>
-      <point x="1652" y="1363" type="move" name="abvmTOP"/>
+      <point x="601" y="496" type="move" name="abvmTOP"/>
     </contour>
     <contour>
-      <point x="1652" y="0" type="move" name="blwmBOTTOM"/>
+      <point x="601" y="0" type="move" name="blwmBOTTOM"/>
     </contour>
     <contour>
-      <point x="1652" y="1340" type="move" name="abvmBINDU"/>
+      <point x="601" y="487" type="move" name="abvmBINDU"/>
     </contour>
   </outline>
   <lib>

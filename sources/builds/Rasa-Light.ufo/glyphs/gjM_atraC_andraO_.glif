@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="gjMatraCandraO" format="1">
-  <advance width="632"/>
+  <advance width="230"/>
   <unicode hex="0AC9"/>
   <outline>
     <component base="gjMatraAa"/>
-    <component base="gjMatraCandraE" xOffset="632"/>
+    <component base="gjMatraCandraE" xOffset="230"/>
     <contour>
-      <point x="268" y="1598" type="move" name="abvmBINDU"/>
+      <point x="97" y="581" type="move" name="abvmBINDU"/>
     </contour>
   </outline>
   <lib>

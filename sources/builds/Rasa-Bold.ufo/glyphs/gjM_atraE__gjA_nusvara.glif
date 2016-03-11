@@ -3,9 +3,9 @@
   <advance width="0"/>
   <outline>
     <component base="gjMatraE"/>
-    <component base="gjAnusvara.calt" xOffset="94" yOffset="306"/>
+    <component base="gjAnusvara.calt" xOffset="34" yOffset="111"/>
     <contour>
-      <point x="-392" y="1363" type="move" name="_abvmTOP"/>
+      <point x="-143" y="496" type="move" name="_abvmTOP"/>
     </contour>
   </outline>
   <lib>

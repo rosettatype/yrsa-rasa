@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="gjNg" format="1">
-  <advance width="1313"/>
+  <advance width="477"/>
   <outline>
-    <component base="gjVirama" xOffset="1000"/>
+    <component base="gjVirama" xOffset="364"/>
     <component base="gjDda"/>
-    <component base="gjAnusvara" xOffset="1419" yOffset="-713"/>
+    <component base="gjAnusvara" xOffset="516" yOffset="-259"/>
     <contour>
-      <point x="919" y="1363" type="move" name="abvmTOP"/>
+      <point x="334" y="496" type="move" name="abvmTOP"/>
     </contour>
     <contour>
-      <point x="806" y="1340" type="move" name="abvmBINDU"/>
+      <point x="293" y="487" type="move" name="abvmBINDU"/>
     </contour>
   </outline>
   <lib>

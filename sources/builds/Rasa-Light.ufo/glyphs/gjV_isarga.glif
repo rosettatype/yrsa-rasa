@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="gjVisarga" format="1">
-  <advance width="435"/>
+  <advance width="158"/>
   <unicode hex="0A83"/>
   <outline>
-    <component base="gjNukta" xOffset="454" yOffset="729"/>
-    <component base="gjNukta" xOffset="454" yOffset="1351"/>
+    <component base="gjNukta" xOffset="165" yOffset="265"/>
+    <component base="gjNukta" xOffset="165" yOffset="491"/>
   </outline>
 </glyph>

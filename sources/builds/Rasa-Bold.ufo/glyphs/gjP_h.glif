@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="gjPh" format="1">
-  <advance width="1332"/>
+  <advance width="484"/>
   <outline>
     <component base="gjPha"/>
-    <component base="gjVirama" xOffset="1099" yOffset="-421"/>
+    <component base="gjVirama" xOffset="400" yOffset="-153"/>
   </outline>
   <lib>
     <dict>

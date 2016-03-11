@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="notequal" format="1">
-  <advance width="1139"/>
+  <advance width="414"/>
   <unicode hex="2260"/>
   <outline>
     <contour>
-      <point x="426" y="29" type="line"/>
-      <point x="892" y="1206" type="line"/>
-      <point x="713" y="1206" type="line"/>
-      <point x="247" y="29" type="line"/>
+      <point x="155" y="11" type="line"/>
+      <point x="324" y="439" type="line"/>
+      <point x="259" y="439" type="line"/>
+      <point x="90" y="11" type="line"/>
     </contour>
     <contour>
-      <point x="1039" y="272" type="line"/>
-      <point x="1039" y="499" type="line"/>
-      <point x="100" y="499" type="line"/>
-      <point x="100" y="272" type="line"/>
+      <point x="378" y="99" type="line"/>
+      <point x="378" y="181" type="line"/>
+      <point x="36" y="181" type="line"/>
+      <point x="36" y="99" type="line"/>
     </contour>
     <contour>
-      <point x="1039" y="726" type="line"/>
-      <point x="1039" y="953" type="line"/>
-      <point x="100" y="953" type="line"/>
-      <point x="100" y="726" type="line"/>
+      <point x="378" y="264" type="line"/>
+      <point x="378" y="347" type="line"/>
+      <point x="36" y="347" type="line"/>
+      <point x="36" y="264" type="line"/>
     </contour>
   </outline>
   <lib>

@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="gjSsDda" format="1">
-  <advance width="1718"/>
+  <advance width="625"/>
   <outline>
     <component base="gjSs"/>
-    <component base="gjDda" xOffset="550"/>
+    <component base="gjDda" xOffset="200"/>
     <contour>
-      <point x="1210" y="24" type="move" name="blwmRUKAR"/>
+      <point x="440" y="9" type="move" name="blwmRUKAR"/>
     </contour>
     <contour>
-      <point x="1356" y="1340" type="move" name="abvmBINDU"/>
+      <point x="493" y="487" type="move" name="abvmBINDU"/>
     </contour>
     <contour>
-      <point x="1466" y="1363" type="move" name="abvmTOP"/>
+      <point x="533" y="496" type="move" name="abvmTOP"/>
     </contour>
     <contour>
-      <point x="1231" y="0" type="move" name="blwmBOTTOM"/>
+      <point x="448" y="0" type="move" name="blwmBOTTOM"/>
     </contour>
   </outline>
   <lib>

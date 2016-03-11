@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="greaterequal" format="1">
-  <advance width="1219"/>
+  <advance width="443"/>
   <unicode hex="2265"/>
   <outline>
     <contour>
-      <point x="1072" y="678" type="line"/>
-      <point x="1072" y="779" type="line"/>
-      <point x="222" y="1168" type="line"/>
-      <point x="167" y="1047" type="line"/>
-      <point x="952" y="709" type="line"/>
-      <point x="952" y="743" type="line"/>
-      <point x="167" y="410" type="line"/>
-      <point x="222" y="289" type="line"/>
+      <point x="390" y="247" type="line"/>
+      <point x="390" y="283" type="line"/>
+      <point x="81" y="425" type="line"/>
+      <point x="61" y="381" type="line"/>
+      <point x="346" y="258" type="line"/>
+      <point x="346" y="270" type="line"/>
+      <point x="61" y="149" type="line"/>
+      <point x="81" y="105" type="line"/>
     </contour>
     <contour>
-      <point x="1052" y="0" type="line"/>
-      <point x="1052" y="127" type="line"/>
-      <point x="167" y="127" type="line"/>
-      <point x="167" y="0" type="line"/>
+      <point x="383" y="0" type="line"/>
+      <point x="383" y="46" type="line"/>
+      <point x="61" y="46" type="line"/>
+      <point x="61" y="0" type="line"/>
     </contour>
   </outline>
   <lib>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="ncommaaccent" format="1">
-  <advance width="1441"/>
+  <advance width="524"/>
   <unicode hex="0146"/>
   <outline>
     <component base="n"/>
-    <component base="commaaccentcomb" xOffset="743"/>
+    <component base="commaaccentcomb" xOffset="270"/>
   </outline>
   <lib>
     <dict>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="gjAa" format="1">
-  <advance width="2813"/>
+  <advance width="1023"/>
   <unicode hex="0A86"/>
   <outline>
     <component base="gjA"/>
-    <component base="gjMatraAa" xOffset="2099"/>
+    <component base="gjMatraAa" xOffset="763"/>
     <contour>
-      <point x="2421" y="1340" type="move" name="abvmBINDU"/>
+      <point x="880" y="487" type="move" name="abvmBINDU"/>
     </contour>
   </outline>
   <lib>

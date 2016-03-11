@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="Rcommaaccent" format="1">
-  <advance width="1525"/>
+  <advance width="555"/>
   <unicode hex="0156"/>
   <outline>
     <component base="R"/>
-    <component base="commaaccentcomb" xOffset="843"/>
+    <component base="commaaccentcomb" xOffset="307"/>
   </outline>
   <lib>
     <dict>

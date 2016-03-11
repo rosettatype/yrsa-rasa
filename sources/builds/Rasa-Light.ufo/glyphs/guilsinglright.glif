@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="guilsinglright" format="1">
-  <advance width="848"/>
+  <advance width="308"/>
   <unicode hex="203A"/>
   <outline>
-    <component base="guilsinglleft" xOffset="848" xScale="-1"/>
+    <component base="guilsinglleft" xOffset="308" xScale="-1"/>
   </outline>
   <lib>
     <dict>

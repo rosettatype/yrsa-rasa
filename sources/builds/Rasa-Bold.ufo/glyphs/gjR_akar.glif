@@ -3,30 +3,30 @@
   <advance width="0"/>
   <outline>
     <contour>
-      <point x="-61" y="-120" type="line"/>
-      <point x="-157" y="-38"/>
-      <point x="-219" y="12"/>
-      <point x="-303" y="12" type="curve" smooth="yes"/>
-      <point x="-362" y="12"/>
-      <point x="-407" y="-16"/>
-      <point x="-486" y="-96" type="curve" smooth="yes"/>
-      <point x="-722" y="-333" type="line"/>
-      <point x="-511" y="-515" type="line"/>
-      <point x="-297" y="-269" type="line" smooth="yes"/>
-      <point x="-274" y="-243"/>
-      <point x="-257" y="-229"/>
-      <point x="-238" y="-229" type="curve" smooth="yes"/>
-      <point x="-213" y="-229"/>
-      <point x="-191" y="-245"/>
-      <point x="-152" y="-280" type="curve" smooth="yes"/>
-      <point x="100" y="-512" type="line"/>
-      <point x="228" y="-371" type="line"/>
+      <point x="-22" y="-44" type="line"/>
+      <point x="-57" y="-14"/>
+      <point x="-80" y="4"/>
+      <point x="-110" y="4" type="curve" smooth="yes"/>
+      <point x="-132" y="4"/>
+      <point x="-148" y="-6"/>
+      <point x="-177" y="-35" type="curve" smooth="yes"/>
+      <point x="-263" y="-121" type="line"/>
+      <point x="-186" y="-187" type="line"/>
+      <point x="-108" y="-98" type="line" smooth="yes"/>
+      <point x="-100" y="-88"/>
+      <point x="-93" y="-83"/>
+      <point x="-87" y="-83" type="curve" smooth="yes"/>
+      <point x="-77" y="-83"/>
+      <point x="-69" y="-89"/>
+      <point x="-55" y="-102" type="curve" smooth="yes"/>
+      <point x="36" y="-186" type="line"/>
+      <point x="83" y="-135" type="line"/>
     </contour>
     <contour>
-      <point x="-392" y="0" type="move" name="_blwmBOTTOM"/>
+      <point x="-143" y="0" type="move" name="_blwmBOTTOM"/>
     </contour>
     <contour>
-      <point x="-251" y="-550" type="move" name="blwmBOTTOM"/>
+      <point x="-91" y="-200" type="move" name="blwmBOTTOM"/>
     </contour>
   </outline>
 </glyph>

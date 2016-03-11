@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="exclam.gujr" format="1">
-  <advance width="1150"/>
+  <advance width="418"/>
   <outline>
     <contour>
-      <point x="674" y="436" type="line"/>
-      <point x="760" y="1230" type="line"/>
-      <point x="760" y="1410" type="line"/>
-      <point x="390" y="1410" type="line"/>
-      <point x="390" y="1230" type="line"/>
-      <point x="476" y="436" type="line"/>
+      <point x="245" y="159" type="line"/>
+      <point x="276" y="447" type="line"/>
+      <point x="276" y="513" type="line"/>
+      <point x="142" y="513" type="line"/>
+      <point x="142" y="447" type="line"/>
+      <point x="173" y="159" type="line"/>
     </contour>
     <contour>
-      <point x="687" y="-16"/>
-      <point x="758" y="48"/>
-      <point x="758" y="147" type="curve" smooth="yes"/>
-      <point x="758" y="247"/>
-      <point x="686" y="311"/>
-      <point x="575" y="311" type="curve" smooth="yes"/>
-      <point x="464" y="311"/>
-      <point x="392" y="247"/>
-      <point x="392" y="147" type="curve" smooth="yes"/>
-      <point x="392" y="48"/>
-      <point x="464" y="-16"/>
-      <point x="575" y="-16" type="curve" smooth="yes"/>
+      <point x="250" y="-6"/>
+      <point x="276" y="17"/>
+      <point x="276" y="53" type="curve" smooth="yes"/>
+      <point x="276" y="90"/>
+      <point x="249" y="113"/>
+      <point x="209" y="113" type="curve" smooth="yes"/>
+      <point x="169" y="113"/>
+      <point x="143" y="90"/>
+      <point x="143" y="53" type="curve" smooth="yes"/>
+      <point x="143" y="17"/>
+      <point x="169" y="-6"/>
+      <point x="209" y="-6" type="curve" smooth="yes"/>
     </contour>
   </outline>
 </glyph>

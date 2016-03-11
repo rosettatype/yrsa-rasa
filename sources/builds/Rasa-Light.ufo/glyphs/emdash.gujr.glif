@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="emdash.gujr" format="1">
-  <advance width="2224"/>
+  <advance width="809"/>
   <outline>
     <contour>
-      <point x="172" y="738" type="line"/>
-      <point x="186" y="752" type="line"/>
-      <point x="2013" y="752" type="line"/>
-      <point x="2052" y="627" type="line"/>
-      <point x="2038" y="613" type="line"/>
-      <point x="211" y="613" type="line"/>
+      <point x="63" y="268" type="line"/>
+      <point x="68" y="273" type="line"/>
+      <point x="732" y="273" type="line"/>
+      <point x="746" y="228" type="line"/>
+      <point x="741" y="223" type="line"/>
+      <point x="77" y="223" type="line"/>
     </contour>
   </outline>
   <lib>
@@ -34,9 +34,9 @@
                   <key>smooth</key>
                   <false/>
                   <key>x</key>
-                  <integer>187</integer>
+                  <integer>68</integer>
                   <key>y</key>
-                  <integer>613</integer>
+                  <integer>223</integer>
                 </dict>
                 <dict>
                   <key>segmentType</key>
@@ -44,19 +44,9 @@
                   <key>smooth</key>
                   <false/>
                   <key>x</key>
-                  <integer>2067</integer>
-                  <key>y</key>
-                  <integer>613</integer>
-                </dict>
-                <dict>
-                  <key>segmentType</key>
-                  <string>line</string>
-                  <key>smooth</key>
-                  <false/>
-                  <key>x</key>
-                  <integer>2037</integer>
-                  <key>y</key>
                   <integer>752</integer>
+                  <key>y</key>
+                  <integer>223</integer>
                 </dict>
                 <dict>
                   <key>segmentType</key>
@@ -64,9 +54,19 @@
                   <key>smooth</key>
                   <false/>
                   <key>x</key>
-                  <integer>157</integer>
+                  <integer>741</integer>
                   <key>y</key>
-                  <integer>752</integer>
+                  <integer>273</integer>
+                </dict>
+                <dict>
+                  <key>segmentType</key>
+                  <string>line</string>
+                  <key>smooth</key>
+                  <false/>
+                  <key>x</key>
+                  <integer>57</integer>
+                  <key>y</key>
+                  <integer>273</integer>
                 </dict>
               </array>
             </dict>
@@ -80,7 +80,7 @@
           <array>
           </array>
           <key>width</key>
-          <integer>2224</integer>
+          <integer>809</integer>
         </dict>
       </dict>
     </dict>

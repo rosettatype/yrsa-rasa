@@ -3,15 +3,15 @@
   <advance width="0"/>
   <outline>
     <contour>
-      <point x="16" y="1736"/>
-      <point x="260" y="1838"/>
-      <point x="366" y="1918" type="curve"/>
-      <point x="265" y="2053" type="line"/>
-      <point x="-193" y="1738" type="line"/>
-      <point x="-156" y="1668" type="line"/>
+      <point x="6" y="631"/>
+      <point x="95" y="668"/>
+      <point x="133" y="697" type="curve"/>
+      <point x="96" y="747" type="line"/>
+      <point x="-70" y="632" type="line"/>
+      <point x="-57" y="607" type="line"/>
     </contour>
     <contour>
-      <point x="0" y="1562" type="move" name="_top"/>
+      <point x="0" y="568" type="move" name="_top"/>
     </contour>
   </outline>
   <lib>

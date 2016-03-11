@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="gjYa" format="1">
-  <advance width="1302"/>
+  <advance width="473"/>
   <outline>
     <component base="gjY"/>
-    <component base="gjMatraAa" xOffset="670"/>
+    <component base="gjMatraAa" xOffset="244"/>
     <contour>
-      <point x="489" y="0" type="move" name="blwmNUKTA"/>
+      <point x="178" y="0" type="move" name="blwmNUKTA"/>
     </contour>
     <contour>
-      <point x="938" y="1340" type="move" name="abvmBINDU"/>
+      <point x="341" y="487" type="move" name="abvmBINDU"/>
     </contour>
     <contour>
-      <point x="938" y="1363" type="move" name="abvmTOP"/>
+      <point x="341" y="496" type="move" name="abvmTOP"/>
     </contour>
     <contour>
-      <point x="938" y="0" type="move" name="blwmBOTTOM"/>
+      <point x="341" y="0" type="move" name="blwmBOTTOM"/>
     </contour>
   </outline>
   <lib>

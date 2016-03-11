@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="hyphen.gujr" format="1">
-  <advance width="1030"/>
+  <advance width="375"/>
   <outline>
     <contour>
-      <point x="129" y="804" type="line"/>
-      <point x="157" y="832" type="line"/>
-      <point x="838" y="832" type="line"/>
-      <point x="901" y="583" type="line"/>
-      <point x="873" y="555" type="line"/>
-      <point x="192" y="555" type="line"/>
+      <point x="47" y="292" type="line"/>
+      <point x="57" y="303" type="line"/>
+      <point x="305" y="303" type="line"/>
+      <point x="328" y="212" type="line"/>
+      <point x="317" y="202" type="line"/>
+      <point x="70" y="202" type="line"/>
     </contour>
   </outline>
 </glyph>

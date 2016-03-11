@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="Uring" format="1">
-  <advance width="1723"/>
+  <advance width="627"/>
   <unicode hex="016E"/>
   <outline>
     <component base="U"/>
-    <component base="ringcomb.case" xOffset="888"/>
+    <component base="ringcomb.case" xOffset="323"/>
   </outline>
   <lib>
     <dict>

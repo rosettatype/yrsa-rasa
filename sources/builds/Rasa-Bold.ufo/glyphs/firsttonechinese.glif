@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="firsttonechinese" format="1">
-  <advance width="1000"/>
+  <advance width="364"/>
   <unicode hex="02C9"/>
   <outline>
     <contour>
-      <point x="132" y="1358" type="line"/>
-      <point x="867" y="1358" type="line"/>
-      <point x="867" y="1564" type="line"/>
-      <point x="132" y="1564" type="line"/>
+      <point x="48" y="494" type="line"/>
+      <point x="315" y="494" type="line"/>
+      <point x="315" y="569" type="line"/>
+      <point x="48" y="569" type="line"/>
     </contour>
     <contour>
-      <point x="500" y="1700" type="move" name="_top"/>
+      <point x="182" y="618" type="move" name="_top"/>
     </contour>
   </outline>
   <lib>

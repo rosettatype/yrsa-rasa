@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="gjNga" format="1">
-  <advance width="1313"/>
+  <advance width="477"/>
   <unicode hex="0A99"/>
   <outline>
     <component base="gjDda"/>
-    <component base="gjAnusvara" xOffset="1419" yOffset="-713"/>
+    <component base="gjAnusvara" xOffset="516" yOffset="-259"/>
     <contour>
-      <point x="635" y="24" type="move" name="blwmRUKAR"/>
+      <point x="231" y="9" type="move" name="blwmRUKAR"/>
     </contour>
     <contour>
-      <point x="657" y="-308" type="move" name="blwmNUKTA"/>
+      <point x="239" y="-112" type="move" name="blwmNUKTA"/>
     </contour>
     <contour>
-      <point x="806" y="1340" type="move" name="abvmBINDU"/>
+      <point x="293" y="487" type="move" name="abvmBINDU"/>
     </contour>
     <contour>
-      <point x="919" y="1363" type="move" name="abvmTOP"/>
+      <point x="334" y="496" type="move" name="abvmTOP"/>
     </contour>
     <contour>
-      <point x="630" y="0" type="move" name="blwmBOTTOM"/>
+      <point x="229" y="0" type="move" name="blwmBOTTOM"/>
     </contour>
     <contour>
-      <point x="52" y="-69" type="move" name="blwmNUKTA2"/>
+      <point x="19" y="-25" type="move" name="blwmNUKTA2"/>
     </contour>
   </outline>
   <lib>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="emdash.gujr" format="1">
-  <advance width="2239"/>
+  <advance width="814"/>
   <outline>
     <contour>
-      <point x="129" y="804" type="line"/>
-      <point x="157" y="832" type="line"/>
-      <point x="2047" y="832" type="line"/>
-      <point x="2110" y="583" type="line"/>
-      <point x="2082" y="555" type="line"/>
-      <point x="192" y="555" type="line"/>
+      <point x="47" y="292" type="line"/>
+      <point x="57" y="303" type="line"/>
+      <point x="744" y="303" type="line"/>
+      <point x="767" y="212" type="line"/>
+      <point x="757" y="202" type="line"/>
+      <point x="70" y="202" type="line"/>
     </contour>
   </outline>
   <lib>
@@ -34,9 +34,9 @@
                   <key>smooth</key>
                   <false/>
                   <key>x</key>
-                  <integer>129</integer>
+                  <integer>47</integer>
                   <key>y</key>
-                  <integer>559</integer>
+                  <integer>203</integer>
                 </dict>
                 <dict>
                   <key>segmentType</key>
@@ -44,9 +44,9 @@
                   <key>smooth</key>
                   <false/>
                   <key>x</key>
-                  <integer>2111</integer>
+                  <integer>768</integer>
                   <key>y</key>
-                  <integer>559</integer>
+                  <integer>203</integer>
                 </dict>
                 <dict>
                   <key>segmentType</key>
@@ -54,9 +54,9 @@
                   <key>smooth</key>
                   <false/>
                   <key>x</key>
-                  <integer>2111</integer>
+                  <integer>768</integer>
                   <key>y</key>
-                  <integer>812</integer>
+                  <integer>295</integer>
                 </dict>
                 <dict>
                   <key>segmentType</key>
@@ -64,9 +64,9 @@
                   <key>smooth</key>
                   <false/>
                   <key>x</key>
-                  <integer>129</integer>
+                  <integer>47</integer>
                   <key>y</key>
-                  <integer>812</integer>
+                  <integer>295</integer>
                 </dict>
               </array>
             </dict>
@@ -80,7 +80,7 @@
           <array>
           </array>
           <key>width</key>
-          <integer>2239</integer>
+          <integer>814</integer>
         </dict>
       </dict>
     </dict>

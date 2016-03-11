@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="Omega" format="1">
-  <advance width="1917"/>
+  <advance width="697"/>
   <unicode hex="03A9"/>
   <outline>
-    <component base="ohm" xOffset="20"/>
+    <component base="ohm" xOffset="7"/>
   </outline>
   <lib>
     <dict>

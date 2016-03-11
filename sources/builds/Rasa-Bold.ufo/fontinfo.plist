@@ -3,25 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>ascender</key>
-	<integer>2014</integer>
+	<integer>732</integer>
 	<key>capHeight</key>
-	<integer>1562</integer>
-	<key>copyright</key>
-	<string>Copyright 2010 Yrsa and Rasa Project Authors</string>
+	<integer>568</integer>
 	<key>descender</key>
-	<integer>-560</integer>
+	<integer>-204</integer>
 	<key>familyName</key>
 	<string>Rasa</string>
 	<key>openTypeHeadCreated</key>
-	<string>2016/01/10 18:34:15</string>
-	<key>openTypeHheaAscender</key>
-	<integer>2300</integer>
-	<key>openTypeHheaDescender</key>
-	<integer>-1050</integer>
-	<key>openTypeHheaLineGap</key>
-	<integer>0</integer>
+	<string>2016/03/11 11:51:54</string>
 	<key>openTypeNameDesigner</key>
-	<string>Anna Giedryś, David Březina</string>
+	<string>Anna Giedrys, David Brezina</string>
 	<key>openTypeNameDesignerURL</key>
 	<string>http://rosettatype.com</string>
 	<key>openTypeNameManufacturer</key>
@@ -33,76 +25,68 @@
 	<key>openTypeNamePreferredSubfamilyName</key>
 	<string>Light</string>
 	<key>openTypeOS2TypoAscender</key>
-	<integer>2000</integer>
+	<integer>930</integer>
 	<key>openTypeOS2TypoDescender</key>
-	<integer>-750</integer>
+	<integer>440</integer>
 	<key>openTypeOS2TypoLineGap</key>
-	<integer>600</integer>
-	<key>openTypeOS2VendorID</key>
-	<string> RST</string>
+	<integer>0</integer>
 	<key>openTypeOS2WeightClass</key>
 	<integer>300</integer>
 	<key>openTypeOS2WidthClass</key>
 	<integer>5</integer>
-	<key>openTypeOS2WinAscent</key>
-	<integer>2300</integer>
-	<key>openTypeOS2WinDescent</key>
-	<integer>1050</integer>
 	<key>postscriptBlueValues</key>
 	<array>
-		<integer>-35</integer>
+		<integer>-13</integer>
 		<integer>0</integer>
-		<integer>1137</integer>
-		<integer>1168</integer>
-		<integer>1375</integer>
-		<integer>1437</integer>
-		<integer>1562</integer>
-		<integer>1597</integer>
-		<integer>1737</integer>
-		<integer>1799</integer>
+		<integer>413</integer>
+		<integer>424</integer>
+		<integer>500</integer>
+		<integer>523</integer>
+		<integer>568</integer>
+		<integer>581</integer>
+		<integer>632</integer>
+		<integer>655</integer>
 	</array>
 	<key>postscriptOtherBlues</key>
 	<array>
-		<integer>-560</integer>
-		<integer>-496</integer>
-		<integer>2001</integer>
-		<integer>2014</integer>
+		<integer>-203</integer>
+		<integer>-180</integer>
+		<integer>727</integer>
+		<integer>732</integer>
 	</array>
 	<key>postscriptStemSnapH</key>
 	<array>
-		<integer>213</integer>
-		<integer>155</integer>
-		<integer>183</integer>
-		<integer>144</integer>
-		<integer>235</integer>
+		<integer>77</integer>
+		<integer>56</integer>
+		<integer>67</integer>
+		<integer>52</integer>
+		<integer>85</integer>
 	</array>
 	<key>postscriptStemSnapV</key>
 	<array>
-		<integer>380</integer>
-		<integer>361</integer>
-		<integer>416</integer>
-		<integer>390</integer>
-		<integer>316</integer>
+		<integer>138</integer>
+		<integer>131</integer>
+		<integer>151</integer>
+		<integer>142</integer>
+		<integer>115</integer>
 	</array>
 	<key>postscriptUnderlinePosition</key>
-	<integer>-190</integer>
+	<integer>-40</integer>
 	<key>postscriptUnderlineThickness</key>
-	<integer>150</integer>
+	<integer>56</integer>
 	<key>styleMapFamilyName</key>
 	<string>Rasa Light</string>
 	<key>styleMapStyleName</key>
 	<string>regular</string>
 	<key>styleName</key>
 	<string>Light</string>
-	<key>trademark</key>
-	<string>Yrsa and Rasa are trademarks of Rosetta Type Foundry</string>
 	<key>unitsPerEm</key>
-	<integer>2750</integer>
+	<integer>1000</integer>
 	<key>versionMajor</key>
 	<integer>1</integer>
 	<key>versionMinor</key>
-	<integer>0</integer>
+	<integer>1</integer>
 	<key>xHeight</key>
-	<integer>1137</integer>
+	<integer>413</integer>
 </dict>
 </plist>

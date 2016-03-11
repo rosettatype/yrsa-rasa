@@ -3,35 +3,35 @@
   <advance width="0"/>
   <outline>
     <contour>
-      <point x="177" y="1524"/>
-      <point x="320" y="1627"/>
-      <point x="320" y="1792" type="curve" smooth="yes"/>
-      <point x="320" y="1950"/>
-      <point x="221" y="2063"/>
-      <point x="10" y="2063" type="curve" smooth="yes"/>
-      <point x="-175" y="2063"/>
-      <point x="-320" y="1960"/>
-      <point x="-321" y="1797" type="curve" smooth="yes"/>
-      <point x="-321" y="1627"/>
-      <point x="-209" y="1524"/>
-      <point x="-4" y="1524" type="curve" smooth="yes"/>
+      <point x="64" y="554"/>
+      <point x="116" y="592"/>
+      <point x="116" y="652" type="curve" smooth="yes"/>
+      <point x="116" y="709"/>
+      <point x="80" y="750"/>
+      <point x="4" y="750" type="curve" smooth="yes"/>
+      <point x="-64" y="750"/>
+      <point x="-116" y="713"/>
+      <point x="-117" y="653" type="curve" smooth="yes"/>
+      <point x="-117" y="592"/>
+      <point x="-76" y="554"/>
+      <point x="-1" y="554" type="curve" smooth="yes"/>
     </contour>
     <contour>
-      <point x="-87" y="1658"/>
-      <point x="-128" y="1722"/>
-      <point x="-128" y="1798" type="curve" smooth="yes"/>
-      <point x="-128" y="1887"/>
-      <point x="-82" y="1928"/>
-      <point x="1" y="1928" type="curve" smooth="yes"/>
-      <point x="88" y="1928"/>
-      <point x="127" y="1869"/>
-      <point x="127" y="1787" type="curve" smooth="yes"/>
-      <point x="127" y="1699"/>
-      <point x="82" y="1658"/>
-      <point x="0" y="1658" type="curve" smooth="yes"/>
+      <point x="-32" y="603"/>
+      <point x="-47" y="626"/>
+      <point x="-47" y="654" type="curve" smooth="yes"/>
+      <point x="-47" y="686"/>
+      <point x="-30" y="701"/>
+      <point x="0" y="701" type="curve" smooth="yes"/>
+      <point x="32" y="701"/>
+      <point x="46" y="680"/>
+      <point x="46" y="650" type="curve" smooth="yes"/>
+      <point x="46" y="618"/>
+      <point x="30" y="603"/>
+      <point x="0" y="603" type="curve" smooth="yes"/>
     </contour>
     <contour>
-      <point x="0" y="1562" type="move" name="_top"/>
+      <point x="0" y="568" type="move" name="_top"/>
     </contour>
   </outline>
   <lib>

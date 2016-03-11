@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="Ldot" format="1">
-  <advance width="1431"/>
+  <advance width="520"/>
   <unicode hex="013F"/>
   <outline>
     <component base="L"/>
-    <component base="periodcentered" xOffset="846" yOffset="244"/>
+    <component base="periodcentered" xOffset="308" yOffset="89"/>
   </outline>
   <lib>
     <dict>

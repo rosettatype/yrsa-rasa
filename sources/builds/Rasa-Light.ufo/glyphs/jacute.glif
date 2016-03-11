@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="jacute" format="1">
-  <advance width="641"/>
+  <advance width="233"/>
   <outline>
     <component base="dotlessj"/>
-    <component base="acutecomb" xOffset="280"/>
+    <component base="acutecomb" xOffset="102"/>
   </outline>
   <lib>
     <dict>

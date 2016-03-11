@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="Nacute" format="1">
-  <advance width="1807"/>
+  <advance width="657"/>
   <unicode hex="0143"/>
   <outline>
     <component base="N"/>
-    <component base="acutecomb.case" xOffset="917" yOffset="-1"/>
+    <component base="acutecomb.case" xOffset="333"/>
   </outline>
   <lib>
     <dict>

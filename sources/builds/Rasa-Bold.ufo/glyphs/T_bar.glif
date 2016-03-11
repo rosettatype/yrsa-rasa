@@ -1,59 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="Tbar" format="1">
-  <advance width="1610"/>
+  <advance width="585"/>
   <unicode hex="0166"/>
   <outline>
     <contour>
-      <point x="375" y="585" type="line"/>
-      <point x="1234" y="585" type="line"/>
-      <point x="1234" y="750" type="line"/>
-      <point x="375" y="750" type="line"/>
+      <point x="136" y="213" type="line"/>
+      <point x="449" y="213" type="line"/>
+      <point x="449" y="273" type="line"/>
+      <point x="136" y="273" type="line"/>
     </contour>
     <contour>
-      <point x="1277" y="0" type="line"/>
-      <point x="1277" y="143" type="line"/>
-      <point x="1043" y="181" type="line" smooth="yes"/>
-      <point x="1012" y="186"/>
-      <point x="995" y="204"/>
-      <point x="995" y="235" type="curve" smooth="yes"/>
-      <point x="995" y="1407" type="line"/>
-      <point x="1076" y="1407" type="line" smooth="yes"/>
-      <point x="1130" y="1407"/>
-      <point x="1182" y="1401"/>
-      <point x="1213" y="1388" type="curve" smooth="yes"/>
-      <point x="1240" y="1377"/>
-      <point x="1253" y="1362"/>
-      <point x="1260" y="1336" type="curve" smooth="yes"/>
-      <point x="1349" y="990" type="line"/>
-      <point x="1534" y="990" type="line"/>
-      <point x="1555" y="1191"/>
-      <point x="1562" y="1355"/>
-      <point x="1541" y="1562" type="curve"/>
-      <point x="69" y="1562" type="line"/>
-      <point x="48" y="1355"/>
-      <point x="54" y="1197"/>
-      <point x="77" y="990" type="curve"/>
-      <point x="262" y="990" type="line"/>
-      <point x="347" y="1335" type="line" smooth="yes"/>
-      <point x="353" y="1361"/>
-      <point x="366" y="1377"/>
-      <point x="394" y="1388" type="curve" smooth="yes"/>
-      <point x="425" y="1400"/>
-      <point x="478" y="1407"/>
-      <point x="531" y="1407" type="curve" smooth="yes"/>
-      <point x="616" y="1407" type="line"/>
-      <point x="616" y="235" type="line" smooth="yes"/>
-      <point x="616" y="204"/>
-      <point x="599" y="186"/>
-      <point x="568" y="181" type="curve" smooth="yes"/>
-      <point x="334" y="143" type="line"/>
-      <point x="334" y="0" type="line"/>
+      <point x="464" y="0" type="line"/>
+      <point x="464" y="52" type="line"/>
+      <point x="379" y="66" type="line" smooth="yes"/>
+      <point x="368" y="68"/>
+      <point x="362" y="74"/>
+      <point x="362" y="85" type="curve" smooth="yes"/>
+      <point x="362" y="512" type="line"/>
+      <point x="391" y="512" type="line" smooth="yes"/>
+      <point x="411" y="512"/>
+      <point x="430" y="509"/>
+      <point x="441" y="505" type="curve" smooth="yes"/>
+      <point x="451" y="501"/>
+      <point x="456" y="495"/>
+      <point x="458" y="486" type="curve" smooth="yes"/>
+      <point x="491" y="360" type="line"/>
+      <point x="558" y="360" type="line"/>
+      <point x="565" y="433"/>
+      <point x="568" y="493"/>
+      <point x="560" y="568" type="curve"/>
+      <point x="25" y="568" type="line"/>
+      <point x="17" y="493"/>
+      <point x="20" y="435"/>
+      <point x="28" y="360" type="curve"/>
+      <point x="95" y="360" type="line"/>
+      <point x="126" y="485" type="line" smooth="yes"/>
+      <point x="128" y="495"/>
+      <point x="133" y="501"/>
+      <point x="143" y="505" type="curve" smooth="yes"/>
+      <point x="155" y="509"/>
+      <point x="174" y="512"/>
+      <point x="193" y="512" type="curve" smooth="yes"/>
+      <point x="224" y="512" type="line"/>
+      <point x="224" y="85" type="line" smooth="yes"/>
+      <point x="224" y="74"/>
+      <point x="218" y="68"/>
+      <point x="207" y="66" type="curve" smooth="yes"/>
+      <point x="121" y="52" type="line"/>
+      <point x="121" y="0" type="line"/>
     </contour>
     <contour>
-      <point x="806" y="-170" type="move" name="btm"/>
+      <point x="293" y="-62" type="move" name="btm"/>
     </contour>
     <contour>
-      <point x="814" y="1700" type="move" name="top"/>
+      <point x="296" y="618" type="move" name="top"/>
     </contour>
   </outline>
   <lib>

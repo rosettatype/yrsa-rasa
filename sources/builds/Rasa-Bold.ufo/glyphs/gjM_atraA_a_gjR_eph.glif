@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="gjMatraAa_gjReph" format="1">
-  <advance width="714"/>
+  <advance width="260"/>
   <outline>
-    <component base="gjMatraAa" xOffset="24"/>
-    <component base="gjReph" xOffset="740"/>
+    <component base="gjMatraAa" xOffset="9"/>
+    <component base="gjReph" xOffset="269"/>
   </outline>
   <lib>
     <dict>
