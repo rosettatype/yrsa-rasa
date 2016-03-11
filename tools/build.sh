@@ -8,7 +8,7 @@ then
 	echo "-i   interpolate new instances"
 	echo "-r   generate TTF instances from UFO instances"
 	echo "-t   build OTF fonts"
-	echo "-o   build OTF fonts"
+	echo "-o   build TTF fonts"
 	echo "-x   make TTX files from the OTFs and TTFs"
 fi
 
@@ -69,7 +69,7 @@ then
 		for i in */
 		do
 			cd "$i"
-			appendGroupsUFO.py -g ../../shared.groups.txt font.ufo
+			addGroupsUFO.py -g ../uprights.groups.txt font.ufo
 			cd ..
 		done
 		generateAllKernFiles.py
@@ -160,7 +160,9 @@ then
 	# build TTX files
 	if [ $TTX ]
 	then
+		rm ../fonts/otf/*.ttx
 		ttx ../fonts/otf/*.otf
+		rm ../fonts/ttf/*.ttx
 		ttx ../fonts/ttf/*.ttf
 	fi
 
