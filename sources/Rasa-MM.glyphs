@@ -1,5 +1,5 @@
 {
-copyright = "Copyright 2010 Yrsa and Rasa Project Authors";
+copyright = "Copyright 2016 Yrsa and Rasa Project Authors (info@rosettatype.com)";
 customParameters = (
 {
 name = glyphOrder;
@@ -948,10 +948,10 @@ value = " RST";
 },
 {
 name = trademark;
-value = "Yrsa and Rasa are trademarks of Rosetta Type Foundry";
+value = "Yrsa and Rasa are trademarks of Rosetta Type Foundry s.r.o.";
 }
 );
-date = "2016-01-10 18:34:15 +0000";
+date = "2016-03-11 10:48:23 +0000";
 designer = "Anna Giedry\U015B, David B\U0159ezina";
 designerURL = "http://rosettatype.com";
 familyName = "Rasa";
@@ -969,38 +969,6 @@ alignmentZones = (
 ascender = 2014;
 capHeight = 1562;
 customParameters = (
-{
-name = typoAscender;
-value = "2000";
-},
-{
-name = typoDescender;
-value = "-750";
-},
-{
-name = typoLineGap;
-value = "600";
-},
-{
-name = hheaAscender;
-value = "2300";
-},
-{
-name = hheaDescender;
-value = "-1050";
-},
-{
-name = hheaLineGap;
-value = "0";
-},
-{
-name = winAscent;
-value = "2300";
-},
-{
-name = winDescent;
-value = "1050";
-},
 {
 name = underlineThickness;
 value = "90";
@@ -1051,38 +1019,6 @@ alignmentZones = (
 ascender = 2014;
 capHeight = 1562;
 customParameters = (
-{
-name = underlineThickness;
-value = "150";
-},
-{
-name = underlinePosition;
-value = "-190";
-},
-{
-name = typoAscender;
-value = "2000";
-},
-{
-name = typoDescender;
-value = "-750";
-},
-{
-name = typoLineGap;
-value = "600";
-},
-{
-name = hheaAscender;
-value = "2300";
-},
-{
-name = hheaDescender;
-value = "-1050";
-},
-{
-name = hheaLineGap;
-value = "0";
-},
 {
 name = winAscent;
 value = "2300";

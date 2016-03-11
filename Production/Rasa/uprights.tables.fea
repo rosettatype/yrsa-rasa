@@ -31,11 +31,11 @@ table OS/2 {
 						1254	# Turkish
 						1257	# Baltic
 						;
-	winAscent			2300;
-	winDescent			1050;
-	TypoAscender		2000;
-	TypoDescender		-750;
-	TypoLineGap			600;
+	winAscent			2550;
+	winDescent			1200;
+	TypoAscender		2550;
+	TypoDescender		-1200;
+	TypoLineGap			0;
 	XHeight				1136;		# differs from weight to weight
 	CapHeight			1562;
 	include(WeightClass.fea);
@@ -45,15 +45,15 @@ table OS/2 {
 
 table hhea {
 	#CaretOffset -50;
-	Ascender 2300;
-	Descender -1050;
+	Ascender 2550;
+	Descender -1200;
 	LineGap 0;
 } hhea;
 
 table name {
-	nameid 0 "Copyright 2010 Yrsa and Rasa Project Authors";
-	nameid 5 "Autohinted with: ttfautohint --hinting-range-max=96 --ignore-restrictions --strong-stem-width=G --increase-x-height=14";
-	nameid 7 "Yrsa & Rasa are trademarks of Rosetta Type Foundry.";
+	nameid 0 "Copyright 2016 Yrsa and Rasa Project Authors (info@rosettatype.com)";
+	nameid 5 "Autohinted with: ttfautohint (1.3.34-f4db) --hinting-range-max=96 --ignore-restrictions --strong-stem-width=G --increase-x-height=14";
+	nameid 7 "Yrsa and Rasa are trademarks of Rosetta Type Foundry s.r.o.";
 	nameid 8 "Rosetta Type Foundry";
 	nameid 9 "Anna Giedrys (Latin/Yrsa design), David Brezina (Latin/Yrsa art-direction, Gujarati/Rasa design)";
 	nameid 11 "http://rosettatype.com";

@@ -93,9 +93,9 @@ then
 		do
 			cd "$i"
 			STYLE=`echo "$i" | sed -e "s/\([^-\.]*\)\//\1/"`
-			FONT=../../../Fonts/$FAMILY-$STYLE.ttf
+			FONT=../../../fonts/ttf/$FAMILY-$STYLE.ttf
 			echo "Building TTF fonts from $FAMILY/$i"
-			makeotf -f font.ttf -o ../../../Fonts/$FAMILY-$STYLE.ttf -ff features.fea -gf GlyphOrderAndAliasDB -r
+			makeotf -f font.ttf -o $FONT -ff features.fea -gf GlyphOrderAndAliasDB -r
 			# subset Yrsa to Latin only
 			if [ "$FAMILY" == "Yrsa" ]
 			then
@@ -120,7 +120,7 @@ then
 		do
 			cd "$i"
 			STYLE=`echo "$i" | sed -e "s/\([^-\.]*\)\//\1/"`
-			FONT=../../../Fonts/$FAMILY-$STYLE.otf
+			FONT=../../../fonts/otf/$FAMILY-$STYLE.otf
 			echo "Building OTF fonts from $FAMILY/$i"
 			makeotf -f font.ufo -o $FONT -ff features.fea -gf GlyphOrderAndAliasDB -r
 			# subset Yrsa to Latin only
