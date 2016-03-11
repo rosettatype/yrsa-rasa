@@ -8,13 +8,11 @@
             <info copy="1"/>
             <location>
                 <dimension name="weight" xvalue="165"/>
-                <dimension name="width" xvalue="100"/>
             </location>
         </source>
         <source filename="../sources/builds/Rasa-Bold.ufo" name="Bold_master">
             <location>
                 <dimension name="weight" xvalue="361"/>
-                <dimension name="width" xvalue="100"/>
             </location>
         </source>
     </sources>
@@ -23,7 +21,6 @@
         <instance familyname="Yrsa" filename="Yrsa/Light/font.ufo" stylename="Light" postscriptfontname="Yrsa-Light">
             <location>
                 <dimension name="weight" xvalue="165"/>
-                <dimension name="width" xvalue="100"/>
             </location>
             <info/>
             <kerning/>
@@ -31,7 +28,6 @@
         <instance familyname="Yrsa" filename="Yrsa/Regular/font.ufo" stylename="Regular" postscriptfontname="Yrsa-Regular">
             <location>
                 <dimension name="weight" xvalue="214"/>
-                <dimension name="width" xvalue="100"/>
             </location>
             <info/>
             <kerning/>
@@ -39,7 +35,6 @@
         <instance familyname="Yrsa" filename="Yrsa/Medium/font.ufo" stylename="Medium" postscriptfontname="Yrsa-Medium">
             <location>
                 <dimension name="weight" xvalue="263"/>
-                <dimension name="width" xvalue="100"/>
             </location>
             <info/>
             <kerning/>
@@ -47,7 +42,6 @@
         <instance familyname="Yrsa" filename="Yrsa/SemiBold/font.ufo" stylename="SemiBold" postscriptfontname="Yrsa-SemiBold">
             <location>
                 <dimension name="weight" xvalue="312"/>
-                <dimension name="width" xvalue="100"/>
             </location>
             <info/>
             <kerning/>
@@ -55,7 +49,6 @@
         <instance familyname="Yrsa" filename="Yrsa/Bold/font.ufo" stylename="Bold" postscriptfontname="Yrsa-Bold">
             <location>
                 <dimension name="weight" xvalue="361"/>
-                <dimension name="width" xvalue="100"/>
             </location>
             <info/>
             <kerning/>

@@ -4,8 +4,8 @@
 table BASE {
 	HorizAxis.BaseTagList	ideo  romn;
 	HorizAxis.BaseScriptList
-		DFLT	romn	-594 0,
-		latn	romn	-594 0;
+		DFLT	romn	-216 0,
+		latn	romn	-216 0;
 } BASE;
 
 include(../../version.fea);
@@ -28,13 +28,13 @@ table OS/2 {
 						1254	# Turkish
 						1257	# Baltic
 						;
-	winAscent			2550;
-	winDescent			1200;
-	TypoAscender		2550;
-	TypoDescender		-1200;
+	winAscent			930;
+	winDescent			430;
+	TypoAscender		930;
+	TypoDescender		-430;
 	TypoLineGap			0;
-	XHeight				1136;		# differs from weight to weight
-	CapHeight			1562;
+	XHeight				413;
+	CapHeight			568;
 	include(WeightClass.fea);
 	include(../WidthClass.fea);
 	Vendor				" RST";
@@ -42,8 +42,8 @@ table OS/2 {
 
 table hhea {
 	#CaretOffset -50;
-	Ascender 2550;
-	Descender -1200;
+	Ascender 930;
+	Descender -430;
 	LineGap 0;
 } hhea;
 
