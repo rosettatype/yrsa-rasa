@@ -487,12 +487,12 @@
     <!-- Most of this table will be recalculated by the compiler -->
     <tableVersion value="1.0"/>
     <fontRevision value="1.00099"/>
-    <checkSumAdjustment value="0x9a4be8a6"/>
+    <checkSumAdjustment value="0x94688a88"/>
     <magicNumber value="0x5f0f3cf5"/>
     <flags value="00000000 00000001"/>
     <unitsPerEm value="1000"/>
-    <created value="Fri Mar 11 14:19:23 2016"/>
-    <modified value="Fri Mar 11 14:19:24 2016"/>
+    <created value="Fri Mar 11 16:08:25 2016"/>
+    <modified value="Fri Mar 11 16:08:26 2016"/>
     <xMin value="-445"/>
     <yMin value="-386"/>
     <xMax value="1075"/>
@@ -20281,7 +20281,7 @@
       Rosetta Type Foundry
     </namerecord>
     <namerecord nameID="9" platformID="3" platEncID="1" langID="0x409">
-      Anna Giedrys (Latin/Yrsa design), David Brezina (Latin/Yrsa art-direction, Gujarati/Rasa design)
+      Anna Giedrys (Yrsa+Rasa design), David Brezina (Yrsa art-direction, Rasa art-direction, design)
     </namerecord>
     <namerecord nameID="11" platformID="3" platEncID="1" langID="0x409">
       http://rosettatype.com
