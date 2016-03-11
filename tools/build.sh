@@ -2,16 +2,17 @@
 
 if [ -z $1 ]
 then
-	echo "Use: build.sh -f <Family Name> -d -i -r -t -o"
+	echo "Use: build.sh -f <Family Name> -d -i -r -t -o -x"
 	echo "-f   either Rasa or Yrsa"
 	echo "-d   deletes old instances"
 	echo "-i   interpolate new instances"
 	echo "-r   generate TTF instances from UFO instances"
 	echo "-t   build OTF fonts"
 	echo "-o   build OTF fonts"
+	echo "-x   make TTX files from the OTFs and TTFs"
 fi
 
-while getopts f:dirto option
+while getopts f:dirtox option
 do
 	case "${option}" in
 		f) FAMILY=${OPTARG};;
@@ -20,11 +21,16 @@ do
 		r) ROBO="R";;
 		t) TTF="T";;
 		o) OTF="O";;
+		x) TTX="X";;
 	esac
 done
 
 if [ "$FAMILY" == "Rasa" -o "$FAMILY" == "Yrsa" ]
 then
+
+	# work from the production folder all the time
+	cd ../production
+
 	# delete old UFO instances
 	if [ $DELETE ]
 	then
@@ -32,23 +38,23 @@ then
 		shopt -s nullglob
 		for i in */
 		do
-			UFO=$i"font.ufo"
-			TTF=$i"font.ttf"
-			OTF=$i"font.otf"
-			if [[ -d $UFO ]]
+			oldUFO=$i"font.ufo"
+			oldTTF=$i"font.ttf"
+			oldOTF=$i"font.otf"
+			if [[ -d $oldUFO ]]
 			then
-				echo "Removing old $UFO"
-				rm -R $UFO
+				echo "Removing old $oldUFO"
+				rm -R $oldUFO
 			fi
-			if [[ -f $TTF ]]
+			if [[ -f $oldTTF ]]
 			then
-				echo "Removing old $TTF"
-				rm $TTF
+				echo "Removing old $oldTTF"
+				rm $oldTTF
 			fi
-			if [[ -f $OTF ]]
+			if [[ -f $oldOTF ]]
 			then
-				echo "Removing old $OTF"
-				rm $OTF
+				echo "Removing old $oldOTF"
+				rm $oldOTF
 			fi
 		done
 		cd ..
@@ -57,7 +63,7 @@ then
 	# generate new UFO instances & feature files
 	if [ $INTERPOLATE ]
 	then
-		makeInstancesUFO -d $FAMILY.designspace -n
+		makeInstancesUFO -d $FAMILY.designspace
 
 		cd "$FAMILY"
 		for i in */
@@ -87,7 +93,15 @@ then
 
 	# build TTF fonts
 	if [ $TTF ]
-	then	
+	then
+		if ! [[ -d "../fonts/" ]]
+		then
+			mkdir "../fonts/"
+		fi
+		if ! [[ -d "../fonts/ttf/" ]]
+		then
+			mkdir "../fonts/ttf/"
+		fi
 		cd "$FAMILY"
 		for i in */
 		do
@@ -114,7 +128,15 @@ then
 
 	# build OTF fonts
 	if [ $OTF ]
-	then	
+	then
+		if ! [[ -d "../fonts/" ]]
+		then
+			mkdir "../fonts/"
+		fi
+		if ! [[ -d "../fonts/otf/" ]]
+		then
+			mkdir "../fonts/otf/"
+		fi
 		cd "$FAMILY"
 		for i in */
 		do
@@ -134,6 +156,16 @@ then
 		done
 		cd ..
 	fi
+
+	# build TTX files
+	if [ $TTX ]
+	then
+		ttx ../fonts/otf/*.otf
+		ttx ../fonts/ttf/*.ttf
+	fi
+
+	cd ..
+
 else
 	echo "Wrong name of a family. Use Rasa or Yrsa."
 fi
