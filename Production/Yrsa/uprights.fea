@@ -68,13 +68,24 @@ feature locl {
 
 		# Dutch ij with acute
 		language NLD; # Dutch
-			lookup locl_NLD {
-				sub i j by ij;
-				sub I J by IJ;
-				sub iacute j by iacute_j.NLD;
-				sub Iacute J by Iacute_J.NLD;
-			} locl_NLD;
-
+			lookup LOCL_DUTCHIJ_DECOMPOSE {
+				sub ij by i j;
+				sub IJ by I J;	
+			} LOCL_DUTCHIJ_DECOMPOSE;
+			lookup LOCL_DUTCHJACUTE {
+				sub i' j acutecomb by iacute;
+				sub I' J acutecomb by Iacute;
+				sub iacute j' acutecomb' by jacute;
+				sub Iacute J' acutecomb' by Jacute;
+				sub iacute j' by jacute;
+				sub Iacute J' by Jacute;
+			} LOCL_DUTCHJACUTE;
+			lookup LOCL_DUTCHIJACUTE_COMPOSE {
+				sub ij acutecomb by iacute_j.NLD;
+				sub IJ acutecomb by Iacute_J.NLD;
+				sub i j acutecomb by iacute_j.NLD;
+				sub I J acutecomb by Iacute_J.NLD;
+			} LOCL_DUTCHIJACUTE_COMPOSE;
 } locl;
 
 
