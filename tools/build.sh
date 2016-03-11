@@ -65,7 +65,10 @@ then
 	# generate new UFO instances & feature files
 	if [ $INTERPOLATE ]
 	then
-		makeInstancesUFO -d $FAMILY.designspace
+		for ds in *.designspace
+		do
+			makeInstancesUFO -d $ds
+		done
 
 		cd "$FAMILY"
 		for i in */
