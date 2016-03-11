@@ -2,7 +2,7 @@
 
 if [ -z $1 ]
 then
-	echo "Use: build.sh -f <Family Name> -d -i -r -t -o -x"
+	echo "Use: build.sh -f <Family Name> -d -i -r -t -o -x -z"
 	echo "-f   either Rasa or Yrsa"
 	echo "-d   deletes old instances"
 	echo "-i   interpolate new instances"
@@ -10,9 +10,10 @@ then
 	echo "-t   build OTF fonts"
 	echo "-o   build TTF fonts"
 	echo "-x   make TTX files from the OTFs and TTFs"
+	echo "-z   create zip for release"
 fi
 
-while getopts f:dirtox option
+while getopts f:dirtoxz option
 do
 	case "${option}" in
 		f) FAMILY=${OPTARG};;
@@ -22,6 +23,7 @@ do
 		t) TTF="T";;
 		o) OTF="O";;
 		x) TTX="X";;
+		z) ZIP="Z";;
 	esac
 done
 
@@ -157,17 +159,39 @@ then
 		cd ..
 	fi
 
-	# build TTX files
-	if [ $TTX ]
-	then
-		rm ../fonts/otf/*.ttx
-		ttx ../fonts/otf/*.otf
-		rm ../fonts/ttf/*.ttx
-		ttx ../fonts/ttf/*.ttf
-	fi
-
-	cd ..
+	cd ../tools
 
 else
 	echo "Wrong name of a family. Use Rasa or Yrsa."
+fi
+
+cd ..
+
+# make TTX files
+if [ $TTX ]
+then
+	echo "Making TTX files from compiled OTF/TTF fonts."
+	rm fonts/otf/*.ttx
+	ttx fonts/otf/*.otf
+	rm fonts/ttf/*.ttx
+	ttx fonts/ttf/*.ttf
+fi
+
+# zip for release
+if [ $ZIP ]
+then
+	echo "Creating zip file for release."
+	VERSION=`cat production/version.fea`
+	foldername=Yrsa-Rasa
+	zipname=Release_$VERSION
+	mkdir $foldername
+	mkdir $foldername/otf
+	mkdir $foldername/ttf
+	cp fonts/otf/*.otf $foldername/otf/
+	cp fonts/ttf/*.ttf $foldername/ttf/
+	cp documentation/FONTLOG.md $foldername
+	cp README.md $foldername
+	cp LICENSE.txt $foldername
+	zip $zipname.zip -r $foldername/*
+	rm -R $foldername
 fi
