@@ -107,8 +107,9 @@ do
 			FONT=../../../fonts/ttf/$FAMILY-$STYLE.ttf
 			echo "Building TTF fonts from $FAMILY/$i"
 			makeotf -f font.ttf -o $FONT -ff features.fea -gf GlyphOrderAndAliasDB -r
-			# subset Yrsa to Latin only
-			if [ "$FAMILY" == "Yrsa" ]
+			
+			# subset if there is sunset.txt file in family folder
+			if [[ -f "../subset.txt" ]]
 			then
 				pyftsubset $FONT --unicodes-file=../subset.txt --output-file=$FONT.S --layout-features='*' --glyph-names --notdef-glyph --notdef-outline --recommended-glyphs --name-IDs='*' --name-legacy --name-languages='*' --legacy-cmap --no-symbol-cmap --no-ignore-missing-unicodes
 				rm $FONT
@@ -135,8 +136,9 @@ do
 			FONT=../../../fonts/otf/$FAMILY-$STYLE.otf
 			echo "Building OTF fonts from $FAMILY/$i"
 			makeotf -f font.ufo -o $FONT -ff features.fea -gf GlyphOrderAndAliasDB -r
-			# subset Yrsa to Latin only
-			if [ "$FAMILY" == "Yrsa" ]
+			
+			# subset if there is sunset.txt file in family folder
+			if [[ -f "../subset.txt" ]]
 			then
 				pyftsubset $FONT --unicodes-file=../subset.txt --output-file=$FONT.S --layout-features='*' --glyph-names --notdef-glyph --notdef-outline --recommended-glyphs --name-IDs='*' --name-legacy --name-languages='*' --legacy-cmap --no-symbol-cmap --no-ignore-missing-unicodes
 				rm $FONT
@@ -146,9 +148,6 @@ do
 		done
 		cd ..
 	fi
-
-	cd ../tools
-
 done
 
 # get out of the production directory
