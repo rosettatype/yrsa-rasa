@@ -27,7 +27,7 @@ do
 	esac
 done
 
-if [ "$FAMILY" == "Rasa" -o "$FAMILY" == "Yrsa" ]
+if [ "$FAMILY" == "Rasa" -o "$FAMILY" == "Yrsa" -o "$FAMILY" == "Eczar" ]
 then
 
 	# work from the production folder all the time
@@ -99,14 +99,7 @@ then
 	# build TTF fonts
 	if [ $TTF ]
 	then
-		if ! [[ -d "../fonts/" ]]
-		then
-			mkdir "../fonts/"
-		fi
-		if ! [[ -d "../fonts/ttf/" ]]
-		then
-			mkdir "../fonts/ttf/"
-		fi
+		mkdir -p ../fonts/ttf
 		cd "$FAMILY"
 		for i in */
 		do
@@ -134,14 +127,7 @@ then
 	# build OTF fonts
 	if [ $OTF ]
 	then
-		if ! [[ -d "../fonts/" ]]
-		then
-			mkdir "../fonts/"
-		fi
-		if ! [[ -d "../fonts/otf/" ]]
-		then
-			mkdir "../fonts/otf/"
-		fi
+		mkdir -p ../fonts/otf
 		cd "$FAMILY"
 		for i in */
 		do
@@ -175,9 +161,9 @@ if [ $TTX ]
 then
 	echo "Making TTX files from compiled OTF/TTF fonts."
 	rm fonts/otf/*.ttx
-	ttx fonts/otf/*.otf
+	ttx -s fonts/otf/*.otf
 	rm fonts/ttf/*.ttx
-	ttx fonts/ttf/*.ttf
+	ttx -s fonts/ttf/*.ttf
 fi
 
 # zip for release

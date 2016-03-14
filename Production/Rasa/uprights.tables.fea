@@ -54,7 +54,7 @@ table hhea {
 
 table name {
 	nameid 0 "Copyright 2016 Yrsa and Rasa Project Authors (info@rosettatype.com)";
-	nameid 5 "Autohinted with: ttfautohint (1.3.34-f4db) --hinting-range-max=96 --ignore-restrictions --strong-stem-width=G --increase-x-height=14";
+	nameid 5 "Autohinted with: ttfautohint (1.5) --hinting-range-max=96 --ignore-restrictions --strong-stem-width=G --increase-x-height=14";
 	nameid 7 "Yrsa and Rasa are trademarks of Rosetta Type Foundry s.r.o.";
 	nameid 8 "Rosetta Type Foundry";
 	nameid 9 "Anna Giedrys (Yrsa+Rasa design), David Brezina (Yrsa art-direction, Rasa art-direction, design)";
