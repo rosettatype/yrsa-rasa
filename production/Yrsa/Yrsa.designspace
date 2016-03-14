@@ -2,7 +2,7 @@
 
 <designspace format="3">
     <sources>
-        <source filename="../sources/builds/Rasa-Light.ufo" name="Light_master">
+        <source filename="../../sources/builds/Rasa-Light.ufo" name="Light_master">
             <lib copy="1"/>
             <groups copy="1"/>
             <info copy="1"/>
@@ -10,7 +10,7 @@
                 <dimension name="weight" xvalue="165"/>
             </location>
         </source>
-        <source filename="../sources/builds/Rasa-Bold.ufo" name="Bold_master">
+        <source filename="../../sources/builds/Rasa-Bold.ufo" name="Bold_master">
             <location>
                 <dimension name="weight" xvalue="361"/>
             </location>
@@ -18,35 +18,35 @@
     </sources>
 
     <instances>
-        <instance familyname="Rasa" filename="Rasa/Light/font.ufo" stylename="Light" postscriptfontname="Rasa-Light">
+        <instance familyname="Yrsa" filename="Light/font.ufo" stylename="Light" postscriptfontname="Yrsa-Light">
             <location>
                 <dimension name="weight" xvalue="165"/>
             </location>
             <info/>
             <kerning/>
         </instance>
-        <instance familyname="Rasa" filename="Rasa/Regular/font.ufo" stylename="Regular" postscriptfontname="Rasa-Regular">
+        <instance familyname="Yrsa" filename="Regular/font.ufo" stylename="Regular" postscriptfontname="Yrsa-Regular">
             <location>
                 <dimension name="weight" xvalue="214"/>
             </location>
             <info/>
             <kerning/>
         </instance>
-        <instance familyname="Rasa" filename="Rasa/Medium/font.ufo" stylename="Medium" postscriptfontname="Rasa-Medium">
+        <instance familyname="Yrsa" filename="Medium/font.ufo" stylename="Medium" postscriptfontname="Yrsa-Medium">
             <location>
                 <dimension name="weight" xvalue="263"/>
             </location>
             <info/>
             <kerning/>
         </instance>
-        <instance familyname="Rasa" filename="Rasa/SemiBold/font.ufo" stylename="SemiBold" postscriptfontname="Rasa-SemiBold">
+        <instance familyname="Yrsa" filename="SemiBold/font.ufo" stylename="SemiBold" postscriptfontname="Yrsa-SemiBold">
             <location>
                 <dimension name="weight" xvalue="312"/>
             </location>
             <info/>
             <kerning/>
         </instance>
-        <instance familyname="Rasa" filename="Rasa/Bold/font.ufo" stylename="Bold" postscriptfontname="Rasa-Bold">
+        <instance familyname="Yrsa" filename="Bold/font.ufo" stylename="Bold" postscriptfontname="Yrsa-Bold">
             <location>
                 <dimension name="weight" xvalue="361"/>
             </location>

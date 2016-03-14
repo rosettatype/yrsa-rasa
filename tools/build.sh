@@ -2,8 +2,7 @@
 
 if [ -z $1 ]
 then
-	echo "Use: build.sh -f <Family Name> -d -i -r -t -o -x -z"
-	echo "-f   either Rasa or Yrsa"
+	echo "Use: build.sh -d -i -r -t -o -x -z"
 	echo "-d   deletes old instances"
 	echo "-i   interpolate new instances"
 	echo "-r   generate TTF instances from UFO instances"
@@ -13,25 +12,26 @@ then
 	echo "-z   create zip for release"
 fi
 
-while getopts f:dirtoxz option
+while getopts dirtoxz: option
 do
 	case "${option}" in
-		f) FAMILY=${OPTARG};;
 		d) DELETE="D";;
 		i) INTERPOLATE="I";;
 		r) ROBO="R";;
 		t) TTF="T";;
 		o) OTF="O";;
 		x) TTX="X";;
-		z) ZIP="Z";;
+		z) ZIP=${OPTARG};;
 	esac
 done
 
-if [ "$FAMILY" == "Rasa" -o "$FAMILY" == "Yrsa" -o "$FAMILY" == "Eczar" ]
-then
+# work from the production directory all the time
+cd ../production
 
-	# work from the production folder all the time
-	cd ../production
+for FAMILY in */
+do
+	# remove trailing slash
+	FAMILY=`echo "$FAMILY" | sed -e "s/\([^-\.]*\)\//\1/"`
 
 	# delete old UFO instances
 	if [ $DELETE ]
@@ -65,12 +65,11 @@ then
 	# generate new UFO instances & feature files
 	if [ $INTERPOLATE ]
 	then
+		cd "$FAMILY"
 		for ds in *.designspace
 		do
 			makeInstancesUFO -d $ds
 		done
-
-		cd "$FAMILY"
 		for i in */
 		do
 			cd "$i"
@@ -150,10 +149,9 @@ then
 
 	cd ../tools
 
-else
-	echo "Wrong name of a family. Use Rasa or Yrsa."
-fi
+done
 
+# get out of the production directory
 cd ..
 
 # make TTX files
@@ -171,16 +169,14 @@ if [ $ZIP ]
 then
 	echo "Creating zip file for release."
 	VERSION=`cat production/version.fea`
-	foldername=Yrsa-Rasa
-	zipname=Release_$VERSION
-	mkdir $foldername
-	mkdir $foldername/otf
-	mkdir $foldername/ttf
-	cp fonts/otf/*.otf $foldername/otf/
-	cp fonts/ttf/*.ttf $foldername/ttf/
-	cp documentation/FONTLOG.md $foldername
-	cp README.md $foldername
-	cp LICENSE.txt $foldername
-	zip $zipname.zip -r $foldername/*
-	rm -R $foldername
+	zipname="$ZIP-v$VERSION"
+	mkdir -p $ZIP/otf
+	mkdir -p $ZIP/ttf
+	cp fonts/otf/*.otf $ZIP/otf/
+	cp fonts/ttf/*.ttf $ZIP/ttf/
+	cp documentation/FONTLOG.md $ZIP
+	cp README.md $ZIP
+	cp LICENSE.txt $ZIP
+	zip $zipname.zip -r $ZIP/*
+	rm -R $ZIP
 fi
