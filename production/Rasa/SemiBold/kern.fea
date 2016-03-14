@@ -1,4 +1,4 @@
-# Created: Fri Mar 11 13:43:30 2016
+# Created: Mon Mar 14 18:44:52 2016
 # PS Name: Rasa-SemiBold
 # MM Inst: None
 # MinKern: +/- 0 inclusive
@@ -635,7 +635,7 @@ pos gjK.calt2 @MMK_R_gjTa -38;
 pos gjK.calt2 @MMK_R_gjVa 18;
 pos gjK.calt3 @MMK_R_gjCa -39;
 pos gjK.calt3 @MMK_R_gjTha -63;
-pos gjKR.calt @MMK_R_gjJa -74;
+pos gjKR.calt @MMK_R_gjJa -73;
 pos gjKR.calt2 @MMK_R_gjCha -36;
 pos gjKR.calt2 @MMK_R_gjDa -33;
 pos gjKR.calt2 @MMK_R_gjDha -27;
@@ -647,7 +647,7 @@ pos gjKR.calt2 @MMK_R_gjNa -17;
 pos gjKR.calt2 @MMK_R_gjNna -24;
 pos gjKR.calt2 @MMK_R_gjPa -36;
 pos gjKR.calt2 @MMK_R_gjSa 16;
-pos gjKR.calt2 @MMK_R_gjTa -23;
+pos gjKR.calt2 @MMK_R_gjTa -24;
 pos gjKR.calt2 @MMK_R_gjVa 21;
 pos gjKR.calt3 @MMK_R_gjCa -38;
 pos gjKR.calt3 @MMK_R_gjTha -83;
@@ -781,7 +781,7 @@ pos gjNn @MMK_R_gjGa 35;
 pos gjNn @MMK_R_gjGha 25;
 pos gjNn @MMK_R_gjHNa -4;
 pos gjNn @MMK_R_gjHa 24;
-pos gjNn @MMK_R_gjJNya 2;
+pos gjNn @MMK_R_gjJNya 1;
 pos gjNn @MMK_R_gjJa 49;
 pos gjNn @MMK_R_gjJha 16;
 pos gjNn @MMK_R_gjKa -14;
@@ -1689,13 +1689,13 @@ pos @MMK_L_gjJa @MMK_R_gjBha -2;
 pos @MMK_L_gjJa @MMK_R_gjCha -12;
 pos @MMK_L_gjJa @MMK_R_gjDa -11;
 pos @MMK_L_gjJa @MMK_R_gjDda -57;
-pos @MMK_L_gjJa @MMK_R_gjDdha -24;
+pos @MMK_L_gjJa @MMK_R_gjDdha -23;
 pos @MMK_L_gjJa @MMK_R_gjGa 15;
 pos @MMK_L_gjJa @MMK_R_gjGha -2;
 pos @MMK_L_gjJa @MMK_R_gjHa -25;
 pos @MMK_L_gjJa @MMK_R_gjJa 43;
 pos @MMK_L_gjJa @MMK_R_gjJha -7;
-pos @MMK_L_gjJa @MMK_R_gjKa -42;
+pos @MMK_L_gjJa @MMK_R_gjKa -41;
 pos @MMK_L_gjJa @MMK_R_gjLa -2;
 pos @MMK_L_gjJa @MMK_R_gjLla 8;
 pos @MMK_L_gjJa @MMK_R_gjNa -26;
