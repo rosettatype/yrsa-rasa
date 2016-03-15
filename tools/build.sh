@@ -9,7 +9,8 @@ then
 	echo "-t   build OTF fonts"
 	echo "-o   build TTF fonts"
 	echo "-x   make TTX files from the OTFs and TTFs"
-	echo "-z   create zip for release"
+	echo "-z   create zip for release, needs a family name as parameter,"
+	echo "     this filters the fonts that are included in the release"
 fi
 
 while getopts dirtoxz: option
@@ -167,15 +168,16 @@ fi
 if [ $ZIP ]
 then
 	echo "Creating zip file for release."
+	FAMILY=$ZIP
 	VERSION=`cat production/version.fea`
-	zipname="$ZIP-v$VERSION"
-	mkdir -p $ZIP/otf
-	mkdir -p $ZIP/ttf
-	cp fonts/otf/*.otf $ZIP/otf/
-	cp fonts/ttf/*.ttf $ZIP/ttf/
-	cp documentation/FONTLOG.md $ZIP
-	cp README.md $ZIP
-	cp LICENSE.txt $ZIP
-	zip $zipname.zip -r $ZIP/*
-	rm -R $ZIP
+	zipname="$FAMILY-fonts-v$VERSION"
+	mkdir -p $FAMILY/otf
+	mkdir -p $FAMILY/ttf
+	cp fonts/otf/$FAMILY*.otf $FAMILY/otf/
+	cp fonts/ttf/$FAMILY*.ttf $FAMILY/ttf/
+	cp documentation/FONTLOG.md $FAMILY/FONTLOG.txt
+	cp README.md $FAMILY/README.txt
+	cp LICENSE.txt $FAMILY
+	zip $zipname.zip -r $FAMILY/*
+	rm -R $FAMILY
 fi

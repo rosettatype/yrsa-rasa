@@ -11,12 +11,12 @@ See the [Yrsa & Rasa project page](http://github.rosettatype.com/yrsa-rasa) for 
 
 ## Download
 
-You can download the compiled fonts from **Release** folder of this repo or from the Google Fonts directory. Alternatively, you can find the in Adobe Typekit (soon).
+You can download the compiled fonts from [Releases](https://github.com/rosettatype/yrsa-rasa/releases) section of this repo or from the Google Fonts directory (soon). Alternatively, you can find the in Adobe Typekit (soon).
 
 
 ## Building the fonts from source
 
-If you want to compile the fonts from sources, read the [production README](documentation/README.md).
+If you want to compile the fonts from sources, read the [production README](https://github.com/rosettatype/yrsa-rasa/documentation/README.md).
 
 
 ## Rosetta – world typography specialists
@@ -25,14 +25,14 @@ Rosetta addresses the needs of global typography. Together with our collaborator
 
 So far our retail library supports pan-European Latin, Arabic, Armenian, Greek, Cyrillic (besides Slavic languages we also support many Asian languages), Inuktitut, and Indic scripts like Gujarati and Devanagari. In total, the library covers more than 200 languages.
 
-For more information see the website at http://rosettatype.com.
+For more information see the website at [rosettatype.com](http://rosettatype.com).
 
 You can contact us at <ask@rosettatype.com>.
 
 
 ## License
 
-See `LICENSE.txt` for licensing information. Essentially, the fonts and related code are licensed under [Open Font License](LICENSE.txt).
+The fonts and related code are licensed under [Open Font License](https://github.com/rosettatype/yrsa-rasa/LICENSE.txt). See `LICENSE.txt` for licensing information.
 
 
 ## Feedback & progress
