@@ -18,17 +18,25 @@ As I mentioned in the [previous post](introducing-yrsa/) the Gujarati is based c
 
 ![Comparison of potential Latin and Gujarati proportions in a font: the first line shows the Gujarati too small when aligned with the Latin x-height, the second line shows the Gujarati too big when aligned with the Latin cap-height, and the last line shows the proportions we used, with both scripts equally important.](../assets/Latin-Gujarati-proportion-comparison_big.svg)
 
+**Figure:** Comparison of potential Latin and Gujarati proportions in a font: the first line shows the Gujarati too small when aligned with the Latin x-height, the second line shows the Gujarati too big when aligned with the Latin cap-height, and the last line shows the proportions we used, with both scripts equally important.
+
 Specifically, we had to make sure the relative scaling and weights of each script was right. Aligning the Gujarati to the proportional grid of the Latin or vice versa would clearly produce unequal sizing (see the figure above). One script appearing smaller than the other would be an issue of course. Therefore, their relative sizes have been based on comfortable reading experience and typical size expectations of each script.
 
 ![Comparison of weight between the two scripts: the first line shows the Gujarati too light compared to the Latin, in the second line the Gujarati is too dark. The third line shows harmonized weight.](../assets/Latin-Gujarati-weight-comparison_big.svg)
 
+**Figure:** Comparison of weight between the two scripts: the first line shows the Gujarati too light compared to the Latin, in the second line the Gujarati is too dark. The third line shows harmonized weight.
+
 Similarly for the weight, an overly bold typeface will look more important. Once the size was set, Anna corrected the weight of the Gujarati to match with the Latin (see the figure above). At the same time, in order to bring the two styles closer together, she increased the contrast between thick and thin bits in the Gujarati (see number 5 in the last figure). It is important to note that the stress in Indic scripts goes in the opposite direction to that of Latin (see the figure below) and increasing contrast or boldening has to respect this.
 
-![Stress axis in Latin is transitional with a variety of angles while Gujarati maintains the same angle](../assets/Latin-Gujarati-stress-comparison_big.svg)
+![Stress axis in Latin is transitional with a variety of angles while Gujarati maintains the same angle.](../assets/Latin-Gujarati-stress-comparison_big.svg)
+
+**Figure:** Stress axis in Latin is transitional with a variety of angles while Gujarati maintains the same angle.
 
 Yrsa Latin is a transitional design, so some letters have oblique and some have vertical stress. This is not very common in Gujarati which usually follows a fairly consistent oblique angle. Transitional contrast would be alien to this script, so we decided to stick with a solution typical to Gujarati. In the end, we are designing a typeface for continuous reading, not an experimental display type family.
 
 ![Smaller stylistic changes between Skolar Gujarati (top) and Rasa Gujarati (bottom)](../assets/Skolar-Gujarati-Rasa-Gujarati-comparison_big.svg)
+
+**Figure:** Smaller stylistic changes between Skolar Gujarati (top) and Rasa Gujarati (bottom)]
 
 After the important bits were out of the way, we could play with stylistic details. These might not matter much in small sizes on screen, but we wanted the fonts to look great even in print and in headlines.  Here are some of the smaller stylistic changes (see the figure above): the softer endings of Skolar were removed (1), the typical Gujarati foot (aka flick or vanaak) has changed (2) as well as the short in-strokes in ‘pa’ and ‘ma’, both are simpler and relate better to the other endings (3), and the knots are more triangular if ever so slightly (4).
 
