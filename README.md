@@ -39,6 +39,6 @@ The fonts and related code are licensed under [Open Font License](https://github
 
 This version is now considered final. Let us know if you spot any problem (via issues).
 
-![Yrsa preview](https://rawgithub.com/rosettatype/yrsa-rasa/master/documentation/Yrsa-Rasa-previews_1.svg)
+![Yrsa preview](https://rawgithub.com/rosettatype/yrsa-rasa/master/documentation/Yrsa-Rasa-previews_1_big.svg)
 
-![Rasa preview](https://rawgithub.com/rosettatype/yrsa-rasa/master/documentation/Yrsa-Rasa-previews_2.svg)
+![Rasa preview](https://rawgithub.com/rosettatype/yrsa-rasa/master/documentation/Yrsa-Rasa-previews_2_big.svg)
