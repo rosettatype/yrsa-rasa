@@ -1,17 +1,17 @@
 ---
 layout: default
-title: Yrsa language support
+title: Language support
 permalink: "language-support/"
 ---
 
-# Yrsa: language support
+# Language support
 
-## Gujarati script
+## Rasa: Gujarati script
 
 - Gujarati
 - Kachchi
 
-## Latin script (Adobe Latin 3 character set)
+## Yrsa: Latin script (Adobe Latin 3 character set)
 
 - major Western European Latin languages (a.k.a. Roman languages)
 - Afrikaans
@@ -58,4 +58,6 @@ permalink: "language-support/"
 - Swahili
 - Swedish
 - Turkish
-- and Walloon.
+- Walloon
+
+and many more.

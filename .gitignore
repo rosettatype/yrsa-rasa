@@ -1,1 +1,10 @@
-_site
+_*
+font.ufo
+*.ttf
+*.otf
+*.zip
+*.log
+*.tmp
+*.fpr
+.sync
+current.fpr
