@@ -8,7 +8,7 @@ permalink: "/yrsa-rasa-released/"
 
 Yrsa and Rasa are open-source type families published by [Rosetta](http://rosettatype.com) with generous financial support from Google. The fonts support over 92 languages in Latin script and 2 languages in Gujarati script. The family currently has 5 weights. They were designed and produced by Anna Giedryś and me and they are now released and ready for download.
 
-I wrote two articles about the project development where we discussed what we [meant by remixing](introducing-yrsa/) and how we approached [harmonization of two different scripts](harmonizing-rasa-gujarati-and-yrsa-latin/) such as Latin and Gujarati. Today, as we release the fonts out into the wild I will explain what we learned from this six-month-long exercise.
+I wrote two articles about the project development where we discussed what we [meant by remixing](../introducing-yrsa) and how we approached [harmonization of two different scripts](../harmonizing-rasa-gujarati-and-yrsa-latin) such as Latin and Gujarati. Today, as we release the fonts out into the wild I will explain what we learned from this six-month-long exercise.
 
 But first, we need to clarify who did what. Anna was the main draughtswoman. I was merely a supervisor, occasional stern critic, main revisionist of the Gujarati, and a coder. Briefly put, if there is anything to like, it is Anna’s. If there is anything wrong, it is mine.
 
