@@ -4,6 +4,8 @@ title: Harmonizing Rasa Gujarati and Yrsa Latin
 permalink: "/harmonizing-rasa-gujarati-and-yrsa-latin/"
 ---
 
+# Harmonizing Rasa Gujarati and Yrsa Latin
+
 This is the second post in a series about our open-source project Yrsa/Rasa – a contemporary typeface for continuous text setting in Latin and Gujarati, for both web and print designed by Anna Giedryś and me. The project is subsidised by Google and you can follow the ongoing development on [GitHub](http://rosettatype.github.io). You can also get in touch via [email](mailto:ask@rosettatype.com) if you want to give the finished Latin part a test drive before all scripts are officially released in February.
 
 Let me elaborate on the naming first. Yrsa is used for Latin and any other European script, Rasa is for Gujarati and any other Indic script. The original reason for this change was a technical requirement of the Google Fonts system, but it is also quite nice that the Indic fonts get an Indic name while the Latin fonts keep the European moniker.
