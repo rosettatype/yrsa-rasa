@@ -15,7 +15,9 @@ What makes Yrsa & Rasa project different is the design approach. It is a deliber
 
 The project has been documented in several articles (see links at the bottom).
 
-[Yrsa & Rasa GitHub repo](http://github.com/rosettatype/yrsa-rasa){:.secondary}  [Download the Yrsa fonts](https://github.com/rosettatype/yrsa-rasa/releases/download/v1.001/Yrsa-fonts-v1.001.zips){:.primary}  [Download the Rasa fonts](https://github.com/rosettatype/yrsa-rasa/releases/download/v1.001/Rasa-fonts-v1.001.zips){:.primary}
+[Yrsa & Rasa GitHub repo](http://github.com/rosettatype/yrsa-rasa){:.secondary}  [Download the Yrsa fonts](https://github.com/rosettatype/yrsa-rasa/releases/download/v1.001/Yrsa-fonts-v1.001.zip){:.primary}  [Download the Rasa fonts](https://github.com/rosettatype/yrsa-rasa/releases/download/v1.001/Rasa-fonts-v1.001.zip){:.primary}
+
+  
 
 ![Yrsa preview](assets/Yrsa-Rasa-previews_1_big.svg){:.full}
 
