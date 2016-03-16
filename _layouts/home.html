@@ -11,7 +11,7 @@ home: true
 
 	<div class="divider"></div>
 	<div class="row">
-
+	
 	{% for article in site.articles %}
 		<div class="span six">
 			<h3>{{ article.title }}</h3>
@@ -24,7 +24,8 @@ home: true
 			<div class="divider"></div>
 			<div class="row">
 		{% endif %}
-
 	{% endfor %}
+
+	</div>
 <div><!-- needs to be here for the templates to nest properly -->
 {% endif %}

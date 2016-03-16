@@ -19,15 +19,18 @@ markdown: kramdown
 # Articles showed on homepage
 include: ['_pages']
 articles:
-  - title: Introducing Yrsa
+  - title: 1. Introducing Yrsa
     link: introducing-yrsa/
     description: "First intro to the project, the authors, and some thinking behind it"
-  - title: Harmonizing Gujarati and Latin
+  - title: 2. Harmonizing Gujarati and Latin
     link: harmonizing-rasa-gujarati-and-yrsa-latin/
-    description: "Our design process when Harmonizing two different scripts"
-#  - title: Language support
-#    link: language-support/
-#    description: The intended language support in Latin and Gujarati scripts
+    description: "A hint at a design process when harmonizing two different scripts"
+  - title: 3. Yrsa & Rasa released
+    link: yrsa-rasa-released/
+    description: "What we learned about redesigning someone else’s work"
+  - title: Language support
+    link: language-support/
+    description: The intended language support in Latin and Gujarati scripts
   - title: About Rosetta
     link: http://github.rosettatype.com
     description: Learn more about Rosetta and its open-source projects hosted on GitHub
