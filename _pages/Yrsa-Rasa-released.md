@@ -12,7 +12,7 @@ I wrote two articles about the project development where we discussed what we [m
 
 But first, we need to clarify who did what. Anna was the main draughtswoman. I was merely a supervisor, occasional stern critic, main revisionist of the Gujarati, and a coder. Briefly put, if there is anything to like, it is Anna’s. If there is anything wrong, it is mine.
 
-![](../assets/Yrsa-corrections_big.jpg)
+![](../assets/Yrsa-corrections_big.jpg){:.full}
 
 
 ## Design as redesign
