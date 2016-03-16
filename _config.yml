@@ -3,9 +3,9 @@
 permalinks: pretty
 
 # Setup
-title: Yrsa – open-source fonts for Latin + Gujarati
-description: Yrsa – open-source fonts for Latin + Gujarati by Rosetta
-baseurl: "/yrsa/"
+title: Yrsa & Rasa – open-source fonts for Latin + Gujarati
+description: Yrsa & Rasa – open-source fonts for Latin + Gujarati by Rosetta
+baseurl: "/yrsa-rasa/"
 
 # About/contact
 author:
@@ -22,6 +22,9 @@ articles:
   - title: Introducing Yrsa
     link: introducing-yrsa/
     description: "First intro to the project, the authors, and some thinking behind it"
+  - title: Harmonizing Rasa Gujarati and Yrsa Latin
+    link: harmonizing-rasa-gujarati-and-yrsa-latin/
+    description: "Our design process when Harmonizing two different scripts"
   - title: Language support
     link: language-support/
     description: The intended language support in Latin and Gujarati scripts

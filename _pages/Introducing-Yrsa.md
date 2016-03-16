@@ -26,7 +26,7 @@ The illustration shows Merriweather (top) compared to an initial sketch of Yrsa 
 
 Our hope is that we will not step on anyone’s toes, i.e. into the uncomfortably immediate vicinity of other designs, while redesigning from Merriweather. We are aware of typefaces with a similar spirit (e.g. Milo Serif or Guardian Egyptian) and are making sure we keep a respectful distance. This is less of a problem with Gujarati where the stylistic space is much less populated.
 
-Wish us luck. That is it for now. You can find the project on [GitHub](https://github.com/rosettatype/Yrsa) already.
+Wish us luck. That is it for now. You can find the project on [GitHub](https://github.com/rosettatype/yrsa-rasa) already.
 
 We intend to write a little series to document the progress. In the next article, we will present the Gujarati sketches together with some considerations regarding the harmonization of both scripts.
 
