@@ -19,10 +19,10 @@ home: true
 			<p>{{ article.description }}</p>
 			<a class="secondary" href="{{ article.link }}">Read more</a>
 		</div>
-		{% if thecycle == 'even' %}
-			</div>
-			<div class="divider"></div>
-			<div class="row">
+		{% if thecycle == 'even' and forloop.index != forloop.length %}
+	</div>
+	<div class="divider"></div>
+	<div class="row">
 		{% endif %}
 	{% endfor %}
 
