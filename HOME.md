@@ -3,7 +3,7 @@ layout: home
 permalink: /
 ---
 
-![Yrsa test sheets with corrections](assets/Yrsa-corrections.jpg){:.full}
+![Yrsa test sheets with corrections](assets/Yrsa-corrections_big.jpg){:.full}
 
 # Yrsa & Rasa
 
