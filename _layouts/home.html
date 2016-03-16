@@ -13,13 +13,13 @@ home: true
 	<div class="row">
 	
 	{% for article in site.articles %}
+		{% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
 		<div class="span six">
 			<h3>{{ article.title }}</h3>
 			<p>{{ article.description }}</p>
 			<a class="secondary" href="{{ article.link }}">Read more</a>
 		</div>
-
-		{% if forloop.index modulo 2 == 0 %}
+		{% if thecycle == 'even' %}
 			</div>
 			<div class="divider"></div>
 			<div class="row">
