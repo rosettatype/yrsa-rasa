@@ -36,7 +36,7 @@ Yrsa Latin is a transitional design, so some letters have oblique and some have 
 
 ![Smaller stylistic changes between Skolar Gujarati (top) and Rasa Gujarati (bottom)](../assets/Skolar-Gujarati-Rasa-Gujarati-comparison_big.svg)
 
-**Figure:** Smaller stylistic changes between Skolar Gujarati (top) and Rasa Gujarati (bottom)]
+**Figure:** Smaller stylistic changes between Skolar Gujarati (top) and Rasa Gujarati (bottom)
 
 After the important bits were out of the way, we could play with stylistic details. These might not matter much in small sizes on screen, but we wanted the fonts to look great even in print and in headlines.  Here are some of the smaller stylistic changes (see the figure above): the softer endings of Skolar were removed (1), the typical Gujarati foot (aka flick or vanaak) has changed (2) as well as the short in-strokes in ‘pa’ and ‘ma’, both are simpler and relate better to the other endings (3), and the knots are more triangular if ever so slightly (4).
 
