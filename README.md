@@ -11,7 +11,7 @@ The project has been documented in several articles. See the [Yrsa & Rasa projec
 
 ## Download
 
-You can download the compiled fonts from [Releases](https://github.com/rosettatype/yrsa-rasa/releases) section of this repo or from the Google Fonts directory (soon). Alternatively, you can find the in Adobe Typekit (soon).
+You can download the compiled fonts from [Releases](https://github.com/rosettatype/yrsa-rasa/releases) section of this repo or from the Google Fonts directory (soon). Alternatively, you can find the in Adobe Typekit.
 
 
 ## Building the fonts from source

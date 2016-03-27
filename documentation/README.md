@@ -9,8 +9,8 @@ This repo contains sources for Glyphs in folder `sources/`. The UFO files in `so
 -d   deletes old instances
 -i   interpolate new instances
 -r   generate TTF instances from UFO instances
--t   build OTF fonts
--o   build TTF fonts
+-t   build TTF fonts
+-o   build OTF fonts
 -x   make TTX files from the OTFs and TTFs
 -z   create zip for release, needs a family name as parameter, 
      this filters the fonts that are included in the release
