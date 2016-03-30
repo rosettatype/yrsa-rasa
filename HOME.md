@@ -13,6 +13,8 @@ Yrsa is the name of the Latin-only type family. Rasa is the name of the Gujarati
 
 What makes Yrsa & Rasa project different is the design approach. It is a deliberate experiment in remixing existing typefaces to produce a new one. The Latin part is based on [Merriweather](http://sorkintype.com/fonts.html#mw) by Eben Sorkin. The Gujarati is based on David Březina’s [Skolar Gujarati](https://www.rosettatype.com/Skolar#gujarati).
 
+**Important!** Only OTFs are considered reliable. We will provide the TTFs as soon as we fix one [mysterious bug](https://github.com/rosettatype/yrsa-rasa/issues/8).
+
 The project has been documented in several articles (see links at the bottom).
 
 [Yrsa & Rasa GitHub repo](http://github.com/rosettatype/yrsa-rasa){:.secondary}  [Download the Yrsa fonts](https://github.com/rosettatype/yrsa-rasa/releases/download/v1.001/Yrsa-fonts-v1.001.zip){:.primary}  [Download the Rasa fonts](https://github.com/rosettatype/yrsa-rasa/releases/download/v1.001/Rasa-fonts-v1.001.zip){:.primary}
