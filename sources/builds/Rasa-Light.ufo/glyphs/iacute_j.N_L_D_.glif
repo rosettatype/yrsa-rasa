@@ -3,8 +3,8 @@
   <advance width="493"/>
   <outline>
     <component base="dotlessi"/>
-    <component base="acutecomb" xOffset="118"/>
     <component base="dotlessj" xOffset="260"/>
+    <component base="acutecomb" xOffset="118"/>
     <component base="acutecomb" xOffset="362"/>
   </outline>
   <lib>
@@ -13,54 +13,6 @@
       <integer>6</integer>
       <key>com.typemytype.robofont.layerData</key>
       <dict>
-        <key>background</key>
-        <dict>
-          <key>anchors</key>
-          <array>
-          </array>
-          <key>components</key>
-          <array>
-            <dict>
-              <key>baseGlyph</key>
-              <string>acutecomb</string>
-              <key>transformation</key>
-              <array>
-                <integer>1</integer>
-                <integer>0</integer>
-                <integer>0</integer>
-                <integer>1</integer>
-                <integer>-3</integer>
-                <integer>0</integer>
-              </array>
-            </dict>
-            <dict>
-              <key>baseGlyph</key>
-              <string>dotlessi</string>
-              <key>transformation</key>
-              <array>
-                <integer>1</integer>
-                <integer>0</integer>
-                <integer>0</integer>
-                <integer>1</integer>
-                <integer>0</integer>
-                <integer>0</integer>
-              </array>
-            </dict>
-          </array>
-          <key>contours</key>
-          <array>
-          </array>
-          <key>lib</key>
-          <dict>
-          </dict>
-          <key>name</key>
-          <string>iacute</string>
-          <key>unicodes</key>
-          <array>
-          </array>
-          <key>width</key>
-          <integer>675</integer>
-        </dict>
       </dict>
       <key>public.markColor</key>
       <string>0,0.67,0.91,1</string>

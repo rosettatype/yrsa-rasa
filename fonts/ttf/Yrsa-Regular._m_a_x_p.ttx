@@ -5,9 +5,9 @@
     <!-- Most of this table will be recalculated by the compiler -->
     <tableVersion value="0x10000"/>
     <numGlyphs value="478"/>
-    <maxPoints value="153"/>
+    <maxPoints value="155"/>
     <maxContours value="12"/>
-    <maxCompositePoints value="163"/>
+    <maxCompositePoints value="165"/>
     <maxCompositeContours value="4"/>
     <maxZones value="2"/>
     <maxTwilightPoints value="34"/>
@@ -16,7 +16,7 @@
     <maxInstructionDefs value="0"/>
     <maxStackElements value="157"/>
     <maxSizeOfInstructions value="3350"/>
-    <maxComponentElements value="0"/>
+    <maxComponentElements value="4"/>
     <maxComponentDepth value="4"/>
   </maxp>
 

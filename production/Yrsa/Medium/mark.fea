@@ -1,4 +1,4 @@
-# Created: Mon Mar 14 18:46:00 2016
+# Created: Wed Mar 30 21:44:55 2016
 # PS Name: Yrsa-Medium
 # MM Inst: None
 # exported from Defcon
@@ -12,6 +12,7 @@ lookup MARK_BASE_btm {
 	@bGC_c_btm = [c z];
 	@bGC_d_btm = [d e];
 	@bGC_dcroat_btm = [dcroat eogonek];
+	@bGC_i_btm = [i dotlessi];
 	@bGC_oslash_btm = [oslash schwa];
 	pos base @bGC_B_btm <anchor 294 0> mark @MC_btm;
 	pos base @bGC_O_btm <anchor 289 0> mark @MC_btm;
@@ -19,6 +20,7 @@ lookup MARK_BASE_btm {
 	pos base @bGC_c_btm <anchor 214 0> mark @MC_btm;
 	pos base @bGC_d_btm <anchor 222 0> mark @MC_btm;
 	pos base @bGC_dcroat_btm <anchor 222 -62> mark @MC_btm;
+	pos base @bGC_i_btm <anchor 143 0> mark @MC_btm;
 	pos base @bGC_oslash_btm <anchor 223 -62> mark @MC_btm;
 	pos base A <anchor 253 0> mark @MC_btm;
 	pos base AE <anchor 397 0> mark @MC_btm;
@@ -55,7 +57,6 @@ lookup MARK_BASE_btm {
 	pos base a <anchor 197 0> mark @MC_btm;
 	pos base aogonek <anchor 197 -62> mark @MC_btm;
 	pos base b <anchor 218 0> mark @MC_btm;
-	pos base dotlessi <anchor 143 0> mark @MC_btm;
 	pos base dotlessiogonek <anchor 142 -62> mark @MC_btm;
 	pos base eng <anchor 399 -62> mark @MC_btm;
 	pos base f <anchor 142 0> mark @MC_btm;
@@ -88,13 +89,15 @@ lookup MARK_BASE_btm {
 
 lookup MARK_BASE_top {
 	@bGC_c_top = [c q];
-	@bGC_dotlessi_top = [dotlessi dotlessiogonek];
 	@bGC_e_top = [e v];
+	@bGC_i_top = [i dotlessi dotlessiogonek];
+	@bGC_j_top = [j dotlessj];
 	@bGC_n_top = [n p];
 	@bGC_w_top = [w ae];
 	pos base @bGC_c_top <anchor 229 414> mark @MC_top;
-	pos base @bGC_dotlessi_top <anchor 127 414> mark @MC_top;
 	pos base @bGC_e_top <anchor 225 414> mark @MC_top;
+	pos base @bGC_i_top <anchor 127 414> mark @MC_top;
+	pos base @bGC_j_top <anchor 112 414> mark @MC_top;
 	pos base @bGC_n_top <anchor 269 414> mark @MC_top;
 	pos base @bGC_w_top <anchor 346 414> mark @MC_top;
 	pos base A <anchor 285 568> mark @MC_top;
@@ -139,7 +142,6 @@ lookup MARK_BASE_top {
 	pos base aogonek <anchor 204 618> mark @MC_top;
 	pos base b <anchor 297 414> mark @MC_top;
 	pos base dcroat <anchor 123 618> mark @MC_top;
-	pos base dotlessj <anchor 112 414> mark @MC_top;
 	pos base eng <anchor 399 618> mark @MC_top;
 	pos base eogonek <anchor 225 618> mark @MC_top;
 	pos base f <anchor 152 414> mark @MC_top;

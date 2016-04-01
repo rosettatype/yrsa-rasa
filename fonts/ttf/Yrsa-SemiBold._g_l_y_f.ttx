@@ -1713,9 +1713,9 @@
         </assembly></instructions>
     </TTGlyph>
 
-    <TTGlyph name="IJ" xMin="35" yMin="-149" xMax="617" yMax="568">
+    <TTGlyph name="IJ" xMin="35" yMin="-149" xMax="625" yMax="568">
       <component glyphName="I" x="0" y="0" flags="0x204"/>
-      <component glyphName="J" x="330" y="0" flags="0x4"/>
+      <component glyphName="J" x="338" y="0" flags="0x4"/>
     </TTGlyph>
 
     <TTGlyph name="Iacute" xMin="35" yMin="0" xMax="316" yMax="769">
@@ -1725,8 +1725,8 @@
 
     <TTGlyph name="Iacute_J.NLD" xMin="35" yMin="-149" xMax="642" yMax="769">
       <component glyphName="I" x="0" y="0" flags="0x204"/>
-      <component glyphName="acutecomb.case" x="169" y="0" flags="0x4"/>
       <component glyphName="J" x="338" y="0" flags="0x4"/>
+      <component glyphName="acutecomb.case" x="169" y="0" flags="0x4"/>
       <component glyphName="acutecomb.case" x="495" y="0" flags="0x4"/>
     </TTGlyph>
 
@@ -8958,20 +8958,11 @@
     </TTGlyph>
 
     <TTGlyph name="guillemotleft" xMin="30" yMin="30" xMax="503" yMax="417">
-      <component glyphName="guilsinglleft" x="226" y="0" flags="0x4"/>
       <component glyphName="guilsinglleft" x="0" y="0" flags="0x204"/>
+      <component glyphName="guilsinglleft" x="226" y="0" flags="0x4"/>
     </TTGlyph>
 
     <TTGlyph name="guillemotright" xMin="32" yMin="30" xMax="501" yMax="417">
-      <contour>
-        <pt x="66" y="30" on="1"/>
-        <pt x="32" y="70" on="1"/>
-        <pt x="158" y="222" on="1"/>
-        <pt x="34" y="377" on="1"/>
-        <pt x="66" y="417" on="1"/>
-        <pt x="279" y="250" on="1"/>
-        <pt x="279" y="194" on="1"/>
-      </contour>
       <contour>
         <pt x="288" y="30" on="1"/>
         <pt x="254" y="70" on="1"/>
@@ -8980,6 +8971,15 @@
         <pt x="288" y="417" on="1"/>
         <pt x="501" y="250" on="1"/>
         <pt x="501" y="194" on="1"/>
+      </contour>
+      <contour>
+        <pt x="66" y="30" on="1"/>
+        <pt x="32" y="70" on="1"/>
+        <pt x="158" y="222" on="1"/>
+        <pt x="34" y="377" on="1"/>
+        <pt x="66" y="417" on="1"/>
+        <pt x="279" y="250" on="1"/>
+        <pt x="279" y="194" on="1"/>
       </contour>
       <instructions><assembly>
           PUSH[ ]	/* 6 values pushed */
@@ -9223,8 +9223,80 @@
     </TTGlyph>
 
     <TTGlyph name="i" xMin="27" yMin="0" xMax="263" yMax="598">
-      <component glyphName="dotlessi" x="0" y="0" flags="0x204"/>
-      <component glyphName="uni0307" x="132" y="0" flags="0x4"/>
+      <contour>
+        <pt x="205" y="537" on="1"/>
+        <pt x="205" y="509" on="0"/>
+        <pt x="169" y="476" on="0"/>
+        <pt x="140" y="476" on="1"/>
+        <pt x="110" y="476" on="0"/>
+        <pt x="74" y="509" on="0"/>
+        <pt x="74" y="537" on="1"/>
+        <pt x="74" y="565" on="0"/>
+        <pt x="110" y="598" on="0"/>
+        <pt x="140" y="598" on="1"/>
+        <pt x="169" y="598" on="0"/>
+        <pt x="205" y="565" on="0"/>
+      </contour>
+      <contour>
+        <pt x="204" y="409" on="1"/>
+        <pt x="204" y="76" on="1"/>
+        <pt x="204" y="66" on="0"/>
+        <pt x="213" y="55" on="0"/>
+        <pt x="222" y="54" on="1"/>
+        <pt x="263" y="47" on="1"/>
+        <pt x="263" y="0" on="1"/>
+        <pt x="31" y="0" on="1"/>
+        <pt x="31" y="47" on="1"/>
+        <pt x="72" y="54" on="1"/>
+        <pt x="81" y="55" on="0"/>
+        <pt x="90" y="66" on="0"/>
+        <pt x="90" y="76" on="1"/>
+        <pt x="90" y="325" on="1"/>
+        <pt x="90" y="334" on="0"/>
+        <pt x="82" y="346" on="0"/>
+        <pt x="73" y="347" on="1"/>
+        <pt x="27" y="355" on="1"/>
+        <pt x="27" y="403" on="1"/>
+        <pt x="64" y="413" on="0"/>
+        <pt x="152" y="423" on="0"/>
+        <pt x="188" y="424" on="1"/>
+      </contour>
+      <instructions><assembly>
+          PUSH[ ]	/* 10 values pushed */
+          30 29 20 17 12 5 2 3 1 74
+          MPPEM[ ]	/* MeasurePixelPerEm */
+          PUSH[ ]	/* 1 value pushed */
+          27
+          LT[ ]	/* LessThan */
+          IF[ ]	/* If */
+          PUSH[ ]	/* 21 values pushed */
+          0 0 0 1 95 0 1 1 25 75 0 3 3 28 75 0 2 2 18 2 76
+          ELSE[ ]	/* Else */
+          MPPEM[ ]	/* MeasurePixelPerEm */
+          PUSH[ ]	/* 1 value pushed */
+          70
+          LT[ ]	/* LessThan */
+          IF[ ]	/* If */
+          PUSH[ ]	/* 19 values pushed */
+          0 1 0 0 3 1 0 103 0 3 3 28 75 0 2 2 18 2 76
+          ELSE[ ]	/* Else */
+          MPPEM[ ]	/* MeasurePixelPerEm */
+          PUSH[ ]	/* 1 value pushed */
+          84
+          LT[ ]	/* LessThan */
+          IF[ ]	/* If */
+          PUSH[ ]	/* 19 values pushed */
+          0 1 0 0 3 1 0 103 0 3 3 2 93 0 2 2 21 2 76
+          ELSE[ ]	/* Else */
+          PUSH[ ]	/* 24 values pushed */
+          0 1 0 0 3 1 0 103 0 3 2 2 3 87 0 3 3 2 93 0 2 3 2 77
+          EIF[ ]	/* EndIf */
+          EIF[ ]	/* EndIf */
+          EIF[ ]	/* EndIf */
+          PUSH[ ]	/* 7 values pushed */
+          29 24 36 34 4 7 24
+          CALL[ ]	/* CallFunction */
+        </assembly></instructions>
     </TTGlyph>
 
     <TTGlyph name="iacute" xMin="27" yMin="0" xMax="272" yMax="653">
@@ -9234,8 +9306,8 @@
 
     <TTGlyph name="iacute_j.NLD" xMin="27" yMin="-195" xMax="540" yMax="653">
       <component glyphName="dotlessi" x="0" y="0" flags="0x204"/>
-      <component glyphName="acutecomb" x="132" y="0" flags="0x4"/>
       <component glyphName="dotlessj" x="283" y="0" flags="0x4"/>
+      <component glyphName="acutecomb" x="132" y="0" flags="0x4"/>
       <component glyphName="acutecomb" x="400" y="0" flags="0x4"/>
     </TTGlyph>
 
@@ -9388,8 +9460,70 @@
     </TTGlyph>
 
     <TTGlyph name="j" xMin="-26" yMin="-195" xMax="195" yMax="598">
-      <component glyphName="dotlessj" x="0" y="0" flags="0x204"/>
-      <component glyphName="uni0307" x="117" y="0" flags="0x4"/>
+      <contour>
+        <pt x="191" y="537" on="1"/>
+        <pt x="191" y="509" on="0"/>
+        <pt x="155" y="476" on="0"/>
+        <pt x="126" y="476" on="1"/>
+        <pt x="96" y="476" on="0"/>
+        <pt x="60" y="509" on="0"/>
+        <pt x="60" y="537" on="1"/>
+        <pt x="60" y="565" on="0"/>
+        <pt x="96" y="598" on="0"/>
+        <pt x="126" y="598" on="1"/>
+        <pt x="155" y="598" on="0"/>
+        <pt x="191" y="565" on="0"/>
+      </contour>
+      <contour>
+        <pt x="180" y="424" on="1"/>
+        <pt x="195" y="409" on="1"/>
+        <pt x="195" y="39" on="1"/>
+        <pt x="195" y="-31" on="0"/>
+        <pt x="166" y="-107" on="0"/>
+        <pt x="135" y="-132" on="1"/>
+        <pt x="108" y="-154" on="0"/>
+        <pt x="35" y="-185" on="0"/>
+        <pt x="-5" y="-195" on="1"/>
+        <pt x="-26" y="-147" on="1"/>
+        <pt x="38" y="-112" on="0"/>
+        <pt x="83" y="-35" on="0"/>
+        <pt x="83" y="34" on="1"/>
+        <pt x="83" y="325" on="1"/>
+        <pt x="83" y="334" on="0"/>
+        <pt x="74" y="346" on="0"/>
+        <pt x="66" y="347" on="1"/>
+        <pt x="19" y="355" on="1"/>
+        <pt x="19" y="403" on="1"/>
+        <pt x="55" y="413" on="0"/>
+        <pt x="144" y="423" on="0"/>
+      </contour>
+      <instructions><assembly>
+          PUSH[ ]	/* 8 values pushed */
+          30 29 21 20 13 5 2 71
+          MPPEM[ ]	/* MeasurePixelPerEm */
+          PUSH[ ]	/* 1 value pushed */
+          27
+          LT[ ]	/* LessThan */
+          IF[ ]	/* If */
+          PUSH[ ]	/* 17 values pushed */
+          0 0 0 1 95 0 1 1 25 75 3 1 2 2 28 2 76
+          ELSE[ ]	/* Else */
+          MPPEM[ ]	/* MeasurePixelPerEm */
+          PUSH[ ]	/* 1 value pushed */
+          70
+          LT[ ]	/* LessThan */
+          IF[ ]	/* If */
+          PUSH[ ]	/* 15 values pushed */
+          0 1 0 0 2 1 0 103 3 1 2 2 28 2 76
+          ELSE[ ]	/* Else */
+          PUSH[ ]	/* 22 values pushed */
+          3 1 2 0 2 132 0 1 0 0 1 87 0 1 1 0 95 0 0 1 0 79
+          EIF[ ]	/* EndIf */
+          EIF[ ]	/* EndIf */
+          PUSH[ ]	/* 11 values pushed */
+          12 12 12 32 12 32 36 34 4 7 22
+          CALL[ ]	/* CallFunction */
+        </assembly></instructions>
     </TTGlyph>
 
     <TTGlyph name="jacute" xMin="-26" yMin="-195" xMax="257" yMax="653">
@@ -11752,8 +11886,8 @@
     </TTGlyph>
 
     <TTGlyph name="quotedbl" xMin="45" yMin="320" xMax="354" yMax="625">
-      <component glyphName="quotesingle" x="205" y="0" flags="0x4"/>
       <component glyphName="quotesingle" x="0" y="0" flags="0x204"/>
+      <component glyphName="quotesingle" x="205" y="0" flags="0x4"/>
     </TTGlyph>
 
     <TTGlyph name="quotedblbase" xMin="34" yMin="-113" xMax="351" yMax="159">
@@ -11770,8 +11904,8 @@
     </TTGlyph>
 
     <TTGlyph name="quotedblleft" xMin="31" yMin="425" xMax="348" yMax="696">
-      <component glyphName="quoteleft" x="168" y="0" flags="0x4"/>
       <component glyphName="quoteleft" x="0" y="0" flags="0x204"/>
+      <component glyphName="quoteleft" x="168" y="0" flags="0x4"/>
     </TTGlyph>
 
     <TTGlyph name="quotedblright" xMin="35" yMin="417" xMax="351" yMax="689">

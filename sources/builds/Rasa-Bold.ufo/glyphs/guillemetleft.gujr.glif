@@ -2,8 +2,8 @@
 <glyph name="guillemetleft.gujr" format="1">
   <advance width="655"/>
   <outline>
-    <component base="guilsinglleft.gujr" xOffset="237"/>
     <component base="guilsinglleft.gujr"/>
+    <component base="guilsinglleft.gujr" xOffset="237"/>
   </outline>
   <lib>
     <dict>

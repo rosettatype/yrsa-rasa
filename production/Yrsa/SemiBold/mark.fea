@@ -1,4 +1,4 @@
-# Created: Mon Mar 14 18:46:01 2016
+# Created: Wed Mar 30 21:44:57 2016
 # PS Name: Yrsa-SemiBold
 # MM Inst: None
 # exported from Defcon
@@ -8,8 +8,10 @@
 lookup MARK_BASE_btm {
 	@bGC_Oslash_btm = [Oslash Tbar];
 	@bGC_X_btm = [X Y];
+	@bGC_i_btm = [i dotlessi];
 	pos base @bGC_Oslash_btm <anchor 289 -62> mark @MC_btm;
 	pos base @bGC_X_btm <anchor 276 0> mark @MC_btm;
+	pos base @bGC_i_btm <anchor 147 0> mark @MC_btm;
 	pos base A <anchor 245 0> mark @MC_btm;
 	pos base AE <anchor 399 0> mark @MC_btm;
 	pos base Aogonek <anchor 245 -62> mark @MC_btm;
@@ -50,7 +52,6 @@ lookup MARK_BASE_btm {
 	pos base c <anchor 215 0> mark @MC_btm;
 	pos base d <anchor 220 0> mark @MC_btm;
 	pos base dcroat <anchor 220 -62> mark @MC_btm;
-	pos base dotlessi <anchor 147 0> mark @MC_btm;
 	pos base dotlessiogonek <anchor 145 -62> mark @MC_btm;
 	pos base e <anchor 218 0> mark @MC_btm;
 	pos base eng <anchor 400 -62> mark @MC_btm;
@@ -88,9 +89,11 @@ lookup MARK_BASE_btm {
 
 lookup MARK_BASE_top {
 	@bGC_c_top = [c q];
-	@bGC_dotlessi_top = [dotlessi dotlessiogonek];
+	@bGC_i_top = [i dotlessi dotlessiogonek];
+	@bGC_j_top = [j dotlessj];
 	pos base @bGC_c_top <anchor 228 414> mark @MC_top;
-	pos base @bGC_dotlessi_top <anchor 132 414> mark @MC_top;
+	pos base @bGC_i_top <anchor 132 414> mark @MC_top;
+	pos base @bGC_j_top <anchor 117 414> mark @MC_top;
 	pos base A <anchor 289 568> mark @MC_top;
 	pos base AE <anchor 425 568> mark @MC_top;
 	pos base Aogonek <anchor 285 618> mark @MC_top;
@@ -134,7 +137,6 @@ lookup MARK_BASE_top {
 	pos base aogonek <anchor 207 618> mark @MC_top;
 	pos base b <anchor 305 414> mark @MC_top;
 	pos base dcroat <anchor 114 618> mark @MC_top;
-	pos base dotlessj <anchor 117 414> mark @MC_top;
 	pos base e <anchor 224 414> mark @MC_top;
 	pos base eng <anchor 400 618> mark @MC_top;
 	pos base eogonek <anchor 224 618> mark @MC_top;

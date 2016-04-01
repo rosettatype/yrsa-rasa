@@ -2,8 +2,8 @@
 <glyph name="quotedblleft.gujr" format="1">
   <advance width="347"/>
   <outline>
-    <component base="quoteleft.gujr" xOffset="145"/>
     <component base="quoteleft.gujr"/>
+    <component base="quoteleft.gujr" xOffset="145"/>
   </outline>
   <lib>
     <dict>
