@@ -6,108 +6,327 @@
     <GlyphClassDef>
       <ClassDef glyph="A" class="1"/>
       <ClassDef glyph="AE" class="1"/>
+      <ClassDef glyph="Aacute" class="1"/>
+      <ClassDef glyph="Abreve" class="1"/>
+      <ClassDef glyph="Acircumflex" class="1"/>
+      <ClassDef glyph="Adieresis" class="1"/>
+      <ClassDef glyph="Agrave" class="1"/>
+      <ClassDef glyph="Amacron" class="1"/>
       <ClassDef glyph="Aogonek" class="1"/>
+      <ClassDef glyph="Aring" class="1"/>
+      <ClassDef glyph="Atilde" class="1"/>
       <ClassDef glyph="B" class="1"/>
       <ClassDef glyph="C" class="1"/>
+      <ClassDef glyph="Cacute" class="1"/>
+      <ClassDef glyph="Ccaron" class="1"/>
+      <ClassDef glyph="Ccedilla" class="1"/>
+      <ClassDef glyph="Ccircumflex" class="1"/>
+      <ClassDef glyph="Cdotaccent" class="1"/>
       <ClassDef glyph="D" class="1"/>
+      <ClassDef glyph="Dcaron" class="1"/>
       <ClassDef glyph="Dcroat" class="1"/>
       <ClassDef glyph="E" class="1"/>
+      <ClassDef glyph="Eacute" class="1"/>
+      <ClassDef glyph="Ebreve" class="1"/>
+      <ClassDef glyph="Ecaron" class="1"/>
+      <ClassDef glyph="Ecircumflex" class="1"/>
+      <ClassDef glyph="Edieresis" class="1"/>
+      <ClassDef glyph="Edotaccent" class="1"/>
+      <ClassDef glyph="Egrave" class="1"/>
+      <ClassDef glyph="Emacron" class="1"/>
       <ClassDef glyph="Eng" class="1"/>
       <ClassDef glyph="Eogonek" class="1"/>
+      <ClassDef glyph="Eth" class="1"/>
       <ClassDef glyph="F" class="1"/>
       <ClassDef glyph="G" class="1"/>
+      <ClassDef glyph="Gbreve" class="1"/>
+      <ClassDef glyph="Gcircumflex" class="1"/>
+      <ClassDef glyph="Gcommaaccent" class="1"/>
+      <ClassDef glyph="Gdotaccent" class="1"/>
       <ClassDef glyph="H" class="1"/>
       <ClassDef glyph="Hbar" class="1"/>
+      <ClassDef glyph="Hcircumflex" class="1"/>
       <ClassDef glyph="I" class="1"/>
-      <ClassDef glyph="IJ" class="4"/>
-      <ClassDef glyph="Iacute_J.NLD" class="2"/>
+      <ClassDef glyph="IJ" class="1"/>
+      <ClassDef glyph="Iacute" class="1"/>
+      <ClassDef glyph="Iacute_J.NLD" class="1"/>
+      <ClassDef glyph="Ibreve" class="1"/>
+      <ClassDef glyph="Icircumflex" class="1"/>
+      <ClassDef glyph="Idieresis" class="1"/>
+      <ClassDef glyph="Idotaccent" class="1"/>
+      <ClassDef glyph="Igrave" class="1"/>
+      <ClassDef glyph="Imacron" class="1"/>
       <ClassDef glyph="Iogonek" class="1"/>
+      <ClassDef glyph="Itilde" class="1"/>
       <ClassDef glyph="J" class="1"/>
+      <ClassDef glyph="Jacute" class="1"/>
+      <ClassDef glyph="Jcircumflex" class="1"/>
       <ClassDef glyph="K" class="1"/>
+      <ClassDef glyph="Kcommaaccent" class="1"/>
       <ClassDef glyph="L" class="1"/>
+      <ClassDef glyph="Lacute" class="1"/>
+      <ClassDef glyph="Lcaron" class="1"/>
+      <ClassDef glyph="Lcommaaccent" class="1"/>
+      <ClassDef glyph="Ldot" class="1"/>
       <ClassDef glyph="Lslash" class="1"/>
       <ClassDef glyph="M" class="1"/>
       <ClassDef glyph="N" class="1"/>
+      <ClassDef glyph="Nacute" class="1"/>
+      <ClassDef glyph="Ncaron" class="1"/>
+      <ClassDef glyph="Ncommaaccent" class="1"/>
+      <ClassDef glyph="Ntilde" class="1"/>
       <ClassDef glyph="O" class="1"/>
       <ClassDef glyph="OE" class="1"/>
+      <ClassDef glyph="Oacute" class="1"/>
+      <ClassDef glyph="Obreve" class="1"/>
+      <ClassDef glyph="Ocircumflex" class="1"/>
+      <ClassDef glyph="Odieresis" class="1"/>
+      <ClassDef glyph="Ograve" class="1"/>
+      <ClassDef glyph="Ohungarumlaut" class="1"/>
+      <ClassDef glyph="Omacron" class="1"/>
       <ClassDef glyph="Oslash" class="1"/>
+      <ClassDef glyph="Otilde" class="1"/>
       <ClassDef glyph="P" class="1"/>
       <ClassDef glyph="Q" class="1"/>
       <ClassDef glyph="R" class="1"/>
+      <ClassDef glyph="Racute" class="1"/>
+      <ClassDef glyph="Rcaron" class="1"/>
+      <ClassDef glyph="Rcommaaccent" class="1"/>
       <ClassDef glyph="S" class="1"/>
+      <ClassDef glyph="Sacute" class="1"/>
+      <ClassDef glyph="Scaron" class="1"/>
+      <ClassDef glyph="Scedilla" class="1"/>
+      <ClassDef glyph="Scircumflex" class="1"/>
+      <ClassDef glyph="Scommaaccent" class="1"/>
       <ClassDef glyph="T" class="1"/>
       <ClassDef glyph="Tbar" class="1"/>
+      <ClassDef glyph="Tcaron" class="1"/>
+      <ClassDef glyph="Thorn" class="1"/>
       <ClassDef glyph="U" class="1"/>
+      <ClassDef glyph="Uacute" class="1"/>
+      <ClassDef glyph="Ubreve" class="1"/>
+      <ClassDef glyph="Ucircumflex" class="1"/>
+      <ClassDef glyph="Udieresis" class="1"/>
+      <ClassDef glyph="Ugrave" class="1"/>
+      <ClassDef glyph="Uhungarumlaut" class="1"/>
+      <ClassDef glyph="Umacron" class="1"/>
       <ClassDef glyph="Uogonek" class="1"/>
+      <ClassDef glyph="Uring" class="1"/>
+      <ClassDef glyph="Utilde" class="1"/>
       <ClassDef glyph="V" class="1"/>
       <ClassDef glyph="W" class="1"/>
+      <ClassDef glyph="Wacute" class="1"/>
+      <ClassDef glyph="Wcircumflex" class="1"/>
+      <ClassDef glyph="Wdieresis" class="1"/>
+      <ClassDef glyph="Wgrave" class="1"/>
       <ClassDef glyph="X" class="1"/>
       <ClassDef glyph="Y" class="1"/>
+      <ClassDef glyph="Yacute" class="1"/>
+      <ClassDef glyph="Ycircumflex" class="1"/>
+      <ClassDef glyph="Ydieresis" class="1"/>
+      <ClassDef glyph="Ygrave" class="1"/>
       <ClassDef glyph="Z" class="1"/>
+      <ClassDef glyph="Zacute" class="1"/>
+      <ClassDef glyph="Zcaron" class="1"/>
+      <ClassDef glyph="Zdotaccent" class="1"/>
       <ClassDef glyph="a" class="1"/>
+      <ClassDef glyph="aacute" class="1"/>
+      <ClassDef glyph="abreve" class="1"/>
+      <ClassDef glyph="acircumflex" class="1"/>
+      <ClassDef glyph="acute" class="1"/>
       <ClassDef glyph="acutecomb" class="3"/>
       <ClassDef glyph="acutecomb.case" class="3"/>
+      <ClassDef glyph="adieresis" class="1"/>
       <ClassDef glyph="ae" class="1"/>
+      <ClassDef glyph="agrave" class="1"/>
+      <ClassDef glyph="amacron" class="1"/>
+      <ClassDef glyph="ampersand" class="1"/>
       <ClassDef glyph="aogonek" class="1"/>
+      <ClassDef glyph="aring" class="1"/>
+      <ClassDef glyph="asciicircum" class="1"/>
+      <ClassDef glyph="asciitilde" class="1"/>
+      <ClassDef glyph="asterisk" class="1"/>
+      <ClassDef glyph="at" class="1"/>
+      <ClassDef glyph="atilde" class="1"/>
       <ClassDef glyph="b" class="1"/>
+      <ClassDef glyph="backslash" class="1"/>
+      <ClassDef glyph="bar" class="1"/>
+      <ClassDef glyph="braceleft" class="1"/>
+      <ClassDef glyph="braceright" class="1"/>
+      <ClassDef glyph="bracketleft" class="1"/>
+      <ClassDef glyph="bracketright" class="1"/>
+      <ClassDef glyph="breve" class="1"/>
+      <ClassDef glyph="brokenbar" class="1"/>
       <ClassDef glyph="c" class="1"/>
+      <ClassDef glyph="cacute" class="1"/>
+      <ClassDef glyph="caron" class="1"/>
+      <ClassDef glyph="ccaron" class="1"/>
+      <ClassDef glyph="ccedilla" class="1"/>
+      <ClassDef glyph="ccircumflex" class="1"/>
+      <ClassDef glyph="cdotaccent" class="1"/>
+      <ClassDef glyph="cedilla" class="1"/>
+      <ClassDef glyph="circumflex" class="1"/>
+      <ClassDef glyph="colon" class="1"/>
+      <ClassDef glyph="comma" class="1"/>
+      <ClassDef glyph="copyright" class="1"/>
       <ClassDef glyph="d" class="1"/>
+      <ClassDef glyph="dagger" class="1"/>
+      <ClassDef glyph="daggerdbl" class="1"/>
+      <ClassDef glyph="dcaron" class="1"/>
       <ClassDef glyph="dcroat" class="1"/>
+      <ClassDef glyph="dieresis" class="1"/>
+      <ClassDef glyph="dotaccent" class="1"/>
       <ClassDef glyph="dotlessi" class="1"/>
       <ClassDef glyph="dotlessj" class="1"/>
       <ClassDef glyph="e" class="1"/>
+      <ClassDef glyph="eacute" class="1"/>
+      <ClassDef glyph="ebreve" class="1"/>
+      <ClassDef glyph="ecaron" class="1"/>
+      <ClassDef glyph="ecircumflex" class="1"/>
+      <ClassDef glyph="edieresis" class="1"/>
+      <ClassDef glyph="edotaccent" class="1"/>
+      <ClassDef glyph="egrave" class="1"/>
+      <ClassDef glyph="ellipsis" class="1"/>
+      <ClassDef glyph="emacron" class="1"/>
+      <ClassDef glyph="emdash" class="1"/>
+      <ClassDef glyph="endash" class="1"/>
       <ClassDef glyph="eng" class="1"/>
       <ClassDef glyph="eogonek" class="1"/>
+      <ClassDef glyph="eth" class="1"/>
+      <ClassDef glyph="exclam" class="1"/>
+      <ClassDef glyph="exclamdown" class="1"/>
       <ClassDef glyph="f" class="1"/>
-      <ClassDef glyph="f_b" class="1"/>
+      <ClassDef glyph="f_b" class="2"/>
       <ClassDef glyph="f_f" class="2"/>
-      <ClassDef glyph="f_f_b" class="1"/>
+      <ClassDef glyph="f_f_b" class="2"/>
       <ClassDef glyph="f_f_h" class="2"/>
       <ClassDef glyph="f_f_k" class="2"/>
       <ClassDef glyph="f_f_l" class="2"/>
       <ClassDef glyph="f_h" class="2"/>
       <ClassDef glyph="f_k" class="2"/>
       <ClassDef glyph="f_l" class="2"/>
-      <ClassDef glyph="four.dnom" class="4"/>
-      <ClassDef glyph="fraction" class="4"/>
       <ClassDef glyph="g" class="1"/>
+      <ClassDef glyph="gbreve" class="1"/>
+      <ClassDef glyph="gcircumflex" class="1"/>
+      <ClassDef glyph="gcommaaccent" class="1"/>
+      <ClassDef glyph="gdotaccent" class="1"/>
+      <ClassDef glyph="germandbls" class="1"/>
+      <ClassDef glyph="grave" class="1"/>
       <ClassDef glyph="gravecomb" class="3"/>
       <ClassDef glyph="gravecomb.case" class="3"/>
+      <ClassDef glyph="guillemotleft" class="1"/>
+      <ClassDef glyph="guillemotright" class="1"/>
+      <ClassDef glyph="guilsinglleft" class="1"/>
+      <ClassDef glyph="guilsinglright" class="1"/>
       <ClassDef glyph="h" class="1"/>
       <ClassDef glyph="hbar" class="1"/>
+      <ClassDef glyph="hcircumflex" class="1"/>
+      <ClassDef glyph="hungarumlaut" class="1"/>
+      <ClassDef glyph="hyphen" class="1"/>
       <ClassDef glyph="i" class="1"/>
-      <ClassDef glyph="iacute_j.NLD" class="2"/>
-      <ClassDef glyph="ij" class="4"/>
+      <ClassDef glyph="iacute" class="1"/>
+      <ClassDef glyph="iacute_j.NLD" class="1"/>
+      <ClassDef glyph="ibreve" class="1"/>
+      <ClassDef glyph="icircumflex" class="1"/>
+      <ClassDef glyph="idieresis" class="1"/>
+      <ClassDef glyph="igrave" class="1"/>
+      <ClassDef glyph="ij" class="1"/>
+      <ClassDef glyph="imacron" class="1"/>
+      <ClassDef glyph="iogonek" class="1"/>
+      <ClassDef glyph="itilde" class="1"/>
       <ClassDef glyph="j" class="1"/>
+      <ClassDef glyph="jacute" class="1"/>
+      <ClassDef glyph="jcircumflex" class="1"/>
       <ClassDef glyph="k" class="1"/>
+      <ClassDef glyph="kcommaaccent" class="1"/>
       <ClassDef glyph="l" class="1"/>
+      <ClassDef glyph="lacute" class="1"/>
+      <ClassDef glyph="lcaron" class="1"/>
+      <ClassDef glyph="lcommaaccent" class="1"/>
+      <ClassDef glyph="ldot" class="1"/>
       <ClassDef glyph="lslash" class="1"/>
       <ClassDef glyph="m" class="1"/>
+      <ClassDef glyph="macron" class="1"/>
       <ClassDef glyph="n" class="1"/>
+      <ClassDef glyph="nacute" class="1"/>
+      <ClassDef glyph="napostrophe" class="1"/>
+      <ClassDef glyph="ncaron" class="1"/>
+      <ClassDef glyph="ncommaaccent" class="1"/>
+      <ClassDef glyph="ntilde" class="1"/>
+      <ClassDef glyph="numbersign" class="1"/>
       <ClassDef glyph="o" class="1"/>
+      <ClassDef glyph="oacute" class="1"/>
+      <ClassDef glyph="obreve" class="1"/>
+      <ClassDef glyph="ocircumflex" class="1"/>
+      <ClassDef glyph="odieresis" class="1"/>
       <ClassDef glyph="oe" class="1"/>
-      <ClassDef glyph="one.numr" class="4"/>
-      <ClassDef glyph="onehalf" class="2"/>
-      <ClassDef glyph="onequarter" class="2"/>
+      <ClassDef glyph="ogonek" class="1"/>
+      <ClassDef glyph="ograve" class="1"/>
+      <ClassDef glyph="ohungarumlaut" class="1"/>
+      <ClassDef glyph="omacron" class="1"/>
+      <ClassDef glyph="ordfeminine" class="1"/>
       <ClassDef glyph="ordmasculine" class="1"/>
       <ClassDef glyph="oslash" class="1"/>
+      <ClassDef glyph="otilde" class="1"/>
       <ClassDef glyph="p" class="1"/>
-      <ClassDef glyph="percent" class="2"/>
-      <ClassDef glyph="perthousand" class="2"/>
+      <ClassDef glyph="paragraph" class="1"/>
+      <ClassDef glyph="parenleft" class="1"/>
+      <ClassDef glyph="parenright" class="1"/>
+      <ClassDef glyph="period" class="1"/>
+      <ClassDef glyph="periodcentered" class="1"/>
       <ClassDef glyph="q" class="1"/>
+      <ClassDef glyph="question" class="1"/>
+      <ClassDef glyph="questiondown" class="1"/>
+      <ClassDef glyph="quotedbl" class="1"/>
+      <ClassDef glyph="quotedblbase" class="1"/>
+      <ClassDef glyph="quotedblleft" class="1"/>
+      <ClassDef glyph="quotedblright" class="1"/>
+      <ClassDef glyph="quoteleft" class="1"/>
+      <ClassDef glyph="quoteright" class="1"/>
+      <ClassDef glyph="quotesinglbase" class="1"/>
+      <ClassDef glyph="quotesingle" class="1"/>
       <ClassDef glyph="r" class="1"/>
+      <ClassDef glyph="racute" class="1"/>
+      <ClassDef glyph="rcaron" class="1"/>
+      <ClassDef glyph="rcommaaccent" class="1"/>
+      <ClassDef glyph="registered" class="1"/>
+      <ClassDef glyph="ring" class="1"/>
       <ClassDef glyph="s" class="1"/>
-      <ClassDef glyph="slash" class="4"/>
+      <ClassDef glyph="sacute" class="1"/>
+      <ClassDef glyph="scaron" class="1"/>
+      <ClassDef glyph="scedilla" class="1"/>
+      <ClassDef glyph="scircumflex" class="1"/>
+      <ClassDef glyph="scommaaccent" class="1"/>
+      <ClassDef glyph="section" class="1"/>
+      <ClassDef glyph="semicolon" class="1"/>
+      <ClassDef glyph="slash" class="1"/>
       <ClassDef glyph="t" class="1"/>
       <ClassDef glyph="tbar" class="1"/>
+      <ClassDef glyph="tcaron" class="1"/>
       <ClassDef glyph="thorn" class="1"/>
-      <ClassDef glyph="three.numr" class="4"/>
-      <ClassDef glyph="threequarters" class="2"/>
+      <ClassDef glyph="tilde" class="1"/>
       <ClassDef glyph="tildecomb" class="3"/>
       <ClassDef glyph="tildecomb.case" class="3"/>
-      <ClassDef glyph="two.dnom" class="4"/>
+      <ClassDef glyph="trademark" class="1"/>
       <ClassDef glyph="u" class="1"/>
+      <ClassDef glyph="uacute" class="1"/>
+      <ClassDef glyph="ubreve" class="1"/>
+      <ClassDef glyph="ucircumflex" class="1"/>
+      <ClassDef glyph="udieresis" class="1"/>
+      <ClassDef glyph="ugrave" class="1"/>
+      <ClassDef glyph="uhungarumlaut" class="1"/>
+      <ClassDef glyph="umacron" class="1"/>
+      <ClassDef glyph="underscore" class="1"/>
+      <ClassDef glyph="uni00AD" class="1"/>
+      <ClassDef glyph="uni0162" class="1"/>
+      <ClassDef glyph="uni0163" class="1"/>
+      <ClassDef glyph="uni018F" class="1"/>
+      <ClassDef glyph="uni01FC" class="1"/>
+      <ClassDef glyph="uni01FD" class="1"/>
+      <ClassDef glyph="uni021A" class="1"/>
+      <ClassDef glyph="uni021B" class="1"/>
       <ClassDef glyph="uni0259" class="1"/>
+      <ClassDef glyph="uni02C9" class="1"/>
       <ClassDef glyph="uni0302" class="3"/>
       <ClassDef glyph="uni0302.case" class="3"/>
       <ClassDef glyph="uni0304" class="3"/>
@@ -126,14 +345,27 @@
       <ClassDef glyph="uni030C.case" class="3"/>
       <ClassDef glyph="uni0326" class="3"/>
       <ClassDef glyph="uni0327" class="3"/>
-      <ClassDef glyph="uni2215" class="4"/>
+      <ClassDef glyph="uni0328" class="3"/>
+      <ClassDef glyph="uni1E9E" class="1"/>
       <ClassDef glyph="uogonek" class="1"/>
+      <ClassDef glyph="uring" class="1"/>
+      <ClassDef glyph="utilde" class="1"/>
       <ClassDef glyph="v" class="1"/>
       <ClassDef glyph="w" class="1"/>
+      <ClassDef glyph="wacute" class="1"/>
+      <ClassDef glyph="wcircumflex" class="1"/>
+      <ClassDef glyph="wdieresis" class="1"/>
+      <ClassDef glyph="wgrave" class="1"/>
       <ClassDef glyph="x" class="1"/>
       <ClassDef glyph="y" class="1"/>
+      <ClassDef glyph="yacute" class="1"/>
+      <ClassDef glyph="ycircumflex" class="1"/>
+      <ClassDef glyph="ydieresis" class="1"/>
+      <ClassDef glyph="ygrave" class="1"/>
       <ClassDef glyph="z" class="1"/>
-      <ClassDef glyph="zero" class="4"/>
+      <ClassDef glyph="zacute" class="1"/>
+      <ClassDef glyph="zcaron" class="1"/>
+      <ClassDef glyph="zdotaccent" class="1"/>
     </GlyphClassDef>
   </GDEF>
 
