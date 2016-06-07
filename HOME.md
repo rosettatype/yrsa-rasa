@@ -11,7 +11,7 @@ permalink: /
 
 Yrsa is the name of the Latin-only type family. Rasa is the name of the Gujarati type family. Both type families are intended for continuous reading on the web (longer articles in online news, magazines, blogs). In Yrsa, a special consideration was given to Central and East European languages and proper shaping of their accents. Rasa supports a wide array of basic and compound syllables used in Gujarati. In terms of glyphs included Rasa is a superset of Yrsa, it includes the complete Latin.
 
-What makes Yrsa & Rasa project different is the design approach. It is a deliberate experiment in remixing existing typefaces to produce a new one. The Latin part is based on [Merriweather](http://sorkintype.com/fonts.html#mw) by Eben Sorkin. The Gujarati is based on David Březina’s [Skolar Gujarati](https://www.rosettatype.com/Skolar#gujarati).
+What makes the Yrsa & Rasa project different is the design approach. It is a deliberate experiment in remixing existing typefaces to produce a new one. The Latin part is based on [Merriweather](http://sorkintype.com/fonts.html#mw) by Eben Sorkin. The Gujarati is based on David Březina’s [Skolar Gujarati](https://www.rosettatype.com/Skolar#gujarati).
 
 The project has been documented in several articles (see links at the bottom).
 
