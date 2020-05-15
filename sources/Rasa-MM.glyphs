@@ -1,11 +1,12 @@
 {
-.appVersion = "1208";
+.appVersion = "1286";
 DisplayStrings = (
 "$/euro \012/euro/cedi/guarani/colonsign \01210/euro 10/cedi 10/guarani 10/colonsign \012$/guarani/cedi/colonsign \01210$10/guarani 10/cedi 10/colonsign 10¢\01210/euro 10/cedi 10/guarani 10/colonsign \012\012/euro/dong/ruble/peso/naira ¥/kip/franc £/lira/rupeeIndian/won \01210/euro 10£10/lira \01210/peseta s10/ruble 10/peso 10/naira 10/won \01210£10/kip 10/franc 1010/dong 10/won $/manat/cedi/guarani \01210$10/manat 10/cedi 10/guarani \012\012$/euro ¢£/florin ¥/ruble/rupeeIndian/cedi/colonsign/dong/franc/guarani/liraTurkish/kip/lira/manat/naira/peseta/peso/won \012\0121/rupeeIndian 1¥1/ruble 1/franc 1/kip 1/manat 1/naira 1/peso \012/cedi/colonsign/dong/franc/guarani/kip/lira/manat/naira/peseta/peso/won \012/colonsign.tf/franc.tf/dong.tf/cedi.tf/guarani.tf/lira.tf/naira.tf/kip.tf/peso.tf/manat.tf/won.tf/peseta.tf \012/dollar.tf/euro.tf/cent.tf/sterling.tf/yen.tf/liraTurkish.tf/ruble.tf/rupeeIndian.tf \012$/euro ¢£¥/liraTurkish/ruble/rupeeIndian \012Hø/zero.zero 0H/zero.lnum.zero/zero.tf \012H123456789\012\012[(/leftanglebracket-math 10<10/rightanglebracket-math )] -ºN/numero 710\0120+0/commercialMinusSign 07.1÷10%10\012\01212/one.tf/two.tf/figurespace H/punctuationspace H/hairspace 0/zerowidthspace 0/strokeshortcomb 0-\012\01201234567890\012/zerosuperior ¹²³/foursuperior/fivesuperior/sixsuperior/sevensuperior/eightsuperior/ninesuperior/zerosuperior \012H/zerosuperior H¹H²H³H/foursuperior H/fivesuperior H/sixsuperior H/sevensuperior H/eightsuperior H/ninesuperior H ³¹/zerosuperior/fivesuperior/sixsuperior/eightsuperior/sevensuperior/ninesuperior ²\012H/zerosuperior ¹²³/foursuperior/fivesuperior/sixsuperior/sevensuperior/eightsuperior/ninesuperior \012H/zeroinferior/oneinferior/twoinferior/threeinferior/fourinferior/fiveinferior/sixinferior/seveninferior/eightinferior/nineinferior \012H/one.numr/two.numr/three.numr/four.numr/five.numr/six.numr/seven.numr/eight.numr/nine.numr/zero.numr \012H/one.dnom/two.dnom/three.dnom/four.dnom/five.dnom/six.dnom/seven.dnom/eight.dnom/nine.dnom/zero.dnom \012H½H¼H¾\012ØOH/emptyset/Delta/ohm/mu/pi µ/bulletoperator/radical/infinity/integral/partialdiff/literSign \012{a+b}÷4=/emptyset \012\012/numero 01234567890%\012E/zero.lnum/one.lnum/two.lnum/three.lnum/four.lnum/five.lnum/six.lnum/seven.lnum/eight.lnum/nine.lnum/zero.lnum.zero/percent.case \012OHH/zero.lnum H/one.lnum H/two.lnum H/three.lnum H/four.lnum H\012H/five.lnum H/six.lnum H/seven.lnum H/eight.lnum H/nine.lnum H\012Hlavná 30425\012HLAVNÁ /three.lnum/zero.lnum/four.lnum/two.lnum/five.lnum  \012",
 "o/f_f na \012ofina\012o/f_i na\012o/f_l na\012o/f_f_i na\012H/minute H/second HO\012H/primemod H/doubleprimemod H\012\012OØ/Oslashacute Ó\012oø/oslashacute ó\012\012o-o/endash o/emdash o·o/bullet o\012o/guilsinglleft o/guilsinglright o«o»\012O/hyphen.case O/endash.case O/emdash.case O/periodcentered.case O/bullet.case O\012O/guilsinglleft.case O/guilsinglright.case O/guillemetleft.case O/guillemetright.case \012o@od//p, O/at.case O//O/backslash O\012[boq][H](H){H}\012/bracketleft.case H/bracketright.case/parenleft.case H/parenright.case/braceleft.case H/braceright.case",
 "ùú /hungarumlautcomb  /uhungarumlaut  /dblgravecomb  \012ÙÚ /hungarumlautcomb.case  /Uhungarumlaut  /dblgravecomb.case  /Adblgrave À/Edblgrave/Idblgrave/Odblgrave/Rdblgrave/Udblgrave \012/brevecomb  /abreve  /brevecomb.case  /Abreve  /breveinvertedcomb   /breveinvertedcomb.case  /Ainvertedbreve/Einvertedbreve/Iinvertedbreve/Oinvertedbreve/Rinvertedbreve/Uinvertedbreve Ê/Ccircumflex/Ccaron \012/dieresismacroncomb    /dieresismacroncomb.case  Ä/Amacron/Odieresismacron ö/omacron/odieresismacron  /tildemacroncomb   /tildemacroncomb.case   /tildecomb.case  Õ/Otildemacron  /tildecomb  õ/otildemacron \012/dotaccentmacroncomb   /dotaccentmacroncomb.case   /dotaccentcomb.case  /Odotaccentmacron/Cdotaccent  /dotaccentcomb  /odotaccentmacron/cdotaccent/Cdotaccent  /commaturnedabovecomb.case   /commaturnedabovecomb  /gcommaaccent O\012/dotaccentcomb.case/Idotaccent I/Idotbelow A/Adotbelow/commaaccentcomb/Lcommaaccent/dotaccentcomb/idotaccent i/idotbelow a/adotbelow/acircumflexdotbelow/abrevedotbelow/edotbelow/ecircumflexdotbelow y/ydotbelow/udotbelow/uhorndotbelow/odotbelow/ohorndotbelow/ocircumflexdotbelow/commaaccentcomb/lcommaaccent  /dotbelowcomb   /dotbelowcomb.case   /dieresisbelowcomb  /dieresiscomb  ä /brevebelowcomb  /brevecomb   /macronbelowcomb/amacron  /macroncomb  \012/dieresisbelowcomb.case  Ä /dieresiscomb.case  /brevebelowcomb.case/Abreve  /brevecomb.case  /macronbelowcomb.case  /Amacron  /macroncomb.case \012/aogonek/oogonek/eogonek/iogonek/uogonek \012/Aogonek/Oogonek/Eogonek/Iogonek/Uogonek \012H/Ccaron/Ohorn/ohorn/Uhorn/Ohorn H /horncomb.case  \012nc/ccaron/ohorn n/uhorn/ohorn n/horncomb   /hookabovecomb  /ohookabove/ocircumflextilde/ocircumflexhookabove  /circumflexcomb_hookabovecomb   /brevecomb_hookabovecomb  /abrevehookabove \012 /circumflexcomb_acutecomb  /ocircumflexacute ô /circumflexcomb_gravecomb  /ocircumflexgrave  /circumflexcomb_tildecomb  /ocircumflextilde  /brevecomb_gravecomb  /abrevegrave  /brevecomb_acutecomb  /abreveacute/ocircumflexacute  /brevecomb_tildecomb  /abrevetilde/ocircumflextilde/abreve \012/acircumflexacute/acircumflexgrave/acircumflextilde/ecircumflexacute/ecircumflexgrave/ecircumflextilde/ahookabove/acircumflexhookabove/ehookabove/ecircumflexhookabove/ihookabove/ohornhookabove/uhookabove/uhornhookabove/yhookabove \012/uhorntilde/uhorngrave/uhornacute/ohorn/ohorntilde/ohorngrave/ohornacute/ytilde/etilde/ymacron u/uinvertedbreve/udblgrave û/ubreve/rdblgrave r/rinvertedbreve o/odblgrave/oinvertedbreve/iinvertedbreve/idblgrave í/einvertedbreve/edblgrave/ainvertedbreve/adblgrave/aringacute/gcaron \012/dzcaron/lj/nj n/kgreenladic i\012/circumflexcomb_acutecomb.case  /Acircumflexacute ÂÁ /circumflexcomb_gravecomb.case  /Acircumflexgrave  /circumflexcomb_tildecomb.case  /Acircumflextilde  /hookabovecomb.case  /ohookabove/Ohookabove  /circumflexcomb_hookabovecomb.case  /Ocircumflexhookabove/ocircumflexhookabove  /brevecomb_hookabovecomb.case  /Abrevehookabove/Abrevetilde Ã /brevecomb_acutecomb.case  /Abreveacute/Acircumflexacute/Abreve  /brevecomb_gravecomb.case  /Abrevegrave  /brevecomb_tildecomb.case  \012/Ahookabove/Acircumflexhookabove/Ehookabove/Ecircumflexacute/Ecircumflexgrave/Ecircumflexhookabove/Ecircumflextilde/Ihookabove/Ocircumflexacute/Ocircumflexgrave/Ocircumflextilde/Ohornhookabove/Uhookabove/Uhornhookabove/Yhookabove/Acircumflexdotbelow/Abrevedotbelow E/Edotbelow/Ecircumflexdotbelow/Etilde/Odotbelow/Ocircumflexdotbelow/Ohorn/Ohornacute/Ohorndotbelow/Udotbelow/Ohorngrave/Ohorntilde/Uhornacute/Uhorndotbelow/Uhorngrave/Uhorntilde/Ytilde/Ydotbelow \012n/ringhalfright n/ringhalfleft nn",
 "/zero.tf.zero/zero.tf/one.tf/two.tf/three.tf/four.tf/five.tf/six.tf/seven.tf/eight.tf/nine.tf \012/zero.lnum.tf.zero/zero.lnum.tf/one.lnum.tf/two.lnum.tf/three.lnum.tf/four.lnum.tf/five.lnum.tf/six.lnum.tf/seven.lnum.tf/eight.lnum.tf/nine.lnum.tf",
-"|=|/notequal |¬|/lozenge |/dagger |/daggerdbl |'|\"|\012|+|/minus |~|/approxequal |±|÷|×|<|>|/lessequal |/greaterequal |\012|#|/.notdef |/quoteright |H/quoteleft H/quotesinglbase H|/quotedblleft |/quotedblright |/quotedblbase |\012|/trademark |ª|º|?|!|¿|¡|@|¶|k|*|§Ss|\012asterisk*\012ask@buziaczek.com\012¿Que? \012|.|/bulletoperator |·|/bullet |.:;/ellipsis |^|/guilsinglleft |/guilsinglright |«|»|\012\012H(H)H[H]H{H}H/backslash H//H\012([{|}])"
+"|=|/notequal |¬|/lozenge |/dagger |/daggerdbl |'|\"|\012|+|/minus |~|/approxequal |±|÷|×|<|>|/lessequal |/greaterequal |\012|#|/.notdef |/quoteright |H/quoteleft H/quotesinglbase H|/quotedblleft |/quotedblright |/quotedblbase |\012|/trademark |ª|º|?|!|¿|¡|@|¶|k|*|§Ss|\012asterisk*\012ask@buziaczek.com\012¿Que? \012|.|/bulletoperator |·|/bullet |.:;/ellipsis |^|/guilsinglleft |/guilsinglright |«|»|\012\012H(H)H[H]H{H}H/backslash H//H\012([{|}])",
+IHNDOOHOLOHC
 );
 customParameters = (
 {
@@ -4800,7 +4801,7 @@ width = 1762;
 },
 {
 glyphname = I;
-lastChange = "2016-03-11 11:43:14 +0000";
+lastChange = "2020-04-22 16:34:30 +0000";
 layers = (
 {
 anchors = (
@@ -4845,7 +4846,7 @@ nodes = (
 );
 }
 );
-width = 303;
+width = 302;
 },
 {
 anchors = (
@@ -4890,7 +4891,7 @@ nodes = (
 );
 }
 );
-width = 350;
+width = 349;
 }
 );
 leftKerningGroup = H;
