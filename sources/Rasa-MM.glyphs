@@ -1,5 +1,5 @@
 {
-.appVersion = "1268";
+.appVersion = "1286";
 DisplayStrings = (
 "$/euro \012/euro/cedi/guarani/colonsign \01210/euro 10/cedi 10/guarani 10/colonsign \012$/guarani/cedi/colonsign \01210$10/guarani 10/cedi 10/colonsign 10¢\01210/euro 10/cedi 10/guarani 10/colonsign \012\012/euro/dong/ruble/peso/naira ¥/kip/franc £/lira/rupeeIndian/won \01210/euro 10£10/lira \01210/peseta s10/ruble 10/peso 10/naira 10/won \01210£10/kip 10/franc 1010/dong 10/won $/manat/cedi/guarani \01210$10/manat 10/cedi 10/guarani \012\012$/euro ¢£/florin ¥/ruble/rupeeIndian/cedi/colonsign/dong/franc/guarani/liraTurkish/kip/lira/manat/naira/peseta/peso/won \012\0121/rupeeIndian 1¥1/ruble 1/franc 1/kip 1/manat 1/naira 1/peso \012/cedi/colonsign/dong/franc/guarani/kip/lira/manat/naira/peseta/peso/won \012/zero.zero/colonsign.tf/zero.zero/franc.tf/zero.zero/dong.tf/zero.zero/cedi.tf/zero.zero/guarani.tf/zero.zero/lira.tf/zero.zero/naira.tf/zero.zero/kip.tf/zero.zero/peso.tf/zero.zero/manat.tf/zero.zero/won.tf/zero.zero/peseta.tf/zero.zero \012/dollar.tf/euro.tf/cent.tf/sterling.tf/yen.tf/liraTurkish.tf/ruble.tf/rupeeIndian.tf \012$/euro ¢£¥/liraTurkish/ruble/rupeeIndian \012Hø/zero.zero 0H/zero.lnum.zero/zero.tf \012H123456789\012\012[(/leftanglebracket-math 10<10/rightanglebracket-math )] -ºN/numero 710\0120+0/commercialMinusSign 07.1÷10%10\012\01212/one.tf/two.tf/figurespace H/punctuationspace H/hairspace 0/zerowidthspace 0/strokeshortcomb 0-\012\01201234567890\012/zerosuperior ¹²³/foursuperior/fivesuperior/sixsuperior/sevensuperior/eightsuperior/ninesuperior/zerosuperior \012H/zerosuperior H¹H²H³H/foursuperior H/fivesuperior H/sixsuperior H/sevensuperior H/eightsuperior H/ninesuperior H ³¹/zerosuperior/fivesuperior/sixsuperior/eightsuperior/sevensuperior/ninesuperior ²\012H/zerosuperior ¹²³/foursuperior/fivesuperior/sixsuperior/sevensuperior/eightsuperior/ninesuperior \012H/zeroinferior/oneinferior/twoinferior/threeinferior/fourinferior/fiveinferior/sixinferior/seveninferior/eightinferior/nineinferior \012H/one.numr/two.numr/three.numr/four.numr/five.numr/six.numr/seven.numr/eight.numr/nine.numr/zero.numr \012H/one.dnom/two.dnom/three.dnom/four.dnom/five.dnom/six.dnom/seven.dnom/eight.dnom/nine.dnom/zero.dnom \012H½H¼H¾\012ØOH/emptyset/Delta/ohm/mu/pi µ/bulletoperator/radical/infinity/integral/partialdiff/literSign \012{a+b}÷4=/emptyset \012\012/numero 01234567890%\012E/zero.lnum/one.lnum/two.lnum/three.lnum/four.lnum/five.lnum/six.lnum/seven.lnum/eight.lnum/nine.lnum/zero.lnum.zero/percent.case \012OHH/zero.lnum H/one.lnum H/two.lnum H/three.lnum H/four.lnum H\012H/five.lnum H/six.lnum H/seven.lnum H/eight.lnum H/nine.lnum H\012Hlavná 30425\012HLAVNÁ /three.lnum/zero.lnum/four.lnum/two.lnum/five.lnum  \012",
 "o/f_f na \012ofina\012o/f_i na\012o/f_l na\012o/f_f_i na\012H/minute H/second HO\012H/primemod H/doubleprimemod H\012\012OØ/Oslashacute Ó\012oø/oslashacute ó\012\012o-o/endash o/emdash o·o/bullet o\012o/guilsinglleft o/guilsinglright o«o»\012O/hyphen.case O/endash.case O/emdash.case O/periodcentered.case O/bullet.case O\012O/guilsinglleft.case O/guilsinglright.case O/guillemetleft.case O/guillemetright.case \012o@od//p, O/at.case O//O/backslash O\012[boq][H](H){H}\012/bracketleft.case H/bracketright.case/parenleft.case H/parenright.case/braceleft.case H/braceright.case",
@@ -1008,13 +1008,13 @@ position = "{67, -206}";
 position = "{201, 3}";
 },
 {
-position = "{220, 493}";
+position = "{198, 459}";
 },
 {
 position = "{239, 572}";
 },
 {
-position = "{193, 676}";
+position = "{305, 634}";
 }
 );
 horizontalStems = (
@@ -1075,7 +1075,7 @@ value = -40;
 descender = -204;
 guideLines = (
 {
-position = "{264, 580}";
+position = "{264, 668}";
 },
 {
 position = "{248, -76}";
@@ -1084,7 +1084,7 @@ position = "{248, -76}";
 position = "{218, 6}";
 },
 {
-position = "{234, 498}";
+position = "{234, 464}";
 }
 );
 horizontalStems = (
@@ -41428,7 +41428,7 @@ width = 0;
 },
 {
 glyphname = hungarumlautcomb;
-lastChange = "2020-05-31 15:07:49 +0000";
+lastChange = "2020-06-17 12:57:56 +0000";
 layers = (
 {
 anchors = (
@@ -41442,23 +41442,23 @@ paths = (
 {
 closed = 1;
 nodes = (
-"-76 470 LINE",
-"-39 504 OFFCURVE",
-"21 575 OFFCURVE",
-"42 618 CURVE",
-"-7 647 LINE",
-"-97 487 LINE"
+"-76 457 LINE",
+"-39 491 OFFCURVE",
+"21 562 OFFCURVE",
+"42 605 CURVE",
+"-7 634 LINE",
+"-97 474 LINE"
 );
 },
 {
 closed = 1;
 nodes = (
-"55 470 LINE",
-"94 502 OFFCURVE",
-"159 569 OFFCURVE",
-"183 611 CURVE",
-"136 644 LINE",
-"35 489 LINE"
+"55 457 LINE",
+"94 489 OFFCURVE",
+"159 556 OFFCURVE",
+"183 598 CURVE",
+"136 631 LINE",
+"35 476 LINE"
 );
 }
 );
@@ -41476,23 +41476,23 @@ paths = (
 {
 closed = 1;
 nodes = (
-"-83 472 LINE",
-"-36 510 OFFCURVE",
-"19 577 OFFCURVE",
-"48 626 CURVE",
-"-32 672 LINE",
-"-124 504 LINE"
+"-83 464 LINE",
+"-36 502 OFFCURVE",
+"19 569 OFFCURVE",
+"48 618 CURVE",
+"-32 664 LINE",
+"-124 496 LINE"
 );
 },
 {
 closed = 1;
 nodes = (
-"75 472 LINE",
-"123 508 OFFCURVE",
-"182 573 OFFCURVE",
-"213 621 CURVE",
-"136 670 LINE",
-"35 506 LINE"
+"75 464 LINE",
+"123 500 OFFCURVE",
+"182 565 OFFCURVE",
+"213 613 CURVE",
+"136 662 LINE",
+"35 498 LINE"
 );
 }
 );
@@ -189219,7 +189219,7 @@ unicode = 0309;
 {
 color = 11;
 glyphname = dblgravecomb;
-lastChange = "2020-06-01 15:20:08 +0000";
+lastChange = "2020-06-17 16:30:15 +0000";
 layers = (
 {
 anchors = (
@@ -189233,23 +189233,23 @@ paths = (
 {
 closed = 1;
 nodes = (
-"-7 647 LINE",
-"-56 618 LINE",
-"-35 575 OFFCURVE",
-"25 504 OFFCURVE",
-"62 470 CURVE",
-"83 487 LINE"
+"-7 636 LINE",
+"-56 607 LINE",
+"-35 564 OFFCURVE",
+"25 493 OFFCURVE",
+"62 459 CURVE",
+"83 476 LINE"
 );
 },
 {
 closed = 1;
 nodes = (
-"-150 644 LINE",
-"-197 611 LINE",
-"-173 569 OFFCURVE",
-"-108 502 OFFCURVE",
-"-69 470 CURVE",
-"-49 489 LINE"
+"-150 633 LINE",
+"-197 600 LINE",
+"-173 558 OFFCURVE",
+"-108 491 OFFCURVE",
+"-69 459 CURVE",
+"-49 478 LINE"
 );
 }
 );
@@ -189299,23 +189299,23 @@ paths = (
 {
 closed = 1;
 nodes = (
-"31 672 LINE",
-"-49 626 LINE",
-"-20 577 OFFCURVE",
-"35 510 OFFCURVE",
-"82 472 CURVE",
-"123 504 LINE"
+"31 664 LINE",
+"-49 618 LINE",
+"-20 569 OFFCURVE",
+"35 502 OFFCURVE",
+"82 464 CURVE",
+"123 496 LINE"
 );
 },
 {
 closed = 1;
 nodes = (
-"-137 670 LINE",
-"-214 621 LINE",
-"-183 573 OFFCURVE",
-"-124 508 OFFCURVE",
-"-76 472 CURVE",
-"-36 506 LINE"
+"-137 662 LINE",
+"-214 613 LINE",
+"-183 565 OFFCURVE",
+"-124 500 OFFCURVE",
+"-76 464 CURVE",
+"-36 498 LINE"
 );
 }
 );
