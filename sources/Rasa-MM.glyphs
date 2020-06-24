@@ -35620,13 +35620,13 @@ public.markColor = "0,0.67,0.91,1";
 },
 {
 glyphname = firsttonechinese;
-lastChange = "2020-05-31 15:04:44 +0000";
+lastChange = "2020-06-24 16:54:35 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
-position = "{182, 618}";
+position = "{182, 413}";
 }
 );
 layerId = "DAAEA780-4710-4479-B303-5C05B40621B2";
@@ -35634,10 +35634,10 @@ paths = (
 {
 closed = 1;
 nodes = (
-"64 502 LINE",
-"299 502 LINE",
-"299 548 LINE",
-"64 548 LINE"
+"65 495 LINE",
+"299 495 LINE",
+"299 541 LINE",
+"65 541 LINE"
 );
 }
 );
@@ -35647,7 +35647,7 @@ width = 364;
 anchors = (
 {
 name = _top;
-position = "{182, 622}";
+position = "{182, 423}";
 }
 );
 layerId = "925CB40E-795E-477B-BAE7-1EE7D58841B5";
@@ -35655,10 +35655,10 @@ paths = (
 {
 closed = 1;
 nodes = (
-"48 498 LINE",
-"315 498 LINE",
-"315 573 LINE",
-"48 573 LINE"
+"48 502 LINE",
+"315 502 LINE",
+"315 577 LINE",
+"48 577 LINE"
 );
 }
 );
@@ -196257,7 +196257,7 @@ width = 0;
 {
 color = 11;
 glyphname = carondotaccentcomb;
-lastChange = "2020-06-01 15:24:29 +0000";
+lastChange = "2020-06-23 21:20:34 +0000";
 layers = (
 {
 anchors = (
@@ -196316,6 +196316,8 @@ nodes = (
 {
 closed = 1;
 nodes = (
+"31 629 OFFCURVE",
+"50 648 OFFCURVE",
 "50 674 CURVE SMOOTH",
 "50 700 OFFCURVE",
 "31 719 OFFCURVE",
@@ -196325,9 +196327,7 @@ nodes = (
 "-40 674 CURVE SMOOTH",
 "-40 648 OFFCURVE",
 "-21 629 OFFCURVE",
-"5 629 CURVE SMOOTH",
-"31 629 OFFCURVE",
-"50 648 OFFCURVE"
+"5 629 CURVE SMOOTH"
 );
 }
 );
@@ -196345,30 +196345,30 @@ paths = (
 {
 closed = 1;
 nodes = (
-"120 659 LINE",
-"11 567 LINE",
-"-106 658 LINE",
-"-148 619 LINE",
-"-28 472 LINE",
-"51 479 LINE",
-"160 621 LINE"
+"120 669 LINE",
+"11 577 LINE",
+"-106 668 LINE",
+"-148 629 LINE",
+"-28 482 LINE",
+"51 489 LINE",
+"160 631 LINE"
 );
 },
 {
 closed = 1;
 nodes = (
-"76 718 CURVE SMOOTH",
-"76 758 OFFCURVE",
-"48 783 OFFCURVE",
-"5 783 CURVE SMOOTH",
-"-39 783 OFFCURVE",
-"-67 758 OFFCURVE",
-"-67 718 CURVE SMOOTH",
-"-67 678 OFFCURVE",
-"-39 652 OFFCURVE",
-"5 652 CURVE SMOOTH",
-"48 652 OFFCURVE",
-"76 678 OFFCURVE"
+"76 728 CURVE SMOOTH",
+"76 768 OFFCURVE",
+"48 793 OFFCURVE",
+"5 793 CURVE SMOOTH",
+"-39 793 OFFCURVE",
+"-67 768 OFFCURVE",
+"-67 728 CURVE SMOOTH",
+"-67 688 OFFCURVE",
+"-39 662 OFFCURVE",
+"5 662 CURVE SMOOTH",
+"48 662 OFFCURVE",
+"76 688 OFFCURVE"
 );
 }
 );
@@ -196390,6 +196390,8 @@ nodes = (
 {
 closed = 1;
 nodes = (
+"44 651 OFFCURVE",
+"70 675 OFFCURVE",
 "70 712 CURVE SMOOTH",
 "70 749 OFFCURVE",
 "44 772 OFFCURVE",
@@ -196399,9 +196401,7 @@ nodes = (
 "-61 712 CURVE SMOOTH",
 "-61 675 OFFCURVE",
 "-35 651 OFFCURVE",
-"5 651 CURVE SMOOTH",
-"44 651 OFFCURVE",
-"70 675 OFFCURVE"
+"5 651 CURVE SMOOTH"
 );
 }
 );
@@ -196412,7 +196412,7 @@ width = 0;
 {
 color = 11;
 glyphname = carondotaccentcomb.case;
-lastChange = "2020-06-01 15:24:32 +0000";
+lastChange = "2020-06-23 21:20:06 +0000";
 layers = (
 {
 anchors = (
@@ -196500,30 +196500,30 @@ paths = (
 {
 closed = 1;
 nodes = (
-"73 836 CURVE SMOOTH",
-"73 877 OFFCURVE",
-"45 903 OFFCURVE",
-"0 903 CURVE SMOOTH",
-"-44 903 OFFCURVE",
-"-73 877 OFFCURVE",
-"-73 836 CURVE SMOOTH",
-"-73 795 OFFCURVE",
-"-44 769 OFFCURVE",
-"0 769 CURVE SMOOTH",
-"45 769 OFFCURVE",
-"73 795 OFFCURVE"
+"73 841 CURVE SMOOTH",
+"73 882 OFFCURVE",
+"45 908 OFFCURVE",
+"0 908 CURVE SMOOTH",
+"-44 908 OFFCURVE",
+"-73 882 OFFCURVE",
+"-73 841 CURVE SMOOTH",
+"-73 800 OFFCURVE",
+"-44 774 OFFCURVE",
+"0 774 CURVE SMOOTH",
+"45 774 OFFCURVE",
+"73 800 OFFCURVE"
 );
 },
 {
 closed = 1;
 nodes = (
-"125 771 LINE",
-"5 697 LINE",
-"-124 770 LINE",
-"-161 728 LINE",
-"-36 608 LINE",
-"44 612 LINE",
-"161 731 LINE"
+"125 776 LINE",
+"5 702 LINE",
+"-124 775 LINE",
+"-161 733 LINE",
+"-36 613 LINE",
+"44 617 LINE",
+"161 736 LINE"
 );
 }
 );
