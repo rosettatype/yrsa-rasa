@@ -180534,7 +180534,7 @@ rightMetricsKey = "=|bracketleft";
 {
 color = 11;
 glyphname = figuredash;
-lastChange = "2020-02-29 15:27:16 +0000";
+lastChange = "2020-07-08 16:19:46 +0000";
 layers = (
 {
 layerId = "DAAEA780-4710-4479-B303-5C05B40621B2";
@@ -180543,13 +180543,13 @@ paths = (
 closed = 1;
 nodes = (
 "63 229 LINE",
-"666 229 LINE",
-"666 274 LINE",
+"417 229 LINE",
+"417 274 LINE",
 "63 274 LINE"
 );
 }
 );
-width = 729;
+width = 480;
 },
 {
 background = {
@@ -180571,13 +180571,13 @@ paths = (
 closed = 1;
 nodes = (
 "47 209 LINE",
-"698 209 LINE",
-"698 294 LINE",
+"433 209 LINE",
+"433 294 LINE",
 "47 294 LINE"
 );
 }
 );
-width = 745;
+width = 480;
 }
 );
 leftMetricsKey = hyphen;
