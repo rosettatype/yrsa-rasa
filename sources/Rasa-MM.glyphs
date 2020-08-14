@@ -1032,8 +1032,7 @@ code = "sub zero by zero.tf;\012sub one by one.tf;\012sub two by two.tf;\012sub 
 name = tnum;
 },
 {
-automatic = 1;
-code = "sub circumflexcomb by circumflexcomb.case;\012sub caroncomb by caroncomb.case;\012sub macroncomb by macroncomb.case;\012sub brevecomb by brevecomb.case;\012sub dieresiscomb by dieresiscomb.case;\012sub acutecomb by acutecomb.case;\012sub gravecomb by gravecomb.case;\012sub dotaccentcomb by dotaccentcomb.case;\012sub ringcomb by ringcomb.case;\012sub tildecomb by tildecomb.case;\012sub hungarumlautcomb by hungarumlautcomb.case;\012sub __periodcentered.CAT by __periodcentered.CAT.case;\012sub periodcentered by periodcentered.case;\012sub bullet by bullet.case;\012sub slash by slash.case;\012sub backslash by backslash.case;\012sub parenleft by parenleft.case;\012sub parenright by parenright.case;\012sub braceleft by braceleft.case;\012sub braceright by braceright.case;\012sub bracketleft by bracketleft.case;\012sub bracketright by bracketright.case;\012sub hyphen by hyphen.case;\012sub endash by endash.case;\012sub emdash by emdash.case;\012sub guillemetleft by guillemetleft.case;\012sub guillemetright by guillemetright.case;\012sub guilsinglleft by guilsinglleft.case;\012sub guilsinglright by guilsinglright.case;\012sub leftanglebracket-math by leftanglebracket-math.case;\012sub rightanglebracket-math by rightanglebracket-math.case;\012sub percent by percent.case;\012sub perthousand by perthousand.case;\012sub at by at.case;\012sub degree by degree.case;\012sub minute by minute.case;\012sub second by second.case;\012sub hookabovecomb by hookabovecomb.case;\012sub dblgravecomb by dblgravecomb.case;\012sub breveinvertedcomb by breveinvertedcomb.case;\012sub commaturnedabovecomb by commaturnedabovecomb.case;\012sub horncomb by horncomb.case;\012sub dotbelowcomb by dotbelowcomb.case;\012sub dieresisbelowcomb by dieresisbelowcomb.case;\012sub brevebelowcomb by brevebelowcomb.case;\012sub macronbelowcomb by macronbelowcomb.case;\012sub macronacutecomb by macronacutecomb.case;\012sub macrongravecomb by macrongravecomb.case;\012sub brevecomb_acutecomb by brevecomb_acutecomb.case;\012sub brevecomb_gravecomb by brevecomb_gravecomb.case;\012sub brevecomb_hookabovecomb by brevecomb_hookabovecomb.case;\012sub brevecomb_tildecomb by brevecomb_tildecomb.case;\012sub circumflexcomb_acutecomb by circumflexcomb_acutecomb.case;\012sub circumflexcomb_gravecomb by circumflexcomb_gravecomb.case;\012sub circumflexcomb_hookabovecomb by circumflexcomb_hookabovecomb.case;\012sub circumflexcomb_tildecomb by circumflexcomb_tildecomb.case;\012sub dieresisacutecomb by dieresisacutecomb.case;\012sub dieresismacroncomb by dieresismacroncomb.case;\012sub tildemacroncomb by tildemacroncomb.case;\012sub dotaccentmacroncomb by dotaccentmacroncomb.case;\012sub tildeacutecomb by tildeacutecomb.case;\012sub tildedieresiscomb by tildedieresiscomb.case;\012sub carondotaccentcomb by carondotaccentcomb.case;\012sub macrondieresiscomb by macrondieresiscomb.case;\012sub acutedotaccentcomb by acutedotaccentcomb.case;\012sub zero.tf by zero.lf;\012sub one.tf by one.lf;\012sub two.tf by two.lf;\012sub three.tf by three.lf;\012sub four.tf by four.lf;\012sub five.tf by five.lf;\012sub six.tf by six.lf;\012sub seven.tf by seven.lf;\012sub eight.tf by eight.lf;\012sub nine.tf by nine.lf;\012";
+code = "sub circumflexcomb by circumflexcomb.case;\012sub caroncomb by caroncomb.case;\012sub macroncomb by macroncomb.case;\012sub brevecomb by brevecomb.case;\012sub dieresiscomb by dieresiscomb.case;\012sub acutecomb by acutecomb.case;\012sub gravecomb by gravecomb.case;\012sub dotaccentcomb by dotaccentcomb.case;\012sub ringcomb by ringcomb.case;\012sub tildecomb by tildecomb.case;\012sub hungarumlautcomb by hungarumlautcomb.case;\012sub __periodcentered.CAT by __periodcentered.CAT.case;\012sub periodcentered by periodcentered.case;\012sub bullet by bullet.case;\012sub slash by slash.case;\012sub backslash by backslash.case;\012sub parenleft by parenleft.case;\012sub parenright by parenright.case;\012sub braceleft by braceleft.case;\012sub braceright by braceright.case;\012sub bracketleft by bracketleft.case;\012sub bracketright by bracketright.case;\012sub hyphen by hyphen.case;\012sub endash by endash.case;\012sub emdash by emdash.case;\012sub guillemetleft by guillemetleft.case;\012sub guillemetright by guillemetright.case;\012sub guilsinglleft by guilsinglleft.case;\012sub guilsinglright by guilsinglright.case;\012sub percent by percent.case;\012sub at by at.case;\012sub hookabovecomb by hookabovecomb.case;\012sub dblgravecomb by dblgravecomb.case;\012sub breveinvertedcomb by breveinvertedcomb.case;\012sub commaturnedabovecomb by commaturnedabovecomb.case;\012sub horncomb by horncomb.case;\012sub dotbelowcomb by dotbelowcomb.case;\012sub dieresisbelowcomb by dieresisbelowcomb.case;\012sub brevebelowcomb by brevebelowcomb.case;\012sub macronbelowcomb by macronbelowcomb.case;\012sub macronacutecomb by macronacutecomb.case;\012sub macrongravecomb by macrongravecomb.case;\012sub macroncomb.narrow by macroncomb.narrow.case;\012sub brevecomb_acutecomb by brevecomb_acutecomb.case;\012sub brevecomb_gravecomb by brevecomb_gravecomb.case;\012sub brevecomb_hookabovecomb by brevecomb_hookabovecomb.case;\012sub brevecomb_tildecomb by brevecomb_tildecomb.case;\012sub circumflexcomb_acutecomb by circumflexcomb_acutecomb.case;\012sub circumflexcomb_gravecomb by circumflexcomb_gravecomb.case;\012sub circumflexcomb_hookabovecomb by circumflexcomb_hookabovecomb.case;\012sub circumflexcomb_tildecomb by circumflexcomb_tildecomb.case;\012sub dieresisacutecomb by dieresisacutecomb.case;\012sub dieresismacroncomb by dieresismacroncomb.case;\012sub tildemacroncomb by tildemacroncomb.case;\012sub dotaccentmacroncomb by dotaccentmacroncomb.case;\012sub tildeacutecomb by tildeacutecomb.case;\012sub tildedieresiscomb by tildedieresiscomb.case;\012sub carondotaccentcomb by carondotaccentcomb.case;\012sub macrondieresiscomb by macrondieresiscomb.case;\012sub acutedotaccentcomb by acutedotaccentcomb.case;\012sub zero.tf by zero.lf.tf;\012sub zero.tf.zero by zero.lf.tf.zero;\012sub one.tf by one.lf.tf;\012sub two.tf by two.lf.tf;\012sub three.tf by three.lf.tf;\012sub four.tf by four.lf.tf;\012sub five.tf by five.lf.tf;\012sub six.tf by six.lf.tf;\012sub seven.tf by seven.lf.tf;\012sub eight.tf by eight.lf.tf;\012sub nine.tf by nine.lf.tf;\012sub zero by zero.lf;\012sub zero.zero by zero.lf.zero;\012sub one by one.lf;\012sub two by two.lf;\012sub three by three.lf;\012sub four by four.lf;\012sub five by five.lf;\012sub six by six.lf;\012sub seven by seven.lf;\012sub eight by eight.lf;\012sub nine by nine.lf;\012sub degree by degree.case;\012sub minute by minute.case;\012sub second by second.case;\012sub exclamdown by exclamdown.case;\012sub questiondown by questiondown.case;\012";
 name = case;
 },
 {
@@ -97478,7 +97477,7 @@ width = 1530;
 },
 {
 glyphname = arrowleft;
-lastChange = "2020-07-18 10:19:54 +0000";
+lastChange = "2020-08-14 12:28:50 +0000";
 layers = (
 {
 layerId = "DAAEA780-4710-4479-B303-5C05B40621B2";
@@ -97486,30 +97485,30 @@ paths = (
 {
 closed = 1;
 nodes = (
-"505 254 LINE",
-"505 303 LINE",
-"156 303 LINE",
-"60 293 LINE",
-"60 264 LINE",
-"156 254 LINE"
+"504 254 LINE",
+"504 303 LINE",
+"155 303 LINE",
+"59 293 LINE",
+"59 264 LINE",
+"155 254 LINE"
 );
 },
 {
 closed = 1;
 nodes = (
-"246 64 LINE",
-"279 98 LINE",
-"78 298 LINE",
-"31 279 LINE"
+"245 64 LINE",
+"278 98 LINE",
+"77 298 LINE",
+"30 279 LINE"
 );
 },
 {
 closed = 1;
 nodes = (
-"78 259 LINE",
-"279 459 LINE",
-"246 493 LINE",
-"31 279 LINE"
+"77 259 LINE",
+"278 459 LINE",
+"245 493 LINE",
+"30 279 LINE"
 );
 }
 );
@@ -97521,30 +97520,30 @@ paths = (
 {
 closed = 1;
 nodes = (
-"525 243 LINE",
-"525 329 LINE",
-"252 329 LINE",
-"134 316 LINE",
-"134 255 LINE",
-"252 243 LINE"
+"527 243 LINE",
+"527 329 LINE",
+"254 329 LINE",
+"136 316 LINE",
+"136 255 LINE",
+"254 243 LINE"
 );
 },
 {
 closed = 1;
 nodes = (
-"260 66 LINE",
-"317 123 LINE",
-"114 326 LINE",
-"40 285 LINE"
+"262 66 LINE",
+"319 123 LINE",
+"116 326 LINE",
+"42 285 LINE"
 );
 },
 {
 closed = 1;
 nodes = (
-"114 245 LINE",
-"317 448 LINE",
-"260 505 LINE",
-"40 285 LINE"
+"116 245 LINE",
+"319 448 LINE",
+"262 505 LINE",
+"42 285 LINE"
 );
 }
 );
@@ -97671,7 +97670,7 @@ width = 1530;
 },
 {
 glyphname = arrowboth;
-lastChange = "2020-07-18 10:19:56 +0000";
+lastChange = "2020-08-14 12:28:59 +0000";
 layers = (
 {
 layerId = "DAAEA780-4710-4479-B303-5C05B40621B2";
@@ -97679,28 +97678,28 @@ paths = (
 {
 closed = 1;
 nodes = (
-"894 279 LINE",
-"680 493 LINE",
-"647 459 LINE",
-"807 299 LINE",
-"769 303 LINE",
-"156 303 LINE",
-"118 299 LINE",
-"279 459 LINE",
-"246 493 LINE",
-"31 279 LINE",
-"246 64 LINE",
-"279 98 LINE",
-"118 258 LINE",
-"156 254 LINE",
-"769 254 LINE",
-"807 258 LINE",
-"647 98 LINE",
-"680 64 LINE"
+"893 279 LINE",
+"679 493 LINE",
+"646 459 LINE",
+"806 299 LINE",
+"768 303 LINE",
+"155 303 LINE",
+"117 299 LINE",
+"278 459 LINE",
+"245 493 LINE",
+"30 279 LINE",
+"245 64 LINE",
+"278 98 LINE",
+"117 258 LINE",
+"155 254 LINE",
+"768 254 LINE",
+"806 258 LINE",
+"646 98 LINE",
+"679 64 LINE"
 );
 }
 );
-width = 925;
+width = 923;
 },
 {
 layerId = "925CB40E-795E-477B-BAE7-1EE7D58841B5";
@@ -97708,28 +97707,28 @@ paths = (
 {
 closed = 1;
 nodes = (
-"923 285 LINE",
-"703 505 LINE",
-"645 448 LINE",
-"771 323 LINE",
-"711 329 LINE",
-"252 329 LINE",
-"192 323 LINE",
-"317 448 LINE",
-"260 505 LINE",
-"40 285 LINE",
-"260 66 LINE",
-"317 123 LINE",
-"192 249 LINE",
-"252 243 LINE",
-"711 243 LINE",
-"771 249 LINE",
-"645 123 LINE",
-"703 66 LINE"
+"925 285 LINE",
+"705 505 LINE",
+"647 448 LINE",
+"773 323 LINE",
+"713 329 LINE",
+"254 329 LINE",
+"194 323 LINE",
+"319 448 LINE",
+"262 505 LINE",
+"42 285 LINE",
+"262 66 LINE",
+"319 123 LINE",
+"194 249 LINE",
+"254 243 LINE",
+"713 243 LINE",
+"773 249 LINE",
+"647 123 LINE",
+"705 66 LINE"
 );
 }
 );
-width = 963;
+width = 967;
 }
 );
 leftMetricsKey = arrowleft;
@@ -174312,9 +174311,9 @@ width = 1202;
 };
 },
 {
-color = 11;
+color = 5;
 glyphname = zero.lf.tf;
-lastChange = "2020-07-19 11:47:09 +0000";
+lastChange = "2020-08-14 12:51:44 +0000";
 layers = (
 {
 background = {
@@ -174629,9 +174628,9 @@ width = 1253;
 };
 },
 {
-color = 11;
+color = 5;
 glyphname = one.lf.tf;
-lastChange = "2020-08-02 15:10:04 +0000";
+lastChange = "2020-08-14 12:51:44 +0000";
 layers = (
 {
 background = {
@@ -176581,9 +176580,9 @@ width = 1206;
 };
 },
 {
-color = 11;
+color = 5;
 glyphname = seven.lf.tf;
-lastChange = "2020-07-19 11:47:09 +0000";
+lastChange = "2020-08-14 12:51:44 +0000";
 layers = (
 {
 background = {
@@ -177391,9 +177390,9 @@ width = 1202;
 };
 },
 {
-color = 11;
+color = 5;
 glyphname = zero.lf.tf.zero;
-lastChange = "2020-07-19 11:47:09 +0000";
+lastChange = "2020-08-14 12:51:31 +0000";
 layers = (
 {
 background = {
@@ -181321,6 +181320,309 @@ width = 362;
 leftMetricsKey = "=|sixsuperior";
 rightMetricsKey = "=|sixsuperior";
 unicode = 2079;
+},
+{
+color = 7;
+glyphname = exclamdown.case;
+lastChange = "2020-08-14 12:51:19 +0000";
+layers = (
+{
+background = {
+paths = (
+{
+closed = 1;
+nodes = (
+"145 -206 LINE",
+"145 -151 LINE",
+"128 254 LINE",
+"92 254 LINE",
+"75 -151 LINE",
+"75 -206 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"136 339 OFFCURVE",
+"153 357 OFFCURVE",
+"153 382 CURVE SMOOTH",
+"153 407 OFFCURVE",
+"136 425 OFFCURVE",
+"110 425 CURVE SMOOTH",
+"84 425 OFFCURVE",
+"67 407 OFFCURVE",
+"67 382 CURVE SMOOTH",
+"67 357 OFFCURVE",
+"84 339 OFFCURVE",
+"110 339 CURVE SMOOTH"
+);
+}
+);
+};
+components = (
+{
+name = exclamdown;
+transform = "{1, 0, 0, 1, 0, 151}";
+}
+);
+layerId = "DAAEA780-4710-4479-B303-5C05B40621B2";
+width = 220;
+},
+{
+background = {
+paths = (
+{
+closed = 1;
+nodes = (
+"196 -203 LINE",
+"196 -127 LINE",
+"163 234 LINE",
+"84 234 LINE",
+"51 -127 LINE",
+"51 -203 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"168 295 OFFCURVE",
+"196 320 OFFCURVE",
+"196 360 CURVE SMOOTH",
+"196 400 OFFCURVE",
+"168 425 OFFCURVE",
+"124 425 CURVE SMOOTH",
+"79 425 OFFCURVE",
+"50 400 OFFCURVE",
+"50 360 CURVE SMOOTH",
+"50 320 OFFCURVE",
+"79 295 OFFCURVE",
+"124 295 CURVE SMOOTH"
+);
+}
+);
+};
+components = (
+{
+name = exclamdown;
+transform = "{1, 0, 0, 1, 0, 158}";
+}
+);
+layerId = "925CB40E-795E-477B-BAE7-1EE7D58841B5";
+width = 246;
+}
+);
+rightMetricsKey = "=|";
+userData = {
+com.typemytype.robofont.layerData = {
+background = {
+anchors = (
+);
+components = (
+{
+baseGlyph = exclam;
+transformation = (
+-1,
+0,
+0,
+-1,
+728,
+1416
+);
+}
+);
+contours = (
+);
+lib = {
+};
+name = exclamdown;
+unicodes = (
+);
+width = 566;
+};
+};
+};
+},
+{
+color = 7;
+glyphname = questiondown.case;
+lastChange = "2020-08-14 12:51:19 +0000";
+layers = (
+{
+background = {
+paths = (
+{
+closed = 1;
+nodes = (
+"200 254 LINE",
+"194 190 LINE SMOOTH",
+"190 149 OFFCURVE",
+"179 139 OFFCURVE",
+"136 103 CURVE SMOOTH",
+"80 56 OFFCURVE",
+"26 11 OFFCURVE",
+"26 -61 CURVE SMOOTH",
+"26 -141 OFFCURVE",
+"91 -218 OFFCURVE",
+"199 -218 CURVE SMOOTH",
+"260 -218 OFFCURVE",
+"315 -193 OFFCURVE",
+"346 -168 CURVE",
+"346 -127 OFFCURVE",
+"339 -83 OFFCURVE",
+"329 -46 CURVE",
+"292 -46 LINE",
+"286 -114 LINE SMOOTH",
+"284 -129 OFFCURVE",
+"281 -139 OFFCURVE",
+"271 -150 CURVE SMOOTH",
+"256 -164 OFFCURVE",
+"224 -179 OFFCURVE",
+"189 -179 CURVE SMOOTH",
+"126 -179 OFFCURVE",
+"94 -134 OFFCURVE",
+"94 -75 CURVE SMOOTH",
+"94 -19 OFFCURVE",
+"123 13 OFFCURVE",
+"189 73 CURVE SMOOTH",
+"227 108 OFFCURVE",
+"248 125 OFFCURVE",
+"248 165 CURVE SMOOTH",
+"248 190 OFFCURVE",
+"240 226 OFFCURVE",
+"232 254 CURVE"
+);
+},
+{
+closed = 1;
+nodes = (
+"185 425 OFFCURVE",
+"168 407 OFFCURVE",
+"168 382 CURVE SMOOTH",
+"168 356 OFFCURVE",
+"185 339 OFFCURVE",
+"211 339 CURVE SMOOTH",
+"236 339 OFFCURVE",
+"254 356 OFFCURVE",
+"254 382 CURVE SMOOTH",
+"254 407 OFFCURVE",
+"236 425 OFFCURVE",
+"211 425 CURVE SMOOTH"
+);
+}
+);
+};
+components = (
+{
+name = questiondown;
+transform = "{1, 0, 0, 1, 0, 151}";
+}
+);
+layerId = "DAAEA780-4710-4479-B303-5C05B40621B2";
+width = 373;
+},
+{
+background = {
+paths = (
+{
+closed = 1;
+nodes = (
+"195 235 LINE",
+"187 181 LINE SMOOTH",
+"182 149 OFFCURVE",
+"180 150 OFFCURVE",
+"143 123 CURVE SMOOTH",
+"71 73 OFFCURVE",
+"21 27 OFFCURVE",
+"21 -49 CURVE SMOOTH",
+"21 -145 OFFCURVE",
+"100 -219 OFFCURVE",
+"221 -219 CURVE SMOOTH",
+"291 -219 OFFCURVE",
+"353 -194 OFFCURVE",
+"393 -160 CURVE",
+"390 -111 OFFCURVE",
+"380 -57 OFFCURVE",
+"364 -12 CURVE",
+"286 -12 LINE",
+"276 -98 LINE SMOOTH",
+"273 -115 OFFCURVE",
+"270 -124 OFFCURVE",
+"261 -135 CURVE SMOOTH",
+"252 -145 OFFCURVE",
+"236 -157 OFFCURVE",
+"214 -157 CURVE SMOOTH",
+"179 -157 OFFCURVE",
+"156 -126 OFFCURVE",
+"156 -85 CURVE SMOOTH",
+"156 -39 OFFCURVE",
+"179 -5 OFFCURVE",
+"228 40 CURVE SMOOTH",
+"269 78 OFFCURVE",
+"303 101 OFFCURVE",
+"303 145 CURVE SMOOTH",
+"303 175 OFFCURVE",
+"284 211 OFFCURVE",
+"271 235 CURVE"
+);
+},
+{
+closed = 1;
+nodes = (
+"188 425 OFFCURVE",
+"159 399 OFFCURVE",
+"159 360 CURVE SMOOTH",
+"159 321 OFFCURVE",
+"188 295 OFFCURVE",
+"232 295 CURVE SMOOTH",
+"277 295 OFFCURVE",
+"305 320 OFFCURVE",
+"305 360 CURVE SMOOTH",
+"305 400 OFFCURVE",
+"277 425 OFFCURVE",
+"232 425 CURVE SMOOTH"
+);
+}
+);
+};
+components = (
+{
+name = questiondown;
+transform = "{1, 0, 0, 1, 0, 158}";
+}
+);
+layerId = "925CB40E-795E-477B-BAE7-1EE7D58841B5";
+width = 415;
+}
+);
+userData = {
+com.typemytype.robofont.layerData = {
+background = {
+anchors = (
+);
+components = (
+{
+baseGlyph = question;
+transformation = (
+-1,
+0,
+0,
+-1,
+974,
+1421
+);
+}
+);
+contours = (
+);
+lib = {
+};
+name = questiondown;
+unicodes = (
+);
+width = 1016;
+};
+};
+};
 },
 {
 color = 7;
@@ -186045,9 +186347,9 @@ width = 480;
 );
 },
 {
-color = 11;
+color = 5;
 glyphname = colonsign.tf;
-lastChange = "2020-08-09 14:54:27 +0000";
+lastChange = "2020-08-14 12:51:49 +0000";
 layers = (
 {
 components = (
@@ -189597,8 +189899,9 @@ width = 641;
 unicode = 2205;
 },
 {
+color = 5;
 glyphname = percent.case;
-lastChange = "2020-06-01 13:33:26 +0000";
+lastChange = "2020-08-14 12:51:54 +0000";
 layers = (
 {
 layerId = "DAAEA780-4710-4479-B303-5C05B40621B2";
@@ -190088,8 +190391,9 @@ width = 1867;
 };
 },
 {
+color = 5;
 glyphname = perthousand.case;
-lastChange = "2020-06-01 13:35:09 +0000";
+lastChange = "2020-08-14 12:51:54 +0000";
 layers = (
 {
 background = {
@@ -193355,9 +193659,9 @@ width = 0;
 unicode = 0312;
 },
 {
-color = 11;
+color = 5;
 glyphname = horncomb;
-lastChange = "2020-06-01 15:20:26 +0000";
+lastChange = "2020-08-14 12:52:02 +0000";
 layers = (
 {
 anchors = (
@@ -194681,9 +194985,9 @@ width = 0;
 );
 },
 {
-color = 11;
+color = 5;
 glyphname = horncomb.case;
-lastChange = "2020-06-01 15:20:57 +0000";
+lastChange = "2020-08-14 12:52:02 +0000";
 layers = (
 {
 anchors = (
