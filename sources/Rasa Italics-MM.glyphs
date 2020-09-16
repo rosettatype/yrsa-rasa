@@ -2064,7 +2064,7 @@ unicode = 200B;
 },
 {
 glyphname = A;
-lastChange = "2020-08-31 14:59:02 +0000";
+lastChange = "2020-09-16 09:21:28 +0000";
 layers = (
 {
 anchors = (
@@ -9337,7 +9337,7 @@ width = 1310;
 },
 {
 glyphname = M;
-lastChange = "2020-08-31 14:37:12 +0000";
+lastChange = "2020-09-16 09:21:42 +0000";
 layers = (
 {
 anchors = (
@@ -10297,7 +10297,7 @@ width = 1730;
 },
 {
 glyphname = O;
-lastChange = "2020-08-31 14:36:45 +0000";
+lastChange = "2020-09-16 09:21:49 +0000";
 layers = (
 {
 anchors = (
@@ -15823,7 +15823,7 @@ width = 1227;
 },
 {
 glyphname = T;
-lastChange = "2020-08-31 15:00:28 +0000";
+lastChange = "2020-09-16 09:21:58 +0000";
 layers = (
 {
 anchors = (
@@ -48635,7 +48635,7 @@ width = 836;
 },
 {
 glyphname = asterisk;
-lastChange = "2020-08-29 21:19:45 +0000";
+lastChange = "2020-09-16 09:20:15 +0000";
 layers = (
 {
 background = {
@@ -90229,7 +90229,7 @@ public.markColor = "0,0.67,0.91,1";
 },
 {
 glyphname = AE;
-lastChange = "2020-09-02 12:17:48 +0000";
+lastChange = "2020-09-16 09:22:11 +0000";
 layers = (
 {
 anchors = (
@@ -104714,7 +104714,7 @@ width = 1615;
 },
 {
 glyphname = Schwa;
-lastChange = "2020-09-02 12:18:18 +0000";
+lastChange = "2020-09-16 09:22:23 +0000";
 layers = (
 {
 anchors = (
@@ -139465,7 +139465,7 @@ width = 1107;
 },
 {
 glyphname = four;
-lastChange = "2020-09-15 20:27:57 +0000";
+lastChange = "2020-09-16 09:17:54 +0000";
 layers = (
 {
 background = {
@@ -141333,7 +141333,7 @@ width = 1206;
 },
 {
 glyphname = seven;
-lastChange = "2020-09-02 14:35:48 +0000";
+lastChange = "2020-09-16 09:18:10 +0000";
 layers = (
 {
 background = {
@@ -163334,7 +163334,7 @@ width = 1107;
 },
 {
 glyphname = four.lf;
-lastChange = "2020-09-15 20:29:17 +0000";
+lastChange = "2020-09-16 09:18:24 +0000";
 layers = (
 {
 background = {
@@ -164518,7 +164518,7 @@ width = 1206;
 },
 {
 glyphname = seven.lf;
-lastChange = "2020-09-02 12:15:34 +0000";
+lastChange = "2020-09-16 09:18:33 +0000";
 layers = (
 {
 background = {
@@ -165306,7 +165306,7 @@ width = 1220;
 {
 color = 7;
 glyphname = nine.lf;
-lastChange = "2020-09-02 13:51:10 +0000";
+lastChange = "2020-09-16 09:18:44 +0000";
 layers = (
 {
 background = {
@@ -196691,6 +196691,11 @@ seven.lf = -5;
 "@MMK_R_X" = -10;
 "@MMK_R_Y" = -5;
 "@MMK_R_Z" = -20;
+"@MMK_R_nine.lnum" = 10;
+four = -40;
+four.lf = -30;
+seven = 20;
+seven.lf = 30;
 };
 "@MMK_L_braceleft" = {
 "@MMK_R_A" = -37;
@@ -199096,7 +199101,7 @@ omacrongrave = {
 "@MMK_R_trademark" = -17;
 };
 one = {
-"@MMK_R_asterisk" = -80;
+"@MMK_R_asterisk" = -60;
 "@MMK_R_d" = -10;
 "@MMK_R_degree" = -74;
 "@MMK_R_equal" = -40;
@@ -199299,6 +199304,11 @@ seven.lf = -23;
 two.lf = 20;
 };
 registered = {
+"@MMK_R_A" = -47;
+"@MMK_R_AE" = -40;
+"@MMK_R_M" = -10;
+"@MMK_R_O" = 10;
+"@MMK_R_T" = 20;
 "@MMK_R_d" = -10;
 "@MMK_R_f" = 10;
 "@MMK_R_g" = -10;
@@ -199543,6 +199553,7 @@ three.lf = {
 "@MMK_R_W" = -22;
 "@MMK_R_X" = -12;
 "@MMK_R_Y" = -30;
+"@MMK_R_asterisk" = -6;
 "@MMK_R_degree" = -10;
 "@MMK_R_degree.case" = -20;
 "@MMK_R_inferiors" = 5;
@@ -200946,9 +200957,14 @@ seven.lf = -5;
 "@MMK_R_X" = -10;
 "@MMK_R_Y" = 18;
 "@MMK_R_Z" = -4;
+"@MMK_R_nine.lnum" = 20;
 "@MMK_R_u" = 4.33833;
 "@MMK_R_w" = 17.0435;
 Germandbls = -20;
+four = -40;
+four.lf = -20;
+seven = 30;
+seven.lf = 30;
 };
 "@MMK_L_braceleft" = {
 "@MMK_R_A" = -30;
@@ -203370,7 +203386,7 @@ omacrongrave = {
 "@MMK_R_trademark" = -20;
 };
 one = {
-"@MMK_R_asterisk" = -50;
+"@MMK_R_asterisk" = -40;
 "@MMK_R_d" = -10;
 "@MMK_R_degree" = -67;
 "@MMK_R_equal" = -30;
@@ -203577,6 +203593,11 @@ seven.lf = -20;
 two.lf = 30;
 };
 registered = {
+"@MMK_R_A" = -40;
+"@MMK_R_AE" = -40;
+"@MMK_R_M" = -1;
+"@MMK_R_O" = 10;
+"@MMK_R_T" = 20;
 "@MMK_R_d" = -5;
 "@MMK_R_f" = 20;
 "@MMK_R_g" = 0;
@@ -203823,6 +203844,7 @@ three.lf = {
 "@MMK_R_W" = -14;
 "@MMK_R_X" = -14;
 "@MMK_R_Y" = -35;
+"@MMK_R_asterisk" = -7;
 "@MMK_R_degree" = -10;
 "@MMK_R_degree.case" = -16;
 "@MMK_R_inferiors" = 10;
@@ -203875,6 +203897,7 @@ two.lf = {
 "@MMK_R_W" = -30;
 "@MMK_R_X" = -10;
 "@MMK_R_Y" = -45;
+"@MMK_R_asterisk" = -10;
 "@MMK_R_degree" = -10;
 "@MMK_R_degree.case" = -25;
 "@MMK_R_inferiors" = 20;
