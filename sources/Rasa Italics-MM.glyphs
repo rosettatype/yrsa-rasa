@@ -12,8 +12,7 @@ DisplayStrings = (
 "H&H\012H§H\012H_H\012H/fraction HH1/fraction 4H1/fraction 2H3/fraction 4H\012H½H¼H¾\012H%H/perthousand H\012A-A/space J-J/space HP-PH/space W-W\012H?H/space HH!H/space B?H/space B!H/space F?H/space F!H/space G?H/space G!H/space R?H/space R!H/space V?H/space V!H/space W?H/space W!H/space Y?H/space Y!H\012a./space a,/space a:/space a;/space n./space n,/space n;/space n:/space h:/space h;/space d./space d,/space d:/space d;/space f./space f,/space f;/space f:/space i./space i,/space i;/space i:/space k./space k,/space k;/space k:/space l./space l,/space l;/space l:/space t./space t,/space t;/space t:\012nt?/space nl?/space nl!/space u./space u,/space u;/space u:\012n/endash o/endash n/endash a/space n/endash c/space n/endash d/space n/endash e/space n/endash g/space n/endash q/space b/endash n/space e/endash n/space f/endash n/space g/endash n/space p/endash n/space z/endash n/endash z\012/emdash a/emdash b/emdash c/emdash d/emdash e/emdash f/emdash g/emdash h/emdash i/emdash j/emdash k/emdash l/emdash m/emdash n/emdash o/emdash p/emdash q/emdash r/emdash s/emdash t/emdash u/emdash v/emdash w/emdash x/emdash y/emdash z/emdash \012\012.A.B.C.D.E.F.G.H.I.J.K.L.M.N.O.P.Q.R.S.T.U.V.W.X.Y.Z./space .a.b.c.d.e.f.g.h.i.j.k.l.m.n.o.p.q.r.s.t.u.v.w.x.y.z./space ,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,/space ,a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,\012\012;A;B;C;D;E;F;G;H;I;J;K;L;M;N;O;P;Q;R;S;T;U;V;W;X;Y;Z;/space ;a;b;c;d;e;f;g;h;i;j;k;l;m;n;o;p;q;r;s;t;u;v;w;x;y;z;/space :A:B:C:D:E:F:G:H:I:J:K:L:M:N:O:P:Q:R:S:T:U:V:W:X:Y:Z:/space :a:b:c:d:e:f:g:h:i:j:k:l:m:n:o:p:q:r:s:t:u:v:w:x:y:z:/space ?A?B?C?D?E?F?G?H?I?J?K?L?M?N?O?P?Q?R?S?T?U?V?W?X?Y?Z?\012?a?b?c?d?e?f?g?h?i?j?k?l?m?n?o?p?q?r?s?t?u?v?w?x?y?z?/space !A!B!C!D!E!F!G!H!I!J!K!L!M!N!O!P!Q!R!S!T!U!V!W!X!Y!Z!/space !a!b!c!d!e!f!g!h!i!j!k!l!m!n!o!p!q!r!s!t!u!v!w!x!y!z!\012\012//A//B//C//D//E//F//G//H//I//J//K//L//M//N//O//P//Q//R//S//T//U//V//W//X//Y//Z//\012//a//b//c//d//e//f//g//h//i//j//k//l//m//n//o//p//q//r//s//t//u//v//w//x//y//z//\012\012//A/backslash//B/backslash//C/backslash//D/backslash//E/backslash//F/backslash//G/backslash//H/backslash//I/backslash//J/backslash//K/backslash//L/backslash//M/backslash//N/backslash//O/backslash//P/backslash//Q/backslash//R/backslash//S/backslash//T/backslash//U/backslash//V/backslash//W/backslash//X/backslash//Y/backslash//Z/backslash \012//a/backslash//b/backslash//c/backslash//d/backslash//e/backslash//f/backslash//g/backslash//h/backslash//i/backslash//j/backslash//k/backslash//l/backslash//m/backslash//n/backslash//o/backslash//p/backslash//q/backslash//r/backslash//s/backslash//t/backslash//u/backslash//v/backslash//w/backslash//x/backslash//y/backslash//z/backslash \012/backslash A///backslash B///backslash C///backslash D///backslash E///backslash F///backslash G///backslash H///backslash I///backslash J///backslash K///backslash L///backslash M///backslash N///backslash O///backslash P///backslash Q///backslash R///backslash S///backslash T///backslash U///backslash V///backslash W///backslash X///backslash Y///backslash Z//\012/backslash a///backslash b///backslash c///backslash d///backslash e///backslash f///backslash g///backslash h///backslash i///backslash j///backslash k///backslash l///backslash m///backslash n///backslash o///backslash p///backslash q///backslash r///backslash s///backslash t///backslash u///backslash v///backslash w///backslash x///backslash y///backslash z//\012\012/quotedblleft A/quotedblright/space/quotedblleft B/quotedblright/space/quotedblleft C/quotedblright/space/quotedblleft D/quotedblright/space/quotedblleft E/quotedblright/space/quotedblleft F/quotedblright/space/quotedblleft G/quotedblright/space/quotedblleft H/quotedblright/space/quotedblleft I/quotedblright/space/quotedblleft J/quotedblright/space/quotedblleft K/quotedblright/space/quotedblleft L/quotedblright/space/quotedblleft M/quotedblright/space/quotedblleft N/quotedblright/space/quotedblleft O/quotedblright/space/quotedblleft P/quotedblright/space/quotedblleft Q/quotedblright/space/quotedblleft R/quotedblright/space/quotedblleft S/quotedblright/space/quotedblleft T/quotedblright/space/quotedblleft U/quotedblright/space/quotedblleft V/quotedblright/space/quotedblleft W/quotedblright/space/quotedblleft X/quotedblright/space/quotedblleft Y/quotedblright/space/quotedblleft Z/quotedblright/space/quotedblleft a/quotedblright/space/quotedblleft b/quotedblright/space/quotedblleft c/quotedblright/space/quotedblleft d/quotedblright/space/quotedblleft e/quotedblright/space/quotedblleft f/quotedblright/space/quotedblleft g/quotedblright/space/quotedblleft h/quotedblright/space/quotedblleft i/quotedblright/space/quotedblleft j/quotedblright/space/quotedblleft k/quotedblright/space/quotedblleft l/quotedblright/space/quotedblleft m/quotedblright/space/quotedblleft n/quotedblright/space/quotedblleft o/quotedblright/space/quotedblleft p/quotedblright/space/quotedblleft q/quotedblright/space/quotedblleft r/quotedblright/space/quotedblleft s/quotedblright/space/quotedblleft t/quotedblright/space/quotedblleft u/quotedblright/space/quotedblleft v/quotedblright/space/quotedblleft w/quotedblright/space/quotedblleft x/quotedblright/space/quotedblleft y/quotedblright/space/quotedblleft z/quotedblright/space/quoteleft A/quoteright/space/quoteleft B/quoteright/space/quoteleft C/quoteright/space/quoteleft D/quoteright/space/quoteleft E/quoteright/space/quoteleft F/quoteright/space/quoteleft G/quoteright/space/quoteleft H/quoteright/space/quoteleft I/quoteright/space/quoteleft J/quoteright/space/quoteleft K/quoteright/space/quoteleft L/quoteright/space/quoteleft M/quoteright/space/quoteleft N/quoteright/space/quoteleft O/quoteright/space/quoteleft P/quoteright/space/quoteleft Q/quoteright/space/quoteleft R/quoteright/space/quoteleft S/quoteright/space/quoteleft T/quoteright/space/quoteleft U/quoteright/space/quoteleft V/quoteright/space/quoteleft W/quoteright/space/quoteleft X/quoteright/space/quoteleft Y/quoteright/space/quoteleft Z/quoteright \012/quoteleft a/quoteright/space/quoteleft b/quoteright/space/quoteleft c/quoteright/space/quoteleft d/quoteright/space/quoteleft e/quoteright/space/quoteleft f/quoteright/space/quoteleft g/quoteright/space/quoteleft h/quoteright/space/quoteleft i/quoteright/space/quoteleft j/quoteright/space/quoteleft k/quoteright/space/quoteleft l/quoteright/space/quoteleft m/quoteright/space/quoteleft n/quoteright/space/quoteleft o/quoteright/space/quoteleft p/quoteright/space/quoteleft q/quoteright/space/quoteleft r/quoteright/space/quoteleft s/quoteright/space/quoteleft t/quoteright/space/quoteleft u/quoteright/space/quoteleft v/quoteright/space/quoteleft w/quoteright/space/quoteleft x/quoteright/space/quoteleft y/quoteright/space/quoteleft z/quoteright \012/space \012«RMINIMAL»/space «MINIMALW»/space «W»/space «V»\012\012/quotedblbase INIMALP/quotedblleft/space/quotedblbase INIMALQ/quotedblleft/space/quotedblbase INIMALO/quotedblleft H/space/quotedblbase INIMALM/quotedblleft H/space/quotedblbase INIMALS/quotedblleft H/space/quotedblbase MINIMALA/quotedblleft/space/quotedblleft AMINIMAH/quotedblright/space/quotedblleft AMINIMAL/quotedblright/space/quotedblbase HL/quotedblleft \012\012«minimalq»/space «mminimal»/space «minimad»/space «minima»/space «minimak»\012/quotedblleft gminimal/quotedblright/space/quotedblleft aminimal/quotedblright \012\012f.*/space f,*/space f;*/space f:*/space T.*/space T,*/space T;*/space T:*\012f./trademark/space f,/trademark/space f;/trademark/space f:/trademark/space T./trademark/space T,/trademark/space T;/trademark/space T:/trademark \012\012F®/space/space f®/space m®/space r®/space v®/space w®/space f.®/space f,®/space f;®/space f:®/space T.®/space T,®/space T;®/space T:®\012\012HF©/space ne©/space nf©/space ni©/space nm©/space no©/space r©/space s©/space t©/space nf.©/space f,©/space f;©/space f:©/space HT.©/space T,©/space T;©/space T:©\012\012{A}/space {B}/space {C}/space {D}/space {E}/space {F}/space {G}/space {H}/space {I}/space {J}/space {K}/space {L}/space {M}/space {N}/space {O}/space {P}/space {Q}/space {R}/space {S}/space {T}/space {U}/space {V}/space {W}/space {X}/space {Y}/space {Z}/space {a}/space {b}/space {c}/space {d}/space {e}/space {f}/space {g}/space {h}/space {i}/space {j}/space {k}/space {l}/space {m}/space {n}/space {o}/space {p}/space {q}/space {r}/space {s}/space {t}/space {u}/space {v}/space {w}/space {x}/space {y}/space {z}\012\012[A]/space [B]/space [C]/space [D]/space [E]/space [F]/space [G]/space [H]/space [I]/space [J]/space [K]/space [L]/space [M]/space [N]/space [O]/space [P]/space [Q]/space [R]/space [S]/space [T]/space [U]/space [V]/space [W]/space [X]/space [Y]/space [Z]/space [a]/space [b]/space [c]/space [d]/space [e]/space [f]/space [g]/space [h]/space [i]/space [j]/space [k]/space [l]/space [m]/space [n]/space [o]/space [p]/space [q]/space [r]/space [s]/space [t]/space [u]/space [v]/space [w]/space [x]/space [y]/space [z]\012\012(A)/space (B)/space (C)/space (D)/space (E)/space (F)/space (G)/space (H)/space (I)/space (J)/space (K)/space (L)/space (M)/space (N)/space (O)/space (P)/space (Q)/space (R)/space (S)/space (T)/space (U)/space (V)/space (A)/space (W)/space (X)/space (Y)/space (Z)/space (a)/space (b)/space (c)/space (d)/space (e)/space (f)/space (g)/space (h)/space (i)/space (j)/space (k)/space (l)/space (m)/space (n)/space (o)/space (p)/space (q)/space (r)/space (s)/space (t)/space (u)/space (v)/space (w)/space (x)/space (y)/space (z)\012\012(1)(2)(3)(4)(5)(6)(7)(8)(9)(0)",
 "H&H\012H_H\012H/fraction HH1/fraction 4H1/fraction 2H3/fraction 4H\0127î\012\012\012\012\012A-A/space J-J/space HP-PH/space W-W\012P·H/space P/bullet H/space P/periodcentered.case H/space P/bullet.case H/space P-H/space P­H/space P/endash H/space P/emdash H/space P/figuredash H/space P/horizontalbar H/space P/hyphentwo H/space P/hyphen.case H/space P/endash.case H/space P/emdash.case H/space P/minus H/space P~H/space",
 "\012\012inin/ldot lanini/space ininl·lanini/space ininl·bnini/space ininl·cnini/space ininl·dnini/space ininl·enini/space ininl·fnini/space ininl·gnini/space ininl·hnini/space ininl·inini/space ininl·jnini/space ininl·knini/space ininl·lnini/space ininl·mnini/space ininl·nnini/space ininl·onini/space ininl·pnini/space ininl·qnini/space ininl·rnini/space ininl·snini/space ininl·tnini/space ininl·unini/space ininl·vnini/space ininl·wnini/space ininl·xnini/space ininl·ynini/space ininl·znini\012ininl-onu\012\012inin/ldot anini/space inin/ldot bnini/space inin/ldot cnini/space inin/ldot dnini/space inin/ldot enini/space inin/ldot fnini/space inin/ldot gnini/space inin/ldot hnini/space inin/ldot inini/space inin/ldot jnini/space inin/ldot knini/space inin/ldot lnini/space inin/ldot mnini/space inin/ldot nnini/space inin/ldot onini/space inin/ldot pnini/space inin/ldot qnini/space inin/ldot rnini/space inin/ldot snini/space inin/ldot tnini/space inin/ldot unini/space inin/ldot vnini/space inin/ldot wnini/space inin/ldot xnini/space inin/ldot ynini/space inin/ldot znini\012\012ININL·ANINI/space ININL·BNINI/space ININL·CNINI/space ININL·DNINI/space ININL·ENINI/space ININL·FNINI/space ININL·GNINI/space ININL·HNINI/space ININL·ININI/space ININL·JNINI/space ININL·KNINI/space ININL·LNINI/space ININL·MNINI/space ININL·NNINI/space ININL·ONINI/space ININL·PNINI/space ININL·QNINI/space ININL·RNINI/space ININL·SNINI/space ININL·TNINI/space ININL·UNINI/space ININL·VNINI/space ININL·WNINI/space ININL·XNINI/space ININL·YNINI/space ININL·ZNINI/space ININL-LNN\012\012ININ/Ldot ANINI/space ININ/Ldot BNINI/space ININ/Ldot CNINI/space ININ/Ldot DNINI/space ININ/Ldot ENINI/space ININ/Ldot FNINI/space ININ/Ldot LGNINI/space ININ/Ldot HNINI/space ININ/Ldot ININI/space ININ/Ldot JNINI/space ININ/Ldot KNINI/space ININ/Ldot LNINI/space ININ/Ldot MNINI/space ININ/Ldot NNINI/space ININ/Ldot ONINI/space ININ/Ldot PNINI/space ININ/Ldot QNINI/space ININ/Ldot RNINI/space ININ/Ldot SNINI/space ININ/Ldot TNINI/space ININ/Ldot UNINI/space ININ/Ldot VNINI/space ININ/Ldot WNINI/space ININ/Ldot XNINI/space ININ/Ldot YNINI/space ININ/Ldot ZNINI\012\012\012",
-"\012H·H/bullet H-H­H/hyphentwo H/endash H/emdash H/figuredash H/minus H~\012H-A-HH-/quoteleft -H\012H/hyphen.case/schwa/hyphen.case hH/periodcentered.case H/bullet.case H/hyphen.case H/endash.case H/emdash.case H/horizontalbar H\012\012/emdash a/emdash b/emdash c/emdash d/emdash e/emdash f/emdash g/emdash h/emdash i/emdash j/emdash k/emdash l/emdash m/emdash n/emdash o/emdash p/emdash q/emdash r/emdash s/emdash t/emdash u/emdash v/emdash \012/emdash w/emdash x/emdash y/emdash z/emdash æ/emdash ð/emdash/schwa/emdash/lslash/emdash/ohorn/emdash ß/emdash/tbar/emdash \012/emdash.case a/emdash.case b/emdash.case c/emdash.case d/emdash.case e/emdash.case f/emdash.case g/emdash.case h/emdash.case i/emdash.case j/emdash.case k/emdash.case l/emdash.case m/emdash.case n/emdash.case o/emdash.case p/emdash.case q/emdash.case r/emdash.case s/emdash.case t/emdash.case u/emdash.case v/emdash.case \012/emdash.case w/emdash.case x/emdash.case y/emdash.case z/emdash.case æ/emdash.case ð/emdash.case/schwa/emdash.case/lslash/emdash.case/ohorn/emdash.case ß/emdash.case/tbar/emdash.case \012\012/emdash A/emdash B/emdash C/emdash D/emdash E/emdash F/emdash G/emdash H/emdash I/emdash J/emdash K/emdash L/emdash M/emdash N/emdash O/emdash P/emdash Q/emdash R/emdash S/emdash T/emdash U/emdash \012/emdash V/emdash W/emdash X/emdash Y/emdash Z/emdash Æ/emdash/Dcroat/emdash/Hbar/emdash/Lslash/emdash/Ohorn/emdash/OE/emdash Þ/emdash/Germandbls/emdash/Schwa/emdash/Tbar/emdash \012/emdash.case A/emdash.case B/emdash.case C/emdash.case D/emdash.case E/emdash.case F/emdash.case G/emdash.case H/emdash.case I/emdash.case J/emdash.case K/emdash.case L/emdash.case M/emdash.case N/emdash.case O/emdash.case P/emdash.case Q/emdash.case R/emdash.case S/emdash.case T/emdash.case U/emdash.case \012/emdash.case V/emdash.case W/emdash.case X/emdash.case Y/emdash.case Z/emdash.case Æ/emdash.case/Dcroat/emdash.case/Hbar/emdash.case/Lslash/emdash.case/Ohorn/emdash.case/OE/emdash.case Þ/emdash.case/Germandbls/emdash.case/Schwa/emdash.case/Tbar/emdash.case \012\012/emdash 0/emdash 1/emdash 2/emdash 3/emdash 4/emdash 5/emdash 6/emdash 7/emdash 8/emdash 9/emdash \012/emdash.case 0/emdash.case 1/emdash.case 2/emdash.case 3/emdash.case 4/emdash.case 5/emdash.case 6/emdash.case 7/emdash.case 8/emdash.case 9/emdash.case 0\012/space \012\012",
-"HK_HH_H\012_A_B_C_D_E_F_G_H_I_J_K_L_M_N_O_P_Q_R_S_T_U_V_W_X_Y_Z_\012_a_b_c_d_e_f_g_h_i_j_k_l_m_n_o_p_q_r_s_t_u_v_w_x_y_z_\012_0_1_2_3_4_5_6_7_8_9_0"
+"\012H·H/bullet H-H­H/hyphentwo H/endash H/emdash H/figuredash H/minus H~\012H-A-HH-/quoteleft -H\012H/hyphen.case/schwa/hyphen.case hH/periodcentered.case H/bullet.case H/hyphen.case H/endash.case H/emdash.case H/horizontalbar H\012\012/emdash a/emdash b/emdash c/emdash d/emdash e/emdash f/emdash g/emdash h/emdash i/emdash j/emdash k/emdash l/emdash m/emdash n/emdash o/emdash p/emdash q/emdash r/emdash s/emdash t/emdash u/emdash v/emdash \012/emdash w/emdash x/emdash y/emdash z/emdash æ/emdash ð/emdash/schwa/emdash/lslash/emdash/ohorn/emdash ß/emdash/tbar/emdash \012/emdash.case a/emdash.case b/emdash.case c/emdash.case d/emdash.case e/emdash.case f/emdash.case g/emdash.case h/emdash.case i/emdash.case j/emdash.case k/emdash.case l/emdash.case m/emdash.case n/emdash.case o/emdash.case p/emdash.case q/emdash.case r/emdash.case s/emdash.case t/emdash.case u/emdash.case v/emdash.case \012/emdash.case w/emdash.case x/emdash.case y/emdash.case z/emdash.case æ/emdash.case ð/emdash.case/schwa/emdash.case/lslash/emdash.case/ohorn/emdash.case ß/emdash.case/tbar/emdash.case \012\012/emdash A/emdash B/emdash C/emdash D/emdash E/emdash F/emdash G/emdash H/emdash I/emdash J/emdash K/emdash L/emdash M/emdash N/emdash O/emdash P/emdash Q/emdash R/emdash S/emdash T/emdash U/emdash \012/emdash V/emdash W/emdash X/emdash Y/emdash Z/emdash Æ/emdash/Dcroat/emdash/Hbar/emdash/Lslash/emdash/Ohorn/emdash/OE/emdash Þ/emdash/Germandbls/emdash/Schwa/emdash/Tbar/emdash \012/emdash.case A/emdash.case B/emdash.case C/emdash.case D/emdash.case E/emdash.case F/emdash.case G/emdash.case H/emdash.case I/emdash.case J/emdash.case K/emdash.case L/emdash.case M/emdash.case N/emdash.case O/emdash.case P/emdash.case Q/emdash.case R/emdash.case S/emdash.case T/emdash.case U/emdash.case \012/emdash.case V/emdash.case W/emdash.case X/emdash.case Y/emdash.case Z/emdash.case Æ/emdash.case/Dcroat/emdash.case/Hbar/emdash.case/Lslash/emdash.case/Ohorn/emdash.case/OE/emdash.case Þ/emdash.case/Germandbls/emdash.case/Schwa/emdash.case/Tbar/emdash.case \012\012/emdash 0/emdash 1/emdash 2/emdash 3/emdash 4/emdash 5/emdash 6/emdash 7/emdash 8/emdash 9/emdash \012/emdash.case 0/emdash.case 1/emdash.case 2/emdash.case 3/emdash.case 4/emdash.case 5/emdash.case 6/emdash.case 7/emdash.case 8/emdash.case 9/emdash.case 0\012/space \012\0120/space 1/space 0/space 2/space 0/space 3/space 0/space 4/space 0/space 5/space 0/space 6/space 0/space 7/space 0/space 8/space 0/space"
 );
 classes = (
 {
@@ -1441,12 +1440,11 @@ code = "sub zero by zero.tf;\012sub one by one.tf;\012sub two by two.tf;\012sub 
 name = tnum;
 },
 {
-automatic = 1;
-code = "lookupflag IgnoreMarks;\012sub f f b by f_f_b;\012sub f f h by f_f_h;\012sub f f j by f_f_j;\012sub f f k by f_f_k;\012sub f b by f_b;\012sub f h by f_h;\012sub f j by f_j;\012sub f k by f_k;\012sub f v by f_v;\012sub f w by f_w;\012";
+code = "lookupflag IgnoreMarks;\012sub f f b by f_f_b;\012sub f f h by f_f_h;\012sub f f j by f_f_j;\012sub f f k by f_f_k;\012sub f j by f_j;\012sub f v by f_v;\012sub f w by f_w;\012";
 name = dlig;
 },
 {
-code = "lookupflag IgnoreMarks;\012sub f f i by f_f_i;\012sub f f l by f_f_l;\012sub f f j by f_f_j;\012sub f f by f_f;\012sub f i by f_i;\012sub f l by f_l;\012sub f j by f_j;\012\012\012";
+code = "lookupflag IgnoreMarks;\012sub f f i by f_f_i;\012sub f f l by f_f_l;\012sub f f j by f_f_j;\012sub f f by f_f;\012sub f i by f_i;\012sub f l by f_l;\012sub f j by f_j;\012sub f k by f_k;\012sub f b by f_b;\012sub f h by f_h;\012\012";
 name = liga;
 },
 {
@@ -6649,7 +6647,7 @@ width = 1552;
 },
 {
 glyphname = H;
-lastChange = "2020-11-08 13:38:12 +0000";
+lastChange = "2020-11-08 17:54:11 +0000";
 layers = (
 {
 anchors = (
@@ -57439,7 +57437,7 @@ rightMetricsKey = at;
 },
 {
 glyphname = ampersand;
-lastChange = "2020-09-21 17:46:33 +0000";
+lastChange = "2020-11-08 17:53:52 +0000";
 layers = (
 {
 associatedMasterId = "DAAEA780-4710-4479-B303-5C05B40621B2";
@@ -142083,7 +142081,7 @@ width = 1206;
 },
 {
 glyphname = seven;
-lastChange = "2020-11-08 14:39:20 +0000";
+lastChange = "2020-11-08 14:43:55 +0000";
 layers = (
 {
 background = {
@@ -165243,7 +165241,7 @@ width = 1206;
 },
 {
 glyphname = seven.lf;
-lastChange = "2020-11-08 14:41:13 +0000";
+lastChange = "2020-11-08 14:43:16 +0000";
 layers = (
 {
 background = {
@@ -198933,6 +198931,8 @@ seven.lf = -7;
 "@MMK_R_x" = -10;
 "@MMK_R_y" = -12;
 "@MMK_R_zero.lf" = -20;
+seven = -15;
+seven.lf = -10;
 };
 "@MMK_L_superior" = {
 "@MMK_R_A" = -110;
@@ -199456,7 +199456,7 @@ acircumflexhookabove = {
 "@MMK_R_trademark" = -41;
 };
 ampersand = {
-"@MMK_R_H" = -15;
+"@MMK_R_H" = -5;
 "@MMK_R_J" = 0;
 "@MMK_R_O" = -20;
 "@MMK_R_Schwa" = -20;
@@ -200591,6 +200591,7 @@ seven = {
 "@MMK_R_period" = -80;
 "@MMK_R_question" = 20;
 "@MMK_R_six" = -13;
+"@MMK_R_space" = -20;
 "@MMK_R_superior" = 20;
 "@MMK_R_t" = 20;
 "@MMK_R_tbar" = 10;
@@ -200671,7 +200672,7 @@ seven.lf = {
 "@MMK_R_period" = -80;
 "@MMK_R_question" = 30;
 "@MMK_R_six.lf" = -10;
-"@MMK_R_space" = -30;
+"@MMK_R_space" = -40;
 "@MMK_R_superior" = 20;
 "@MMK_R_trademark" = 40;
 "@MMK_R_underscore" = -40;
@@ -203815,6 +203816,8 @@ lessequal = 8;
 "@MMK_R_x" = -12;
 "@MMK_R_y" = -10;
 "@MMK_R_zero.lf" = -20;
+seven = -16;
+seven.lf = -10;
 };
 "@MMK_L_superior" = {
 "@MMK_R_A" = -100;
@@ -204362,7 +204365,7 @@ acircumflexhookabove = {
 ampersand = {
 "@MMK_R_A" = 4.33833;
 "@MMK_R_AE" = 4.33833;
-"@MMK_R_H" = -5;
+"@MMK_R_H" = -1;
 "@MMK_R_J" = -5;
 "@MMK_R_O" = -15;
 "@MMK_R_Schwa" = -10;
@@ -205499,6 +205502,7 @@ seven = {
 "@MMK_R_period" = -70;
 "@MMK_R_question" = 20;
 "@MMK_R_six" = -18;
+"@MMK_R_space" = -25;
 "@MMK_R_superior" = 20;
 "@MMK_R_t" = 10;
 "@MMK_R_tbar" = 2;
