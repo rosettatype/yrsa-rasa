@@ -12,8 +12,7 @@ DisplayStrings = (
 "H&H\012H§H\012H_H\012H/fraction HH1/fraction 4H1/fraction 2H3/fraction 4H\012H½H¼H¾\012H%H/perthousand H\012A-A/space J-J/space HP-PH/space W-W\012H?H/space HH!H/space B?H/space B!H/space F?H/space F!H/space G?H/space G!H/space R?H/space R!H/space V?H/space V!H/space W?H/space W!H/space Y?H/space Y!H\012a./space a,/space a:/space a;/space n./space n,/space n;/space n:/space h:/space h;/space d./space d,/space d:/space d;/space f./space f,/space f;/space f:/space i./space i,/space i;/space i:/space k./space k,/space k;/space k:/space l./space l,/space l;/space l:/space t./space t,/space t;/space t:\012nt?/space nl?/space nl!/space u./space u,/space u;/space u:\012n/endash o/endash n/endash a/space n/endash c/space n/endash d/space n/endash e/space n/endash g/space n/endash q/space b/endash n/space e/endash n/space f/endash n/space g/endash n/space p/endash n/space z/endash n/endash z\012/emdash a/emdash b/emdash c/emdash d/emdash e/emdash f/emdash g/emdash h/emdash i/emdash j/emdash k/emdash l/emdash m/emdash n/emdash o/emdash p/emdash q/emdash r/emdash s/emdash t/emdash u/emdash v/emdash w/emdash x/emdash y/emdash z/emdash \012\012.A.B.C.D.E.F.G.H.I.J.K.L.M.N.O.P.Q.R.S.T.U.V.W.X.Y.Z./space .a.b.c.d.e.f.g.h.i.j.k.l.m.n.o.p.q.r.s.t.u.v.w.x.y.z./space ,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,/space ,a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,\012\012;A;B;C;D;E;F;G;H;I;J;K;L;M;N;O;P;Q;R;S;T;U;V;W;X;Y;Z;/space ;a;b;c;d;e;f;g;h;i;j;k;l;m;n;o;p;q;r;s;t;u;v;w;x;y;z;/space :A:B:C:D:E:F:G:H:I:J:K:L:M:N:O:P:Q:R:S:T:U:V:W:X:Y:Z:/space :a:b:c:d:e:f:g:h:i:j:k:l:m:n:o:p:q:r:s:t:u:v:w:x:y:z:/space ?A?B?C?D?E?F?G?H?I?J?K?L?M?N?O?P?Q?R?S?T?U?V?W?X?Y?Z?\012?a?b?c?d?e?f?g?h?i?j?k?l?m?n?o?p?q?r?s?t?u?v?w?x?y?z?/space !A!B!C!D!E!F!G!H!I!J!K!L!M!N!O!P!Q!R!S!T!U!V!W!X!Y!Z!/space !a!b!c!d!e!f!g!h!i!j!k!l!m!n!o!p!q!r!s!t!u!v!w!x!y!z!\012\012//A//B//C//D//E//F//G//H//I//J//K//L//M//N//O//P//Q//R//S//T//U//V//W//X//Y//Z//\012//a//b//c//d//e//f//g//h//i//j//k//l//m//n//o//p//q//r//s//t//u//v//w//x//y//z//\012\012//A/backslash//B/backslash//C/backslash//D/backslash//E/backslash//F/backslash//G/backslash//H/backslash//I/backslash//J/backslash//K/backslash//L/backslash//M/backslash//N/backslash//O/backslash//P/backslash//Q/backslash//R/backslash//S/backslash//T/backslash//U/backslash//V/backslash//W/backslash//X/backslash//Y/backslash//Z/backslash \012//a/backslash//b/backslash//c/backslash//d/backslash//e/backslash//f/backslash//g/backslash//h/backslash//i/backslash//j/backslash//k/backslash//l/backslash//m/backslash//n/backslash//o/backslash//p/backslash//q/backslash//r/backslash//s/backslash//t/backslash//u/backslash//v/backslash//w/backslash//x/backslash//y/backslash//z/backslash \012/backslash A///backslash B///backslash C///backslash D///backslash E///backslash F///backslash G///backslash H///backslash I///backslash J///backslash K///backslash L///backslash M///backslash N///backslash O///backslash P///backslash Q///backslash R///backslash S///backslash T///backslash U///backslash V///backslash W///backslash X///backslash Y///backslash Z//\012/backslash a///backslash b///backslash c///backslash d///backslash e///backslash f///backslash g///backslash h///backslash i///backslash j///backslash k///backslash l///backslash m///backslash n///backslash o///backslash p///backslash q///backslash r///backslash s///backslash t///backslash u///backslash v///backslash w///backslash x///backslash y///backslash z//\012\012/quotedblleft A/quotedblright/space/quotedblleft B/quotedblright/space/quotedblleft C/quotedblright/space/quotedblleft D/quotedblright/space/quotedblleft E/quotedblright/space/quotedblleft F/quotedblright/space/quotedblleft G/quotedblright/space/quotedblleft H/quotedblright/space/quotedblleft I/quotedblright/space/quotedblleft J/quotedblright/space/quotedblleft K/quotedblright/space/quotedblleft L/quotedblright/space/quotedblleft M/quotedblright/space/quotedblleft N/quotedblright/space/quotedblleft O/quotedblright/space/quotedblleft P/quotedblright/space/quotedblleft Q/quotedblright/space/quotedblleft R/quotedblright/space/quotedblleft S/quotedblright/space/quotedblleft T/quotedblright/space/quotedblleft U/quotedblright/space/quotedblleft V/quotedblright/space/quotedblleft W/quotedblright/space/quotedblleft X/quotedblright/space/quotedblleft Y/quotedblright/space/quotedblleft Z/quotedblright/space/quotedblleft a/quotedblright/space/quotedblleft b/quotedblright/space/quotedblleft c/quotedblright/space/quotedblleft d/quotedblright/space/quotedblleft e/quotedblright/space/quotedblleft f/quotedblright/space/quotedblleft g/quotedblright/space/quotedblleft h/quotedblright/space/quotedblleft i/quotedblright/space/quotedblleft j/quotedblright/space/quotedblleft k/quotedblright/space/quotedblleft l/quotedblright/space/quotedblleft m/quotedblright/space/quotedblleft n/quotedblright/space/quotedblleft o/quotedblright/space/quotedblleft p/quotedblright/space/quotedblleft q/quotedblright/space/quotedblleft r/quotedblright/space/quotedblleft s/quotedblright/space/quotedblleft t/quotedblright/space/quotedblleft u/quotedblright/space/quotedblleft v/quotedblright/space/quotedblleft w/quotedblright/space/quotedblleft x/quotedblright/space/quotedblleft y/quotedblright/space/quotedblleft z/quotedblright/space/quoteleft A/quoteright/space/quoteleft B/quoteright/space/quoteleft C/quoteright/space/quoteleft D/quoteright/space/quoteleft E/quoteright/space/quoteleft F/quoteright/space/quoteleft G/quoteright/space/quoteleft H/quoteright/space/quoteleft I/quoteright/space/quoteleft J/quoteright/space/quoteleft K/quoteright/space/quoteleft L/quoteright/space/quoteleft M/quoteright/space/quoteleft N/quoteright/space/quoteleft O/quoteright/space/quoteleft P/quoteright/space/quoteleft Q/quoteright/space/quoteleft R/quoteright/space/quoteleft S/quoteright/space/quoteleft T/quoteright/space/quoteleft U/quoteright/space/quoteleft V/quoteright/space/quoteleft W/quoteright/space/quoteleft X/quoteright/space/quoteleft Y/quoteright/space/quoteleft Z/quoteright \012/quoteleft a/quoteright/space/quoteleft b/quoteright/space/quoteleft c/quoteright/space/quoteleft d/quoteright/space/quoteleft e/quoteright/space/quoteleft f/quoteright/space/quoteleft g/quoteright/space/quoteleft h/quoteright/space/quoteleft i/quoteright/space/quoteleft j/quoteright/space/quoteleft k/quoteright/space/quoteleft l/quoteright/space/quoteleft m/quoteright/space/quoteleft n/quoteright/space/quoteleft o/quoteright/space/quoteleft p/quoteright/space/quoteleft q/quoteright/space/quoteleft r/quoteright/space/quoteleft s/quoteright/space/quoteleft t/quoteright/space/quoteleft u/quoteright/space/quoteleft v/quoteright/space/quoteleft w/quoteright/space/quoteleft x/quoteright/space/quoteleft y/quoteright/space/quoteleft z/quoteright \012/space \012«RMINIMAL»/space «MINIMALW»/space «W»/space «V»\012\012/quotedblbase INIMALP/quotedblleft/space/quotedblbase INIMALQ/quotedblleft/space/quotedblbase INIMALO/quotedblleft H/space/quotedblbase INIMALM/quotedblleft H/space/quotedblbase INIMALS/quotedblleft H/space/quotedblbase MINIMALA/quotedblleft/space/quotedblleft AMINIMAH/quotedblright/space/quotedblleft AMINIMAL/quotedblright/space/quotedblbase HL/quotedblleft \012\012«minimalq»/space «mminimal»/space «minimad»/space «minima»/space «minimak»\012/quotedblleft gminimal/quotedblright/space/quotedblleft aminimal/quotedblright \012\012f.*/space f,*/space f;*/space f:*/space T.*/space T,*/space T;*/space T:*\012f./trademark/space f,/trademark/space f;/trademark/space f:/trademark/space T./trademark/space T,/trademark/space T;/trademark/space T:/trademark \012\012F®/space/space f®/space m®/space r®/space v®/space w®/space f.®/space f,®/space f;®/space f:®/space T.®/space T,®/space T;®/space T:®\012\012HF©/space ne©/space nf©/space ni©/space nm©/space no©/space r©/space s©/space t©/space nf.©/space f,©/space f;©/space f:©/space HT.©/space T,©/space T;©/space T:©\012\012{A}/space {B}/space {C}/space {D}/space {E}/space {F}/space {G}/space {H}/space {I}/space {J}/space {K}/space {L}/space {M}/space {N}/space {O}/space {P}/space {Q}/space {R}/space {S}/space {T}/space {U}/space {V}/space {W}/space {X}/space {Y}/space {Z}/space {a}/space {b}/space {c}/space {d}/space {e}/space {f}/space {g}/space {h}/space {i}/space {j}/space {k}/space {l}/space {m}/space {n}/space {o}/space {p}/space {q}/space {r}/space {s}/space {t}/space {u}/space {v}/space {w}/space {x}/space {y}/space {z}\012\012[A]/space [B]/space [C]/space [D]/space [E]/space [F]/space [G]/space [H]/space [I]/space [J]/space [K]/space [L]/space [M]/space [N]/space [O]/space [P]/space [Q]/space [R]/space [S]/space [T]/space [U]/space [V]/space [W]/space [X]/space [Y]/space [Z]/space [a]/space [b]/space [c]/space [d]/space [e]/space [f]/space [g]/space [h]/space [i]/space [j]/space [k]/space [l]/space [m]/space [n]/space [o]/space [p]/space [q]/space [r]/space [s]/space [t]/space [u]/space [v]/space [w]/space [x]/space [y]/space [z]\012\012(A)/space (B)/space (C)/space (D)/space (E)/space (F)/space (G)/space (H)/space (I)/space (J)/space (K)/space (L)/space (M)/space (N)/space (O)/space (P)/space (Q)/space (R)/space (S)/space (T)/space (U)/space (V)/space (A)/space (W)/space (X)/space (Y)/space (Z)/space (a)/space (b)/space (c)/space (d)/space (e)/space (f)/space (g)/space (h)/space (i)/space (j)/space (k)/space (l)/space (m)/space (n)/space (o)/space (p)/space (q)/space (r)/space (s)/space (t)/space (u)/space (v)/space (w)/space (x)/space (y)/space (z)\012\012(1)(2)(3)(4)(5)(6)(7)(8)(9)(0)",
 "\012H_H\012H/fraction HH1/fraction 4H1/fraction 2H3/fraction 4H\01201/napostrophe 1002/napostrophe 2003/napostrophe 3004/napostrophe 4005/napostrophe 5006/napostrophe 6007/napostrophe 7008/napostrophe 8009/napostrophe 9000/napostrophe 00\012",
 "\012\012inin/ldot lanini/space ininl·lanini/space ininl·bnini/space ininl·cnini/space ininl·dnini/space ininl·enini/space ininl·fnini/space ininl·gnini/space ininl·hnini/space ininl·inini/space ininl·jnini/space ininl·knini/space ininl·lnini/space ininl·mnini/space ininl·nnini/space ininl·onini/space ininl·pnini/space ininl·qnini/space ininl·rnini/space ininl·snini/space ininl·tnini/space ininl·unini/space ininl·vnini/space ininl·wnini/space ininl·xnini/space ininl·ynini/space ininl·znini\012ininl-onu\012\012inin/ldot anini/space inin/ldot bnini/space inin/ldot cnini/space inin/ldot dnini/space inin/ldot enini/space inin/ldot fnini/space inin/ldot gnini/space inin/ldot hnini/space inin/ldot inini/space inin/ldot jnini/space inin/ldot knini/space inin/ldot lnini/space inin/ldot mnini/space inin/ldot nnini/space inin/ldot onini/space inin/ldot pnini/space inin/ldot qnini/space inin/ldot rnini/space inin/ldot snini/space inin/ldot tnini/space inin/ldot unini/space inin/ldot vnini/space inin/ldot wnini/space inin/ldot xnini/space inin/ldot ynini/space inin/ldot znini\012\012ININL·ANINI/space ININL·BNINI/space ININL·CNINI/space ININL·DNINI/space ININL·ENINI/space ININL·FNINI/space ININL·GNINI/space ININL·HNINI/space ININL·ININI/space ININL·JNINI/space ININL·KNINI/space ININL·LNINI/space ININL·MNINI/space ININL·NNINI/space ININL·ONINI/space ININL·PNINI/space ININL·QNINI/space ININL·RNINI/space ININL·SNINI/space ININL·TNINI/space ININL·UNINI/space ININL·VNINI/space ININL·WNINI/space ININL·XNINI/space ININL·YNINI/space ININL·ZNINI/space ININL-LNN\012\012ININ/Ldot ANINI/space ININ/Ldot BNINI/space ININ/Ldot CNINI/space ININ/Ldot DNINI/space ININ/Ldot ENINI/space ININ/Ldot FNINI/space ININ/Ldot LGNINI/space ININ/Ldot HNINI/space ININ/Ldot ININI/space ININ/Ldot JNINI/space ININ/Ldot KNINI/space ININ/Ldot LNINI/space ININ/Ldot MNINI/space ININ/Ldot NNINI/space ININ/Ldot ONINI/space ININ/Ldot PNINI/space ININ/Ldot QNINI/space ININ/Ldot RNINI/space ININ/Ldot SNINI/space ININ/Ldot TNINI/space ININ/Ldot UNINI/space ININ/Ldot VNINI/space ININ/Ldot WNINI/space ININ/Ldot XNINI/space ININ/Ldot YNINI/space ININ/Ldot ZNINI\012\012\012",
-"onfþnoonfbnoonfhnoonfknoonflno\012onf/lacute noonf/lcaron noonf/lcommaaccent noonf/ldot noonf/ldotbelow noonf/lj noonf/llinebelow noonf/lslash no\012onf/jacute noonf/jcircumflex noonf/kcommaaccent no\012onf/hbar noonf/hbrevebelow noonf/hcircumflex noonf/hdotbelow no\012onfínoonf/ibreve noonfînoonf/idblgrave noonfïnoonf/idieresisacute noonf/idotaccent noonf/idotbelow noonfìnoonf/ihookabove noonf/iinvertedbreve noonf/ij noonf/iacute_j.NLD noonf/imacron noonf/dotlessiogonek noonf/iogonek noonf/itilde no\012\012onfHHO/space onfJHO/space onfMHO/space onfTHO/space onfUHO/space onfVHO/space onfWHO/space onfXHO/space onfYHO/space onfZHO/space onfÐHO/space onf/Schwa HO\012\012onfanoonfbnoonfcnoonfdnoonfenoonffnoonfgnoonfhnoonfinoonfjnoonfknoonflnoonfmnoonfnnoonfonoonfpnoonfqnoonfrnoonfsnoonftnoonfunoonfvnoonfwnoonfxnoonfynoonfzno\012\012onfánoonf/abreve noonf/abreveacute noonf/abrevedotbelow noonf/abrevegrave noonf/abrevehookabove noonf/abrevetilde noonfânoonf/acircumflexacute noonf/acircumflexdotbelow noonf/acircumflexgrave noonf/acircumflexhookabove noonf/acircumflextilde noonf/adblgrave noonfänoonf/adotbelow noonfànoonf/ahookabove noonf/ainvertedbreve noonf/amacron noonf/aogonek noonfånoonf/aringacute noonfãnoonfænoonf/aeacute noonf/cacute noonf/ccaron noonfçnoonf/ccedillaacute noonf/ccircumflex noonf/cdotaccent noonfðnoonf/dcaron noonf/dcroat noonf/ddotbelow noonf/dlinebelow noonf/dzcaron noonfénoonf/ebreve noonf/ecaron noonf/ecedillabreve noonfênoonf/ecircumflexacute noonf/ecircumflexdotbelow noonf/ecircumflexgrave noonf/ecircumflexhookabove noonf/ecircumflextilde noonf/edblgrave noonfënoonf/edotaccent noonf/edotbelow noonfènoonf/ehookabove noonf/einvertedbreve noonf/emacron noonf/emacronacute noonf/emacrongrave noonf/eogonek noonf/etilde noonf/schwa noonf/gbreve noonf/gcaron noonf/gcircumflex noonf/gcommaaccent noonf/gdotaccent noonf/gmacron noonf/hbar noonf/hbrevebelow noonf/hcircumflex noonf/hdotbelow noonf/dotlessi noonfínoonf/ibreve noonfînoonf/idblgrave noonfïnoonf/idieresisacute noonf/idotaccent noonf/idotbelow noonfìnoonf/ihookabove noonf/iinvertedbreve noonf/ij noonf/iacute_j.NLD noonf/imacron noonf/dotlessiogonek noonf/iogonek noonf/itilde noonf/dotlessj noonf/jacute noonf/jcircumflex noonf/kcommaaccent noonf/kgreenladic noonf/lacute noonf/lcaron noonf/lcommaaccent noonf/ldot nfoonf/ldotbelow noonf/lj noonf/llinebelow noonf/lslash noonf/mdotbelow noonf/nacute noonf/napostrophe noonf/ncaron noonf/ncommaaccent noonf/ndotaccent noonf/ndotbelow noonf/eng noonf/nj noonf/nlinebelow noonfñnoonfónoonf/obreve noonfônoonf/ocircumflexacute noonf/ocircumflexdotbelow noonf/ocircumflexgrave noonf/ocircumflexhookabove noonf/ocircumflextilde noonf/odblgrave noonfönoonf/odieresismacron noonf/odotaccentmacron noonf/odotbelow noonfònoonf/ohookabove noonf/ohorn noonf/ohornacute noonf/ohorndotbelow noonf/ohorngrave noonf/ohornhookabove noonf/ohorntilde noonf/ohungarumlaut noonf/oinvertedbreve noonf/omacron noonf/omacronacute noonf/omacrongrave noonf/oogonek noonfønoonf/oslashacute noonfõnoonf/otildeacute noonf/otildedieresis noonf/otildemacron noonf/oe noonf/racute noonf/rcaron noonf/rcommaaccent noonf/rdblgrave noonf/rdotbelow noonf/rinvertedbreve noonf/rlinebelow noonf/sacute noonf/sacutedotaccent noonf/scaron noonf/scarondotaccent noonf/scedilla noonf/scircumflex noonf/scommaaccent noonf/sdotaccent noonf/sdotbelow noonf/sdotbelowdotaccent noonfßnoonf/tbar noonf/tcaron noonf/tcedilla noonf/tcommaaccent noonf/tdieresis noonf/tdotbelow noonf/tlinebelow noonfúnoonf/ubreve noonfûnoonf/udblgrave noonfünoonf/udotbelow noonfùnoonf/uhookabove noonf/uhorn noonf/uhornacute noonf/uhorndotbelow noonf/uhorngrave noonf/uhornhookabove noonf/uhorntilde noonf/uhungarumlaut noonf/uinvertedbreve noonf/umacron noonf/umacrondieresis noonf/uogonek noonf/uring noonf/utilde noonf/utildeacute noonf/wacute noonf/wcircumflex noonf/wdieresis noonf/wgrave noonfýnoonf/ycircumflex noonf/ydieresis noonf/ydotaccent noonf/ydotbelow noonf/ygrave noonf/yhookabove noonf/ymacron noonf/ytilde noonf/zacute noonf/zcaron noonf/zdotaccent no\012\012onf.noonf,noonf:noonf;noonf/ellipsis noonf!noonf¡noonf?noonf¿noonf·noonf/bullet noonf*noonf#noonf//noonf/backslash noonf/exclamdown.case noonf/questiondown.case noonf/periodcentered.case noonf/bullet.case noonf/slash.case noonf/backslash.case noonf(noonf)noonf{noonf}noonf[noonf]noonf/parenleft.case noonf/parenright.case noonf/braceleft.case noonf/braceright.case noonf/bracketleft.case noonf/bracketright.case noonf/leftanglebracket-math noonf/rightanglebracket-math noonf/leftanglebracket-math.case noonf/rightanglebracket-math.case noonf-noonf­noonf/endash noonf/emdash noonf/figuredash noonf/horizontalbar noonf/hyphentwo noonf_noonf/hyphen.case noonf/endash.case noonf/emdash.case noonf/quotesinglbase noonf/quotedblbase noonf/quotedblleft noonf/quotedblright noonf/quoteleft noonf/quoteright noonf«noonf»noonf/guilsinglleft noonf/guilsinglright noonf\"noonf'noonf/guillemetleft.case noonf/guillemetright.case noonf/guilsinglleft.case noonf/guilsinglright.case no\012\012onf@noonf/at.case noonf&noonf/ampersand.ss05 noonf¶noonf§noonf©noonf®noonf/trademark noonf/dagger noonf/daggerdbl noonf/arrowup noonf/arrowright noonf/arrowdown noonf/arrowleft noonf/arrowboth noonf/arrowupdown no\012\012\012",
-"00/quotedblbase 1/quotedblleft 00/space 00/quotedblbase 1/quotedblright 00/space 00/quotedblleft 1/quotedblbase 00/space 00/quotedblleft 1/quotedblright 00/space 00/quotedblright 1/quotedblright 00/space 00/guilsinglleft 1/guilsinglright 00/space 00/guilsinglright 1/guilsinglleft 00/space 00\"1\"00\01200/quotedblbase 2/quotedblleft 00/space 00/quotedblbase 2/quotedblright 00/space 00/quotedblleft 2/quotedblbase 00/space 00/quotedblleft 2/quotedblright 00/space 00/quotedblright 2/quotedblright 00/space 00/guilsinglleft 2/guilsinglright 00/space 00/guilsinglright 2/guilsinglleft 00/space 00\"2\"00\01200/quotedblbase 3/quotedblleft 00/space 00/quotedblbase 3/quotedblright 00/space 00/quotedblleft 3/quotedblbase 00/space 00/quotedblleft 3/quotedblright 00/space 00/quotedblright 3/quotedblright 00/space 00/guilsinglleft 3/guilsinglright 00/space 00/guilsinglright 3/guilsinglleft 00/space 00\"3\"00\01200/quotedblbase 4/quotedblleft 00/space 00/quotedblbase 4/quotedblright 00/space 00/quotedblleft 4/quotedblbase 00/space 00/quotedblleft 4/quotedblright 00/space 00/quotedblright 4/quotedblright 00/space 00/guilsinglleft 4/guilsinglright 00/space 00/guilsinglright 4/guilsinglleft 00/space 00\"4\"00\01200/quotedblbase 5/quotedblleft 00/space 00/quotedblbase 5/quotedblright 00/space 00/quotedblleft 5/quotedblbase 00/space 00/quotedblleft 5/quotedblright 00/space 00/quotedblright 5/quotedblright 00/space 00/guilsinglleft 5/guilsinglright 00/space 00/guilsinglright 5/guilsinglleft 00/space 00\"5\"00\01200/quotedblbase 6/quotedblleft 00/space 00/quotedblbase 6/quotedblright 00/space 00/quotedblleft 6/quotedblbase 00/space 00/quotedblleft 6/quotedblright 00/space 00/quotedblright 6/quotedblright 00/space 00/guilsinglleft 6/guilsinglright 00/space 00/guilsinglright 6/guilsinglleft 00/space 00\"6\"00\01200/quotedblbase 7/quotedblleft 00/space 00/quotedblbase 7/quotedblright 00/space 00/quotedblleft 7/quotedblbase 00/space 00/quotedblleft 7/quotedblright 00/space 00/quotedblright 7/quotedblright 00/space 00/guilsinglleft 7/guilsinglright 00/space 00/guilsinglright 7/guilsinglleft 00/space 00\"7\"00\01200/quotedblbase 8/quotedblleft 00/space 00/quotedblbase 8/quotedblright 00/space 00/quotedblleft 8/quotedblbase 00/space 00/quotedblleft 8/quotedblright 00/space 00/quotedblright 8/quotedblright 00/space 00/guilsinglleft 8/guilsinglright 00/space 00/guilsinglright 8/guilsinglleft 00/space 00\"8\"00\01200/quotedblbase 9/quotedblleft 00/space 00/quotedblbase 9/quotedblright 00/space 00/quotedblleft 9/quotedblbase 00/space 00/quotedblleft 9/quotedblright 00/space 00/quotedblright 9/quotedblright 00/space 00/guilsinglleft 9/guilsinglright 00/space 00/guilsinglright 9/guilsinglleft 00/space 00\"9\"00\01200/quotedblbase 0/quotedblleft 00/space 00/quotedblbase 0/quotedblright 00/space 00/quotedblleft 0/quotedblbase 00/space 00/quotedblleft 0/quotedblright 00/space 00/quotedblright 0/quotedblright 00/space 00/guilsinglleft 0/guilsinglright 00/space 00/guilsinglright 0/guilsinglleft 00/space 00\"0\"00\012"
+"onfþnoonfbnoonfhnoonfknoonflno\012onf/lacute noonf/lcaron noonf/lcommaaccent noonf/ldot noonf/ldotbelow noonf/lj noonf/llinebelow noonf/lslash no\012onf/jacute noonf/jcircumflex noonf/kcommaaccent no\012onf/hbar noonf/hbrevebelow noonf/hcircumflex noonf/hdotbelow no\012onfínoonf/ibreve noonfînoonf/idblgrave noonfïnoonf/idieresisacute noonf/idotaccent noonf/idotbelow noonfìnoonf/ihookabove noonf/iinvertedbreve noonf/ij noonf/iacute_j.NLD noonf/imacron noonf/dotlessiogonek noonf/iogonek noonf/itilde no\012\012onfHHO/space onfJHO/space onfMHO/space onfTHO/space onfUHO/space onfVHO/space onfWHO/space onfXHO/space onfYHO/space onfZHO/space onfÐHO/space onf/Schwa HO\012\012onfanoonfbnoonfcnoonfdnoonfenoonffnoonfgnoonfhnoonfinoonfjnoonfknoonflnoonfmnoonfnnoonfonoonfpnoonfqnoonfrnoonfsnoonftnoonfunoonfvnoonfwnoonfxnoonfynoonfzno\012\012onfánoonf/abreve noonf/abreveacute noonf/abrevedotbelow noonf/abrevegrave noonf/abrevehookabove noonf/abrevetilde noonfânoonf/acircumflexacute noonf/acircumflexdotbelow noonf/acircumflexgrave noonf/acircumflexhookabove noonf/acircumflextilde noonf/adblgrave noonfänoonf/adotbelow noonfànoonf/ahookabove noonf/ainvertedbreve noonf/amacron noonf/aogonek noonfånoonf/aringacute noonfãnoonfænoonf/aeacute noonf/cacute noonf/ccaron noonfçnoonf/ccedillaacute noonf/ccircumflex noonf/cdotaccent noonfðnoonf/dcaron noonf/dcroat noonf/ddotbelow noonf/dlinebelow noonf/dzcaron noonfénoonf/ebreve noonf/ecaron noonf/ecedillabreve noonfênoonf/ecircumflexacute noonf/ecircumflexdotbelow noonf/ecircumflexgrave noonf/ecircumflexhookabove noonf/ecircumflextilde noonf/edblgrave noonfënoonf/edotaccent noonf/edotbelow noonfènoonf/ehookabove noonf/einvertedbreve noonf/emacron noonf/emacronacute noonf/emacrongrave noonf/eogonek noonf/etilde noonf/schwa noonf/gbreve noonf/gcaron noonf/gcircumflex noonf/gcommaaccent noonf/gdotaccent noonf/gmacron noonf/hbar noonf/hbrevebelow noonf/hcircumflex noonf/hdotbelow noonf/dotlessi noonfínoonf/ibreve noonfînoonf/idblgrave noonfïnoonf/idieresisacute noonf/idotaccent noonf/idotbelow noonfìnoonf/ihookabove noonf/iinvertedbreve noonf/ij noonf/iacute_j.NLD noonf/imacron noonf/dotlessiogonek noonf/iogonek noonf/itilde noonf/dotlessj noonf/jacute noonf/jcircumflex noonf/kcommaaccent noonf/kgreenladic noonf/lacute noonf/lcaron noonf/lcommaaccent noonf/ldot nfoonf/ldotbelow noonf/lj noonf/llinebelow noonf/lslash noonf/mdotbelow noonf/nacute noonf/napostrophe noonf/ncaron noonf/ncommaaccent noonf/ndotaccent noonf/ndotbelow noonf/eng noonf/nj noonf/nlinebelow noonfñnoonfónoonf/obreve noonfônoonf/ocircumflexacute noonf/ocircumflexdotbelow noonf/ocircumflexgrave noonf/ocircumflexhookabove noonf/ocircumflextilde noonf/odblgrave noonfönoonf/odieresismacron noonf/odotaccentmacron noonf/odotbelow noonfònoonf/ohookabove noonf/ohorn noonf/ohornacute noonf/ohorndotbelow noonf/ohorngrave noonf/ohornhookabove noonf/ohorntilde noonf/ohungarumlaut noonf/oinvertedbreve noonf/omacron noonf/omacronacute noonf/omacrongrave noonf/oogonek noonfønoonf/oslashacute noonfõnoonf/otildeacute noonf/otildedieresis noonf/otildemacron noonf/oe noonf/racute noonf/rcaron noonf/rcommaaccent noonf/rdblgrave noonf/rdotbelow noonf/rinvertedbreve noonf/rlinebelow noonf/sacute noonf/sacutedotaccent noonf/scaron noonf/scarondotaccent noonf/scedilla noonf/scircumflex noonf/scommaaccent noonf/sdotaccent noonf/sdotbelow noonf/sdotbelowdotaccent noonfßnoonf/tbar noonf/tcaron noonf/tcedilla noonf/tcommaaccent noonf/tdieresis noonf/tdotbelow noonf/tlinebelow noonfúnoonf/ubreve noonfûnoonf/udblgrave noonfünoonf/udotbelow noonfùnoonf/uhookabove noonf/uhorn noonf/uhornacute noonf/uhorndotbelow noonf/uhorngrave noonf/uhornhookabove noonf/uhorntilde noonf/uhungarumlaut noonf/uinvertedbreve noonf/umacron noonf/umacrondieresis noonf/uogonek noonf/uring noonf/utilde noonf/utildeacute noonf/wacute noonf/wcircumflex noonf/wdieresis noonf/wgrave noonfýnoonf/ycircumflex noonf/ydieresis noonf/ydotaccent noonf/ydotbelow noonf/ygrave noonf/yhookabove noonf/ymacron noonf/ytilde noonf/zacute noonf/zcaron noonf/zdotaccent no\012\012onf.noonf,noonf:noonf;noonf/ellipsis noonf!noonf¡noonf?noonf¿noonf·noonf/bullet noonf*noonf#noonf//noonf/backslash noonf/exclamdown.case noonf/questiondown.case noonf/periodcentered.case noonf/bullet.case noonf/slash.case noonf/backslash.case noonf(noonf)noonf{noonf}noonf[noonf]noonf/parenleft.case noonf/parenright.case noonf/braceleft.case noonf/braceright.case noonf/bracketleft.case noonf/bracketright.case noonf/leftanglebracket-math noonf/rightanglebracket-math noonf/leftanglebracket-math.case noonf/rightanglebracket-math.case noonf-noonf­noonf/endash noonf/emdash noonf/figuredash noonf/horizontalbar noonf/hyphentwo noonf_noonf/hyphen.case noonf/endash.case noonf/emdash.case noonf/quotesinglbase noonf/quotedblbase noonf/quotedblleft noonf/quotedblright noonf/quoteleft noonf/quoteright noonf«noonf»noonf/guilsinglleft noonf/guilsinglright noonf\"noonf'noonf/guillemetleft.case noonf/guillemetright.case noonf/guilsinglleft.case noonf/guilsinglright.case no\012\012onf@noonf/at.case noonf&noonf/ampersand.ss05 noonf¶noonf§noonf©noonf®noonf/trademark noonf/dagger noonf/daggerdbl noonf/arrowup noonf/arrowright noonf/arrowdown noonf/arrowleft noonf/arrowboth noonf/arrowupdown no\012\012\012"
 );
 classes = (
 {
@@ -18273,7 +18272,7 @@ width = 1445;
 },
 {
 glyphname = Y;
-lastChange = "2020-11-14 23:02:32 +0000";
+lastChange = "2020-11-15 10:01:14 +0000";
 layers = (
 {
 anchors = (
@@ -28622,7 +28621,7 @@ width = 675;
 },
 {
 glyphname = j;
-lastChange = "2020-11-14 22:46:03 +0000";
+lastChange = "2020-11-15 09:55:34 +0000";
 layers = (
 {
 background = {
@@ -49930,7 +49929,7 @@ width = 1389;
 },
 {
 glyphname = slash;
-lastChange = "2020-11-14 11:52:20 +0000";
+lastChange = "2020-11-15 10:02:55 +0000";
 layers = (
 {
 background = {
@@ -50039,7 +50038,7 @@ width = 928;
 },
 {
 glyphname = backslash;
-lastChange = "2020-11-06 20:54:56 +0000";
+lastChange = "2020-11-15 10:34:11 +0000";
 layers = (
 {
 background = {
@@ -104609,7 +104608,7 @@ unicode = 1E68;
 },
 {
 glyphname = Germandbls;
-lastChange = "2020-11-14 15:32:10 +0000";
+lastChange = "2020-11-15 10:02:24 +0000";
 layers = (
 {
 background = {
@@ -110730,7 +110729,7 @@ unicode = 1EAB;
 {
 color = 7;
 glyphname = adblgrave;
-lastChange = "2020-11-15 01:03:34 +0000";
+lastChange = "2020-11-15 10:36:40 +0000";
 layers = (
 {
 components = (
@@ -115735,7 +115734,7 @@ unicode = 1EC5;
 {
 color = 7;
 glyphname = edblgrave;
-lastChange = "2020-11-13 15:34:52 +0000";
+lastChange = "2020-11-15 10:36:37 +0000";
 layers = (
 {
 components = (
@@ -117765,7 +117764,7 @@ unicode = 1E21;
 },
 {
 glyphname = hbar;
-lastChange = "2020-11-15 01:00:36 +0000";
+lastChange = "2020-11-15 10:37:36 +0000";
 layers = (
 {
 anchors = (
@@ -119274,7 +119273,7 @@ public.markColor = "0,0.67,0.91,1";
 {
 color = 7;
 glyphname = ibreve;
-lastChange = "2020-11-15 01:01:44 +0000";
+lastChange = "2020-11-15 10:35:16 +0000";
 layers = (
 {
 components = (
@@ -119430,7 +119429,7 @@ public.markColor = "0,0.67,0.91,1";
 {
 color = 7;
 glyphname = idblgrave;
-lastChange = "2020-11-15 01:04:15 +0000";
+lastChange = "2020-11-15 10:36:46 +0000";
 layers = (
 {
 components = (
@@ -119466,7 +119465,7 @@ unicode = 0209;
 {
 color = 7;
 glyphname = idieresis;
-lastChange = "2020-11-15 01:01:41 +0000";
+lastChange = "2020-11-15 10:35:11 +0000";
 layers = (
 {
 components = (
@@ -119544,7 +119543,7 @@ public.markColor = "0,0.67,0.91,1";
 {
 color = 7;
 glyphname = idieresisacute;
-lastChange = "2020-11-15 01:05:00 +0000";
+lastChange = "2020-11-15 10:36:52 +0000";
 layers = (
 {
 components = (
@@ -119693,7 +119692,7 @@ unicode = 1ECB;
 {
 color = 7;
 glyphname = igrave;
-lastChange = "2020-11-15 01:02:18 +0000";
+lastChange = "2020-11-15 10:34:44 +0000";
 layers = (
 {
 components = (
@@ -124501,7 +124500,7 @@ unicode = 1ED7;
 {
 color = 7;
 glyphname = odblgrave;
-lastChange = "2020-11-15 01:05:16 +0000";
+lastChange = "2020-11-15 10:36:29 +0000";
 layers = (
 {
 components = (
@@ -128231,7 +128230,7 @@ public.markColor = "0,0.67,0.91,1";
 {
 color = 7;
 glyphname = rdblgrave;
-lastChange = "2020-11-15 01:05:45 +0000";
+lastChange = "2020-11-15 10:36:24 +0000";
 layers = (
 {
 components = (
@@ -130218,7 +130217,7 @@ public.markColor = "0,0.67,0.91,1";
 {
 color = 7;
 glyphname = tdieresis;
-lastChange = "2020-11-15 01:06:09 +0000";
+lastChange = "2020-11-15 10:36:19 +0000";
 layers = (
 {
 background = {
@@ -130649,7 +130648,7 @@ public.markColor = "0,0.67,0.91,1";
 {
 color = 7;
 glyphname = udblgrave;
-lastChange = "2020-11-15 01:06:12 +0000";
+lastChange = "2020-11-15 10:36:16 +0000";
 layers = (
 {
 components = (
@@ -197874,6 +197873,7 @@ jcircumflex = 30;
 one.lf = -10;
 registered = 20;
 seven.lf = -10;
+slash = -30;
 three.lf = -10;
 two.lf = -10;
 };
@@ -197916,7 +197916,7 @@ eth = -10;
 four = -10;
 four.lf = -20;
 seven = 20;
-slash = -10;
+slash = -20;
 three = -3;
 three.lf = -10;
 };
@@ -198174,6 +198174,7 @@ two.lf = -20;
 "@MMK_R_z" = -40;
 "@MMK_R_zero.lf" = -10;
 adblgrave = 27;
+backslash = 50;
 ecircumflextilde = -13;
 edblgrave = 27;
 eight.lf = -20;
@@ -198195,6 +198196,7 @@ otildedieresis = -13;
 otildemacron = -13;
 rdblgrave = 50;
 registered = 20;
+slash = -30;
 three.lf = -10;
 two.lf = -10;
 };
@@ -198549,7 +198551,7 @@ rcaron = -35;
 scaron = -57;
 schwa = -65;
 scircumflex = -53;
-slash = -20;
+slash = -40;
 three = -40;
 three.lf = -25;
 two = -40;
@@ -198869,6 +198871,7 @@ two.lf = 20;
 "@MMK_R_y" = 6;
 "@MMK_R_zero.lf" = 20;
 adieresis = -3;
+backslash = 40;
 ccaron = -1;
 ecaron = -1;
 eight = 15;
@@ -201326,8 +201329,9 @@ backslash = {
 "@MMK_R_U" = -20;
 "@MMK_R_V" = -25;
 "@MMK_R_W" = -30;
-"@MMK_R_Y" = -30;
+"@MMK_R_Y" = -50;
 "@MMK_R_d" = -3;
+"@MMK_R_j" = 20;
 "@MMK_R_nine" = -5;
 "@MMK_R_o" = -3;
 "@MMK_R_t" = -5;
@@ -201432,6 +201436,7 @@ seven.lf = 13;
 "@MMK_R_V" = -10;
 "@MMK_R_T" = -2;
 "@MMK_R_quotesingle" = 15;
+backslash = 24;
 };
 ecircumflexgrave = {
 "@MMK_R_asterisk" = 0;
@@ -201464,6 +201469,7 @@ seven.lf = 13;
 "@MMK_R_V" = 10;
 "@MMK_R_T" = -2;
 "@MMK_R_quotesingle" = 15;
+backslash = 24;
 };
 ecircumflextilde = {
 "@MMK_R_asterisk" = -6;
@@ -202040,6 +202046,7 @@ eight.lf = 0;
 "@MMK_R_V" = 10;
 "@MMK_R_T" = 14;
 "@MMK_R_quotesingle" = 1;
+backslash = 0;
 };
 idotaccent = {
 "@MMK_R_i" = 0;
@@ -202283,6 +202290,7 @@ seven.lf = -10;
 "@MMK_R_W" = -23;
 "@MMK_R_V" = -2;
 "@MMK_R_T" = -32;
+backslash = -15;
 };
 ocircumflexhookabove = {
 "@MMK_R_asterisk" = -25;
@@ -202927,6 +202935,7 @@ slash = {
 "@MMK_R_u" = -10;
 "@MMK_R_x" = -22;
 "@MMK_R_z" = -15;
+Germandbls = -30;
 eight = -35;
 five = -15;
 four = -40;
@@ -202934,6 +202943,18 @@ one = -10;
 three = -20;
 two = -35;
 zero = -35;
+igrave = 10;
+idieresis = 10;
+ibreve = 10;
+adblgrave = -15;
+edblgrave = -15;
+idblgrave = 70;
+idieresisacute = 15;
+odblgrave = -15;
+rdblgrave = 20;
+tdieresis = 20;
+udblgrave = 10;
+hbar = 10;
 };
 slash.case = {
 "@MMK_R_nine.lnum" = -10;
@@ -204087,6 +204108,7 @@ two.lf = -10;
 "@MMK_R_quotesingle" = 20;
 "@MMK_R_superior" = 10;
 "@MMK_R_trademark" = 30;
+backslash = 50;
 ibreve = 30;
 icircumflex = 30;
 idblgrave = 70;
@@ -204099,6 +204121,7 @@ jcircumflex = 30;
 one.lf = -10;
 registered = 20;
 seven.lf = -10;
+slash = -30;
 three.lf = -20;
 two.lf = -20;
 };
@@ -204407,6 +204430,7 @@ two.lf = -16;
 "@MMK_R_z" = -50;
 "@MMK_R_zero.lf" = -30;
 adblgrave = 18;
+backslash = 50;
 ecircumflextilde = -22;
 edblgrave = 38;
 eight.lf = -30;
@@ -204428,6 +204452,7 @@ otildedieresis = -22;
 otildemacron = -22;
 rdblgrave = 50;
 registered = 20;
+slash = -40;
 three.lf = -20;
 two.lf = -20;
 };
@@ -204785,7 +204810,7 @@ rcaron = -26;
 scaron = -55;
 schwa = -62;
 scircumflex = -49;
-slash = -20;
+slash = -40;
 three = -35;
 three.lf = -25;
 two = -25;
@@ -205109,6 +205134,7 @@ two.lf = 20;
 "@MMK_R_y" = 8;
 "@MMK_R_zero.lf" = 15;
 adieresis = -2;
+backslash = 60;
 ccaron = 2;
 ecaron = 2;
 eight = 15;
@@ -207578,10 +207604,10 @@ backslash = {
 "@MMK_R_U" = -20;
 "@MMK_R_V" = -25;
 "@MMK_R_W" = -30;
-"@MMK_R_Y" = -25;
+"@MMK_R_Y" = -55;
 "@MMK_R_d" = -5;
 "@MMK_R_i" = -10;
-"@MMK_R_j" = 7.12727;
+"@MMK_R_j" = 27;
 "@MMK_R_nine" = -15;
 "@MMK_R_o" = -5;
 "@MMK_R_t" = -5;
@@ -207688,6 +207714,7 @@ seven.lf = 12;
 "@MMK_R_V" = -7;
 "@MMK_R_T" = 6;
 "@MMK_R_quotesingle" = 23;
+backslash = -12;
 };
 ecircumflexgrave = {
 "@MMK_R_asterisk" = 6;
@@ -207720,6 +207747,7 @@ seven.lf = 12;
 "@MMK_R_V" = 3;
 "@MMK_R_T" = 6;
 "@MMK_R_quotesingle" = 18;
+backslash = 18;
 };
 ecircumflextilde = {
 "@MMK_R_asterisk" = -4;
@@ -208294,6 +208322,7 @@ eight.lf = 0;
 "@MMK_R_V" = 13;
 "@MMK_R_T" = 11;
 "@MMK_R_quotesingle" = 10;
+backslash = 12;
 };
 idotaccent = {
 "@MMK_R_i" = 0;
@@ -208532,6 +208561,7 @@ seven.lf = -10;
 "@MMK_R_W" = -21;
 "@MMK_R_V" = -23;
 "@MMK_R_T" = -20;
+backslash = -12;
 };
 ocircumflexhookabove = {
 "@MMK_R_asterisk" = -22;
@@ -209179,6 +209209,7 @@ slash = {
 "@MMK_R_u" = -10;
 "@MMK_R_x" = -15;
 "@MMK_R_z" = -20;
+Germandbls = -30;
 eight = -40;
 five = -15;
 four = -40;
@@ -209186,6 +209217,18 @@ one = -10;
 three = -20;
 two = -32;
 zero = -30;
+hbar = 20;
+igrave = 10;
+ibreve = 10;
+idieresis = 10;
+udblgrave = 10;
+tdieresis = 20;
+rdblgrave = 20;
+odblgrave = -2;
+adblgrave = -12;
+edblgrave = 8;
+idblgrave = 80;
+idieresisacute = 20;
 };
 slash.case = {
 "@MMK_R_nine.lnum" = -5;
