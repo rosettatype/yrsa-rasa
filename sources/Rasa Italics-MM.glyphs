@@ -175935,7 +175935,7 @@ width = 375;
 {
 color = 9;
 glyphname = onehalf;
-lastChange = "2020-08-02 14:37:18 +0000";
+lastChange = "2020-11-28 23:42:39 +0000";
 layers = (
 {
 components = (
@@ -175974,6 +175974,8 @@ layerId = "925CB40E-795E-477B-BAE7-1EE7D58841B5";
 width = 918;
 }
 );
+leftKerningGroup = numr;
+rightKerningGroup = dnom;
 unicode = 00BD;
 userData = {
 com.schriftgestaltung.Glyphs.ColorIndex = 6;
@@ -176032,7 +176034,7 @@ public.markColor = "0,0.67,0.91,1";
 {
 color = 9;
 glyphname = onequarter;
-lastChange = "2020-08-02 14:38:00 +0000";
+lastChange = "2020-11-28 23:42:39 +0000";
 layers = (
 {
 components = (
@@ -176071,6 +176073,8 @@ layerId = "925CB40E-795E-477B-BAE7-1EE7D58841B5";
 width = 918;
 }
 );
+leftKerningGroup = numr;
+rightKerningGroup = dnom;
 unicode = 00BC;
 userData = {
 com.schriftgestaltung.Glyphs.ColorIndex = 6;
@@ -176129,7 +176133,7 @@ public.markColor = "0,0.67,0.91,1";
 {
 color = 9;
 glyphname = threequarters;
-lastChange = "2020-11-06 22:16:55 +0000";
+lastChange = "2020-11-28 23:42:39 +0000";
 layers = (
 {
 components = (
@@ -176168,6 +176172,8 @@ layerId = "925CB40E-795E-477B-BAE7-1EE7D58841B5";
 width = 918;
 }
 );
+leftKerningGroup = numr;
+rightKerningGroup = dnom;
 unicode = 00BE;
 userData = {
 com.schriftgestaltung.Glyphs.ColorIndex = 6;
