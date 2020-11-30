@@ -1545,10 +1545,10 @@ userData = {
 GSCornerRadius = 95;
 };
 verticalStems = (
-62,
-60,
 69,
 67,
+62,
+60,
 55
 );
 weight = Light;
@@ -1609,11 +1609,11 @@ showMeasurement = 1;
 }
 );
 horizontalStems = (
+85,
 77,
-56,
 67,
-52,
-85
+56,
+52
 );
 id = "925CB40E-795E-477B-BAE7-1EE7D58841B5";
 italicAngle = 7.1;
@@ -1621,10 +1621,10 @@ userData = {
 GSCornerRadius = 15;
 };
 verticalStems = (
-138,
-131,
 151,
 142,
+138,
+131,
 115
 );
 weight = Bold;
@@ -133675,8 +133675,9 @@ rightKerningGroup = z;
 unicode = 1E93;
 },
 {
+color = 0;
 glyphname = f_b;
-lastChange = "2020-11-25 18:31:35 +0000";
+lastChange = "2020-11-30 18:24:18 +0000";
 layers = (
 {
 anchors = (
@@ -133856,8 +133857,9 @@ rightKerningGroup = o;
 rightMetricsKey = b;
 },
 {
+color = 0;
 glyphname = f_f;
-lastChange = "2020-11-25 18:31:37 +0000";
+lastChange = "2020-11-30 18:24:18 +0000";
 layers = (
 {
 anchors = (
@@ -133904,8 +133906,9 @@ rightKerningGroup = f;
 rightMetricsKey = f;
 },
 {
+color = 0;
 glyphname = f_f_b;
-lastChange = "2020-11-25 18:31:56 +0000";
+lastChange = "2020-11-30 18:24:18 +0000";
 layers = (
 {
 anchors = (
@@ -134086,8 +134089,9 @@ rightKerningGroup = o;
 rightMetricsKey = b;
 },
 {
+color = 0;
 glyphname = f_f_h;
-lastChange = "2020-11-25 18:32:24 +0000";
+lastChange = "2020-11-30 18:24:18 +0000";
 layers = (
 {
 anchors = (
@@ -134284,8 +134288,9 @@ rightKerningGroup = n;
 rightMetricsKey = h;
 },
 {
+color = 0;
 glyphname = f_f_i;
-lastChange = "2020-11-25 18:32:03 +0000";
+lastChange = "2020-11-30 18:24:18 +0000";
 layers = (
 {
 anchors = (
@@ -134340,8 +134345,9 @@ rightKerningGroup = i;
 rightMetricsKey = i;
 },
 {
+color = 0;
 glyphname = f_f_j;
-lastChange = "2020-11-25 18:32:05 +0000";
+lastChange = "2020-11-30 18:24:18 +0000";
 layers = (
 {
 anchors = (
@@ -134396,8 +134402,9 @@ rightKerningGroup = j;
 rightMetricsKey = j;
 },
 {
+color = 0;
 glyphname = f_f_k;
-lastChange = "2020-11-25 18:32:07 +0000";
+lastChange = "2020-11-30 18:24:18 +0000";
 layers = (
 {
 anchors = (
@@ -134596,8 +134603,9 @@ rightKerningGroup = k;
 rightMetricsKey = k;
 },
 {
+color = 0;
 glyphname = f_f_l;
-lastChange = "2020-11-25 18:32:09 +0000";
+lastChange = "2020-11-30 18:24:18 +0000";
 layers = (
 {
 anchors = (
@@ -134652,8 +134660,9 @@ rightKerningGroup = l;
 rightMetricsKey = l;
 },
 {
+color = 0;
 glyphname = f_f_t;
-lastChange = "2020-11-25 18:32:12 +0000";
+lastChange = "2020-11-30 18:24:18 +0000";
 layers = (
 {
 anchors = (
@@ -134708,8 +134717,9 @@ rightKerningGroup = t;
 rightMetricsKey = t;
 },
 {
+color = 0;
 glyphname = f_h;
-lastChange = "2020-11-25 18:31:28 +0000";
+lastChange = "2020-11-30 18:24:18 +0000";
 layers = (
 {
 anchors = (
@@ -135686,8 +135696,9 @@ rightKerningGroup = j;
 rightMetricsKey = j;
 },
 {
+color = 0;
 glyphname = f_k;
-lastChange = "2020-11-25 18:31:03 +0000";
+lastChange = "2020-11-30 18:24:18 +0000";
 layers = (
 {
 anchors = (
@@ -135870,8 +135881,9 @@ rightKerningGroup = k;
 rightMetricsKey = k;
 },
 {
+color = 0;
 glyphname = f_l;
-lastChange = "2020-11-25 18:30:52 +0000";
+lastChange = "2020-11-30 18:24:18 +0000";
 layers = (
 {
 anchors = (
