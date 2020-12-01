@@ -17,7 +17,7 @@ code = "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Agrave Aacute Acircu
 name = Uppercase;
 }
 );
-copyright = "Copyright © 2015 by Rosetta Type Foundry. All rights reserved.";
+copyright = "Copyright 2015 Yrsa-Rasa Project Authors (https://github.com/rosettatype/yrsa-rasa/)";
 customParameters = (
 {
 name = glyphOrder;
