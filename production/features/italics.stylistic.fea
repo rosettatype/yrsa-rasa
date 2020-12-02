@@ -1,0 +1,24 @@
+
+# Ampersand with swashy terminal
+lookup LATIN_ss05 {
+    sub ampersand by ampersand.ss05;
+} LATIN_ss05;
+
+# A more cursive Numero
+lookup LATIN_ss06 {
+    sub numero by numero.ss06;
+    sub numero.case by numero.case.ss06;
+};
+
+feature salt {
+    lookup LATIN_ss05;
+    lookup LATIN_ss06;
+} salt;
+
+feature ss05 {
+    lookup LATIN_ss05;
+} ss05;
+
+feature ss06 {
+    lookup LATIN_ss06;
+}

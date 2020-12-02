@@ -1,0 +1,13 @@
+lookup LATIN_f_rclt {
+    # f before f
+    sub f' [f f_b f_f f_f_b f_f_h f_f_i f_f_j f_f_k f_f_l f_h f_i f_j f_k f_l f_t f_f_t f.connecting f.before-ascenders f.before-f germandbls] by f.before-f;
+
+    # f before ascenders
+    sub f' [b h k l hbar hbrevebelow hcircumflex hdotbelow kcommaaccent lacute lcaron lcommaaccent ldot ldotbelow lj llinebelow lslash thorn] by f.before-ascenders;
+} LATIN_f_rclt;
+
+lookup LATIN_f_liga {
+    # f before accented narrow letters and t
+    # can be substituted before idotless etc.
+    sub f' [i idotbelow iogonek iogonekdotless iacute ij jacute iacute_j.NLD idotless j jdotless idotaccent t tcaron tcedilla tcommaaccent tdotbelow tlinebelow] by f.connecting;
+}

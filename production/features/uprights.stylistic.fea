@@ -1,0 +1,25 @@
+
+# More decorative shapes
+lookup GUJARATI_ss01 {
+    sub gjDRa by gjDRa.ss01;
+    sub gjDGa by gjDGa.ss01;
+    sub gjDGha by gjDGha.ss01;
+    sub gjDDha by gjDDha.ss01;
+    sub gjDNa by gjDNa.ss01;
+    sub gjDBa by gjDBa.ss01;
+    sub gjDVa by gjDVa.ss01;
+} GUJARATI_ss01;
+
+feature salt {
+    lookup GUJARATI_ss01;
+} salt;
+
+feature ss01 {
+    lookup GUJARATI_ss01;
+} ss01;
+
+# Alternative shape for Gujarati six
+feature ss02 {
+    sub gjSix by gjSix.ss02;
+    sub gjSix.tf by gjSix.tf.ss02;
+} ss02;
