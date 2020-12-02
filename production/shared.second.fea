@@ -49,13 +49,13 @@ feature cpsp {
 
 feature calt {
 	lookup periodcenteredCAT1 {
-		sub ldot by l __periodcentered.CAT;
-		sub Ldot by L __periodcentered.CAT.case;
+		sub ldot by l periodcentered.CAT;
+		sub Ldot by L periodcentered.CAT.case;
 	} periodcenteredCAT1;
 
 	lookup periodcenteredCAT2 {
-		sub l periodcentered' l by __periodcentered.CAT;
-		sub L periodcentered' L by __periodcentered.CAT.case;
+		sub l periodcentered' l by periodcentered.CAT;
+		sub L periodcentered' L by periodcentered.CAT.case;
 	} periodcenteredCAT2;
 } calt;
 
