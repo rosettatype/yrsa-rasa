@@ -9,7 +9,9 @@ DisplayStrings = (
 "00/divisionslash 001/divisionslash 002/divisionslash 003/divisionslash 004/divisionslash 005/divisionslash 006/divisionslash 007/divisionslash 008/divisionslash 009/divisionslash 00\0120/divisionslash 000/divisionslash 100/divisionslash 200/divisionslash 300/divisionslash 400/divisionslash 500/divisionslash 600/divisionslash 700/divisionslash 800/divisionslash 900\012\012HHA/divisionslash HHHHB/divisionslash HHHHC/divisionslash HHHHD/divisionslash HHHHE/divisionslash HHHHF/divisionslash HHHHG/divisionslash HHHHH/divisionslash HHHHI/divisionslash HHHHJ/divisionslash HHHHK/divisionslash HHHHL/divisionslash HHHHM/divisionslash HHHHN/divisionslash HHHHO/divisionslash HHHHP/divisionslash HHHHQ/divisionslash HHHHR/divisionslash HHHHS/divisionslash HHHHT/divisionslash HHHHU/divisionslash HHHHV/divisionslash HHHHW/divisionslash HHHHX/divisionslash HHHHY/divisionslash HHHHZ/divisionslash HHHHÆ/divisionslash HHHHÐ/divisionslash HHHH/OE/divisionslash HHHH/Hbar/divisionslash HHHH/Lslash/divisionslash HHHH/Eng/divisionslash HHHHØ/divisionslash HHHH/Germandbls/divisionslash HHHH/Tbar/divisionslash HHHHÞ/divisionslash HHHH/Schwa/divisionslash HHHH/Ohorn/divisionslash HHHH/Uhorn/divisionslash HH\012\012HH/divisionslash A/divisionslash HHHH/divisionslash HHHH/divisionslash J/divisionslash HHHH/divisionslash M/divisionslash HHHH/divisionslash O/divisionslash HHHH/divisionslash S/divisionslash HHHH/divisionslash T/divisionslash HHHH/divisionslash U/divisionslash HHHH/divisionslash V/divisionslash HHHH/divisionslash W/divisionslash HHHH/divisionslash X/divisionslash HHHH/divisionslash Y/divisionslash HHHH/divisionslash Z/divisionslash HHHH/divisionslash Æ/divisionslash HHHH/divisionslash Ð/divisionslash HHHH/divisionslash/Hbar/divisionslash HHHH/divisionslash/Lslash/divisionslash HHHH/divisionslash/Germandbls/divisionslash HHHH/divisionslash/Tbar/divisionslash HHHH/divisionslash/Schwa HH\012\012nna/divisionslash nnnnb/divisionslash nnnnc/divisionslash nnnnd/divisionslash nnnne/divisionslash nnnnf/divisionslash nnnng/divisionslash nnnnh/divisionslash nnnni/divisionslash nnnnj/divisionslash nnnnk/divisionslash nnnnl/divisionslash nnnnm/divisionslash nnnnn/divisionslash nnnno/divisionslash nnnnp/divisionslash nnnnq/divisionslash nnnnr/divisionslash nnnns/divisionslash nnnnt/divisionslash nnnnu/divisionslash nnnnv/divisionslash nnnnw/divisionslash nnnnx/divisionslash nnnny/divisionslash nnnnz/divisionslash nnnnæ/divisionslash nnnn/dcroat/divisionslash nnnn/eogonek/divisionslash nnnn/hbar/divisionslash nnnn/idotless/divisionslash nnnn/jdotless/divisionslash nnnn/lslash/divisionslash nnnn/eng/divisionslash nnnnø/divisionslash nnnn/oe/divisionslash nnnnß/divisionslash nnnn/tbar/divisionslash nnnnð/divisionslash nnnnþ/divisionslash nnnn/schwa/divisionslash nnnn/ohorn/divisionslash nnnn/uhorn/divisionslash nnnn/divisionslash nnnn\012nn/divisionslash annnn/divisionslash bnnnn/divisionslash cnnnn/divisionslash dnnnn/divisionslash ennnn/divisionslash fnnnn/divisionslash gnnnn/divisionslash hnnnn/divisionslash innnn/divisionslash jnnnn/divisionslash knnnn/divisionslash lnnnn/divisionslash mnnnn/divisionslash nnnnn/divisionslash onnnn/divisionslash pnnnn/divisionslash qnnnn/divisionslash rnnnn/divisionslash snnnn/divisionslash tnnnn/divisionslash unnnn/divisionslash vnnnn/divisionslash wnnnn/divisionslash xnnnn/divisionslash ynnnn/divisionslash znnnn/divisionslash ænnnn/divisionslash/dcroat nnnn/divisionslash/eogonek nnnn/divisionslash/hbar nnnn/divisionslash/idotless nnnn/divisionslash/jdotless nnnn/divisionslash/lslash nnnn/divisionslash/eng nnnn/divisionslash ønnnn/divisionslash/oe nnnn/divisionslash ßnnnn/divisionslash/tbar nnnn/divisionslash ðnnnn/divisionslash þnnnn/divisionslash/schwa nnnn/divisionslash/ohorn nnnn/divisionslash/uhorn nnnn/divisionslash nnnn/divisionslash \012\012nn/divisionslash o/divisionslash nnnn/divisionslash s/divisionslash nnnn/divisionslash v/divisionslash nnnn/divisionslash w/divisionslash nnnn/divisionslash x/divisionslash nnnn/divisionslash y/divisionslash nnnn/divisionslash z/divisionslash nnn\012",
 CQcefhgnopyz,
 "/dieresiscomb.narrow.case",
-"Ï"
+"Ï",
+"/zero.zero/zero.tf/zero.tf.zero",
+"/zero.lf.tf.zero"
 );
 classes = (
 {
@@ -124300,7 +124302,7 @@ transform = "{1, 0, 0, 1, 19, 0}";
 }
 );
 layerId = "DAAEA780-4710-4479-B303-5C05B40621B2";
-width = 479;
+width = 480;
 },
 {
 background = {
@@ -124361,7 +124363,7 @@ width = 480;
 }
 );
 leftMetricsKey = zero.tf;
-rightMetricsKey = zero.tf;
+widthMetricsKey = "=zero.tf";
 },
 {
 color = 7;
@@ -137492,7 +137494,7 @@ nodes = (
 );
 }
 );
-width = 481;
+width = 480;
 },
 {
 background = {
@@ -137588,11 +137590,11 @@ nodes = (
 );
 }
 );
-width = 481;
+width = 480;
 }
 );
 leftMetricsKey = zero.lf.tf;
-rightMetricsKey = zero.lf.tf;
+widthMetricsKey = "=zero.tf";
 },
 {
 glyphname = zero.lf.tf;
