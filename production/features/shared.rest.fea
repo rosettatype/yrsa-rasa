@@ -1,0 +1,124 @@
+
+#------------------------------------------------------------------------------
+# Ordinals
+
+feature ordn {
+    sub @Figures [A a]' by ordfeminine;
+    sub @Figures [O o]' by ordmasculine;
+    sub N o by numero;
+} ordn;
+
+
+
+#------------------------------------------------------------------------------
+# Case-sensitive forms
+
+feature case {
+	sub exclamdown by exclamdown.case;
+	sub questiondown by questiondown.case;
+	sub periodcentered by periodcentered.case;
+	sub bullet by bullet.case;
+	sub slash by slash.case;
+
+	sub backslash by backslash.case;
+	sub parenleft by parenleft.case;
+	sub parenright by parenright.case;
+	sub braceleft by braceleft.case;
+	sub braceright by braceright.case;
+	sub bracketleft by bracketleft.case;
+	sub bracketright by bracketright.case;
+	sub leftanglebracket by leftanglebracket.case;
+	sub rightanglebracket by rightanglebracket.case;
+
+	sub hyphen by hyphen.case;
+	sub endash by endash.case;
+	sub emdash by emdash.case;
+	sub guillemetleft by guillemetleft.case;
+	sub guillemetright by guillemetright.case;
+	sub guilsinglleft by guilsinglleft.case;
+	sub guilsinglright by guilsinglright.case;
+	sub at by at.case;
+
+	sub dieresiscomb by dieresiscomb.case;
+	sub dotaccentcomb by dotaccentcomb.case;
+	sub gravecomb by gravecomb.case;
+	sub acutecomb by acutecomb.case;
+	sub hungarumlautcomb by hungarumlautcomb.case;
+	sub circumflexcomb by circumflexcomb.case;
+	sub caroncomb by caroncomb.case;
+	sub brevecomb by brevecomb.case;
+	sub ringcomb by ringcomb.case;
+	sub tildecomb by tildecomb.case;
+	sub macroncomb by macroncomb.case;
+	sub hookabovecomb by hookabovecomb.case;
+	sub dblgravecomb by dblgravecomb.case;
+	sub breveinvertedcomb by breveinvertedcomb.case;
+	sub commaturnedabovecomb by commaturnedabovecomb.case;
+	sub horncomb by horncomb.case;
+	sub dotbelowcomb by dotbelowcomb.case;
+	sub dieresisbelowcomb by dieresisbelowcomb.case;
+	sub brevebelowcomb by brevebelowcomb.case;
+	sub macronbelowcomb by macronbelowcomb.case;
+	sub macronacutecomb by macronacutecomb.case;
+	sub macrongravecomb by macrongravecomb.case;
+	sub macroncomb.narrow by macroncomb.narrow.case;
+	sub dieresiscomb.narrow by dieresiscomb.narrow.case;
+	sub tildecomb.narrow by tildecomb.narrow.case;
+	sub brevecomb_acutecomb by brevecomb_acutecomb.case;
+	sub brevecomb_gravecomb by brevecomb_gravecomb.case;
+	sub brevecomb_hookabovecomb by brevecomb_hookabovecomb.case;
+	sub brevecomb_tildecomb by brevecomb_tildecomb.case;
+	sub circumflexcomb_acutecomb by circumflexcomb_acutecomb.case;
+	sub circumflexcomb_gravecomb by circumflexcomb_gravecomb.case;
+	sub circumflexcomb_hookabovecomb by circumflexcomb_hookabovecomb.case;
+	sub circumflexcomb_tildecomb by circumflexcomb_tildecomb.case;
+	sub dieresisacutecomb by dieresisacutecomb.case;
+	sub dieresismacroncomb by dieresismacroncomb.case;
+	sub tildemacroncomb by tildemacroncomb.case;
+	sub dotaccentmacroncomb by dotaccentmacroncomb.case;
+	sub tildeacutecomb by tildeacutecomb.case;
+	sub tildedieresiscomb by tildedieresiscomb.case;
+	sub carondotaccentcomb by carondotaccentcomb.case;
+	sub macrondieresiscomb by macrondieresiscomb.case;
+	sub acutedotaccentcomb by acutedotaccentcomb.case;
+	sub __periodcentered.CAT by __periodcentered.CAT.case;
+	
+	sub numero by numero.case;
+	sub percent by percent.case;
+	sub perthousand by perthousand.case;
+	sub degree by degree.case;
+	sub minute by minute.case;
+	sub second by second.case;
+
+	sub zero by zero.lf;
+	sub one by one.lf;
+	sub two by two.lf;
+	sub three by three.lf;
+	sub four by four.lf;
+	sub five by five.lf;
+	sub six by six.lf;
+	sub seven by seven.lf;
+	sub eight by eight.lf;
+	sub nine by nine.lf;
+	sub zero.tf by zero.lf.tf;
+	sub one.tf by one.lf.tf;
+	sub two.tf by two.lf.tf;
+	sub three.tf by three.lf.tf;
+	sub four.tf by four.lf.tf;
+	sub five.tf by five.lf.tf;
+	sub six.tf by six.lf.tf;
+	sub seven.tf by seven.lf.tf;
+	sub eight.tf by eight.lf.tf;
+	sub nine.tf by nine.lf.tf;
+	sub zero.zero by zero.lf.zero;
+	sub zero.tf.zero by zero.lf.tf.zero;
+} case;
+
+
+
+#------------------------------------------------------------------------------
+# All-caps spacing
+
+feature cpsp {
+	pos @Uppercase <10 0 20 0>; # do not include punctuation and figures
+} cpsp;

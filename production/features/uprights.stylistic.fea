@@ -10,9 +10,20 @@ lookup GUJARATI_ss01 {
     sub gjDVa by gjDVa.ss01;
 } GUJARATI_ss01;
 
+lookup GUJARATI_ss02 {
+    sub gjSix by gjSix.ss02;
+    sub gjSix.tf by gjSix.tf.ss02;
+} GUJARATI_ss02;
+
+
+
 feature salt {
     lookup GUJARATI_ss01;
+    lookup GUJARATI_ss02;
+	lookup locl_gujr;
 } salt;
+
+
 
 feature ss01 {
     lookup GUJARATI_ss01;
@@ -20,6 +31,14 @@ feature ss01 {
 
 # Alternative shape for Gujarati six
 feature ss02 {
-    sub gjSix by gjSix.ss02;
-    sub gjSix.tf by gjSix.tf.ss02;
+    lookup GUJARATI_ss02;
 } ss02;
+
+feature ss03 {
+    featureNames {
+        name "Gujarati punctuation";
+        name 1 "Gujarati punctuation";
+    };
+	
+	lookup locl_gujr;
+} ss03;

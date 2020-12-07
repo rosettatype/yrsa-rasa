@@ -1,0 +1,276 @@
+feature numr {
+	sub @Figures by @Numerators;
+} numr;
+
+feature dnom {
+	sub @Figures by @Denominators;
+} dnom;
+
+feature frac {
+
+	lookup percent {
+	sub zero [slash fraction divisionslash] zero by percent;
+	sub zero [slash fraction divisionslash] zero zero by perthousand;
+	} percent;
+	
+	lookup FractionBar {
+	     ignore sub slash
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         slash';
+	     ignore sub slash'
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         slash;
+	     ignore sub slash
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         slash';
+	     ignore sub slash'
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         slash;
+	     ignore sub slash
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         slash';
+	     ignore sub slash'
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         slash;
+	     ignore sub slash
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         slash';
+	     ignore sub slash'
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         slash;
+	     ignore sub slash
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         slash';
+	     ignore sub slash'
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         slash;
+	     ignore sub slash
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         slash';
+	     ignore sub slash'
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         slash;
+	     ignore sub slash
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         slash';
+	     ignore sub slash'
+	         @Figures
+	         @Figures
+	         @Figures
+	         @Figures
+	         slash;
+	     ignore sub slash
+	         @Figures
+	         @Figures
+	         @Figures
+	         slash';
+	     ignore sub slash'
+	         @Figures
+	         @Figures
+	         @Figures
+	         slash;
+	     ignore sub slash
+	         @Figures
+	         @Figures
+	         slash';
+	     ignore sub slash'
+	         @Figures
+	         @Figures
+	         slash;
+	     ignore sub slash
+	         @Figures
+	         slash';
+	     ignore sub slash'
+	         @Figures
+	         slash;
+	     sub @Figures slash' @Figures by fraction;
+	} FractionBar;
+
+	lookup Numerator1 {
+	     sub @Figures'
+	     fraction by @Numerators;
+	} Numerator1;
+
+	lookup Numerator2 {
+	     sub @Figures'
+	     @Numerators
+	     fraction by @Numerators;
+	} Numerator2;
+
+	lookup Numerator3 {
+	     sub @Figures'
+	     @Numerators
+	     @Numerators
+	     fraction by @Numerators;
+	} Numerator3;
+
+	lookup Numerator4 {
+	     sub @Figures'
+	     @Numerators
+	     @Numerators
+	     @Numerators
+	     fraction by @Numerators;
+	} Numerator4;
+
+	lookup Numerator5 {
+	     sub @Figures'
+	     @Numerators
+	     @Numerators
+	     @Numerators
+	     @Numerators
+	     fraction by @Numerators;
+	} Numerator5;
+
+	lookup Numerator6 {
+	     sub @Figures'
+	     @Numerators
+	     @Numerators
+	     @Numerators
+	     @Numerators
+	     @Numerators
+	     fraction by @Numerators;
+	} Numerator6;
+
+	lookup Numerator7 {
+	     sub @Figures'
+	     @Numerators
+	     @Numerators
+	     @Numerators
+	     @Numerators
+	     @Numerators
+	     @Numerators
+	     fraction by @Numerators;
+	} Numerator7;
+
+	lookup Numerator8 {
+	     sub @Figures'
+	     @Numerators
+	     @Numerators
+	     @Numerators
+	     @Numerators
+	     @Numerators
+	     @Numerators
+	     @Numerators
+	     fraction by @Numerators;
+	} Numerator8;
+
+	lookup Numerator9 {
+	     sub @Figures'
+	     @Numerators
+	     @Numerators
+	     @Numerators
+	     @Numerators
+	     @Numerators
+	     @Numerators
+	     @Numerators
+	     @Numerators
+	     fraction by @Numerators;
+	} Numerator9;
+
+	lookup Numerator10 {
+	     sub @Figures'
+	     @Numerators
+	     @Numerators
+	     @Numerators
+	     @Numerators
+	     @Numerators
+	     @Numerators
+	     @Numerators
+	     @Numerators
+	     @Numerators
+	     fraction by @Numerators;
+	} Numerator10;
+
+	lookup Denominator {
+	     sub [fraction @Denominators]
+	     @Figures' by @Denominators;
+	} Denominator;
+
+	sub @Figures space' @Numerators by thinspace;
+
+	# Vulgar fractions
+	sub one.numr fraction two.dnom by onehalf;
+	sub one.numr fraction four.dnom by onequarter;
+	sub three.numr fraction four.dnom by threequarters;
+} frac;

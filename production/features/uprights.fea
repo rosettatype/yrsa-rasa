@@ -1,70 +1,11 @@
 #----------------------------------------------------------------------------
 # Tables
 
-table BASE {
-	HorizAxis.BaseTagList	ideo  romn;
-	HorizAxis.BaseScriptList
-		DFLT	romn	-216 0,
-		latn	romn	-216 0,
-		gujr	romn	-236 0,
-		gjr2	romn	-236 0;
-} BASE;
-
-# table head {
-# 	FontRevision include(../../version.fea);
-# } head;
-
-table OS/2 {
-	FSType				0;
-	Panose				2 13 0 0 0 4 0 0 0 0;
-	UnicodeRange		0		# Basic Latin
-						1		# Latin-1 Supplement
-						2		# Latin Extended-A
-						3		# Latin Extended-B
-						6		# Combining Diacritical Marks
-						18		# Gujarati	0A80-0AFF
-						29		# Latin Extended Additional
-						31		# General Punctuation
-						32		# Superscripts And Subscripts
-						33		# Currency Symbols
-						;
-	CodePageRange		1250	# Latin 2: Eastern Europe
-						1252	# Latin 1
-						1254	# Turkish
-						1257	# Baltic
-						;
-	winAscent			930;
-	winDescent			430;
-	TypoAscender		930;
-	TypoDescender		-430;
-	TypoLineGap			0;
-	XHeight				413;
-	CapHeight			568;
-	# include(WeightClass.fea);
-	# include(../WidthClass.fea);
-	Vendor				" RST";
-} OS/2;
-
-table hhea {
-	Ascender 930;
-	Descender -430;
-	LineGap 0;
-} hhea;
-
-table name {
-	nameid 0 "Copyright 2010 Yrsa and Rasa Project Authors (info@rosettatype.com)";
-	nameid 5 "Autohinted with: ttfautohint (1.5) --hinting-range-max=96 --ignore-restrictions --strong-stem-width=G --increase-x-height=14";
-	nameid 7 "Yrsa and Rasa are trademarks of Rosetta Type Foundry s.r.o.";
-	nameid 8 "Rosetta Type Foundry";
-	nameid 9 "Anna Giedrys (Yrsa+Rasa design), David Brezina (Yrsa art-direction, Rasa art-direction, design)";
-	nameid 11 "http://rosettatype.com";
-	nameid 12 "http://davi.cz & http://ancymonic.com";
-	nameid 13 "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL";
-	nameid 14 "http://scripts.sil.org/OFL";
-} name;
+include(shared.tables.fea);
 
 
-#----------------------------------------------------------------------------
+
+#------------------------------------------------------------------------------
 # Language systems
 
 languagesystem DFLT dflt;
@@ -81,4 +22,393 @@ languagesystem latn NLD;
 languagesystem gujr dflt;
 languagesystem gjr2 dflt;
 
+
+
+#------------------------------------------------------------------------------
+# CLASSES
+
+#------------------------------------------------------------------------------
+# Shared classes
+
+include(shared.classes.fea);
+
+
+markClass gjCandrabindu <anchor -81 487> @MC_abvmBINDU;
+markClass gjAnusvara <anchor -135 489> @MC_abvmBINDU;
+markClass gjAnusvara.calt <anchor -188 489> @MC_abvmBINDU;
+markClass gjAnusvara.calt2 <anchor 0 487> @MC_abvmBINDU;
+markClass gjCandrabindu.calt <anchor -188 489> @MC_abvmBINDU;
+markClass gjCandrabindu.calt2 <anchor 0 487> @MC_abvmBINDU;
+markClass gjCandrabindu.calt3 <anchor -135 487> @MC_abvmBINDU;
+markClass gjReph.calt2 <anchor 0 487> @MC_abvmBINDU;
+markClass gjReph_gjAnusvara.calt2 <anchor 0 487> @MC_abvmBINDU;
+markClass gjMatraE_gjAnusvara <anchor -160 575> @MC_abvmBINDU;
+markClass gjMatraAi_gjAnusvara <anchor -115 575> @MC_abvmBINDU;
+markClass gjMatraCandraE <anchor -135 496> @MC_abvmTOP;
+markClass gjMatraE <anchor -135 496> @MC_abvmTOP;
+markClass gjMatraAi <anchor -135 496> @MC_abvmTOP;
+markClass gjReph <anchor -135 496> @MC_abvmTOP;
+markClass gjReph.calt <anchor -117 536> @MC_abvmTOP;
+markClass gjReph_gjAnusvara <anchor -135 496> @MC_abvmTOP;
+markClass gjReph_gjAnusvara.calt <anchor -117 536> @MC_abvmTOP;
+markClass gjMatraCandraE_gjAnusvara <anchor -135 496> @MC_abvmTOP;
+markClass gjMatraCandraE_gjCandrabindu <anchor -135 496> @MC_abvmTOP;
+markClass gjMatraCandraE_gjReph <anchor -135 496> @MC_abvmTOP;
+markClass gjMatraCandraE_gjReph_gjAnusvara <anchor -135 496> @MC_abvmTOP;
+markClass gjMatraE_gjAnusvara <anchor -135 496> @MC_abvmTOP;
+markClass gjMatraE_gjCandrabindu <anchor -135 496> @MC_abvmTOP;
+markClass gjMatraE_gjReph <anchor -135 496> @MC_abvmTOP;
+markClass gjMatraE_gjReph_gjAnusvara <anchor -135 496> @MC_abvmTOP;
+markClass gjMatraAi_gjAnusvara <anchor -135 496> @MC_abvmTOP;
+markClass gjMatraAi_gjCandrabindu <anchor -135 496> @MC_abvmTOP;
+markClass gjMatraAi_gjReph <anchor -135 496> @MC_abvmTOP;
+markClass gjMatraAi_gjReph_gjAnusvara <anchor -135 496> @MC_abvmTOP;
+markClass apostrophemodifier <anchor 77 416> @MC_apostrophe;
+markClass gjMatraU <anchor -135 0> @MC_blwmBOTTOM;
+markClass gjMatraUu <anchor -135 0> @MC_blwmBOTTOM;
+markClass gjMatraVocalicL <anchor -135 0> @MC_blwmBOTTOM;
+markClass gjMatraVocalicLl <anchor -135 0> @MC_blwmBOTTOM;
+markClass gjVirama <anchor -135 0> @MC_blwmBOTTOM;
+markClass gjRakar <anchor -135 0> @MC_blwmBOTTOM;
+markClass gjRakar_gjMatraU <anchor -135 0> @MC_blwmBOTTOM;
+markClass gjRakar_gjMatraUu <anchor -135 0> @MC_blwmBOTTOM;
+markClass gjNukta <anchor -104 -112> @MC_blwmNUKTA;
+markClass gjZha_gjMatraIi <anchor 122 119> @MC_blwmNUKTA2;
+markClass gjZhRa_gjMatraIi <anchor 93 116> @MC_blwmNUKTA2;
+markClass gjNukta.calt <anchor -104 -112> @MC_blwmNUKTA2;
+markClass gjMatraVocalicR <anchor -135 9> @MC_blwmRUKAR;
+markClass gjMatraVocalicRr <anchor -135 9> @MC_blwmRUKAR;
+markClass dotbelowcomb <anchor 0 0> @MC_bottom;
+markClass dieresisbelowcomb <anchor 0 0> @MC_bottom;
+markClass commaaccentcomb <anchor 0 0> @MC_bottom;
+markClass cedillacomb <anchor 0 0> @MC_bottom;
+markClass brevebelowcomb <anchor 0 0> @MC_bottom;
+markClass macronbelowcomb <anchor 0 0> @MC_bottom;
+markClass dotbelowcomb.case <anchor 0 0> @MC_bottom;
+markClass dieresisbelowcomb.case <anchor 0 0> @MC_bottom;
+markClass brevebelowcomb.case <anchor 0 0> @MC_bottom;
+markClass macronbelowcomb.case <anchor 0 0> @MC_bottom;
+markClass firsttonechinese <anchor 182 416> @MC_top;
+markClass dieresiscomb <anchor 0 416> @MC_top;
+markClass dotaccentcomb <anchor 0 416> @MC_top;
+markClass gravecomb <anchor 0 416> @MC_top;
+markClass acutecomb <anchor 0 416> @MC_top;
+markClass hungarumlautcomb <anchor 0 416> @MC_top;
+markClass circumflexcomb <anchor 0 416> @MC_top;
+markClass caroncomb <anchor 0 416> @MC_top;
+markClass brevecomb <anchor 0 416> @MC_top;
+markClass ringcomb <anchor 0 416> @MC_top;
+markClass tildecomb <anchor 0 416> @MC_top;
+markClass macroncomb <anchor 0 416> @MC_top;
+markClass hookabovecomb <anchor 0 416> @MC_top;
+markClass dblgravecomb <anchor 0 416> @MC_top;
+markClass breveinvertedcomb <anchor 0 416> @MC_top;
+markClass commaturnedabovecomb <anchor 0 416> @MC_top;
+markClass horncomb <anchor 0 416> @MC_top;
+markClass dieresiscomb.case <anchor 0 569> @MC_top;
+markClass dotaccentcomb.case <anchor 0 569> @MC_top;
+markClass gravecomb.case <anchor 0 569> @MC_top;
+markClass acutecomb.case <anchor 0 569> @MC_top;
+markClass hungarumlautcomb.case <anchor 0 569> @MC_top;
+markClass circumflexcomb.case <anchor 0 569> @MC_top;
+markClass caroncomb.case <anchor 0 569> @MC_top;
+markClass brevecomb.case <anchor 0 569> @MC_top;
+markClass ringcomb.case <anchor 0 569> @MC_top;
+markClass tildecomb.case <anchor 0 569> @MC_top;
+markClass macroncomb.case <anchor 0 569> @MC_top;
+markClass hookabovecomb.case <anchor 0 569> @MC_top;
+markClass dblgravecomb.case <anchor 0 569> @MC_top;
+markClass dblgravecomb.narrow.case <anchor 0 569> @MC_top;
+markClass breveinvertedcomb.case <anchor 0 569> @MC_top;
+markClass commaturnedabovecomb.case <anchor 0 569> @MC_top;
+markClass horncomb.case <anchor 0 569> @MC_top;
+markClass ringcomb.case.low <anchor 0 569> @MC_top;
+markClass brevecomb.narrow <anchor 0 416> @MC_top;
+markClass breveinvertedcomb.narrow <anchor 0 416> @MC_top;
+markClass circumflexcomb.narrow <anchor 0 416> @MC_top;
+markClass dieresiscomb.narrow <anchor 0 416> @MC_top;
+markClass macroncomb.narrow <anchor 0 416> @MC_top;
+markClass tildecomb.narrow <anchor 0 416> @MC_top;
+markClass dieresiscomb.narrow.case <anchor 0 569> @MC_top;
+markClass macroncomb.narrow.case <anchor 0 569> @MC_top;
+markClass tildecomb.narrow.case <anchor 0 569> @MC_top;
+markClass acutedotaccentcomb <anchor 0 416> @MC_top;
+markClass brevecomb_acutecomb <anchor 0 416> @MC_top;
+markClass brevecomb_gravecomb <anchor 0 416> @MC_top;
+markClass brevecomb_hookabovecomb <anchor 0 416> @MC_top;
+markClass brevecomb_tildecomb <anchor 0 416> @MC_top;
+markClass carondotaccentcomb <anchor 0 416> @MC_top;
+markClass circumflexcomb_acutecomb <anchor 0 416> @MC_top;
+markClass circumflexcomb_gravecomb <anchor 0 416> @MC_top;
+markClass circumflexcomb_hookabovecomb <anchor 0 416> @MC_top;
+markClass circumflexcomb_tildecomb <anchor 0 416> @MC_top;
+markClass dieresisacutecomb <anchor 0 416> @MC_top;
+markClass dieresismacroncomb <anchor 0 416> @MC_top;
+markClass dotaccentmacroncomb <anchor 0 416> @MC_top;
+markClass macronacutecomb <anchor 0 416> @MC_top;
+markClass macrondieresiscomb <anchor 0 416> @MC_top;
+markClass macrongravecomb <anchor 0 416> @MC_top;
+markClass tildemacroncomb <anchor 0 416> @MC_top;
+markClass tildeacutecomb <anchor 0 416> @MC_top;
+markClass tildedieresiscomb <anchor 0 417> @MC_top;
+markClass acutedotaccentcomb.case <anchor 0 569> @MC_top;
+markClass brevecomb_acutecomb.case <anchor 0 569> @MC_top;
+markClass brevecomb_gravecomb.case <anchor 0 569> @MC_top;
+markClass brevecomb_hookabovecomb.case <anchor 0 569> @MC_top;
+markClass brevecomb_tildecomb.case <anchor 0 569> @MC_top;
+markClass carondotaccentcomb.case <anchor 0 569> @MC_top;
+markClass circumflexcomb_acutecomb.case <anchor 0 569> @MC_top;
+markClass circumflexcomb_gravecomb.case <anchor 0 569> @MC_top;
+markClass circumflexcomb_hookabovecomb.case <anchor 0 569> @MC_top;
+markClass circumflexcomb_tildecomb.case <anchor 0 569> @MC_top;
+markClass dieresisacutecomb.case <anchor 0 569> @MC_top;
+markClass dieresismacroncomb.case <anchor 0 569> @MC_top;
+markClass dotaccentmacroncomb.case <anchor 0 569> @MC_top;
+markClass macrondieresiscomb.case <anchor 0 569> @MC_top;
+markClass macronacutecomb.case <anchor 0 569> @MC_top;
+markClass macrongravecomb.case <anchor 0 569> @MC_top;
+markClass tildemacroncomb.case <anchor 0 569> @MC_top;
+markClass tildeacutecomb.case <anchor 0 569> @MC_top;
+markClass tildedieresiscomb.case <anchor 0 569> @MC_top;
+markClass caroncomb.calt <anchor 0 416> @MC_topright;
+
+#------------------------------------------------------------------------------
+# Specific upright classes
+
+# Used for contextual f alternates to appear before these to form three letter
+# ligatures
+@Latin_ligatures = [f_i f_j f_t];
+
+@Gujr_proportional = [gjZero gjOne gjTwo gjThree gjFour gjFive gjSix gjSeven gjEight gjNine gjSix.ss02 gjRupee rupeeIndian.gujr];
+@Gujr_tabular = [gjZero.tf gjOne.tf gjTwo.tf gjThree.tf gjFour.tf gjFive.tf gjSix.tf gjSeven.tf gjEight.tf gjNine.tf gjSix.tf.ss02 gjRupee.tf rupeeIndian.gujr.tf];
+
+
+#------------------------------------------------------------------------------
+# LOOKUPS
+
+#------------------------------------------------------------------------------
+# Upright-only lookups
+
+lookup LATIN_LIGATURES {
+	sub f i by f_i;
+	sub f j by f_j;
+	sub f t by f_t;
+} LATIN_LIGATURES;
+
+
+
+#------------------------------------------------------------------------------
+# Shared lookups
+
+include(shared.lookups.fea);
+
+
+
+#------------------------------------------------------------------------------
+# FEATURES
+
+feature aalt {
+	feature locl;
+
+	feature frac;
+	feature dnom;
+	feature numr;
+
+	feature pnum;
+	feature tnum;
+	feature lnum;
+	feature zero;
+
+	feature ordn;
+	feature sups;
+	feature sinf;
+	feature subs;
+
+	feature case;
+	feature cpsp;
+
+	feature rlig;
+	feature liga;
+	feature calt;
+
+	feature salt;
+	feature ss01;
+	feature ss02;
+} aalt;
+
+
+
+#------------------------------------------------------------------------------
+# Localisations
+
+feature locl {	
+	script latn; # Latin
+		# i -> idotaccent substitution effectively switches off the fi and ffi ligatures
+		language TRK; # Turkish
+			lookup locl_TRK {
+				sub i by idotaccent;
+			} locl_TRK;
+		language AZE; # Azeri
+			lookup locl_TRK;
+		language CRT; # Crimean Tatar
+			lookup locl_TRK;
+		language KAZ; # Kazakh
+			lookup locl_TRK;
+		language TAT; # Tatar
+			lookup locl_TRK;
+
+		# handling of S and T with commaaccent
+		language ROM; # Romanian
+			lookup locl_ROM {
+				sub Scedilla by Scommaaccent;
+				sub scedilla by scommaaccent;
+				sub Tcedilla by Tcommaaccent;
+				sub tcedilla by tcommaaccent;
+			} locl_ROM;
+		language MOL; # Moldavian
+			lookup locl_ROM;
+
+		# Catalan dot
+		language CAT; # Catalan
+
+			# Replacing periodcenter between two lowercase or uppercase L's for different
+			# input sequences
+			lookup LATIN_CATALAN_LDOT {
+				sub ldot by l __periodcentered.CAT;
+				sub Ldot by L __periodcentered.CAT.case;
+			} LATIN_CATALAN_LDOT;
+
+			lookup LATIN_CATALAN_PERIODCENTER {
+				sub l periodcentered' l by __periodcentered.CAT;
+				sub L periodcentered' L by __periodcentered.CAT.case;
+			} LATIN_CATALAN_PERIODCENTER;
+
+		# Dutch ij with acute
+		language NLD; # Dutch
+			lookup LOCL_DUTCHIJ_DECOMPOSE {
+				sub ij by i j;
+				sub IJ by I J;	
+			} LOCL_DUTCHIJ_DECOMPOSE;
+
+			lookup LOCL_DUTCHJACUTE {
+				sub i' j acutecomb by iacute;
+				sub iacute j' acutecomb' by jacute;
+				sub iacute j' by jacute;
+				sub I' J acutecomb by Iacute;
+				sub Iacute J' acutecomb' by Jacute;
+				sub Iacute J' by Jacute;
+			} LOCL_DUTCHJACUTE;
+
+			lookup LOCL_DUTCHIJACUTE_COMPOSE {
+				sub ij acutecomb by iacute_j.NLD;
+				sub i j acutecomb by iacute_j.NLD;
+				sub IJ acutecomb by Iacute_J.NLD;
+				sub I J acutecomb by Iacute_J.NLD;
+			} LOCL_DUTCHIJACUTE_COMPOSE;
+
+	script gujr;
+		lookup locl_gujr {
+			sub asterisk by asterisk.gujr;
+			sub periodcentered by periodcentered.gujr;
+			sub bullet by bullet.gujr;
+			sub colon by colon.gujr;
+			sub comma by comma.gujr;
+			sub ellipsis by ellipsis.gujr;
+			sub exclam by exclam.gujr;
+			sub period by period.gujr;
+			sub question by question.gujr;
+			sub semicolon by semicolon.gujr;
+			sub braceleft by braceleft.gujr;
+			sub braceright by braceright.gujr;
+			sub bracketleft by bracketleft.gujr;
+			sub bracketright by bracketright.gujr;
+			sub parenleft by parenleft.gujr;
+			sub parenright by parenright.gujr;
+			sub emdash by emdash.gujr;
+			sub endash by endash.gujr;
+			sub hyphen by hyphen.gujr;
+			sub guillemotleft by guillemotleft.gujr;
+			sub guillemotright by guillemotright.gujr;
+			sub guilsinglleft by guilsinglleft.gujr;
+			sub guilsinglright by guilsinglright.gujr;
+			sub quotedblleft by quotedblleft.gujr;
+			sub quotedblright by quotedblright.gujr;
+			sub quoteleft by quoteleft.gujr;
+			sub quoteright by quoteright.gujr;
+			sub rupeeIndian by rupeeIndian.gujr;
+		} locl_gujr;
+	script gjr2;
+		lookup locl_gujr;
+} locl;
+
+
+
+feature ccmp {
+
+} ccmp;
+
+
+
+#------------------------------------------------------------------------------
+# Gujarati shaping
+
+include(uprights.gujarati.fea);
+
+
+
+#------------------------------------------------------------------------------
+# Figures
+
+# sups, subs, sinf, zero (all latin only)
+include(shared.figures.fea);
+
+
+
+# numr, dnom, frac (all latin only)
+include(shared.fractions.fea);
+
+
+
+feature lnum {
+	lookup LATIN_LINING_FIGURES;
+} lnum;
+
+feature tnum {
+	lookup LATIN_TABULAR_FIGURES;
+
+	sub @Gujr_proportional by @Gujr_tabular;
+} tnum;
+
+feature pnum {
+	lookup LATIN_PROPORTIONAL_FIGURES;
+
+	sub @Gujr_tabular by @Gujr_proportional;
+} pnum;
+
+
+
+#------------------------------------------------------------------------------
+# Ligatures and contextual alternates for ligatures
+
+feature rlig {
+	lookup LATIN_F_ALTERNATES;
+} rlig;
+
+feature calt {
+	lookup LATIN_F_ALTERNATES;
+} calt;
+
+feature liga {
+	lookup LATIN_LIGATURES;
+	lookup LATIN_F_ALTERNATES;
+} liga;
+
+
+
+#------------------------------------------------------------------------------
+# Stylistic sets and alternates
+
 include(uprights.stylistic.fea);
+
+
+include(shared.rest.fea);

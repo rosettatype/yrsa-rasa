@@ -1,0 +1,48 @@
+
+lookup INFERIORS {
+    sub zero by zeroinferior;
+	sub one by oneinferior;
+	sub two by twoinferior;
+	sub three by threeinferior;
+	sub four by fourinferior;
+	sub five by fiveinferior;
+	sub six by sixinferior;
+	sub seven by seveninferior;
+	sub eight by eightinferior;
+	sub nine by nineinferior;
+} INFERIORS;
+
+
+
+feature subs {
+    lookup INFERIORS;
+} subs;
+
+
+
+feature sinf {
+    lookup INFERIORS;
+} sinf;
+
+
+
+feature sups {
+	sub zero by zerosuperior;
+	sub one by onesuperior;
+	sub two by twosuperior;
+	sub three by threesuperior;
+	sub four by foursuperior;
+	sub five by fivesuperior;
+	sub six by sixsuperior;
+	sub seven by sevensuperior;
+	sub eight by eightsuperior;
+	sub nine by ninesuperior;
+} sups;
+
+
+feature zero {
+    sub zero by zero.zero;
+    sub zero.tf by zero.tf.zero;
+    sub zero.lf by zero.lf.zero;
+    sub zero.lf.tf by zero.lf.tf.zero;
+} zero;
