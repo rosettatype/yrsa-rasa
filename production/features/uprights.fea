@@ -32,145 +32,8 @@ languagesystem gjr2 dflt;
 
 include(shared.classes.fea);
 
+$markClasses
 
-markClass gjCandrabindu <anchor -81 487> @MC_abvmBINDU;
-markClass gjAnusvara <anchor -135 489> @MC_abvmBINDU;
-markClass gjAnusvara.calt <anchor -188 489> @MC_abvmBINDU;
-markClass gjAnusvara.calt2 <anchor 0 487> @MC_abvmBINDU;
-markClass gjCandrabindu.calt <anchor -188 489> @MC_abvmBINDU;
-markClass gjCandrabindu.calt2 <anchor 0 487> @MC_abvmBINDU;
-markClass gjCandrabindu.calt3 <anchor -135 487> @MC_abvmBINDU;
-markClass gjReph.calt2 <anchor 0 487> @MC_abvmBINDU;
-markClass gjReph_gjAnusvara.calt2 <anchor 0 487> @MC_abvmBINDU;
-markClass gjMatraE_gjAnusvara <anchor -160 575> @MC_abvmBINDU;
-markClass gjMatraAi_gjAnusvara <anchor -115 575> @MC_abvmBINDU;
-markClass gjMatraCandraE <anchor -135 496> @MC_abvmTOP;
-markClass gjMatraE <anchor -135 496> @MC_abvmTOP;
-markClass gjMatraAi <anchor -135 496> @MC_abvmTOP;
-markClass gjReph <anchor -135 496> @MC_abvmTOP;
-markClass gjReph.calt <anchor -117 536> @MC_abvmTOP;
-markClass gjReph_gjAnusvara <anchor -135 496> @MC_abvmTOP;
-markClass gjReph_gjAnusvara.calt <anchor -117 536> @MC_abvmTOP;
-markClass gjMatraCandraE_gjAnusvara <anchor -135 496> @MC_abvmTOP;
-markClass gjMatraCandraE_gjCandrabindu <anchor -135 496> @MC_abvmTOP;
-markClass gjMatraCandraE_gjReph <anchor -135 496> @MC_abvmTOP;
-markClass gjMatraCandraE_gjReph_gjAnusvara <anchor -135 496> @MC_abvmTOP;
-markClass gjMatraE_gjAnusvara <anchor -135 496> @MC_abvmTOP;
-markClass gjMatraE_gjCandrabindu <anchor -135 496> @MC_abvmTOP;
-markClass gjMatraE_gjReph <anchor -135 496> @MC_abvmTOP;
-markClass gjMatraE_gjReph_gjAnusvara <anchor -135 496> @MC_abvmTOP;
-markClass gjMatraAi_gjAnusvara <anchor -135 496> @MC_abvmTOP;
-markClass gjMatraAi_gjCandrabindu <anchor -135 496> @MC_abvmTOP;
-markClass gjMatraAi_gjReph <anchor -135 496> @MC_abvmTOP;
-markClass gjMatraAi_gjReph_gjAnusvara <anchor -135 496> @MC_abvmTOP;
-markClass apostrophemodifier <anchor 77 416> @MC_apostrophe;
-markClass gjMatraU <anchor -135 0> @MC_blwmBOTTOM;
-markClass gjMatraUu <anchor -135 0> @MC_blwmBOTTOM;
-markClass gjMatraVocalicL <anchor -135 0> @MC_blwmBOTTOM;
-markClass gjMatraVocalicLl <anchor -135 0> @MC_blwmBOTTOM;
-markClass gjVirama <anchor -135 0> @MC_blwmBOTTOM;
-markClass gjRakar <anchor -135 0> @MC_blwmBOTTOM;
-markClass gjRakar_gjMatraU <anchor -135 0> @MC_blwmBOTTOM;
-markClass gjRakar_gjMatraUu <anchor -135 0> @MC_blwmBOTTOM;
-markClass gjNukta <anchor -104 -112> @MC_blwmNUKTA;
-markClass gjZha_gjMatraIi <anchor 122 119> @MC_blwmNUKTA2;
-markClass gjZhRa_gjMatraIi <anchor 93 116> @MC_blwmNUKTA2;
-markClass gjNukta.calt <anchor -104 -112> @MC_blwmNUKTA2;
-markClass gjMatraVocalicR <anchor -135 9> @MC_blwmRUKAR;
-markClass gjMatraVocalicRr <anchor -135 9> @MC_blwmRUKAR;
-markClass dotbelowcomb <anchor 0 0> @MC_bottom;
-markClass dieresisbelowcomb <anchor 0 0> @MC_bottom;
-markClass commaaccentcomb <anchor 0 0> @MC_bottom;
-markClass cedillacomb <anchor 0 0> @MC_bottom;
-markClass brevebelowcomb <anchor 0 0> @MC_bottom;
-markClass macronbelowcomb <anchor 0 0> @MC_bottom;
-markClass dotbelowcomb.case <anchor 0 0> @MC_bottom;
-markClass dieresisbelowcomb.case <anchor 0 0> @MC_bottom;
-markClass brevebelowcomb.case <anchor 0 0> @MC_bottom;
-markClass macronbelowcomb.case <anchor 0 0> @MC_bottom;
-markClass firsttonechinese <anchor 182 416> @MC_top;
-markClass dieresiscomb <anchor 0 416> @MC_top;
-markClass dotaccentcomb <anchor 0 416> @MC_top;
-markClass gravecomb <anchor 0 416> @MC_top;
-markClass acutecomb <anchor 0 416> @MC_top;
-markClass hungarumlautcomb <anchor 0 416> @MC_top;
-markClass circumflexcomb <anchor 0 416> @MC_top;
-markClass caroncomb <anchor 0 416> @MC_top;
-markClass brevecomb <anchor 0 416> @MC_top;
-markClass ringcomb <anchor 0 416> @MC_top;
-markClass tildecomb <anchor 0 416> @MC_top;
-markClass macroncomb <anchor 0 416> @MC_top;
-markClass hookabovecomb <anchor 0 416> @MC_top;
-markClass dblgravecomb <anchor 0 416> @MC_top;
-markClass breveinvertedcomb <anchor 0 416> @MC_top;
-markClass commaturnedabovecomb <anchor 0 416> @MC_top;
-markClass horncomb <anchor 0 416> @MC_top;
-markClass dieresiscomb.case <anchor 0 569> @MC_top;
-markClass dotaccentcomb.case <anchor 0 569> @MC_top;
-markClass gravecomb.case <anchor 0 569> @MC_top;
-markClass acutecomb.case <anchor 0 569> @MC_top;
-markClass hungarumlautcomb.case <anchor 0 569> @MC_top;
-markClass circumflexcomb.case <anchor 0 569> @MC_top;
-markClass caroncomb.case <anchor 0 569> @MC_top;
-markClass brevecomb.case <anchor 0 569> @MC_top;
-markClass ringcomb.case <anchor 0 569> @MC_top;
-markClass tildecomb.case <anchor 0 569> @MC_top;
-markClass macroncomb.case <anchor 0 569> @MC_top;
-markClass hookabovecomb.case <anchor 0 569> @MC_top;
-markClass dblgravecomb.case <anchor 0 569> @MC_top;
-markClass dblgravecomb.narrow.case <anchor 0 569> @MC_top;
-markClass breveinvertedcomb.case <anchor 0 569> @MC_top;
-markClass commaturnedabovecomb.case <anchor 0 569> @MC_top;
-markClass horncomb.case <anchor 0 569> @MC_top;
-markClass ringcomb.case.low <anchor 0 569> @MC_top;
-markClass brevecomb.narrow <anchor 0 416> @MC_top;
-markClass breveinvertedcomb.narrow <anchor 0 416> @MC_top;
-markClass circumflexcomb.narrow <anchor 0 416> @MC_top;
-markClass dieresiscomb.narrow <anchor 0 416> @MC_top;
-markClass macroncomb.narrow <anchor 0 416> @MC_top;
-markClass tildecomb.narrow <anchor 0 416> @MC_top;
-markClass dieresiscomb.narrow.case <anchor 0 569> @MC_top;
-markClass macroncomb.narrow.case <anchor 0 569> @MC_top;
-markClass tildecomb.narrow.case <anchor 0 569> @MC_top;
-markClass acutedotaccentcomb <anchor 0 416> @MC_top;
-markClass brevecomb_acutecomb <anchor 0 416> @MC_top;
-markClass brevecomb_gravecomb <anchor 0 416> @MC_top;
-markClass brevecomb_hookabovecomb <anchor 0 416> @MC_top;
-markClass brevecomb_tildecomb <anchor 0 416> @MC_top;
-markClass carondotaccentcomb <anchor 0 416> @MC_top;
-markClass circumflexcomb_acutecomb <anchor 0 416> @MC_top;
-markClass circumflexcomb_gravecomb <anchor 0 416> @MC_top;
-markClass circumflexcomb_hookabovecomb <anchor 0 416> @MC_top;
-markClass circumflexcomb_tildecomb <anchor 0 416> @MC_top;
-markClass dieresisacutecomb <anchor 0 416> @MC_top;
-markClass dieresismacroncomb <anchor 0 416> @MC_top;
-markClass dotaccentmacroncomb <anchor 0 416> @MC_top;
-markClass macronacutecomb <anchor 0 416> @MC_top;
-markClass macrondieresiscomb <anchor 0 416> @MC_top;
-markClass macrongravecomb <anchor 0 416> @MC_top;
-markClass tildemacroncomb <anchor 0 416> @MC_top;
-markClass tildeacutecomb <anchor 0 416> @MC_top;
-markClass tildedieresiscomb <anchor 0 417> @MC_top;
-markClass acutedotaccentcomb.case <anchor 0 569> @MC_top;
-markClass brevecomb_acutecomb.case <anchor 0 569> @MC_top;
-markClass brevecomb_gravecomb.case <anchor 0 569> @MC_top;
-markClass brevecomb_hookabovecomb.case <anchor 0 569> @MC_top;
-markClass brevecomb_tildecomb.case <anchor 0 569> @MC_top;
-markClass carondotaccentcomb.case <anchor 0 569> @MC_top;
-markClass circumflexcomb_acutecomb.case <anchor 0 569> @MC_top;
-markClass circumflexcomb_gravecomb.case <anchor 0 569> @MC_top;
-markClass circumflexcomb_hookabovecomb.case <anchor 0 569> @MC_top;
-markClass circumflexcomb_tildecomb.case <anchor 0 569> @MC_top;
-markClass dieresisacutecomb.case <anchor 0 569> @MC_top;
-markClass dieresismacroncomb.case <anchor 0 569> @MC_top;
-markClass dotaccentmacroncomb.case <anchor 0 569> @MC_top;
-markClass macrondieresiscomb.case <anchor 0 569> @MC_top;
-markClass macronacutecomb.case <anchor 0 569> @MC_top;
-markClass macrongravecomb.case <anchor 0 569> @MC_top;
-markClass tildemacroncomb.case <anchor 0 569> @MC_top;
-markClass tildeacutecomb.case <anchor 0 569> @MC_top;
-markClass tildedieresiscomb.case <anchor 0 569> @MC_top;
-markClass caroncomb.calt <anchor 0 416> @MC_topright;
 
 #------------------------------------------------------------------------------
 # Specific upright classes
@@ -195,7 +58,13 @@ lookup LATIN_LIGATURES {
 	sub f t by f_t;
 } LATIN_LIGATURES;
 
-
+# Include this lookup in the root of the feature file, so we can substitute the
+# correct stylename before parsing
+lookup PRES_MatraIContext {
+	lookupflag IgnoreMarks;
+	
+	include($stylename/matrai.abvs.fea);
+} PRES_MatraIContext;
 
 #------------------------------------------------------------------------------
 # Shared lookups
@@ -327,8 +196,8 @@ feature locl {
 			sub emdash by emdash.gujr;
 			sub endash by endash.gujr;
 			sub hyphen by hyphen.gujr;
-			sub guillemotleft by guillemotleft.gujr;
-			sub guillemotright by guillemotright.gujr;
+			sub guillemetleft by guillemetleft.gujr;
+			sub guillemetright by guillemetright.gujr;
 			sub guilsinglleft by guilsinglleft.gujr;
 			sub guilsinglright by guilsinglright.gujr;
 			sub quotedblleft by quotedblleft.gujr;

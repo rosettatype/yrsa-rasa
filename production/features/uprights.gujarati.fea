@@ -601,11 +601,7 @@ feature pres {
 		sub @gjFullForms_Halfs gjRakar' lookup makePostRa;
 	} PRES_PostForms;
 
-	lookup PRES_MatraIContext {
-		lookupflag IgnoreMarks;
-		
-		# include(matrai.abvs.fea);
-	} PRES_MatraIContext;
+	lookup PRES_MatraIContext;
 } pres;
 
 

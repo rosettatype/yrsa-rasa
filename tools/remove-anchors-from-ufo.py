@@ -11,8 +11,10 @@ print("Removing anchors '%s' in file '%s'" % (", ".join(anchors), in_path))
 
 font = Font(in_path)
 for g in font:
-    before = [g for g in g.anchors]
+    before = set(g.name for g in g.anchors)
     g.anchors = [a for a in g.anchors if a.name not in anchors]
     if len(g.anchors) != len(before):
-        print("Removed anchors from glyph '%s'" % g.name)
+        now = set(a.name for a in g.anchors)
+        removed = before.difference(now)
+        print("Removed anchors '%s' from glyph '%s'" % (", ".join(removed), g.name))
 font.save()
