@@ -915,11 +915,6 @@ name = "Variable Font Origin";
 value = "DAAEA780-4710-4479-B303-5C05B40621B2";
 },
 {
-name = fsType;
-value = (
-);
-},
-{
 name = unicodeRanges;
 value = (
 0,
@@ -981,9 +976,14 @@ value = 1;
 {
 name = "Use Extension Kerning";
 value = 1;
+},
+{
+name = fsType;
+value = (
+);
 }
 );
-date = "2020-12-08 08:59:49 +0000";
+date = "2020-12-08 09:21:51 +0000";
 designer = "Anna Giedrys (design), David Brezina (art direction, design), Eben Sorkin (original Merriweather design)";
 designerURL = "http://rosettatype.com";
 disablesNiceNames = 1;
@@ -165380,6 +165380,23 @@ width = 200;
 );
 instances = (
 {
+customParameters = (
+{
+name = panose;
+value = (
+2,
+2,
+3,
+3,
+6,
+4,
+0,
+0,
+0,
+0
+);
+}
+);
 interpolationWeight = 165;
 instanceInterpolations = {
 "DAAEA780-4710-4479-B303-5C05B40621B2" = 1;
@@ -165390,6 +165407,23 @@ name = "Light Italic";
 weightClass = Light;
 },
 {
+customParameters = (
+{
+name = panose;
+value = (
+2,
+2,
+5,
+3,
+6,
+4,
+0,
+0,
+0,
+0
+);
+}
+);
 interpolationWeight = 214;
 instanceInterpolations = {
 "925CB40E-795E-477B-BAE7-1EE7D58841B5" = 0.25;
@@ -165400,6 +165434,23 @@ linkStyle = Regular;
 name = Italic;
 },
 {
+customParameters = (
+{
+name = panose;
+value = (
+2,
+2,
+6,
+3,
+6,
+4,
+0,
+0,
+0,
+0
+);
+}
+);
 interpolationWeight = 263;
 instanceInterpolations = {
 "925CB40E-795E-477B-BAE7-1EE7D58841B5" = 0.5;
@@ -165411,6 +165462,23 @@ name = "Medium Italic";
 weightClass = Medium;
 },
 {
+customParameters = (
+{
+name = panose;
+value = (
+2,
+2,
+7,
+3,
+6,
+4,
+0,
+0,
+0,
+0
+);
+}
+);
 interpolationWeight = 312;
 instanceInterpolations = {
 "925CB40E-795E-477B-BAE7-1EE7D58841B5" = 0.75;
@@ -165422,6 +165490,23 @@ name = "SemiBold Italic";
 weightClass = SemiBold;
 },
 {
+customParameters = (
+{
+name = panose;
+value = (
+2,
+2,
+8,
+3,
+6,
+4,
+0,
+0,
+0,
+0
+);
+}
+);
 interpolationWeight = 361;
 instanceInterpolations = {
 "925CB40E-795E-477B-BAE7-1EE7D58841B5" = 1;

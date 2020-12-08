@@ -9,46 +9,28 @@ table BASE {
 } BASE;
 
 
+
 # Keep 'head' table before 'OS/2'
 table head {
 	FontRevision 2.000;
+	# Other head values set from Glyphs source
 } head;
 
 
 
 table OS/2 {
-	Panose				2 13 0 0 0 4 0 0 0 0;
-	UnicodeRange		0		# Basic Latin
-						1		# Latin-1 Supplement
-						2		# Latin Extended-A
-						3		# Latin Extended-B
-						6		# Combining Diacritical Marks
-						18		# Gujarati	0A80-0AFF
-						29		# Latin Extended Additional
-						31		# General Punctuation
-						32		# Superscripts And Subscripts
-						33		# Currency Symbols
-						;
+	winAscent		930;
+	winDescent		430;
 
-	CodePageRange		1250	# Latin 2: Eastern Europe
-						1252	# Latin 1
-						1254	# Turkish
-						1257	# Baltic
-						1258	# Vietnamese
-						;
+	TypoAscender	930;
+	TypoDescender	-430;
+	TypoLineGap		0;
 
-	winAscent			930;
-	winDescent			430;
+	XHeight			413;
+	CapHeight		568;
 
-	TypoAscender		930;
-	TypoDescender		-430;
-	TypoLineGap			0;
-
-	XHeight				413;
-	CapHeight			568;
-	# WeightClass and WidthClass will get written from UFO
-
-	Vendor				" RST";
+	Vendor			"RST ";
+	# Other OS/2 values set from Glyphs source
 } OS/2;
 
 
@@ -57,6 +39,7 @@ table hhea {
 	Ascender 930;
 	Descender -430;
 	LineGap 0;
+	# Other hhea values set from Glyphs source
 } hhea;
 
 
@@ -66,8 +49,8 @@ table name {
 	nameid 7 "Yrsa and Rasa are trademarks of Rosetta Type Foundry s.r.o.";
 	nameid 8 "Rosetta Type Foundry";
 	nameid 9 "Anna Giedrys (Yrsa+Rasa design), David Brezina (Yrsa art-direction, Rasa art-direction, design)";
-	nameid 11 "http://rosettatype.com";
+	nameid 11 "https://rosettatype.com";
 	nameid 12 "http://davi.cz & http://ancymonic.com";
 	nameid 13 "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL";
-	nameid 14 "http://scripts.sil.org/OFL";
+	nameid 14 "https://scripts.sil.org/OFL";
 } name;
