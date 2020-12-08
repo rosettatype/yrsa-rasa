@@ -30,9 +30,9 @@ for file in $(ls $INSTANCES); do
     fi
 
 
-    echo "Compiling $FONTS/${file/ufo/otf}"
+    echo "Compiling $FONTS/${file/ufo/ttf}"
     # Compile OTF fonts
-    fontmake -u $INSTANCES/$file --output otf --output-dir $FONTS --debug-feature-file debug.fea
+    fontmake -u $INSTANCES/$file --output ttf --output-dir $FONTS --debug-feature-file debug.fea
 
-    gftools fix-dsig --autofix $FONTS/${file/ufo/otf}
+    gftools fix-dsig --autofix $FONTS/${file/ufo/ttf}
 done
