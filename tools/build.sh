@@ -17,7 +17,6 @@ fontmake -g "sources/Rasa Italics-MM.glyphs" -o ufo --interpolate --master-dir=$
 for file in $(ls $INSTANCES); do
 
     echo "Preparing $INSTANCES/$file"
-
     # Make sure mark features get written without any "design" anchors left over
     python tools/remove-anchors-from-ufo.py $INSTANCES/$file periodcentred _periodcentred
 
@@ -31,6 +30,7 @@ for file in $(ls $INSTANCES); do
     fi
 
 
+    echo "Compiling $FONTS/${file/ufo/otf}"
     # Compile OTF fonts
     fontmake -u $INSTANCES/$file --output otf --output-dir $FONTS --debug-feature-file debug.fea
 

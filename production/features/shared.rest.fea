@@ -81,7 +81,7 @@ feature case {
 	sub carondotaccentcomb by carondotaccentcomb.case;
 	sub macrondieresiscomb by macrondieresiscomb.case;
 	sub acutedotaccentcomb by acutedotaccentcomb.case;
-	sub __periodcentered.CAT by __periodcentered.CAT.case;
+	sub periodcentered.CAT by periodcentered.CAT.case;
 	
 	sub numero by numero.case;
 	sub percent by percent.case;
