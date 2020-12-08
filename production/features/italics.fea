@@ -19,8 +19,6 @@ languagesystem latn MOL;
 languagesystem latn ROM;
 languagesystem latn CAT;
 languagesystem latn NLD;
-languagesystem gujr dflt;
-languagesystem gjr2 dflt;
 
 
 
@@ -37,15 +35,13 @@ include(shared.classes.fea);
 $markClasses
 
 
+
 #------------------------------------------------------------------------------
 # Specific upright classes
 
 # Used for contextual f alternates to appear before these to form three letter
 # ligatures
-@Latin_ligatures = [f_i f_j f_t];
-
-@Gujr_proportional = [gjZero gjOne gjTwo gjThree gjFour gjFive gjSix gjSeven gjEight gjNine gjSix.ss02 gjRupee rupeeIndian.gujr];
-@Gujr_tabular = [gjZero.tf gjOne.tf gjTwo.tf gjThree.tf gjFour.tf gjFive.tf gjSix.tf gjSeven.tf gjEight.tf gjNine.tf gjSix.tf.ss02 gjRupee.tf rupeeIndian.gujr.tf];
+@Latin_ligatures = [f_i f_j f_t f_v f_w];
 
 
 #------------------------------------------------------------------------------
@@ -58,15 +54,11 @@ lookup LATIN_LIGATURES {
 	sub f i by f_i;
 	sub f j by f_j;
 	sub f t by f_t;
+    sub f v by f_v;
+    sub f w by f_w;
 } LATIN_LIGATURES;
 
-# Include this lookup in the root of the feature file, so we can substitute the
-# correct stylename before parsing
-lookup PRES_MatraIContext {
-	lookupflag IgnoreMarks;
-	
-	include($stylename/matrai.abvs.fea);
-} PRES_MatraIContext;
+
 
 #------------------------------------------------------------------------------
 # Shared lookups
@@ -103,8 +95,8 @@ feature aalt {
 	feature calt;
 
 	feature salt;
-	feature ss01;
-	feature ss02;
+	feature ss05;
+	feature ss06;
 } aalt;
 
 
@@ -177,39 +169,6 @@ feature locl {
 				sub I J acutecomb by Iacute_J.NLD;
 			} LOCL_DUTCHIJACUTE_COMPOSE;
 
-	script gujr;
-		lookup locl_gujr {
-			sub asterisk by asterisk.gujr;
-			sub periodcentered by periodcentered.gujr;
-			sub bullet by bullet.gujr;
-			sub colon by colon.gujr;
-			sub comma by comma.gujr;
-			sub ellipsis by ellipsis.gujr;
-			sub exclam by exclam.gujr;
-			sub period by period.gujr;
-			sub question by question.gujr;
-			sub semicolon by semicolon.gujr;
-			sub braceleft by braceleft.gujr;
-			sub braceright by braceright.gujr;
-			sub bracketleft by bracketleft.gujr;
-			sub bracketright by bracketright.gujr;
-			sub parenleft by parenleft.gujr;
-			sub parenright by parenright.gujr;
-			sub emdash by emdash.gujr;
-			sub endash by endash.gujr;
-			sub hyphen by hyphen.gujr;
-			sub guillemetleft by guillemetleft.gujr;
-			sub guillemetright by guillemetright.gujr;
-			sub guilsinglleft by guilsinglleft.gujr;
-			sub guilsinglright by guilsinglright.gujr;
-			sub quotedblleft by quotedblleft.gujr;
-			sub quotedblright by quotedblright.gujr;
-			sub quoteleft by quoteleft.gujr;
-			sub quoteright by quoteright.gujr;
-			sub rupeeIndian by rupeeIndian.gujr;
-		} locl_gujr;
-	script gjr2;
-		lookup locl_gujr;
 } locl;
 
 
@@ -217,13 +176,6 @@ feature locl {
 feature ccmp {
 
 } ccmp;
-
-
-
-#------------------------------------------------------------------------------
-# Gujarati shaping
-
-include(uprights.gujarati.fea);
 
 
 
@@ -246,14 +198,10 @@ feature lnum {
 
 feature tnum {
 	lookup LATIN_TABULAR_FIGURES;
-
-	sub @Gujr_proportional by @Gujr_tabular;
 } tnum;
 
 feature pnum {
 	lookup LATIN_PROPORTIONAL_FIGURES;
-
-	sub @Gujr_tabular by @Gujr_proportional;
 } pnum;
 
 
@@ -279,7 +227,7 @@ feature liga {
 #------------------------------------------------------------------------------
 # Stylistic sets and alternates
 
-include(uprights.stylistic.fea);
+include(italics.stylistic.fea);
 
 
 include(shared.rest.fea);

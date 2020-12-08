@@ -8,7 +8,7 @@ lookup LATIN_ss05 {
 lookup LATIN_ss06 {
     sub numero by numero.ss06;
     sub numero.case by numero.case.ss06;
-};
+} LATIN_ss06;
 
 feature salt {
     lookup LATIN_ss05;
@@ -21,4 +21,4 @@ feature ss05 {
 
 feature ss06 {
     lookup LATIN_ss06;
-}
+} ss06;

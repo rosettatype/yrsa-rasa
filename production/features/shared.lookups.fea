@@ -14,6 +14,21 @@ lookup LATIN_F_ALTERNATES {
 } LATIN_F_ALTERNATES;
 
 
+lookup LATIN_LINING_FIGURES {
+	sub zero by zero.lf;
+	sub zero.zero by zero.lf.zero;
+	sub one by one.lf;
+	sub two by two.lf;
+	sub three by three.lf;
+	sub four by four.lf;
+	sub five by five.lf;
+	sub six by six.lf;
+	sub seven by seven.lf;
+	sub eight by eight.lf;
+	sub nine by nine.lf;
+} LATIN_LINING_FIGURES;
+
+
 lookup LATIN_PROPORTIONAL_FIGURES {
 	sub zero.tf by zero;
 	sub zero.lf.zero by zero.zero;
@@ -110,18 +125,3 @@ lookup LATIN_TABULAR_FIGURES {
 	sub eight.lf by eight.lf.tf;
 	sub nine.lf by nine.lf.tf;
 } LATIN_TABULAR_FIGURES;
-
-
-lookup LATIN_LINING_FIGURES {
-	sub zero by zero.lf;
-	sub zero.zero by zero.lf.zero;
-	sub one by one.lf;
-	sub two by two.lf;
-	sub three by three.lf;
-	sub four by four.lf;
-	sub five by five.lf;
-	sub six by six.lf;
-	sub seven by seven.lf;
-	sub eight by eight.lf;
-	sub nine by nine.lf;
-} LATIN_LINING_FIGURES;
