@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<designspace format="4.1">
+  <axes>
+    <axis tag="wght" name="Weight" minimum="300" maximum="700" default="400">
+      <map input="300" output="165"/>
+      <map input="400" output="214"/>
+      <map input="700" output="361"/>
+    </axis>
+  </axes>
+
+  <sources>
+    <source filename="../sources/masters/Rasa-Light.ufo" name="Rasa Light" familyname="Rasa" stylename="Light">
+      <location>
+        <dimension name="Weight" xvalue="165"/>
+      </location>
+    </source>
+
+    <!-- Manually added Regular instance as master, to make default -->
+    <source filename="../sources/masters/Rasa-Regular.ufo" name="Rasa Regular" familyname="Rasa" stylename="Regular">
+      <location>
+        <dimension name="Weight" xvalue="214"/>
+      </location>
+    </source>
+
+    <source filename="../sources/masters/Rasa-Bold.ufo" name="Rasa Bold" familyname="Rasa" stylename="Bold">
+      <location>
+        <dimension name="Weight" xvalue="361"/>
+      </location>
+    </source>
+  </sources>
+
+  <instances>
+    <instance name="Rasa Light" familyname="Rasa" stylename="Light" filename="../sources/instances/Rasa-Light.ufo" stylemapfamilyname="Rasa Light" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="165"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance name="Rasa Regular" familyname="Rasa" stylename="Regular" filename="../sources/instances/Rasa-Regular.ufo" stylemapfamilyname="Rasa" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="214"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance name="Rasa Medium" familyname="Rasa" stylename="Medium" filename="../sources/instances/Rasa-Medium.ufo" stylemapfamilyname="Rasa Medium" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="263"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance name="Rasa SemiBold" familyname="Rasa" stylename="SemiBold" filename="../sources/instances/Rasa-SemiBold.ufo" stylemapfamilyname="Rasa SemiBold" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="312"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance name="Rasa Bold" familyname="Rasa" stylename="Bold" filename="../sources/instances/Rasa-Bold.ufo" stylemapfamilyname="Rasa" stylemapstylename="bold">
+      <location>
+        <dimension name="Weight" xvalue="361"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+  </instances>
+</designspace>

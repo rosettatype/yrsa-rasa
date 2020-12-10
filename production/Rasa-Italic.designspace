@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<designspace format="4.1">
+  <axes>
+    <axis tag="wght" name="Weight" minimum="300" maximum="700" default="400">
+      <map input="300" output="165"/>
+      <map input="400" output="214"/>
+      <map input="700" output="361"/>
+    </axis>
+  </axes>
+
+  <sources>
+    <source filename="../sources/masters/Rasa-LightItalic.ufo" name="Rasa Light Italic" familyname="Rasa" stylename="Light Italic">
+      <location>
+        <dimension name="Weight" xvalue="165"/>
+      </location>
+    </source>
+
+    <!-- Manually added Regular instance as master, to make default -->
+    <source filename="../sources/masters/Rasa-Italic.ufo" name="Rasa Italic" familyname="Rasa" stylename="Italic">
+      <location>
+        <dimension name="Weight" xvalue="214"/>
+      </location>
+      <kerning/>
+      <info/>
+    </source>
+
+    <source filename="../sources/masters/Rasa-BoldItalic.ufo" name="Rasa Bold Italic" familyname="Rasa" stylename="Bold Italic">
+      <location>
+        <dimension name="Weight" xvalue="361"/>
+      </location>
+    </source>
+  </sources>
+
+  <instances>
+    <instance name="Rasa Light Italic" familyname="Rasa" stylename="Light Italic" filename="../sources/instances/Rasa-LightItalic.ufo" stylemapfamilyname="Rasa Light" stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" xvalue="165"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance name="Rasa Italic" familyname="Rasa" stylename="Italic" filename="../sources/instances/Rasa-Italic.ufo" stylemapfamilyname="Rasa" stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" xvalue="214"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance name="Rasa Medium Italic" familyname="Rasa" stylename="Medium Italic" filename="../sources/instances/Rasa-MediumItalic.ufo" stylemapfamilyname="Rasa Medium" stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" xvalue="263"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance name="Rasa SemiBold Italic" familyname="Rasa" stylename="SemiBold Italic" filename="../sources/instances/Rasa-SemiBoldItalic.ufo" stylemapfamilyname="Rasa Semibold" stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" xvalue="312"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance name="Rasa Bold Italic" familyname="Rasa" stylename="Bold Italic" filename="../sources/instances/Rasa-BoldItalic.ufo" stylemapfamilyname="Rasa" stylemapstylename="bold italic">
+      <location>
+        <dimension name="Weight" xvalue="361"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+  </instances>
+  <lib>
+    <dict>
+      <key>public.skipExportGlyphs</key>
+      <array>
+        <string>_corner.LeftSerif</string>
+        <string>_corner.RightSerif</string>
+      </array>
+    </dict>
+  </lib>
+</designspace>

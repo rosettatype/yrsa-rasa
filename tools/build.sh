@@ -18,6 +18,7 @@ OTF=0
 STATIC=0
 VF=0
 WOFF=0
+UFO=1 # For now just force UFO extraction from glyphs source for every call
 
 while getopts "ivtowuf:" opt
 do
@@ -27,10 +28,11 @@ do
 		t) TTF=1;;
 		o) OTF=1;;
         w) WOFF=1;;
-        u) UFO=1;;
+        # u) UFO=1;;
         f) FAMILY=$OPTARG;;
 	esac
 done
+
 
 # Fall back to use ttf if no format was specified
 if [ $TTF == 0 ] && [ $OTF == 0 ]; then
@@ -52,9 +54,9 @@ case $FAMILY in
 esac
 
 
-if [ $UFO ]; then
-    rm -r $MASTERS
-    rm -r $INSTANCES
+if [ $UFO == 1 ]; then
+    rm -rf $MASTERS
+    rm -rf $INSTANCES
 
     # Extract UFOs from the glyphs sources
     echo "Extracting UFOs from Glyph sources"
@@ -63,9 +65,11 @@ if [ $UFO ]; then
 fi
 
 
-if [ $STATIC ]; then
+if [ $STATIC == 1 ]; then
     echo ""
     echo "Compiling instances"
+    
+    mkdir "fonts"
 
     # Loop through the instances and prepare and compile each of them
     for ufo in $(ls $INSTANCES); do
@@ -85,30 +89,33 @@ if [ $STATIC ]; then
             fi
 
 
+            mkdir "fonts/Rasa"
+
+
             if [ $TTF ]; then
-                font=${ufo/ufo/ttf}
-                rm $FONTS/$font
+                FILE=$FONTS/Rasa/${ufo/ufo/ttf}
+                rm -f $FILE
 
-                echo "Compiling $FONTS/$font"
-                fontmake -u $INSTANCES/$ufo --output ttf --output-path $FONTS/$font
+                echo "Compiling $FILE"
+                fontmake -u $INSTANCES/$ufo --output ttf --output-path $FILE
 
-                echo "Autohinting $FONTS/$font"
-                ttfautohint $FONTS/$font $FONTS/$font-hinted
-                cp $FONTS/$font-hinted $FONTS/$font
-                rm $FONTS/$font-hinted
+                echo "Autohinting $FILE"
+                ttfautohint $FILE $FILE-hinted
+                cp $FILE-hinted $FILE
+                rm $FILE-hinted
                 
-                gftools fix-dsig --autofix $FONTS/$font
+                gftools fix-dsig --autofix $FILE
             fi
 
 
             if [ $OTF ]; then
-                font=${ufo/ufo/otf}
-                rm $FONTS/$font
+                FILE=$FONTS/Rasa/${ufo/ufo/otf}
+                rm -f $FILE
 
-                echo "Compiling $FONTS/$font"
-                fontmake -u $INSTANCES/$ufo --output otf --output-path $FONTS/$font
+                echo "Compiling $FILE"
+                fontmake -u $INSTANCES/$ufo --output otf --output-path $FILE
                 
-                gftools fix-dsig --autofix $FONTS/$font
+                gftools fix-dsig --autofix $FILE
             fi
         fi
 
@@ -122,43 +129,50 @@ if [ $STATIC ]; then
                 python tools/parse-features.py production/features/uprights-yrsa.fea $INSTANCES/$ufo
             fi
 
+
+            mkdir "fonts/Yrsa"
+
+
             if [ $TTF ]; then
-                echo "Compiling $FONTS/${ufo/ufo/ttf}"
-                font=${ufo/ufo/ttf}
-                font=${font/Rasa/Yrsa}
-                rm $FONTS/$font
-                fontmake -u $INSTANCES/$ufo --output ttf --output-path $FONTS/$font
+                FILE=$FONTS/Yrsa/${ufo/ufo/ttf}
+                FILE=${FILE/Rasa/Yrsa}
+                rm -f $FILE
 
-                echo "Autohinting $FONTS/$font"
-                ttfautohint $FONTS/$font $FONTS/$font-hinted
-                cp $FONTS/$font-hinted $FONTS/$font
-                rm $FONTS/$font-hinted
+                echo "Compiling $FILE"
+                fontmake -u $INSTANCES/$ufo --output ttf --output-path $FILE
 
-                echo "Subsetting $FONTS/$font"
-                pyftsubset $FONTS/$font --unicodes-file="production/subset.txt" --name-IDs="*" --glyph-names --layout-features="*" --layout-features-="abvs,akhn,blwf,blws,cjct,half,pres,psts,rkrf,rphf,ss01,ss02,ss03,vatu,abvm,blwm,dist" --recalc-bounds --recalc-average-width --notdef-outline --output-file="$FONTS/$font-subset"
-                cp $FONTS/$font-subset $FONTS/$font
-                rm $FONTS/$font-subset
+                echo "Autohinting $FILE"
+                ttfautohint $FILE $FILE-hinted
+                cp $FILE-hinted $FILE
+                rm $FILE-hinted
+
+                echo "Subsetting $FILE"
+                pyftsubset $FILE --unicodes-file="production/subset.txt" --name-IDs="*" --glyph-names --layout-features="*" --layout-features-="abvs,akhn,blwf,blws,cjct,half,pres,psts,rkrf,rphf,ss01,ss02,ss03,vatu,abvm,blwm,dist" --recalc-bounds --recalc-average-width --notdef-outline --output-file="$FILE-subset"
+                cp $FILE-subset $FILE
+                rm $FILE-subset
 
                 # TODO update names
                 
-                gftools fix-dsig --autofix $FONTS/$font
+                gftools fix-dsig --autofix $FILE
             fi
 
-            if [ $OTF ]; then
-                echo "Compiling $FONTS/${ufo/ufo/otf}"
-                font=${ufo/ufo/otf}
-                font=${font/Rasa/Yrsa}
-                rm $FONTS/$font
-                fontmake -u $INSTANCES/$ufo --output otf --output-path $FONTS/$font --debug-feature-file debug.fea
 
-                echo "Subsetting $FONTS/$font"
-                pyftsubset $FONTS/$font --unicodes-file="production/subset.txt" --name-IDs="*" --glyph-names --layout-features="*" --layout-features-="abvs,akhn,blwf,blws,cjct,half,pres,psts,rkrf,rphf,ss01,ss02,ss03,vatu,abvm,blwm,dist" --recalc-bounds --recalc-average-width --notdef-outline --output-file="$FONTS/$font-subset"
-                cp $FONTS/$font-subset $FONTS/$font
-                rm $FONTS/$font-subset
+            if [ $OTF ]; then
+                FILE=$FONTS/Yrsa/${ufo/ufo/otf}
+                FILE=${FILE/Rasa/Yrsa}
+                rm -f $FILE
+
+                echo "Compiling $FILE"
+                fontmake -u $INSTANCES/$ufo --output otf --output-path $FILE
+
+                echo "Subsetting $FILE"
+                pyftsubset $FILE --unicodes-file="production/subset.txt" --name-IDs="*" --glyph-names --layout-features="*" --layout-features-="abvs,akhn,blwf,blws,cjct,half,pres,psts,rkrf,rphf,ss01,ss02,ss03,vatu,abvm,blwm,dist" --recalc-bounds --recalc-average-width --notdef-outline --output-file="$FILE-subset"
+                cp $FILE-subset $FILE
+                rm $FILE-subset
 
                 # TODO update names
                 
-                gftools fix-dsig --autofix $FONTS/$font
+                gftools fix-dsig --autofix $FILE
             fi
             
         fi
@@ -166,12 +180,53 @@ if [ $STATIC ]; then
 fi
 
 
-if [ $VF ]; then
+if [ $VF == 1 ]; then
     echo "Compile variable fonts"
-    # TODO Variable fonts
+
+    # fontmake extracted master_ufo and instance_ufo are slightly different so
+    # since we want to use "instance" Rasa-Regular.ufo as "master" we need to
+    # make all masters use the "instance" UFO to be compatible
+    rm -rf $MASTERS/*
+
+    cp -r $INSTANCES/Rasa-Light.ufo $MASTERS/Rasa-Light.ufo
+    cp -r $INSTANCES/Rasa-Regular.ufo $MASTERS/Rasa-Regular.ufo
+    cp -r $INSTANCES/Rasa-Bold.ufo $MASTERS/Rasa-Bold.ufo
+
+    cp -r $INSTANCES/Rasa-LightItalic.ufo $MASTERS/Rasa-LightItalic.ufo
+    cp -r $INSTANCES/Rasa-Italic.ufo $MASTERS/Rasa-Italic.ufo
+    cp -r $INSTANCES/Rasa-BoldItalic.ufo $MASTERS/Rasa-BoldItalic.ufo
+
+    mkdir $FONTS/RasaVF
+
+    # Loop through the instances and prepare and compile each of them
+    for ufo in $(ls $MASTERS | grep .ufo); do
+
+        # Make sure mark features get written without any "design" anchors left over
+        echo "Preparing $MASTERS/$ufo"
+        python tools/remove-anchors-from-ufo.py $MASTERS/$ufo periodcentred _periodcentred
+
+        # Combine and write our custom features to the UFOs
+        echo "Write features to $MASTERS/$ufo"
+        if [[ "$ufo" == *Italic.ufo* ]]; then
+            python tools/parse-features.py production/features/italics.fea $MASTERS/$ufo
+        else
+            python tools/parse-features.py production/features/uprights-rasa.fea $MASTERS/$ufo
+        fi
+
+    done
+
+    # A bug in the region of etheral: If the glyph gjDYa in Rasa-MM.glyphs has
+    # the abvmTOP anchor, fonttools will inexplicably fail to compile; however,
+    # the stem component decomposes and the anchor will still be in the glyph
+    # ¯\_(ツ)_/¯
+    fontmake -m production/Rasa-Upright.designspace -o variable --output-path=$FONTS/RasaVF/RasaVF-Uprights.ttf
+    fontmake -m production/Rasa-Italic.designspace -o variable --output-path=$FONTS/RasaVF/RasaVF-Italics.ttf
+
+    # TODO update names
+    
 fi
 
-if [ $WOFF ]; then
+if [ $WOFF == 1 ]; then
     echo "Complile web font"
     # TODO Woffs
 fi

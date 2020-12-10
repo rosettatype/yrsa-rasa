@@ -65,6 +65,7 @@ lookup LATIN_LIGATURES {
 lookup PRES_MatraIContext {
 	lookupflag IgnoreMarks;
 	
+	# TODO Implement for VF
 	include($stylename/matrai.abvs.fea);
 } PRES_MatraIContext;
 
