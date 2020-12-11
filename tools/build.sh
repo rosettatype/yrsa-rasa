@@ -54,6 +54,16 @@ case $FAMILY in
 esac
 
 
+echo "Compiling with input:"
+echo "INSTANCES: $STATIC"
+echo "VARIABLE FONT: $VF"
+echo "OTF: $OTF"
+echo "TTF: $TTF"
+echo "WOFF: $WOFF"
+echo "RASA: $RASA"
+echo "YRSA: $YRSA"
+
+
 if [ $UFO == 1 ]; then
     rm -rf $MASTERS
     rm -rf $INSTANCES
@@ -92,7 +102,7 @@ if [ $STATIC == 1 ]; then
             mkdir "fonts/Rasa"
 
 
-            if [ $TTF ]; then
+            if [ $TTF == 1 ]; then
                 FILE=$FONTS/Rasa/${ufo/ufo/ttf}
                 rm -f $FILE
 
@@ -108,7 +118,7 @@ if [ $STATIC == 1 ]; then
             fi
 
 
-            if [ $OTF ]; then
+            if [ $OTF == 1 ]; then
                 FILE=$FONTS/Rasa/${ufo/ufo/otf}
                 rm -f $FILE
 
@@ -133,7 +143,7 @@ if [ $STATIC == 1 ]; then
             mkdir "fonts/Yrsa"
 
 
-            if [ $TTF ]; then
+            if [ $TTF == 1 ]; then
                 FILE=$FONTS/Yrsa/${ufo/ufo/ttf}
                 FILE=${FILE/Rasa/Yrsa}
                 rm -f $FILE
@@ -151,13 +161,13 @@ if [ $STATIC == 1 ]; then
                 cp $FILE-subset $FILE
                 rm $FILE-subset
 
-                # TODO update names
+                python tools/replace-family-name.py $FILE Rasa Yrsa
                 
                 gftools fix-dsig --autofix $FILE
             fi
 
 
-            if [ $OTF ]; then
+            if [ $OTF == 1 ]; then
                 FILE=$FONTS/Yrsa/${ufo/ufo/otf}
                 FILE=${FILE/Rasa/Yrsa}
                 rm -f $FILE
@@ -170,7 +180,7 @@ if [ $STATIC == 1 ]; then
                 cp $FILE-subset $FILE
                 rm $FILE-subset
 
-                # TODO update names
+                python tools/replace-family-name.py $FILE Rasa Yrsa
                 
                 gftools fix-dsig --autofix $FILE
             fi
@@ -196,34 +206,83 @@ if [ $VF == 1 ]; then
     cp -r $INSTANCES/Rasa-Italic.ufo $MASTERS/Rasa-Italic.ufo
     cp -r $INSTANCES/Rasa-BoldItalic.ufo $MASTERS/Rasa-BoldItalic.ufo
 
-    mkdir $FONTS/RasaVF
-
-    # Loop through the instances and prepare and compile each of them
+    # Loop through the instances and prepare each of them
     for ufo in $(ls $MASTERS | grep .ufo); do
-
         # Make sure mark features get written without any "design" anchors left over
         echo "Preparing $MASTERS/$ufo"
         python tools/remove-anchors-from-ufo.py $MASTERS/$ufo periodcentred _periodcentred
-
-        # Combine and write our custom features to the UFOs
-        echo "Write features to $MASTERS/$ufo"
-        if [[ "$ufo" == *Italic.ufo* ]]; then
-            python tools/parse-features.py production/features/italics.fea $MASTERS/$ufo
-        else
-            python tools/parse-features.py production/features/uprights-rasa.fea $MASTERS/$ufo
-        fi
-
     done
 
-    # A bug in the region of etheral: If the glyph gjDYa in Rasa-MM.glyphs has
-    # the abvmTOP anchor, fonttools will inexplicably fail to compile; however,
-    # the stem component decomposes and the anchor will still be in the glyph
-    # ¯\_(ツ)_/¯
-    fontmake -m production/Rasa-Upright.designspace -o variable --output-path=$FONTS/RasaVF/RasaVF-Uprights.ttf
-    fontmake -m production/Rasa-Italic.designspace -o variable --output-path=$FONTS/RasaVF/RasaVF-Italics.ttf
 
-    # TODO update names
-    
+    if [ $RASA == 1 ]; then
+
+        mkdir $FONTS/RasaVF
+
+        echo "Compiling VF matra I lookup"
+        python tools/write-vf-matrai.py
+
+        # Loop through the instances and prepare and compile each of them
+        for ufo in $(ls $MASTERS | grep .ufo); do
+            # Combine and write our custom features to the UFOs
+            echo "Write features to $MASTERS/$ufo"
+            if [[ "$ufo" == *Italic.ufo* ]]; then
+                python tools/parse-features.py production/features/italics.fea $MASTERS/$ufo
+            else
+                python tools/parse-features.py production/features/uprights-rasa.fea $MASTERS/$ufo VF
+            fi
+        done
+
+        # A bug in the region of etheral: If the glyph gjDYa in Rasa-MM.glyphs has
+        # the abvmTOP anchor, fonttools will inexplicably fail to compile; however,
+        # having removed the stem component decomposes and the anchor will still
+        # be in the glyph — maybe some anchor ordering issue with the different
+        # instance sources/UFOs?!
+        # ¯\_(ツ)_/¯
+        STYLES=(Uprights Italics)
+        for STYLE in ${STYLES[*]}; do
+            FILE=$FONTS/RasaVF/RasaVF-$STYLE.ttf
+            fontmake -m production/Rasa-$STYLE.designspace -o variable --output-path=$FILE
+            gftools fix-dsig --autofix $FILE
+        done
+    fi
+
+
+    if [ $YRSA == 1 ]; then
+
+        mkdir $FONTS/YrsaVF
+
+        # Loop through the instances and prepare and compile each of them
+        for ufo in $(ls $MASTERS | grep .ufo); do
+            # Combine and write our custom features to the UFOs
+            echo "Write features to $MASTERS/$ufo"
+            if [[ "$ufo" == *Italic.ufo* ]]; then
+                python tools/parse-features.py production/features/italics.fea $MASTERS/$ufo
+            else
+                python tools/parse-features.py production/features/uprights-yrsa.fea $MASTERS/$ufo
+            fi
+        done
+
+        # A bug in the region of etheral: If the glyph gjDYa in Rasa-MM.glyphs has
+        # the abvmTOP anchor, fonttools will inexplicably fail to compile; however,
+        # having removed the stem component decomposes and the anchor will still
+        # be in the glyph — maybe some anchor ordering issue with the different
+        # instance sources/UFOs?!
+        # ¯\_(ツ)_/¯
+        STYLES=(Uprights Italics)
+        for STYLE in ${STYLES[*]}; do
+            FILE=$FONTS/YrsaVF/YrsaVF-$STYLE.ttf
+            fontmake -m production/Rasa-$STYLE.designspace -o variable --output-path=$FILE
+
+            echo "Subsetting $FILE"
+            pyftsubset $FILE --unicodes-file="production/subset.txt" --name-IDs="*" --glyph-names --layout-features="*" --layout-features-="abvs,akhn,blwf,blws,cjct,half,pres,psts,rkrf,rphf,ss01,ss02,ss03,vatu,abvm,blwm,dist" --recalc-bounds --recalc-average-width --notdef-outline --output-file="$FILE-subset"
+            cp $FILE-subset $FILE
+            rm $FILE-subset
+
+            python tools/replace-family-name.py $FILE Rasa Yrsa
+
+            gftools fix-dsig --autofix $FILE
+        done
+    fi
 fi
 
 if [ $WOFF == 1 ]; then
