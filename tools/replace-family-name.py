@@ -17,9 +17,9 @@ import os
 
 # ---------------------------------------------------------------------
 # capture args from command line cue ----------------------------------
-filePath = sys.argv[-3]
-newFamilyName = sys.argv[-2]
-oldFamilyName = sys.argv[-1]
+filePath = sys.argv[1]
+newFamilyName = sys.argv[3]
+oldFamilyName = sys.argv[2]
 
 print("Replace '%s' with '%s' in name tables." %
       (oldFamilyName, newFamilyName))

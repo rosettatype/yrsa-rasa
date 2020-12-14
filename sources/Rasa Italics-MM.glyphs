@@ -1,5 +1,9 @@
 {
 .appVersion = "1350";
+DisplayStrings = (
+"/f_j",
+"fjf/jdotless f/jacute"
+);
 copyright = "Copyright 2015 Yrsa-Rasa Project Authors (https://github.com/rosettatype/yrsa-rasa/)";
 customParameters = (
 {
@@ -781,7 +785,7 @@ minus,
 divisionslash,
 bulletoperator,
 radical,
-"infinity",
+infinity,
 integral,
 approxequal,
 notequal,
@@ -69437,13 +69441,17 @@ position = "{352, 0}";
 {
 name = caret_1;
 position = "{221, 0}";
+},
+{
+name = ogonek;
+position = "{472, 53}";
 }
 );
 background = {
-anchors = (
+components = (
 {
-name = btm;
-position = "{352, 0}";
+name = iogonekdotless;
+transform = "{1, 0, 0, 1, 256, 0}";
 }
 );
 paths = (
@@ -69522,7 +69530,7 @@ nodes = (
 "352 363 OFFCURVE",
 "352 349 CURVE SMOOTH",
 "352 338 OFFCURVE",
-"349 314 OFFCURVE",
+"350 314 OFFCURVE",
 "346 290 CURVE SMOOTH",
 "321 121 LINE SMOOTH",
 "316 87 OFFCURVE",
@@ -69646,13 +69654,17 @@ position = "{361, 0}";
 {
 name = caret_1;
 position = "{235, 0}";
+},
+{
+name = ogonek;
+position = "{522, 60}";
 }
 );
 background = {
-anchors = (
+components = (
 {
-name = btm;
-position = "{361, 0}";
+name = iogonekdotless;
+transform = "{1, 0, 0, 1, 250, 0}";
 }
 );
 paths = (
@@ -134959,7 +134971,7 @@ width = 1469;
 };
 },
 {
-glyphname = "infinity";
+glyphname = infinity;
 layers = (
 {
 background = {
@@ -135503,7 +135515,7 @@ y = 214;
 );
 lib = {
 };
-name = "infinity";
+name = infinity;
 unicodes = (
 );
 width = 1844;
@@ -165929,7 +165941,6 @@ imacron = 40;
 iogonekdotless = -30;
 itilde = 47;
 jcircumflex = 50;
-jdotless = -40;
 obreve = -22;
 ocircumflex = -27;
 ocircumflexacute = -27;
@@ -169064,7 +169075,7 @@ idblgrave = 20;
 jcircumflex = -2;
 seven.lf = 20;
 };
-"infinity" = {
+infinity = {
 one = -30;
 one.lf = -30;
 seven = -20;
@@ -169422,7 +169433,7 @@ euro = -23;
 greater = -30;
 greaterequal = -10;
 guarani = -20;
-"infinity" = -40;
+infinity = -40;
 less = -36;
 lessequal = -10;
 logicalnot = -30;
@@ -169485,7 +169496,7 @@ eight.lf = -13;
 eth = -10;
 four.lf = -20;
 greater = -40;
-"infinity" = -60;
+infinity = -60;
 less = -40;
 logicalnot = -40;
 multiply = -50;
@@ -169790,7 +169801,7 @@ idblgrave = 50;
 idieresis = 48;
 idieresisacute = 48;
 iinvertedbreve = 43;
-"infinity" = -30;
+infinity = -30;
 itilde = 48;
 jcircumflex = 50;
 less = -30;
@@ -169913,7 +169924,7 @@ idieresisacute = 65;
 igrave = 40;
 iinvertedbreve = 50;
 imacron = 50;
-"infinity" = -40;
+infinity = -40;
 itilde = 50;
 jcircumflex = 52;
 less = -30;
@@ -172337,7 +172348,6 @@ imacron = -1;
 iogonekdotless = -42;
 itilde = 39;
 jcircumflex = 35;
-jdotless = -45;
 obreve = -25;
 ocircumflex = -25;
 ocircumflexacute = -25;
@@ -175487,7 +175497,7 @@ idblgrave = 20;
 jcircumflex = -4;
 seven.lf = 10;
 };
-"infinity" = {
+infinity = {
 one = -20;
 one.lf = -30;
 seven = -10;
@@ -175839,7 +175849,7 @@ euro = -25;
 greater = -20;
 greaterequal = -5;
 guarani = -20;
-"infinity" = -40;
+infinity = -40;
 less = -40;
 lessequal = -5;
 logicalnot = -15;
@@ -175902,7 +175912,7 @@ eight.lf = -8;
 eth = -10;
 four.lf = -13;
 greater = -10;
-"infinity" = -60;
+infinity = -60;
 less = -30;
 logicalnot = -40;
 multiply = -30;
@@ -176211,7 +176221,7 @@ idblgrave = 50;
 idieresis = 45;
 idieresisacute = 45;
 iinvertedbreve = 35;
-"infinity" = -40;
+infinity = -40;
 itilde = 40;
 jcircumflex = 50;
 less = -20;
@@ -176333,7 +176343,7 @@ idieresisacute = 64;
 igrave = 35;
 iinvertedbreve = 45;
 imacron = 40;
-"infinity" = -50;
+infinity = -50;
 itilde = 45;
 jcircumflex = 40;
 less = -40;

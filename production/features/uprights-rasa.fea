@@ -43,21 +43,29 @@ $markClasses
 # Used for contextual f alternates to appear before these to form three letter
 # ligatures
 @Latin_ligatures = [f_i f_j f_t];
+@Latin_lc_narrow = [i idotbelow iogonek iacute ij jacute iacute_j.NLD j idotaccent];
 
 @Gujr_proportional = [gjZero gjOne gjTwo gjThree gjFour gjFive gjSix gjSeven gjEight gjNine gjSix.ss02 gjRupee rupeeIndian.gujr];
 @Gujr_tabular = [gjZero.tf gjOne.tf gjTwo.tf gjThree.tf gjFour.tf gjFive.tf gjSix.tf gjSeven.tf gjEight.tf gjNine.tf gjSix.tf.ss02 gjRupee.tf rupeeIndian.gujr.tf];
 
 
+
 #------------------------------------------------------------------------------
 # LOOKUPS
+
+# Some lookups that need to be defined before LATIN_LIGATURES
+include(shared.lookups-first.fea);
+
+
 
 #------------------------------------------------------------------------------
 # Upright-only lookups
 
+# Standard ligaures (vary between uprights and italics)
 lookup LATIN_LIGATURES {
-	sub f i by f_i;
-	sub f j by f_j;
-	sub f t by f_t;
+	sub @Latin_lc_f i by f_i;
+	sub @Latin_lc_f j by f_j;
+	sub @Latin_lc_f t by f_t;
 } LATIN_LIGATURES;
 
 # Include this lookup in the root of the feature file, so we can substitute the
@@ -68,10 +76,12 @@ lookup PRES_MatraIContext {
 	include($stylename/matrai.abvs.fea);
 } PRES_MatraIContext;
 
+
+
 #------------------------------------------------------------------------------
 # Shared lookups
 
-include(shared.lookups.fea);
+include(shared.lookups-second.fea);
 
 
 
@@ -106,6 +116,15 @@ feature aalt {
 	feature ss01;
 	feature ss02;
 } aalt;
+
+
+
+#------------------------------------------------------------------------------
+# Composition/Decomposition
+
+feature ccmp {
+	lookup LATIN_J_DECOMPOSE;
+} ccmp;
 
 
 
@@ -264,6 +283,7 @@ feature calt {
 } calt;
 
 feature liga {
+	lookup LATIN_FI_DECOMPOSE;
 	lookup LATIN_LIGATURES;
 	lookup LATIN_F_ALTERNATES;
 } liga;

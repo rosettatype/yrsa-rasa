@@ -42,20 +42,28 @@ $markClasses
 # Used for contextual f alternates to appear before these to form three letter
 # ligatures
 @Latin_ligatures = [f_i f_j f_t f_v f_w];
+@Latin_lc_narrow = [i idotbelow iogonek ij jacute j idotaccent];
+
 
 
 #------------------------------------------------------------------------------
 # LOOKUPS
 
+# Some lookups that need to be defined before LATIN_LIGATURES
+include(shared.lookups-first.fea);
+
+
+
 #------------------------------------------------------------------------------
 # Upright-only lookups
 
+# Standard ligaures (vary between uprights and italics)
 lookup LATIN_LIGATURES {
-	sub f i by f_i;
-	sub f j by f_j;
-	sub f t by f_t;
-    sub f v by f_v;
-    sub f w by f_w;
+	sub @Latin_lc_f i by f_i;
+	sub @Latin_lc_f j by f_j;
+	sub @Latin_lc_f t by f_t;
+    sub @Latin_lc_f v by f_v;
+    sub @Latin_lc_f w by f_w;
 } LATIN_LIGATURES;
 
 
@@ -63,7 +71,7 @@ lookup LATIN_LIGATURES {
 #------------------------------------------------------------------------------
 # Shared lookups
 
-include(shared.lookups.fea);
+include(shared.lookups-second.fea);
 
 
 
@@ -98,6 +106,15 @@ feature aalt {
 	feature ss05;
 	feature ss06;
 } aalt;
+
+
+
+#------------------------------------------------------------------------------
+# Composition/Decomposition
+
+feature ccmp {
+	lookup LATIN_J_DECOMPOSE;
+} ccmp;
 
 
 
@@ -212,6 +229,7 @@ feature calt {
 } calt;
 
 feature liga {
+	lookup LATIN_FI_DECOMPOSE;
 	lookup LATIN_LIGATURES;
 	lookup LATIN_F_ALTERNATES;
 } liga;

@@ -10,6 +10,6 @@
 
 # Classes for forming f-ligatures
 @Latin_lc_ascender = [b h k l hbar hbrevebelow hcircumflex hdotbelow kcommaaccent lacute lcaron lcommaaccent ldot ldotbelow lj llinebelow lslash thorn];
-@Latin_lc_narrow = [i idotbelow iogonek iogonekdotless iacute ij jacute iacute_j.NLD idotless j jdotless idotaccent];
+# @Latin_lc_narrow defined in Uprights/Italics, slightly different
 @Latin_lc_t = [t tcaron tcedilla tcommaaccent tdotbelow tlinebelow];
 @Latin_lc_f = [f f.ascender f.f germandbls];

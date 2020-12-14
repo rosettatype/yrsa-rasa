@@ -19,6 +19,8 @@ STATIC=0
 VF=0
 WOFF=0
 UFO=0
+RASA=0
+YRSA=0
 
 while getopts "ivtowf:" opt
 do

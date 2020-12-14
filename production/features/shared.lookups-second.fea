@@ -1,0 +1,126 @@
+
+# Applying various f alternates to form nicer default connections/ligatures
+lookup LATIN_F_ALTERNATES {
+	# Make f connect to a following f shaped glyph
+	sub f' [@Latin_ligatures @Latin_lc_f] by f.f;
+
+	# Make f connect to a following lowercase asender glyph
+	sub f' @Latin_lc_ascender by f.ascender;
+
+	# Make f connect to an accented narrow letters/i/j's and t
+	# can be substituted before idotless etc.
+	sub f' [@Latin_lc_narrow @Latin_lc_t] by f.connecting;
+} LATIN_F_ALTERNATES;
+
+
+lookup LATIN_LINING_FIGURES {
+	sub zero by zero.lf;
+	sub zero.zero by zero.lf.zero;
+	sub one by one.lf;
+	sub two by two.lf;
+	sub three by three.lf;
+	sub four by four.lf;
+	sub five by five.lf;
+	sub six by six.lf;
+	sub seven by seven.lf;
+	sub eight by eight.lf;
+	sub nine by nine.lf;
+} LATIN_LINING_FIGURES;
+
+
+lookup LATIN_PROPORTIONAL_FIGURES {
+	sub zero.tf by zero;
+	sub zero.lf.zero by zero.zero;
+	sub one.tf by one;
+	sub two.tf by two;
+	sub three.tf by three;
+	sub four.tf by four;
+	sub five.tf by five;
+	sub six.tf by six;
+	sub seven.tf by seven;
+	sub eight.tf by eight;
+	sub nine.tf by nine;
+
+	sub cedi.tf by cedi;
+	sub cent.tf by cent;
+	sub colonsign.tf by colonsign;
+	sub currency.tf by currency;
+	sub dollar.tf by dollar;
+	sub dong.tf by dong;
+	sub euro.tf by euro;
+	sub florin.tf by florin;
+	sub franc.tf by franc;
+	sub guarani.tf by guarani;
+	sub kip.tf by kip;
+	sub lira.tf by lira;
+	sub liraTurkish.tf by liraTurkish;
+	sub manat.tf by manat;
+	sub naira.tf by naira;
+	sub peseta.tf by peseta;
+	sub peso.tf by peso;
+	sub ruble.tf by ruble;
+	sub rupeeIndian.tf by rupeeIndian;
+	sub sterling.tf by sterling;
+	sub won.tf by won;
+	sub yen.tf by yen;
+
+	sub zero.lf.tf by zero.lf;
+	sub one.lf.tf by one.lf;
+	sub two.lf.tf by two.lf;
+	sub three.lf.tf by three.lf;
+	sub four.lf.tf by four.lf;
+	sub five.lf.tf by five.lf;
+	sub six.lf.tf by six.lf;
+	sub seven.lf.tf by seven.lf;
+	sub eight.lf.tf by eight.lf;
+	sub nine.lf.tf by nine.lf;
+} LATIN_PROPORTIONAL_FIGURES;
+
+
+lookup LATIN_TABULAR_FIGURES {
+	sub zero by zero.tf;
+	sub zero.zero by zero.tf.zero;
+	sub one by one.tf;
+	sub two by two.tf;
+	sub three by three.tf;
+	sub four by four.tf;
+	sub five by five.tf;
+	sub six by six.tf;
+	sub seven by seven.tf;
+	sub eight by eight.tf;
+	sub nine by nine.tf;
+
+	sub cedi by cedi.tf;
+	sub cent by cent.tf;
+	sub colonsign by colonsign.tf;
+	sub currency by currency.tf;
+	sub dollar by dollar.tf;
+	sub dong by dong.tf;
+	sub euro by euro.tf;
+	sub florin by florin.tf;
+	sub franc by franc.tf;
+	sub guarani by guarani.tf;
+	sub kip by kip.tf;
+	sub lira by lira.tf;
+	sub liraTurkish by liraTurkish.tf;
+	sub manat by manat.tf;
+	sub naira by naira.tf;
+	sub peseta by peseta.tf;
+	sub peso by peso.tf;
+	sub ruble by ruble.tf;
+	sub rupeeIndian by rupeeIndian.tf;
+	sub sterling by sterling.tf;
+	sub won by won.tf;
+	sub yen by yen.tf;
+
+	sub zero.lf by zero.lf.tf;
+	sub one.lf by one.lf.tf;
+	sub two.lf by two.lf.tf;
+	sub three.lf by three.lf.tf;
+	sub four.lf by four.lf.tf;
+	sub five.lf by five.lf.tf;
+	sub six.lf by six.lf.tf;
+	sub seven.lf by seven.lf.tf;
+	sub eight.lf by eight.lf.tf;
+	sub nine.lf by nine.lf.tf;
+} LATIN_TABULAR_FIGURES;
