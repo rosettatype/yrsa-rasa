@@ -1,23 +1,33 @@
 # Building the fonts from source
 
-Requirements: [AFDKO](https://github.com/adobe-type-tools/afdko), [defcon](https://github.com/typesupply/defcon), [FontTools](https://github.com/behdad/fonttools), and [appendGroupsUFO.py](https://github.com/rosettatype/Post-production-scripts) script. In order to compile TTF fonts, RoboFont and custom shell script [roboGenerateFont.py](https://github.com/rosettatype/Post-production-scripts) are used.
+Requirements: 
 
-This repo contains sources for Glyphs in folder `sources/`. The UFO files in `sources/builds/` are a derived source, exported from Glyphs. The fonts are built using AFDKO setup saved in `production/`. You can use the `build.sh` script in the `tools/` folder to replicate the process.
+Python 3 tools and libraries:
+- fontmake (building UFOs and fonts)
+- fonttools (manipulating features and fonts)
+- gftools (manipualting fonts)
+- defcon (manipulating UFOs)
+- fontbakery (quality assurance)
+
+Install via `pip install -r requirements.txt`
+
+Command line tools:
+- sfnt2woff-zopfli (woff generation with zopfli compression)([source](https://github.com/bramstein/sfnt2woff-zopfli))
+
+This repo contains sources for Glyphs in folder `sources/`. The build command will extract and manipulate temporary UFO files in `sources/`. The fonts are built using a `fontmake` setup with additional files saved in `production/`. You can use the `build.sh` script in the `tools/` folder to replicate the process.
 
 ```
-./build.sh -d -i -r -t -o -x -z
--d   deletes old instances
+./build.sh -i -v -t -o -w -f Rasa/Yrsa
 -i   interpolate new instances
--r   generate TTF instances from UFO instances
+-v   build Variable fonts
 -t   build TTF fonts
 -o   build OTF fonts
--x   make TTX files from the OTFs and TTFs
--z   create zip for release, needs a family name as parameter, 
-     this filters the fonts that are included in the release
+-w   compress woff2 and woff files from existing TTF fonts
+-f   specify which subfamily (Rasa or Yrsa) to compile, or leave empty to compile both
 ```
 
 ## Examples
 
-`./build.sh -i` interpolates UFOs from  `sources/builds` and uploads individual instances to corresponding folders in `production/`.
+`./build.sh -i -t -f Rasa` builds static TTF instances for Rasa in `fonts/Rasa/`.
 
-`./build.sh -o` builds OTF fonts from the instances in `production/` and saves them in the `compiled/` folder which is not tracked in this repo.
+`./build.sh` builds all instance TTF & OTFs, Variable fonts, and WOFF & WOFF2 files for Rasa & Yrsa

@@ -18,9 +18,9 @@ OTF=0
 STATIC=0
 VF=0
 WOFF=0
-UFO=1 # For now just force UFO extraction from glyphs source for every call
+UFO=0
 
-while getopts "ivtowuf:" opt
+while getopts "ivtowf:" opt
 do
 	case "${opt}" in
         i) STATIC=1;;
@@ -33,15 +33,20 @@ do
 	esac
 done
 
+# Extract UFOs if compiling new binaries
+if [ "$TTF" == 1 ] || [ "$OTF" == 1 ]; then
+    UFO=1
+fi
 
 # Fall back to use ttf if no format was specified
-if [ $TTF == 0 ] && [ $OTF == 0 ]; then
+if [ "$TTF" == 0 ] && [ "$OTF" == 0 ] && [ "$WOFF" == 0 ]; then
+    echo "SET TTF&OTF"
     TTF=1
     OTF=1
 fi
 
 # Fall back to compile both, statics and variable fonts
-if [ $STATIC == 0 ] && [ $VF == 0 ]; then
+if [ "$STATIC" == 0 ] && [ "$VF" == 0 ]; then
     STATIC=1
     VF=1
 fi
@@ -57,6 +62,7 @@ esac
 echo "Compiling with input:"
 echo "INSTANCES: $STATIC"
 echo "VARIABLE FONT: $VF"
+echo "UFO: $UFO"
 echo "OTF: $OTF"
 echo "TTF: $TTF"
 echo "WOFF: $WOFF"
@@ -64,7 +70,7 @@ echo "RASA: $RASA"
 echo "YRSA: $YRSA"
 
 
-if [ $UFO == 1 ]; then
+if [ "$UFO" == 1 ]; then
     rm -rf $MASTERS
     rm -rf $INSTANCES
 
@@ -75,7 +81,7 @@ if [ $UFO == 1 ]; then
 fi
 
 
-if [ $STATIC == 1 ]; then
+if [ "$STATIC" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
     echo ""
     echo "Compiling instances"
     
@@ -89,7 +95,7 @@ if [ $STATIC == 1 ]; then
         python tools/remove-anchors-from-ufo.py $INSTANCES/$ufo periodcentred _periodcentred
 
 
-        if [ $RASA ]; then
+        if [ "$RASA" == 1 ]; then
             # Combine and write our custom features to the UFOs
             echo "Write features to $INSTANCES/$ufo"
             if [[ "$ufo" == *Italic.ufo* ]]; then
@@ -102,7 +108,7 @@ if [ $STATIC == 1 ]; then
             mkdir "fonts/Rasa"
 
 
-            if [ $TTF == 1 ]; then
+            if [ "$TTF" == 1 ]; then
                 FILE=$FONTS/Rasa/${ufo/ufo/ttf}
                 rm -f $FILE
 
@@ -118,7 +124,7 @@ if [ $STATIC == 1 ]; then
             fi
 
 
-            if [ $OTF == 1 ]; then
+            if [ "$OTF" == 1 ]; then
                 FILE=$FONTS/Rasa/${ufo/ufo/otf}
                 rm -f $FILE
 
@@ -130,7 +136,7 @@ if [ $STATIC == 1 ]; then
         fi
 
 
-        if [ $YRSA ]; then
+        if [ "$YRSA" == 1 ]; then
             # Combine and write our custom features to the UFOs
             echo "Write features to $INSTANCES/$ufo"
             if [[ "$ufo" == *Italic.ufo* ]]; then
@@ -143,7 +149,7 @@ if [ $STATIC == 1 ]; then
             mkdir "fonts/Yrsa"
 
 
-            if [ $TTF == 1 ]; then
+            if [ "$TTF" == 1 ]; then
                 FILE=$FONTS/Yrsa/${ufo/ufo/ttf}
                 FILE=${FILE/Rasa/Yrsa}
                 rm -f $FILE
@@ -167,7 +173,7 @@ if [ $STATIC == 1 ]; then
             fi
 
 
-            if [ $OTF == 1 ]; then
+            if [ "$OTF" == 1 ]; then
                 FILE=$FONTS/Yrsa/${ufo/ufo/otf}
                 FILE=${FILE/Rasa/Yrsa}
                 rm -f $FILE
@@ -190,7 +196,7 @@ if [ $STATIC == 1 ]; then
 fi
 
 
-if [ $VF == 1 ]; then
+if [ "$VF" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
     echo "Compile variable fonts"
 
     # fontmake extracted master_ufo and instance_ufo are slightly different so
@@ -214,7 +220,7 @@ if [ $VF == 1 ]; then
     done
 
 
-    if [ $RASA == 1 ]; then
+    if [ "$RASA" == 1 ]; then
 
         mkdir $FONTS/RasaVF
 
@@ -247,7 +253,7 @@ if [ $VF == 1 ]; then
     fi
 
 
-    if [ $YRSA == 1 ]; then
+    if [ "$YRSA" == 1 ]; then
 
         mkdir $FONTS/YrsaVF
 
@@ -264,9 +270,9 @@ if [ $VF == 1 ]; then
 
         # A bug in the region of etheral: If the glyph gjDYa in Rasa-MM.glyphs has
         # the abvmTOP anchor, fonttools will inexplicably fail to compile; however,
-        # having removed the stem component decomposes and the anchor will still
-        # be in the glyph — maybe some anchor ordering issue with the different
-        # instance sources/UFOs?!
+        # having removed the anchor the stem component decomposes and the anchor 
+        # will still be in the glyph — maybe some anchor ordering issue with the
+        # different instance sources/UFOs?!
         # ¯\_(ツ)_/¯
         STYLES=(Uprights Italics)
         for STYLE in ${STYLES[*]}; do
@@ -285,7 +291,32 @@ if [ $VF == 1 ]; then
     fi
 fi
 
-if [ $WOFF == 1 ]; then
-    echo "Complile web font"
-    # TODO Woffs
+if [ "$WOFF" == 1 ]; then
+    echo "Compile web fonts"
+
+    if [ "$RASA" == 1 ] && [ "$YRSA" == 1 ]; then
+        FAMILY="*"
+    elif [ "$RASA" == 1 ]; then
+        FAMILY="Rasa"
+    elif [ "$YRSA" == 1 ]; then
+        FAMILY="Yrsa"
+    fi
+
+    for FOLDER in $(ls $FONTS | grep $FAMILY | grep -v Web); do
+        rm -rf $FONTS/${FOLDER}Web
+        mkdir $FONTS/${FOLDER}Web
+        for FILE in $(ls $FONTS/$FOLDER | grep .ttf); do
+            echo "Compiling web font from $FILE"
+            IN=$FONTS/$FOLDER/$FILE
+            OUT=$FONTS/${FOLDER}Web/${FILE/-/Web-}
+            OUT=${OUT/ttf/woff}
+
+            # Woff2 (using fonttools, since the project already requires it)
+            python tools/save-woff2.py $IN ${OUT}2
+            
+            # Woff (using sfnt2woff binary with zopfli compression)
+            sfnt2woff-zopfli $IN
+            mv ${IN/ttf/woff} $OUT
+        done
+    done
 fi
