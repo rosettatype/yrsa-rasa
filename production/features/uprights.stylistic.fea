@@ -26,11 +26,21 @@ feature salt {
 
 
 feature ss01 {
+    featureNames {
+        name "Alternates for Gujarati D- conjuncts";
+        name 1 "Alternates for Gujarati D- conjuncts";
+    };
+
     lookup GUJARATI_ss01;
 } ss01;
 
 # Alternative shape for Gujarati six
 feature ss02 {
+    featureNames {
+        name "Alternate Gujarati six";
+        name 1 "Alternate Gujarati six";
+    };
+
     lookup GUJARATI_ss02;
 } ss02;
 
