@@ -705,13 +705,6 @@ feature abvs {
 		sub gjMatraAu by gjMatraAa gjMatraAi;
 	} ABVS_decompose;
 
-	lookup PSTS_JaMatraLigatures {
-		sub gjJa gjMatraAa by gjJa_gjMatraAa;
-		sub gjJa gjMatraIi by gjJa_gjMatraIi;
-		sub gjJRa gjMatraAa by gjJRa_gjMatraAa;
-		sub gjJRa gjMatraIi by gjJRa_gjMatraIi;
-	} PSTS_JaMatraLigatures;
-
 	lookup ABVS_candrabindu {
 		lookupflag MarkAttachmentType @gjMarks_above;
 
@@ -797,7 +790,9 @@ lookup nuktify {
 	sub gjNukta by gjNukta.calt;
 } nuktify;
 
-@gjBaseFormsWithNuktaAlt = [gjKa gjNga gjCha gjJa gjJha gjTta gjTtha gjDda gjDdha gjTa gjDa gjHa gjKRa gjJRa gjK.calt gjK.calt2 gjK.calt3 gjJ.calt gjJ.calt2 gjJ.calt3 gjT gjT.calt gjKR.calt gjKR.calt2 gjKR.calt3 ];
+@gjBaseFormsWithNuktaAlt = [
+	gjKa gjNga gjCha gjJa gjJha gjTta gjTtha gjDda gjDdha gjTa gjDa gjHa gjZha
+	gjKRa gjJRa gjZhRa gjK gjJ gjZh gjKR];
 
 @gjMarks_nuktabelow = [@gjMarks_nukta @gjMarks_below];
 
@@ -823,7 +818,7 @@ feature blws {
 	lookup BLWS_Nukta {
 		lookupflag UseMarkFilteringSet @gjMarks_nuktabelow;
 
-		sub @gjBaseFormsWithNuktaAlt gjNukta' lookup nuktify [gjMatraU gjMatraUu gjRakar_gjMatraU gjRakar_gjMatraUu gjMatraVocalicR gjMatraVocalicRr];
+		sub @gjBaseFormsWithNuktaAlt gjNukta' lookup nuktify [gjMatraU gjMatraUu gjRakar_gjMatraU gjRakar_gjMatraUu gjMatraVocalicR gjMatraVocalicRr gjVirama];
 	} BLWS_Nukta;
 
 	lookup BLWS_Rukar2 {
