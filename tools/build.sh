@@ -270,15 +270,16 @@ if [ "$VF" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
         STYLES=(Uprights Italics)
         for STYLE in ${STYLES[*]}; do
             FILE=$FONTS/RasaVF/RasaVF-$STYLE.ttf
-            fontmake -m production/Rasa-$STYLE.designspace -o variable --output-path=$FILE --flatten-components
+            DS=production/Rasa-$STYLE.designspace
+            SS=production/Rasa.stylespace
+
+            fontmake -m $DS -o variable --output-path=$FILE --flatten-components
+
+            # Add STAT table
+            statmake --designspace $DS --stylespace $SS $FILE
 
             gftools fix-nonhinting $FILE $FILE
-            rm $FILE-backup*
-
-            gftools fix-hinting $FILE
-            rm $FILE
-            mv $FILE.fix $FILE
-            rm $FILE.fix
+            rm -f $FILE-backup*
 
             gftools fix-dsig --autofix $FILE
         done
@@ -309,7 +310,15 @@ if [ "$VF" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
         STYLES=(Uprights Italics)
         for STYLE in ${STYLES[*]}; do
             FILE=$FONTS/YrsaVF/YrsaVF-$STYLE.ttf
+            # Note that Design- and Stylespace documents are those of Rasa, we
+            # only subset the font after compiling
+            DS=production/Rasa-$STYLE.designspace
+            SS=production/Rasa.stylespace
+
             fontmake -m production/Rasa-$STYLE.designspace -o variable --output-path=$FILE --flatten-components
+
+            # Add STAT table
+            statmake --designspace $DS --stylespace $SS $FILE
 
             echo "Subsetting $FILE"
             pyftsubset $FILE --unicodes-file="production/subset.txt" --name-IDs="*" --glyph-names --layout-features="*" --layout-features-="abvs,akhn,blwf,blws,cjct,half,pres,psts,rkrf,rphf,ss01,ss02,ss03,vatu,abvm,blwm,dist" --recalc-bounds --recalc-average-width --notdef-outline --output-file="$FILE-subset"
@@ -318,10 +327,8 @@ if [ "$VF" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
 
             python tools/replace-family-name.py $FILE Rasa Yrsa
 
-            gftools fix-hinting $FILE
-            rm $FILE
-            mv $FILE.fix $FILE
-            rm $FILE.fix
+            gftools fix-nonhinting $FILE $FILE
+            rm -f $FILE-backup*
 
             gftools fix-dsig --autofix $FILE
         done

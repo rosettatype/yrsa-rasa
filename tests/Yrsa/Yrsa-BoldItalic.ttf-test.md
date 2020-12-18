@@ -3,7 +3,7 @@
 Fontbakery version: 0.7.33
 
 <details>
-<summary><b>[17] Yrsa-BoldItalic.ttf</b></summary>
+<summary><b>[14] Yrsa-BoldItalic.ttf</b></summary>
 <details>
 <summary>💔 <b>ERROR:</b> Show hinting filesize impact.</summary>
 
@@ -119,60 +119,10 @@ same.
 
 </pre>
 
-* 🔥 **FAIL** Yrsa Bold Italic: OS/2 sTypoAscender is 577 when it should be 728 [code: bad-typo-ascender]
+* 🔥 **FAIL** Yrsa Bold Italic: OS/2 sTypoAscender is 971 when it should be 728 [code: bad-typo-ascender]
 * 🔥 **FAIL** Yrsa Bold Italic: OS/2 sTypoDescender is -423 when it should be -272 [code: bad-typo-descender]
 * 🔥 **FAIL** Yrsa Bold Italic: hhea Ascender is 971 when it should be 728 [code: bad-hhea-ascender]
 * 🔥 **FAIL** Yrsa Bold Italic: hhea Descender is -423 when it should be -272 [code: bad-hhea-descender]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics.</summary>
-
-* [com.google.fonts/check/os2_metrics_match_hhea](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea)
-<pre>--- Rationale ---
-
-When OS/2 and hhea vertical metrics match, the same linespacing results on
-macOS, GNU+Linux and Windows. Unfortunately as of 2018, Google Fonts has
-released many fonts with vertical metrics that don&#x27;t match in this way. When we
-fix this issue in these existing families, we will create a visible change in
-line/paragraph layout for either Windows or macOS users, which will upset some
-of them.
-
-But we have a duty to fix broken stuff, and inconsistent paragraph layout is
-unacceptably broken when it is possible to avoid it.
-
-If users complain and prefer the old broken version, they have the freedom to
-take care of their own situation.
-
-
-</pre>
-
-* 🔥 **FAIL** OS/2 sTypoAscender (577) and hhea ascent (971) must be equal. [code: ascender]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Check glyphs do not have components which are themselves components.</summary>
-
-* [com.google.fonts/check/glyf_nested_components](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/glyf.html#com.google.fonts/check/glyf_nested_components)
-<pre>--- Rationale ---
-ve been bugs rendering variable fonts with nested components. Additionally,
-some static fonts with nested components have been reported to have rendering
-and printing issues. (See googlefonts/fontbakery#2961 and
-arrowtype/recursive#412.)
-
-</pre>
-
-* 🔥 **FAIL** The following glyphs have components which themselves are component glyphs:
-	* iogonek
-	* uni01C6
-	* periodcentered.case
-	* second.case
-	* second.case
-	* nine.tf
-	* onequarter
-	* onehalf
-	* threequarters
-	* guillemotleft.case and 4 more. [code: found-nested-components]
 
 </details>
 <details>
@@ -263,14 +213,6 @@ https://github.com/impallari/Raleway/issues/14).
 	- f.f + i
 
    [code: lacks-kern-info]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps.</summary>
-
-* [com.google.fonts/check/linegaps](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/hhea.html#com.google.fonts/check/linegaps)
-
-* ⚠ **WARN** OS/2 sTypoLineGap is not equal to 0. [code: OS/2]
 
 </details>
 <details>
@@ -385,8 +327,8 @@ up by manual inspection.
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 2 | 6 | 9 | 89 | 7 | 81 | 0 |
-| 1% | 3% | 5% | 46% | 4% | 42% | 0% |
+| 2 | 4 | 8 | 89 | 7 | 84 | 0 |
+| 1% | 2% | 4% | 46% | 4% | 43% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**

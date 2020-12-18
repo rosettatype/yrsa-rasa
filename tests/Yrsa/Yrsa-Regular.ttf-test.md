@@ -3,7 +3,7 @@
 Fontbakery version: 0.7.33
 
 <details>
-<summary><b>[18] Yrsa-Regular.ttf</b></summary>
+<summary><b>[17] Yrsa-Regular.ttf</b></summary>
 <details>
 <summary>💔 <b>ERROR:</b> Show hinting filesize impact.</summary>
 
@@ -82,9 +82,6 @@ When in doubt, please choose OFL for new font projects.
 </pre>
 
 * 🔥 **FAIL** License file LICENSE.txt exists but NameID 13 (LICENSE DESCRIPTION) value on platform 3 (WINDOWS) is not specified for that. Value was: "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL" Must be changed to "Licensed under the Apache License, Version 2.0" [code: wrong]
-* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
-* ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
- [code: http]
 
 </details>
 <details>
@@ -95,34 +92,6 @@ When in doubt, please choose OFL for new font projects.
 * 🔥 **FAIL** Name Table entry: Copyright notices should match a pattern similar to: "Copyright 2019 The Familyname Project Authors (git url)"
 But instead we have got:
 "Copyright 2010 Yrsa and Rasa Project Authors (info@rosettatype.com)" [code: bad-notice-format]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
 
 </details>
 <details>
@@ -150,10 +119,10 @@ same.
 
 </pre>
 
-* 🔥 **FAIL** Yrsa Regular: OS/2 sTypoAscender is 930 when it should be 728 [code: bad-typo-ascender]
-* 🔥 **FAIL** Yrsa Regular: OS/2 sTypoDescender is -430 when it should be -272 [code: bad-typo-descender]
-* 🔥 **FAIL** Yrsa Regular: hhea Ascender is 930 when it should be 728 [code: bad-hhea-ascender]
-* 🔥 **FAIL** Yrsa Regular: hhea Descender is -430 when it should be -272 [code: bad-hhea-descender]
+* 🔥 **FAIL** Yrsa Regular: OS/2 sTypoAscender is 971 when it should be 728 [code: bad-typo-ascender]
+* 🔥 **FAIL** Yrsa Regular: OS/2 sTypoDescender is -423 when it should be -272 [code: bad-typo-descender]
+* 🔥 **FAIL** Yrsa Regular: hhea Ascender is 971 when it should be 728 [code: bad-hhea-ascender]
+* 🔥 **FAIL** Yrsa Regular: hhea Descender is -423 when it should be -272 [code: bad-hhea-descender]
 
 </details>
 <details>
@@ -181,64 +150,7 @@ yMax and abs(yMin).
 
 </pre>
 
-* 🔥 **FAIL** OS/2.usWinDescent value 430 is too large. It should be less than double the yMin. Current absolute yMin value is 211 [code: descent]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Check glyphs do not have components which are themselves components.</summary>
-
-* [com.google.fonts/check/glyf_nested_components](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/glyf.html#com.google.fonts/check/glyf_nested_components)
-<pre>--- Rationale ---
-ve been bugs rendering variable fonts with nested components. Additionally,
-some static fonts with nested components have been reported to have rendering
-and printing issues. (See googlefonts/fontbakery#2961 and
-arrowtype/recursive#412.)
-
-</pre>
-
-* 🔥 **FAIL** The following glyphs have components which themselves are component glyphs:
-	* uni01C6
-	* periodcentered.case
-	* second.case
-	* second.case
-	* nine.tf
-	* onequarter
-	* onehalf and threequarters [code: found-nested-components]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> License URL matches License text on name table?</summary>
-
-* [com.google.fonts/check/name/license_url](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license_url)
-<pre>--- Rationale ---
-
-A known license URL must be provided in the NameID 14 (LICENSE INFO URL) entry
-of the name table.
-
-The source of truth for this check is the licensing text found on the NameID 13
-entry (LICENSE DESCRIPTION).
-
-The string snippets used for detecting licensing terms are:
-- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
-- &quot;Licensed under the Apache License, Version 2.0&quot;
-- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
-
-
-Currently accepted licenses are Apache or Open Font License.
-For a small set of legacy families the Ubuntu Font License may be acceptable as
-well.
-
-When in doubt, please choose OFL for new font projects.
-
-
-</pre>
-
-* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
-* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
-* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
-* ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
- [code: http]
+* 🔥 **FAIL** OS/2.usWinDescent value 423 is too large. It should be less than double the yMin. Current absolute yMin value is 211 [code: descent]
 
 </details>
 <details>
@@ -334,6 +246,23 @@ https://github.com/impallari/Raleway/issues/14).
 
 </details>
 <details>
+<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class)</summary>
+
+* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
+<pre>--- Rationale ---
+
+Glyphs in the GDEF mark glyph class should be non-spacing.
+Spacing glyphs in the GDEF mark glyph class may have incorrect anchor
+positioning that was only intended for building composite glyphs during design.
+
+
+</pre>
+
+* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
+	 uni02C9 [code: spacing-mark-glyphs]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class</summary>
 
 * [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
@@ -346,6 +275,24 @@ Mark characters should be in the GDEF mark glyph class.
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
 	 U+0335 [code: mark-chars]
+
+</details>
+<details>
+<summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks)</summary>
+
+* [com.google.fonts/check/gdef_non_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars)
+<pre>--- Rationale ---
+
+Glyphs in the GDEF mark glyph class become non-spacing and may be repositioned
+if they have mark anchors.
+Only combining mark glyphs should be in that class. Any non-mark glyph must not
+be in that class, in particular spacing glyphs.
+
+
+</pre>
+
+* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
+	 U+02C9 [code: non-mark-chars]
 
 </details>
 <details>
@@ -393,8 +340,7 @@ up by manual inspection.
 * ⚠ **WARN** The following glyphs have jaggy segments:
 	* at.case: B<<469.0,161.0>-<469.0,186.0>-<475.0,228.0>>/B<<475.0,228.0>-<427.0,80.0>-<335.0,80.0>> = 9.839037386000951
 	* at: B<<469.0,71.0>-<469.0,96.0>-<475.0,138.0>>/B<<475.0,138.0>-<427.0,-10.0>-<335.0,-10.0>> = 9.839037386000951
-	* uni20A9.tf: L<<154.0,179.0>--<163.0,80.0>>/L<<163.0,80.0>--<175.0,179.0>> = 12.105656026759478
-	* uni20A9.tf: L<<251.0,317.0>--<241.0,402.0>>/L<<241.0,402.0>--<230.0,317.0>> = 14.083603169087116 and uni20A9.tf: L<<318.0,179.0>--<330.0,73.0>>/L<<330.0,73.0>--<338.0,179.0>> = 10.774843898584253 [code: found-jaggy-segments]
+	* uni20A9.tf: L<<154.0,179.0>--<163.0,77.0>>/L<<163.0,77.0>--<176.0,179.0>> = 12.305695809755449 and uni20A9.tf: L<<318.0,179.0>--<330.0,73.0>>/L<<330.0,73.0>--<338.0,179.0>> = 10.774843898584253 [code: found-jaggy-segments]
 
 </details>
 <details>
@@ -433,8 +379,8 @@ lines.
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 2 | 7 | 9 | 87 | 7 | 82 | 0 |
-| 1% | 4% | 5% | 45% | 4% | 42% | 0% |
+| 2 | 5 | 10 | 87 | 7 | 83 | 0 |
+| 1% | 3% | 5% | 45% | 4% | 43% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**

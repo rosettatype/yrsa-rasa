@@ -3,7 +3,7 @@
 Fontbakery version: 0.7.33
 
 <details>
-<summary><b>[18] Yrsa-SemiBold.ttf</b></summary>
+<summary><b>[16] Yrsa-SemiBold.ttf</b></summary>
 <details>
 <summary>💔 <b>ERROR:</b> Show hinting filesize impact.</summary>
 
@@ -82,9 +82,6 @@ When in doubt, please choose OFL for new font projects.
 </pre>
 
 * 🔥 **FAIL** License file LICENSE.txt exists but NameID 13 (LICENSE DESCRIPTION) value on platform 3 (WINDOWS) is not specified for that. Value was: "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL" Must be changed to "Licensed under the Apache License, Version 2.0" [code: wrong]
-* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
-* ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
- [code: http]
 
 </details>
 <details>
@@ -95,34 +92,6 @@ When in doubt, please choose OFL for new font projects.
 * 🔥 **FAIL** Name Table entry: Copyright notices should match a pattern similar to: "Copyright 2019 The Familyname Project Authors (git url)"
 But instead we have got:
 "Copyright 2010 Yrsa and Rasa Project Authors (info@rosettatype.com)" [code: bad-notice-format]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
 
 </details>
 <details>
@@ -150,95 +119,10 @@ same.
 
 </pre>
 
-* 🔥 **FAIL** Yrsa SemiBold: OS/2 sTypoAscender is 930 when it should be 728 [code: bad-typo-ascender]
-* 🔥 **FAIL** Yrsa SemiBold: OS/2 sTypoDescender is -430 when it should be -272 [code: bad-typo-descender]
-* 🔥 **FAIL** Yrsa SemiBold: hhea Ascender is 930 when it should be 728 [code: bad-hhea-ascender]
-* 🔥 **FAIL** Yrsa SemiBold: hhea Descender is -430 when it should be -272 [code: bad-hhea-descender]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 956, but got 930 instead [code: ascent]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Check glyphs do not have components which are themselves components.</summary>
-
-* [com.google.fonts/check/glyf_nested_components](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/glyf.html#com.google.fonts/check/glyf_nested_components)
-<pre>--- Rationale ---
-ve been bugs rendering variable fonts with nested components. Additionally,
-some static fonts with nested components have been reported to have rendering
-and printing issues. (See googlefonts/fontbakery#2961 and
-arrowtype/recursive#412.)
-
-</pre>
-
-* 🔥 **FAIL** The following glyphs have components which themselves are component glyphs:
-	* uni01C6
-	* periodcentered.case
-	* second.case
-	* second.case
-	* nine.tf
-	* onequarter
-	* onehalf and threequarters [code: found-nested-components]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> License URL matches License text on name table?</summary>
-
-* [com.google.fonts/check/name/license_url](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license_url)
-<pre>--- Rationale ---
-
-A known license URL must be provided in the NameID 14 (LICENSE INFO URL) entry
-of the name table.
-
-The source of truth for this check is the licensing text found on the NameID 13
-entry (LICENSE DESCRIPTION).
-
-The string snippets used for detecting licensing terms are:
-- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
-- &quot;Licensed under the Apache License, Version 2.0&quot;
-- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
-
-
-Currently accepted licenses are Apache or Open Font License.
-For a small set of legacy families the Ubuntu Font License may be acceptable as
-well.
-
-When in doubt, please choose OFL for new font projects.
-
-
-</pre>
-
-* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
-* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
-* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
-* ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
- [code: http]
+* 🔥 **FAIL** Yrsa SemiBold: OS/2 sTypoAscender is 971 when it should be 728 [code: bad-typo-ascender]
+* 🔥 **FAIL** Yrsa SemiBold: OS/2 sTypoDescender is -423 when it should be -272 [code: bad-typo-descender]
+* 🔥 **FAIL** Yrsa SemiBold: hhea Ascender is 971 when it should be 728 [code: bad-hhea-ascender]
+* 🔥 **FAIL** Yrsa SemiBold: hhea Descender is -423 when it should be -272 [code: bad-hhea-descender]
 
 </details>
 <details>
@@ -334,6 +218,23 @@ https://github.com/impallari/Raleway/issues/14).
 
 </details>
 <details>
+<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class)</summary>
+
+* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
+<pre>--- Rationale ---
+
+Glyphs in the GDEF mark glyph class should be non-spacing.
+Spacing glyphs in the GDEF mark glyph class may have incorrect anchor
+positioning that was only intended for building composite glyphs during design.
+
+
+</pre>
+
+* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
+	 uni02C9 [code: spacing-mark-glyphs]
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class</summary>
 
 * [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
@@ -346,6 +247,24 @@ Mark characters should be in the GDEF mark glyph class.
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
 	 U+0335 [code: mark-chars]
+
+</details>
+<details>
+<summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks)</summary>
+
+* [com.google.fonts/check/gdef_non_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars)
+<pre>--- Rationale ---
+
+Glyphs in the GDEF mark glyph class become non-spacing and may be repositioned
+if they have mark anchors.
+Only combining mark glyphs should be in that class. Any non-mark glyph must not
+be in that class, in particular spacing glyphs.
+
+
+</pre>
+
+* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
+	 U+02C9 [code: non-mark-chars]
 
 </details>
 <details>
@@ -364,7 +283,6 @@ vectors.
 </pre>
 
 * ⚠ **WARN** The following glyphs have colinear vectors:
-	* Uhorn: L<<534.0,498.0>--<534.0,496.0>> -> L<<534.0,496.0>--<534.0,210.0>>
 	* arrowboth: L<<734.0,246.0>--<237.0,246.0>> -> L<<237.0,246.0>--<182.0,251.0>>
 	* arrowleft: L<<182.0,317.0>--<237.0,322.0>> -> L<<237.0,322.0>--<529.0,322.0>>
 	* dagger: L<<125.0,413.0>--<120.0,505.0>> -> L<<120.0,505.0>--<120.0,572.0>>
@@ -373,7 +291,8 @@ vectors.
 	* daggerdbl: L<<245.0,572.0>--<245.0,505.0>> -> L<<245.0,505.0>--<240.0,413.0>>
 	* exclam: L<<192.0,606.0>--<192.0,535.0>> -> L<<192.0,535.0>--<163.0,180.0>>
 	* exclam: L<<95.0,180.0>--<66.0,535.0>> -> L<<66.0,535.0>--<66.0,606.0>>
-	* exclamdown.case: L<<154.0,395.0>--<183.0,40.0>> -> L<<183.0,40.0>--<183.0,-31.0>> and 22 more. [code: found-colinear-vectors]
+	* exclamdown.case: L<<154.0,395.0>--<183.0,40.0>> -> L<<183.0,40.0>--<183.0,-31.0>>
+	* exclamdown.case: L<<57.0,-31.0>--<57.0,40.0>> -> L<<57.0,40.0>--<86.0,395.0>> and 16 more. [code: found-colinear-vectors]
 
 </details>
 <details>
@@ -433,8 +352,8 @@ lines.
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 2 | 7 | 9 | 89 | 7 | 80 | 0 |
-| 1% | 4% | 5% | 46% | 4% | 41% | 0% |
+| 2 | 4 | 10 | 89 | 7 | 82 | 0 |
+| 1% | 2% | 5% | 46% | 4% | 42% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**

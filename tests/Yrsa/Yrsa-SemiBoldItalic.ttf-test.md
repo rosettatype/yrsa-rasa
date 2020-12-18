@@ -3,7 +3,7 @@
 Fontbakery version: 0.7.33
 
 <details>
-<summary><b>[20] Yrsa-SemiBoldItalic.ttf</b></summary>
+<summary><b>[16] Yrsa-SemiBoldItalic.ttf</b></summary>
 <details>
 <summary>💔 <b>ERROR:</b> Show hinting filesize impact.</summary>
 
@@ -82,9 +82,6 @@ When in doubt, please choose OFL for new font projects.
 </pre>
 
 * 🔥 **FAIL** License file LICENSE.txt exists but NameID 13 (LICENSE DESCRIPTION) value on platform 3 (WINDOWS) is not specified for that. Value was: "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL" Must be changed to "Licensed under the Apache License, Version 2.0" [code: wrong]
-* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
-* ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
- [code: http]
 
 </details>
 <details>
@@ -114,34 +111,6 @@ checks that nameID 1 is the family name + the style name.
 
 </details>
 <details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
-
-This can be accomplished by using the 'gftools fix-hinting' command.
-
-# create virtualenvpython3 -m venv venv
-# activate virtualenvsource venv/bin/activate
-# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
-
-</details>
-<details>
 <summary>🔥 <b>FAIL:</b> Check if the vertical metrics of a family are similar to the same family hosted on Google Fonts.</summary>
 
 * [com.google.fonts/check/vertical_metrics_regressions](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics_regressions)
@@ -166,38 +135,10 @@ same.
 
 </pre>
 
-* 🔥 **FAIL** Yrsa SemiBold Italic: OS/2 sTypoAscender is 930 when it should be 728 [code: bad-typo-ascender]
-* 🔥 **FAIL** Yrsa SemiBold Italic: OS/2 sTypoDescender is -430 when it should be -272 [code: bad-typo-descender]
-* 🔥 **FAIL** Yrsa SemiBold Italic: hhea Ascender is 930 when it should be 728 [code: bad-hhea-ascender]
-* 🔥 **FAIL** Yrsa SemiBold Italic: hhea Descender is -430 when it should be -272 [code: bad-hhea-descender]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-
-A font&#x27;s winAscent and winDescent values should be greater than the head
-table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
-can occur on Windows platforms
-(https://github.com/RedHatBrand/Overpass/issues/33).
-
-If the font includes tall/deep writing systems such as Arabic or Devanagari,
-the winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-
-When the win Metrics are significantly greater than the upm, the linespacing
-can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
-This means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).
-
-
-</pre>
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 955, but got 930 instead [code: ascent]
+* 🔥 **FAIL** Yrsa SemiBold Italic: OS/2 sTypoAscender is 971 when it should be 728 [code: bad-typo-ascender]
+* 🔥 **FAIL** Yrsa SemiBold Italic: OS/2 sTypoDescender is -423 when it should be -272 [code: bad-typo-descender]
+* 🔥 **FAIL** Yrsa SemiBold Italic: hhea Ascender is 971 when it should be 728 [code: bad-hhea-ascender]
+* 🔥 **FAIL** Yrsa SemiBold Italic: hhea Descender is -423 when it should be -272 [code: bad-hhea-descender]
 
 </details>
 <details>
@@ -206,66 +147,6 @@ yMax and abs(yMin).
 * [com.google.fonts/check/name/match_familyname_fullfont](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/name.html#com.google.fonts/check/name/match_familyname_fullfont)
 
 * 🔥 **FAIL** On the 'name' table, the full font name (NameID 4 - FULL_FONT_NAME: 'Yrsa Semibold') does not begin with font family name (NameID 1 - FONT_FAMILY_NAME: 'Yrsa SemiBold Italic') [code: does-not]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Check glyphs do not have components which are themselves components.</summary>
-
-* [com.google.fonts/check/glyf_nested_components](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/glyf.html#com.google.fonts/check/glyf_nested_components)
-<pre>--- Rationale ---
-ve been bugs rendering variable fonts with nested components. Additionally,
-some static fonts with nested components have been reported to have rendering
-and printing issues. (See googlefonts/fontbakery#2961 and
-arrowtype/recursive#412.)
-
-</pre>
-
-* 🔥 **FAIL** The following glyphs have components which themselves are component glyphs:
-	* iogonek
-	* uni01C6
-	* uni02BA
-	* periodcentered.case
-	* second.case
-	* second.case
-	* nine.tf
-	* onequarter
-	* onehalf
-	* threequarters and 4 more. [code: found-nested-components]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> License URL matches License text on name table?</summary>
-
-* [com.google.fonts/check/name/license_url](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license_url)
-<pre>--- Rationale ---
-
-A known license URL must be provided in the NameID 14 (LICENSE INFO URL) entry
-of the name table.
-
-The source of truth for this check is the licensing text found on the NameID 13
-entry (LICENSE DESCRIPTION).
-
-The string snippets used for detecting licensing terms are:
-- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
-- &quot;Licensed under the Apache License, Version 2.0&quot;
-- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
-
-
-Currently accepted licenses are Apache or Open Font License.
-For a small set of legacy families the Ubuntu Font License may be acceptable as
-well.
-
-When in doubt, please choose OFL for new font projects.
-
-
-</pre>
-
-* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
-* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
-* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
-* ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
- [code: http]
 
 </details>
 <details>
@@ -470,8 +351,8 @@ up by manual inspection.
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 2 | 9 | 9 | 91 | 7 | 76 | 0 |
-| 1% | 5% | 5% | 47% | 4% | 39% | 0% |
+| 2 | 6 | 8 | 91 | 7 | 80 | 0 |
+| 1% | 3% | 4% | 47% | 4% | 41% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**

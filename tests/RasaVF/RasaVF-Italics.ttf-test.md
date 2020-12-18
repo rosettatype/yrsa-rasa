@@ -3,7 +3,7 @@
 Fontbakery version: 0.7.33
 
 <details>
-<summary><b>[21] RasaVF-Italics.ttf</b></summary>
+<summary><b>[17] RasaVF-Italics.ttf</b></summary>
 <details>
 <summary>💔 <b>ERROR:</b> Show hinting filesize impact.</summary>
 
@@ -185,33 +185,6 @@ When in doubt, please choose OFL for new font projects.
 </pre>
 
 * 🔥 **FAIL** License file LICENSE.txt exists but NameID 13 (LICENSE DESCRIPTION) value on platform 3 (WINDOWS) is not specified for that. Value was: "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL" Must be changed to "Licensed under the Apache License, Version 2.0" [code: wrong]
-* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
-* ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
- [code: http]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Is the Grid-fitting and Scan-conversion Procedure ('gasp') table set to optimize rendering?</summary>
-
-* [com.google.fonts/check/gasp](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/gasp)
-<pre>--- Rationale ---
-
-Traditionally version 0 &#x27;gasp&#x27; tables were set so that font sizes below 8 ppem
-had no grid fitting but did have antialiasing. From 9-16 ppem, just grid
-fitting. And fonts above 17ppem had both antialiasing and grid fitting toggled
-on. The use of accelerated graphics cards and higher resolution screens make
-this approach obsolete. Microsoft&#x27;s DirectWrite pushed this even further with
-much improved rendering built into the OS and apps.
-
-In this scenario it makes sense to simply toggle all 4 flags ON for all font
-sizes.
-
-
-</pre>
-
-* 🔥 **FAIL** Font is missing the 'gasp' table. Try exporting the font with autohinting enabled.
-If you are dealing with an unhinted font, it can be fixed by running the fonts through the command 'gftools fix-nonhinting'
-GFTools is available at https://pypi.org/project/gftools/ [code: lacks-gasp]
 
 </details>
 <details>
@@ -222,44 +195,6 @@ GFTools is available at https://pypi.org/project/gftools/ [code: lacks-gasp]
 * 🔥 **FAIL** Name Table entry: Copyright notices should match a pattern similar to: "Copyright 2019 The Familyname Project Authors (git url)"
 But instead we have got:
 "Copyright 2010 Yrsa and Rasa Project Authors (info@rosettatype.com)" [code: bad-notice-format]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Font enables smart dropout control in "prep" table instructions?</summary>
-
-* [com.google.fonts/check/smart_dropout](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/smart_dropout)
-<pre>--- Rationale ---
-
-This setup is meant to ensure consistent rendering quality for fonts across all
-devices (with different rendering/hinting capabilities).
-
-Below is the snippet of instructions we expect to see in the fonts:
-B8 01 FF    PUSHW 0x01FF
-85          SCANCTRL (unconditinally turn on
-                      dropout control mode)
-B0 04       PUSHB 0x04
-8D          SCANTYPE (enable smart dropout control)
-
-&quot;Smart dropout control&quot; means activating rules 1, 2 and 5:
-Rule 1: If a pixel&#x27;s center falls within the glyph outline,
-        that pixel is turned on.
-Rule 2: If a contour falls exactly on a pixel&#x27;s center,
-        that pixel is turned on.
-Rule 5: If a scan line between two adjacent pixel centers
-        (either vertical or horizontal) is intersected
-        by both an on-Transition contour and an off-Transition
-        contour and neither of the pixels was already turned on
-        by rules 1 and 2, turn on the pixel which is closer to
-        the midpoint between the on-Transition contour and
-        off-Transition contour. This is &quot;Smart&quot; dropout control.
-
-For more detailed info (such as other rules not enabled in this snippet),
-please refer to the TrueType Instruction Set documentation.
-
-
-</pre>
-
-* 🔥 **FAIL** The 'prep' table does not contain TrueType instructions enabling smart dropout control. To fix, export the font with autohinting enabled, or run ttfautohint on the font, or run the `gftools fix-nonhinting` script. [code: lacks-smart-dropout]
 
 </details>
 <details>
@@ -287,7 +222,7 @@ yMax and abs(yMin).
 
 </pre>
 
-* 🔥 **FAIL** OS/2.usWinDescent value 430 is too large. It should be less than double the yMin. Current absolute yMin value is 211 [code: descent]
+* 🔥 **FAIL** OS/2.usWinDescent value 423 is too large. It should be less than double the yMin. Current absolute yMin value is 211 [code: descent]
 
 </details>
 <details>
@@ -308,66 +243,6 @@ Table: MVAR
 Reason: Produces a bug in DirectWrite which causes https://bugzilla.mozilla.org/show_bug.cgi?id=1492477, https://github.com/google/fonts/issues/2085
 
 They can be removed with the gftools fix-unwanted-tables script.
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Check glyphs do not have components which are themselves components.</summary>
-
-* [com.google.fonts/check/glyf_nested_components](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/glyf.html#com.google.fonts/check/glyf_nested_components)
-<pre>--- Rationale ---
-ve been bugs rendering variable fonts with nested components. Additionally,
-some static fonts with nested components have been reported to have rendering
-and printing issues. (See googlefonts/fontbakery#2961 and
-arrowtype/recursive#412.)
-
-</pre>
-
-* 🔥 **FAIL** The following glyphs have components which themselves are component glyphs:
-	* iogonek
-	* uni01C6
-	* uni02BA
-	* periodcentered.case
-	* second.case
-	* second.case
-	* nine.tf
-	* onequarter
-	* onehalf
-	* threequarters and 4 more. [code: found-nested-components]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> License URL matches License text on name table?</summary>
-
-* [com.google.fonts/check/name/license_url](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license_url)
-<pre>--- Rationale ---
-
-A known license URL must be provided in the NameID 14 (LICENSE INFO URL) entry
-of the name table.
-
-The source of truth for this check is the licensing text found on the NameID 13
-entry (LICENSE DESCRIPTION).
-
-The string snippets used for detecting licensing terms are:
-- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
-- &quot;Licensed under the Apache License, Version 2.0&quot;
-- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
-
-
-Currently accepted licenses are Apache or Open Font License.
-For a small set of legacy families the Ubuntu Font License may be acceptable as
-well.
-
-When in doubt, please choose OFL for new font projects.
-
-
-</pre>
-
-* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
-* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
-* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
-* ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
- [code: http]
 
 </details>
 <details>
@@ -477,8 +352,8 @@ be in that class, in particular spacing glyphs.
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 6 | 9 | 6 | 87 | 5 | 81 | 0 |
-| 3% | 5% | 3% | 45% | 3% | 42% | 0% |
+| 6 | 6 | 5 | 87 | 6 | 84 | 0 |
+| 3% | 3% | 3% | 45% | 3% | 43% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**

@@ -3,7 +3,7 @@
 Fontbakery version: 0.7.33
 
 <details>
-<summary><b>[17] RasaVF-Uprights.ttf</b></summary>
+<summary><b>[20] RasaVF-Italics-backup-fonttools-prep-gasp.ttf</b></summary>
 <details>
 <summary>💔 <b>ERROR:</b> Show hinting filesize impact.</summary>
 
@@ -84,6 +84,22 @@ for a future update to the OpenType specification&#x27;s axis registry.
 
 </details>
 <details>
+<summary>💔 <b>ERROR:</b> Validate STAT particle names and values match the fallback names in GFAxisRegistry. </summary>
+
+* [com.google.fonts/check/STAT/gf-axisregistry](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/STAT/gf-axisregistry)
+<pre>--- Rationale ---
+
+Check that particle names and values on STAT table match the fallback names in
+each axis registry at the Google Fonts Axis Registry, available at
+https://github.com/google/fonts/tree/master/axisregistry
+
+
+</pre>
+
+* 💔 **ERROR** Failed with AttributeError: 'NoneType' object has no attribute 'AxisValue'
+
+</details>
+<details>
 <summary>💔 <b>ERROR:</b> Validate VF axes match the ones declared on METADATA.pb. </summary>
 
 * [com.google.fonts/check/metadata/consistent_axis_enumeration](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/consistent_axis_enumeration)
@@ -119,7 +135,7 @@ and separated by commas:
 
 </pre>
 
-* 🔥 **FAIL** The file 'RasaVF-Uprights.ttf' must be renamed to 'Rasa[wght].ttf' according to the Google Fonts naming policy for variable fonts. [code: bad-varfont-filename]
+* 🔥 **FAIL** The file 'RasaVF-Italics-backup-fonttools-prep-gasp.ttf' must be renamed to 'Rasa-Italic[wght].ttf' according to the Google Fonts naming policy for variable fonts. [code: bad-varfont-filename]
 
 </details>
 <details>
@@ -172,6 +188,30 @@ When in doubt, please choose OFL for new font projects.
 
 </details>
 <details>
+<summary>🔥 <b>FAIL:</b> Is the Grid-fitting and Scan-conversion Procedure ('gasp') table set to optimize rendering?</summary>
+
+* [com.google.fonts/check/gasp](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/gasp)
+<pre>--- Rationale ---
+
+Traditionally version 0 &#x27;gasp&#x27; tables were set so that font sizes below 8 ppem
+had no grid fitting but did have antialiasing. From 9-16 ppem, just grid
+fitting. And fonts above 17ppem had both antialiasing and grid fitting toggled
+on. The use of accelerated graphics cards and higher resolution screens make
+this approach obsolete. Microsoft&#x27;s DirectWrite pushed this even further with
+much improved rendering built into the OS and apps.
+
+In this scenario it makes sense to simply toggle all 4 flags ON for all font
+sizes.
+
+
+</pre>
+
+* 🔥 **FAIL** Font is missing the 'gasp' table. Try exporting the font with autohinting enabled.
+If you are dealing with an unhinted font, it can be fixed by running the fonts through the command 'gftools fix-nonhinting'
+GFTools is available at https://pypi.org/project/gftools/ [code: lacks-gasp]
+
+</details>
+<details>
 <summary>🔥 <b>FAIL:</b> Copyright notices match canonical pattern in fonts</summary>
 
 * [com.google.fonts/check/font_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright)
@@ -182,19 +222,69 @@ But instead we have got:
 
 </details>
 <details>
-<summary>🔥 <b>FAIL:</b> Validate STAT particle names and values match the fallback names in GFAxisRegistry. </summary>
+<summary>🔥 <b>FAIL:</b> Font enables smart dropout control in "prep" table instructions?</summary>
 
-* [com.google.fonts/check/STAT/gf-axisregistry](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/STAT/gf-axisregistry)
+* [com.google.fonts/check/smart_dropout](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/smart_dropout)
 <pre>--- Rationale ---
 
-Check that particle names and values on STAT table match the fallback names in
-each axis registry at the Google Fonts Axis Registry, available at
-https://github.com/google/fonts/tree/master/axisregistry
+This setup is meant to ensure consistent rendering quality for fonts across all
+devices (with different rendering/hinting capabilities).
+
+Below is the snippet of instructions we expect to see in the fonts:
+B8 01 FF    PUSHW 0x01FF
+85          SCANCTRL (unconditinally turn on
+                      dropout control mode)
+B0 04       PUSHB 0x04
+8D          SCANTYPE (enable smart dropout control)
+
+&quot;Smart dropout control&quot; means activating rules 1, 2 and 5:
+Rule 1: If a pixel&#x27;s center falls within the glyph outline,
+        that pixel is turned on.
+Rule 2: If a contour falls exactly on a pixel&#x27;s center,
+        that pixel is turned on.
+Rule 5: If a scan line between two adjacent pixel centers
+        (either vertical or horizontal) is intersected
+        by both an on-Transition contour and an off-Transition
+        contour and neither of the pixels was already turned on
+        by rules 1 and 2, turn on the pixel which is closer to
+        the midpoint between the on-Transition contour and
+        off-Transition contour. This is &quot;Smart&quot; dropout control.
+
+For more detailed info (such as other rules not enabled in this snippet),
+please refer to the TrueType Instruction Set documentation.
 
 
 </pre>
 
-* 🔥 **FAIL** On the font variation axis 'ital', the name 'Uprights' is not among the expected ones (Roman, Italic) according to the Google Fonts Axis Registry. [code: invalid-name]
+* 🔥 **FAIL** The 'prep' table does not contain TrueType instructions enabling smart dropout control. To fix, export the font with autohinting enabled, or run ttfautohint on the font, or run the `gftools fix-nonhinting` script. [code: lacks-smart-dropout]
+
+</details>
+<details>
+<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🔥 **FAIL** OS/2.usWinDescent value 423 is too large. It should be less than double the yMin. Current absolute yMin value is 211 [code: descent]
 
 </details>
 <details>
@@ -215,6 +305,31 @@ Table: MVAR
 Reason: Produces a bug in DirectWrite which causes https://bugzilla.mozilla.org/show_bug.cgi?id=1492477, https://github.com/google/fonts/issues/2085
 
 They can be removed with the gftools fix-unwanted-tables script.
+
+</details>
+<details>
+<summary>🔥 <b>FAIL:</b> Does the font have a DSIG table?</summary>
+
+* [com.google.fonts/check/dsig](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/dsig.html#com.google.fonts/check/dsig)
+<pre>--- Rationale ---
+
+Microsoft Office 2013 and below products expect fonts to have a digital
+signature declared in a DSIG table in order to implement OpenType features. The
+EOL date for Microsoft Office 2013 products is 4/11/2023. This issue does not
+impact Microsoft Office 2016 and above products.
+
+This checks verifies that this signature is available in the font.
+
+A fake signature is enough to address this issue. If needed, a dummy table can
+be added to the font with the `gftools fix-dsig` script available at
+https://github.com/googlefonts/gftools
+
+Reference: https://github.com/googlefonts/fontbakery/issues/1845
+
+
+</pre>
+
+* 🔥 **FAIL** This font lacks a digital signature (DSIG table). Some applications may require one (even if only a dummy placeholder) in order to work properly. You can add a DSIG table by running the `gftools fix-dsig` script. [code: lacks-signature]
 
 </details>
 <details>
@@ -258,40 +373,13 @@ https://github.com/impallari/Raleway/issues/14).
 	- f + i
 	- i + j
 	- j + t
+	- t + v
+	- v + w
 	- germandbls + i
 	- f.ascender + i
 	- f.f + i
 
    [code: lacks-kern-info]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Glyph names are all valid?</summary>
-
-* [com.google.fonts/check/valid_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames)
-<pre>--- Rationale ---
-
-Microsoft&#x27;s recommendations for OpenType Fonts states the following:
-
-&#x27;NOTE: The PostScript glyph name must be no longer than 31 characters, include
-only uppercase or lowercase English letters, European digits, the period or the
-underscore, i.e. from the set [A-Za-z0-9_.] and should start with a letter,
-except the special glyph name &quot;.notdef&quot; which starts with a period.&#x27;
-
-https://docs.microsoft.com/en-us/typography/opentype/spec/recom#post-table
-
-
-In practice, though, particularly in modern environments, glyph names can be as
-long as 63 characters.
-According to the &quot;Adobe Glyph List Specification&quot; available at:
-
-https://github.com/adobe-type-tools/agl-specification
-
-
-</pre>
-
-* ⚠ **WARN** The following glyph names may be too long for some legacy systems which may expect a maximum 31-char length limit:
-gjMatraCandraO_gjReph_gjAnusvara and gjMatraCandraE_gjReph_gjAnusvara [code: legacy-long-names]
 
 </details>
 <details>
@@ -323,7 +411,7 @@ Mark characters should be in the GDEF mark glyph class.
 </pre>
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 U+0335, U+0A83, U+0ABE, U+0ABF, U+0AC0, U+0AC9, U+0ACB and U+0ACC [code: mark-chars]
+	 U+0335 [code: mark-chars]
 
 </details>
 <details>
@@ -351,8 +439,8 @@ be in that class, in particular spacing glyphs.
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 5 | 6 | 6 | 84 | 6 | 87 | 0 |
-| 3% | 3% | 3% | 43% | 3% | 45% | 0% |
+| 6 | 9 | 5 | 87 | 5 | 82 | 0 |
+| 3% | 5% | 3% | 45% | 3% | 42% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**

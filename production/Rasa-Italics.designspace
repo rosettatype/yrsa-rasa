@@ -4,6 +4,8 @@
     <axis tag="wght" name="Weight" minimum="300" maximum="700" default="400">
       <map input="300" output="165"/>
       <map input="400" output="214"/>
+      <map input="500" output="263"/>
+      <map input="600" output="312"/>
       <map input="700" output="361"/>
     </axis>
   </axes>
@@ -68,6 +70,18 @@
       <info/>
     </instance>
   </instances>
+  
+  <!-- statmake key for setting this VF to be Upright -->
+  <lib>
+    <dict>
+      <key>org.statmake.additionalLocations</key>
+      <dict>
+        <key>Italic</key>
+        <integer>1</integer>
+      </dict>
+    </dict>
+  </lib>
+
   <lib>
     <dict>
       <key>public.skipExportGlyphs</key>
