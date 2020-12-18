@@ -1,0 +1,439 @@
+## Fontbakery report
+
+Fontbakery version: 0.7.33
+
+<details>
+<summary><b>[18] Yrsa-Light.ttf</b></summary>
+<details>
+<summary>💔 <b>ERROR:</b> Show hinting filesize impact.</summary>
+
+* [com.google.fonts/check/hinting_impact](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/hinting_impact)
+<pre>--- Rationale ---
+
+This check is merely informative, displaying and useful comparison of filesizes
+of hinted versus unhinted font files.
+
+
+</pre>
+
+* 💔 **ERROR** The condition <FontBakeryCondition:hinting_stats> had an error: OSError: Could not find the libc shared library
+
+</details>
+<details>
+<summary>💔 <b>ERROR:</b> Font has old ttfautohint applied?</summary>
+
+* [com.google.fonts/check/old_ttfautohint](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/old_ttfautohint)
+<pre>--- Rationale ---
+
+This check finds which version of ttfautohint was used, by inspecting name
+table entries and then finds which version of ttfautohint is currently
+installed in the system.
+
+
+</pre>
+
+* 💔 **ERROR** The check <FontBakeryCheck:com.google.fonts/check/old_ttfautohint> had an error: FailedConditionError: The condition <FontBakeryCondition:hinting_stats> had an error: OSError: Could not find the libc shared library
+
+</details>
+<details>
+<summary>🔥 <b>FAIL:</b> Check license file has good copyright string.</summary>
+
+* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
+<pre>--- Rationale ---
+
+An OFL.txt file&#x27;s first line should be the font copyright e.g:
+&quot;Copyright 2019 The Montserrat Project Authors
+(https://github.com/julietaula/montserrat)&quot;
+
+
+</pre>
+
+* 🔥 **FAIL** First line in license file does not match expected format: "copyright 2010 yrsa and rasa project authors (info@rosettatype.com)"
+
+</details>
+<details>
+<summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file.</summary>
+
+* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
+<pre>--- Rationale ---
+
+A known licensing description must be provided in the NameID 14 (LICENSE
+DESCRIPTION) entries of the name table.
+
+The source of truth for this check (to determine which license is in use) is a
+file placed side-by-side to your font project including the licensing terms.
+
+Depending on the chosen license, one of the following string snippets is
+expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
+table:
+- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
+- &quot;Licensed under the Apache License, Version 2.0&quot;
+- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
+
+
+Currently accepted licenses are Apache or Open Font License.
+For a small set of legacy families the Ubuntu Font License may be acceptable as
+well.
+
+When in doubt, please choose OFL for new font projects.
+
+
+</pre>
+
+* 🔥 **FAIL** License file LICENSE.txt exists but NameID 13 (LICENSE DESCRIPTION) value on platform 3 (WINDOWS) is not specified for that. Value was: "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL" Must be changed to "Licensed under the Apache License, Version 2.0" [code: wrong]
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
+ [code: http]
+
+</details>
+<details>
+<summary>🔥 <b>FAIL:</b> Copyright notices match canonical pattern in fonts</summary>
+
+* [com.google.fonts/check/font_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright)
+
+* 🔥 **FAIL** Name Table entry: Copyright notices should match a pattern similar to: "Copyright 2019 The Familyname Project Authors (git url)"
+But instead we have got:
+"Copyright 2010 Yrsa and Rasa Project Authors (info@rosettatype.com)" [code: bad-notice-format]
+
+</details>
+<details>
+<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
+
+This can be accomplished by using the 'gftools fix-hinting' command.
+
+# create virtualenvpython3 -m venv venv
+# activate virtualenvsource venv/bin/activate
+# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
+
+</details>
+<details>
+<summary>🔥 <b>FAIL:</b> Check if the vertical metrics of a family are similar to the same family hosted on Google Fonts.</summary>
+
+* [com.google.fonts/check/vertical_metrics_regressions](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics_regressions)
+<pre>--- Rationale ---
+
+If the family already exists on Google Fonts, we need to ensure that the
+checked family&#x27;s vertical metrics are similar. This check will test the
+following schema which was outlined in Fontbakery issue #1162 [1]:
+
+- The family should visually have the same vertical metrics as the Regular
+style hosted on Google Fonts.
+- If the family on Google Fonts has differing hhea and typo metrics, the family
+being checked should use the typo metrics for both the hhea and typo entries.
+- If the family on Google Fonts has use typo metrics not enabled and the family
+being checked has it enabled, the hhea and typo metrics should use the family
+on Google Fonts winAscent and winDescent values.
+- If the upms differ, the values must be scaled so the visual appearance is the
+same.
+
+[1] https://github.com/googlefonts/fontbakery/issues/1162
+
+
+</pre>
+
+* 🔥 **FAIL** Yrsa Light: OS/2 sTypoAscender is 930 when it should be 728 [code: bad-typo-ascender]
+* 🔥 **FAIL** Yrsa Light: OS/2 sTypoDescender is -430 when it should be -272 [code: bad-typo-descender]
+* 🔥 **FAIL** Yrsa Light: hhea Ascender is 930 when it should be 728 [code: bad-hhea-ascender]
+* 🔥 **FAIL** Yrsa Light: hhea Descender is -430 when it should be -272 [code: bad-hhea-descender]
+
+</details>
+<details>
+<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+
+A font&#x27;s winAscent and winDescent values should be greater than the head
+table&#x27;s yMax, abs(yMin) values. If they are less than these values, clipping
+can occur on Windows platforms
+(https://github.com/RedHatBrand/Overpass/issues/33).
+
+If the font includes tall/deep writing systems such as Arabic or Devanagari,
+the winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+
+When the win Metrics are significantly greater than the upm, the linespacing
+can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead.
+This means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).
+
+
+</pre>
+
+* 🔥 **FAIL** OS/2.usWinDescent value 430 is too large. It should be less than double the yMin. Current absolute yMin value is 207 [code: descent]
+
+</details>
+<details>
+<summary>🔥 <b>FAIL:</b> Check glyphs do not have components which are themselves components.</summary>
+
+* [com.google.fonts/check/glyf_nested_components](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/glyf.html#com.google.fonts/check/glyf_nested_components)
+<pre>--- Rationale ---
+ve been bugs rendering variable fonts with nested components. Additionally,
+some static fonts with nested components have been reported to have rendering
+and printing issues. (See googlefonts/fontbakery#2961 and
+arrowtype/recursive#412.)
+
+</pre>
+
+* 🔥 **FAIL** The following glyphs have components which themselves are component glyphs:
+	* uni01C6
+	* periodcentered.case
+	* second.case
+	* second.case
+	* nine.tf
+	* onequarter
+	* onehalf and threequarters [code: found-nested-components]
+
+</details>
+<details>
+<summary>⚠ <b>WARN:</b> License URL matches License text on name table?</summary>
+
+* [com.google.fonts/check/name/license_url](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license_url)
+<pre>--- Rationale ---
+
+A known license URL must be provided in the NameID 14 (LICENSE INFO URL) entry
+of the name table.
+
+The source of truth for this check is the licensing text found on the NameID 13
+entry (LICENSE DESCRIPTION).
+
+The string snippets used for detecting licensing terms are:
+- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
+- &quot;Licensed under the Apache License, Version 2.0&quot;
+- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
+
+
+Currently accepted licenses are Apache or Open Font License.
+For a small set of legacy families the Ubuntu Font License may be acceptable as
+well.
+
+When in doubt, please choose OFL for new font projects.
+
+
+</pre>
+
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
+ [code: http]
+
+</details>
+<details>
+<summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version?</summary>
+
+* [com.google.fonts/check/production_glyphs_similarity](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity)
+
+* ⚠ **WARN** Following glyphs differ greatly from Google Fonts version: [at, currency, dollar, dollar.tf, percent, perthousand, second, uni20BA, uni20BA.tf, yen.tf]
+
+</details>
+<details>
+<summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
+
+* [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
+<pre>--- Rationale ---
+
+Visually QAing thousands of glyphs by hand is tiring. Most glyphs can only be
+constructured in a handful of ways. This means a glyph&#x27;s contour count will
+only differ slightly amongst different fonts, e.g a &#x27;g&#x27; could either be 2 or 3
+contours, depending on whether its double story or single story.
+
+However, a quotedbl should have 2 contours, unless the font belongs to a
+display family.
+
+This check currently does not cover variable fonts because there&#x27;s plenty of
+alternative ways of constructing glyphs with multiple outlines for each feature
+in a VarFont. The expected contour count data for this check is currently
+optimized for the typical construction of glyphs in static fonts.
+
+
+</pre>
+
+* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
+
+The following glyphs do not have the recommended number of contours:
+
+Glyph name: uni1E08	Contours detected: 3	Expected: 2
+Glyph name: uni1E09	Contours detected: 3	Expected: 2
+Glyph name: uni1E1C	Contours detected: 3	Expected: 2
+Glyph name: uni1E1D	Contours detected: 4	Expected: 3
+Glyph name: uni1E08	Contours detected: 3	Expected: 2
+Glyph name: uni1E09	Contours detected: 3	Expected: 2
+Glyph name: uni1E1C	Contours detected: 3	Expected: 2
+Glyph name: uni1E1D	Contours detected: 4	Expected: 3 [code: contour-count]
+
+</details>
+<details>
+<summary>⚠ <b>WARN:</b> Are there caret positions declared for every ligature?</summary>
+
+* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+<pre>--- Rationale ---
+
+All ligatures in a font must have corresponding caret (text cursor) positions
+defined in the GDEF table, otherwhise, users may experience issues with caret
+rendering.
+
+If using GlyphsApp, ligature carets can be set directly on canvas by accessing
+the `Glyph -&gt; Set Anchors` menu option or by pressing the `Cmd+U` keyboard
+shortcut.
+
+If designing with UFOs, (as of Oct 2020) ligature carets are not yet compiled
+by ufo2ft, and therefore will not build via FontMake. See
+googlefonts/ufo2ft/issues/329
+
+
+</pre>
+
+* ⚠ **WARN** This font lacks caret position values for ligature glyphs on its GDEF table. [code: lacks-caret-pos]
+
+</details>
+<details>
+<summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences?</summary>
+
+* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
+<pre>--- Rationale ---
+
+Fonts with ligatures should have kerning on the corresponding non-ligated
+sequences for text where ligatures aren&#x27;t used (eg
+https://github.com/impallari/Raleway/issues/14).
+
+
+</pre>
+
+* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
+	- f + i
+	- i + j
+	- j + t
+	- germandbls + i
+	- f.ascender + i
+	- f.f + i
+
+   [code: lacks-kern-info]
+
+</details>
+<details>
+<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class</summary>
+
+* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
+<pre>--- Rationale ---
+
+Mark characters should be in the GDEF mark glyph class.
+
+
+</pre>
+
+* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
+	 U+0335 [code: mark-chars]
+
+</details>
+<details>
+<summary>⚠ <b>WARN:</b> Do any segments have colinear vectors?</summary>
+
+* [com.google.fonts/check/outline_colinear_vectors](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors)
+<pre>--- Rationale ---
+
+This test looks for consecutive line segments which have the same angle. This
+normally happens if an outline point has been added by accident.
+
+This test is not run for variable fonts, as they may legitimately have colinear
+vectors.
+
+
+</pre>
+
+* ⚠ **WARN** The following glyphs have colinear vectors:
+	* dagger: L<<142.0,411.0>--<139.0,512.0>> -> L<<139.0,512.0>--<139.0,568.0>>
+	* dagger: L<<206.0,568.0>--<206.0,512.0>> -> L<<206.0,512.0>--<203.0,411.0>>
+	* daggerdbl: L<<149.0,411.0>--<146.0,512.0>> -> L<<146.0,512.0>--<146.0,568.0>>
+	* daggerdbl: L<<214.0,568.0>--<214.0,512.0>> -> L<<214.0,512.0>--<211.0,411.0>>
+	* exclam: L<<151.0,606.0>--<151.0,551.0>> -> L<<151.0,551.0>--<134.0,163.0>>
+	* exclam: L<<98.0,163.0>--<81.0,551.0>> -> L<<81.0,551.0>--<81.0,606.0>>
+	* exclamdown.case: L<<128.0,405.0>--<145.0,17.0>> -> L<<145.0,17.0>--<145.0,-38.0>>
+	* exclamdown.case: L<<75.0,-38.0>--<75.0,17.0>> -> L<<75.0,17.0>--<92.0,405.0>>
+	* exclamdown: L<<128.0,254.0>--<145.0,-134.0>> -> L<<145.0,-134.0>--<145.0,-189.0>>
+	* exclamdown: L<<75.0,-189.0>--<75.0,-134.0>> -> L<<75.0,-134.0>--<92.0,254.0>> and 26 more. [code: found-colinear-vectors]
+
+</details>
+<details>
+<summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments?</summary>
+
+* [com.google.fonts/check/outline_jaggy_segments](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments)
+<pre>--- Rationale ---
+
+This test heuristically detects outline segments which form a particularly
+small angle, indicative of an outline error. This may cause false positives in
+cases such as extreme ink traps, so should be regarded as advisory and backed
+up by manual inspection.
+
+
+</pre>
+
+* ⚠ **WARN** The following glyphs have jaggy segments:
+	* at.case: B<<473.0,159.0>-<473.0,184.0>-<478.0,224.0>>/B<<478.0,224.0>-<430.0,81.0>-<339.0,81.0>> = 11.43004923623014
+	* at: B<<473.0,69.0>-<473.0,94.0>-<478.0,134.0>>/B<<478.0,134.0>-<430.0,-9.0>-<339.0,-9.0>> = 11.43004923623014
+	* uni20A9.tf: L<<155.0,179.0>--<165.0,68.0>>/L<<165.0,68.0>--<178.0,179.0>> = 11.82777088735883
+	* uni20A9.tf: L<<251.0,313.0>--<240.0,410.0>>/L<<240.0,410.0>--<228.0,313.0>> = 13.522125993014349 and uni20A9.tf: L<<310.0,179.0>--<323.0,61.0>>/L<<323.0,61.0>--<333.0,179.0>> = 11.13089373681711 [code: found-jaggy-segments]
+
+</details>
+<details>
+<summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines?</summary>
+
+* [com.google.fonts/check/outline_semi_vertical](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical)
+<pre>--- Rationale ---
+
+This test detects line segments which are nearly, but not quite, exactly
+horizontal or vertical. Sometimes such lines are created by design, but often
+they are indicative of a design error.
+
+This test is disabled for italic styles, which often contain nearly-upright
+lines.
+
+
+</pre>
+
+* ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
+	* pi: L<<174.0,413.0>--<495.0,414.0>>
+	* uni00B5: L<<345.0,133.0>--<343.0,410.0>>
+	* uni02C8: L<<125.0,654.0>--<123.0,410.0>>
+	* uni02C8: L<<72.0,410.0>--<70.0,654.0>>
+	* uni02CC: L<<125.0,86.0>--<123.0,-158.0>>
+	* uni02CC: L<<72.0,-158.0>--<70.0,86.0>> and uni03BC: L<<345.0,133.0>--<343.0,410.0>> [code: found-semi-vertical]
+
+</details>
+<br>
+</details>
+
+### Summary
+
+| 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
+|:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 2 | 7 | 9 | 89 | 7 | 80 | 0 |
+| 1% | 4% | 5% | 46% | 4% | 41% | 0% |
+
+**Note:** The following loglevels were omitted in this report:
+* **SKIP**
+* **INFO**
+* **PASS**
+* **DEBUG**

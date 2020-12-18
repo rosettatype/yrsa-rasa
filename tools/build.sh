@@ -8,6 +8,8 @@
 # -t/-o: Build only TTF/OTF files
 # -i: Build instance files
 # -v: Build variable font files
+# -c: Check the TTF files
+# -w: Compile webfonts
 #
 MASTERS="sources/masters"
 INSTANCES="sources/instances"
@@ -21,16 +23,18 @@ WOFF=0
 UFO=0
 RASA=0
 YRSA=0
+CHECKS=0
 
-while getopts "ivtowf:" opt
+while getopts "civtowf:" opt
 do
 	case "${opt}" in
+        c) CHECKS=1;;
         i) STATIC=1;;
         v) VF=1;;
 		t) TTF=1;;
 		o) OTF=1;;
         w) WOFF=1;;
-        # u) UFO=1;;
+        # u) UFO=1;;  # for now determine this based on TTF/OTF option
         f) FAMILY=$OPTARG;;
 	esac
 done
@@ -42,13 +46,12 @@ fi
 
 # Fall back to use ttf if no format was specified
 if [ "$TTF" == 0 ] && [ "$OTF" == 0 ] && [ "$WOFF" == 0 ]; then
-    echo "SET TTF&OTF"
     TTF=1
     OTF=1
 fi
 
 # Fall back to compile both, statics and variable fonts
-if [ "$STATIC" == 0 ] && [ "$VF" == 0 ]; then
+if [ "$STATIC" == 0 ] && [ "$VF" == 0 ] && [ "$CHECKS" == 0 ]; then
     STATIC=1
     VF=1
 fi
@@ -61,15 +64,20 @@ case $FAMILY in
 esac
 
 
-echo "Compiling with input:"
+echo "Running with input:"
+echo ""
 echo "INSTANCES: $STATIC"
 echo "VARIABLE FONT: $VF"
+echo "CHECKS: $CHECKS"
+echo ""
 echo "UFO: $UFO"
 echo "OTF: $OTF"
 echo "TTF: $TTF"
 echo "WOFF: $WOFF"
+echo ""
 echo "RASA: $RASA"
 echo "YRSA: $YRSA"
+echo ""
 
 
 if [ "$UFO" == 1 ]; then
@@ -80,6 +88,11 @@ if [ "$UFO" == 1 ]; then
     echo "Extracting UFOs from Glyph sources"
     fontmake -g sources/Rasa-MM.glyphs -o ufo --interpolate --master-dir=$MASTERS --instance-dir=$INSTANCES
     fontmake -g "sources/Rasa Italics-MM.glyphs" -o ufo --interpolate --master-dir=$MASTERS --instance-dir=$INSTANCES
+
+    # Tmp fix for https://github.com/googlefonts/fontmake/issues/722
+    cp -r sources/masters/sources/instances/* sources/instances
+    rm -r sources/master/sources
+
 fi
 
 
@@ -87,14 +100,14 @@ if [ "$STATIC" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
     echo ""
     echo "Compiling instances"
     
-    mkdir "fonts"
+    mkdir -p "fonts"
 
     # Loop through the instances and prepare and compile each of them
     for ufo in $(ls $INSTANCES); do
 
         # Make sure mark features get written without any "design" anchors left over
         echo "Preparing $INSTANCES/$ufo"
-        python tools/remove-anchors-from-ufo.py $INSTANCES/$ufo periodcentred _periodcentred
+        python tools/remove-anchors-from-ufo.py $INSTANCES/$ufo periodcentred _periodcentred apostrophe _apostrophe
 
 
         if [ "$RASA" == 1 ]; then
@@ -107,7 +120,7 @@ if [ "$STATIC" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
             fi
 
 
-            mkdir "fonts/Rasa"
+            mkdir -p "fonts/Rasa"
 
 
             if [ "$TTF" == 1 ]; then
@@ -115,12 +128,16 @@ if [ "$STATIC" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
                 rm -f $FILE
 
                 echo "Compiling $FILE"
-                fontmake -u $INSTANCES/$ufo --output ttf --output-path $FILE
+                fontmake -u $INSTANCES/$ufo --output ttf --output-path $FILE --flatten-components
 
                 echo "Autohinting $FILE"
                 ttfautohint $FILE $FILE-hinted
                 cp $FILE-hinted $FILE
                 rm $FILE-hinted
+                
+                gftools fix-hinting $FILE
+                rm $FILE
+                mv $FILE.fix $FILE
                 
                 gftools fix-dsig --autofix $FILE
             fi
@@ -131,7 +148,7 @@ if [ "$STATIC" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
                 rm -f $FILE
 
                 echo "Compiling $FILE"
-                fontmake -u $INSTANCES/$ufo --output otf --output-path $FILE
+                fontmake -u $INSTANCES/$ufo --output otf --output-path $FILE --flatten-components
                 
                 gftools fix-dsig --autofix $FILE
             fi
@@ -148,7 +165,7 @@ if [ "$STATIC" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
             fi
 
 
-            mkdir "fonts/Yrsa"
+            mkdir -p "fonts/Yrsa"
 
 
             if [ "$TTF" == 1 ]; then
@@ -157,7 +174,7 @@ if [ "$STATIC" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
                 rm -f $FILE
 
                 echo "Compiling $FILE"
-                fontmake -u $INSTANCES/$ufo --output ttf --output-path $FILE
+                fontmake -u $INSTANCES/$ufo --output ttf --output-path $FILE --flatten-components
 
                 echo "Autohinting $FILE"
                 ttfautohint $FILE $FILE-hinted
@@ -171,6 +188,10 @@ if [ "$STATIC" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
 
                 python tools/replace-family-name.py $FILE Rasa Yrsa
                 
+                gftools fix-hinting $FILE
+                rm $FILE
+                mv $FILE.fix $FILE
+                
                 gftools fix-dsig --autofix $FILE
             fi
 
@@ -181,7 +202,7 @@ if [ "$STATIC" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
                 rm -f $FILE
 
                 echo "Compiling $FILE"
-                fontmake -u $INSTANCES/$ufo --output otf --output-path $FILE
+                fontmake -u $INSTANCES/$ufo --output otf --output-path $FILE --flatten-components
 
                 echo "Subsetting $FILE"
                 pyftsubset $FILE --unicodes-file="production/subset.txt" --name-IDs="*" --glyph-names --layout-features="*" --layout-features-="abvs,akhn,blwf,blws,cjct,half,pres,psts,rkrf,rphf,ss01,ss02,ss03,vatu,abvm,blwm,dist" --recalc-bounds --recalc-average-width --notdef-outline --output-file="$FILE-subset"
@@ -218,13 +239,13 @@ if [ "$VF" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
     for ufo in $(ls $MASTERS | grep .ufo); do
         # Make sure mark features get written without any "design" anchors left over
         echo "Preparing $MASTERS/$ufo"
-        python tools/remove-anchors-from-ufo.py $MASTERS/$ufo periodcentred _periodcentred
+        python tools/remove-anchors-from-ufo.py $INSTANCES/$ufo periodcentred _periodcentred apostrophe _apostrophe
     done
 
 
     if [ "$RASA" == 1 ]; then
 
-        mkdir $FONTS/RasaVF
+        mkdir -p $FONTS/RasaVF
 
         echo "Compiling VF matra I lookup"
         python tools/write-vf-matrai.py
@@ -249,7 +270,16 @@ if [ "$VF" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
         STYLES=(Uprights Italics)
         for STYLE in ${STYLES[*]}; do
             FILE=$FONTS/RasaVF/RasaVF-$STYLE.ttf
-            fontmake -m production/Rasa-$STYLE.designspace -o variable --output-path=$FILE
+            fontmake -m production/Rasa-$STYLE.designspace -o variable --output-path=$FILE --flatten-components
+
+            gftools fix-nonhinting $FILE $FILE
+            rm $FILE-backup*
+
+            gftools fix-hinting $FILE
+            rm $FILE
+            mv $FILE.fix $FILE
+            rm $FILE.fix
+
             gftools fix-dsig --autofix $FILE
         done
     fi
@@ -257,7 +287,7 @@ if [ "$VF" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
 
     if [ "$YRSA" == 1 ]; then
 
-        mkdir $FONTS/YrsaVF
+        mkdir -p $FONTS/YrsaVF
 
         # Loop through the instances and prepare and compile each of them
         for ufo in $(ls $MASTERS | grep .ufo); do
@@ -279,7 +309,7 @@ if [ "$VF" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
         STYLES=(Uprights Italics)
         for STYLE in ${STYLES[*]}; do
             FILE=$FONTS/YrsaVF/YrsaVF-$STYLE.ttf
-            fontmake -m production/Rasa-$STYLE.designspace -o variable --output-path=$FILE
+            fontmake -m production/Rasa-$STYLE.designspace -o variable --output-path=$FILE --flatten-components
 
             echo "Subsetting $FILE"
             pyftsubset $FILE --unicodes-file="production/subset.txt" --name-IDs="*" --glyph-names --layout-features="*" --layout-features-="abvs,akhn,blwf,blws,cjct,half,pres,psts,rkrf,rphf,ss01,ss02,ss03,vatu,abvm,blwm,dist" --recalc-bounds --recalc-average-width --notdef-outline --output-file="$FILE-subset"
@@ -287,6 +317,11 @@ if [ "$VF" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
             rm $FILE-subset
 
             python tools/replace-family-name.py $FILE Rasa Yrsa
+
+            gftools fix-hinting $FILE
+            rm $FILE
+            mv $FILE.fix $FILE
+            rm $FILE.fix
 
             gftools fix-dsig --autofix $FILE
         done
@@ -297,7 +332,7 @@ if [ "$WOFF" == 1 ]; then
     echo "Compile web fonts"
 
     if [ "$RASA" == 1 ] && [ "$YRSA" == 1 ]; then
-        FAMILY="*"
+        FAMILY="."
     elif [ "$RASA" == 1 ]; then
         FAMILY="Rasa"
     elif [ "$YRSA" == 1 ]; then
@@ -306,7 +341,7 @@ if [ "$WOFF" == 1 ]; then
 
     for FOLDER in $(ls $FONTS | grep $FAMILY | grep -v Web); do
         rm -rf $FONTS/${FOLDER}Web
-        mkdir $FONTS/${FOLDER}Web
+        mkdir -p $FONTS/${FOLDER}Web
         for FILE in $(ls $FONTS/$FOLDER | grep .ttf); do
             echo "Compiling web font from $FILE"
             IN=$FONTS/$FOLDER/$FILE
@@ -319,6 +354,27 @@ if [ "$WOFF" == 1 ]; then
             # Woff (using sfnt2woff binary with zopfli compression)
             sfnt2woff-zopfli $IN
             mv ${IN/ttf/woff} $OUT
+        done
+    done
+fi
+
+
+if [ "$CHECKS" == 1 ]; then
+    echo "Check fonts"
+
+    if [ "$RASA" == 1 ] && [ "$YRSA" == 1 ]; then
+        FAMILY="."
+    elif [ "$RASA" == 1 ]; then
+        FAMILY="Rasa"
+    elif [ "$YRSA" == 1 ]; then
+        FAMILY="Yrsa"
+    fi
+
+    for FOLDER in $(ls $FONTS | grep $FAMILY | grep -v Web); do
+        for FILE in $(ls $FONTS/$FOLDER | grep ttf); do
+            FONT=$FONTS/$FOLDER/$FILE
+            mkdir -p tests/$FOLDER
+            fontbakery check-googlefonts $FONT -l WARN -m WARN --ghmarkdown tests/$FOLDER/$FILE-test.md
         done
     done
 fi

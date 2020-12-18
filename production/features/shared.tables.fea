@@ -19,11 +19,11 @@ table head {
 
 
 table OS/2 {
-	winAscent		930;
-	winDescent		430;
+	winAscent		971;
+	winDescent		423;
 
-	TypoAscender	930;
-	TypoDescender	-430;
+	TypoAscender	971;
+	TypoDescender	-423;
 	TypoLineGap		0;
 
 	XHeight			413;
@@ -36,8 +36,8 @@ table OS/2 {
 
 
 table hhea {
-	Ascender 930;
-	Descender -430;
+	Ascender 971;
+	Descender -423;
 	LineGap 0;
 	# Other hhea values set from Glyphs source
 } hhea;
@@ -51,6 +51,6 @@ table name {
 	nameid 9 "Anna Giedrys (Yrsa+Rasa design), David Brezina (Yrsa art-direction, Rasa art-direction, design)";
 	nameid 11 "https://rosettatype.com";
 	nameid 12 "http://mrbrezina.com & http://ancymonic.com";
-	nameid 13 "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL";
+	nameid 13 "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
 	nameid 14 "https://scripts.sil.org/OFL";
 } name;

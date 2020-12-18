@@ -1,5 +1,5 @@
-fontmake==2.2.1
-fonttools==4.17.1  # Installed as fontmake dependency, but 4.18.1 has a regression that fails compiling the UFOs
+fontmake==2.3.0
+# fonttools==4.17.1  # Installed as fontmake dependency, but 4.18.1 has a regression that fails compiling the UFOs
 gftools==0.5.2
 fontbakery==0.7.33
 defcon==0.7.2
