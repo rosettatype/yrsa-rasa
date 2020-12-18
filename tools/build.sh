@@ -87,7 +87,7 @@ if [ "$UFO" == 1 ]; then
     # Extract UFOs from the glyphs sources
     echo "Extracting UFOs from Glyph sources"
     fontmake -g sources/Rasa-MM.glyphs -o ufo --interpolate --master-dir=$MASTERS --instance-dir=$INSTANCES
-    fontmake -g "sources/Rasa Italics-MM.glyphs" -o ufo --interpolate --master-dir=$MASTERS --instance-dir=$INSTANCES
+    fontmake -g "sources/RasaItalics-MM.glyphs" -o ufo --interpolate --master-dir=$MASTERS --instance-dir=$INSTANCES
 
     # Tmp fix for https://github.com/googlefonts/fontmake/issues/722
     cp -r sources/masters/sources/instances/* sources/instances
