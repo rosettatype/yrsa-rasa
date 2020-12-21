@@ -10,7 +10,6 @@ space
 nbspace
 thinspace
 zerowidthspace
-
 A
 B
 C
@@ -37,8 +36,6 @@ W
 X
 Y
 Z
-
-
 a
 b
 c
@@ -65,7 +62,6 @@ w
 x
 y
 z
-
 period
 comma
 colon
@@ -105,7 +101,6 @@ leftanglebracket-math
 rightanglebracket-math
 leftanglebracket-math.case
 rightanglebracket-math.case
-
 hyphen
 softhyphen
 endash
@@ -133,7 +128,6 @@ guillemetleft.case
 guillemetright.case
 guilsinglleft.case
 guilsinglright.case
-
 at
 at.case
 ampersand
@@ -152,8 +146,6 @@ numero
 numero.case
 numero.ss06
 numero.case.ss06
-
-
 apostrophemodifier
 commaturnedmod
 doubleprimemod
@@ -220,6 +212,7 @@ tildecomb.case
 macroncomb.case
 hookabovecomb.case
 dblgravecomb.case
+dblgravecomb.narrow.case
 breveinvertedcomb.case
 commaturnedabovecomb.case
 horncomb.case
@@ -238,8 +231,8 @@ brevecomb.narrow
 tildecomb.narrow
 macroncomb.narrow
 breveinvertedcomb.narrow
-dieresiscomb.case.narrow
-tildecomb.case.narrow
+dieresiscomb.narrow.case
+tildecomb.narrow.case
 brevecomb_acutecomb
 brevecomb_gravecomb
 brevecomb_hookabovecomb
@@ -276,8 +269,6 @@ acutedotaccentcomb
 acutedotaccentcomb.case
 __periodcentered.CAT
 __periodcentered.CAT.case
-
-
 Aacute
 Abreve
 Abreveacute
@@ -488,8 +479,6 @@ Zacute
 Zcaron
 Zdotaccent
 Zdotbelow
-
-
 aacute
 abreve
 abreveacute
@@ -561,7 +550,7 @@ hbar
 hbrevebelow
 hcircumflex
 hdotbelow
-dotlessi
+idotless
 iacute
 ibreve
 icircumflex
@@ -576,10 +565,10 @@ iinvertedbreve
 ij
 iacute_j.NLD
 imacron
-dotlessiogonek
+iogonekdotless
 iogonek
 itilde
-dotlessj
+jdotless
 jacute
 jcircumflex
 kcommaaccent
@@ -702,7 +691,6 @@ zacute
 zcaron
 zdotaccent
 zdotbelow
-
 f_b
 f_f
 f_f_b
@@ -711,14 +699,15 @@ f_f_i
 f_f_j
 f_f_k
 f_f_l
+f_f_t
 f_h
 f_i
 f_j
 f_k
 f_l
+f_t
 f_v
 f_w
-
 zero.zero
 zero
 one
@@ -807,7 +796,6 @@ six.lf.tf
 seven.lf.tf
 eight.lf.tf
 nine.lf.tf
-
 zeroinferior
 oneinferior
 twoinferior
@@ -852,7 +840,6 @@ fraction
 onehalf
 onequarter
 threequarters
-
 bulletoperator
 commercialMinusSign
 divisionslash
@@ -907,7 +894,6 @@ arrowleft
 arrowboth
 arrowupdown
 lozenge
-
 gjA
 gjAa
 gjI
@@ -958,6 +944,7 @@ gjSha
 gjSsa
 gjSa
 gjHa
+gjZha
 gjAvagraha
 gjMatraAa
 gjMatraI
@@ -979,6 +966,7 @@ gjCandrabindu
 gjAnusvara
 gjVisarga
 gjNukta
+gjThreeDots
 gjReph
 gjRakar
 gjKSsa
@@ -1010,6 +998,7 @@ gjSsRa
 gjSKRa
 gjSTRa
 gjSRa
+gjZhRa
 gjKKa
 gjKTta
 gjKTa
@@ -1092,6 +1081,8 @@ gjHLa
 gjHVa
 gjHMa
 gjHYa
+gjZhKa
+gjZhYa
 gjK
 gjK.calt
 gjK.calt2
@@ -1148,6 +1139,10 @@ gjSs.calt
 gjS
 gjS.calt
 gjH
+gjZh
+gjZh.calt
+gjZh.calt2
+gjZh.calt3
 gjKSs
 gjJNy
 gjKR
@@ -1215,6 +1210,7 @@ gjSTh
 gjSY
 gjHM
 gjHY
+gjZhY
 gjJa_gjMatraAa
 gjJa_gjMatraIi
 gjJRa_gjMatraAa
@@ -1224,6 +1220,10 @@ gjRa_gjMatraU
 gjRa_gjMatraUu
 gjLla_gjMatraVocalicR
 gjLla_gjMatraVocalicRr
+gjZha_gjMatraAa
+gjZha_gjMatraIi
+gjZhRa_gjMatraAa
+gjZhRa_gjMatraIi
 gjKSsa_gjMatraU
 gjDRa.ss01
 gjDGa.ss01
@@ -1256,7 +1256,7 @@ gjSix.tf
 gjSeven.tf
 gjEight.tf
 gjNine.tf
-gjSix.ss02.tf
+gjSix.tf.ss02
 gjRupee.tf
 rupeeIndian.gujr.tf
 dvDanda
@@ -1350,8 +1350,3 @@ quotedblleft.gujr
 quotedblright.gujr
 quoteleft.gujr
 quoteright.gujr
-
-
-
-
-
