@@ -287,6 +287,8 @@ if [ "$VF" == 1 ]; then
             gftools fix-nonhinting $FILE $FILE
             rm -f $FILE-backup*
 
+            gftools fix-unwanted-tables
+
             gftools fix-dsig --autofix $FILE
         done
     fi
@@ -335,6 +337,8 @@ if [ "$VF" == 1 ]; then
 
             gftools fix-nonhinting $FILE $FILE
             rm -f $FILE-backup*
+            
+            gftools fix-unwanted-tables
 
             gftools fix-dsig --autofix $FILE
         done
