@@ -225,7 +225,7 @@ if [ "$STATIC" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
 fi
 
 
-if [ "$VF" == 1 ]; then
+if [ "$VF" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
     echo "Compile variable fonts"
 
     # fontmake extracted master_ufo and instance_ufo are slightly different so
@@ -284,10 +284,10 @@ if [ "$VF" == 1 ]; then
             # Add STAT table
             statmake --designspace $DS --stylespace $SS $FILE
 
-            gftools fix-nonhinting $FILE $FILE
-            rm -f $FILE-backup*
+            gftools fix-nonhinting $FILE
+            rm -f "${FILE/.ttf/-backup-fonttools-prep-gasp.ttf}"
 
-            gftools fix-unwanted-tables
+            gftools fix-unwanted-tables $FILE
 
             gftools fix-dsig --autofix $FILE
         done
@@ -335,12 +335,12 @@ if [ "$VF" == 1 ]; then
 
             python tools/replace-family-name.py $FILE Rasa Yrsa
 
-            gftools fix-nonhinting $FILE $FILE
-            rm -f $FILE-backup*
+            gftools fix-nonhinting $FILE
+            rm -f "${FILE/.ttf/-backup-fonttools-prep-gasp.ttf}"
             
-            gftools fix-unwanted-tables
+            gftools fix-unwanted-tables $FILE
 
-            gftools fix-dsig --autofix $FILE
+            gftools fix-dsig --autofix $file
         done
     fi
 fi

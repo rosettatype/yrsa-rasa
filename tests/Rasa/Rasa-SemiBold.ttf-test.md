@@ -3,7 +3,7 @@
 Fontbakery version: 0.7.33
 
 <details>
-<summary><b>[17] Rasa-SemiBold.ttf</b></summary>
+<summary><b>[15] Rasa-SemiBold.ttf</b></summary>
 <details>
 <summary>💔 <b>ERROR:</b> Show hinting filesize impact.</summary>
 
@@ -251,23 +251,6 @@ gjMatraCandraO_gjReph_gjAnusvara and gjMatraCandraE_gjReph_gjAnusvara [code: leg
 
 </details>
 <details>
-<summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class)</summary>
-
-* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
-<pre>--- Rationale ---
-
-Glyphs in the GDEF mark glyph class should be non-spacing.
-Spacing glyphs in the GDEF mark glyph class may have incorrect anchor
-positioning that was only intended for building composite glyphs during design.
-
-
-</pre>
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 uni02C9 [code: spacing-mark-glyphs]
-
-</details>
-<details>
 <summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class</summary>
 
 * [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
@@ -280,24 +263,6 @@ Mark characters should be in the GDEF mark glyph class.
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
 	 U+0335, U+0A83, U+0ABE, U+0ABF, U+0AC0, U+0AC9, U+0ACB and U+0ACC [code: mark-chars]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks)</summary>
-
-* [com.google.fonts/check/gdef_non_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars)
-<pre>--- Rationale ---
-
-Glyphs in the GDEF mark glyph class become non-spacing and may be repositioned
-if they have mark anchors.
-Only combining mark glyphs should be in that class. Any non-mark glyph must not
-be in that class, in particular spacing glyphs.
-
-
-</pre>
-
-* ⚠ **WARN** The following non-mark characters should not be in the GDEF mark glyph class:
-	 U+02C9 [code: non-mark-chars]
 
 </details>
 <details>
@@ -390,8 +355,8 @@ lines.
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 2 | 4 | 11 | 88 | 7 | 82 | 0 |
-| 1% | 2% | 6% | 45% | 4% | 42% | 0% |
+| 2 | 4 | 9 | 88 | 7 | 84 | 0 |
+| 1% | 2% | 5% | 45% | 4% | 43% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**
