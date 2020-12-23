@@ -1,11 +1,11 @@
 
 # Access to jacute
 lookup LATIN_J_DECOMPOSE {
-	sub j' acutecomb by jdotless acutecomb;
+	sub j' acutecomb by jdotless;
 } LATIN_J_DECOMPOSE;
 
 # Decompose some combining f_i to f + i + comb so that f_i ligature will get
-# applied
+# applied (and dito f_t)
 lookup LATIN_FI_DECOMPOSE {
 	sub @Latin_lc_f iogonek' by i ogonekcomb;
 	sub @Latin_lc_f idotbelow' by i dotbelowcomb;

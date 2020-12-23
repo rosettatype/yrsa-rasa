@@ -128,7 +128,7 @@ if [ "$STATIC" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
                 rm -f $FILE
 
                 echo "Compiling $FILE"
-                fontmake -u $INSTANCES/$ufo --output ttf --output-path $FILE --flatten-components
+                fontmake -u $INSTANCES/$ufo --output ttf --output-path $FILE --flatten-components --autohint
 
                 echo "Autohinting $FILE"
                 ttfautohint $FILE $FILE-hinted
@@ -149,6 +149,9 @@ if [ "$STATIC" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
 
                 echo "Compiling $FILE"
                 fontmake -u $INSTANCES/$ufo --output otf --output-path $FILE --flatten-components
+
+                echo "Autohinting $FILE"
+                psautohint $FILE
                 
                 gftools fix-dsig --autofix $FILE
             fi
@@ -174,7 +177,7 @@ if [ "$STATIC" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
                 rm -f $FILE
 
                 echo "Compiling $FILE"
-                fontmake -u $INSTANCES/$ufo --output ttf --output-path $FILE --flatten-components
+                fontmake -u $INSTANCES/$ufo --output ttf --output-path $FILE --flatten-components --autohint
 
                 echo "Autohinting $FILE"
                 ttfautohint $FILE $FILE-hinted
@@ -209,6 +212,9 @@ if [ "$STATIC" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
                 cp $FILE-subset $FILE
                 rm $FILE-subset
 
+                echo "Autohinting $FILE"
+                psautohint $FILE
+
                 python tools/replace-family-name.py $FILE Rasa Yrsa
                 
                 gftools fix-dsig --autofix $FILE
@@ -219,7 +225,7 @@ if [ "$STATIC" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
 fi
 
 
-if [ "$VF" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
+if [ "$VF" == 1 ]; then
     echo "Compile variable fonts"
 
     # fontmake extracted master_ufo and instance_ufo are slightly different so

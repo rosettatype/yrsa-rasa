@@ -43,7 +43,7 @@ $markClasses
 # Used for contextual f alternates to appear before these to form three letter
 # ligatures
 @Latin_ligatures = [f_i f_j f_t];
-@Latin_lc_narrow = [i idotbelow iogonek iacute ij jacute iacute_j.NLD j idotaccent];
+@Latin_lc_narrow = [i idotbelow iogonek iacute ij iacute_j.NLD j jdotless jacute idotaccent];
 
 @Gujr_proportional = [gjZero gjOne gjTwo gjThree gjFour gjFive gjSix gjSeven gjEight gjNine gjSix.ss02 gjRupee rupeeIndian.gujr];
 @Gujr_tabular = [gjZero.tf gjOne.tf gjTwo.tf gjThree.tf gjFour.tf gjFive.tf gjSix.tf gjSeven.tf gjEight.tf gjNine.tf gjSix.tf.ss02 gjRupee.tf rupeeIndian.gujr.tf];

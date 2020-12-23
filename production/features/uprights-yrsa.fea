@@ -41,7 +41,7 @@ $markClasses
 # Used for contextual f alternates to appear before these to form three letter
 # ligatures
 @Latin_ligatures = [f_i f_j f_t];
-@Latin_lc_narrow = [i idotbelow iogonek iacute ij jacute iacute_j.NLD j idotaccent];
+@Latin_lc_narrow = [i idotbelow iogonek iacute ij iacute_j.NLD j jdotless jacute idotaccent];
 
 
 
