@@ -32,7 +32,7 @@ You can contact us at <ask@rosettatype.com>.
 
 ## License
 
-The fonts and related code are licensed under [Open Font License](https://github.com/rosettatype/yrsa-rasa/tree/master/LICENSE.txt). See `LICENSE.txt` for licensing information.
+The fonts and related code are licensed under [Open Font License](https://github.com/rosettatype/yrsa-rasa/tree/master/OFL.txt). See `OFL.txt` for licensing information.
 
 
 ## Feedback & progress
