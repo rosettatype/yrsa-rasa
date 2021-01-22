@@ -79,11 +79,6 @@
         <key>Italic</key>
         <integer>1</integer>
       </dict>
-    </dict>
-  </lib>
-
-  <lib>
-    <dict>
       <key>public.skipExportGlyphs</key>
       <array>
         <string>_corner.LeftSerif</string>
