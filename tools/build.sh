@@ -251,7 +251,7 @@ if [ "$VF" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
 
     if [ "$RASA" == 1 ]; then
 
-        mkdir -p $FONTS/RasaVF
+        mkdir -p $FONTS/RasaVariable
 
         echo "Compiling VF matra I lookup"
         python tools/write-vf-matrai.py
@@ -275,7 +275,7 @@ if [ "$VF" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
         # ¯\_(ツ)_/¯
         STYLES=(Uprights Italics)
         for STYLE in ${STYLES[*]}; do
-            FILE=$FONTS/RasaVF/RasaVF-$STYLE.ttf
+            FILE=$FONTS/RasaVariable/RasaVF-$STYLE.ttf
             DS=production/Rasa-$STYLE.designspace
             SS=production/Rasa.stylespace
 
@@ -296,7 +296,7 @@ if [ "$VF" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
 
     if [ "$YRSA" == 1 ]; then
 
-        mkdir -p $FONTS/YrsaVF
+        mkdir -p $FONTS/YrsaVariable
 
         # Loop through the instances and prepare and compile each of them
         for ufo in $(ls $MASTERS | grep .ufo); do
@@ -317,7 +317,7 @@ if [ "$VF" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
         # ¯\_(ツ)_/¯
         STYLES=(Uprights Italics)
         for STYLE in ${STYLES[*]}; do
-            FILE=$FONTS/YrsaVF/YrsaVF-$STYLE.ttf
+            FILE=$FONTS/YrsaVariable/YrsaVF-$STYLE.ttf
             # Note that Design- and Stylespace documents are those of Rasa, we
             # only subset the font after compiling
             DS=production/Rasa-$STYLE.designspace
@@ -340,7 +340,7 @@ if [ "$VF" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
             
             gftools fix-unwanted-tables $FILE
 
-            gftools fix-dsig --autofix $file
+            gftools fix-dsig --autofix $FILE
         done
     fi
 fi
@@ -368,9 +368,12 @@ if [ "$WOFF" == 1 ]; then
             # Woff2 (using fonttools, since the project already requires it)
             python tools/save-woff2.py $IN ${OUT}2
             
-            # Woff (using sfnt2woff binary with zopfli compression)
-            sfnt2woff-zopfli $IN
-            mv ${IN/ttf/woff} $OUT
+            # Output woff only for static files, not for Variable Fonts
+            if [[ $IN != *"VF"* ]]; then
+                # Woff (using sfnt2woff binary with zopfli compression)
+                sfnt2woff-zopfli $IN
+                mv ${IN/ttf/woff} $OUT
+            fi
         done
     done
 fi
