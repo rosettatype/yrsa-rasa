@@ -273,7 +273,7 @@ if [ "$VF" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
         # be in the glyph — maybe some anchor ordering issue with the different
         # instance sources/UFOs?!
         # ¯\_(ツ)_/¯
-        STYLES=(Uprights Italics)
+        STYLES=(Ups Its)
         for STYLE in ${STYLES[*]}; do
             FILE=$FONTS/RasaVariable/RasaVF-$STYLE.ttf
             DS=production/Rasa-$STYLE.designspace
@@ -315,7 +315,7 @@ if [ "$VF" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
         # will still be in the glyph — maybe some anchor ordering issue with the
         # different instance sources/UFOs?!
         # ¯\_(ツ)_/¯
-        STYLES=(Uprights Italics)
+        STYLES=(Ups Its)
         for STYLE in ${STYLES[*]}; do
             FILE=$FONTS/YrsaVariable/YrsaVF-$STYLE.ttf
             # Note that Design- and Stylespace documents are those of Rasa, we
