@@ -19,11 +19,11 @@ table head {
 
 
 table OS/2 {
-	winAscent		971;
-	winDescent		423;
+	winAscent		836;
+	winDescent		382;
 
-	TypoAscender	971;
-	TypoDescender	-423;
+	TypoAscender	727;
+	TypoDescender	-272;
 	TypoLineGap		0;
 
 	XHeight			413;
@@ -36,8 +36,8 @@ table OS/2 {
 
 
 table hhea {
-	Ascender 971;
-	Descender -423;
+	Ascender 836;
+	Descender -382;
 	LineGap 0;
 	# Other hhea values set from Glyphs source
 } hhea;
