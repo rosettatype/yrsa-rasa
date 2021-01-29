@@ -22,7 +22,7 @@ table OS/2 {
 	winAscent		836;
 	winDescent		382;
 
-	TypoAscender	727;
+	TypoAscender	728;
 	TypoDescender	-272;
 	TypoLineGap		0;
 
@@ -36,7 +36,7 @@ table OS/2 {
 
 
 table hhea {
-	Ascender 727;
+	Ascender 728;
 	Descender -272;
 	LineGap 0;
 	# Other hhea values set from Glyphs source
