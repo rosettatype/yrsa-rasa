@@ -36,8 +36,8 @@ table OS/2 {
 
 
 table hhea {
-	Ascender 836;
-	Descender -382;
+	Ascender 727;
+	Descender -272;
 	LineGap 0;
 	# Other hhea values set from Glyphs source
 } hhea;
