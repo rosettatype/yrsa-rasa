@@ -282,9 +282,11 @@ if [ "$VF" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
             fontmake -m $DS -o variable --output-path=$FILE --flatten-components
 
             # Add STAT table
+            echo "Add STAT table"
             statmake --designspace $DS --stylespace $SS $FILE
 
-            gftools fix-nonhinting $FILE
+            gftools fix-nonhinting $FILE $FILE.fix
+            mv $FILE.fix $FILE
             rm -f "${FILE/.ttf/-backup-fonttools-prep-gasp.ttf}"
 
             gftools fix-unwanted-tables $FILE
@@ -335,12 +337,13 @@ if [ "$VF" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
 
             python tools/replace-family-name.py $FILE Rasa Yrsa
 
-            gftools fix-nonhinting $FILE
+            gftools fix-nonhinting $FILE $FILE.fix
+            mv $FILE.fix $FILE
             rm -f "${FILE/.ttf/-backup-fonttools-prep-gasp.ttf}"
             
             gftools fix-unwanted-tables $FILE
 
-            gftools fix-dsig --autofix $file
+            gftools fix-dsig --autofix $FILE
         done
     fi
 fi
