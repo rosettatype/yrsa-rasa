@@ -293,7 +293,7 @@ feature liga {
 #------------------------------------------------------------------------------
 # Stylistic sets and alternates
 
-include(uprights.stylistic.fea);
-
-
 include(shared.rest.fea);
+
+
+include(uprights.stylistic.fea);

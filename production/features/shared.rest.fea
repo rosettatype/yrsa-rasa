@@ -6,6 +6,7 @@ feature ordn {
     sub @Figures [A a]' by ordfeminine;
     sub @Figures [O o]' by ordmasculine;
     sub N o by numero;
+	sub N O by numero.case;
 } ordn;
 
 

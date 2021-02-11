@@ -16,9 +16,19 @@ feature salt {
 } salt;
 
 feature ss05 {
+    featureNames {
+        name "Alternate ampersand";
+        name 1 "Alternate ampersand";
+    };
+
     lookup LATIN_ss05;
 } ss05;
 
 feature ss06 {
+    featureNames {
+        name "Alternate numero sign";
+        name 1 "Alternate numero sign";
+    };
+
     lookup LATIN_ss06;
 } ss06;
