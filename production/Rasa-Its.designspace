@@ -22,8 +22,6 @@
       <location>
         <dimension name="Weight" xvalue="214"/>
       </location>
-      <kerning/>
-      <info/>
     </source>
 
     <source filename="../sources/masters/Rasa-BoldItalic.ufo" name="Rasa Bold Italic" familyname="Rasa" stylename="Bold Italic">
@@ -55,7 +53,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance name="Rasa SemiBold Italic" familyname="Rasa" stylename="SemiBold Italic" filename="../sources/instances/Rasa-SemiBoldItalic.ufo" stylemapfamilyname="Rasa Semibold" stylemapstylename="italic">
+    <instance name="Rasa SemiBold Italic" familyname="Rasa" stylename="SemiBold Italic" filename="../sources/instances/Rasa-SemiBoldItalic.ufo" stylemapfamilyname="Rasa SemiBold" stylemapstylename="italic">
       <location>
         <dimension name="Weight" xvalue="312"/>
       </location>
@@ -79,11 +77,6 @@
         <key>Italic</key>
         <integer>1</integer>
       </dict>
-    </dict>
-  </lib>
-
-  <lib>
-    <dict>
       <key>public.skipExportGlyphs</key>
       <array>
         <string>_corner.LeftSerif</string>

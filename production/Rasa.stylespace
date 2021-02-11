@@ -5,6 +5,10 @@
 	<key>axes</key>
 	<array>
 		<dict>
+			<key>name</key>
+			<string>Weight</string>
+			<key>tag</key>
+			<string>wght</string>
 			<key>locations</key>
 			<array>
 				<dict>
@@ -18,6 +22,12 @@
 					<string>Regular</string>
 					<key>value</key>
 					<integer>400</integer>
+					<key>linked_value</key>
+					<integer>700</integer>
+					<key>flags</key>
+					<array>
+						<string>ElidableAxisValueName</string>
+					</array>
 				</dict>
 				<dict>
 					<key>name</key>
@@ -38,10 +48,6 @@
 					<integer>700</integer>
 				</dict>
 			</array>
-			<key>name</key>
-			<string>Weight</string>
-			<key>tag</key>
-			<string>wght</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -52,9 +58,15 @@
 			<array>
 				<dict>
 					<key>name</key>
-					<string>Uprights</string>
+					<string>Roman</string>
 					<key>value</key>
 					<integer>0</integer>
+					<key>linked_value</key>
+					<integer>1</integer>
+					<key>flags</key>
+					<array>
+						<string>ElidableAxisValueName</string>
+					</array>
 				</dict>
 				<dict>
 					<key>name</key>

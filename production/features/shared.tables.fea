@@ -22,9 +22,9 @@ table OS/2 {
 	winAscent		971;
 	winDescent		423;
 
-	TypoAscender	971;
-	TypoDescender	-423;
-	TypoLineGap		0;
+	TypoAscender	728;
+	TypoDescender	-272;
+	TypoLineGap		218;
 
 	XHeight			413;
 	CapHeight		568;
@@ -36,8 +36,8 @@ table OS/2 {
 
 
 table hhea {
-	Ascender 971;
-	Descender -423;
+	Ascender 728;
+	Descender -272;
 	LineGap 0;
 	# Other hhea values set from Glyphs source
 } hhea;
@@ -45,7 +45,7 @@ table hhea {
 
 
 table name {
-	nameid 0 "Copyright 2010 Yrsa and Rasa Project Authors (info@rosettatype.com)";
+	nameid 0 "Copyright 2015 The Yrsa-Rasa Project Authors (https://github.com/rosettatype/yrsa-rasa/)";
 	nameid 7 "Yrsa and Rasa are trademarks of Rosetta Type Foundry s.r.o.";
 	nameid 8 "Rosetta Type Foundry";
 	nameid 9 "Anna Giedrys (Yrsa+Rasa design), David Brezina (Yrsa art-direction, Rasa art-direction, design)";

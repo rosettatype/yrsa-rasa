@@ -1,5 +1,5 @@
 {
-.appVersion = "1350";
+.appVersion = "1354";
 copyright = "Copyright 2015 Yrsa-Rasa Project Authors (https://github.com/rosettatype/yrsa-rasa/)";
 customParameters = (
 {
@@ -972,6 +972,10 @@ value = 1;
 name = fsType;
 value = (
 );
+},
+{
+name = note;
+value = "Axis Mappings are set in the designspace document.";
 }
 );
 date = "2020-12-08 09:21:51 +0000";
@@ -163940,7 +163944,7 @@ instanceInterpolations = {
 "DAAEA780-4710-4479-B303-5C05B40621B2" = 0.25;
 };
 isItalic = 1;
-linkStyle = Semibold;
+linkStyle = SemiBold;
 name = "SemiBold Italic";
 weightClass = SemiBold;
 },

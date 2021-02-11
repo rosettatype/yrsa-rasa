@@ -1,5 +1,6 @@
 _ignore
 font.ufo
+#*.otf
 *.zip
 *.log
 *.tmp
@@ -9,3 +10,4 @@ current.fpr
 sources/masters
 sources/instances
 debug.fea
+.DS_Store
