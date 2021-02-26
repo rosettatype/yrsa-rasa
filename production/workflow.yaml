@@ -1,0 +1,53 @@
+# mrhandy: 0.10.3
+#
+# A custom workflow setup for processing the fonts generated with 
+# ./tools/build.sh in Rosetta's own applications
+
+-
+  name: prepare
+  source: [fonts/Rasa/*, fonts/RasaVariable/*, fonts/Yrsa/*, fonts/YrsaVariable/*]
+  family: [Rasa, Rasa Variable, Yrsa, Yrsa Variable]
+  tasks:
+    - .copy_fonts
+    - .post.update_names
+    
+    # Remove non-Rosetta named files
+    - $ rm fonts/Rasa/Rasa-Bold*
+    - $ rm fonts/Rasa/Rasa-Italic*
+    - $ rm fonts/Rasa/Rasa-Light*
+    - $ rm fonts/Rasa/Rasa-Medium*
+    - $ rm fonts/Rasa/Rasa-Regular*
+    - $ rm fonts/Rasa/Rasa-SemiBold*
+
+    - $ rm fonts/Yrsa/Yrsa-Bold*
+    - $ rm fonts/Yrsa/Yrsa-Italic*
+    - $ rm fonts/Yrsa/Yrsa-Light*
+    - $ rm fonts/Yrsa/Yrsa-Medium*
+    - $ rm fonts/Yrsa/Yrsa-Regular*
+    - $ rm fonts/Yrsa/Yrsa-SemiBold*
+
+    # Remove web fonts to re-generate from scratch
+    - $ rm -r fonts/RasaWeb
+    - $ rm -r fonts/RasaVariableWeb
+    - $ rm -r fonts/YrsaWeb
+    - $ rm -r fonts/YrsaVariableWeb
+
+-
+  name: webfonts
+  source: [fonts/Rasa, fonts/RasaVariable, fonts/Yrsa, fonts/YrsaVariable]
+  family: [Rasa Web, Rasa Variable Web, Yrsa Web, Yrsa Variable Web]
+  tasks:
+    - .post.make_webfonts
+
+-
+  name: trialfonts
+  source: [fonts/Rasa, fonts/RasaVariable, fonts/Yrsa, fonts/YrsaVariable]
+  family: [Rasa TRIAL, Rasa Variable TRIAL, Yrsa TRIAL, Yrsa Variable TRIAL]
+  tasks:
+    - .post.make_trialfonts
+
+-
+  name: restore
+  tasks:
+    - $ rm -r fonts
+    - $ git restore fonts
