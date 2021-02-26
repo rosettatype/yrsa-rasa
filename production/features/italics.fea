@@ -42,7 +42,7 @@ $markClasses
 # Used for contextual f alternates to appear before these to form three letter
 # ligatures
 @Latin_ligatures = [f_i f_j f_t f_v f_w];
-@Latin_lc_narrow = [i idotbelow iogonek ij j idotaccent];
+@Latin_lc_narrow = [i idotbelow iogonek ij j];
 
 
 
@@ -125,9 +125,7 @@ feature locl {
 	script latn; # Latin
 		# i -> idotaccent substitution effectively switches off the fi and ffi ligatures
 		language TRK; # Turkish
-			lookup locl_TRK {
-				sub i by idotaccent;
-			} locl_TRK;
+			lookup locl_TRK;
 		language AZE; # Azeri
 			lookup locl_TRK;
 		language CRT; # Crimean Tatar

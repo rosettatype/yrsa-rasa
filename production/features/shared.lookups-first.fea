@@ -1,3 +1,7 @@
+# Define this lockup here so it gets processes prior to fi-liga code!
+lookup locl_TRK {
+	sub i by idotaccent;
+} locl_TRK;
 
 # Access to jacute
 lookup LATIN_J_DECOMPOSE {
