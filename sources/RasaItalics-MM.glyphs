@@ -1,5 +1,5 @@
 {
-.appVersion = "1354";
+.appVersion = "1355";
 copyright = "Copyright 2015 Yrsa-Rasa Project Authors (https://github.com/rosettatype/yrsa-rasa/)";
 customParameters = (
 {
@@ -998,31 +998,31 @@ capHeight = 568;
 customParameters = (
 {
 name = typoAscender;
-value = 930;
+value = 728;
 },
 {
 name = typoDescender;
-value = -430;
+value = -272;
 },
 {
 name = typoLineGap;
-value = 0;
+value = 218;
 },
 {
 name = winAscent;
-value = 930;
+value = 971;
 },
 {
 name = winDescent;
-value = 430;
+value = 423;
 },
 {
 name = hheaAscender;
-value = 930;
+value = 728;
 },
 {
 name = hheaDescender;
-value = -430;
+value = -272;
 },
 {
 name = hheaLineGap;
@@ -1105,31 +1105,31 @@ capHeight = 573;
 customParameters = (
 {
 name = typoAscender;
-value = 930;
+value = 728;
 },
 {
 name = typoDescender;
-value = -430;
+value = -272;
 },
 {
 name = typoLineGap;
-value = 0;
+value = 218;
 },
 {
 name = winAscent;
-value = 930;
+value = 971;
 },
 {
 name = winDescent;
-value = 430;
+value = 423;
 },
 {
 name = hheaAscender;
-value = 930;
+value = 728;
 },
 {
 name = hheaDescender;
-value = -430;
+value = -272;
 },
 {
 name = hheaLineGap;
