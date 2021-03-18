@@ -2,6 +2,7 @@
 # Tables
 
 include(shared.tables.fea);
+include(verticalmetrics-yrsa.fea);
 
 
 

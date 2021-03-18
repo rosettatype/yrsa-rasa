@@ -2,7 +2,7 @@
 # Tables
 
 include(shared.tables.fea);
-include(verticalmetrics-yrsa.fea);
+include(verticalmetrics-rasa.fea);
 
 
 
@@ -36,13 +36,14 @@ include(shared.classes.fea);
 $markClasses
 
 
+
 #------------------------------------------------------------------------------
 # Specific upright classes
 
 # Used for contextual f alternates to appear before these to form three letter
 # ligatures
-@Latin_ligatures = [f_i f_j f_t];
-@Latin_lc_narrow = [i idotbelow iogonek iacute ij iacute_j.NLD j jdotless jacute];
+@Latin_ligatures = [f_i f_j f_t f_v f_w];
+@Latin_lc_narrow = [i idotbelow iogonek ij j];
 
 
 
@@ -62,6 +63,8 @@ lookup LATIN_LIGATURES {
 	sub @Latin_lc_f i by f_i;
 	sub @Latin_lc_f j by f_j;
 	sub @Latin_lc_f t by f_t;
+    sub @Latin_lc_f v by f_v;
+    sub @Latin_lc_f w by f_w;
 } LATIN_LIGATURES;
 
 
@@ -99,6 +102,10 @@ feature aalt {
 	feature rlig;
 	feature liga;
 	feature calt;
+
+	feature salt;
+	feature ss05;
+	feature ss06;
 } aalt;
 
 
@@ -177,6 +184,7 @@ feature locl {
 				sub IJ acutecomb by Iacute_J.NLD;
 				sub I J acutecomb by Iacute_J.NLD;
 			} LOCL_DUTCHIJACUTE_COMPOSE;
+
 } locl;
 
 
@@ -231,3 +239,6 @@ feature liga {
 # Stylistic sets and alternates
 
 include(shared.rest.fea);
+
+
+include(italics.stylistic.fea);
