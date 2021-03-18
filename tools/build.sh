@@ -114,7 +114,7 @@ if [ "$STATIC" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
             # Combine and write our custom features to the UFOs
             echo "Write features to $INSTANCES/$ufo"
             if [[ "$ufo" == *Italic.ufo* ]]; then
-                python tools/parse-features.py production/features/italics.fea $INSTANCES/$ufo
+                python tools/parse-features.py production/features/italics-rasa.fea $INSTANCES/$ufo
             else
                 python tools/parse-features.py production/features/uprights-rasa.fea $INSTANCES/$ufo
             fi
@@ -162,7 +162,7 @@ if [ "$STATIC" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
             # Combine and write our custom features to the UFOs
             echo "Write features to $INSTANCES/$ufo"
             if [[ "$ufo" == *Italic.ufo* ]]; then
-                python tools/parse-features.py production/features/italics.fea $INSTANCES/$ufo
+                python tools/parse-features.py production/features/italics-yrsa.fea $INSTANCES/$ufo
             else
                 python tools/parse-features.py production/features/uprights-yrsa.fea $INSTANCES/$ufo
             fi
@@ -261,7 +261,7 @@ if [ "$VF" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
             # Combine and write our custom features to the UFOs
             echo "Write features to $MASTERS/$ufo"
             if [[ "$ufo" == *Italic.ufo* ]]; then
-                python tools/parse-features.py production/features/italics.fea $MASTERS/$ufo
+                python tools/parse-features.py production/features/italics-rasa.fea $MASTERS/$ufo
             else
                 python tools/parse-features.py production/features/uprights-rasa.fea $MASTERS/$ufo VF
             fi
@@ -305,7 +305,7 @@ if [ "$VF" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
             # Combine and write our custom features to the UFOs
             echo "Write features to $MASTERS/$ufo"
             if [[ "$ufo" == *Italic.ufo* ]]; then
-                python tools/parse-features.py production/features/italics.fea $MASTERS/$ufo
+                python tools/parse-features.py production/features/italics-yrsa.fea $MASTERS/$ufo
             else
                 python tools/parse-features.py production/features/uprights-yrsa.fea $MASTERS/$ufo
             fi
