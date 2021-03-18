@@ -107,16 +107,16 @@ if [ "$STATIC" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
 
         # Make sure mark features get written without any "design" anchors left over
         echo "Preparing $INSTANCES/$ufo"
-        python tools/remove-anchors-from-ufo.py $INSTANCES/$ufo periodcentred _periodcentred apostrophe _apostrophe
+        python3 tools/remove-anchors-from-ufo.py $INSTANCES/$ufo periodcentred _periodcentred apostrophe _apostrophe
 
 
         if [ "$RASA" == 1 ]; then
             # Combine and write our custom features to the UFOs
             echo "Write features to $INSTANCES/$ufo"
             if [[ "$ufo" == *Italic.ufo* ]]; then
-                python tools/parse-features.py production/features/italics.fea $INSTANCES/$ufo
+                python3 tools/parse-features.py production/features/italics.fea $INSTANCES/$ufo
             else
-                python tools/parse-features.py production/features/uprights-rasa.fea $INSTANCES/$ufo
+                python3 tools/parse-features.py production/features/uprights-rasa.fea $INSTANCES/$ufo
             fi
 
 
@@ -162,9 +162,9 @@ if [ "$STATIC" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
             # Combine and write our custom features to the UFOs
             echo "Write features to $INSTANCES/$ufo"
             if [[ "$ufo" == *Italic.ufo* ]]; then
-                python tools/parse-features.py production/features/italics.fea $INSTANCES/$ufo
+                python3 tools/parse-features.py production/features/italics.fea $INSTANCES/$ufo
             else
-                python tools/parse-features.py production/features/uprights-yrsa.fea $INSTANCES/$ufo
+                python3 tools/parse-features.py production/features/uprights-yrsa.fea $INSTANCES/$ufo
             fi
 
 
@@ -189,7 +189,7 @@ if [ "$STATIC" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
                 cp $FILE-subset $FILE
                 rm $FILE-subset
 
-                python tools/replace-family-name.py $FILE Rasa Yrsa
+                python3 tools/replace-family-name.py $FILE Rasa Yrsa
                 
                 gftools fix-hinting $FILE
                 rm $FILE
@@ -215,7 +215,7 @@ if [ "$STATIC" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
                 echo "Autohinting $FILE"
                 psautohint $FILE
 
-                python tools/replace-family-name.py $FILE Rasa Yrsa
+                python3 tools/replace-family-name.py $FILE Rasa Yrsa
                 
                 gftools fix-dsig --autofix $FILE
             fi
@@ -245,7 +245,7 @@ if [ "$VF" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
     for ufo in $(ls $MASTERS | grep .ufo); do
         # Make sure mark features get written without any "design" anchors left over
         echo "Preparing $MASTERS/$ufo"
-        python tools/remove-anchors-from-ufo.py $INSTANCES/$ufo periodcentred _periodcentred apostrophe _apostrophe
+        python3 tools/remove-anchors-from-ufo.py $INSTANCES/$ufo periodcentred _periodcentred apostrophe _apostrophe
     done
 
 
@@ -254,16 +254,16 @@ if [ "$VF" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
         mkdir -p $FONTS/RasaVariable
 
         echo "Compiling VF matra I lookup"
-        python tools/write-vf-matrai.py
+        python3 tools/write-vf-matrai.py
 
         # Loop through the instances and prepare and compile each of them
         for ufo in $(ls $MASTERS | grep .ufo); do
             # Combine and write our custom features to the UFOs
             echo "Write features to $MASTERS/$ufo"
             if [[ "$ufo" == *Italic.ufo* ]]; then
-                python tools/parse-features.py production/features/italics.fea $MASTERS/$ufo
+                python3 tools/parse-features.py production/features/italics.fea $MASTERS/$ufo
             else
-                python tools/parse-features.py production/features/uprights-rasa.fea $MASTERS/$ufo VF
+                python3 tools/parse-features.py production/features/uprights-rasa.fea $MASTERS/$ufo VF
             fi
         done
 
@@ -305,9 +305,9 @@ if [ "$VF" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
             # Combine and write our custom features to the UFOs
             echo "Write features to $MASTERS/$ufo"
             if [[ "$ufo" == *Italic.ufo* ]]; then
-                python tools/parse-features.py production/features/italics.fea $MASTERS/$ufo
+                python3 tools/parse-features.py production/features/italics.fea $MASTERS/$ufo
             else
-                python tools/parse-features.py production/features/uprights-yrsa.fea $MASTERS/$ufo
+                python3 tools/parse-features.py production/features/uprights-yrsa.fea $MASTERS/$ufo
             fi
         done
 
@@ -335,7 +335,7 @@ if [ "$VF" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
             cp $FILE-subset $FILE
             rm $FILE-subset
 
-            python tools/replace-family-name.py $FILE Rasa Yrsa
+            python3 tools/replace-family-name.py $FILE Rasa Yrsa
 
             gftools fix-nonhinting $FILE $FILE.fix
             mv $FILE.fix $FILE
@@ -369,7 +369,7 @@ if [ "$WOFF" == 1 ]; then
             OUT=${OUT/ttf/woff}
 
             # Woff2 (using fonttools, since the project already requires it)
-            python tools/save-woff2.py $IN ${OUT}2
+            python3 tools/save-woff2.py $IN ${OUT}2
             
             # Output woff only for static files, not for Variable Fonts
             if [[ $IN != *"VF"* ]]; then
