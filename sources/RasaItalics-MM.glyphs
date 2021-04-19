@@ -1,5 +1,5 @@
 {
-.appVersion = "1355";
+.appVersion = "1356";
 copyright = "Copyright 2015 Yrsa-Rasa Project Authors (https://github.com/rosettatype/yrsa-rasa/)";
 customParameters = (
 {
@@ -978,7 +978,7 @@ name = note;
 value = "Axis Mappings are set in the designspace document.";
 }
 );
-date = "2020-12-08 09:21:51 +0000";
+date = "2021-04-19 07:22:55 +0000";
 designer = "Anna Giedrys (design), David Brezina (art direction, design), Eben Sorkin (original Merriweather design)";
 designerURL = "http://rosettatype.com";
 disablesNiceNames = 1;
@@ -177043,5 +177043,5 @@ manufacturer = "Rosetta Type Foundry";
 manufacturerURL = "http://rosettatype.com";
 unitsPerEm = 1000;
 versionMajor = 2;
-versionMinor = 0;
+versionMinor = 1;
 }

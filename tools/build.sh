@@ -39,15 +39,15 @@ do
 	esac
 done
 
-# Extract UFOs if compiling new binaries
-if [ "$TTF" == 1 ] || [ "$OTF" == 1 ]; then
-    UFO=1
-fi
-
 # Fall back to use ttf if no format was specified
 if [ "$TTF" == 0 ] && [ "$OTF" == 0 ] && [ "$WOFF" == 0 ]; then
     TTF=1
     OTF=1
+fi
+
+# Extract UFOs if compiling new binaries
+if [ "$TTF" == 1 ] || [ "$OTF" == 1 ]; then
+    UFO=1
 fi
 
 # Fall back to compile both, statics and variable fonts

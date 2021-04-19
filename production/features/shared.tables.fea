@@ -12,7 +12,7 @@ table BASE {
 
 # Keep 'head' table before 'OS/2'
 table head {
-	FontRevision 2.000;
+	FontRevision 2.001;
 	# Other head values set from Glyphs source
 } head;
 
