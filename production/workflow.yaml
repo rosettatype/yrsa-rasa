@@ -41,13 +41,14 @@
 
 -
   name: trialfonts
-  source: [fonts/Rasa, fonts/RasaVariable, fonts/Yrsa, fonts/YrsaVariable]
-  family: [Rasa TRIAL, Rasa Variable TRIAL, Yrsa TRIAL, Yrsa Variable TRIAL]
+  source: [fonts/Rasa, fonts/Yrsa, fonts/RasaVariable, fonts/YrsaVariable]
+  family: [Rasa TRIAL, Yrsa TRIAL, Rasa Variable TRIAL, Yrsa Variable TRIAL]
   tasks:
     - .post.make_trialfonts
 
--
-  name: restore
-  tasks:
-    - $ rm -r fonts
-    - $ git restore fonts
+
+# -
+#   name: restore
+#   tasks:
+#     - $ rm -r fonts
+#     - $ git restore fonts
