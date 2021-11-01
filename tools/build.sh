@@ -1,8 +1,11 @@
 # The build script for Rasa/Yrsa fonts
 #
 # Usage:
-# - To build all fonts: ./tools/build.sh
-# Arguments:
+# - To build all fonts (static, variable): ./tools/build.sh
+# - To build all webfonts (after generating the static/variable fonts): ./tools/build.sh -w
+# - To run all fontbakery checks: ./tools/build.sh -c
+#
+# All arguments:
 # -u: Extract UFOs from sources
 # -f Rasa/-f Yrsa: Build only the full family (Rasa) or the Latin subset (Yrsa)
 # -t/-o: Build only TTF/OTF files
@@ -11,6 +14,8 @@
 # -c: Check the TTF files
 # -w: Compile webfonts
 #
+# NOTE: Make sure the build script is executable: chmod 755 ./tools/build.sh
+
 MASTERS="sources/masters"
 INSTANCES="sources/instances"
 FONTS="fonts"
@@ -110,54 +115,6 @@ if [ "$STATIC" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
         python tools/remove-anchors-from-ufo.py $INSTANCES/$ufo periodcentred _periodcentred apostrophe _apostrophe
 
 
-        if [ "$RASA" == 1 ]; then
-            # Combine and write our custom features to the UFOs
-            echo "Write features to $INSTANCES/$ufo"
-            if [[ "$ufo" == *Italic.ufo* ]]; then
-                python tools/parse-features.py production/features/italics.fea $INSTANCES/$ufo
-            else
-                python tools/parse-features.py production/features/uprights-rasa.fea $INSTANCES/$ufo
-            fi
-
-
-            mkdir -p "fonts/Rasa"
-
-
-            if [ "$TTF" == 1 ]; then
-                FILE=$FONTS/Rasa/${ufo/ufo/ttf}
-                rm -f $FILE
-
-                echo "Compiling $FILE"
-                fontmake -u $INSTANCES/$ufo --output ttf --output-path $FILE --flatten-components --no-production-names --autohint
-
-                echo "Autohinting $FILE"
-                ttfautohint $FILE $FILE-hinted
-                cp $FILE-hinted $FILE
-                rm $FILE-hinted
-                
-                gftools fix-hinting $FILE
-                rm $FILE
-                mv $FILE.fix $FILE
-                
-                gftools fix-dsig --autofix $FILE
-            fi
-
-
-            if [ "$OTF" == 1 ]; then
-                FILE=$FONTS/Rasa/${ufo/ufo/otf}
-                rm -f $FILE
-
-                echo "Compiling $FILE"
-                fontmake -u $INSTANCES/$ufo --output otf --output-path $FILE --flatten-components --no-production-names
-
-                echo "Autohinting $FILE"
-                psautohint $FILE
-                
-                gftools fix-dsig --autofix $FILE
-            fi
-        fi
-
-
         if [ "$YRSA" == 1 ]; then
             # Combine and write our custom features to the UFOs
             echo "Write features to $INSTANCES/$ufo"
@@ -221,6 +178,56 @@ if [ "$STATIC" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
             fi
             
         fi
+
+
+        if [ "$RASA" == 1 ]; then
+            # Combine and write our custom features to the UFOs
+            if [[ "$ufo" == *Italic.ufo* ]]; then
+                # Skip italics for Rasa
+                # python tools/parse-features.py production/features/italics.fea $INSTANCES/$ufo
+                continue
+            else
+                python tools/parse-features.py production/features/uprights-rasa.fea $INSTANCES/$ufo
+            fi
+
+            echo "Write features to $INSTANCES/$ufo"
+
+            mkdir -p "fonts/Rasa"
+
+
+            if [ "$TTF" == 1 ]; then
+                FILE=$FONTS/Rasa/${ufo/ufo/ttf}
+                rm -f $FILE
+
+                echo "Compiling $FILE"
+                fontmake -u $INSTANCES/$ufo --output ttf --output-path $FILE --flatten-components --no-production-names --autohint
+
+                echo "Autohinting $FILE"
+                ttfautohint $FILE $FILE-hinted
+                cp $FILE-hinted $FILE
+                rm $FILE-hinted
+                
+                gftools fix-hinting $FILE
+                rm $FILE
+                mv $FILE.fix $FILE
+                
+                gftools fix-dsig --autofix $FILE
+            fi
+
+
+            if [ "$OTF" == 1 ]; then
+                FILE=$FONTS/Rasa/${ufo/ufo/otf}
+                rm -f $FILE
+
+                echo "Compiling $FILE"
+                fontmake -u $INSTANCES/$ufo --output otf --output-path $FILE --flatten-components --no-production-names
+
+                echo "Autohinting $FILE"
+                psautohint $FILE
+                
+                gftools fix-dsig --autofix $FILE
+            fi
+        fi
     done
 fi
 
@@ -259,12 +266,16 @@ if [ "$VF" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
         # Loop through the instances and prepare and compile each of them
         for ufo in $(ls $MASTERS | grep .ufo); do
             # Combine and write our custom features to the UFOs
-            echo "Write features to $MASTERS/$ufo"
+            
             if [[ "$ufo" == *Italic.ufo* ]]; then
-                python tools/parse-features.py production/features/italics.fea $MASTERS/$ufo
+                # Skip italics for Rasa
+                # python tools/parse-features.py production/features/italics.fea $MASTERS/$ufo
+                continue
             else
                 python tools/parse-features.py production/features/uprights-rasa.fea $MASTERS/$ufo VF
             fi
+
+            echo "Write features to $MASTERS/$ufo"
         done
 
         # A bug in the region of etheral: If the glyph gjDYa in Rasa-MM.glyphs has
@@ -273,7 +284,10 @@ if [ "$VF" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
         # be in the glyph — maybe some anchor ordering issue with the different
         # instance sources/UFOs?!
         # ¯\_(ツ)_/¯
-        STYLES=(Ups Its)
+
+        # Skip italics for Rasa
+        # STYLES=(Ups Its)
+        STYLES=(Ups)
         for STYLE in ${STYLES[*]}; do
             FILE=$FONTS/RasaVariable/RasaVF-$STYLE.ttf
             DS=production/Rasa-$STYLE.designspace
