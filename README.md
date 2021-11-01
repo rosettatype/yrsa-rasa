@@ -8,6 +8,7 @@ What makes the Yrsa & Rasa project different is the design approach. It is a del
 
 The project has been documented in several articles. See the [Yrsa & Rasa project page](http://github.rosettatype.com/yrsa-rasa) for details.
 
+In 2020–2021, Yrsa and Rasa received a major update. Rosetta added a substantial set of glyphs to the uprights of both type families to provide wider language support, including full support for Vietnamese, additional stylistic sets of numerals (there are lining and text numerals, superiors, inferiors, fractions) and quite a few monetary symbols. On top of all this, Anna Giedryś created the highly anticipated and often requested italics for the Latin script. Unlike the uprights, the italics were designed completely from scratch, giving the family a distinctive touch. Optimized for screen and online use, Yrsa is now a well-rounded text typeface. Rasa received only a minor maintenance update and an addition of glyphs to support the Avestan language. Both families come with variable fonts.
 
 ## Download
 
