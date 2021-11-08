@@ -25,8 +25,11 @@ mkdir $RASA/variable
 cp fonts/Rasa/*.otf $RASA/otf/
 cp fonts/Rasa/*.ttf $RASA/ttf/
 cp fonts/RasaVariable/* $RASA/variable/
-zip $RASA.zip $RASA
+TMP=${RASA//release\//}
+mv $RASA $TMP
+zip -r $RASA.zip $TMP
 rm -r $RASA
+rm -r $TMP
 
 
 YRSA="release/Yrsa-fonts-$1"
@@ -41,8 +44,11 @@ mkdir $YRSA/variable
 cp fonts/Yrsa/*.otf $YRSA/otf/
 cp fonts/Yrsa/*.ttf $YRSA/ttf/
 cp fonts/YrsaVariable/* $YRSA/variable/
-zip $YRSA.zip $YRSA
+TMP=${YRSA//release\//}
+mv $YRSA $TMP
+zip -r $YRSA.zip $TMP
 rm -r $YRSA
+rm -r $TMP
 
 
 echo "Push the tag (and commit) to github with '$ git push origin master --tags' and attach the generated zip files in /release to the new release :)"
