@@ -1,5 +1,10 @@
 # Changes
 
+## 2.003
+
+- Rasa/Yrsa: Fixed issue in `frac` code
+- Rasa/Yrsa: Improved hinting of lining number 9 and tabular lining number 9
+
 ## 2.002
 
 - Extended language support
