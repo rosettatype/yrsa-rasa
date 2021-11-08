@@ -11,3 +11,5 @@ sources/masters
 sources/instances
 debug.fea
 .DS_Store
+# Keep a folder for, but do not include generated, release archives
+release/*.zip
