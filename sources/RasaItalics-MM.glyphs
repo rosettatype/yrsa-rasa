@@ -978,7 +978,7 @@ name = note;
 value = "Axis Mappings are set in the designspace document.";
 }
 );
-date = "2021-11-08 10:45:47 +0000";
+date = "2021-11-16 08:58:45 +0000";
 designer = "Anna Giedrys (design), David Brezina (art direction, design), Eben Sorkin (original Merriweather design)";
 designerURL = "http://rosettatype.com";
 disablesNiceNames = 1;
@@ -177199,5 +177199,5 @@ manufacturer = "Rosetta Type Foundry";
 manufacturerURL = "http://rosettatype.com";
 unitsPerEm = 1000;
 versionMajor = 2;
-versionMinor = 3;
+versionMinor = 4;
 }

@@ -1,5 +1,9 @@
 # Changes
 
+## 2.004
+
+- Re-introduced Rasa Italic variable font for backwards compatibility
+
 ## 2.003
 
 - Rasa/Yrsa: Fixed issue in `frac` code

@@ -183,9 +183,7 @@ if [ "$STATIC" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
         if [ "$RASA" == 1 ]; then
             # Combine and write our custom features to the UFOs
             if [[ "$ufo" == *Italic.ufo* ]]; then
-                # Skip italics for Rasa
-                # python tools/parse-features.py production/features/italics.fea $INSTANCES/$ufo
-                continue
+                python tools/parse-features.py production/features/italics.fea $INSTANCES/$ufo
             else
                 python tools/parse-features.py production/features/uprights-rasa.fea $INSTANCES/$ufo
             fi
@@ -194,6 +192,10 @@ if [ "$STATIC" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
 
             mkdir -p "fonts/Rasa"
 
+            if [[ "$ufo" == *Italic.ufo* ]]; then
+                # Skip compiling Rasa Italic statics
+                continue
+            fi
 
             if [ "$TTF" == 1 ]; then
                 FILE=$FONTS/Rasa/${ufo/ufo/ttf}
@@ -268,9 +270,7 @@ if [ "$VF" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
             # Combine and write our custom features to the UFOs
             
             if [[ "$ufo" == *Italic.ufo* ]]; then
-                # Skip italics for Rasa
-                # python tools/parse-features.py production/features/italics.fea $MASTERS/$ufo
-                continue
+                python tools/parse-features.py production/features/italics.fea $MASTERS/$ufo
             else
                 python tools/parse-features.py production/features/uprights-rasa.fea $MASTERS/$ufo VF
             fi
@@ -285,9 +285,7 @@ if [ "$VF" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
         # instance sources/UFOs?!
         # ¯\_(ツ)_/¯
 
-        # Skip italics for Rasa
-        # STYLES=(Ups Its)
-        STYLES=(Ups)
+        STYLES=(Ups Its)
         for STYLE in ${STYLES[*]}; do
             FILE=$FONTS/RasaVariable/RasaVF-$STYLE.ttf
             DS=production/Rasa-$STYLE.designspace
