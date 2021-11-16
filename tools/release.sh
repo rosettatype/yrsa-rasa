@@ -24,7 +24,7 @@ mkdir $RASA/ttf
 mkdir $RASA/variable
 cp fonts/Rasa/*.otf $RASA/otf/
 cp fonts/Rasa/*.ttf $RASA/ttf/
-cp fonts/RasaVariable/* $RASA/variable/
+cp fonts/RasaVariable/RasaVF-Ups.ttf $RASA/variable/
 TMP=${RASA//release\//}
 mv $RASA $TMP
 zip -r $RASA.zip $TMP
