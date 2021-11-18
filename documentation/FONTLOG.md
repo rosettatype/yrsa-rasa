@@ -1,5 +1,10 @@
 # Changes
 
+## 2.005
+
+- Decomposed transformed components
+- Corrected font revision in font meta table
+
 ## 2.004
 
 - Re-introduced Rasa Italic variable font for backwards compatibility
