@@ -134,7 +134,7 @@ if [ "$STATIC" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
                 rm -f $FILE
 
                 echo "Compiling $FILE"
-                fontmake -u $INSTANCES/$ufo --output ttf --output-path $FILE --flatten-components --no-production-names --autohint
+                fontmake -u $INSTANCES/$ufo --output ttf --output-path $FILE --flatten-components --filter "ufo2ft.filters.decomposeTransformedComponents::DecomposeTransformedComponentsFilter" --no-production-names --autohint
 
                 echo "Autohinting $FILE"
                 ttfautohint $FILE $FILE-hinted
@@ -162,7 +162,7 @@ if [ "$STATIC" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
                 rm -f $FILE
 
                 echo "Compiling $FILE"
-                fontmake -u $INSTANCES/$ufo --output otf --output-path $FILE --flatten-components --no-production-names
+                fontmake -u $INSTANCES/$ufo --output otf --output-path $FILE --flatten-components --filter "ufo2ft.filters.decomposeTransformedComponents::DecomposeTransformedComponentsFilter" --no-production-names
 
                 echo "Subsetting $FILE"
                 pyftsubset $FILE --unicodes-file="production/subset.txt" --name-IDs="*" --glyph-names --layout-features="*" --layout-features-="abvs,akhn,blwf,blws,cjct,half,pres,psts,rkrf,rphf,ss01,ss02,ss03,vatu,abvm,blwm,dist" --recalc-bounds --recalc-average-width --notdef-outline --output-file="$FILE-subset"
@@ -202,7 +202,7 @@ if [ "$STATIC" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
                 rm -f $FILE
 
                 echo "Compiling $FILE"
-                fontmake -u $INSTANCES/$ufo --output ttf --output-path $FILE --flatten-components --no-production-names --autohint
+                fontmake -u $INSTANCES/$ufo --output ttf --output-path $FILE --flatten-components --filter "ufo2ft.filters.decomposeTransformedComponents::DecomposeTransformedComponentsFilter" --no-production-names --autohint
 
                 echo "Autohinting $FILE"
                 ttfautohint $FILE $FILE-hinted
@@ -222,7 +222,7 @@ if [ "$STATIC" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
                 rm -f $FILE
 
                 echo "Compiling $FILE"
-                fontmake -u $INSTANCES/$ufo --output otf --output-path $FILE --flatten-components --no-production-names
+                fontmake -u $INSTANCES/$ufo --output otf --output-path $FILE --flatten-components --filter "ufo2ft.filters.decomposeTransformedComponents::DecomposeTransformedComponentsFilter" --no-production-names
 
                 echo "Autohinting $FILE"
                 psautohint $FILE
@@ -291,7 +291,7 @@ if [ "$VF" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
             DS=production/Rasa-$STYLE.designspace
             SS=production/Rasa.stylespace
 
-            fontmake -m $DS -o variable --output-path=$FILE --flatten-components --no-production-names
+            fontmake -m $DS -o variable --output-path=$FILE --flatten-components --filter "ufo2ft.filters.decomposeTransformedComponents::DecomposeTransformedComponentsFilter" --no-production-names
 
             # Add STAT table
             echo "Add STAT table"
@@ -337,7 +337,7 @@ if [ "$VF" == 1 ] && ([ "$TTF" == 1 ] || [ "$OTF" == 1 ]); then
             DS=production/Rasa-$STYLE.designspace
             SS=production/Rasa.stylespace
 
-            fontmake -m production/Rasa-$STYLE.designspace -o variable --output-path=$FILE --flatten-components --no-production-names
+            fontmake -m production/Rasa-$STYLE.designspace -o variable --output-path=$FILE --flatten-components --filter "ufo2ft.filters.decomposeTransformedComponents::DecomposeTransformedComponentsFilter" --no-production-names
 
             # Add STAT table
             statmake --designspace $DS --stylespace $SS $FILE
