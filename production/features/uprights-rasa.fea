@@ -17,7 +17,6 @@ languagesystem latn TAT;
 languagesystem latn KAZ;
 languagesystem latn MOL;
 languagesystem latn ROM;
-languagesystem latn CAT;
 languagesystem latn NLD;
 languagesystem gujr dflt;
 languagesystem gjr2 dflt;
@@ -131,7 +130,20 @@ feature ccmp {
 #------------------------------------------------------------------------------
 # Localisations
 
-feature locl {	
+feature locl {
+		# Catalan dot
+		# Replacing periodcenter between two lowercase or uppercase L's for different
+		# input sequences
+		lookup LATIN_CATALAN_LDOT {
+			sub ldot by l periodcentered.CAT;
+			sub Ldot by L periodcentered.CAT.case;
+		} LATIN_CATALAN_LDOT;
+
+		lookup LATIN_CATALAN_PERIODCENTER {
+			sub l periodcentered' l by periodcentered.CAT;
+			sub L periodcentered' L by periodcentered.CAT.case;
+		} LATIN_CATALAN_PERIODCENTER;
+
 	script latn; # Latin
 		# i -> idotaccent substitution effectively switches off the fi and ffi ligatures
 		language TRK; # Turkish
@@ -155,21 +167,6 @@ feature locl {
 			} locl_ROM;
 		language MOL; # Moldavian
 			lookup locl_ROM;
-
-		# Catalan dot
-		language CAT; # Catalan
-
-			# Replacing periodcenter between two lowercase or uppercase L's for different
-			# input sequences
-			lookup LATIN_CATALAN_LDOT {
-				sub ldot by l periodcentered.CAT;
-				sub Ldot by L periodcentered.CAT.case;
-			} LATIN_CATALAN_LDOT;
-
-			lookup LATIN_CATALAN_PERIODCENTER {
-				sub l periodcentered' l by periodcentered.CAT;
-				sub L periodcentered' L by periodcentered.CAT.case;
-			} LATIN_CATALAN_PERIODCENTER;
 
 		# Dutch ij with acute
 		language NLD; # Dutch
