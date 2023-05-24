@@ -122,7 +122,7 @@ feature aalt {
 # Composition/Decomposition
 
 feature ccmp {
-	lookup LATIN_J_DECOMPOSE;
+	lookup LATIN_DOTLESSJ;
 } ccmp;
 
 

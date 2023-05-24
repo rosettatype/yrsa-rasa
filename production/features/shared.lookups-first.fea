@@ -4,9 +4,9 @@ lookup locl_TRK {
 } locl_TRK;
 
 # Access to jacute
-lookup LATIN_J_DECOMPOSE {
+lookup LATIN_DOTLESSJ {
 	sub j' acutecomb by jdotless;
-} LATIN_J_DECOMPOSE;
+} LATIN_DOTLESSJ;
 
 # Decompose some combining f_i to f + i + comb so that f_i ligature will get
 # applied (and dito f_t)

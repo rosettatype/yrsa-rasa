@@ -105,7 +105,7 @@ feature aalt {
 # Composition/Decomposition
 
 feature ccmp {
-	lookup LATIN_J_DECOMPOSE;
+	lookup LATIN_DOTLESSJ;
 } ccmp;
 
 
@@ -153,25 +153,11 @@ feature locl {
 
 		# Dutch ij with acute
 		language NLD; # Dutch
-			lookup LOCL_DUTCHIJ_DECOMPOSE {
-				sub ij by i j;
-				sub IJ by I J;	
-			} LOCL_DUTCHIJ_DECOMPOSE;
-
-			lookup LOCL_DUTCHJACUTE {
-				sub i' j acutecomb by iacute;
-				sub iacute j' acutecomb' by jacute;
-				sub iacute j' by jacute;
-				sub I' J acutecomb by Iacute;
-				sub Iacute J' acutecomb' by Jacute;
-				sub Iacute J' by Jacute;
-			} LOCL_DUTCHJACUTE;
-
 			lookup LOCL_DUTCHIJACUTE_COMPOSE {
 				sub ij acutecomb by iacute_j.NLD;
-				sub i j acutecomb by iacute_j.NLD;
 				sub IJ acutecomb by Iacute_J.NLD;
-				sub I J acutecomb by Iacute_J.NLD;
+				sub iacute j acutecomb by iacute_j.NLD;
+				sub Iacute J acutecomb by Iacute_J.NLD;
 			} LOCL_DUTCHIJACUTE_COMPOSE;
 } locl;
 
